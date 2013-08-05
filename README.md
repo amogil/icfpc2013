@@ -1,4 +1,4 @@
-icfpc2013
+ICFP Contest 2013. Hack the loop team
 =========
 
-ICFP Contest 2013
+Hi all! :)
