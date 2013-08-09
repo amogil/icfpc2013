@@ -14,20 +14,37 @@ namespace lib.Brute
 			return Solve(sizeMinus1, false, ops);
 		}
 
-		public IEnumerable<Expr> Solve(int sizeMinus1, bool inFold, params string[] ops)
+		private readonly Dictionary<Tuple<int, bool>, IList<Expr>> cache = new Dictionary<Tuple<int, bool>, IList<Expr>>();
+
+		public IList<Expr> Solve(int sizeMinus1, bool inFold, params string[] ops)
+		{
+			return SolveWithoutCache(sizeMinus1, inFold, ops);
+			//return Cache(sizeMinus1, inFold, () => SolveWithoutCache(sizeMinus1, inFold, ops));
+		}
+
+		private IList<Expr> SolveWithoutCache(int sizeMinus1, bool inFold, string[] ops)
 		{
 			if (sizeMinus1 == 1)
 			{
-				return inFold
-					? new Expr[] { new Const(0), new Const(1), new Var("x", v => v.x), new Var("i", v => v.foldItem), new Var("a", v => v.foldAccumulator) }
-					: new Expr[] {new Const(0), new Const(1), new Var("x", v => v.x)};
+				Expr[] exprs = inFold ? new Expr[] {new Const(0), new Const(1), new Var("x", v => v.x), new Var("i", v => v.foldItem), new Var("a", v => v.foldAccumulator)} : new Expr[] {new Const(0), new Const(1), new Var("x", v => v.x)};
+				return exprs;
 			}
-			IEnumerable<Expr> topUnary = Solve(sizeMinus1 - 1, inFold, ops).SelectMany(ast => GrowTree(ast, ops));
-			IEnumerable<Expr> topBinary = SolveTopBinary(sizeMinus1, inFold, ops);
-			IEnumerable<Expr> topIf = SolveTopIf(sizeMinus1, inFold, ops);
-			IEnumerable<Expr> topFold = inFold ? new Expr[0] : SolveTopFold(sizeMinus1 - 1, ops);
 
-			return topUnary.Concat(topBinary).Concat(topIf).Concat(topFold);
+			var topUnary = Solve(sizeMinus1 - 1, inFold, ops).SelectMany(ast => GrowTree(ast, ops));
+			var topBinary = SolveTopBinary(sizeMinus1, inFold, ops);
+			var topIf = SolveTopIf(sizeMinus1, inFold, ops);
+			var topFold = inFold ? new Expr[0] : SolveTopFold(sizeMinus1 - 1, ops);
+
+			return topUnary.Concat(topBinary).Concat(topIf).Concat(topFold).ToList();
+		}
+
+		private IList<Expr> Cache(int size, bool inFold, Func<IList<Expr>> getTrees)
+		{
+			IList<Expr> v;
+			var key = Tuple.Create(size, inFold);
+			if (!cache.TryGetValue(key, out v))
+				cache.Add(key, v = getTrees());
+			return v;
 		}
 
 		private IEnumerable<Expr> SolveTopIf(int resultSize, bool inFold, string[] ops)
@@ -35,7 +52,7 @@ namespace lib.Brute
 			if (!ops.Contains("if0")) yield break;
 
 			
-			var treesWithSize = GetTreesWithSizeNotLargerThan(resultSize-3, inFold, ops).GroupBy(t => t.Item1, t => t.Item2).ToList();
+			List<IGrouping<int, Expr>> treesWithSize = GetTreesWithSizeNotLargerThan(resultSize-3, inFold, ops).GroupBy(t => t.Item1, t => t.Item2).ToList();
 			for(int condSize=1; condSize<=resultSize-3; condSize++)
 			{
 				var maxLeftSize = resultSize - 2 - condSize;
@@ -123,7 +140,10 @@ namespace lib.Brute
 		public void Test(int size, string ops, string expectedExpr)
 		{
 			var force = new Force();
+			Stopwatch sw = Stopwatch.StartNew();
 			var trees = force.Solve(size, false, ops.Split(' ')).ToList();
+			Console.WriteLine(sw.Elapsed);
+			Console.WriteLine(trees.Count());
 			if (trees.All(tree => tree.ToSExpr() != expectedExpr))
 			{
 				foreach (var tree in trees)
