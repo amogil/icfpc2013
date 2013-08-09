@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using NUnit.Framework;
+using lib.Brute;
 
 namespace lib.Lang
 {
@@ -55,6 +56,15 @@ namespace lib.Lang
 			Assert.That(actual, Is.EqualTo(t.ExpectedValue), string.Format("Was: 0x{0:x}", actual));
 		}
 
+		[Test]
+		[TestCaseSource("GetEvalTestCases")]
+		public void EvalBin(TestCase t)
+		{
+			byte[] p = Parser.ParseFunction(t.Program);
+			var actual = p.Eval(t.Arg);
+			Assert.That(actual, Is.EqualTo(t.ExpectedValue), string.Format("Was: 0x{0:x}", actual));
+		}
+		
 		private static IEnumerable<TestCase> GetEvalTestCases()
 		{
 			yield return new TestCase("(lambda (x) 0)", 1, 0);

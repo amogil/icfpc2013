@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlphaProtocol\AlphaProtocol.cs" />
+    <Compile Include="Brute\BinExpExtensions.cs" />
     <Compile Include="Brute\Force.cs" />
     <Compile Include="Annotations.cs" />
     <Compile Include="Guesser\Guesser.cs" />
