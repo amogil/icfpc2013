@@ -5,3 +5,5 @@ Id: TBOT4QECAaOTlSsQ196ndpxg, Challenge: (lambda (x_4730) (and (and 1 1) x_4730)
 Id: Te9rWO3c9J9cll3FNHtBUtWK, Challenge: (lambda (x_4771) (shr4 (not (plus x_4771 1)))), Size: 6, Operators: not,plus,shr4
 Id: wn0nsNXBURgwjlvoBn41gwHh, Challenge: (lambda (x_5357) (and (shr4 (shr4 x_5357)) x_5357)), Size: 6, Operators: and,shr4
 Id: AnHCIMoN6eqQmmKJgeVZsXhT, Challenge: (lambda (x_4946) (shl1 (if0 x_4946 0 x_4946))), Size: 6, Operators: if0,shl1
+Id: XFWk9XWkDaWAAwAN8kZznsr8, Challenge: (lambda (x_5461) (shr4 (xor (shr16 1) x_5461))), Size: 6, Operators: shr16,shr4,xor
+Id: eLe8BpJ6HhRrUhOI4H9EJR3J, Challenge: (lambda (x_4479) (and (shr1 (shr1 x_4479)) x_4479)), Size: 6, Operators: and,shr1

@@ -2,3 +2,4 @@ Id: jeewl1CzP3CTB3cTX7hLsnW8, Challenge: (lambda (x_6451) (fold x_6451 0 (lambda
 Id: SzFg936wk1O77nRD3GpoDI9L, Challenge: (lambda (x_7091) (fold x_7091 0 (lambda (x_7091 x_7092) (shl1 (if0 x_7092 x_7091 x_7092))))), Size: 10, Operators: if0,shl1,tfold
 Id: lBM6KNTdUUmrcPToDzkUIEo0, Challenge: (lambda (x_8011) (fold x_8011 0 (lambda (x_8011 x_8012) (xor (shr1 x_8011) (shr4 1))))), Size: 10, Operators: shr1,shr4,tfold,xor
 Id: zap87nIJvvNF6LjGUAYyWxCZ, Challenge: (lambda (x_8649) (fold x_8649 0 (lambda (x_8649 x_8650) (shr4 (plus (shr4 0) x_8649))))), Size: 10, Operators: plus,shr4,tfold
+Id: yZ9af6wn84AWaLGDMrMeD81F, Challenge: (lambda (x_8427) (fold x_8427 0 (lambda (x_8427 x_8428) (shr4 (plus (shr1 x_8428) x_8427))))), Size: 10, Operators: plus,shr1,shr4,tfold

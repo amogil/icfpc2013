@@ -1,1 +1,2 @@
 Id: GDMzVOk6yDRN8xX5l82yB0DK, Challenge: (lambda (x_879) (fold x_879 0 (lambda (x_879 x_880) (plus x_880 x_879)))), Size: 8, Operators: plus,tfold
+Id: 4pFfnNKetDpPC8gvOxhRcVwJ, Challenge: (lambda (x_1105) (fold x_1105 0 (lambda (x_1105 x_1106) (plus x_1105 x_1106)))), Size: 8, Operators: plus,tfold

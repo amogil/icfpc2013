@@ -8,3 +8,5 @@ Id: HqLXLHDz8NobbcYsH622oZM5, Challenge: (lambda (x_4136) (and x_4136 (not 1))),
 Id: LUgAnWrcgcvNQA2JwCUOnEVF, Challenge: (lambda (x_4094) (shr1 (shr16 (shr16 x_4094)))), Size: 5, Operators: shr1,shr16
 Id: q3gdvVkcbdJoTJeRudYy505f, Challenge: (lambda (x_2948) (and (shr4 x_2948) 1)), Size: 5, Operators: and,shr4
 Id: mBEwPpLABNn5J36mE1itLTcQ, Challenge: (lambda (x_3831) (or (shr1 x_3831) 0)), Size: 5, Operators: or,shr1
+Id: BM2c5xUPewLhdOXAMNeZPQAE, Challenge: (lambda (x_3809) (plus (not x_3809) 0)), Size: 5, Operators: not,plus
+Id: J91LqzLMEIf10CfoMtF4uYFm, Challenge: (lambda (x_4143) (shr16 (or x_4143 x_4143))), Size: 5, Operators: or,shr16

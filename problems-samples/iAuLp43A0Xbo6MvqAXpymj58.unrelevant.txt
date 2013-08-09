@@ -1,3 +1,4 @@
 Id: KKkyNA9XZIeqHy257aWdSTQP, Challenge: (lambda (x_16839) (not (xor (xor (if0 (shr4 (shr16 x_16839)) (and x_16839 x_16839) x_16839) 1) 1))), Size: 14, Operators: and,if0,not,shr16,shr4,xor
 Id: vffZM7u6yo4YvAkRdZWgoNZ0, Challenge: (lambda (x_16852) (shl1 (plus (and (if0 (shl1 (shr1 (or x_16852 x_16852))) x_16852 1) x_16852) 0))), Size: 14, Operators: and,if0,or,plus,shl1,shr1
 Id: LcWXWmpZeD4W56rDRR8jVhW4, Challenge: (lambda (x_16084) (shr4 (or (shr4 (if0 (or (plus x_16084 (not 1)) 0) 0 0)) x_16084))), Size: 14, Operators: if0,not,or,plus,shr4
+Id: azCdCJ9uFAvmQ1mFpvn102rV, Challenge: (lambda (x_15897) (and (shr4 (or (if0 (not (not (and 1 x_15897))) 0 x_15897) x_15897)) x_15897)), Size: 14, Operators: and,if0,not,or,shr4

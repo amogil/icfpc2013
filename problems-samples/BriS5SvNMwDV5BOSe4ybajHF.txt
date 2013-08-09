@@ -1,1 +1,2 @@
 Id: ZA3ybIpRdNtBOYq6kfeWSyIO, Challenge: (lambda (x_1390) (plus x_1390 1)), Size: 4, Operators: plus
+Id: I7pHAB4ca5q27rFpRhYjaX7x, Challenge: (lambda (x_1810) (plus 1 x_1810)), Size: 4, Operators: plus
