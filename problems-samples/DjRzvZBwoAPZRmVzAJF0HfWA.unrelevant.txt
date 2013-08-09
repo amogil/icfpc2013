@@ -1,0 +1,1 @@
+Id: nPCvAa5OO6e1qzNMO4IrZoIN, Challenge: (lambda (x_11723) (fold x_11723 0 (lambda (x_11723 x_11724) (plus (and (shr1 (not x_11723)) x_11724) x_11723)))), Size: 12, Operators: and,not,plus,shr1,tfold

@@ -1,0 +1,1 @@
+Id: ACViCdyxsTTNrF1jQxNqXANb, Challenge: (lambda (x_9403) (fold x_9403 0 (lambda (x_9403 x_9404) (plus (shr4 (or x_9404 x_9403)) x_9403)))), Size: 11, Operators: or,plus,shr4,tfold

@@ -1,0 +1,1 @@
+Id: CB1dwhJXV4vbiQdBZ6RABqhS, Challenge: (lambda (x_2080) (fold 0 (shr4 x_2080) (lambda (x_2081 x_2082) (xor (shr4 x_2081) (not x_2082))))), Size: 11, Operators: fold,not,shr4,xor

@@ -1,0 +1,1 @@
+Id: OjLLUyFJdZP7GbQHR3URH5Vh, Challenge: (lambda (x_12388) (and (if0 (or (shl1 x_12388) x_12388) (shr16 (shl1 x_12388)) 1) x_12388)), Size: 12, Operators: and,if0,or,shl1,shr16

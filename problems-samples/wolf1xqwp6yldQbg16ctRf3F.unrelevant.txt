@@ -1,0 +1,1 @@
+Id: BuDTc6y1kw4qgBKBPSHm4wbo, Challenge: (lambda (x_2159) (fold (or x_2159 x_2159) x_2159 (lambda (x_2160 x_2161) (if0 x_2161 x_2160 x_2160)))), Size: 11, Operators: fold,if0,or

@@ -1,0 +1,1 @@
+Id: Tdzy30svkSMmtyVABJYpBvYd, Challenge: (lambda (x_23622) (or (if0 (shl1 (and (not (not (and (or (and 1 1) x_23622) 1))) x_23622)) 1 x_23622) x_23622)), Size: 18, Operators: and,if0,not,or,shl1

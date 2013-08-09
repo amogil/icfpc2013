@@ -1,0 +1,1 @@
+Id: hbBHevrBZI8IPrdpFMMtSYGJ, Challenge: (lambda (x_13383) (fold x_13383 0 (lambda (x_13383 x_13384) (xor (shr16 (not (plus x_13384 x_13383))) x_13384)))), Size: 12, Operators: not,plus,shr16,tfold,xor

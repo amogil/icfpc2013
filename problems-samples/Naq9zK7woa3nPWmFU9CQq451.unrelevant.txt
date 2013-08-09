@@ -1,0 +1,1 @@
+Id: 7N497KxA2PJs5Zw9KvkhngnD, Challenge: (lambda (x_11405) (fold x_11405 0 (lambda (x_11405 x_11406) (plus (shl1 (not x_11405)) (xor x_11406 x_11406))))), Size: 12, Operators: not,plus,shl1,tfold,xor

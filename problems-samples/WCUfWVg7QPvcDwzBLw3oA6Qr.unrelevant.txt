@@ -1,0 +1,1 @@
+Id: QAdOw8NnZ6lOzutEfaFv3Zy3, Challenge: (lambda (x_1090) (fold (shr1 (not 0)) x_1090 (lambda (x_1091 x_1092) (and (shr4 x_1091) x_1092)))), Size: 11, Operators: and,fold,not,shr1,shr4

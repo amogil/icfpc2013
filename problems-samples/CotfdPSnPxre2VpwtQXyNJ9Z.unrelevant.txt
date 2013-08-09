@@ -1,0 +1,1 @@
+Id: 26WtGfAgFPb1mm8sLWS4E6mI, Challenge: (lambda (x_27747) (and (shr1 x_27747) (not (and (shr4 x_27747) (if0 (not (and (plus (shr4 1) (plus x_27747 1)) 0)) 0 0))))), Size: 20, Operators: and,if0,not,plus,shr1,shr4

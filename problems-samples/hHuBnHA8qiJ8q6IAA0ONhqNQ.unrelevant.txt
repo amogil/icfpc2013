@@ -1,0 +1,1 @@
+Id: UsH4uFPITBLK4A0lFRVUFCIK, Challenge: (lambda (x_12243) (fold x_12243 0 (lambda (x_12243 x_12244) (xor (not (shr4 x_12244)) (not (shr4 x_12243)))))), Size: 12, Operators: not,shr4,tfold,xor

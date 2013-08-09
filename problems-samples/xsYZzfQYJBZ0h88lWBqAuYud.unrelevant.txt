@@ -1,0 +1,1 @@
+Id: m92lHXTWXCpU34ZtHrdNPK4A, Challenge: (lambda (x_9483) (fold (shr4 (shr16 x_9483)) x_9483 (lambda (x_9484 x_9485) (xor (shl1 x_9484) x_9485)))), Size: 11, Operators: fold,shl1,shr16,shr4,xor

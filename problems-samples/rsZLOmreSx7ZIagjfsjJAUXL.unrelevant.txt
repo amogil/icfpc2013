@@ -1,0 +1,1 @@
+Id: sUkmxAf08pnHDkshfaUPj98F, Challenge: (lambda (x_12265) (fold x_12265 0 (lambda (x_12265 x_12266) (and (not (shr16 0)) (shl1 (not x_12265)))))), Size: 12, Operators: and,not,shl1,shr16,tfold

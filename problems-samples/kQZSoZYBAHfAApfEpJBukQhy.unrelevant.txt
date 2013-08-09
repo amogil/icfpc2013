@@ -1,0 +1,1 @@
+Id: YHRiFBxMKzaf2u7rLiiZkriL, Challenge: (lambda (x_12939) (if0 (xor (or (xor (shr4 0) x_12939) 1) x_12939) x_12939 0)), Size: 12, Operators: if0,or,shr4,xor

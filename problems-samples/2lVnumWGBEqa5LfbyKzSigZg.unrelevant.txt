@@ -1,0 +1,1 @@
+Id: TcLjE0A0GTP08Qc6MBG40XUs, Challenge: (lambda (x_45125) (fold (shr4 x_45125) x_45125 (lambda (x_45126 x_45127) (or (and (if0 (plus (not (and x_45127 x_45127)) x_45126) x_45126 x_45127) x_45126) x_45126)))), Size: 19, Operators: and,fold,if0,not,or,plus,shr4

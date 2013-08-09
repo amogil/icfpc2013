@@ -1,0 +1,1 @@
+Id: smtxdCX04CH42ybSAfB9uPvU, Challenge: (lambda (x_11474) (plus (if0 (plus (shl1 (shr4 x_11474)) x_11474) x_11474 x_11474) x_11474)), Size: 11, Operators: if0,plus,shl1,shr4

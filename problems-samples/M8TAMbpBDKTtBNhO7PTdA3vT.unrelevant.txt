@@ -1,0 +1,1 @@
+Id: F1BPiod2QenYBetsu5YV2zTi, Challenge: (lambda (x_4705) (fold (shl1 (shl1 x_4705)) 1 (lambda (x_4706 x_4707) (plus (shl1 x_4706) x_4707)))), Size: 11, Operators: fold,plus,shl1

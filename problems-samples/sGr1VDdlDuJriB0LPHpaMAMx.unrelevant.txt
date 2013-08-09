@@ -1,0 +1,1 @@
+Id: T3AvnBwI4m7vBVpTuTH3jpAC, Challenge: (lambda (x_12333) (plus (if0 (and (not (not (shl1 x_12333))) 1) x_12333 x_12333) x_12333)), Size: 12, Operators: and,if0,not,plus,shl1

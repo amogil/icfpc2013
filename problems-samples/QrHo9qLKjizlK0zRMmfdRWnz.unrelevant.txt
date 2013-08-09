@@ -1,0 +1,1 @@
+Id: BsF8ASZ7sWnwmBuzF3z7gWUB, Challenge: (lambda (x_12000) (shl1 (shl1 (if0 (or (xor x_12000 0) (shr16 x_12000)) 0 x_12000)))), Size: 12, Operators: if0,or,shl1,shr16,xor

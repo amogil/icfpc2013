@@ -1,0 +1,1 @@
+Id: QSTMKwcBFOgxI4o7t3qkAu30, Challenge: (lambda (x_15648) (not (fold (shl1 1) x_15648 (lambda (x_15649 x_15650) (plus (shr16 (shl1 x_15649)) x_15650))))), Size: 12, Operators: fold,not,plus,shl1,shr16

@@ -1,0 +1,1 @@
+Id: gtlAcKmYh2GtEb1huGL2WgyR, Challenge: (lambda (x_11194) (shr4 (if0 (and (shr4 (and x_11194 0)) x_11194) x_11194 x_11194))), Size: 11, Operators: and,if0,shr4

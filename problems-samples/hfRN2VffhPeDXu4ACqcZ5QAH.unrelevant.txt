@@ -1,0 +1,1 @@
+Id: phRUfKGLd5MMqB9nae3mIBnQ, Challenge: (lambda (x_22042) (or (if0 (shr1 x_22042) 0 (if0 (or (shl1 (shr4 (shr1 x_22042))) (shr1 0)) 1 1)) x_22042)), Size: 17, Operators: if0,or,shl1,shr1,shr4

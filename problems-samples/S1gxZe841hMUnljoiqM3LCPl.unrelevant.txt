@@ -1,0 +1,1 @@
+Id: 18yogGRmJvr2P4oCO9nx4Ahe, Challenge: (lambda (x_9075) (fold x_9075 0 (lambda (x_9075 x_9076) (plus (or (not x_9075) 1) 0)))), Size: 11, Operators: not,or,plus,tfold

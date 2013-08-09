@@ -1,0 +1,1 @@
+Id: 5Jg6e3BbNbtNKHhFV4JJw7n7, Challenge: (lambda (x_9083) (fold x_9083 0 (lambda (x_9083 x_9084) (or (not (xor 0 x_9083)) 0)))), Size: 11, Operators: not,or,tfold,xor

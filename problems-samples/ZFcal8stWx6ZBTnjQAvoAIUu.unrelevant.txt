@@ -1,0 +1,1 @@
+Id: t8tvTNzT7J4LkBUKcgzPEcTn, Challenge: (lambda (x_19811) (fold (and (shr1 x_19811) 0) x_19811 (lambda (x_19812 x_19813) (shr4 (or x_19812 x_19813))))), Size: 12, Operators: and,fold,or,shr1,shr4

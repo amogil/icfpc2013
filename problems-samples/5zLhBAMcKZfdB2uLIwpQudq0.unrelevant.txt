@@ -1,0 +1,1 @@
+Id: uHkFmKKGcPc4rkXLRselYk27, Challenge: (lambda (x_23633) (or 1 (shr1 (shr4 (shl1 (shr4 (shr16 (shr1 (if0 (plus (shl1 (shr1 (not x_23633))) x_23633) x_23633 x_23633))))))))), Size: 18, Operators: if0,not,or,plus,shl1,shr1,shr16,shr4

@@ -1,0 +1,1 @@
+Id: eQCYWXkgAzdIprTLeEGhlMwQ, Challenge: (lambda (x_12048) (fold (shr1 (or x_12048 x_12048)) x_12048 (lambda (x_12049 x_12050) (if0 x_12050 x_12049 x_12049)))), Size: 12, Operators: fold,if0,or,shr1

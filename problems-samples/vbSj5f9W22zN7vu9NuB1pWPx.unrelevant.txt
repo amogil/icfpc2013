@@ -1,0 +1,1 @@
+Id: HSMlY2JVDf0gz3gTzfM7mqoA, Challenge: (lambda (x_11698) (shr4 (if0 (xor (plus (shr1 1) 1) x_11698) x_11698 x_11698))), Size: 11, Operators: if0,plus,shr1,shr4,xor

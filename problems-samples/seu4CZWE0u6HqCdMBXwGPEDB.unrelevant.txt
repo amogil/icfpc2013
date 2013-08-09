@@ -1,0 +1,1 @@
+Id: uj6SmPzpUGBxmQOGZjkXnGfZ, Challenge: (lambda (x_37191) (fold x_37191 0 (lambda (x_37191 x_37192) (or (if0 x_37191 (xor (if0 (shl1 (xor (shr4 x_37192) x_37191)) x_37192 0) x_37192) x_37191) 1)))), Size: 20, Operators: if0,or,shl1,shr4,tfold,xor

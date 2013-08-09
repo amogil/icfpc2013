@@ -1,0 +1,1 @@
+Id: BCAoSxwTN4UJDljDoJEWBDTW, Challenge: (lambda (x_47526) (fold (shr1 (xor (if0 (and (xor x_47526 0) 0) x_47526 0) 0)) x_47526 (lambda (x_47527 x_47528) (if0 x_47528 x_47528 x_47527)))), Size: 19, Operators: and,fold,if0,shr1,xor

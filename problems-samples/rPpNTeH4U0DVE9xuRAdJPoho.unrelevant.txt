@@ -1,0 +1,1 @@
+Id: RfFMWjq7lj08d67GmK4FXjnA, Challenge: (lambda (x_12599) (fold x_12599 0 (lambda (x_12599 x_12600) (if0 (plus (shr4 x_12599) 0) 1 x_12600)))), Size: 12, Operators: if0,plus,shr4,tfold

@@ -1,0 +1,1 @@
+Id: Kl1iUNHZnq0WgI8wrIeNDCpd, Challenge: (lambda (x_10639) (shr16 (if0 (and (plus (shr1 1) 1) x_10639) x_10639 1))), Size: 11, Operators: and,if0,plus,shr1,shr16

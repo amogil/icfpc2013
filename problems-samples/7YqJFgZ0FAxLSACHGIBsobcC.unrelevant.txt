@@ -1,0 +1,1 @@
+Id: Pa99n9iz9UmZYALkEiFpKTxB, Challenge: (lambda (x_48689) (fold (not x_48689) (shr16 (not (if0 (plus (shr1 (or x_48689 1)) 1) 1 x_48689))) (lambda (x_48690 x_48691) (shr1 (plus x_48691 x_48690))))), Size: 20, Operators: fold,if0,not,or,plus,shr1,shr16

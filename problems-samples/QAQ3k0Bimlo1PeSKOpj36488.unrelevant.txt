@@ -1,0 +1,1 @@
+Id: mHae4FMQLftqQbhfQ58LY9BP, Challenge: (lambda (x_28391) (fold x_28391 0 (lambda (x_28391 x_28392) (shl1 (if0 (shl1 (shl1 (plus (plus (plus x_28391 x_28392) x_28391) x_28392))) 1 x_28391))))), Size: 18, Operators: if0,plus,shl1,tfold
