@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Brute\Force.cs" />
     <Compile Include="Guesser\Guesser.cs" />
+    <Compile Include="Brute\Full_Test.cs" />
     <Compile Include="Lang\Binary.cs" />
     <Compile Include="Lang\Const.cs" />
     <Compile Include="Lang\Expr.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Lang\If0.cs" />
     <Compile Include="Lang\Unary.cs" />
     <Compile Include="Lang\Var.cs" />
+    <Compile Include="Problem.cs" />
     <Compile Include="Shuffle.cs" />
     <Compile Include="Web\EvalRequest.cs" />
     <Compile Include="Web\EvalResponse.cs" />
