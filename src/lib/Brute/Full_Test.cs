@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,18 +35,21 @@ namespace lib.Brute
         [TestCase(7)]
         [TestCase(8)]
         [TestCase(9)]
+        [TestCase(10)]
+        [TestCase(11)]
+        [TestCase(12)]
+        [TestCase(13)]
         public void TestInclude(int size)
         {
             var bruter = new Force();
-            var solutions = new HashSet<string>(bruter.Solve(size - 1, AllOps).Select( expr => expr.GetUnified().ToSExpr()));
+            var solutions = new HashSet<string>(bruter.Solve(size - 1, AllOps).Select( expr => expr.ToSExpr()));
 
-            Console.WriteLine(string.Join("\n", solutions));
-           
+//            System.IO.File.WriteAllText("allTrees.txt", string.Join("\n", solutions));
+            
             foreach (var problem in GetAllSamples().Where( p => p.Size == size))
             {
                CollectionAssert.Contains(solutions, problem.Solution.GetUnified().ToSExpr());
-            }
-            
+            }            
         }
 
         private IEnumerable<ProblemsMiner.Problem> GetAllSamples()
