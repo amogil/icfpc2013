@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Brute\Force.cs" />
+    <Compile Include="Guesser\Guesser.cs" />
     <Compile Include="Lang\Binary.cs" />
     <Compile Include="Lang\Const.cs" />
     <Compile Include="Lang\Expr.cs" />
