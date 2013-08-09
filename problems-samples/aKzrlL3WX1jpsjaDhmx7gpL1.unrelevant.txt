@@ -1,0 +1,1 @@
+Id: JGoVLpquHeLDYUiDkov1TOII, Challenge: (lambda (x_7660) (or (plus (xor 0 x_7660) x_7660) x_7660)), Size: 8, Operators: or,plus,xor

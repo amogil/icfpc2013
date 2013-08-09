@@ -1,0 +1,1 @@
+Id: Wt66YN6jXaMwoG9UBslqWy8V, Challenge: (lambda (x_7667) (xor (shl1 (not (xor 0 1))) x_7667)), Size: 8, Operators: not,shl1,xor

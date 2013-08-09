@@ -1,0 +1,1 @@
+Id: BdoAB5coXpHwnIWis6wAzQms, Challenge: (lambda (x_30143) (fold x_30143 0 (lambda (x_30143 x_30144) (or (or (if0 (xor (or x_30144 x_30144) x_30143) x_30143 x_30143) (shr1 x_30143)) 0)))), Size: 18, Operators: if0,or,shr1,tfold,xor

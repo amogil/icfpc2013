@@ -1,0 +1,1 @@
+Id: UJiANA93RmuoR01E1S1UGaKX, Challenge: (lambda (x_7752) (xor (shr16 (shr1 (or 1 x_7752))) 0)), Size: 8, Operators: or,shr1,shr16,xor

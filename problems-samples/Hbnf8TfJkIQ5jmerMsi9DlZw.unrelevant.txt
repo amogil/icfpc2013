@@ -1,0 +1,1 @@
+Id: GdvDuEpewAyQx99xoddd3yOa, Challenge: (lambda (x_6903) (xor (shr4 (shr16 (plus x_6903 x_6903))) 0)), Size: 8, Operators: plus,shr16,shr4,xor

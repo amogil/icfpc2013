@@ -1,0 +1,1 @@
+Id: hI7lj9XVK0g4iNbBlNnDmsRt, Challenge: (lambda (x_7305) (or (or (plus 1 0) x_7305) x_7305)), Size: 8, Operators: or,plus

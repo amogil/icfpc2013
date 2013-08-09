@@ -1,0 +1,1 @@
+Id: OA01TZqcoolDBdSvDbaBQOHw, Challenge: (lambda (x_1255) (fold x_1255 0 (lambda (x_1255 x_1256) (plus x_1255 x_1256)))), Size: 8, Operators: plus,tfold

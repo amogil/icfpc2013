@@ -1,0 +1,1 @@
+Id: PYVwu9ACQO66HOT0hKbwmfdw, Challenge: (lambda (x_2695) (fold x_2695 0 (lambda (x_2695 x_2696) (shr4 (shr1 x_2695))))), Size: 8, Operators: shr1,shr4,tfold

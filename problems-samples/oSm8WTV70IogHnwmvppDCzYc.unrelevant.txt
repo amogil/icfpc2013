@@ -1,0 +1,1 @@
+Id: 57xbANnzPIthc6L1kEODCapf, Challenge: (lambda (x_7485) (xor (shr4 (and x_7485 x_7485)) (shl1 1))), Size: 8, Operators: and,shl1,shr4,xor

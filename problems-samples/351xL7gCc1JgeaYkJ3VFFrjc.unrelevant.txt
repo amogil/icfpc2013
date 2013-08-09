@@ -1,0 +1,1 @@
+Id: MQn7ng8jK66nYbqmkjwzvTFw, Challenge: (lambda (x_591) (fold x_591 0 (lambda (x_591 x_592) (or x_591 1)))), Size: 8, Operators: or,tfold

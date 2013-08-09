@@ -1,0 +1,1 @@
+Id: VjJB14EtwVKjyCRpUUBYfJX2, Challenge: (lambda (x_6968) (and (shl1 (and 1 (not x_6968))) x_6968)), Size: 8, Operators: and,not,shl1

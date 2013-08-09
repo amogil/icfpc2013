@@ -1,0 +1,1 @@
+Id: ecycYaDq6sMpGqZ3ZkdsyA4X, Challenge: (lambda (x_2149) (fold x_2149 0 (lambda (x_2149 x_2150) (and x_2149 x_2149)))), Size: 8, Operators: and,tfold

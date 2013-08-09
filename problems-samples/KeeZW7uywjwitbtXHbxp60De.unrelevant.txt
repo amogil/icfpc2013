@@ -1,0 +1,1 @@
+Id: lIl6ICVZwLETn7el7vyAeevf, Challenge: (lambda (x_7287) (or (or x_7287 (shr16 x_7287)) (shr4 x_7287))), Size: 8, Operators: or,shr16,shr4

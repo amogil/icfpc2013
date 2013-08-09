@@ -1,0 +1,1 @@
+Id: XFFMLhlwC84gBPKT63mr0Dnv, Challenge: (lambda (x_21502) (shl1 (plus x_21502 (if0 x_21502 0 (shr1 (if0 (plus (shr1 (shl1 (shr4 x_21502))) 0) 0 x_21502)))))), Size: 17, Operators: if0,plus,shl1,shr1,shr4

@@ -1,0 +1,1 @@
+Id: wUYYzU05uHWAU8wtwaBBA7nl, Challenge: (lambda (x_52240) (fold x_52240 1 (lambda (x_52241 x_52242) (plus (shl1 (plus (plus (if0 (plus (and x_52242 x_52242) (shr16 x_52242)) x_52242 x_52242) x_52241) x_52241)) x_52241)))), Size: 21, Operators: and,fold,if0,plus,shl1,shr16

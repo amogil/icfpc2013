@@ -1,0 +1,1 @@
+Id: rzVO4OaZstHR3FTmQIBze1hX, Challenge: (lambda (x_7457) (plus (shl1 (shl1 (and x_7457 1))) 1)), Size: 8, Operators: and,plus,shl1

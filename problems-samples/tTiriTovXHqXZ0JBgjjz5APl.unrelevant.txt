@@ -1,0 +1,1 @@
+Id: 7AJyIv8twS6EAOiNvLXc27PS, Challenge: (lambda (x_27286) (shl1 (shr4 (plus (or (and (xor (if0 (plus (shr1 (shr16 (shr16 x_27286))) 0) x_27286 x_27286) x_27286) x_27286) 0) x_27286)))), Size: 20, Operators: and,if0,or,plus,shl1,shr1,shr16,shr4,xor

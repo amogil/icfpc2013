@@ -1,0 +1,1 @@
+Id: BAAknzzNNrkAluxHSM595mlb, Challenge: (lambda (x_79104) (fold (and 0 x_79104) (or (not 1) (or (if0 x_79104 (and (plus (if0 (shl1 (shl1 x_79104)) (or 1 x_79104) 1) 1) x_79104) x_79104) 0)) (lambda (x_79105 x_79106) (xor (not x_79105) x_79106)))), Size: 30, Operators: and,fold,if0,not,or,plus,shl1,xor

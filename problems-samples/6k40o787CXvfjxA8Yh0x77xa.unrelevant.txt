@@ -1,0 +1,1 @@
+Id: 5YlnvG0X3Ryv4K5R6EIr9I7T, Challenge: (lambda (x_7293) (and (shr1 (shl1 (shl1 x_7293))) (shr1 x_7293))), Size: 8, Operators: and,shl1,shr1

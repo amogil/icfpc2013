@@ -1,0 +1,1 @@
+Id: RC9jy7sigKpVMA2h6fF8nVe1, Challenge: (lambda (x_25397) (fold x_25397 0 (lambda (x_25397 x_25398) (shr1 (if0 x_25398 (if0 (shr1 (shr4 (or x_25398 x_25397))) x_25398 x_25397) 0))))), Size: 17, Operators: if0,or,shr1,shr4,tfold

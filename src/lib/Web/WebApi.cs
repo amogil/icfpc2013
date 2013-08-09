@@ -69,14 +69,19 @@ namespace lib.Web
                 }
                 catch (WebException e)
                 {
+                    if (e.Status == WebExceptionStatus.ConnectFailure)
+                    {
+                        Thread.Sleep(5000);
+                        continue;
+                    }
                     var errorResponse = (HttpWebResponse) e.Response;
                     if ((int) errorResponse.StatusCode == 429)
                     {
                         log.Debug("Got 429 Status. Waiting for a second...");
                         Thread.Sleep(1000);
+                        continue;
                     }
-                    else
-                        throw;
+                    throw;
                 }
             }
         }

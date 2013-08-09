@@ -4,3 +4,4 @@ Id: nbtAEMbAZOrufdWP7lBuf4Dl, Challenge: (lambda (x_1609) (shr1 (shr16 x_1609)))
 Id: bHWHJ4vEWt2ZYVhV9QMrE4EL, Challenge: (lambda (x_2322) (plus x_2322 x_2322)), Size: 4, Operators: plus
 Id: FQue5OqVM6Ur3uWAS0YWgPuq, Challenge: (lambda (x_1719) (not (shr4 x_1719))), Size: 4, Operators: not,shr4
 Id: Tcmru5b0AY2S7Kq0u6QiH18r, Challenge: (lambda (x_1959) (xor x_1959 1)), Size: 4, Operators: xor
+Id: ls1GEXRlw5cAjQhBeAYGBhQx, Challenge: (lambda (x_1462) (shr1 (shr1 x_1462))), Size: 4, Operators: shr1

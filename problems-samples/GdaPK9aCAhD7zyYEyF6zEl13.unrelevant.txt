@@ -1,0 +1,1 @@
+Id: ecLDcsmArUHvqSMm6h3K9ont, Challenge: (lambda (x_7479) (xor (shr4 (plus (shr4 x_7479) x_7479)) x_7479)), Size: 8, Operators: plus,shr4,xor

@@ -1,0 +1,1 @@
+Id: HjXVVMDUISAYcgTfmonuwhEp, Challenge: (lambda (x_40097) (fold (if0 (or (shr16 (xor 0 1)) x_40097) 0 x_40097) x_40097 (lambda (x_40098 x_40099) (and (not x_40099) x_40098)))), Size: 17, Operators: and,fold,if0,not,or,shr16,xor
