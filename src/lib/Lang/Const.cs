@@ -11,7 +11,6 @@ namespace lib.Lang
 			this.value = value;
 		}
 
-
 		public override UInt64 Eval(Vars vars)
 		{
 			return value;
