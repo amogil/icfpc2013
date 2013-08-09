@@ -1,0 +1,1 @@
+Id: OdioNqzZR1zVx4xAF6DPifYD, Challenge: (lambda (x_10088) (if0 (and (shl1 (xor 1 0)) x_10088) 0 x_10088)), Size: 10, Operators: and,if0,shl1,xor

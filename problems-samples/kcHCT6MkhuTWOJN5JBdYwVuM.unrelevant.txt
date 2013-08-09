@@ -1,0 +1,1 @@
+Id: g99Sx6BVt2PtvPvVUKVs11MB, Challenge: (lambda (x_60638) (fold (if0 (plus (plus x_60638 (plus (or (shr4 (xor (shr4 x_60638) x_60638)) x_60638) 0)) x_60638) 0 0) x_60638 (lambda (x_60639 x_60640) (plus (shr4 x_60640) x_60639)))), Size: 24, Operators: fold,if0,or,plus,shr4,xor

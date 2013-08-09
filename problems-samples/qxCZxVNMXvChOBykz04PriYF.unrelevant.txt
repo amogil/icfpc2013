@@ -1,0 +1,1 @@
+Id: bmTz7NXriw8MaQHG2z0u4g6a, Challenge: (lambda (x_10447) (if0 (and (shr4 (not (shr16 x_10447))) 1) 1 x_10447)), Size: 10, Operators: and,if0,not,shr16,shr4

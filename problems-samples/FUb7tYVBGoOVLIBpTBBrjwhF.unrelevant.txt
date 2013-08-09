@@ -1,0 +1,1 @@
+Id: cytByXuR272M6EUoqHowKa5n, Challenge: (lambda (x_10302) (if0 (and (xor (shr4 x_10302) x_10302) 1) x_10302 0)), Size: 10, Operators: and,if0,shr4,xor

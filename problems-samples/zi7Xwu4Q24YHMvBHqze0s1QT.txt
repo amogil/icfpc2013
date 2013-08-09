@@ -1,0 +1,1 @@
+Id: ULRHJHsp2lYL5d90AVKB3YqL, Challenge: (lambda (x_6031) (fold x_6031 0 (lambda (x_6031 x_6032) (plus (shr16 0) x_6031)))), Size: 9, Operators: plus,shr16,tfold

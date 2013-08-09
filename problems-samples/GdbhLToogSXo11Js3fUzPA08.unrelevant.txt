@@ -1,0 +1,1 @@
+Id: ojgv79D9Ml6WnZHeKFwbBAVB, Challenge: (lambda (x_8623) (if0 (shl1 (and 1 (shr4 x_8623))) x_8623 0)), Size: 9, Operators: and,if0,shl1,shr4

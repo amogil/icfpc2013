@@ -1,0 +1,1 @@
+Id: qYHMA3QpcrDTBwuryDrRiZYm, Challenge: (lambda (x_7607) (fold x_7607 0 (lambda (x_7607 x_7608) (shr1 (xor (shr16 x_7608) x_7607))))), Size: 10, Operators: shr1,shr16,tfold,xor

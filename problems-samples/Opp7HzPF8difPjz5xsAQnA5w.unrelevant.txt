@@ -1,0 +1,1 @@
+Id: AQ8jkKVgEPlUGVA6kg3kKBDE, Challenge: (lambda (x_5081) (fold x_5081 0 (lambda (x_5081 x_5082) (or 0 (shr1 x_5081))))), Size: 9, Operators: or,shr1,tfold

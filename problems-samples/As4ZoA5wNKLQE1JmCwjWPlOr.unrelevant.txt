@@ -1,0 +1,1 @@
+Id: EHBjBcaIV02QH9YMXbD6r2Qz, Challenge: (lambda (x_9021) (fold x_9021 0 (lambda (x_9021 x_9022) (plus (or (shl1 1) x_9021) x_9022)))), Size: 11, Operators: or,plus,shl1,tfold

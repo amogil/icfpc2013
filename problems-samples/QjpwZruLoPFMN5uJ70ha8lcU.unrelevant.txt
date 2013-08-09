@@ -1,0 +1,1 @@
+Id: v931tci7feAhGAftKvIiuXLm, Challenge: (lambda (x_5307) (fold x_5307 0 (lambda (x_5307 x_5308) (shr1 (xor x_5307 0))))), Size: 9, Operators: shr1,tfold,xor

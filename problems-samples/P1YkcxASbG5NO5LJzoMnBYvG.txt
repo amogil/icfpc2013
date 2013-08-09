@@ -1,0 +1,1 @@
+Id: jZMWrNxbltHa5t5rjbP3Mpct, Challenge: (lambda (x_4189) (fold x_4189 0 (lambda (x_4189 x_4190) (shl1 (plus 0 x_4189))))), Size: 9, Operators: plus,shl1,tfold

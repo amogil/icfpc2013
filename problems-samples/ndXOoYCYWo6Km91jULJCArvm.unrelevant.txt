@@ -1,0 +1,1 @@
+Id: vGIJY44ZYa9C6RkE5bvXTcoX, Challenge: (lambda (x_8071) (fold x_8071 0 (lambda (x_8071 x_8072) (shr1 (xor (not x_8072) x_8071))))), Size: 10, Operators: not,shr1,tfold,xor

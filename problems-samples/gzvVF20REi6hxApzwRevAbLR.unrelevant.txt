@@ -1,0 +1,1 @@
+Id: 8TGBQ3uiIrnDCS5oNOc8xVvA, Challenge: (lambda (x_9991) (if0 (and (or (shr16 1) 1) x_9991) 1 x_9991)), Size: 10, Operators: and,if0,or,shr16

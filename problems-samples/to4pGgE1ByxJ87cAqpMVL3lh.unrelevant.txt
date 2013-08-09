@@ -1,0 +1,1 @@
+Id: UuUBAp0afDgazYbJhOMD6bwX, Challenge: (lambda (x_9193) (if0 (not (xor 1 x_9193)) 0 (shl1 x_9193))), Size: 9, Operators: if0,not,shl1,xor

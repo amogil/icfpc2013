@@ -1,0 +1,1 @@
+Id: npTTYcQxwhaDO4HZW761xXJG, Challenge: (lambda (x_9937) (if0 (plus (not x_9937) (xor x_9937 1)) x_9937 1)), Size: 10, Operators: if0,not,plus,xor

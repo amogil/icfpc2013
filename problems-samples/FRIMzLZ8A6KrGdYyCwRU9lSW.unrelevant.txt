@@ -1,0 +1,1 @@
+Id: 6eQji1AqvTW1A1IozDwqs1gG, Challenge: (lambda (x_9674) (if0 (and (or (shl1 1) x_9674) 1) 1 0)), Size: 10, Operators: and,if0,or,shl1

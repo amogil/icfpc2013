@@ -1,0 +1,1 @@
+Id: Bezal3GflwJaxd98wmL9F2Gp, Challenge: (lambda (x_9284) (if0 (and (xor (not 1) x_9284) x_9284) x_9284 1)), Size: 10, Operators: and,if0,not,xor

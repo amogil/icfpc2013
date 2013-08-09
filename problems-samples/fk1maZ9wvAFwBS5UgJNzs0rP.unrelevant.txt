@@ -1,0 +1,1 @@
+Id: EA2POBmcKFgghT3B8uWKhn26, Challenge: (lambda (x_59797) (fold (plus (shr16 (shr16 (shr16 0))) (xor (if0 (xor (or 0 x_59797) (shr16 x_59797)) x_59797 0) 1)) x_59797 (lambda (x_59798 x_59799) (shr1 (xor x_59798 x_59799))))), Size: 24, Operators: fold,if0,or,plus,shr1,shr16,xor

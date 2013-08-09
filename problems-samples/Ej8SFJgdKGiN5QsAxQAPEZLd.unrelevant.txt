@@ -1,0 +1,1 @@
+Id: PuKPN8TT44n8P8dP0j0fCHpU, Challenge: (lambda (x_61713) (fold x_61713 0 (lambda (x_61713 x_61714) (if0 (shr16 (not (shl1 (or (plus (plus x_61714 (plus (and (plus (shr4 (shl1 x_61713)) x_61714) x_61713) x_61714)) 0) 1)))) x_61713 x_61713)))), Size: 26, Operators: and,if0,not,or,plus,shl1,shr16,shr4,tfold

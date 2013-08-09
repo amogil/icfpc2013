@@ -1,0 +1,1 @@
+Id: BsgsvA6ohaBmhIO33sG6iDVK, Challenge: (lambda (x_39851) (xor (shl1 (and (shr1 (plus (shr4 (if0 x_39851 (and (shr16 (xor (if0 (shl1 (plus (shl1 x_39851) 1)) x_39851 1) x_39851)) x_39851) x_39851)) x_39851)) x_39851)) x_39851)), Size: 26, Operators: and,if0,plus,shl1,shr1,shr16,shr4,xor

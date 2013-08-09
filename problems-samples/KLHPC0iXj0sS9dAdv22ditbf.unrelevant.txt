@@ -1,0 +1,1 @@
+Id: G9rwuQIhvwldgVhFX30R6aKk, Challenge: (lambda (x_7327) (fold x_7327 0 (lambda (x_7327 x_7328) (plus (or x_7327 x_7328) 1)))), Size: 10, Operators: or,plus,tfold

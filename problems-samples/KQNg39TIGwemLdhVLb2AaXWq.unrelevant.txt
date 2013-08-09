@@ -1,0 +1,1 @@
+Id: Jj5cAByhV3umrZedSBPoqW65, Challenge: (lambda (x_7815) (fold x_7815 0 (lambda (x_7815 x_7816) (plus (plus x_7816 x_7815) 0)))), Size: 10, Operators: plus,tfold

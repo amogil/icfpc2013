@@ -1,0 +1,1 @@
+Id: BmiLVyPMU3sOVHJ5gUMOpA2O, Challenge: (lambda (x_6281) (fold x_6281 0 (lambda (x_6281 x_6282) (xor (or 0 0) x_6281)))), Size: 10, Operators: or,tfold,xor

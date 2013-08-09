@@ -1,0 +1,1 @@
+Id: EX5H6B71RlABBIllllz4nxne, Challenge: (lambda (x_8296) (if0 (and x_8296 (shl1 0)) (not x_8296) 0)), Size: 9, Operators: and,if0,not,shl1

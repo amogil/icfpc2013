@@ -1,0 +1,1 @@
+Id: dm37KLIr7cbaeiemKxmbBreZ, Challenge: (lambda (x_10189) (fold x_10189 0 (lambda (x_10189 x_10190) (plus (xor x_10189 x_10190) (shr1 0))))), Size: 11, Operators: plus,shr1,tfold,xor

@@ -1,0 +1,1 @@
+Id: BkUexruI1N163vDh3Xdbwvpj, Challenge: (lambda (x_10300) (if0 (and (plus (shl1 1) 0) x_10300) x_10300 0)), Size: 10, Operators: and,if0,plus,shl1

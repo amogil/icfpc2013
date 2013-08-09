@@ -1,0 +1,1 @@
+Id: k2EQKpWuIw7cfYUuhqRTAfTm, Challenge: (lambda (x_41397) (fold x_41397 0 (lambda (x_41397 x_41398) (if0 (shl1 x_41398) (and (shl1 (if0 (plus (shr16 x_41398) (plus x_41398 1)) x_41397 x_41397)) x_41397) x_41397)))), Size: 21, Operators: and,if0,plus,shl1,shr16,tfold

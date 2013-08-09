@@ -1,0 +1,1 @@
+Id: aF6JyIpcXm1OCTNU5mXi2v3Y, Challenge: (lambda (x_9205) (if0 (and (xor 1 x_9205) 1) 0 x_9205)), Size: 9, Operators: and,if0,xor
