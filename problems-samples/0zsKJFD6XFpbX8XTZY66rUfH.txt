@@ -1,0 +1,2 @@
+Id: bjsoUA6OLx0NKG6T8ky4sHzj, Challenge: (lambda (x_5283) (fold x_5283 0 (lambda (x_5283 x_5284) (shr4 (or x_5283 x_5283))))), Size: 9, Operators: or,shr4,tfold
+Id: jVzJVtokblWbJsvXLvE2pZPu, Challenge: (lambda (x_3589) (fold x_3589 0 (lambda (x_3589 x_3590) (or x_3589 (shr4 x_3589))))), Size: 9, Operators: or,shr4,tfold

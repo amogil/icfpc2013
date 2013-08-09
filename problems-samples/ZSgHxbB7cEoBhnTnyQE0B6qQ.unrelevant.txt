@@ -1,0 +1,2 @@
+Id: 09aLUS7rzkcaHjeQXK2UoH7m, Challenge: (lambda (x_34226) (fold (or (plus (not (shr16 x_34226)) x_34226) x_34226) 1 (lambda (x_34227 x_34228) (or (not x_34228) x_34227)))), Size: 15, Operators: fold,not,or,plus,shr16
+Id: pLotx8BgkKbhjh884BRsjBlX, Challenge: (lambda (x_32288) (fold (or (not (shl1 1)) (not (shr16 x_32288))) 0 (lambda (x_32289 x_32290) (if0 x_32290 x_32289 x_32290)))), Size: 15, Operators: fold,if0,not,or,shl1,shr16

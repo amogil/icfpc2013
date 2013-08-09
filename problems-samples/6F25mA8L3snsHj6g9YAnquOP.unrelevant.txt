@@ -1,0 +1,1 @@
+Id: DqmmiV6FmhPClUr3vO9fFF5r, Challenge: (lambda (x_39938) (fold (if0 (plus (not (xor x_39938 x_39938)) x_39938) x_39938 x_39938) 1 (lambda (x_39939 x_39940) (if0 x_39939 x_39940 x_39939)))), Size: 17, Operators: fold,if0,not,plus,xor

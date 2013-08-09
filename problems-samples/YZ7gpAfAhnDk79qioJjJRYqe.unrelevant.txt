@@ -1,2 +1,4 @@
 Id: qkfggTK337rnGyxCAQCTqkOp, Challenge: (lambda (x_5812) (fold (plus x_5812 0) 1 (lambda (x_5813 x_5814) (or (shr16 x_5814) x_5813)))), Size: 11, Operators: fold,or,plus,shr16
 Id: YmukRhd523BbBzHHFCUPNOc0, Challenge: (lambda (x_11320) (fold x_11320 (not (shr16 x_11320)) (lambda (x_11321 x_11322) (xor (shl1 x_11322) x_11321)))), Size: 11, Operators: fold,not,shl1,shr16,xor
+Id: JWVpznfEElyzXcyJB6DGNfDb, Challenge: (lambda (x_11894) (fold x_11894 (shr4 (shr1 x_11894)) (lambda (x_11895 x_11896) (or (not x_11896) x_11895)))), Size: 11, Operators: fold,not,or,shr1,shr4
+Id: Gm2uQG1WuHnrBD7uyOBveJ3B, Challenge: (lambda (x_819) (fold (or 0 x_819) 1 (lambda (x_820 x_821) (xor (shr1 x_821) x_820)))), Size: 11, Operators: fold,or,shr1,xor

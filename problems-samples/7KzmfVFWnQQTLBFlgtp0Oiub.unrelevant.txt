@@ -1,0 +1,1 @@
+Id: rGES5ky8Mwcvo61wZ4P5Nb4f, Challenge: (lambda (x_58805) (fold x_58805 0 (lambda (x_58805 x_58806) (xor (shl1 (shr16 (not (shr1 1)))) (if0 x_58806 (plus (if0 (plus (shr16 (plus x_58805 0)) 0) x_58806 0) x_58805) x_58806))))), Size: 25, Operators: if0,not,plus,shl1,shr1,shr16,tfold,xor

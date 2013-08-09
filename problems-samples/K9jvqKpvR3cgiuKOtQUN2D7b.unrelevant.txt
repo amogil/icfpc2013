@@ -1,0 +1,1 @@
+Id: RyEB8jfmuYAMPEnAJ6SEFHz9, Challenge: (lambda (x_32980) (xor 0 (or (shr4 (shr1 (plus (or x_32980 1) x_32980))) (shr16 (plus (if0 (and (plus (shr4 1) 1) x_32980) x_32980 x_32980) 0))))), Size: 23, Operators: and,if0,or,plus,shr1,shr16,shr4,xor

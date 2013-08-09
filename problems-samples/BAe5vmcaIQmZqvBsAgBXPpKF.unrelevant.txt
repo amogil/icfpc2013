@@ -1,0 +1,2 @@
+Id: 5vjspjLFG2eqzswJuglPExOh, Challenge: (lambda (x_34772) (fold (if0 (shr1 (plus (shr1 x_34772) x_34772)) x_34772 x_34772) x_34772 (lambda (x_34773 x_34774) (plus (shr1 x_34773) x_34774)))), Size: 16, Operators: fold,if0,plus,shr1
+Id: 7qHWhcqMDfKP6vrUf7KfFQ0F, Challenge: (lambda (x_37533) (fold (if0 (shr16 (xor (shl1 x_37533) x_37533)) 0 x_37533) x_37533 (lambda (x_37534 x_37535) (if0 x_37535 x_37534 x_37534)))), Size: 16, Operators: fold,if0,shl1,shr16,xor

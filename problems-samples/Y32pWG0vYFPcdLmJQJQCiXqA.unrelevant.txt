@@ -1,0 +1,1 @@
+Id: Bt6ogf3mCMWjWYlTsABWOqR0, Challenge: (lambda (x_20917) (or (plus (xor (if0 (or (plus (shl1 x_20917) 1) x_20917) x_20917 x_20917) x_20917) 1) x_20917)), Size: 16, Operators: if0,or,plus,shl1,xor

@@ -1,1 +1,2 @@
 Id: KJtqDHa4Oysks6IazaIb3Qsq, Challenge: (lambda (x_10927) (fold x_10927 0 (lambda (x_10927 x_10928) (xor (plus x_10927 1) (shr4 x_10928))))), Size: 11, Operators: plus,shr4,tfold,xor
+Id: SL1ORxNUQSDoBGp45SE2QBBI, Challenge: (lambda (x_9839) (fold x_9839 0 (lambda (x_9839 x_9840) (plus (shr4 (xor x_9839 1)) 0)))), Size: 11, Operators: plus,shr4,tfold,xor

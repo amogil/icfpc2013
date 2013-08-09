@@ -1,0 +1,1 @@
+Id: RCADsBw03L1Rgs1b8T39Kox6, Challenge: (lambda (x_18131) (and (shr16 (xor (if0 (xor (xor (shl1 x_18131) x_18131) 1) 0 0) x_18131)) x_18131)), Size: 15, Operators: and,if0,shl1,shr16,xor

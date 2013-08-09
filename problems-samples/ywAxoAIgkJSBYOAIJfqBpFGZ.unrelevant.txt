@@ -1,0 +1,1 @@
+Id: YGIU9u4YmY6bQBgAdgqbZY3j, Challenge: (lambda (x_38638) (fold (if0 (not (shr4 (not (shr4 x_38638)))) 0 x_38638) 0 (lambda (x_38639 x_38640) (if0 x_38640 x_38639 x_38640)))), Size: 16, Operators: fold,if0,not,shr4

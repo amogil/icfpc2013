@@ -1,0 +1,1 @@
+Id: k2JS8vehDyGqdq3ulF7BzOjO, Challenge: (lambda (x_21245) (fold x_21245 0 (lambda (x_21245 x_21246) (and (if0 (and (shl1 (plus 1 x_21245)) x_21245) x_21246 1) x_21245)))), Size: 16, Operators: and,if0,plus,shl1,tfold

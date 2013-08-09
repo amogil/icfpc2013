@@ -1,0 +1,1 @@
+Id: uSk1irBBvKWEuNMVAYsoPHAu, Challenge: (lambda (x_35143) (fold (if0 (xor (shl1 x_35143) 1) 1 x_35143) x_35143 (lambda (x_35144 x_35145) (xor (shl1 x_35145) x_35144)))), Size: 15, Operators: fold,if0,shl1,xor

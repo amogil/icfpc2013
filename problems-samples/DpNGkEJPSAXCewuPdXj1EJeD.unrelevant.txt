@@ -1,0 +1,1 @@
+Id: hvB57s9kBzphcjXYNxiD6KS9, Challenge: (lambda (x_18137) (or (shr16 (or (if0 (and (shr4 (xor 1 1)) x_18137) 1 1) x_18137)) 0)), Size: 15, Operators: and,if0,or,shr16,shr4,xor

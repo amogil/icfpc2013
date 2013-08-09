@@ -1,0 +1,1 @@
+Id: KV78Zo7rQ7WG0hzDVGSY9ABE, Challenge: (lambda (x_20222) (shr1 (xor (plus (shr16 (if0 (and (plus (shr16 0) x_20222) x_20222) 0 x_20222)) 1) x_20222))), Size: 16, Operators: and,if0,plus,shr1,shr16,xor

@@ -1,0 +1,1 @@
+Id: Skt5Z5b1acn6BqIaehM3Se5e, Challenge: (lambda (x_36143) (fold (if0 (and 1 (plus x_36143 0)) x_36143 0) x_36143 (lambda (x_36144 x_36145) (plus x_36144 (not x_36145))))), Size: 16, Operators: and,fold,if0,not,plus

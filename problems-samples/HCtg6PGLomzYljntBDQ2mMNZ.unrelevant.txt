@@ -1,0 +1,1 @@
+Id: Qbn5ZugwDn2x97W1sAGM8df2, Challenge: (lambda (x_54908) (fold (shr16 (plus (shr4 (if0 (plus (shr16 (and 0 (not 1))) x_54908) 0 x_54908)) 1)) x_54908 (lambda (x_54909 x_54910) (plus (shr1 x_54909) x_54910)))), Size: 22, Operators: and,fold,if0,not,plus,shr1,shr16,shr4

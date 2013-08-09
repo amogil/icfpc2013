@@ -1,0 +1,2 @@
+Id: ICiO0BRxl8s6GLz3casptVfK, Challenge: (lambda (x_17601) (not (or x_17601 (shl1 (shl1 (if0 (and (or (shr16 x_17601) x_17601) 0) x_17601 x_17601)))))), Size: 15, Operators: and,if0,not,or,shl1,shr16
+Id: mx1668MBP47UbEauZrC9txQs, Challenge: (lambda (x_18131) (and (shr16 (xor (if0 (xor (xor (shl1 x_18131) x_18131) 1) 0 0) x_18131)) x_18131)), Size: 15, Operators: and,if0,shl1,shr16,xor

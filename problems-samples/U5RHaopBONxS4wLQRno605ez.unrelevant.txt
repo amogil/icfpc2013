@@ -1,0 +1,1 @@
+Id: Nl1zS1aLU5Bpe2uAJT7zaSYs, Challenge: (lambda (x_37283) (fold (if0 (shl1 (shr16 (xor x_37283 0))) x_37283 x_37283) 0 (lambda (x_37284 x_37285) (xor (shr16 x_37285) x_37284)))), Size: 16, Operators: fold,if0,shl1,shr16,xor

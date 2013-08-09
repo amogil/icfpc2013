@@ -1,0 +1,1 @@
+Id: PzFaUIR302416AWndXVehbsU, Challenge: (lambda (x_47627) (fold x_47627 0 (lambda (x_47627 x_47628) (plus (and (if0 x_47628 (shr1 (if0 (and (shr16 (plus x_47628 x_47628)) 0) x_47628 x_47628)) x_47627) x_47628) x_47627)))), Size: 22, Operators: and,if0,plus,shr1,shr16,tfold

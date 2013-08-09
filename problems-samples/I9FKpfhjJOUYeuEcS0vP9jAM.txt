@@ -1,0 +1,1 @@
+Id: NZYmQrhpdMpOA92gjAv23vhZ, Challenge: (lambda (x_16135) (fold x_16135 0 (lambda (x_16135 x_16136) (if0 (plus (shr4 x_16135) x_16136) (or x_16135 0) 0)))), Size: 14, Operators: if0,or,plus,shr4,tfold

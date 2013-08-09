@@ -1,0 +1,1 @@
+Id: Fc1inu2BZ79iiZ8YuWyX7bKt, Challenge: (lambda (x_10029) (if0 (or (shr4 0) (and 1 x_10029)) x_10029 1)), Size: 10, Operators: and,if0,or,shr4

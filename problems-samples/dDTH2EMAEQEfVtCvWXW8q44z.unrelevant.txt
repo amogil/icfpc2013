@@ -1,0 +1,1 @@
+Id: LbRA7PjmmArIwy2FhKq0EBGE, Challenge: (lambda (x_33885) (fold (xor (plus (shr1 (shl1 x_33885)) x_33885) 1) 0 (lambda (x_33886 x_33887) (plus (shl1 x_33886) x_33887)))), Size: 15, Operators: fold,plus,shl1,shr1,xor

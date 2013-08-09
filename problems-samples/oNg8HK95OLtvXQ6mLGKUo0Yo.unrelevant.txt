@@ -1,0 +1,1 @@
+Id: TOqS571mBM7qXQ4hjwAtexii, Challenge: (lambda (x_23313) (fold x_23313 0 (lambda (x_23313 x_23314) (not (xor (if0 (or x_23314 (not x_23314)) (not 0) x_23313) x_23314))))), Size: 16, Operators: if0,not,or,tfold,xor

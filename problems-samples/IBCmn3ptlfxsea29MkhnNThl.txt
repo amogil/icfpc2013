@@ -1,1 +1,2 @@
 Id: bHoafTq43OzSmgadCHxP442C, Challenge: (lambda (x_1419) (not (shr4 x_1419))), Size: 4, Operators: not,shr4
+Id: KQvodRNafWtYITzZklM3rBn3, Challenge: (lambda (x_2366) (shr4 (not x_2366))), Size: 4, Operators: not,shr4

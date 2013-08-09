@@ -1,2 +1,3 @@
 Id: ZwUNBnxyHSSFPs4WgaM6ReAZ, Challenge: (lambda (x_2801) (fold x_2801 0 (lambda (x_2801 x_2802) (and 1 x_2801)))), Size: 8, Operators: and,tfold
 Id: uZVAd9AnatPBqEsr8VK1evFj, Challenge: (lambda (x_483) (fold x_483 0 (lambda (x_483 x_484) (plus x_483 0)))), Size: 8, Operators: plus,tfold
+Id: ealw4lutjTTbutBnR0gBcIAO, Challenge: (lambda (x_1289) (fold x_1289 0 (lambda (x_1289 x_1290) (not (not x_1289))))), Size: 8, Operators: not,tfold

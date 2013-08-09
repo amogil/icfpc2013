@@ -1,0 +1,1 @@
+Id: RZPAlVAt0TUpzX4XzZ6E3t7M, Challenge: (lambda (x_17770) (shl1 (plus (shl1 (xor (if0 (plus (or x_17770 x_17770) 0) 0 x_17770) 0)) 0))), Size: 15, Operators: if0,or,plus,shl1,xor

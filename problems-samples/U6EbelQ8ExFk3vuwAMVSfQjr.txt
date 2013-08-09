@@ -1,0 +1,1 @@
+Id: 64tjxylTDUbeTzbMc5RnaWFp, Challenge: (lambda (x_72250) (fold x_72250 (shr4 (or (plus (plus (xor 1 (if0 (shr16 (or (plus (and 1 0) x_72250) x_72250)) x_72250 x_72250)) 0) 1) 0)) (lambda (x_72251 x_72252) (xor (shl1 x_72251) x_72252)))), Size: 28, Operators: and,fold,if0,or,plus,shl1,shr16,shr4,xor

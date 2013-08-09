@@ -1,0 +1,1 @@
+Id: MZpMySCVc4lV76aqblP7b8lK, Challenge: (lambda (x_51698) (fold (shl1 (shr4 (shr16 (shr4 (if0 (and (and (shr4 1) x_51698) x_51698) x_51698 x_51698))))) x_51698 (lambda (x_51699 x_51700) (if0 x_51699 x_51700 x_51699)))), Size: 21, Operators: and,fold,if0,shl1,shr16,shr4

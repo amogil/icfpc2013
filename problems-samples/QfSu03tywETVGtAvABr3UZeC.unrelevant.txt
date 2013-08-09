@@ -2,3 +2,6 @@ Id: oZSmijr6ebpKaz5OaIOFQaGO, Challenge: (lambda (x_5016) (shl1 (xor (shl1 0) x_
 Id: lRBtDqhA5FbFI7shwT6g4Jhl, Challenge: (lambda (x_4696) (not (shr1 (shr4 (shr4 x_4696))))), Size: 6, Operators: not,shr1,shr4
 Id: FAivthQrbqcX4lLX81RPtGeE, Challenge: (lambda (x_4694) (and (plus 0 x_4694) 1)), Size: 6, Operators: and,plus
 Id: TBOT4QECAaOTlSsQ196ndpxg, Challenge: (lambda (x_4730) (and (and 1 1) x_4730)), Size: 6, Operators: and
+Id: Te9rWO3c9J9cll3FNHtBUtWK, Challenge: (lambda (x_4771) (shr4 (not (plus x_4771 1)))), Size: 6, Operators: not,plus,shr4
+Id: wn0nsNXBURgwjlvoBn41gwHh, Challenge: (lambda (x_5357) (and (shr4 (shr4 x_5357)) x_5357)), Size: 6, Operators: and,shr4
+Id: AnHCIMoN6eqQmmKJgeVZsXhT, Challenge: (lambda (x_4946) (shl1 (if0 x_4946 0 x_4946))), Size: 6, Operators: if0,shl1

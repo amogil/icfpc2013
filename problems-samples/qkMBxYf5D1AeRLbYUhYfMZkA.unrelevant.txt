@@ -1,0 +1,1 @@
+Id: vFb6bJMj6LVzXApr6pXWr3D8, Challenge: (lambda (x_18147) (plus (or (plus (if0 (or (and 1 x_18147) x_18147) x_18147 0) 0) x_18147) 1)), Size: 15, Operators: and,if0,or,plus

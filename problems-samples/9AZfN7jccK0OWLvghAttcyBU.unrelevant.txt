@@ -4,3 +4,6 @@ Id: TUv1HjA10pfuOep5jlGKfMPD, Challenge: (lambda (x_1650) (shr4 (shr1 x_1650))),
 Id: WOQRO4BAl1tQe4bMfUbAHbA5, Challenge: (lambda (x_1796) (xor 1 x_1796)), Size: 4, Operators: xor
 Id: UnXUvsa7oxbZ3UN6WBPziTnp, Challenge: (lambda (x_2497) (shr16 (shr1 x_2497))), Size: 4, Operators: shr1,shr16
 Id: 1iHsb9yQInjtYeeJEEs6mRi8, Challenge: (lambda (x_2707) (shr4 (shr4 x_2707))), Size: 4, Operators: shr4
+Id: j4aOc6Ocvh9m5J48uA5tLdrU, Challenge: (lambda (x_1529) (shr16 (shr16 x_1529))), Size: 4, Operators: shr16
+Id: E5WVuuOobxpLiquKxoieFri4, Challenge: (lambda (x_1748) (xor 1 x_1748)), Size: 4, Operators: xor
+Id: UA8cRNhaC5VRV6XQi8SDVTxB, Challenge: (lambda (x_2269) (shl1 (shr16 x_2269))), Size: 4, Operators: shl1,shr16

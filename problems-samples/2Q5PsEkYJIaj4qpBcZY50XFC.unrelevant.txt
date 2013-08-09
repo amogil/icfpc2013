@@ -1,0 +1,1 @@
+Id: Sbzx7cW2gAHZ4a60ghJAGHlG, Challenge: (lambda (x_42887) (fold x_42887 0 (lambda (x_42887 x_42888) (xor (and (shl1 (plus (if0 (xor (plus x_42887 (shl1 x_42887)) 0) x_42888 0) x_42887)) 1) x_42887)))), Size: 21, Operators: and,if0,plus,shl1,tfold,xor

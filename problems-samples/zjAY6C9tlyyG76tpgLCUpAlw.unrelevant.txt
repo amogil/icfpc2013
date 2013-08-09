@@ -1,0 +1,2 @@
+Id: MBOs9oYEjHPGRPYqKzcmhlzn, Challenge: (lambda (x_21077) (fold x_21077 0 (lambda (x_21077 x_21078) (xor (if0 (and (or x_21078 (shr1 x_21077)) x_21078) 1 0) x_21077)))), Size: 16, Operators: and,if0,or,shr1,tfold,xor
+Id: mwbQcOdjeBfp26ivYN3BsBCq, Challenge: (lambda (x_22703) (fold x_22703 0 (lambda (x_22703 x_22704) (xor (if0 (or (and x_22703 (shr16 x_22704)) x_22703) 0 x_22703) 1)))), Size: 16, Operators: and,if0,or,shr16,tfold,xor

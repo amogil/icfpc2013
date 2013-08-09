@@ -1,0 +1,1 @@
+Id: yTdJPAPObQVYujy0qzhR8fAD, Challenge: (lambda (x_35240) (fold (and (plus (or 1 x_35240) 1) x_35240) x_35240 (lambda (x_35241 x_35242) (if0 x_35241 x_35241 x_35242)))), Size: 15, Operators: and,fold,if0,or,plus

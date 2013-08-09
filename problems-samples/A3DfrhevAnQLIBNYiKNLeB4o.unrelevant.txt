@@ -1,0 +1,1 @@
+Id: GhjuVokNXEqJo2yTfbzeeREl, Challenge: (lambda (x_49855) (fold x_49855 0 (lambda (x_49855 x_49856) (shl1 (or (shr1 (or x_49855 (shr4 (if0 (or (or (shr4 (and x_49856 1)) x_49855) 1) x_49856 0)))) x_49856))))), Size: 23, Operators: and,if0,or,shl1,shr1,shr4,tfold

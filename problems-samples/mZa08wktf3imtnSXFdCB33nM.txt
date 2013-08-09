@@ -1,0 +1,1 @@
+Id: OUCFWwb9UcyK32dpHVLLzQr0, Challenge: (lambda (x_4014) (and (shl1 x_4014) x_4014)), Size: 5, Operators: and,shl1

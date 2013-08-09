@@ -1,0 +1,1 @@
+Id: vivebrL5tEq5zI4ewK3dpJ2o, Challenge: (lambda (x_67055) (fold (shr1 (shr1 (shr4 (or (plus 0 (shl1 (xor (if0 (xor (plus x_67055 x_67055) 0) x_67055 1) 1))) x_67055)))) 0 (lambda (x_67056 x_67057) (if0 x_67056 x_67057 x_67056)))), Size: 26, Operators: fold,if0,or,plus,shl1,shr1,shr4,xor

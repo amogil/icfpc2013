@@ -1,0 +1,1 @@
+Id: w573BlLUYrholyhGThC16gyw, Challenge: (lambda (x_3996) (and (shr1 x_3996) x_3996)), Size: 5, Operators: and,shr1
