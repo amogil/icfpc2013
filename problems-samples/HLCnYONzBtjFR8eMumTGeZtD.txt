@@ -1,0 +1,1 @@
+Id: k5q0O6X67fyn5CpYvAMc5fT9, Challenge: (lambda (x_2760) (plus x_2760 x_2760)), Size: 4, Operators: plus

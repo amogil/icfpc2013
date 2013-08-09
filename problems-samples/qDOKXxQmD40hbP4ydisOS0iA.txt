@@ -1,0 +1,2 @@
+Id: 9xVR6VAvP9Tt3tbpf5Q55ers, Challenge: (lambda (x_2760) (plus x_2760 x_2760)), Size: 4, Operators: plus
+Id: eADKdoVg6K0kWDlyoAelY40M, Challenge: (lambda (x_2250) (plus 1 x_2250)), Size: 4, Operators: plus

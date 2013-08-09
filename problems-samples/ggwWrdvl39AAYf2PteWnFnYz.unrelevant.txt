@@ -1,0 +1,2 @@
+Id: pFs6u0clF8UxyO09MfzzOnoL, Challenge: (lambda (x_5007) (shr16 (shr1 (shr4 (shr1 x_5007))))), Size: 6, Operators: shr1,shr16,shr4
+Id: mXGAbuGKAzLcBoTUyu4aQWrr, Challenge: (lambda (x_4607) (shr16 (shl1 (not (shl1 x_4607))))), Size: 6, Operators: not,shl1,shr16

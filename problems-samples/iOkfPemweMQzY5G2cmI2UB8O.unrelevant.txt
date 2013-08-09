@@ -1,1 +1,3 @@
 Id: QMrmUby1f40IzbtwnwtE7B0P, Challenge: (lambda (x_4134) (plus x_4134 (shl1 x_4134))), Size: 5, Operators: plus,shl1
+Id: NoaLMaNlolFAmXF3JWhlrFQw, Challenge: (lambda (x_2945) (and (shl1 x_2945) x_2945)), Size: 5, Operators: and,shl1
+Id: 8ElGDw3m7R0EGz8R1OzwF1W3, Challenge: (lambda (x_3996) (and (shr1 x_3996) x_3996)), Size: 5, Operators: and,shr1

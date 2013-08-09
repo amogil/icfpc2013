@@ -1,0 +1,1 @@
+Id: EK2SM2fVEBnndt6Rh7InRVBM, Challenge: (lambda (x_36767) (fold x_36767 0 (lambda (x_36767 x_36768) (shr1 (xor (not (plus (if0 (or (xor x_36768 (not x_36768)) x_36767) x_36767 0) 1)) x_36767))))), Size: 20, Operators: if0,not,or,plus,shr1,tfold,xor

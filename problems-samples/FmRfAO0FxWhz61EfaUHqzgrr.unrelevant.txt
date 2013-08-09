@@ -1,0 +1,1 @@
+Id: aIEBmTXMMX1dgVi8Nh6GQeuo, Challenge: (lambda (x_28184) (plus (not (xor (if0 (or (xor (and (shr1 (shr4 (or x_28184 1))) x_28184) x_28184) x_28184) 1 0) x_28184)) 1)), Size: 20, Operators: and,if0,not,or,plus,shr1,shr4,xor

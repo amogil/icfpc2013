@@ -1,1 +1,5 @@
 Id: d72WNQ3jzQAzg9VA6bYu9LH9, Challenge: (lambda (x_1452) (plus 1 x_1452)), Size: 4, Operators: plus
+Id: VaL9a2K8sVqVw9DtXHjlLIBJ, Challenge: (lambda (x_1723) (not (shr16 x_1723))), Size: 4, Operators: not,shr16
+Id: JH7ZdGdm5XU3JgWUkxUf81xP, Challenge: (lambda (x_2147) (shl1 (shl1 x_2147))), Size: 4, Operators: shl1
+Id: idK0BMSgqkyePBo0OQrbuBiC, Challenge: (lambda (x_2003) (xor 1 x_2003)), Size: 4, Operators: xor
+Id: wrxWl6vA6VUBhoCCXFmLq4tK, Challenge: (lambda (x_2477) (shr4 (shr4 x_2477))), Size: 4, Operators: shr4

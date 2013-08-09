@@ -1,0 +1,1 @@
+Id: shcCFHIoMkWurmL3SKtxZqB3, Challenge: (lambda (x_30165) (fold (or (shl1 (or 0 x_30165)) 0) 1 (lambda (x_30166 x_30167) (shr1 (plus x_30167 x_30166))))), Size: 14, Operators: fold,or,plus,shl1,shr1

@@ -1,1 +1,2 @@
 Id: BuPESxdqn8DaTgdQXAXJoLfC, Challenge: (lambda (x_3195) (shl1 (xor x_3195 1))), Size: 5, Operators: shl1,xor
+Id: mUvApBgt1zLGurtdmwMshykj, Challenge: (lambda (x_2974) (shl1 (not (not x_2974)))), Size: 5, Operators: not,shl1

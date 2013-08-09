@@ -1,0 +1,1 @@
+Id: CH9LTB7kvbU6X93KAwT2Hr5c, Challenge: (lambda (x_42786) (fold (or (if0 (shr4 (shl1 (or x_42786 x_42786))) x_42786 x_42786) 0) x_42786 (lambda (x_42787 x_42788) (or x_42787 (shr4 x_42788))))), Size: 18, Operators: fold,if0,or,shl1,shr4

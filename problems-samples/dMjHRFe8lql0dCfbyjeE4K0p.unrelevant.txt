@@ -1,0 +1,1 @@
+Id: xY8aN4PAeeZfOeLsxhIAVZyE, Challenge: (lambda (x_29057) (fold (xor (shl1 (shr1 x_29057)) 0) (shr1 x_29057) (lambda (x_29058 x_29059) (xor (shr4 x_29058) x_29059)))), Size: 14, Operators: fold,shl1,shr1,shr4,xor

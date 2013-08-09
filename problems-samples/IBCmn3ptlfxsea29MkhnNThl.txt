@@ -1,0 +1,1 @@
+Id: bHoafTq43OzSmgadCHxP442C, Challenge: (lambda (x_1419) (not (shr4 x_1419))), Size: 4, Operators: not,shr4

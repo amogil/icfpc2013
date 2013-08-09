@@ -1,0 +1,1 @@
+Id: RDrbxwpCc7tbw7y0B3ajr8Xf, Challenge: (lambda (x_40535) (fold (if0 (xor (or (shl1 0) x_40535) 0) x_40535 x_40535) x_40535 (lambda (x_40536 x_40537) (if0 x_40536 x_40537 x_40536)))), Size: 17, Operators: fold,if0,or,shl1,xor

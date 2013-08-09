@@ -1,0 +1,1 @@
+Id: K1G3x27wuAlL40QAMlpJbdRX, Challenge: (lambda (x_5736) (or (not (xor 1 x_5736)) 1)), Size: 7, Operators: not,or,xor

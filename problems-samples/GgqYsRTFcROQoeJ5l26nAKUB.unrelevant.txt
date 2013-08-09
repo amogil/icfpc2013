@@ -1,0 +1,1 @@
+Id: KJj2NMrtGzJA6iIHBa30bkA4, Challenge: (lambda (x_23045) (fold x_23045 0 (lambda (x_23045 x_23046) (if0 (not (plus (plus (shr1 (shr1 x_23045)) x_23046) 0)) x_23046 x_23045)))), Size: 16, Operators: if0,not,plus,shr1,tfold

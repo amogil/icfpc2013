@@ -1,0 +1,1 @@
+Id: PvEw2qIwe7nEBL2vYhWApiuU, Challenge: (lambda (x_5872) (and (or 0 (shr16 x_5872)) x_5872)), Size: 7, Operators: and,or,shr16

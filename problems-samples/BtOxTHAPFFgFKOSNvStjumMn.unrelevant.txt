@@ -1,0 +1,1 @@
+Id: YLKpXAkAtsSokXYJ3eVEfjc3, Challenge: (lambda (x_45434) (fold (xor (if0 (plus (xor x_45434 0) x_45434) 0 1) 0) x_45434 (lambda (x_45435 x_45436) (plus (not x_45435) x_45436)))), Size: 18, Operators: fold,if0,not,plus,xor

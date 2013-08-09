@@ -1,0 +1,1 @@
+Id: m4XSxA31Jn1Nttq8ge1c8sSD, Challenge: (lambda (x_3706) (xor 1 (shr16 x_3706))), Size: 5, Operators: shr16,xor

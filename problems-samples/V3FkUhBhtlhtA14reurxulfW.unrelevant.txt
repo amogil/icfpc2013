@@ -1,0 +1,1 @@
+Id: AUbA6iaIemktVBAQ1U9jqDkH, Challenge: (lambda (x_5125) (or (shl1 x_5125) (shr4 x_5125))), Size: 6, Operators: or,shl1,shr4

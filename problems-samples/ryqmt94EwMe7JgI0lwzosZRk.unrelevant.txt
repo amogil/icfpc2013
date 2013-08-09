@@ -1,1 +1,4 @@
 Id: rPCcW9V7V6rVXiUXkhcMcSR8, Challenge: (lambda (x_2226) (xor 1 x_2226)), Size: 4, Operators: xor
+Id: yviywzcRWlgIIB05KJi9zEdu, Challenge: (lambda (x_2035) (or x_2035 1)), Size: 4, Operators: or
+Id: AlVbMVahzwgkWTXBvDx2BEyC, Challenge: (lambda (x_2076) (shr1 (shr4 x_2076))), Size: 4, Operators: shr1,shr4
+Id: jBvRrd5gq2QTOT2kcWt3r9Yh, Challenge: (lambda (x_2581) (shr1 (shr4 x_2581))), Size: 4, Operators: shr1,shr4

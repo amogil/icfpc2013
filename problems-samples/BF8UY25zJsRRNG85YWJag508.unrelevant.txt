@@ -1,0 +1,2 @@
+Id: bRzyxFotpSEL9PfEs1BINXis, Challenge: (lambda (x_4446) (shr16 (plus (shl1 x_4446) x_4446))), Size: 6, Operators: plus,shl1,shr16
+Id: XJh3GjlVb00NYlKx2GZ5OCeA, Challenge: (lambda (x_4444) (xor x_4444 (shr4 (not x_4444)))), Size: 6, Operators: not,shr4,xor

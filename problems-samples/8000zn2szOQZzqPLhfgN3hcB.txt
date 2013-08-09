@@ -1,0 +1,1 @@
+Id: CQ8jyFd6PxZQmGZmywgET15U, Challenge: (lambda (x_3511) (xor (shr1 x_3511) 1)), Size: 5, Operators: shr1,xor

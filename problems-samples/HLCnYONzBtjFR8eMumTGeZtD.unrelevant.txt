@@ -1,1 +1,4 @@
 Id: Xyx5C18wmWFRpOAdEXkVBhDt, Challenge: (lambda (x_2498) (xor x_2498 1)), Size: 4, Operators: xor
+Id: h4krFLdPNzxAHLX1hc1IivIA, Challenge: (lambda (x_2552) (or 1 x_2552)), Size: 4, Operators: or
+Id: bNp2ApwDGFWmdVR2Q8UNXoJN, Challenge: (lambda (x_2035) (or x_2035 1)), Size: 4, Operators: or
+Id: aRteAj4loGd8VBk5HKJUjEy7, Challenge: (lambda (x_2771) (shr16 (shl1 x_2771))), Size: 4, Operators: shl1,shr16

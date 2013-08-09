@@ -1,0 +1,2 @@
+Id: CPzB2OUWGZHAo504tK1iUkyz, Challenge: (lambda (x_5364) (shr16 (plus (shr4 x_5364) 0))), Size: 6, Operators: plus,shr16,shr4
+Id: LDGqf4BpdRXb6hBv65w7aa3b, Challenge: (lambda (x_4845) (and (plus x_4845 1) x_4845)), Size: 6, Operators: and,plus

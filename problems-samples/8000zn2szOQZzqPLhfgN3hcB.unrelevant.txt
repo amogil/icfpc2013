@@ -1,1 +1,4 @@
 Id: ux1SP8EQHfAohYKS9IAwkuJ6, Challenge: (lambda (x_3669) (shr1 (plus x_3669 x_3669))), Size: 5, Operators: plus,shr1
+Id: RFSXYz3oviacWdfaQ43FaAwE, Challenge: (lambda (x_3831) (shr1 (not (shr1 x_3831)))), Size: 5, Operators: not,shr1
+Id: yiJi4Z7tULYiomEnFHrCInHz, Challenge: (lambda (x_4067) (xor (not 1) x_4067)), Size: 5, Operators: not,xor
+Id: uXPybAw4fX0HeZ8JUD9JJu9Q, Challenge: (lambda (x_3721) (shr1 (and x_3721 x_3721))), Size: 5, Operators: and,shr1

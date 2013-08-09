@@ -1,0 +1,1 @@
+Id: DGTd9jUlIt709yyiRwcFySZG, Challenge: (lambda (x_3605) (shr16 (and x_3605 x_3605))), Size: 5, Operators: and,shr16
