@@ -12,7 +12,7 @@ namespace ProblemsMiner
                 return;
             }
             var problemsMiner = new ProblemsMiner(args[0], args[1]);
-            problemsMiner.DownloadProblemsSamples();
+            problemsMiner.DownloadProblemsSamples(Int32.MaxValue);
         }
 
         private static void PrintUsage()
