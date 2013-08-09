@@ -4,6 +4,7 @@ using NUnit.Framework;
 namespace lib.Web
 {
 	[TestFixture]
+	[Explicit]
 	public class WebApi_Test
 	{
 		[TestCase(3)]

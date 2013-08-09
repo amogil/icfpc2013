@@ -152,6 +152,7 @@ namespace ProblemsMiner
 	public class ProblemsMiner_Test
 	{
 		[Test]
+		[Explicit]
 		public void DownloadTrainsProblemsTest()
 		{
 			HashSet<Int64> arguments = new HashSet<Int64>();
