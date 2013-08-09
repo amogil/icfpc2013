@@ -1,9 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace lib.Lang
 {
 	public class Binary : Expr
 	{
+		public static Dictionary<string, Func<Expr, Expr, Expr>> BinaryOperators = new Dictionary<string, Func<Expr, Expr, Expr>>();
+		static Binary()
+		{
+			Action<string, Func<Int64, Int64, Int64>> add = (name, f) => BinaryOperators.Add(name, (left, right) => new Binary(name, left, right, f));
+			add("and",(a,b) => a&b);
+			add("or", (a, b) => a|b);
+			add("xor", (a, b) => a^b);
+			add("plus", (a, b) => a + b);
+		}
+
 		public string Name { get; set; }
 		public Expr A { get; set; }
 		public Expr B { get; set; }
