@@ -33,7 +33,7 @@ namespace lib.Lang
             Unify(x.Start);
             Unify(x.Collection);
 
-            // Creating new cotext
+            // Creating new context
             var replacesCopy = new Dictionary<string, string>(replaces);
 
             replaces[x.ItemName] = "i"; // NextId();
@@ -111,15 +111,5 @@ namespace lib.Lang
                 throw new Exception("Unknown operation in unifying");                
             }
         }
-
-
-        [Test]
-        [TestCase("(fold x_27005 0 (lambda (x_27005 x_27006) (shr1 (if0 x_27005 (if0 (plus (shl1 (shr1 0)) x_27005) x_27005 x_27006) x_27005))))",
-            "(fold x_27005 0 (lambda (x_27005 x_27006) (shr1 (if0 x_27005 (if0 (plus (shl1 (shr1 0)) x_27005) x_27005 x_27006) x_27005))))")]
-        public void Unify_Test(string expected, string got)
-        {
-            Assert.AreEqual(Expr.ParseExpr(expected).ToSExpr(), Expr.ParseExpr(got).GetUnified().ToSExpr());            
-        }
-
     }
 }
