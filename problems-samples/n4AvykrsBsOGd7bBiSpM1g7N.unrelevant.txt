@@ -1,0 +1,1 @@
+Id: crjIsPURtuvPIPAUtOATKyEU, Challenge: (lambda (x_36728) (or (shl1 x_36728) (or x_36728 (not (shr1 (not (or (xor (shr1 x_36728) (shr16 (shr16 (if0 (plus (shr16 (shr4 (shr4 1))) x_36728) 0 0)))) 1))))))), Size: 25, Operators: if0,not,or,plus,shl1,shr1,shr16,shr4,xor

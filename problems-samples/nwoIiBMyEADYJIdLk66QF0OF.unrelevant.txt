@@ -1,0 +1,1 @@
+Id: dyluMGAjgIXkrbyBAt1JDBrr, Challenge: (lambda (x_85727) (fold x_85727 0 (lambda (x_85727 x_85728) (xor (or (plus (or (shl1 (or (plus (shl1 (not 1)) x_85727) 0)) x_85728) (plus (if0 (shr4 (shr16 x_85728)) (plus x_85727 0) x_85727) x_85727)) x_85727) x_85728)))), Size: 30, Operators: if0,not,or,plus,shl1,shr16,shr4,tfold,xor

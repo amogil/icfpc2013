@@ -1,0 +1,1 @@
+Id: foQLn5ZLvS9C8aqRC9jAc7LY, Challenge: (lambda (x_31796) (plus (shr16 (shr16 (shr16 x_31796))) (and (if0 (xor (or (or (shr16 (shr16 (or x_31796 x_31796))) x_31796) x_31796) 1) 0 1) x_31796))), Size: 22, Operators: and,if0,or,plus,shr16,xor

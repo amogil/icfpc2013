@@ -1,0 +1,1 @@
+Id: kyBgcCdq7AwNH1RO0OPIPcxX, Challenge: (lambda (x_22597) (fold x_22597 0 (lambda (x_22597 x_22598) (shr1 (xor (if0 (not (not (shl1 (shl1 x_22598)))) x_22597 x_22598) 1))))), Size: 16, Operators: if0,not,shl1,shr1,tfold,xor

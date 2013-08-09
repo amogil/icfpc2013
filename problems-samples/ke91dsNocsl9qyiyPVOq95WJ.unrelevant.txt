@@ -1,3 +1,4 @@
 Id: W4kgvCSiSdP6gSvMbKXLDPnE, Challenge: (lambda (x_3430) (or (not 1) x_3430)), Size: 5, Operators: not,or
 Id: I9eQNwXrgwplAaYrIWpiCHw3, Challenge: (lambda (x_3740) (or 1 (shl1 x_3740))), Size: 5, Operators: or,shl1
 Id: qc8fgcpSlVm42X3BIRmJIn9I, Challenge: (lambda (x_3626) (not (or 0 x_3626))), Size: 5, Operators: not,or
+Id: eXlCnyqrwwlZUP6OoGJhmcpA, Challenge: (lambda (x_3172) (plus (shr1 x_3172) 0)), Size: 5, Operators: plus,shr1

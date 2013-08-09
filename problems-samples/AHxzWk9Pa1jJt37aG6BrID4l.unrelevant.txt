@@ -1,1 +1,2 @@
 Id: BekW77OAQTYsxYJ1hmUgTzQr, Challenge: (lambda (x_5414) (or (plus (shr1 x_5414) x_5414) x_5414)), Size: 7, Operators: or,plus,shr1
+Id: 6xgAbrGrzlXAn9NliZ5qB8d0, Challenge: (lambda (x_5895) (or (plus (shr16 x_5895) 1) 1)), Size: 7, Operators: or,plus,shr16

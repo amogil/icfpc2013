@@ -1,0 +1,1 @@
+Id: 81r5cP8Po96N83dt1G77eR0B, Challenge: (lambda (x_27005) (fold x_27005 0 (lambda (x_27005 x_27006) (shr1 (if0 x_27005 (if0 (plus (shl1 (shr1 0)) x_27005) x_27005 x_27006) x_27005))))), Size: 17, Operators: if0,plus,shl1,shr1,tfold

@@ -1,0 +1,1 @@
+Id: jsLRmF3hw1dnpvZh9UtCAJL0, Challenge: (lambda (x_5535) (or (shr16 (shr1 (shr16 x_5535))) x_5535)), Size: 7, Operators: or,shr1,shr16

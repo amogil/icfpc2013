@@ -1,0 +1,1 @@
+Id: hpmkfzbbm1Ax7BW6WRt78Xcg, Challenge: (lambda (x_21181) (shr4 (plus (shr4 (not (plus (if0 (plus (plus 1 0) x_21181) (shr4 0) 0) x_21181))) x_21181))), Size: 17, Operators: if0,not,plus,shr4

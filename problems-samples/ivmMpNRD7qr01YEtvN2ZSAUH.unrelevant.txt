@@ -1,0 +1,1 @@
+Id: Du2KWKBQ7WDYPlvqduJrmB7l, Challenge: (lambda (x_40797) (fold (if0 (or (shr1 (shr16 (shl1 0))) x_40797) 0 x_40797) 1 (lambda (x_40798 x_40799) (if0 x_40798 x_40799 x_40798)))), Size: 17, Operators: fold,if0,or,shl1,shr1,shr16

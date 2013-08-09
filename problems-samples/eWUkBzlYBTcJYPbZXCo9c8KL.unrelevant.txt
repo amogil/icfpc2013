@@ -1,0 +1,1 @@
+Id: F2YnHSQbjX58LYddTL4Q5IJ5, Challenge: (lambda (x_6617) (plus (shr1 (or x_6617 x_6617)) 1)), Size: 7, Operators: or,plus,shr1

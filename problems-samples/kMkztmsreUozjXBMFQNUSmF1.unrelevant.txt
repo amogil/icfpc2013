@@ -1,0 +1,1 @@
+Id: NyNTv84KVCkKADEeeGGWX2re, Challenge: (lambda (x_23727) (fold x_23727 0 (lambda (x_23727 x_23728) (plus (if0 (plus (and (shr4 0) 1) x_23728) 1 x_23727) x_23728)))), Size: 16, Operators: and,if0,plus,shr4,tfold

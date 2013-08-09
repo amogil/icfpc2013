@@ -1,0 +1,1 @@
+Id: KDBMt1AQLwps9BV05ehIBE09, Challenge: (lambda (x_6238) (plus (xor (shl1 x_6238) 1) 1)), Size: 7, Operators: plus,shl1,xor

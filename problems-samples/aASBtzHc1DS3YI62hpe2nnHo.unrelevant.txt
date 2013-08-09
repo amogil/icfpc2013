@@ -1,0 +1,1 @@
+Id: ArB9yF2FloBsZlJZL8mLMhzT, Challenge: (lambda (x_33558) (not (and (and (if0 (xor (xor (not (and (plus (xor (or x_33558 x_33558) 1) x_33558) x_33558)) 1) x_33558) x_33558 x_33558) x_33558) x_33558))), Size: 23, Operators: and,if0,not,or,plus,xor

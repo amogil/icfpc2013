@@ -1,0 +1,1 @@
+Id: VEnvzPrU7v2P7RIB4V7yO5W5, Challenge: (lambda (x_19971) (shr16 (or (shr4 x_19971) (if0 (shr4 (and (and (shr4 (shr4 0)) x_19971) 0)) 0 0)))), Size: 16, Operators: and,if0,or,shr16,shr4

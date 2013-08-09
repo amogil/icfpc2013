@@ -1,0 +1,1 @@
+Id: 3FvbH32yulyTenHSWskBNiUs, Challenge: (lambda (x_5962) (if0 (and x_5962 1) x_5962 0)), Size: 7, Operators: and,if0

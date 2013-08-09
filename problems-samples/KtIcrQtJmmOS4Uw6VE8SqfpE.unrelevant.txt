@@ -1,0 +1,1 @@
+Id: TkHBsImYkIoaEy2Uqzbpd3SU, Challenge: (lambda (x_21297) (fold x_21297 0 (lambda (x_21297 x_21298) (if0 x_21298 (if0 (shr16 (or x_21297 (shr4 x_21298))) 1 1) x_21297)))), Size: 16, Operators: if0,or,shr16,shr4,tfold

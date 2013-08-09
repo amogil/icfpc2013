@@ -1,1 +1,2 @@
 Id: S9OePP3ifaqM0fxaeXiSYAaZ, Challenge: (lambda (x_5894) (plus (shr16 (plus x_5894 x_5894)) 1)), Size: 7, Operators: plus,shr16
+Id: CNlD6Tq1KYTAb5MtJXGfFDcw, Challenge: (lambda (x_5926) (and (xor (shr16 1) x_5926) 1)), Size: 7, Operators: and,shr16,xor

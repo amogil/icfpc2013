@@ -1,0 +1,1 @@
+Id: J5BSy3AbR4Rgn0PXlU33k3Cu, Challenge: (lambda (x_6024) (plus (shl1 (not (shr4 1))) x_6024)), Size: 7, Operators: not,plus,shl1,shr4
