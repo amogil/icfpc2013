@@ -1,0 +1,1 @@
+Id: u2D2vpWMXvmUGGDYX0Mba80n, Challenge: (lambda (x_2448) (shr4 (shl1 x_2448))), Size: 4, Operators: shl1,shr4

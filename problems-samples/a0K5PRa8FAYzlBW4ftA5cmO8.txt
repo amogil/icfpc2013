@@ -1,0 +1,1 @@
+Id: 1dkf5aPRG6I1hc7SmvwKBAA8, Challenge: (lambda (x_3377) (not (and x_3377 x_3377))), Size: 5, Operators: and,not

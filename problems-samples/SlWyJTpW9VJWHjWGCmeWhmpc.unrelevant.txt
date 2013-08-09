@@ -1,0 +1,1 @@
+Id: BuPESxdqn8DaTgdQXAXJoLfC, Challenge: (lambda (x_3195) (shl1 (xor x_3195 1))), Size: 5, Operators: shl1,xor

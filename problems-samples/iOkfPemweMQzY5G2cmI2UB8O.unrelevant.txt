@@ -1,0 +1,1 @@
+Id: QMrmUby1f40IzbtwnwtE7B0P, Challenge: (lambda (x_4134) (plus x_4134 (shl1 x_4134))), Size: 5, Operators: plus,shl1

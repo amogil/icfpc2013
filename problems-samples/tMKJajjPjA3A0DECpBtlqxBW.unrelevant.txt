@@ -1,0 +1,1 @@
+Id: w8BIgGdcqxhZ5gtiKnwMOj2z, Challenge: (lambda (x_3590) (shr1 (not (shr16 x_3590)))), Size: 5, Operators: not,shr1,shr16

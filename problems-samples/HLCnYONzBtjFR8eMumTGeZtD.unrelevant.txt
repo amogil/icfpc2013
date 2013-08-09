@@ -1,0 +1,1 @@
+Id: Xyx5C18wmWFRpOAdEXkVBhDt, Challenge: (lambda (x_2498) (xor x_2498 1)), Size: 4, Operators: xor

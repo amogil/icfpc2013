@@ -1,0 +1,1 @@
+Id: 3FaBbfWAz04yZepFGBbDsWUj, Challenge: (lambda (x_2774) (shr1 (shr1 x_2774))), Size: 4, Operators: shr1

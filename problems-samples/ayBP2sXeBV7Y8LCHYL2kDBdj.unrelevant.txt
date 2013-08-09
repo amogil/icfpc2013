@@ -1,0 +1,2 @@
+Id: oS5lQ8PtHcAOnkaHVjGhE59V, Challenge: (lambda (x_1840) (and x_1840 1)), Size: 4, Operators: and
+Id: Xan7OieJifjklJsGTN4ALyYk, Challenge: (lambda (x_2477) (xor x_2477 1)), Size: 4, Operators: xor

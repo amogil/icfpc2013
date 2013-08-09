@@ -1,0 +1,1 @@
+Id: ux1SP8EQHfAohYKS9IAwkuJ6, Challenge: (lambda (x_3669) (shr1 (plus x_3669 x_3669))), Size: 5, Operators: plus,shr1

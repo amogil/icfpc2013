@@ -1,0 +1,1 @@
+Id: XADPuuAJLI28LDtlEpWAi0bk, Challenge: (lambda (x_1800) (and 1 x_1800)), Size: 4, Operators: and

@@ -1,0 +1,1 @@
+Id: mlU5H4ZILNcCJmfgzeiKLKCB, Challenge: (lambda (x_2581) (shr1 (shr4 x_2581))), Size: 4, Operators: shr1,shr4

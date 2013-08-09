@@ -1,0 +1,1 @@
+Id: FXXynpAWiV763gJToiDPlNDy, Challenge: (lambda (x_3183) (not (shr16 (shr1 x_3183)))), Size: 5, Operators: not,shr1,shr16

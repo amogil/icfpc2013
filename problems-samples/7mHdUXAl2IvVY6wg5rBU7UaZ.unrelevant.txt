@@ -1,0 +1,2 @@
+Id: ooRx9f3a6r7uabvosh1du9VX, Challenge: (lambda (x_2477) (shr4 (shr4 x_2477))), Size: 4, Operators: shr4
+Id: wUPAckUBcXRAKEnjn1Wuvu2T, Challenge: (lambda (x_2569) (or x_2569 1)), Size: 4, Operators: or

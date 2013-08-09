@@ -1,0 +1,1 @@
+Id: EHxQdeBrS8hSVkQhuP1OWAku, Challenge: (lambda (x_2536) (shl1 (shr16 x_2536))), Size: 4, Operators: shl1,shr16

@@ -1,0 +1,1 @@
+Id: rPCcW9V7V6rVXiUXkhcMcSR8, Challenge: (lambda (x_2226) (xor 1 x_2226)), Size: 4, Operators: xor

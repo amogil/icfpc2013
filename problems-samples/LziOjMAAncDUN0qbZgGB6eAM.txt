@@ -1,0 +1,1 @@
+Id: KyAuY8lfAi9Ay17fuowOsG6P, Challenge: (lambda (x_3810) (not (plus 0 x_3810))), Size: 5, Operators: not,plus

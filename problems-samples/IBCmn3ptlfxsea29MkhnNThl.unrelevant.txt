@@ -1,0 +1,1 @@
+Id: fBZeJEEEitqFBBIQhDqjdBkh, Challenge: (lambda (x_1459) (shr16 (shr4 x_1459))), Size: 4, Operators: shr16,shr4

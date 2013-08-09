@@ -1,0 +1,1 @@
+Id: YXFAlDiqMsKAG7JyoPA1IUpL, Challenge: (lambda (x_4841) (plus (shl1 x_4841) (shr16 x_4841))), Size: 6, Operators: plus,shl1,shr16

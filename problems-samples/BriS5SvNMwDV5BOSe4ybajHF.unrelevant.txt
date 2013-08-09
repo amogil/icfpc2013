@@ -1,0 +1,1 @@
+Id: 3LOA8vBLTx8gcm4AQtBCAbhK, Challenge: (lambda (x_2718) (shr4 (shr16 x_2718))), Size: 4, Operators: shr16,shr4

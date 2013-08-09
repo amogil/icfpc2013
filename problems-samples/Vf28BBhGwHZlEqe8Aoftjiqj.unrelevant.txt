@@ -1,0 +1,1 @@
+Id: SBpZBL1HJHsjcRbCwVKhUDSH, Challenge: (lambda (x_1587) (shr16 (shr1 x_1587))), Size: 4, Operators: shr1,shr16

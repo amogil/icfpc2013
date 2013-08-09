@@ -1,0 +1,1 @@
+Id: W4kgvCSiSdP6gSvMbKXLDPnE, Challenge: (lambda (x_3430) (or (not 1) x_3430)), Size: 5, Operators: not,or

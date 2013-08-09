@@ -1,0 +1,1 @@
+Id: QyFFWzXiN8gA2by6T3lFxATp, Challenge: (lambda (x_3274) (and (shl1 x_3274) x_3274)), Size: 5, Operators: and,shl1

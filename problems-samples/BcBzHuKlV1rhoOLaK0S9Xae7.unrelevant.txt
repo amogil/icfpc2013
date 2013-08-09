@@ -1,0 +1,1 @@
+Id: RnaUkaa6u7yunR9ReD74uMWn, Challenge: (lambda (x_3783) (shl1 (xor x_3783 0))), Size: 5, Operators: shl1,xor

@@ -1,0 +1,2 @@
+Id: sMbITgLtqlaNLUyzInmAQuMA, Challenge: (lambda (x_2133) (and 1 x_2133)), Size: 4, Operators: and
+Id: GsHVWh8ZqqBBlvnB7Rmy3LOc, Challenge: (lambda (x_1859) (and 1 x_1859)), Size: 4, Operators: and

@@ -1,0 +1,1 @@
+Id: iZwL3W3p8h7iSCTHvPAeWwHI, Challenge: (lambda (x_2819) (xor x_2819 1)), Size: 4, Operators: xor

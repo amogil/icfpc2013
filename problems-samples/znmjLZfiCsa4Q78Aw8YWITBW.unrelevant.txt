@@ -1,0 +1,1 @@
+Id: WgUOOBO6IF5XKQGArxJMGKvZ, Challenge: (lambda (x_1571) (xor x_1571 1)), Size: 4, Operators: xor
