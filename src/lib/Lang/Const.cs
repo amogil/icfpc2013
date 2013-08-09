@@ -12,6 +12,11 @@ namespace lib.Lang
 		}
 
 
+		public override long Eval(Vars vars)
+		{
+			return value;
+		}
+
 		public override string ToSExpr()
 		{
 			return value.ToString();

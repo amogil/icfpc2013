@@ -17,6 +17,11 @@ namespace lib.Lang
 			Func = func;
 		}
 
+		public override long Eval(Vars vars)
+		{
+			return Func(A.Eval(vars), B.Eval(vars));
+		}
+
 		public override string ToSExpr()
 		{
 			return string.Format("({0} {1} {2})", Name, A, B);

@@ -6,7 +6,7 @@ namespace lib.Lang
 {
 	public abstract class Expr
 	{
-//		public abstract Int64 Eval(Vars vars);
+		public abstract Int64 Eval(Vars vars);
 		public abstract string ToSExpr();
 
 		public override string ToString()
@@ -22,56 +22,71 @@ namespace lib.Lang
 			return closes.Where(item => !string.IsNullOrEmpty(item));
 		}
 
-		public static Expr ParseNext(IEnumerator<string> tokens)
+		public static Expr ParseExpr(string s, string argName = null, string foldItemName = null, string foldAccName = null)
 		{
-			return Parse(tokens.MoveNextOrFail());
+			return ParseExpr(Tokenize(s + " #").GetEnumerator().MoveNextOrFail(), argName, foldItemName, foldAccName);
 		}
 
-		public static Expr Parse(string s)
+		public static Expr ParseFunction(string s)
 		{
-			return Parse(Tokenize(s + " #").GetEnumerator().MoveNextOrFail());
+			var tokens = Tokenize(s + " #").GetEnumerator().MoveNextOrFail();
+			tokens.SkipToken("(").SkipToken("lambda").SkipToken("(");
+			var varName = tokens.ExtractToken();
+			tokens.SkipToken(")");
+			return ParseExpr(tokens, varName, null, null);
 		}
 
-		public static Expr Parse(IEnumerator<string> tokens)
+		public static Int64 Eval(string sExpr, Int64 arg)
 		{
-			if (tokens.Current == "(") return ParseSList(tokens);
+			return ParseFunction(sExpr).Eval(new Vars(arg));
+		}
+
+		public static Expr ParseExpr(IEnumerator<string> tokens, string argName, string foldItemName, string foldAccName)
+		{
+			if (tokens.Current == "(") return ParseCall(tokens, argName, foldItemName, foldAccName);
 			var t = tokens.ExtractToken();
 			if (t == "1") return new Const(1);
 			if (t == "0") return new Const(0);
 			if (t == "#") throw new FormatException("wrong format");
-			return new Var(t);
+			if (t == foldItemName) return new Var(t, vars => vars.foldItem);
+			if (t == foldAccName) return new Var(t, vars => vars.foldAccumulator);
+			if (t == argName) return new Var(t, vars => vars.x);
+			else throw new FormatException("unknown var " + t);
 		}
 
-		private static Expr ParseSList(IEnumerator<string> tokens)
+		private static Expr ParseCall(IEnumerator<string> tokens, string argName, string foldItemName, string foldAccName)
 		{
+			Func<Expr> parse = () => ParseExpr(tokens, argName, foldItemName, foldAccName);
 			tokens.SkipToken("(");
+			var t = tokens.ExtractToken();
 			Expr res;
-			if (tokens.Current == "if0") res = new If0(ParseNext(tokens), Parse(tokens), Parse(tokens));
-			else if (tokens.Current == "fold") res = ParseFold(tokens.MoveNextOrFail());
-			else if (tokens.Current == "not") res = new Unary("not", ParseNext(tokens), v => ~v);
-			else if (tokens.Current == "shl1") res = new Unary("shl1", ParseNext(tokens), v => v << 1);
-			else if (tokens.Current == "shr1") res = new Unary("shr1", ParseNext(tokens), v => v >> 1);
-			else if (tokens.Current == "shr4") res = new Unary("shr4", ParseNext(tokens), v => v >> 4);
-			else if (tokens.Current == "shr16") res = new Unary("shr16", ParseNext(tokens), v => v >> 16);
-			else if (tokens.Current == "and") res = new Binary("and", ParseNext(tokens), Parse(tokens), (a, b) => a & b);
-			else if (tokens.Current == "or") res = new Binary("or", ParseNext(tokens), Parse(tokens), (a, b) => a | b);
-			else if (tokens.Current == "xor") res = new Binary("xor", ParseNext(tokens), Parse(tokens), (a, b) => a ^ b);
-			else if (tokens.Current == "plus") res = new Binary("plus", ParseNext(tokens), Parse(tokens), (a, b) => a + b);
-			else throw new FormatException("unknown function " + tokens.Current);
+			if (t == "if0") res = new If0(parse(), parse(), parse());
+			else if (t == "fold") res = ParseFold(tokens, argName, foldItemName, foldAccName);
+			else if (t == "not") res = new Unary("not", parse(), v => ~v);
+			else if (t == "shl1") res = new Unary("shl1", parse(), v => v << 1);
+			else if (t == "shr1") res = new Unary("shr1", parse(), v => v >> 1);
+			else if (t == "shr4") res = new Unary("shr4", parse(), v => v >> 4);
+			else if (t == "shr16") res = new Unary("shr16", parse(), v => v >> 16);
+			else if (t == "and") res = new Binary("and", parse(), parse(), (a, b) => a & b);
+			else if (t == "or") res = new Binary("or", parse(), parse(), (a, b) => a | b);
+			else if (t == "xor") res = new Binary("xor", parse(), parse(), (a, b) => a ^ b);
+			else if (t == "plus") res = new Binary("plus", parse(), parse(), (a, b) => a + b);
+			else throw new FormatException("unknown function " + t);
 			tokens.SkipToken(")");
 			return res;
 		}
 
-		private static Expr ParseFold(IEnumerator<string> tokens)
+		private static Expr ParseFold(IEnumerator<string> tokens, string argName, string foldItemName, string foldAccName)
 		{
-			var e1 = Parse(tokens);
-			var e2 = Parse(tokens);
-			tokens = tokens.SkipToken("(").SkipToken("lambda").SkipToken("(");
-			var id1 = tokens.ExtractToken();
-			var id2 = tokens.ExtractToken();
+			Func<Expr> parse = () => ParseExpr(tokens, argName, foldItemName, foldAccName);
+			var collection = parse();
+			var start = parse();
+			tokens.SkipToken("(").SkipToken("lambda").SkipToken("(");
+			var itemName = tokens.ExtractToken();
+			var accName = tokens.ExtractToken();
 			tokens.SkipToken(")");
-			var expr = Parse(tokens);
-			return new Fold(e1, e2, id1, id2, expr);
+			var expr = ParseExpr(tokens, argName, itemName, accName);
+			return new Fold(collection, start, itemName, accName, expr);
 		}
 
 	}
@@ -79,5 +94,13 @@ namespace lib.Lang
 
 	public class Vars
 	{
+		public Vars(long x)
+		{
+			this.x = x;
+		}
+
+		public Int64 x;
+		public Int64 foldItem;
+		public Int64 foldAccumulator;
 	}
 }
