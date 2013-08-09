@@ -1,1 +1,2 @@
 Id: gblBW84qWuIoe9PesPYqkmVe, Challenge: (lambda (x_2107) (fold x_2107 0 (lambda (x_2107 x_2108) (shr4 (shl1 x_2107))))), Size: 8, Operators: shl1,shr4,tfold
+Id: vmyqQqAkE5c9JzNSj5hxBEkz, Challenge: (lambda (x_2171) (fold x_2171 0 (lambda (x_2171 x_2172) (not (shr4 x_2171))))), Size: 8, Operators: not,shr4,tfold

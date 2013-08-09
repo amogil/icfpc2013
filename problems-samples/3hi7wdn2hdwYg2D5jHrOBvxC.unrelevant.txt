@@ -1,0 +1,1 @@
+Id: OQBUvsFus5BZ0BDlxkVN3tEA, Challenge: (lambda (x_15017) (fold x_15017 0 (lambda (x_15017 x_15018) (if0 (not (shr16 x_15017)) (shr1 (shr4 0)) x_15017)))), Size: 13, Operators: if0,not,shr1,shr16,shr4,tfold

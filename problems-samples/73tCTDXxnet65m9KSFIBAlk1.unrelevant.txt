@@ -1,2 +1,3 @@
 Id: PYVwu9ACQO66HOT0hKbwmfdw, Challenge: (lambda (x_2695) (fold x_2695 0 (lambda (x_2695 x_2696) (shr4 (shr1 x_2695))))), Size: 8, Operators: shr1,shr4,tfold
 Id: Xkg6NBF82x5zI2VH6nPE9jDR, Challenge: (lambda (x_3019) (fold x_3019 0 (lambda (x_3019 x_3020) (plus x_3019 x_3020)))), Size: 8, Operators: plus,tfold
+Id: nzzLwua3ySoyG3PTBjwDUqnS, Challenge: (lambda (x_1593) (fold x_1593 0 (lambda (x_1593 x_1594) (plus 1 x_1593)))), Size: 8, Operators: plus,tfold

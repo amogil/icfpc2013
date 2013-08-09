@@ -1,0 +1,1 @@
+Id: k17ym8bnyYf66eKBmBLRA0Hn, Challenge: (lambda (x_13929) (shr4 (shr4 (if0 (and (shr4 (xor (shr1 x_13929) x_13929)) 1) x_13929 x_13929)))), Size: 13, Operators: and,if0,shr1,shr4,xor

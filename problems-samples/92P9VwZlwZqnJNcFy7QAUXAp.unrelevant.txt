@@ -1,1 +1,2 @@
 Id: TiVcv9BA3YlssUCTi6C6sDd1, Challenge: (lambda (x_12869) (plus (if0 (and (not (xor x_12869 0)) x_12869) 1 1) x_12869)), Size: 12, Operators: and,if0,not,plus,xor
+Id: uND1t45XuX3VgA9fMMAtXpie, Challenge: (lambda (x_12310) (shr1 (plus (if0 (shr16 (plus (shr1 1) x_12310)) 1 1) x_12310))), Size: 12, Operators: if0,plus,shr1,shr16

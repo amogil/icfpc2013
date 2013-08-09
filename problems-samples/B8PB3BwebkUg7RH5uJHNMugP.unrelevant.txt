@@ -1,0 +1,1 @@
+Id: tK0AcYIYOK8s8Ru3AiYaAftJ, Challenge: (lambda (x_15783) (shr4 (or (if0 (plus (plus (shr4 (shr1 x_15783)) 0) 1) 0 0) x_15783))), Size: 14, Operators: if0,or,plus,shr1,shr4

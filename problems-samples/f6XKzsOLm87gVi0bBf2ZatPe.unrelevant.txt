@@ -1,0 +1,1 @@
+Id: g927dDLGjrdHkffZTx7L8Wr2, Challenge: (lambda (x_16922) (shr1 (or (not (if0 (plus (or (not x_16922) x_16922) x_16922) x_16922 x_16922)) 0))), Size: 14, Operators: if0,not,or,plus,shr1

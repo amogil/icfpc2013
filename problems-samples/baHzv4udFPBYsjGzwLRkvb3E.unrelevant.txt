@@ -1,1 +1,2 @@
 Id: Duarji3uShLYRUWi7wg0i10W, Challenge: (lambda (x_8370) (if0 (shr16 (shl1 (not x_8370))) x_8370 (shr16 x_8370))), Size: 9, Operators: if0,not,shl1,shr16
+Id: 6uDIeBf3QcRaxDhNMnqkKFQf, Challenge: (lambda (x_8789) (if0 (and (and x_8789 1) x_8789) x_8789 0)), Size: 9, Operators: and,if0

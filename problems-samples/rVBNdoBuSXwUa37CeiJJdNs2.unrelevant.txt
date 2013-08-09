@@ -1,0 +1,1 @@
+Id: ElmHMawh2zDSMzEhH4XB8XBZ, Challenge: (lambda (x_29845) (fold (xor (plus (not x_29845) 1) x_29845) 0 (lambda (x_29846 x_29847) (plus (shl1 x_29846) x_29847)))), Size: 14, Operators: fold,not,plus,shl1,xor

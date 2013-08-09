@@ -1,1 +1,2 @@
 Id: SBKh42fDYcYqWHvUi0tPNLBv, Challenge: (lambda (x_3911) (fold x_3911 0 (lambda (x_3911 x_3912) (shr4 (plus 0 x_3911))))), Size: 9, Operators: plus,shr4,tfold
+Id: pMrkdmbvLiYopCtXpa3qZitO, Challenge: (lambda (x_4399) (fold x_4399 0 (lambda (x_4399 x_4400) (xor (not x_4399) 1)))), Size: 9, Operators: not,tfold,xor

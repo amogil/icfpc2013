@@ -1,1 +1,2 @@
 Id: SEX2mZ9K90fJdL4OGsy0M2Wm, Challenge: (lambda (x_17596) (not (fold (or x_17596 1) x_17596 (lambda (x_17597 x_17598) (plus (shl1 x_17598) x_17597))))), Size: 12, Operators: fold,not,or,plus,shl1
+Id: opAfeXXiv993ACuL19eskhmW, Challenge: (lambda (x_17706) (not (fold (shr16 (not 0)) x_17706 (lambda (x_17707 x_17708) (shl1 (xor x_17707 x_17708)))))), Size: 12, Operators: fold,not,shl1,shr16,xor

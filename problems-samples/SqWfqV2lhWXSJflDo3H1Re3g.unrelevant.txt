@@ -1,0 +1,1 @@
+Id: TsZUG9mlCEBPzYSpQMeLQwgc, Challenge: (lambda (x_25180) (not (fold (xor 1 x_25180) x_25180 (lambda (x_25181 x_25182) (plus (plus x_25181 x_25182) x_25181))))), Size: 13, Operators: fold,not,plus,xor

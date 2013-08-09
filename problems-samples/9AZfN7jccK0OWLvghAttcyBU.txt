@@ -1,2 +1,3 @@
 Id: doYHABSbqukgPCngf48FPeEx, Challenge: (lambda (x_1979) (plus x_1979 x_1979)), Size: 4, Operators: plus
 Id: e5tuNxO5BIr7QFKiWXEPWOWx, Challenge: (lambda (x_2398) (plus 1 x_2398)), Size: 4, Operators: plus
+Id: z260t6BdSm9kbjYu1ztqv2aM, Challenge: (lambda (x_1481) (plus x_1481 x_1481)), Size: 4, Operators: plus

@@ -1,0 +1,1 @@
+Id: gGVrWqjEcAhoPBsvAOXKy6QK, Challenge: (lambda (x_2515) (fold x_2515 0 (lambda (x_2515 x_2516) (xor x_2515 0)))), Size: 8, Operators: tfold,xor

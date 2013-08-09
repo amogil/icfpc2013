@@ -1,0 +1,1 @@
+Id: GRLP03t1z9KIVKOUL65Xvwpu, Challenge: (lambda (x_17069) (fold x_17069 0 (lambda (x_17069 x_17070) (if0 (and (shr1 (shr4 x_17069)) (not x_17070)) x_17069 1)))), Size: 14, Operators: and,if0,not,shr1,shr4,tfold

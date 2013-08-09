@@ -1,0 +1,1 @@
+Id: 0acjp5jlWEfFrIVcofTBXHRK, Challenge: (lambda (x_2780) (or 1 x_2780)), Size: 4, Operators: or

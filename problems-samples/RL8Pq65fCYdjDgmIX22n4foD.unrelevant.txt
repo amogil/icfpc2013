@@ -1,0 +1,1 @@
+Id: d2VLADSPvLXXvtk69tX26zep, Challenge: (lambda (x_15409) (fold x_15409 0 (lambda (x_15409 x_15410) (if0 (shr1 (shl1 (xor 1 x_15410))) 0 x_15409)))), Size: 13, Operators: if0,shl1,shr1,tfold,xor

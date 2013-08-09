@@ -1,1 +1,2 @@
 Id: Y50M9IPZjJj0RZ5caXHotvHY, Challenge: (lambda (x_9380) (if0 (and (shl1 (xor 1 0)) x_9380) 1 x_9380)), Size: 10, Operators: and,if0,shl1,xor
+Id: qIKFxPU8ToAqpySjy8shQwXS, Challenge: (lambda (x_9692) (if0 (and (shr16 (xor 0 x_9692)) 1) 1 x_9692)), Size: 10, Operators: and,if0,shr16,xor

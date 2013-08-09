@@ -1,1 +1,2 @@
 Id: jyqT4Hf6IbcJaf8YGJK0zg89, Challenge: (lambda (x_5683) (fold (not (shl1 1)) x_5683 (lambda (x_5684 x_5685) (plus x_5685 (shl1 x_5684))))), Size: 11, Operators: fold,not,plus,shl1
+Id: gHvQQwXvaVRowsuBjlZqU3HW, Challenge: (lambda (x_9294) (fold 1 (shl1 x_9294) (lambda (x_9295 x_9296) (plus (shr16 (not x_9295)) x_9296)))), Size: 11, Operators: fold,not,plus,shl1,shr16

@@ -1,1 +1,2 @@
 Id: RXKMUF4ZT8mRjPCeYw0Q2v79, Challenge: (lambda (x_1979) (not (shr4 x_1979))), Size: 4, Operators: not,shr4
+Id: nE4hxW9JTJtLm20jUbitSp0J, Challenge: (lambda (x_1984) (not (shr4 x_1984))), Size: 4, Operators: not,shr4

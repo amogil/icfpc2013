@@ -1,0 +1,1 @@
+Id: pvr9AStDLB99nnPRpZ01tw1i, Challenge: (lambda (x_14415) (fold x_14415 0 (lambda (x_14415 x_14416) (if0 (not (shr4 (xor x_14416 x_14415))) 1 x_14415)))), Size: 13, Operators: if0,not,shr4,tfold,xor

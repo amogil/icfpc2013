@@ -1,0 +1,1 @@
+Id: S31DcDYh20HVo1rbITZ5oh3n, Challenge: (lambda (x_16847) (xor x_16847 (shr4 (not (if0 (xor (shl1 x_16847) (shr4 (shr1 x_16847))) 1 0))))), Size: 14, Operators: if0,not,shl1,shr1,shr4,xor

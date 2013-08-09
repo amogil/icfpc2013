@@ -1,0 +1,1 @@
+Id: ubP4PfS3sRqBMyVAqV7nxaEU, Challenge: (lambda (x_23208) (and (fold (not (shr16 1)) x_23208 (lambda (x_23209 x_23210) (xor (shr16 x_23210) x_23209))) x_23208)), Size: 13, Operators: and,fold,not,shr16,xor

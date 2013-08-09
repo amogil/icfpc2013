@@ -1,1 +1,2 @@
 Id: poavstaU3zROmA103v33fA5I, Challenge: (lambda (x_12984) (shr1 (shl1 (if0 (xor (and (shr16 x_12984) x_12984) 0) 1 x_12984)))), Size: 12, Operators: and,if0,shl1,shr1,shr16,xor
+Id: VYmRgOoStmEOpPoIo7pDZklr, Challenge: (lambda (x_12317) (shr16 (shr1 (if0 (or (xor (shr16 x_12317) 1) x_12317) x_12317 x_12317)))), Size: 12, Operators: if0,or,shr1,shr16,xor

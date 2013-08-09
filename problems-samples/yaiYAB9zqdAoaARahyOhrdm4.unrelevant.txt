@@ -1,1 +1,2 @@
 Id: i6B8CgL34kTbW2s05U4FuCmG, Challenge: (lambda (x_2184) (fold 1 (and x_2184 x_2184) (lambda (x_2185 x_2186) (plus (not x_2186) x_2185)))), Size: 11, Operators: and,fold,not,plus
+Id: r6UQiEew2ndp0joL9B0vgymU, Challenge: (lambda (x_3218) (fold (xor x_3218 x_3218) x_3218 (lambda (x_3219 x_3220) (xor (shr1 x_3220) x_3219)))), Size: 11, Operators: fold,shr1,xor

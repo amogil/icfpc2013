@@ -1,0 +1,1 @@
+Id: BXjPiTWxLEFcjj2sf3LPAxx1, Challenge: (lambda (x_20847) (fold x_20847 0 (lambda (x_20847 x_20848) (plus (if0 (xor x_20848 (shr16 (shr1 1))) x_20847 0) x_20848)))), Size: 15, Operators: if0,plus,shr1,shr16,tfold,xor

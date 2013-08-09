@@ -1,0 +1,1 @@
+Id: KQNvVQBU10WMjPlwllP8AhQH, Challenge: (lambda (x_29333) (fold (plus (and x_29333 (shl1 1)) x_29333) 1 (lambda (x_29334 x_29335) (shr4 (plus x_29335 x_29334))))), Size: 14, Operators: and,fold,plus,shl1,shr4

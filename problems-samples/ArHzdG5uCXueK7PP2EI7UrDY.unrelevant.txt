@@ -1,1 +1,2 @@
 Id: SuNzCVQ95aoqv8ucAOsLvSLZ, Challenge: (lambda (x_9628) (if0 (and (or (shl1 0) 1) x_9628) x_9628 1)), Size: 10, Operators: and,if0,or,shl1
+Id: UZnaNfQ3lpnoBRN6d6Ca2bGp, Challenge: (lambda (x_10314) (if0 (plus (not x_10314) 1) 0 (or 1 x_10314))), Size: 10, Operators: if0,not,or,plus

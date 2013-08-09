@@ -1,1 +1,2 @@
 Id: AXyb0E1BXFpys46x7XZNP6Vn, Challenge: (lambda (x_4097) (fold x_4097 0 (lambda (x_4097 x_4098) (if0 x_4097 x_4097 x_4097)))), Size: 9, Operators: if0,tfold
+Id: oC6akW3sGaAGAxNNayL0Z5Ex, Challenge: (lambda (x_5827) (fold x_5827 0 (lambda (x_5827 x_5828) (or x_5827 (shr16 x_5828))))), Size: 9, Operators: or,shr16,tfold

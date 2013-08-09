@@ -1,0 +1,1 @@
+Id: AtOk3VjLP6jXUU0Eik6ZGPCM, Challenge: (lambda (x_25079) (fold (plus (shr1 (shr4 x_25079)) x_25079) x_25079 (lambda (x_25080 x_25081) (not (xor x_25080 x_25081))))), Size: 13, Operators: fold,not,plus,shr1,shr4,xor

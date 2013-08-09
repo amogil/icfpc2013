@@ -1,0 +1,1 @@
+Id: UJKgrLPLBqGNEQ2OaLAaWFWJ, Challenge: (lambda (x_22829) (plus (fold (not (not 1)) 1 (lambda (x_22830 x_22831) (if0 x_22830 x_22831 x_22831))) x_22829)), Size: 13, Operators: fold,if0,not,plus

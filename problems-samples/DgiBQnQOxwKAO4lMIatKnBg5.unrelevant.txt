@@ -1,2 +1,3 @@
 Id: H86TKuARI67J1g5P4cKn8QPr, Challenge: (lambda (x_5791) (xor (shr16 (shr4 (shr4 x_5791))) 1)), Size: 7, Operators: shr16,shr4,xor
 Id: rURTlgovAeVi0ovBb0mhFxmi, Challenge: (lambda (x_5575) (plus (if0 x_5575 x_5575 x_5575) x_5575)), Size: 7, Operators: if0,plus
+Id: JmlLi4RqEswa3PKNDBVlI3PU, Challenge: (lambda (x_5628) (plus (shr16 x_5628) (shr4 (shl1 1)))), Size: 7, Operators: plus,shl1,shr16,shr4

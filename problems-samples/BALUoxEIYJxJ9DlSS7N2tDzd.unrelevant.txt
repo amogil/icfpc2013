@@ -1,2 +1,3 @@
 Id: bSddOKJZAwBafvW1EN0Pcz7R, Challenge: (lambda (x_7293) (and (shr1 (shl1 (shl1 x_7293))) (shr1 x_7293))), Size: 8, Operators: and,shl1,shr1
 Id: C5gOsqS0yv0wU1WCSR1I9NmV, Challenge: (lambda (x_7300) (xor (shr1 (shr16 (shr16 (shr4 x_7300)))) x_7300)), Size: 8, Operators: shr1,shr16,shr4,xor
+Id: vEroTnYvgHsy1ZPLpoj1513T, Challenge: (lambda (x_7522) (plus (or (xor x_7522 x_7522) x_7522) x_7522)), Size: 8, Operators: or,plus,xor

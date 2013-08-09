@@ -1,1 +1,2 @@
 Id: ABNlnYms5FTxTMRD5MNiV8tH, Challenge: (lambda (x_11941) (fold x_11941 0 (lambda (x_11941 x_11942) (xor (shr16 (xor x_11941 (shr1 0))) x_11941)))), Size: 12, Operators: shr1,shr16,tfold,xor
+Id: B7pB5FwEQacqKA7LbKHfZnfb, Challenge: (lambda (x_11779) (fold x_11779 0 (lambda (x_11779 x_11780) (plus (if0 x_11780 (shl1 x_11779) x_11779) x_11779)))), Size: 12, Operators: if0,plus,shl1,tfold

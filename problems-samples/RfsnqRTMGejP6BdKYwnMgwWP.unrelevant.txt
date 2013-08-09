@@ -1,1 +1,2 @@
 Id: jfmoFeEDLXjbBth0hKWCR2CA, Challenge: (lambda (x_3591) (fold x_3591 0 (lambda (x_3591 x_3592) (if0 x_3591 1 x_3591)))), Size: 9, Operators: if0,tfold
+Id: xARnwdn7Vm4Adl8UTsRnZHGk, Challenge: (lambda (x_6073) (fold x_6073 0 (lambda (x_6073 x_6074) (shr1 (xor x_6073 x_6074))))), Size: 9, Operators: shr1,tfold,xor

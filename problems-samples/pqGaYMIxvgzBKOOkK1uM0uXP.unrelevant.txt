@@ -1,1 +1,2 @@
 Id: TPNj40lb5172E4GIEMoxPAQW, Challenge: (lambda (x_11119) (fold x_11119 0 (lambda (x_11119 x_11120) (or (and x_11119 (shl1 1)) 0)))), Size: 11, Operators: and,or,shl1,tfold
+Id: JZip5BmBVjAlhAZF8JX4Q7LA, Challenge: (lambda (x_9877) (fold x_9877 0 (lambda (x_9877 x_9878) (xor (shr16 (and x_9878 x_9877)) x_9877)))), Size: 11, Operators: and,shr16,tfold,xor

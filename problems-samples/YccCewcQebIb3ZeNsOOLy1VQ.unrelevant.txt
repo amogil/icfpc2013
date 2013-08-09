@@ -1,3 +1,4 @@
 Id: R925ZD8z1siO0kCIu3rDByxX, Challenge: (lambda (x_4616) (not (if0 x_4616 x_4616 x_4616))), Size: 6, Operators: if0,not
 Id: r1pZbWfjgxKiBqWAdgyEnPb4, Challenge: (lambda (x_4493) (or (xor 1 x_4493) 1)), Size: 6, Operators: or,xor
 Id: Dadnx4CMVOsJ8jxto0hoBwtZ, Challenge: (lambda (x_4442) (shr1 (xor 1 (not x_4442)))), Size: 6, Operators: not,shr1,xor
+Id: VVYAWRFDxs4SAWAwtgWIloNJ, Challenge: (lambda (x_5249) (not (or x_5249 (shr16 0)))), Size: 6, Operators: not,or,shr16

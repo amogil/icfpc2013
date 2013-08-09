@@ -1,1 +1,2 @@
 Id: Bezal3GflwJaxd98wmL9F2Gp, Challenge: (lambda (x_9284) (if0 (and (xor (not 1) x_9284) x_9284) x_9284 1)), Size: 10, Operators: and,if0,not,xor
+Id: rgPSpGh18qtnPgqepGLrgcvN, Challenge: (lambda (x_10143) (if0 (and (xor (shr16 x_10143) 0) 1) 0 x_10143)), Size: 10, Operators: and,if0,shr16,xor

@@ -1,1 +1,2 @@
 Id: jeewl1CzP3CTB3cTX7hLsnW8, Challenge: (lambda (x_6451) (fold x_6451 0 (lambda (x_6451 x_6452) (plus (plus x_6451 x_6451) x_6452)))), Size: 10, Operators: plus,tfold
+Id: SzFg936wk1O77nRD3GpoDI9L, Challenge: (lambda (x_7091) (fold x_7091 0 (lambda (x_7091 x_7092) (shl1 (if0 x_7092 x_7091 x_7092))))), Size: 10, Operators: if0,shl1,tfold

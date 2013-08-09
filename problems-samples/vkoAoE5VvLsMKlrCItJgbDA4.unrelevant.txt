@@ -1,1 +1,2 @@
 Id: ACViCdyxsTTNrF1jQxNqXANb, Challenge: (lambda (x_9403) (fold x_9403 0 (lambda (x_9403 x_9404) (plus (shr4 (or x_9404 x_9403)) x_9403)))), Size: 11, Operators: or,plus,shr4,tfold
+Id: KoZ83fuZf1K4NnWwwKNHeoCX, Challenge: (lambda (x_8955) (fold x_8955 0 (lambda (x_8955 x_8956) (plus (plus 1 (shr1 x_8956)) x_8955)))), Size: 11, Operators: plus,shr1,tfold

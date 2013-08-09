@@ -1,1 +1,2 @@
 Id: djFh1yycUsXOQToAxQ0O2659, Challenge: (lambda (x_18010) (shr4 (fold (shr16 (shr1 x_18010)) x_18010 (lambda (x_18011 x_18012) (plus (shl1 x_18011) x_18012))))), Size: 12, Operators: fold,plus,shl1,shr1,shr16,shr4
+Id: 90ebScbWav9EUHDk8ByVkQAX, Challenge: (lambda (x_13249) (fold (or x_13249 (not x_13249)) x_13249 (lambda (x_13250 x_13251) (plus (not x_13250) x_13251)))), Size: 12, Operators: fold,not,or,plus

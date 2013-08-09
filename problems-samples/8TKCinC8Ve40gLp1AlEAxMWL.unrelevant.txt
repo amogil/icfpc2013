@@ -1,0 +1,1 @@
+Id: hDbMzD9q5DUQMT8fbfpkHAbL, Challenge: (lambda (x_30229) (fold (plus (or (shr16 0) x_30229) 0) x_30229 (lambda (x_30230 x_30231) (if0 x_30231 x_30231 x_30230)))), Size: 14, Operators: fold,if0,or,plus,shr16

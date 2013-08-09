@@ -1,1 +1,2 @@
 Id: SFxmGsFaMLUTtwEkUm1UHhIf, Challenge: (lambda (x_7385) (fold x_7385 0 (lambda (x_7385 x_7386) (plus (xor x_7385 x_7385) x_7385)))), Size: 10, Operators: plus,tfold,xor
+Id: ATCdqU0UGWTODaO6WkMzzGjP, Challenge: (lambda (x_7495) (fold x_7495 0 (lambda (x_7495 x_7496) (shl1 (shl1 (xor x_7495 0)))))), Size: 10, Operators: shl1,tfold,xor

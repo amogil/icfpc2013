@@ -1,1 +1,2 @@
 Id: IdzdXuqYxVni2HXyj2sBGlzy, Challenge: (lambda (x_3921) (fold x_3921 0 (lambda (x_3921 x_3922) (xor (not x_3921) x_3922)))), Size: 9, Operators: not,tfold,xor
+Id: R5NKbE1qmZYUFBgdAxw6wBcE, Challenge: (lambda (x_5943) (fold x_5943 0 (lambda (x_5943 x_5944) (if0 x_5943 0 x_5943)))), Size: 9, Operators: if0,tfold

@@ -1,1 +1,2 @@
 Id: M8VSOeaEAixxJLpHXtqZhtoh, Challenge: (lambda (x_10315) (fold x_10315 0 (lambda (x_10315 x_10316) (xor (or (shr1 1) 1) x_10315)))), Size: 11, Operators: or,shr1,tfold,xor
+Id: xBM3cbaA4tTsq97xbYLevDvz, Challenge: (lambda (x_9617) (fold x_9617 0 (lambda (x_9617 x_9618) (plus (xor x_9617 (shr1 1)) 1)))), Size: 11, Operators: plus,shr1,tfold,xor

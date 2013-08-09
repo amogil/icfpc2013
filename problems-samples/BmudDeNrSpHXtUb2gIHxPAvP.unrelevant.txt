@@ -1,0 +1,1 @@
+Id: W6rKQ3FIhNua71cCSYsx0Auw, Challenge: (lambda (x_15280) (xor (xor (if0 (and (shr1 (shr1 0)) x_15280) 1 1) 0) x_15280)), Size: 13, Operators: and,if0,shr1,xor

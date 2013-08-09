@@ -1,0 +1,1 @@
+Id: HmtKGpQIaPMN24B19jMaFiVl, Challenge: (lambda (x_32760) (fold (or (shl1 (or 0 0)) x_32760) 0 (lambda (x_32761 x_32762) (or (shr16 x_32762) x_32761)))), Size: 14, Operators: fold,or,shl1,shr16

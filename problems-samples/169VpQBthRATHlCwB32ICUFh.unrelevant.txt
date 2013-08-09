@@ -1,0 +1,1 @@
+Id: eDE5I6EGKJf67Uhron19Bpkc, Challenge: (lambda (x_16900) (xor (plus (if0 (xor (shr16 x_16900) 0) (plus 1 x_16900) x_16900) 1) x_16900)), Size: 14, Operators: if0,plus,shr16,xor

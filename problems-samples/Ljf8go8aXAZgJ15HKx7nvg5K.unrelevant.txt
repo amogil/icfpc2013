@@ -1,1 +1,2 @@
 Id: FDn2ABBcSBVJMLZktuuw71pq, Challenge: (lambda (x_19190) (not (fold (or x_19190 x_19190) x_19190 (lambda (x_19191 x_19192) (not (plus x_19191 x_19192)))))), Size: 12, Operators: fold,not,or,plus
+Id: jsrcx7t5H4Ir4AxUfq1FJJAN, Challenge: (lambda (x_15099) (fold (not (shr4 (shr4 x_15099))) x_15099 (lambda (x_15100 x_15101) (or x_15100 (not x_15101))))), Size: 12, Operators: fold,not,or,shr4

@@ -1,1 +1,2 @@
 Id: 18yogGRmJvr2P4oCO9nx4Ahe, Challenge: (lambda (x_9075) (fold x_9075 0 (lambda (x_9075 x_9076) (plus (or (not x_9075) 1) 0)))), Size: 11, Operators: not,or,plus,tfold
+Id: 5BheLUlfs93ml3uWvsWSGRNX, Challenge: (lambda (x_9727) (fold x_9727 0 (lambda (x_9727 x_9728) (xor (shl1 (and x_9727 x_9728)) x_9727)))), Size: 11, Operators: and,shl1,tfold,xor

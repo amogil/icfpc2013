@@ -1,0 +1,1 @@
+Id: FnlTIyKgtLbdt0ExHgpBDcoN, Challenge: (lambda (x_23298) (xor (fold (and x_23298 0) x_23298 (lambda (x_23299 x_23300) (xor x_23299 (shr4 x_23300)))) 1)), Size: 13, Operators: and,fold,shr4,xor

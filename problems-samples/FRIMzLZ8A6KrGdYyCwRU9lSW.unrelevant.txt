@@ -1,1 +1,2 @@
 Id: 6eQji1AqvTW1A1IozDwqs1gG, Challenge: (lambda (x_9674) (if0 (and (or (shl1 1) x_9674) 1) 1 0)), Size: 10, Operators: and,if0,or,shl1
+Id: v3xfLyOcyR9VdYMhPEHNS9tq, Challenge: (lambda (x_9762) (if0 (plus (shl1 (and 1 x_9762)) 0) x_9762 1)), Size: 10, Operators: and,if0,plus,shl1

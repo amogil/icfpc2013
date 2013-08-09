@@ -1,0 +1,1 @@
+Id: BbaDQOvcUKIBkbRTSqHOBpPP, Challenge: (lambda (x_26029) (not (shr16 (fold x_26029 (xor x_26029 0) (lambda (x_26030 x_26031) (xor (not x_26030) x_26031)))))), Size: 13, Operators: fold,not,shr16,xor

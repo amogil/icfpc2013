@@ -1,0 +1,1 @@
+Id: VcLiqJhmAmPbw4nj6cPQ26bu, Challenge: (lambda (x_12302) (xor (if0 (xor (xor x_12302 0) (not 1)) x_12302 1) x_12302)), Size: 12, Operators: if0,not,xor

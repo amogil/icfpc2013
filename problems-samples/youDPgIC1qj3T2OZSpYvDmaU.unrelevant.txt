@@ -1,0 +1,1 @@
+Id: pTLWrgmB06HbEwNDBycxMetS, Challenge: (lambda (x_23043) (shr4 (fold (or x_23043 (shr1 x_23043)) x_23043 (lambda (x_23044 x_23045) (plus (shr4 x_23045) x_23044))))), Size: 13, Operators: fold,or,plus,shr1,shr4

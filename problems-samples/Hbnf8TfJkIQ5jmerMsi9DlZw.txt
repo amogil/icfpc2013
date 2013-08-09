@@ -1,0 +1,1 @@
+Id: VpBsfTU0QFaZ8rTdX0749k2R, Challenge: (lambda (x_6729) (and (shr4 (and x_6729 x_6729)) (not x_6729))), Size: 8, Operators: and,not,shr4

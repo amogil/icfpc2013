@@ -1,2 +1,3 @@
 Id: hI7lj9XVK0g4iNbBlNnDmsRt, Challenge: (lambda (x_7305) (or (or (plus 1 0) x_7305) x_7305)), Size: 8, Operators: or,plus
 Id: ubPokSzZEr1S0z0ExaX0IwJD, Challenge: (lambda (x_7660) (or (plus (xor 0 x_7660) x_7660) x_7660)), Size: 8, Operators: or,plus,xor
+Id: f6Sbj5cd5s4vYm12QZ2NDVre, Challenge: (lambda (x_6840) (xor (or (or 0 1) x_6840) x_6840)), Size: 8, Operators: or,xor

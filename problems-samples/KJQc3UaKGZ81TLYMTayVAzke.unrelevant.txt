@@ -1,1 +1,2 @@
 Id: gHEOiJ54pBGzM25ka8nrKA3a, Challenge: (lambda (x_9791) (if0 (plus (shr4 (shr1 1)) x_9791) 0 (shl1 x_9791))), Size: 10, Operators: if0,plus,shl1,shr1,shr4
+Id: nTtHgmp0lr9WfiNjuUgpIiPO, Challenge: (lambda (x_9758) (if0 (and (not (shr16 x_9758)) 0) (shr4 x_9758) 0)), Size: 10, Operators: and,if0,not,shr16,shr4

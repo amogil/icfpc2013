@@ -1,0 +1,1 @@
+Id: elyQ36Lt0Z5JQdSEnace3a9l, Challenge: (lambda (x_16412) (and (not (or (if0 (plus (and x_16412 x_16412) x_16412) x_16412 x_16412) 0)) 1)), Size: 14, Operators: and,if0,not,or,plus

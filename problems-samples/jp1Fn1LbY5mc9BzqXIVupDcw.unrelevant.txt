@@ -1,1 +1,2 @@
 Id: 1e1oUQigYfGA2VoaK3041Yuu, Challenge: (lambda (x_6716) (fold (shr1 x_6716) (shr4 0) (lambda (x_6717 x_6718) (shr4 (or x_6718 x_6717))))), Size: 11, Operators: fold,or,shr1,shr4
+Id: M7UpeSgbg6CJHfK2X4feZUZz, Challenge: (lambda (x_9965) (fold (shr1 1) (shr4 x_9965) (lambda (x_9966 x_9967) (shl1 (or x_9967 x_9966))))), Size: 11, Operators: fold,or,shl1,shr1,shr4

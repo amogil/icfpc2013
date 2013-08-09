@@ -1,0 +1,1 @@
+Id: IbEklVQ5L5f4ZKALzEAk2A8X, Challenge: (lambda (x_14225) (shl1 (shr16 (plus (if0 (shl1 (shl1 x_14225)) (plus x_14225 0) x_14225) 1)))), Size: 13, Operators: if0,plus,shl1,shr16

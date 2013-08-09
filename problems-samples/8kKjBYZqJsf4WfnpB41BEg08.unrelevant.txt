@@ -1,1 +1,2 @@
 Id: JbBWSdqt4KLMzy5VF1UBBsHC, Challenge: (lambda (x_11687) (shr4 (if0 (and (and (shl1 x_11687) x_11687) x_11687) x_11687 x_11687))), Size: 11, Operators: and,if0,shl1,shr4
+Id: dn6luBFCJ71XpVO0h5208qiX, Challenge: (lambda (x_11518) (xor (if0 (shr4 (xor (shr16 x_11518) x_11518)) 1 1) x_11518)), Size: 11, Operators: if0,shr16,shr4,xor

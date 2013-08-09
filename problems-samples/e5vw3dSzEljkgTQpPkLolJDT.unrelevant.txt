@@ -1,1 +1,2 @@
 Id: BkUexruI1N163vDh3Xdbwvpj, Challenge: (lambda (x_10300) (if0 (and (plus (shl1 1) 0) x_10300) x_10300 0)), Size: 10, Operators: and,if0,plus,shl1
+Id: AuWLasx4llkclf8bjNm6hrRQ, Challenge: (lambda (x_9974) (if0 (and (xor (shr4 x_9974) 0) 1) 1 0)), Size: 10, Operators: and,if0,shr4,xor

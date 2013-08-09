@@ -1,1 +1,2 @@
 Id: YnoiUGjU4lOAc0ERFBwrMMWr, Challenge: (lambda (x_4089) (fold (shr1 x_4089) 0 (lambda (x_4090 x_4091) (plus x_4091 (plus x_4091 x_4090))))), Size: 11, Operators: fold,plus,shr1
+Id: FBXOV2BEHDpt7OFKA6AWSFBD, Challenge: (lambda (x_5746) (fold (shl1 (shr16 x_5746)) x_5746 (lambda (x_5747 x_5748) (or (shr1 x_5748) x_5747)))), Size: 11, Operators: fold,or,shl1,shr1,shr16

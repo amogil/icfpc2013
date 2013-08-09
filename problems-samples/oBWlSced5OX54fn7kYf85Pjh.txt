@@ -1,1 +1,2 @@
 Id: HszZDkfd5z2GdzUc5hxA6Abl, Challenge: (lambda (x_3120) (xor (shl1 1) x_3120)), Size: 5, Operators: shl1,xor
+Id: WnEEPBZs7m7RapGsLknNyGmD, Challenge: (lambda (x_3783) (shl1 (xor x_3783 0))), Size: 5, Operators: shl1,xor
