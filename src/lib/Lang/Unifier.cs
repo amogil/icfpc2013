@@ -7,6 +7,13 @@ using NUnit.Framework;
 
 namespace lib.Lang
 {
+    /// <summary>
+    /// This class unifies expression to canonical form.
+    /// In canonical form there is at most 3 variables
+    /// Function args has name <code>x</code>
+    /// Fold iterator has name <code>i</code>
+    /// Fold accumulator has name <code>a</code>
+    /// </summary>
     class Unifier
     {
         private int counter = 0;
@@ -29,8 +36,8 @@ namespace lib.Lang
             // Creating new cotext
             var replacesCopy = new Dictionary<string, string>(replaces);
 
-            replaces[x.ItemName] = NextId();
-            replaces[x.AccName] = NextId();
+            replaces[x.ItemName] = "i"; // NextId();
+            replaces[x.AccName] ="a";//NextId();
             x.AccName = replaces[x.AccName];
             x.ItemName = replaces[x.ItemName];
 
