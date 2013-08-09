@@ -30,10 +30,13 @@ namespace lib.Guesser
         [TestCase("(lambda (x) (plus x 1))", 4, new[] {"plus"}, 2)]
         [TestCase("(lambda (x) (and (xor (shr4 x) x) x))", 7, new[] {"and", "shr4", "xor"}, 8)]
         [TestCase("(lambda (x) (plus (or 1 x) (shl1 x)))", 7, new[] {"or", "plus", "shl1"}, 8)]
-        [TestCase("(lambda (x_9692) (if0 (and (shr16 (xor 0 x_9692)) 1) 1 x_9692))", 10,
-            new[] {"and", "if0", "shr16", "xor"}, 52)]
-        [TestCase("(lambda (x_6107) (fold x_6107 (and 1 0) (lambda (x_6108 x_6109) (if0 x_6109 x_6108 x_6109))))", 11,
-            new[] {"and", "fold", "if0"}, 9)]
+        [TestCase("(lambda (x_9692) (if0 (and (shr16 (xor 0 x_9692)) 1) 1 x_9692))",
+            10, new[] {"and", "if0", "shr16", "xor"}, 52)]
+        [TestCase("(lambda (x_6107) (fold x_6107 (and 1 0) (lambda (x_6108 x_6109) (if0 x_6109 x_6108 x_6109))))",
+            11, new[] {"and", "fold", "if0"}, 9)]
+        [TestCase(
+            "(lambda (x_16756) (shl1 (fold (plus 0 x_16756) 1 (lambda (x_16757 x_16758) (not (and x_16757 x_16758)))))",
+            12, new[] {"and", "fold", "not", "plus", "shl1"}, 68)]
         public void Test(string function, int size, string[] operations, int equalFormulas)
         {
             Expr formula = Expr.ParseFunction(function);
