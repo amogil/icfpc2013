@@ -1,0 +1,1 @@
+Id: BbzRkBZtTmrI55t7h5nTk8sh, Challenge: (lambda (x_5193) (fold x_5193 0 (lambda (x_5193 x_5194) (xor 1 (shl1 x_5193))))), Size: 9, Operators: shl1,tfold,xor

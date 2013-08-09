@@ -1,0 +1,1 @@
+Id: 0DJfuwyzZwKrxYwTaXEspPkg, Challenge: (lambda (x_45702) (plus (or (shr4 x_45702) (shr16 (or (shl1 (plus (not (plus (shr16 (xor (xor (if0 (and (or (not 0) 1) x_45702) x_45702 x_45702) 0) x_45702)) 1)) x_45702)) x_45702))) 0)), Size: 29, Operators: and,if0,not,or,plus,shl1,shr16,shr4,xor

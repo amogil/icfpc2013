@@ -1,0 +1,1 @@
+Id: rwBM7fxQEkoXunsaAiVbELLI, Challenge: (lambda (x_10053) (if0 (and (xor (not 0) x_10053) 1) 0 x_10053)), Size: 10, Operators: and,if0,not,xor

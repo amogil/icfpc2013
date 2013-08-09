@@ -1,0 +1,1 @@
+Id: ZxNprNtbSaU81SlhJRW2VFjJ, Challenge: (lambda (x_6119) (fold x_6119 0 (lambda (x_6119 x_6120) (or (shl1 x_6119) 1)))), Size: 9, Operators: or,shl1,tfold
