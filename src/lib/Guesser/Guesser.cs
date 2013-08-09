@@ -25,29 +25,24 @@ namespace lib.Guesser
     [TestFixture]
     public class Guesser_Test
     {
-//        [TestCase("(lambda (x) (not x))", 3, new[] {"not"}, 1)]
-//        [TestCase("(lambda (x) (shr4 x))", 3, new[] {"shr4"}, 1)]
-//        [TestCase("(lambda (x) (plus x 1))", 4, new[] {"plus"}, 2)]
-//        [TestCase("(lambda (x) (and (xor (shr4 x) x) x))", 7, new[] {"and", "shr4", "xor"}, 8)]
-//        [TestCase("(lambda (x) (plus (or 1 x) (shl1 x)))", 7, new[] {"or", "plus", "shl1"}, 8)]
-/*
+        [TestCase("(lambda (x) (not x))", 3, new[] {"not"}, 1)]
+        [TestCase("(lambda (x) (shr4 x))", 3, new[] {"shr4"}, 1)]
+        [TestCase("(lambda (x) (plus x 1))", 4, new[] {"plus"}, 2)]
+        [TestCase("(lambda (x) (and (xor (shr4 x) x) x))", 7, new[] {"and", "shr4", "xor"}, 8)]
+        [TestCase("(lambda (x) (plus (or 1 x) (shl1 x)))", 7, new[] {"or", "plus", "shl1"}, 8)]
         [TestCase("(lambda (x_9692) (if0 (and (shr16 (xor 0 x_9692)) 1) 1 x_9692))", 10,
             new[] {"and", "if0", "shr16", "xor"}, 52)]
-*/
         [TestCase("(lambda (x_6107) (fold x_6107 (and 1 0) (lambda (x_6108 x_6109) (if0 x_6109 x_6108 x_6109))))", 11,
-            new[] {"and", "fold", "if0"}, 52)]
+            new[] {"and", "fold", "if0"}, 9)]
         public void Test(string function, int size, string[] operations, int equalFormulas)
         {
             Expr formula = Expr.ParseFunction(function);
             var random = new Random();
 
             Expr[] trees = new Force().Solve(size - 1, operations).ToArray();
-            while (true)
-            {
-                ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
-                ulong[] outputs = inputs.Select(i => formula.Eval(new Vars(i))).ToArray();
-                trees = Guesser.Guess(trees, inputs, outputs).ToArray();
-            }
+            ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
+            ulong[] outputs = inputs.Select(i => formula.Eval(new Vars(i))).ToArray();
+            trees = Guesser.Guess(trees, inputs, outputs).ToArray();
             Assert.AreEqual(equalFormulas, trees.Count());
         }
     }
