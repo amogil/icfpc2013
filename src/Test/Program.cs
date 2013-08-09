@@ -18,7 +18,7 @@ namespace Test
 		public static void Test(int size, string ops)
 		{
 			var force = new Force();
-			var trees = force.Solve(size, false, ops.Split(' ')).ToList();
+			var trees = force.Solve(size, ops.Split(' ')).ToList();
 			Console.WriteLine(trees.Count());
 		}
 	}

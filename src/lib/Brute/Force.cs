@@ -11,8 +11,8 @@ namespace lib.Brute
 	{
 		public IEnumerable<Expr> Solve(int sizeMinus1, params string[] ops)
 		{
-			var unOps = Unary.UnaryOperators.Where(kv => ops.Contains(kv.Key)).Select(kv => kv.Value).ToArray();
-			var binOps = Binary.BinaryOperators.Where(kv => ops.Contains(kv.Key)).Select(kv => kv.Value).ToArray();
+			var unOps = Unary.Operators.Where(kv => ops.Contains(kv.Key)).Select(kv => kv.Value).ToArray();
+			var binOps = Binary.Operators.Where(kv => ops.Contains(kv.Key)).Select(kv => kv.Value).ToArray();
 			var hasIf = ops.Contains("if0");
 			var hasFold = ops.Contains("fold");
 			return Solve(sizeMinus1, false, unOps, binOps, hasIf, hasFold);
@@ -146,6 +146,7 @@ namespace lib.Brute
 		}
 
 		[Test]
+		[Explicit]
 		public void Perf()
 		{
 			var rnd = new Random();
