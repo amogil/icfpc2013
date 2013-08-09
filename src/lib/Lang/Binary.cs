@@ -5,20 +5,21 @@ namespace lib.Lang
 {
 	public class Binary : Expr
 	{
-		public static Dictionary<string, Func<Expr, Expr, Expr>> BinaryOperators = new Dictionary<string, Func<Expr, Expr, Expr>>();
+		public static readonly Dictionary<string, Func<Expr, Expr, Expr>> Operators = new Dictionary<string, Func<Expr, Expr, Expr>>();
+
 		static Binary()
 		{
-			Action<string, Func<UInt64, UInt64, UInt64>> add = (name, f) => BinaryOperators.Add(name, (left, right) => new Binary(name, left, right, f));
-			add("and",(a,b) => a&b);
-			add("or", (a, b) => a|b);
-			add("xor", (a, b) => a^b);
-			add("plus", (a, b) => a + b);
+			Action<string, Func<UInt64, UInt64, UInt64>> add = (name, f) => Operators.Add(name, (left, right) => new Binary(name, left, right, f));
+			add("and", (a, b) => a & b);
+			add("or", (a, b) => a | b);
+			add("xor", (a, b) => a ^ b);
+			add("plus", (a, b) => unchecked(a + b));
 		}
 
-		public string Name { get; set; }
-		public Expr A { get; set; }
-		public Expr B { get; set; }
-		public Func<UInt64, UInt64, UInt64> Func { get; set; }
+		public string Name;
+		public Expr A;
+		public Expr B;
+		public Func<UInt64, UInt64, UInt64> Func;
 
 		public Binary(string name, Expr a, Expr b, Func<UInt64, UInt64, UInt64> func)
 		{

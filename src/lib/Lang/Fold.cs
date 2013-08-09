@@ -4,11 +4,11 @@ namespace lib.Lang
 {
 	public class Fold : Expr
 	{
-		public Expr Start { get; set; }
-		public Expr Collection { get; set; }
-		public string ItemName { get; set; }
-		public string AccName { get; set; }
-		public Expr Func { get; set; }
+		public Expr Start;
+		public Expr Collection;
+		public string ItemName;
+		public string AccName;
+		public Expr Func;
 
 		public Fold(Expr collection, Expr start, string itemName, string accName, Expr func)
 		{

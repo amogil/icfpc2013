@@ -5,20 +5,21 @@ namespace lib.Lang
 {
 	public class Unary : Expr
 	{
-		public static Dictionary<string, Func<Expr, Expr>> UnaryOperators = new Dictionary<string, Func<Expr, Expr>>();
+		public static readonly Dictionary<string, Func<Expr, Expr>> Operators = new Dictionary<string, Func<Expr, Expr>>();
+
 		static Unary()
 		{
-			Action<string, Func<UInt64, UInt64>> add = (name, f) => UnaryOperators.Add(name, argExpr => new Unary(name, argExpr, f));
+			Action<string, Func<UInt64, UInt64>> add = (name, f) => Operators.Add(name, argExpr => new Unary(name, argExpr, f));
 			add("not", a => ~a);
-			add("shl1", a => a<<1);
-			add("shr1", a => a>>1);
-			add("shr4", a => a>>4);
-			add("shr16", a => a>>16);
+			add("shl1", a => a << 1);
+			add("shr1", a => a >> 1);
+			add("shr4", a => a >> 4);
+			add("shr16", a => a >> 16);
 		}
 
-		public string Name { get; set; }
-		public Expr Arg { get; set; }
-		public Func<UInt64, UInt64> Func { get; set; }
+		public string Name;
+		public Expr Arg;
+		public Func<UInt64, UInt64> Func;
 
 		public Unary(string name, Expr arg, Func<UInt64, UInt64> func)
 		{

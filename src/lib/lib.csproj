@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="AlphaProtocol\AlphaProtocol.cs" />
     <Compile Include="Brute\Force.cs" />
+    <Compile Include="Annotations.cs" />
     <Compile Include="Guesser\RandomExtensions.cs" />
     <Compile Include="Guesser\Guesser.cs" />
     <Compile Include="Brute\Full_Test.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Lang\Unary.cs" />
     <Compile Include="Lang\Var.cs" />
     <Compile Include="Problem.cs" />
+    <Compile Include="RandomExtensions.cs" />
     <Compile Include="Shuffle.cs" />
     <Compile Include="Web\EvalRequest.cs" />
     <Compile Include="Web\EvalResponse.cs" />

@@ -4,8 +4,8 @@ namespace lib.Lang
 {
 	public class Var : Expr
 	{
-		public string Name { get; set; }
-		public Func<Vars, UInt64> Func { get; set; }
+		public string Name;
+		public Func<Vars, UInt64> Func;
 
 		public Var(string name, Func<Vars, UInt64> func)
 		{
