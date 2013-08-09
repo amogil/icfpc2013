@@ -31,7 +31,7 @@ namespace ProblemsMiner
 
         private static void DownloadProblems(string saveBasePath, IEnumerable<Problem> problems, WebApi webApi)
         {
-            foreach (Problem problem in problems.Where(p => p.Size > 3))
+            foreach (Problem problem in problems.Where(p => p.Size > 3).Shuffle())
             {
                 var trainRequest = new TrainRequest(problem.Size, problem.FoldOperators);
                 TrainProblem trainProblem = webApi.GetTrainProblem(trainRequest);
