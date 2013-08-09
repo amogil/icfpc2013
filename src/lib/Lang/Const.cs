@@ -16,7 +16,12 @@ namespace lib.Lang
 			return value;
 		}
 
-		public override string ToSExpr()
+	    public override object Clone()
+	    {
+	        return new Const(value);
+	    }
+
+	    public override string ToSExpr()
 		{
 			return value.ToString();
 		}

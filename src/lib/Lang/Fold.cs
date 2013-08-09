@@ -19,7 +19,12 @@ namespace lib.Lang
 			Func = func;
 		}
 
-		public override UInt64 Eval(Vars vars)
+	    public override object Clone()
+	    {
+	        return new Fold((Expr) Collection.Clone(), (Expr) Start.Clone(), ItemName, AccName, (Expr) Func.Clone());
+	    }
+
+	    public override UInt64 Eval(Vars vars)
 		{
 			vars.foldAccumulator = Start.Eval(vars);
 			var bytes = BitConverter.GetBytes(Collection.Eval(vars));

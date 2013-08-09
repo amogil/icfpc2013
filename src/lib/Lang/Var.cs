@@ -13,7 +13,12 @@ namespace lib.Lang
 			Func = func;
 		}
 
-		public override UInt64 Eval(Vars vars)
+	    public override object Clone()
+	    {
+	        return new Var(Name, Func);
+	    }
+
+	    public override UInt64 Eval(Vars vars)
 		{
 			return Func(vars);
 		}

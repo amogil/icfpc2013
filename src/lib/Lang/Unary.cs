@@ -20,6 +20,10 @@ namespace lib.Lang
 		public string Name;
 		public Expr Arg;
 		public Func<UInt64, UInt64> Func;
+	    public override object Clone()
+	    {
+	        return new Unary(Name, (Expr) Arg.Clone(), Func);
+	    }
 
 		public Unary(string name, Expr arg, Func<UInt64, UInt64> func)
 		{

@@ -34,7 +34,12 @@ namespace lib.Lang
 			return Func(A.Eval(vars), B.Eval(vars));
 		}
 
-		public override string ToSExpr()
+	    public override object Clone()
+	    {
+	        return new Binary((string) Name.Clone(), (Expr) A.Clone(), (Expr) B.Clone(), Func);
+	    }
+
+	    public override string ToSExpr()
 		{
 			return string.Format("({0} {1} {2})", Name, A, B);
 		}

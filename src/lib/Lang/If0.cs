@@ -15,7 +15,12 @@ namespace lib.Lang
 			this.falseExpr = falseExpr;
 		}
 
-		public override UInt64 Eval(Vars vars)
+	    public override object Clone()
+	    {
+	        return new If0((Expr) cond.Clone(), (Expr) trueExpr.Clone(), (Expr) falseExpr.Clone());
+	    }
+
+	    public override UInt64 Eval(Vars vars)
 		{
 			if (cond.Eval(vars) == 0)
 				return trueExpr.Eval(vars);

@@ -63,6 +63,7 @@
     <Compile Include="Lang\Fold.cs" />
     <Compile Include="Lang\If0.cs" />
     <Compile Include="Lang\Unary.cs" />
+    <Compile Include="Lang\Unifier.cs" />
     <Compile Include="Lang\Var.cs" />
     <Compile Include="Problem.cs" />
     <Compile Include="RandomExtensions.cs" />

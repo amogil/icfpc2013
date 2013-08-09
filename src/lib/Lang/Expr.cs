@@ -4,14 +4,26 @@ using System.Linq;
 
 namespace lib.Lang
 {
-	public abstract class Expr
+	public abstract class Expr : ICloneable
 	{
 		public abstract UInt64 Eval(Vars vars);
 		public abstract string ToSExpr();
+		public abstract object Clone();
 
 		public override string ToString()
 		{
 			return ToSExpr();
+		}
+
+
+		public Expr GetUnified()
+		{
+			var copy = (Expr) this.Clone();
+		    var u = new Unifier();
+
+            u.Unify(copy);
+
+		    return copy;
 		}
 		
 		public static IEnumerable<string> Tokenize(string s)
@@ -86,7 +98,7 @@ namespace lib.Lang
 			var accName = tokens.ExtractToken();
 			tokens.SkipToken(")");
 			var expr = ParseExpr(tokens, argName, itemName, accName);
-		    tokens.SkipToken(")");
+			tokens.SkipToken(")");
 			return new Fold(collection, start, itemName, accName, expr);
 		}
 
