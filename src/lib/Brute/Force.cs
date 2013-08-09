@@ -11,22 +11,31 @@ namespace lib.Brute
 	{
 		public IEnumerable<Expr> Solve(int sizeMinus1, params string[] ops)
 		{
-			if (sizeMinus1 == 1)
-			{
-				return new Expr[] {new Const(0), new Const(1), new Var("x", v => v.x)};
-			}
-			IEnumerable<Expr> topUnary = Solve(sizeMinus1 - 1, ops).SelectMany(ast => GrowTree(ast, ops));
-			IEnumerable<Expr> topBinary = SolveTopBinary(sizeMinus1, ops);
-			IEnumerable<Expr> topIf = SolveTopIf(sizeMinus1, ops);
-
-			return topUnary.Concat(topBinary).Concat(topIf);
+			return Solve(sizeMinus1, false, ops);
 		}
 
-		private IEnumerable<Expr> SolveTopIf(int resultSize, string[] ops)
+		public IEnumerable<Expr> Solve(int sizeMinus1, bool inFold, params string[] ops)
+		{
+			if (sizeMinus1 == 1)
+			{
+				return inFold
+					? new Expr[] { new Const(0), new Const(1), new Var("x", v => v.x), new Var("i", v => v.foldItem), new Var("a", v => v.foldAccumulator) }
+					: new Expr[] {new Const(0), new Const(1), new Var("x", v => v.x)};
+			}
+			IEnumerable<Expr> topUnary = Solve(sizeMinus1 - 1, inFold, ops).SelectMany(ast => GrowTree(ast, ops));
+			IEnumerable<Expr> topBinary = SolveTopBinary(sizeMinus1, inFold, ops);
+			IEnumerable<Expr> topIf = SolveTopIf(sizeMinus1, inFold, ops);
+			IEnumerable<Expr> topFold = inFold ? new Expr[0] : SolveTopFold(sizeMinus1 - 1, ops);
+
+			return topUnary.Concat(topBinary).Concat(topIf).Concat(topFold);
+		}
+
+		private IEnumerable<Expr> SolveTopIf(int resultSize, bool inFold, string[] ops)
 		{
 			if (!ops.Contains("if0")) yield break;
 
-			var treesWithSize = GetTreesWithSizeNotLargerThan(resultSize-3, ops).GroupBy(t => t.Item1, t => t.Item2).ToList();
+			
+			var treesWithSize = GetTreesWithSizeNotLargerThan(resultSize-3, inFold, ops).GroupBy(t => t.Item1, t => t.Item2).ToList();
 			for(int condSize=1; condSize<=resultSize-3; condSize++)
 			{
 				var maxLeftSize = resultSize - 2 - condSize;
@@ -49,9 +58,9 @@ namespace lib.Brute
 			}
 		}
 
-		private IEnumerable<Expr> SolveTopBinary(int resultSize, string[] ops)
+		private IEnumerable<Expr> SolveTopBinary(int resultSize, bool inFold, string[] ops)
 		{
-			List<Tuple<int, Expr>> treesWithSize = GetTreesWithSizeNotLargerThan(resultSize-2, ops);
+			List<Tuple<int, Expr>> treesWithSize = GetTreesWithSizeNotLargerThan(resultSize-2, inFold, ops);
 			var args = treesWithSize.Join(treesWithSize, g => g.Item1, g => resultSize - 1 - g.Item1, (left, right) => new {left = left.Item2, right = right.Item2});
 			foreach (var op in Binary.BinaryOperators.Where(b => ops.Contains(b.Key)).Select(p => p.Value))
 			{
@@ -62,12 +71,38 @@ namespace lib.Brute
 			}
 		}
 
-		private List<Tuple<int, Expr>> GetTreesWithSizeNotLargerThan(int maxTreeSize, string[] ops)
+		private IEnumerable<Expr> SolveTopFold(int resultSize, string[] ops)
+		{
+			if (!ops.Contains("fold")) yield break;
+			var noFold = ops.Where(o => o != "fold").ToArray();
+			var treesWithSizeOutsideFold = GetTreesWithSizeNotLargerThan(resultSize - 3, false, noFold).GroupBy(t => t.Item1, t => t.Item2).ToList();
+			var treesWithSizeInsideFold = GetTreesWithSizeNotLargerThan(resultSize - 3, true, noFold).GroupBy(t => t.Item1, t => t.Item2).ToList();
+			for (int condSize = 1; condSize <= resultSize - 3; condSize++)
+			{
+				var maxLeftSize = resultSize - 2 - condSize;
+				for (int leftSize = 1; leftSize <= maxLeftSize; leftSize++)
+				{
+					var rightSize = resultSize - 1 - condSize - leftSize;
+					//Debug.Assert(leftSize <= rightSize);
+					var collection = treesWithSizeOutsideFold.FirstOrDefault(g => g.Key == condSize);
+					var start = treesWithSizeOutsideFold.FirstOrDefault(g => g.Key == leftSize);
+					var foldFunc = treesWithSizeInsideFold.FirstOrDefault(g => g.Key == rightSize);
+					if (collection == null || start == null || foldFunc == null) continue;
+					var answers = collection.Join(start, i => 1, o => 1, Tuple.Create).Join(foldFunc, i => 1, o => 1, (tuple, right) => Tuple.Create(tuple.Item1, tuple.Item2, right));
+					foreach (var answer in answers)
+					{
+						yield return new Fold(answer.Item1, answer.Item2, "i", "a", answer.Item3);
+					}
+				}
+			}
+		}
+
+		private List<Tuple<int, Expr>> GetTreesWithSizeNotLargerThan(int maxTreeSize, bool inFold, string[] ops)
 		{
 			if (maxTreeSize < 1) return new List<Tuple<int, Expr>>();
 			List<Tuple<int, Expr>> treesWithSize =
 				Enumerable.Range(1, maxTreeSize)
-				          .SelectMany(size => Solve(size, ops).Select(tree => Tuple.Create(size, tree))).ToList();
+				          .SelectMany(size => Solve(size, inFold, ops).Select(tree => Tuple.Create(size, tree))).ToList();
 			return treesWithSize;
 		}
 
@@ -82,11 +117,21 @@ namespace lib.Brute
 	{
 		[TestCase(5, "shr4 if0", "(shr4 (if0 x x x))")]
 		[TestCase(5, "shr4 if0", "(shr4 (if0 x x x))")]
+		[TestCase(5, "shr4 if0", "(shr4 (if0 x x x))")]
+		[TestCase(9, "or fold", "(fold x 0 (lambda (i a) (or (or i a) a)))")]
+		[TestCase(10, "fold not or shr1 shr4", "(fold (shr1 (not x)) 0 (lambda (i a) (or i (shr4 a))))")]
 		public void Test(int size, string ops, string expectedExpr)
 		{
 			var force = new Force();
-			var trees = force.Solve(size, ops.Split(' '));
-			Assert.IsTrue(trees.Any(tree => tree.ToSExpr() == expectedExpr));
+			var trees = force.Solve(size, false, ops.Split(' ')).ToList();
+			if (trees.All(tree => tree.ToSExpr() != expectedExpr))
+			{
+				foreach (var tree in trees)
+				{
+					Console.WriteLine(tree);
+				}
+				Assert.Fail();
+			}
 		}
 	}
 
