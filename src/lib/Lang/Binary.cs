@@ -7,9 +7,9 @@ namespace lib.Lang
 		public string Name { get; set; }
 		public Expr A { get; set; }
 		public Expr B { get; set; }
-		public Func<long, long, long> Func { get; set; }
+		public Func<UInt64, UInt64, UInt64> Func { get; set; }
 
-		public Binary(string name, Expr a, Expr b, Func<Int64, Int64, Int64> func)
+		public Binary(string name, Expr a, Expr b, Func<UInt64, UInt64, UInt64> func)
 		{
 			Name = name;
 			A = a;
@@ -17,7 +17,7 @@ namespace lib.Lang
 			Func = func;
 		}
 
-		public override long Eval(Vars vars)
+		public override UInt64 Eval(Vars vars)
 		{
 			return Func(A.Eval(vars), B.Eval(vars));
 		}

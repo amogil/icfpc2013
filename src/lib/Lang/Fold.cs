@@ -19,7 +19,7 @@ namespace lib.Lang
 			Func = func;
 		}
 
-		public override long Eval(Vars vars)
+		public override UInt64 Eval(Vars vars)
 		{
 			vars.foldAccumulator = Start.Eval(vars);
 			var bytes = BitConverter.GetBytes(Collection.Eval(vars));

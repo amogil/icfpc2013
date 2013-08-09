@@ -1,4 +1,6 @@
-﻿namespace lib.Lang
+﻿using System;
+
+namespace lib.Lang
 {
 	public class If0 : Expr
 	{
@@ -13,7 +15,7 @@
 			this.falseExpr = falseExpr;
 		}
 
-		public override long Eval(Vars vars)
+		public override UInt64 Eval(Vars vars)
 		{
 			if (cond.Eval(vars) == 0)
 				return trueExpr.Eval(vars);

@@ -5,15 +5,15 @@ namespace lib.Lang
 	public class Var : Expr
 	{
 		public string Name { get; set; }
-		public Func<Vars, long> Func { get; set; }
+		public Func<Vars, UInt64> Func { get; set; }
 
-		public Var(string name, Func<Vars, Int64> func)
+		public Var(string name, Func<Vars, UInt64> func)
 		{
 			Name = name;
 			Func = func;
 		}
 
-		public override long Eval(Vars vars)
+		public override UInt64 Eval(Vars vars)
 		{
 			return Func(vars);
 		}

@@ -4,15 +4,15 @@ namespace lib.Lang
 {
 	public class Const : Expr
 	{
-		public readonly long value;
+		public readonly UInt64 value;
 
-		public Const(Int64 value)
+		public Const(UInt64 value)
 		{
 			this.value = value;
 		}
 
 
-		public override long Eval(Vars vars)
+		public override UInt64 Eval(Vars vars)
 		{
 			return value;
 		}

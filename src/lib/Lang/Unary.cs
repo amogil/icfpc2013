@@ -6,16 +6,16 @@ namespace lib.Lang
 	{
 		public string Name { get; set; }
 		public Expr Arg { get; set; }
-		public Func<long, long> Func { get; set; }
+		public Func<UInt64, UInt64> Func { get; set; }
 
-		public Unary(string name, Expr arg, Func<Int64, Int64> func)
+		public Unary(string name, Expr arg, Func<UInt64, UInt64> func)
 		{
 			Name = name;
 			Arg = arg;
 			Func = func;
 		}
 
-		public override long Eval(Vars vars)
+		public override UInt64 Eval(Vars vars)
 		{
 			return Func(Arg.Eval(vars));
 		}

@@ -6,7 +6,7 @@ namespace lib.Lang
 {
 	public abstract class Expr
 	{
-		public abstract Int64 Eval(Vars vars);
+		public abstract UInt64 Eval(Vars vars);
 		public abstract string ToSExpr();
 
 		public override string ToString()
@@ -36,7 +36,7 @@ namespace lib.Lang
 			return ParseExpr(tokens, varName, null, null);
 		}
 
-		public static Int64 Eval(string sExpr, Int64 arg)
+		public static UInt64 Eval(string sExpr, UInt64 arg)
 		{
 			return ParseFunction(sExpr).Eval(new Vars(arg));
 		}
@@ -94,13 +94,13 @@ namespace lib.Lang
 
 	public class Vars
 	{
-		public Vars(long x)
+		public Vars(UInt64 x)
 		{
 			this.x = x;
 		}
 
-		public Int64 x;
-		public Int64 foldItem;
-		public Int64 foldAccumulator;
+		public UInt64 x;
+		public UInt64 foldItem;
+		public UInt64 foldAccumulator;
 	}
 }

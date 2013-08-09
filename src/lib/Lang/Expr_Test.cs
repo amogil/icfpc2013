@@ -1,4 +1,6 @@
-﻿using NUnit.Framework;
+﻿using System;
+using System.Collections.Generic;
+using NUnit.Framework;
 
 namespace lib.Lang
 {
@@ -45,26 +47,51 @@ namespace lib.Lang
 		}
 
 		[Test]
-		[TestCase("(lambda (x) x)", 1, 1)]
-		[TestCase("(lambda (x) x)", 0, 0)]
-		[TestCase("(lambda (x) x)", 5, 5)]
-		[TestCase("(lambda (x) (shl1 x))", 1, 2)]
-		[TestCase("(lambda (x) (shl1 x))", 3, 6)]
-		[TestCase("(lambda (x) (xor x x))", 3, 0)]
-		[TestCase("(lambda (x) (xor x x))", -1, 0)]
-		[TestCase("(lambda (x) (xor 0 (and 1 (or x (plus x (not (shl1 (shr1 (shr4 (shr16 x))))))))))", 0, 1)]
-		[TestCase("(lambda (x) (xor 0 (and x (or x (plus x (not (shl1 (shr1 (shr4 (shr16 x))))))))))", 12345678, 12345678)]
-		[TestCase("(lambda (x) (not (shl1 (shr1 (shr4 (shr16 x))))))", 1<<20, -1)]
-		[TestCase("(lambda (x) (fold x 0 (lambda (x acc) (plus x acc)))", 0, 0)]
-		[TestCase("(lambda (x) (fold x 0 (lambda (x acc) (plus x acc)))", 1, 1)]
-		[TestCase("(lambda (x) (fold x (plus 1 1) (lambda (x acc) (plus x acc)))", 65535, 512)]
-		[TestCase("(lambda (x) (if0 0 1 0))", 1, 1)]
-		[TestCase("(lambda (x) (if0 0 1 0))", 0, 1)]
-		[TestCase("(lambda (x) (if0 x 0 1))", 0, 0)]
-		[TestCase("(lambda (x) (if0 x 0 1))", 1, 1)]
-		public void Eval(string sExpr, long arg, long expected)
+		[TestCaseSource("GetEvalTestCases")]
+		public void Eval(TestCase t)
 		{
-			Assert.AreEqual(expected, Expr.Eval(sExpr, arg));
+			Assert.That(Expr.Eval(t.Program, t.Arg), Is.EqualTo(t.ExpectedValue));
+		}
+
+		private static IEnumerable<TestCase> GetEvalTestCases()
+		{
+			yield return new TestCase("(lambda (x) x)", 1, 1);
+			yield return new TestCase("(lambda (x) x)", 0, 0);
+			yield return new TestCase("(lambda (x) x)", 5, 5);
+			yield return new TestCase("(lambda (x) (shl1 x))", 1, 2);
+			yield return new TestCase("(lambda (x) (shl1 x))", 3, 6);
+			yield return new TestCase("(lambda (x) (xor x x))", 3, 0);
+			yield return new TestCase("(lambda (x) (xor x x))", unchecked ((ulong) (-1)), 0);
+			yield return new TestCase("(lambda (x) (xor 0 (and 1 (or x (plus x (not (shl1 (shr1 (shr4 (shr16 x))))))))))", 0, 1);
+			yield return new TestCase("(lambda (x) (xor 0 (and x (or x (plus x (not (shl1 (shr1 (shr4 (shr16 x))))))))))", 12345678, 12345678);
+			yield return new TestCase("(lambda (x) (not (shl1 (shr1 (shr4 (shr16 x))))))", 1 << 20, unchecked((ulong)(-1)));
+			yield return new TestCase("(lambda (x) (fold x 0 (lambda (x acc) (plus x acc)))", 0, 0);
+			yield return new TestCase("(lambda (x) (fold x 0 (lambda (x acc) (plus x acc)))", 1, 1);
+			yield return new TestCase("(lambda (x) (fold x (plus 1 1) (lambda (x acc) (plus x acc)))", 65535, 512);
+			yield return new TestCase("(lambda (x) (if0 0 1 0))", 1, 1);
+			yield return new TestCase("(lambda (x) (if0 0 1 0))", 0, 1);
+			yield return new TestCase("(lambda (x) (if0 x 0 1))", 0, 0);
+			yield return new TestCase("(lambda (x) (if0 x 0 1))", 1, 1);
+			yield return new TestCase("(lambda (x) (plus x 1))", 0xffffffffffffffff, 0);
+		}
+
+		public class TestCase
+		{
+			public TestCase(string program, ulong arg, ulong expectedValue)
+			{
+				Program = program;
+				Arg = arg;
+				ExpectedValue = expectedValue;
+			}
+
+			public string Program { get; set; }
+			public UInt64 Arg { get; set; }
+			public UInt64 ExpectedValue { get; set; }
+
+			public override string ToString()
+			{
+				return string.Format("P: {0}, P({1}) = {2}", Program, Arg, ExpectedValue);
+			}
 		}
 	}
 }
