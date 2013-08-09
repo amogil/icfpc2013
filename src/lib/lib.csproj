@@ -48,6 +48,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lang\Expr.cs" />
+    <Compile Include="Lang\Expr_Test.cs" />
     <Compile Include="Web\EvalRequest.cs" />
     <Compile Include="Web\EvalResponse.cs" />
     <Compile Include="Web\Status.cs" />
