@@ -162,7 +162,7 @@ namespace lib.Brute
 
 			var args = new List<Vars>();
 			for (var i = 0; i < 4; i++)
-				args.Add(new Vars(rnd.NextUlong()));
+				args.Add(new Vars(rnd.NextUInt64()));
 			Console.WriteLine("eval");
 			sw.Restart();
 			foreach (var arg in args)

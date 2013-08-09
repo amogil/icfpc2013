@@ -34,7 +34,7 @@ namespace lib
 			return highBits + lowBits;
 		}
 
-		public static ulong NextUlong([NotNull] this Random random)
+		public static ulong NextUInt64([NotNull] this Random random)
 		{
 			var highBits = ((ulong)random.Next()) << 32;
 			var lowBits = (ulong)random.Next();
