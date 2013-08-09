@@ -41,6 +41,7 @@ namespace lib.Lang
 		[TestCase("(plus 1 0)")]
 		[TestCase("(if0 0 1 0)")]
 		[TestCase("(fold 0 1 (lambda (x y) (plus x y)))")]
+		[TestCase("(xor (fold 0 1 (lambda (x y) (plus x y))) 1)")]
 		public void ParseCorrect(string s)
 		{
 			Assert.AreEqual(s, Expr.ParseExpr(s).ToSExpr());

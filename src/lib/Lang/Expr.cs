@@ -86,6 +86,7 @@ namespace lib.Lang
 			var accName = tokens.ExtractToken();
 			tokens.SkipToken(")");
 			var expr = ParseExpr(tokens, argName, itemName, accName);
+		    tokens.SkipToken(")");
 			return new Fold(collection, start, itemName, accName, expr);
 		}
 
