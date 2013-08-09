@@ -1,0 +1,1 @@
+Id: 6BkfzxIknIwvkS4c9sBINCcP, Challenge: (lambda (x_8619) (fold (plus x_8619 0) x_8619 (lambda (x_8620 x_8621) (or (shl1 x_8621) x_8620)))), Size: 11, Operators: fold,or,plus,shl1

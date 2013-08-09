@@ -1,0 +1,1 @@
+Id: W6FCshStKuWTGEA2G95RCZY5, Challenge: (lambda (x_10613) (shr16 (if0 (or (plus (shr4 1) x_10613) x_10613) 1 x_10613))), Size: 11, Operators: if0,or,plus,shr16,shr4

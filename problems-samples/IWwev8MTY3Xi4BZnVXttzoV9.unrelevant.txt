@@ -1,0 +1,1 @@
+Id: M8VSOeaEAixxJLpHXtqZhtoh, Challenge: (lambda (x_10315) (fold x_10315 0 (lambda (x_10315 x_10316) (xor (or (shr1 1) 1) x_10315)))), Size: 11, Operators: or,shr1,tfold,xor
