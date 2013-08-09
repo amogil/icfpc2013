@@ -34,6 +34,15 @@ namespace ProblemsMiner
                 };
         }
 
+        public override string ToString()
+        {
+            return string.Format("Id: {0}, " +
+                                 "Size: {1}, " +
+                                 "Solution: {2}, " +
+                                 "Operations: {3}", Id, Size, Solution.ToSExpr(),
+                                 string.Join(", ", AllOperators));
+        }
+
         /// <summary>
         /// Parses problem from training format:
         ///     kev: value, key1: value
@@ -56,7 +65,7 @@ namespace ProblemsMiner
                         problem.Size = int.Parse(kv[1]);
                         break;
                     case "Operators":
-                        problem.AllOperators = kv[1].Split(',');
+                        problem.AllOperators = kv[1].Trim().Split(',').Select( x => x.Trim()).ToArray();
                         break;
                     case "Challenge":
                         problem.Solution = Expr.ParseFunction(kv[1].Trim());
@@ -75,8 +84,8 @@ namespace ProblemsMiner
                     Id = "rKHWXidcNEEC6BmTkAeFSeGd",
                     Size = 6,
                     AllOperators = new string[] {"shl1","shr1","shr16","shr4"},
-                    Solution = Expr.ParseExpr("(lambda (x_4637) (shr16 (shr1 (shl1 (shr4 x_4637)))))")
-                }, ParseTraining("Id: rKHWXidcNEEC6BmTkAeFSeGd, Challenge: (lambda (x_4637) (shr16 (shr1 (shl1 (shr4 x_4637))))), Size: 6, Operators: shl1,shr1,shr16,shr4"));
+                    Solution = Expr.ParseFunction("(lambda (x_4637) (shr16 (shr1 (shl1 (shr4 x_4637)))))")
+                }.ToString(), ParseTraining("Id: rKHWXidcNEEC6BmTkAeFSeGd, Challenge: (lambda (x_4637) (shr16 (shr1 (shl1 (shr4 x_4637))))), Size: 6, Operators: shl1,shr1,shr16,shr4").ToString());
         }
     }
 }
