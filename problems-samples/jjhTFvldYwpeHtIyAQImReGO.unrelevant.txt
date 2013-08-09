@@ -1,0 +1,1 @@
+Id: YnoiUGjU4lOAc0ERFBwrMMWr, Challenge: (lambda (x_4089) (fold (shr1 x_4089) 0 (lambda (x_4090 x_4091) (plus x_4091 (plus x_4091 x_4090))))), Size: 11, Operators: fold,plus,shr1
