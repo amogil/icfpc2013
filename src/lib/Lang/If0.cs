@@ -13,6 +13,14 @@
 			this.falseExpr = falseExpr;
 		}
 
+		public override long Eval(Vars vars)
+		{
+			if (cond.Eval(vars) == 0)
+				return trueExpr.Eval(vars);
+			else 
+				return falseExpr.Eval(vars);
+		}
+
 		public override string ToSExpr()
 		{
 			return string.Format("(if0 {0} {1} {2})", cond, trueExpr, falseExpr);
