@@ -16,7 +16,7 @@ namespace lib.Guesser
             return formulas.Where(e => IsSolve(e, inputs, outputs));
         }
 
-        private static bool IsSolve(Expr e, ulong[] inputs, ulong[] outputs)
+        private static bool IsSolve(Expr e, IEnumerable<ulong> inputs, ulong[] outputs)
         {
             return !inputs.Where((t, i) => e.Eval(new Vars(t)) != outputs[i]).Any();
         }
@@ -25,22 +25,22 @@ namespace lib.Guesser
     [TestFixture]
     public class Guesser_Test
     {
-        [Test]
-        public void Test()
+        [TestCase("(lambda (x) (and (xor (shr4 x) x) x))", 7, new[] {"and", "shr4", "xor"}, 8)]
+        [TestCase("(lambda (x) (plus (or 1 x) (shl1 x)))", 7, new[] {"or", "plus", "shl1"}, 8)]
+        [TestCase("(lambda (x) (shr4 x))", 3, new[] {"shr4"}, 1)]
+        [TestCase("(lambda (x) (plus x 1))", 4, new[] { "plus" }, 2)]
+        [TestCase("(lambda (x) (not x))", 3, new[] { "not" }, 1)]
+        public void Test(string function, int size, string[] operations, int equalFormulas)
         {
-            Expr formula = Expr.ParseFunction("(lambda (x) (and (xor (shr4 x) x) x))");
-            var operations = new[] {"and", "shr4", "xor"};
-            int size = 7;
+            Expr formula = Expr.ParseFunction(function);
             var random = new Random();
 
             Expr[] trees = new Force().Solve(size - 1, operations).ToArray();
 
-            do
-            {
-                ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
-                ulong[] outputs = inputs.Select(i => formula.Eval(new Vars(i))).ToArray();                
-                trees = Guesser.Guess(trees, inputs, outputs).ToArray();
-            } while (trees.Length > 1);
+            ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
+            ulong[] outputs = inputs.Select(i => formula.Eval(new Vars(i))).ToArray();
+            trees = Guesser.Guess(trees, inputs, outputs).ToArray();
+            Assert.AreEqual(equalFormulas, trees.Count());
         }
     }
 }
