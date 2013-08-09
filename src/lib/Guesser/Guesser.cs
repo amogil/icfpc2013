@@ -28,16 +28,19 @@ namespace lib.Guesser
         [Test]
         public void Test()
         {
-            var formula = Expr.ParseFunction("(and (xor (shr4 x_6337) x_6337) x_6337))");
+            Expr formula = Expr.ParseFunction("(lambda (x) (and (xor (shr4 x) x) x))");
+            var operations = new[] {"and", "shr4", "xor"};
+            int size = 7;
+            var random = new Random();
 
-            //Size: 8, Operators: and,shl1,shr1
-            var trees = new Force().Solve(7, "and", "shl1", "shr1").ToList();
+            Expr[] trees = new Force().Solve(size - 1, operations).ToArray();
 
-            Console.WriteLine(trees.Count());
-            foreach (var tree in trees)
+            do
             {
-                Console.WriteLine(tree);
-            }
+                ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
+                ulong[] outputs = inputs.Select(i => formula.Eval(new Vars(i))).ToArray();                
+                trees = Guesser.Guess(trees, inputs, outputs).ToArray();
+            } while (trees.Length > 1);
         }
     }
 }
