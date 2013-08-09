@@ -2,8 +2,8 @@ namespace lib.Web
 {
 	public class EvalResponse
 	{
-		private string message;
-		private string[] outputs;
-		private string status;
+		public string message;
+		public string[] outputs;
+		public string status;
 	}
 }

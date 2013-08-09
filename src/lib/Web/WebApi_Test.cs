@@ -16,6 +16,7 @@ namespace lib.Web
 		[TestCase(10, "tfold")]
 		[TestCase(12, "fold")]
 		[Test]
+		[Explicit]
 		public void GetTrain(int size, params string[] operators)
 		{
 			TrainProblem trainProblem = api.GetTrainProblem(new TrainRequest(size, operators));
@@ -24,6 +25,7 @@ namespace lib.Web
 		}
 
 		[Test]
+		[Explicit]
 		public void Status()
 		{
 			Status status = api.GetStatus();
