@@ -48,8 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Lang\Binary.cs" />
+    <Compile Include="Lang\Const.cs" />
     <Compile Include="Lang\Expr.cs" />
     <Compile Include="Lang\Expr_Test.cs" />
+    <Compile Include="Lang\Extensions.cs" />
+    <Compile Include="Lang\Fold.cs" />
+    <Compile Include="Lang\If0.cs" />
+    <Compile Include="Lang\Unary.cs" />
+    <Compile Include="Lang\Var.cs" />
     <Compile Include="Web\EvalRequest.cs" />
     <Compile Include="Web\EvalResponse.cs" />
     <Compile Include="Web\Status.cs" />

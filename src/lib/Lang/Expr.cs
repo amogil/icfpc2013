@@ -1,40 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace lib.Lang
 {
-	public static class Extensions
-	{
-		public static IEnumerable<string> AlternateWith(this IEnumerable<string> items, string alternator)
-		{
-			return items.SelectMany((s, i) => i == 0 ? new[]{s} : new[]{alternator, s});
-		}
-
-		public static IEnumerator<T> MoveNextOrFail<T>(this IEnumerator<T> tokens)
-		{
-			if (!tokens.MoveNext()) throw new FormatException("unexpected end of tokens");
-			return tokens;
-		}
-
-		public static T ExtractToken<T>(this IEnumerator<T> tokens)
-		{
-			var t = tokens.Current;
-			tokens.MoveNextOrFail();
-			return t;
-		}
-		
-		public static IEnumerator<T> SkipToken<T>(this IEnumerator<T> tokens, T expectedToken)
-		{
-			if (!expectedToken.Equals(tokens.Current)) throw new FormatException(string.Format("Expected {0} but was {1}", expectedToken, tokens.Current));
-			return tokens.MoveNextOrFail();
-		}
-	}
-	
 	public abstract class Expr
 	{
 //		public abstract Int64 Eval(Vars vars);
@@ -105,119 +74,6 @@ namespace lib.Lang
 			return new Fold(e1, e2, id1, id2, expr);
 		}
 
-	}
-
-	public class Var : Expr
-	{
-		public string Name { get; set; }
-
-		public Var(string name)
-		{
-			Name = name;
-		}
-
-		public override string ToSExpr()
-		{
-			return Name;
-		}
-	}
-
-	public class Binary : Expr
-	{
-		public string Name { get; set; }
-		public Expr A { get; set; }
-		public Expr B { get; set; }
-		public Func<long, long, long> Func { get; set; }
-
-		public Binary(string name, Expr a, Expr b, Func<Int64, Int64, Int64> func)
-		{
-			Name = name;
-			A = a;
-			B = b;
-			Func = func;
-		}
-
-		public override string ToSExpr()
-		{
-			return string.Format("({0} {1} {2})", Name, A, B);
-		}
-	}
-
-	public class Unary : Expr
-	{
-		public string Name { get; set; }
-		public Expr Arg { get; set; }
-		public Func<long, long> Func { get; set; }
-
-		public Unary(string name, Expr arg, Func<Int64, Int64> func)
-		{
-			Name = name;
-			Arg = arg;
-			Func = func;
-		}
-
-		public override string ToSExpr()
-		{
-			return string.Format("({0} {1})", Name, Arg);
-		}
-	}
-
-	public class Fold : Expr
-	{
-		public Expr Start { get; set; }
-		public Expr Collection { get; set; }
-		public string StartVarName { get; set; }
-		public string ItemVarName { get; set; }
-		public Expr Func { get; set; }
-
-		public Fold(Expr start, Expr collection, string startVarName, string itemVarName, Expr func)
-		{
-			Start = start;
-			Collection = collection;
-			StartVarName = startVarName;
-			ItemVarName = itemVarName;
-			Func = func;
-		}
-
-		public override string ToSExpr()
-		{
-			return string.Format("(fold {0} {1} (lambda ({2} {3}) {4}))", Start, Collection, StartVarName, ItemVarName, Func);
-		}
-	}
-
-	public class If0 : Expr
-	{
-		public readonly Expr cond;
-		public readonly Expr trueExpr;
-		public readonly Expr falseExpr;
-
-		public If0(Expr cond, Expr trueExpr, Expr falseExpr)
-		{
-			this.cond = cond;
-			this.trueExpr = trueExpr;
-			this.falseExpr = falseExpr;
-		}
-
-		public override string ToSExpr()
-		{
-			return string.Format("(if0 {0} {1} {2})", cond, trueExpr, falseExpr);
-		}
-	}
-
-	public class Const : Expr
-	{
-		public readonly long value;
-
-		public Const(Int64 value)
-		{
-			this.value = value;
-		}
-
-
-		public override string ToSExpr()
-		{
-			return value.ToString();
-		}
 	}
 
 
