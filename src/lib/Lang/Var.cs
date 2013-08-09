@@ -9,7 +9,7 @@ namespace lib.Lang
 
 		public Var(string name, Func<Vars, UInt64> func)
 		{
-			Name = name;
+			Name = String.Intern(name);
 			Func = func;
 		}
 

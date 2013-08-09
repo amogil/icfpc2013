@@ -23,7 +23,7 @@ namespace lib.Lang
 
 		public Binary(string name, Expr a, Expr b, Func<UInt64, UInt64, UInt64> func)
 		{
-			Name = name;
+			Name = String.Intern(name);
 			A = a;
 			B = b;
 			Func = func;

@@ -23,7 +23,7 @@ namespace lib.Lang
 
 		public Unary(string name, Expr arg, Func<UInt64, UInt64> func)
 		{
-			Name = name;
+			Name = String.Intern(name);
 			Arg = arg;
 			Func = func;
 		}

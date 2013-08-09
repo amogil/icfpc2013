@@ -2,9 +2,8 @@
 {
     internal class AlphaProtocol
     {
-        public static ulong[] Get()
+        public static void Get(string problemId)
         {
-            return null;
         }
     }
 }

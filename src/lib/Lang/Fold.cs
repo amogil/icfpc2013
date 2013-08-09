@@ -14,8 +14,8 @@ namespace lib.Lang
 		{
 			Start = start;
 			Collection = collection;
-			ItemName = itemName;
-			AccName = accName;
+			ItemName = String.Intern(itemName);
+			AccName = String.Intern(accName);
 			Func = func;
 		}
 
