@@ -70,7 +70,7 @@ namespace lib.Lang
 			else if (t == "and") res = new Binary("and", parse(), parse(), (a, b) => a & b);
 			else if (t == "or") res = new Binary("or", parse(), parse(), (a, b) => a | b);
 			else if (t == "xor") res = new Binary("xor", parse(), parse(), (a, b) => a ^ b);
-			else if (t == "plus") res = new Binary("plus", parse(), parse(), (a, b) => a + b);
+			else if (t == "plus") res = new Binary("plus", parse(), parse(), (a, b) => unchecked(a + b));
 			else throw new FormatException("unknown function " + t);
 			tokens.SkipToken(")");
 			return res;

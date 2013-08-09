@@ -50,29 +50,85 @@ namespace lib.Lang
 		[TestCaseSource("GetEvalTestCases")]
 		public void Eval(TestCase t)
 		{
-			Assert.That(Expr.Eval(t.Program, t.Arg), Is.EqualTo(t.ExpectedValue));
+			var actual = Expr.Eval(t.Program, t.Arg);
+			Assert.That(actual, Is.EqualTo(t.ExpectedValue), string.Format("Was: 0x{0:x}", actual));
 		}
 
 		private static IEnumerable<TestCase> GetEvalTestCases()
 		{
+			yield return new TestCase("(lambda (x) 0)", 1, 0);
+			yield return new TestCase("(lambda (x) 0)", 0, 0);
+			yield return new TestCase("(lambda (x) 1)", 1, 1);
+			yield return new TestCase("(lambda (x) 1)", 0, 1);
+
 			yield return new TestCase("(lambda (x) x)", 1, 1);
 			yield return new TestCase("(lambda (x) x)", 0, 0);
 			yield return new TestCase("(lambda (x) x)", 5, 5);
+
+			yield return new TestCase("(lambda (x) (not x))", 0, 0xffffffffffffffff);
+			yield return new TestCase("(lambda (x) (not x))", 1, 0xfffffffffffffffe);
+			yield return new TestCase("(lambda (x) (not x))", 0xffffffffffffffff, 0);
+			yield return new TestCase("(lambda (x) (not x))", 0xfffffffffffffffe, 1);
+
+			yield return new TestCase("(lambda (x) (shl1 x))", 0, 0);
 			yield return new TestCase("(lambda (x) (shl1 x))", 1, 2);
+			yield return new TestCase("(lambda (x) (shl1 x))", 0xffffffffffffffff, 0xfffffffffffffffe);
+			yield return new TestCase("(lambda (x) (shl1 x))", 0xfffffffffffffffe, 0xfffffffffffffffc);
 			yield return new TestCase("(lambda (x) (shl1 x))", 3, 6);
+
+			yield return new TestCase("(lambda (x) (shr1 x))", 0, 0);
+			yield return new TestCase("(lambda (x) (shr1 x))", 1, 0);
+			yield return new TestCase("(lambda (x) (shr1 x))", 0xffffffffffffffff, 0x7fffffffffffffff);
+			yield return new TestCase("(lambda (x) (shr1 x))", 0xfffffffffffffffe, 0x7fffffffffffffff);
+
+			yield return new TestCase("(lambda (x) (shr4 x))", 0, 0);
+			yield return new TestCase("(lambda (x) (shr4 x))", 1, 0);
+			yield return new TestCase("(lambda (x) (shr4 x))", 0xf, 0);
+			yield return new TestCase("(lambda (x) (shr4 x))", 0x10, 1);
+			yield return new TestCase("(lambda (x) (shr4 x))", 0xffffffffffffffff, 0x0fffffffffffffff);
+
+			yield return new TestCase("(lambda (x) (shr16 x))", 0, 0);
+			yield return new TestCase("(lambda (x) (shr16 x))", 1, 0);
+			yield return new TestCase("(lambda (x) (shr16 x))", 0xffff, 0);
+			yield return new TestCase("(lambda (x) (shr16 x))", 0x10000, 1);
+			yield return new TestCase("(lambda (x) (shr16 x))", 0xffffffffffffffff, 0x0000ffffffffffff);
+
+			yield return new TestCase("(lambda (x) (and x 0))", 0, 0);
+			yield return new TestCase("(lambda (x) (and x 0))", 1, 0);
+			yield return new TestCase("(lambda (x) (and x 1))", 0, 0);
+			yield return new TestCase("(lambda (x) (and x 1))", 1, 1);
+
+			yield return new TestCase("(lambda (x) (or x 0))", 0, 0);
+			yield return new TestCase("(lambda (x) (or x 0))", 1, 1);
+			yield return new TestCase("(lambda (x) (or x 1))", 0, 1);
+			yield return new TestCase("(lambda (x) (or x 1))", 1, 1);
+
+			yield return new TestCase("(lambda (x) (xor x 0))", 0, 0);
+			yield return new TestCase("(lambda (x) (xor x 0))", 1, 1);
+			yield return new TestCase("(lambda (x) (xor x 1))", 0, 1);
+			yield return new TestCase("(lambda (x) (xor x 1))", 1, 0);
 			yield return new TestCase("(lambda (x) (xor x x))", 3, 0);
 			yield return new TestCase("(lambda (x) (xor x x))", unchecked ((ulong) (-1)), 0);
+
+			yield return new TestCase("(lambda (x) (plus x 0))", 0, 0);
+			yield return new TestCase("(lambda (x) (plus x 0))", 1, 1);
+			yield return new TestCase("(lambda (x) (plus x 1))", 0, 1);
+			yield return new TestCase("(lambda (x) (plus x 1))", 1, 2);
+			yield return new TestCase("(lambda (x) (plus x 1))", 0xfffffffffffffffe, 0xffffffffffffffff);
+			yield return new TestCase("(lambda (x) (plus x 1))", 0xffffffffffffffff, 0);
+
 			yield return new TestCase("(lambda (x) (xor 0 (and 1 (or x (plus x (not (shl1 (shr1 (shr4 (shr16 x))))))))))", 0, 1);
 			yield return new TestCase("(lambda (x) (xor 0 (and x (or x (plus x (not (shl1 (shr1 (shr4 (shr16 x))))))))))", 12345678, 12345678);
 			yield return new TestCase("(lambda (x) (not (shl1 (shr1 (shr4 (shr16 x))))))", 1 << 20, unchecked((ulong)(-1)));
+
 			yield return new TestCase("(lambda (x) (fold x 0 (lambda (x acc) (plus x acc)))", 0, 0);
 			yield return new TestCase("(lambda (x) (fold x 0 (lambda (x acc) (plus x acc)))", 1, 1);
 			yield return new TestCase("(lambda (x) (fold x (plus 1 1) (lambda (x acc) (plus x acc)))", 65535, 512);
+
 			yield return new TestCase("(lambda (x) (if0 0 1 0))", 1, 1);
 			yield return new TestCase("(lambda (x) (if0 0 1 0))", 0, 1);
 			yield return new TestCase("(lambda (x) (if0 x 0 1))", 0, 0);
 			yield return new TestCase("(lambda (x) (if0 x 0 1))", 1, 1);
-			yield return new TestCase("(lambda (x) (plus x 1))", 0xffffffffffffffff, 0);
 		}
 
 		public class TestCase
@@ -90,7 +146,7 @@ namespace lib.Lang
 
 			public override string ToString()
 			{
-				return string.Format("P: {0}, P({1}) = {2}", Program, Arg, ExpectedValue);
+				return string.Format("{0}, P(0x{1:x}) = 0x{2:x}", Program, Arg, ExpectedValue);
 			}
 		}
 	}
