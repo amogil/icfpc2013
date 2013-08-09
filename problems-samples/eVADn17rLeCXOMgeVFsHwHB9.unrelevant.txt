@@ -1,0 +1,1 @@
+Id: BKAD2RlbbEJaWcriKccTYXBK, Challenge: (lambda (x_28393) (shr16 (and (or (and (not (not (not (if0 (xor (or 0 (shr16 x_28393)) 0) x_28393 0)))) x_28393) 0) x_28393))), Size: 20, Operators: and,if0,not,or,shr16,xor

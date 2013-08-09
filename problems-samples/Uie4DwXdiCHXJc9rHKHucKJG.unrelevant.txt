@@ -1,0 +1,1 @@
+Id: 8G9IO87daJxMta9mv0uUxW41, Challenge: (lambda (x_1339) (fold x_1339 0 (lambda (x_1339 x_1340) (and x_1339 x_1339)))), Size: 8, Operators: and,tfold

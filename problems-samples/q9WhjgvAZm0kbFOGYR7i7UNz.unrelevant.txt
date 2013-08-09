@@ -1,0 +1,1 @@
+Id: cimvYT2rJbAi9dU4XE362kzx, Challenge: (lambda (x_55163) (fold (plus (xor (if0 (and (shr16 (shr16 (shl1 (shr1 x_55163)))) x_55163) x_55163 x_55163) x_55163) x_55163) 0 (lambda (x_55164 x_55165) (xor x_55165 (shr1 x_55164))))), Size: 22, Operators: and,fold,if0,plus,shl1,shr1,shr16,xor

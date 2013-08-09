@@ -1,1 +1,2 @@
 Id: NVbngxBrhgN4zbHBLidr7EbH, Challenge: (lambda (x_7225) (xor (or (shr4 (shr16 x_7225)) 0) x_7225)), Size: 8, Operators: or,shr16,shr4,xor
+Id: gJy6d3LQpsgrk2wM7y8cmEuV, Challenge: (lambda (x_7745) (and (or (shl1 (not 1)) x_7745) 1)), Size: 8, Operators: and,not,or,shl1

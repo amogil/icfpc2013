@@ -1,2 +1,3 @@
 Id: oZSmijr6ebpKaz5OaIOFQaGO, Challenge: (lambda (x_5016) (shl1 (xor (shl1 0) x_5016))), Size: 6, Operators: shl1,xor
 Id: lRBtDqhA5FbFI7shwT6g4Jhl, Challenge: (lambda (x_4696) (not (shr1 (shr4 (shr4 x_4696))))), Size: 6, Operators: not,shr1,shr4
+Id: FAivthQrbqcX4lLX81RPtGeE, Challenge: (lambda (x_4694) (and (plus 0 x_4694) 1)), Size: 6, Operators: and,plus

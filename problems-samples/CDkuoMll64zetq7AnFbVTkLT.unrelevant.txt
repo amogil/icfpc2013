@@ -1,1 +1,2 @@
 Id: z8E9c9JeAku3SQKch18zTTFB, Challenge: (lambda (x_7759) (xor (not (shl1 (and 1 x_7759))) x_7759)), Size: 8, Operators: and,not,shl1,xor
+Id: imKj3PpVoKn2UjOXkznbnaRl, Challenge: (lambda (x_7064) (plus (shr1 (or x_7064 (shl1 x_7064))) 0)), Size: 8, Operators: or,plus,shl1,shr1

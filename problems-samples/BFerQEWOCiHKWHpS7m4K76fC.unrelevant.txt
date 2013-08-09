@@ -1,2 +1,3 @@
 Id: K1G3x27wuAlL40QAMlpJbdRX, Challenge: (lambda (x_5736) (or (not (xor 1 x_5736)) 1)), Size: 7, Operators: not,or,xor
 Id: r1Clggo2dytkOVGeGqxIzmms, Challenge: (lambda (x_6299) (plus (and x_6299 (shr16 x_6299)) 1)), Size: 7, Operators: and,plus,shr16
+Id: YfJL77QG8l5Hg5F5GilC2Z63, Challenge: (lambda (x_6133) (or (or (shr16 x_6133) x_6133) x_6133)), Size: 7, Operators: or,shr16

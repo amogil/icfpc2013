@@ -1,0 +1,1 @@
+Id: Ba7ETIkcxDAjpWd10jt5DQdA, Challenge: (lambda (x_7224) (and (shr4 (xor (shr16 x_7224) 1)) 1)), Size: 8, Operators: and,shr16,shr4,xor

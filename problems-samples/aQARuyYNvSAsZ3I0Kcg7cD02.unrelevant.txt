@@ -1,1 +1,2 @@
 Id: X7yuv4YcVadXVCXk3eXJjHIe, Challenge: (lambda (x_5871) (xor (xor (not x_5871) x_5871) x_5871)), Size: 7, Operators: not,xor
+Id: o8oIDmRCqNAoSy2pg8bP51RQ, Challenge: (lambda (x_5677) (xor (or (shr1 x_5677) x_5677) 1)), Size: 7, Operators: or,shr1,xor

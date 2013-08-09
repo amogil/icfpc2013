@@ -1,0 +1,1 @@
+Id: JX1AbDPjAq1LwOebI4w2kmFh, Challenge: (lambda (x_2391) (fold x_2391 0 (lambda (x_2391 x_2392) (not (shr4 x_2391))))), Size: 8, Operators: not,shr4,tfold

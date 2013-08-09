@@ -1,1 +1,2 @@
 Id: 3FvbH32yulyTenHSWskBNiUs, Challenge: (lambda (x_5962) (if0 (and x_5962 1) x_5962 0)), Size: 7, Operators: and,if0
+Id: kasN9gQouZgjdo44lGjyvMM0, Challenge: (lambda (x_6175) (and (shr16 (shl1 (not 1))) x_6175)), Size: 7, Operators: and,not,shl1,shr16

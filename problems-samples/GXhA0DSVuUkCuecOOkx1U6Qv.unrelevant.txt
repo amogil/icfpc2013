@@ -1,0 +1,1 @@
+Id: NKS4bacRGe9zNNEe2wj4zmsm, Challenge: (lambda (x_49338) (fold x_49338 0 (lambda (x_49339 x_49340) (xor (shr16 (xor (xor (if0 (shr16 (shr4 (plus x_49339 x_49340))) x_49339 x_49340) x_49339) x_49339)) x_49339)))), Size: 20, Operators: fold,if0,plus,shr16,shr4,xor

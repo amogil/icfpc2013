@@ -1,0 +1,1 @@
+Id: 9CBPp8DnYzcgZEcu1xjlA4nS, Challenge: (lambda (x_29257) (or (plus (or (not (shr1 (not (plus (if0 (and (or (shl1 x_29257) x_29257) 0) 0 1) x_29257)))) x_29257) 1) 1)), Size: 21, Operators: and,if0,not,or,plus,shl1,shr1

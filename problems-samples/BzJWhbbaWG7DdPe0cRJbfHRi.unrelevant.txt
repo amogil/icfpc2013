@@ -1,0 +1,1 @@
+Id: xhD3EMIX344fsR1BrTYzXnqz, Challenge: (lambda (x_7970) (if0 (plus (and x_7970 1) 0) x_7970 0)), Size: 9, Operators: and,if0,plus

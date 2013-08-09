@@ -1,0 +1,1 @@
+Id: Duarji3uShLYRUWi7wg0i10W, Challenge: (lambda (x_8370) (if0 (shr16 (shl1 (not x_8370))) x_8370 (shr16 x_8370))), Size: 9, Operators: if0,not,shl1,shr16

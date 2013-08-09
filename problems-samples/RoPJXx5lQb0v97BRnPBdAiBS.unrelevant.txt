@@ -1,1 +1,2 @@
 Id: SF6kj0QoTqNeTQ7AeXRUKDxW, Challenge: (lambda (x_371) (fold x_371 0 (lambda (x_371 x_372) (or x_371 x_371)))), Size: 8, Operators: or,tfold
+Id: M6pEN9h3UIEE2VvJ5jMZhtxP, Challenge: (lambda (x_3281) (fold x_3281 0 (lambda (x_3281 x_3282) (shr1 (shr1 x_3281))))), Size: 8, Operators: shr1,tfold

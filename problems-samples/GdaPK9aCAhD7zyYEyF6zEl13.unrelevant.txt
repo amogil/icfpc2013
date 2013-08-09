@@ -1,1 +1,2 @@
 Id: ecLDcsmArUHvqSMm6h3K9ont, Challenge: (lambda (x_7479) (xor (shr4 (plus (shr4 x_7479) x_7479)) x_7479)), Size: 8, Operators: plus,shr4,xor
+Id: K2xKEksMyuHPaH282cgUQRBl, Challenge: (lambda (x_6875) (plus (shl1 (not (xor x_6875 0))) x_6875)), Size: 8, Operators: not,plus,shl1,xor

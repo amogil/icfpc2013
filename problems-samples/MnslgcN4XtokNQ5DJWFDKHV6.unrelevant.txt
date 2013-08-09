@@ -1,0 +1,1 @@
+Id: GOG8gRMNnNEem9f7D66Grubq, Challenge: (lambda (x_29231) (plus (shr1 (not 0)) (shr16 (and x_29231 (shr4 (xor (shr4 (if0 (xor (plus (shl1 0) 1) x_29231) 0 x_29231)) 0)))))), Size: 21, Operators: and,if0,not,plus,shl1,shr1,shr16,shr4,xor

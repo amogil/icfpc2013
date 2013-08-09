@@ -1,0 +1,1 @@
+Id: 5q4KxlaNk7EGJhKKLBButoYA, Challenge: (lambda (x_57291) (fold x_57291 0 (lambda (x_57291 x_57292) (if0 (plus (plus (plus (shl1 (or (or (xor (and (shr1 x_57291) x_57292) 1) 0) x_57292)) x_57291) 0) x_57292) x_57291 x_57291)))), Size: 25, Operators: and,if0,or,plus,shl1,shr1,tfold,xor

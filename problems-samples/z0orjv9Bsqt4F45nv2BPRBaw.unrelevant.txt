@@ -1,0 +1,1 @@
+Id: eKXCAJSKBGARN96JB0xw13ap, Challenge: (lambda (x_55020) (fold (or (shl1 (or (if0 (xor (shr4 x_55020) (shr16 0)) (shr4 x_55020) x_55020) x_55020)) 0) x_55020 (lambda (x_55021 x_55022) (if0 x_55022 x_55022 x_55021)))), Size: 22, Operators: fold,if0,or,shl1,shr16,shr4,xor

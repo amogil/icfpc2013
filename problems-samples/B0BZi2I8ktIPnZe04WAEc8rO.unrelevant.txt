@@ -1,1 +1,2 @@
 Id: ejxtaJ6eAN4i34pCfFPc7ciq, Challenge: (lambda (x_1593) (fold x_1593 0 (lambda (x_1593 x_1594) (plus 1 x_1593)))), Size: 8, Operators: plus,tfold
+Id: Ro9rr0154YHgDYRQ86xWxgdV, Challenge: (lambda (x_919) (fold x_919 0 (lambda (x_919 x_920) (xor x_920 x_919)))), Size: 8, Operators: tfold,xor

@@ -1,1 +1,2 @@
 Id: jsLRmF3hw1dnpvZh9UtCAJL0, Challenge: (lambda (x_5535) (or (shr16 (shr1 (shr16 x_5535))) x_5535)), Size: 7, Operators: or,shr1,shr16
+Id: vSbC6LujcPztDdL3eTmFeZDe, Challenge: (lambda (x_6544) (plus (not (not 1)) (not x_6544))), Size: 7, Operators: not,plus

@@ -1,0 +1,1 @@
+Id: DUNI0y4QFJG69pwvZlKcstcN, Challenge: (lambda (x_107) (fold x_107 0 (lambda (x_107 x_108) (shl1 (shl1 x_107))))), Size: 8, Operators: shl1,tfold

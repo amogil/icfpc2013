@@ -1,1 +1,2 @@
 Id: 549WgpAwMJemA9WYOBmzpBLL, Challenge: (lambda (x_5516) (plus (or 1 x_5516) (shl1 x_5516))), Size: 7, Operators: or,plus,shl1
+Id: DwQM9GDu22Qi80rHrvV529Jz, Challenge: (lambda (x_5872) (and (or 0 (shr16 x_5872)) x_5872)), Size: 7, Operators: and,or,shr16

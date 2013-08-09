@@ -1,1 +1,2 @@
 Id: FOt04iFOBCu61nDBDlwq8Jp5, Challenge: (lambda (x_6841) (plus (shl1 (shl1 x_6841)) (shl1 (shr4 x_6841)))), Size: 8, Operators: plus,shl1,shr4
+Id: Oavi04r1cFWcdDUk8Rnz80TA, Challenge: (lambda (x_7783) (xor (plus (or x_7783 0) x_7783) 0)), Size: 8, Operators: or,plus,xor

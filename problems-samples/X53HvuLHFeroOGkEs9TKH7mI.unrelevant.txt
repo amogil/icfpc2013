@@ -1,0 +1,1 @@
+Id: auEdRZq1eNPxM8OBUPOX03Bi, Challenge: (lambda (x_34470) (xor (or (shr16 (plus (xor x_34470 (plus x_34470 (and (and (if0 (not (xor (shr16 x_34470) 1)) 1 0) x_34470) 1))) 0)) 1) x_34470)), Size: 24, Operators: and,if0,not,or,plus,shr16,xor

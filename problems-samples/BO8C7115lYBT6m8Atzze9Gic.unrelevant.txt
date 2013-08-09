@@ -1,0 +1,1 @@
+Id: RTZOBv5BDIUIIBC97zHATbAO, Challenge: (lambda (x_3505) (fold x_3505 0 (lambda (x_3505 x_3506) (plus (shr16 1) x_3505)))), Size: 9, Operators: plus,shr16,tfold
