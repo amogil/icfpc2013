@@ -8,7 +8,7 @@ namespace lib.Lang
 		public static Dictionary<string, Func<Expr, Expr>> UnaryOperators = new Dictionary<string, Func<Expr, Expr>>();
 		static Unary()
 		{
-			Action<string, Func<Int64, Int64>> add = (name, f) => UnaryOperators.Add(name, argExpr => new Unary(name, argExpr, f));
+			Action<string, Func<UInt64, UInt64>> add = (name, f) => UnaryOperators.Add(name, argExpr => new Unary(name, argExpr, f));
 			add("not", a => ~a);
 			add("shl1", a => a<<1);
 			add("shr1", a => a>>1);
