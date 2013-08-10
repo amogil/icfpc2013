@@ -51,7 +51,7 @@ namespace lib.Guesser
             Expr formula = Expr.ParseFunction(function);
             var random = new Random();
 
-            IEnumerable<byte[]> trees = new BinaryBruteForcer().Enumerate(size - 1, operations);
+            IEnumerable<byte[]> trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
             ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
             ulong[] outputs = inputs.Select(i => formula.Eval(new Vars(i))).ToArray();
             trees = Guesser.Guess(trees, inputs, outputs);
