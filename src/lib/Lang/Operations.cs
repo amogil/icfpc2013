@@ -30,10 +30,8 @@ namespace lib.Lang
 
 		public static Operation[] all = new[]
 			{
-				O("0"), O("1"), O("x"), O("i"), O("a"),
-				O("not", 1), O("shl1", 1), O("shr1", 1), O("shr4", 1), O("shr16", 1),
-				O("and", 2), O("or", 2), O("xor", 2), O("plus", 2),
-				O("if0", 3), O("fold", 3, 2)
+				O("0"), O("1"), O("x"), O("i"), O("a"), O("if0", 3), O("fold", 3, 2), O("not", 1), O("shl1", 1), O("shr1", 1), O("shr4", 1), O("shr16", 1),
+				O("and", 2), O("or", 2), O("xor", 2), O("plus", 2)
 			};
 
 		public static readonly string[] names = all.Select(op => op.Name).ToArray();

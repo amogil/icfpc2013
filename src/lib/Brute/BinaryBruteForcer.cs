@@ -18,8 +18,7 @@ namespace lib.Brute
 		{
 			tFold = ops.Contains("tfold");
 			outsideFoldOperations = new byte[] { 0, 1, 2 }.Concat(ops.Select(o => (byte)Array.IndexOf(Operations.names, o))).ToArray();
-			var foldOperationNumber = Operations.names.Length - 1;
-			noFoldOperations = outsideFoldOperations.Where(o => o != foldOperationNumber).ToArray();
+			noFoldOperations = outsideFoldOperations.Where(o => o != 6).ToArray();
 			inFoldOperations = new byte[] { 3, 4 }.Concat(noFoldOperations).ToArray();
 		}
 
