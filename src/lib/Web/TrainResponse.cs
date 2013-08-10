@@ -1,22 +1,33 @@
 ﻿using System;
+using System.Linq;
 
 namespace lib.Web
 {
-	public class TrainProblem
+	public class TrainResponse
 	{
 		public string id;
 		public string challenge;
 		public int size;
 		public string[] operators;
 
-		public override string ToString()
+		public string[] OperatorsExceptBonus
 		{
-			return string.Format("Id: {0}, Challenge: {1}, Size: {2}, Operators: {3}", id, challenge, size, string.Join(",", operators));
+			get { return operators.Where(t => !t.Equals("bonus", StringComparison.OrdinalIgnoreCase)).ToArray(); }
 		}
 
-		public static TrainProblem Parse(string text)
+		public bool IsBonus
 		{
-			var problem = new TrainProblem();
+			get { return operators.Contains("bonus"); }
+		}
+
+		public override string ToString()
+		{
+			return string.Format("Id: {0}, Challenge: {1}, Size: {2}, Operators: {3}, IsBonus: {4}", id, challenge, size, string.Join(",", operators), IsBonus);
+		}
+
+		public static TrainResponse Parse(string text)
+		{
+			var problem = new TrainResponse();
 			try
 			{
 				var values = text.Split(new []{", "}, StringSplitOptions.RemoveEmptyEntries);

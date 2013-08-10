@@ -51,6 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlphaProtocol\AlphaProtocol.cs" />
+    <Compile Include="AlphaProtocol\GameServerClient.cs" />
+    <Compile Include="AlphaProtocol\TrainType.cs" />
+    <Compile Include="AlphaProtocol\WrongAnswer.cs" />
     <Compile Include="Brute\BinaryBruteForcer.cs" />
     <Compile Include="Brute\Perf_Test.cs" />
     <Compile Include="Brute\Force.cs" />
@@ -82,7 +85,7 @@
     <Compile Include="Web\Status.cs" />
     <Compile Include="Web\WebApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Web\TrainProblem.cs" />
+    <Compile Include="Web\TrainResponse.cs" />
     <Compile Include="Web\TrainRequest.cs" />
     <Compile Include="Web\WebApi_Test.cs" />
   </ItemGroup>

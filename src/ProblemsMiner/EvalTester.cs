@@ -24,7 +24,7 @@ namespace ProblemsMiner
             Source = source;
         }
 
-        public bool Test(TrainProblem trainProblem, Problem problem)
+        public bool Test(TrainResponse trainProblem, Problem problem)
         {
             var results = Source.ReadResultsForTrainProblem(trainProblem, problem);
             var test = new TestResult()
@@ -72,7 +72,7 @@ namespace ProblemsMiner
         public class TestResult
         {
             public Problem problem;
-            public TrainProblem trainProblem;
+            public TrainResponse trainProblem;
             public int isSuccess;
             public List<Tuple<UInt64, UInt64, UInt64>> x_expected_real  = new List<Tuple<ulong, ulong, ulong>>();
             public string exeption = "";

@@ -36,5 +36,9 @@ namespace lib.Web
 		public RequestWindow requestWindow;
 		public int trainingScore;
 
+		public override string ToString()
+		{
+			return string.Format("ContestScore: {0}, LightningScore: {1}, TrainingScore: {2}, Mismatches: {3}, NumRequests: {4}, CpuTotalTime: {5}, EasyChairId: {6}, RequestWindow: {7}, CpuWindow: {8}", contestScore, lightningScore, trainingScore, mismatches, numRequests, cpuTotalTime, easyChairId, requestWindow, cpuWindow);
+		}
 	}
 }
