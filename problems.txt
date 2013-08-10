@@ -39,26 +39,26 @@ ryqmt94EwMe7JgI0lwzosZRk	4	True		plus
 sqhWBMddOsLvLuP8j4TWg2Sr	4	True		not,shl1
 u7lAhoFlcr7EhcVTzbMtJkmt	4	True		xor
 znmjLZfiCsa4Q78Aw8YWITBW	4	True		and
-0iBSfrbRJDTKyg9QH6xFuF9O	5			shr1,xor
-1uuKygHPbyfdSaV1LMd3dHst	5			shl1,shr4
-8000zn2szOQZzqPLhfgN3hcB	5			shr1,xor
-ANJNonzcOdVAP7UGtXWWdCVB	5			and,shr1
-ApBMjlJlVxpHsBZSnxJnCNhk	5			not,shl1
-BcBzHuKlV1rhoOLaK0S9Xae7	5			or,shr1
-LziOjMAAncDUN0qbZgGB6eAM	5			not,plus
-NzyxxEmIcF7nBJATpPjKn2Dh	5			not,shr1,shr16
-SlWyJTpW9VJWHjWGCmeWhmpc	5			shr16,xor
-a0K5PRa8FAYzlBW4ftA5cmO8	5			and,not
-gv5Hdp32gf8fuTFs4hqfOEzW	5			and,not
-iOkfPemweMQzY5G2cmI2UB8O	5			plus,shr1
-kJtKN12SbdvGBJrJg8HkCZkm	5			not,shl1
-ke91dsNocsl9qyiyPVOq95WJ	5			shr1,xor
-mZa08wktf3imtnSXFdCB33nM	5			and,shl1
-oBWlSced5OX54fn7kYf85Pjh	5			shl1,xor
-pZJNEElNbKdoaOw30sHwx8kw	5			and,not
-tMKJajjPjA3A0DECpBtlqxBW	5			and,shr1
-u8Z7Aha0hA588ZbMSJlaeocS	5			not,plus
-uFGNQoM2NzR2QHNJHZ94XoO8	5			not,plus
+0iBSfrbRJDTKyg9QH6xFuF9O	5	True		shr1,xor
+1uuKygHPbyfdSaV1LMd3dHst	5	True		shl1,shr4
+8000zn2szOQZzqPLhfgN3hcB	5	True		shr1,xor
+ANJNonzcOdVAP7UGtXWWdCVB	5	True		and,shr1
+ApBMjlJlVxpHsBZSnxJnCNhk	5	True		not,shl1
+BcBzHuKlV1rhoOLaK0S9Xae7	5	True		or,shr1
+LziOjMAAncDUN0qbZgGB6eAM	5	True		not,plus
+NzyxxEmIcF7nBJATpPjKn2Dh	5	True		not,shr1,shr16
+SlWyJTpW9VJWHjWGCmeWhmpc	5	True		shr16,xor
+a0K5PRa8FAYzlBW4ftA5cmO8	5	True		and,not
+gv5Hdp32gf8fuTFs4hqfOEzW	5	True		and,not
+iOkfPemweMQzY5G2cmI2UB8O	5	True		plus,shr1
+kJtKN12SbdvGBJrJg8HkCZkm	5	True		not,shl1
+ke91dsNocsl9qyiyPVOq95WJ	5	True		shr1,xor
+mZa08wktf3imtnSXFdCB33nM	5	True		and,shl1
+oBWlSced5OX54fn7kYf85Pjh	5	True		shl1,xor
+pZJNEElNbKdoaOw30sHwx8kw	5	True		and,not
+tMKJajjPjA3A0DECpBtlqxBW	5	True		and,shr1
+u8Z7Aha0hA588ZbMSJlaeocS	5	True		not,plus
+uFGNQoM2NzR2QHNJHZ94XoO8	5	True		not,plus
 0AL3oBAjtWtr1dN390wn6AvP	6			and,not,shr16
 0DVhhB4yWXi09FfgylBv7Z3a	6			xor
 3sczY10KJtYDKb8qe80sRZ3J	6			shl1,shr1,xor

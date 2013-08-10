@@ -25,15 +25,13 @@ namespace AlphaProtocolExecutor
 					Operations = d.Operations,
 				})
 				.ToList();
-			var problemsToSolve = problems.Where(p => !p.Tried && p.Size == 4).ToArray();
+			var problemsToSolve = problems.Where(p => !p.Tried && !p.Bonus && p.Size == 6).ToArray();
 			foreach (var problem in problemsToSolve)
 			{
-				Console.WriteLine("Press any key to start solve problem {0}", problem.Id);
-				Console.ReadKey();
 				AlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
-				Console.WriteLine("Press any key to continue...");
-				Console.ReadKey();
 			}
+            Console.WriteLine("Press any key...");
+            Console.ReadKey();
 		}
 	}
 }

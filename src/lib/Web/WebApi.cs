@@ -22,18 +22,18 @@ namespace lib.Web
         public string GetString(string command, object arg)
         {
             string body = new JavaScriptSerializer().Serialize(arg);
-            log.Debug("REQUEST " + command + " " + body);
+//            log.Debug("REQUEST " + command + " " + body);
             string answer = Encoding.ASCII.GetString(GetResponse(GetUrl(command), Encoding.ASCII.GetBytes(body)));
-            log.Debug("RESPONSE " + answer);
+//            log.Debug("RESPONSE " + answer);
             return answer;
         }
 
         public string GetString(string command)
         {
-            log.Debug("REQUEST " + command);
+//            log.Debug("REQUEST " + command);
             string answer = Encoding.ASCII.GetString(GetResponse(GetUrl(command)));
             Console.WriteLine(answer);
-            log.Debug("RESPONSE " + answer);
+//            log.Debug("RESPONSE " + answer);
             return answer;
         }
 

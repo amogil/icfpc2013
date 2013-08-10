@@ -10,7 +10,7 @@ namespace lib.Web
 		public int size;
 		public string[] operators;
 		public bool? solved;
-		public int? timeLeft;
+		public double? timeLeft;
 
 		public IEnumerable<string> OperatorsExceptBonus
 		{
