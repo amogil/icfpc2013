@@ -52,7 +52,7 @@ namespace lib.AlphaProtocol
             var random = new Random();
             byte[][] trees = new BinaryBruteForcer(operations).Enumerate(size - 1).ToArray();
             ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
-            
+
             log.Debug("Trees and samples generated");
 
             ulong[] outputs = Eval(problemId, inputs);
@@ -67,7 +67,7 @@ namespace lib.AlphaProtocol
             {
                 byte[] solution = solutions.First();
 
-                log.Debug("Ascking for first guess");
+                log.Debug("Asking the first guess");
 
                 string formula = String.Format("(lambda (x) {0})", solution.ToSExpr().Item1);
                 Tuple<ulong, ulong> result = CheckGuess(problemId, formula);
@@ -88,7 +88,7 @@ namespace lib.AlphaProtocol
                 outputs = outputs.Concat(new[] {anCase.Item2}).ToArray();
 
                 solutions = Guesser.Guesser.Guess(solutions, inputs, outputs).ToArray();
-                                log.DebugFormat("Solutions generated. Total {0}", solutions.Length);
+                log.DebugFormat("Solutions generated. Total {0}", solutions.Length);
             }
         }
 

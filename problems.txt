@@ -20,9 +20,9 @@ nAvsC5sIcytNQYbHFfXxiMO1	3	true	not
 xpXKKB87cT6B22YuBeDdrIvS	3	true	shr1										
 7mHdUXAl2IvVY6wg5rBU7UaZ	4	true	plus										
 9AZfN7jccK0OWLvghAttcyBU	4	false	plus										
-AB4pf6xiSLVkDtSnEjRDVJ4c	4		not	shl1									
+AB4pf6xiSLVkDtSnEjRDVJ4c	4	true	not	shl1									
 BriS5SvNMwDV5BOSe4ybajHF	4	true	plus										
-FOVFAaBIUJCGtPzxp3WV0GqD	4		or										
+FOVFAaBIUJCGtPzxp3WV0GqD	4	true	or										
 G3BL6ASC0CB4uC6BwWUYcHn1	4		shl1	shr4									
 HLCnYONzBtjFR8eMumTGeZtD	4	true	plus										
 IBCmn3ptlfxsea29MkhnNThl	4		not	shr4									
