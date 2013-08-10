@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using NUnit.Framework;
 
 namespace lib.Lang
@@ -160,6 +162,81 @@ namespace lib.Lang
 		    }
 		}
         
+		[Test]
+		public void EvalBin_Correctness()
+		{
+			foreach (var problem in GetProblems())
+			{
+				var program = GetProgram(problem.Item1, problem.Item2);
+				Console.Out.WriteLine("MyId: {0}, TrainId: {1}, Program: {2}", problem.Item1, problem.Item2, program);
+				foreach (var t in GetTestCasesFromFile(problem.Item1, problem.Item2, program))
+				{
+					var p = Parser.ParseFunction(t.Program);
+					var actual = p.Eval(t.Arg);
+					Assert.That(actual, Is.EqualTo(t.ExpectedValue), string.Format("Was: 0x{0:x}", actual));
+				}
+			}
+		}
+
+		private static IEnumerable<Tuple<string, string>> GetProblems()
+		{
+			return File.ReadAllLines("../../../../problems-samples/eval-correctness/problems").Select(line => line.Split('_')).Select(parts => Tuple.Create(parts[0], parts[1]));
+		}
+
+		private static IEnumerable<TestCase> GetTestCasesFromFile(string myProblemId, string trainProblemId, string program)
+		{
+			var fn = Path.Combine("../../../../problems-samples/eval-correctness", string.Format("{0}_{1}.unrelevant.result", myProblemId, trainProblemId));
+			if (!File.Exists(fn))
+				fn = Path.Combine("../../../../problems-samples/eval-correctness", string.Format("{0}_{1}.result", myProblemId, trainProblemId));
+			if (!File.Exists(fn))
+				yield break;
+			using (var sr = new StreamReader(fn))
+			{
+				string line;
+				while ((line = sr.ReadLine()) != null)
+				{
+					if (string.IsNullOrWhiteSpace(line))
+						continue;
+					TestCase testCase = null;
+					try
+					{
+						var parts = line.Split('\t');
+						var arg = GetUInt64(parts[0]);
+						var expectedValue = GetUInt64(parts[1]);
+						testCase = new TestCase(program, arg, expectedValue);
+					}
+					catch (Exception e)
+					{
+						Console.Out.WriteLine("failed for: {0}\n{1}", line, e);
+					}
+					if (testCase != null)
+						yield return testCase;
+				}
+			}
+		}
+
+		private static string GetProgram(string myProblemId, string trainProblemId)
+		{
+			var lines = new List<string>();
+			var fn1 = Path.Combine("../../../../problems-samples", string.Format("{0}.txt", myProblemId));
+			if (File.Exists(fn1))
+				lines.AddRange(File.ReadAllLines(fn1));
+			var fn2 = Path.Combine("../../../../problems-samples", string.Format("{0}.unrelevant.txt", myProblemId));
+			if (File.Exists(fn2))
+				lines.AddRange(File.ReadAllLines(fn2));
+			var line = lines.Single(l => l.Contains(trainProblemId));
+			var idx1 = line.IndexOf("Challenge: ");
+			var idx2 = line.IndexOf(",", idx1);
+			var problem = line.Substring(idx1 + 11, idx2 - idx1);
+			return problem;
+		}
+
+		private static ulong GetUInt64(string s)
+		{
+			return ulong.Parse(s);
+			//return BitConverter.ToUInt64(BitConverter.GetBytes(long.Parse(s)), 0);
+		}
+
 		public class TestCase
 		{
 			public TestCase(string program, ulong arg, ulong expectedValue)
