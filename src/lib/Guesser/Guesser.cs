@@ -46,9 +46,14 @@ namespace lib.Guesser
             var random = new Random();
 
             Expr[] trees = new Force().Solve(size - 1, operations).ToArray();
-            ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
-            ulong[] outputs = inputs.Select(i => formula.Eval(new Vars(i))).ToArray();
-            trees = Guesser.Guess(trees, inputs, outputs).ToArray();
+            Expr[] prevStepTrees;
+            do
+            {
+                prevStepTrees = trees;
+                ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
+                ulong[] outputs = inputs.Select(i => formula.Eval(new Vars(i))).ToArray();
+                trees = Guesser.Guess(prevStepTrees, inputs, outputs).ToArray();
+            } while (trees.Length != prevStepTrees.Length);
             Assert.AreEqual(equalFormulas, trees.Count());
         }
     }
