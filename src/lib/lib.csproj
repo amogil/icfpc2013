@@ -78,6 +78,7 @@
     <Compile Include="Web\EvalResponse.cs" />
     <Compile Include="Web\GuessRequest.cs" />
     <Compile Include="Web\GuessResponse.cs" />
+    <Compile Include="Web\MyProblemJson.cs" />
     <Compile Include="Web\Status.cs" />
     <Compile Include="Web\WebApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

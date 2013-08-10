@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net;
 using System.Text;
 using System.Threading;
@@ -35,6 +36,11 @@ namespace lib.Web
             log.Debug("RESPONSE " + answer);
             return answer;
         }
+
+		public List<MyProblemJson> GetMyProblems()
+		{
+			return json.Deserialize<List<MyProblemJson>>(GetString("myproblems"));
+		}
 
         public TrainProblem GetTrainProblem(TrainRequest request)
         {

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Linq;
 using NUnit.Framework;
 
 namespace lib.Web
@@ -34,6 +36,18 @@ namespace lib.Web
 			Console.WriteLine("NumReq: {0}", status.numRequests);
 			Console.WriteLine("Req: {0}", status.requestWindow);
 			Console.WriteLine("Cpu: {0}", status.cpuWindow);
+		}
+
+		[Test]
+		public void GetMyProblems()
+		{
+			var myProblemsJson = api.GetMyProblems();
+			var myProblems = myProblemsJson
+				.OrderBy(t => t.size)
+				.Select(t => string.Format("{0}\t{1}\t{2}\t{3}\t{4}", t.id, t.size, t.solved, t.IsBonus ? "Bonus" : string.Empty, string.Join(",", t.OperatorsExceptBonus)))
+				.ToList();
+			File.WriteAllLines("../../../../problems.txt", myProblems);
+			Console.Out.WriteLine("{0}", myProblems.Count);
 		}
 
 		private static readonly WebApi api = new WebApi();
