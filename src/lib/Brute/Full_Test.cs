@@ -80,7 +80,7 @@ namespace lib.Brute
             }
         }
 
-        private IEnumerable<ProblemsMiner.Problem> GetAllSamples()
+        private IEnumerable<Problem> GetAllSamples()
         {
             var files = System.IO.Directory.GetFiles("../../../../problems-samples");
             foreach (var file in files)
@@ -88,7 +88,7 @@ namespace lib.Brute
                 var problemsDesriptions = System.IO.File.ReadAllLines(file);
                 foreach (var problem in problemsDesriptions)
                 {
-                    yield return ProblemsMiner.Problem.ParseTraining(problem.Trim());
+                    yield return Problem.ParseTraining(problem.Trim());
                 }
             }
         }

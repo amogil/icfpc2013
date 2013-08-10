@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
+using lib;
 using lib.Lang;
 using lib.Web;
 using log4net;

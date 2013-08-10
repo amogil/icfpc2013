@@ -3,7 +3,7 @@ using System.Linq;
 using NUnit.Framework;
 using lib.Lang;
 
-namespace ProblemsMiner
+namespace lib
 {
 
 	[TestFixture]
