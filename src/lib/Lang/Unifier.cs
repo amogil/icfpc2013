@@ -82,7 +82,7 @@ namespace lib.Lang
         public void Unify(Expr e)
         {
             var realType = e.GetType();
-            if (realType == typeof (Binary))
+            if (realType.IsSubclassOf(typeof (Binary)))
             {
                 Unify((Binary) e);    
             }
@@ -98,7 +98,7 @@ namespace lib.Lang
             {
                 Unify((If0) e);
             }
-            else if (realType == typeof (Unary))
+            else if (realType.IsSubclassOf(typeof (Unary)))
             {
                 Unify((Unary) e);
             }
@@ -108,7 +108,7 @@ namespace lib.Lang
             }
             else
             {
-                throw new Exception("Unknown operation in unifying");                
+                throw new Exception("Unknown operation in unifying:" + realType.ToString());                
             }
         }
     }
