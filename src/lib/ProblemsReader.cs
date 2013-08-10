@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using NUnit.Framework;
-using lib.Lang;
 using lib.Web;
 using log4net;
 
@@ -11,6 +9,28 @@ namespace lib
 {
     public class ProblemsReader
     {
+		public static IEnumerable<MyProblem> ProblemsToSolve()
+		{
+			var problems = File
+				.ReadAllLines(@"../../../../problems.txt")
+				.Select(l => l.Trim())
+				.Where(l => l.Length > 0)
+				.Select(l => l.Split('\t'))
+				.Select(elms => new { Id = elms[0], Size = elms[1], Solved = elms[2], Bonus = elms[3], Operations = elms[4].Split(',').Select(t => t.Trim()).ToArray() })
+				.Select(d => new MyProblem
+				{
+					Id = d.Id,
+					Size = int.Parse(d.Size),
+					Tried = d.Solved.Length > 0,
+					Solved = d.Solved.Equals("True", StringComparison.OrdinalIgnoreCase),
+					Bonus = d.Bonus.Equals("Bonus", StringComparison.OrdinalIgnoreCase),
+					Operations = d.Operations,
+				})
+				.ToList();
+			return problems.Where(p => !p.Solved && !p.Bonus).ToArray();
+		}
+
+
         public static ILog log;
 
         public string ProblemsFilename;
@@ -18,6 +38,17 @@ namespace lib
         public string TrainProblemsPath;
         public string TrainProblemsResultsPath;
 
+		public static ProblemsReader CreateDefault()
+		{
+			return new ProblemsReader
+			{
+				ProblemsFilename = @"..\..\..\..\problems.txt",
+				ProblemsResultsPath = @"..\..\..\..\problems-results\",
+				TrainProblemsPath = @"..\..\..\..\problems-samples\",
+				TrainProblemsResultsPath = @"..\..\..\..\problems-samples\"
+			};
+
+		}
         public string TrainProblemResultFilename(TrainResponse trainProblem, Problem problem)
         {
             bool isRelevant = trainProblem.operators.OrderBy(t => t).SequenceEqual(problem.AllOperators.OrderBy(t => t));
@@ -153,43 +184,13 @@ namespace lib
         }
     }
 
-	[TestFixture]
-	public class ProblemsReader_Test
+	public class MyProblem
 	{
-		[Test]
-		public void Test()
-		{
-			for (int i = 3; i < 15; i++)
-			{
-				Console.WriteLine("SIZE: " + i);
-				var ps = GetTrainingProblemsWithAnswer(i);
-				foreach (var p in ps)
-				{
-					Console.WriteLine(p);
-				}
-			}
-		}
-
-		public IEnumerable<Tuple<TrainResponse, Mask>> GetTrainingProblemsWithAnswer(int size)
-		{
-			var source = new ProblemsReader()
-			{
-				ProblemsFilename = @"..\..\..\..\problems.txt",
-				ProblemsResultsPath = @"..\..\..\..\problems-results\",
-				TrainProblemsPath = @"..\..\..\..\problems-samples\",
-				TrainProblemsResultsPath = @"..\..\..\..\problems-samples\"
-			};
-			var realProblems = source.ReadProblems().Where(p => p.AllOperators.All(op => /*!op.EndsWith("fold") && */p.Size == size)).ToArray();
-
-			foreach (var realP in realProblems)
-			{
-				IEnumerable<TrainResponse> trainingProblems = source.ReadTrainProblems(realP, false).Concat(source.ReadTrainProblems(realP, true));
-				foreach (var p in trainingProblems)
-				{
-					ulong[] ulongs = source.ReadResultsForTrainProblem(p, realP).Select(kv => kv.Value).ToArray();
-					if (ulongs.Length > 0) yield return Tuple.Create(p, new Mask(ulongs));
-				}
-			}
-		}
+		public string Id;
+		public int Size;
+		public bool Tried;
+		public bool Solved;
+		public bool Bonus;
+		public string[] Operations;
 	}
 }

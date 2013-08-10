@@ -60,7 +60,7 @@ namespace lib
                 {
                     Id = elems.First(),
                     Size = int.Parse(elems.ElementAt(1)),
-                    AllOperators = elems.Skip(3).Where(s => s.Length > 0).ToArray()
+                    AllOperators = elems.ElementAt(4).Split(',').Where(s => s.Length > 0).ToArray()
                 };
         }
 

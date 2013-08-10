@@ -1,25 +1,38 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using lib;
 using lib.Brute;
 
 namespace Test
 {
-	class Program
+	internal class Program
 	{
-		static void Main(string[] args)
+		private static void Main(string[] args)
 		{
-			Test(10, "fold not or shr1 shr4");
-		}
+			var smallTxt = "small.txt";
 
-		public static void Test(int size, string ops)
-		{
-			var force = new Force();
-			var trees = force.Solve(size, ops.Split(' ')).ToList();
-			Console.WriteLine(trees.Count());
+			var smallIds =
+				File.Exists("small.txt") ? new HashSet<string>(File.ReadAllLines(smallTxt)
+				    .Where(line => line.Trim().Length > 0)
+				    .Select(line => line.Split('\t'))
+				    .Select(p => p[0])) : new HashSet<string>();
+
+			MyProblem[] prob = ProblemsReader.ProblemsToSolve().Where(p => p.Size >= 14 && !smallIds.Contains(p.Id)).OrderBy(p => p.Size).ToArray();
+			int limit = 100000000;
+			foreach (MyProblem p in prob)
+			{
+				Console.Write("{2} {0}: {1}  ", p.Id, string.Join(",", p.Operations).PadRight(40), p.Size);
+				int count = new BinaryBruteForcer(p.Operations).Enumerate(p.Size-1).Take(limit).Count();
+				if (count == limit)
+					Console.WriteLine(limit + "+");
+				else
+				{
+					Console.WriteLine(count);
+					File.AppendAllText(smallTxt, p.Id + "\t" + p.Size + "\r\n");
+				}
+			}
 		}
 	}
 }

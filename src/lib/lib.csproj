@@ -58,6 +58,7 @@
     <Compile Include="AlphaProtocol\WrongAnswer.cs" />
     <Compile Include="Brute\BinaryBruteForcer.cs" />
     <Compile Include="Brute\BinaryBruteForcerOld.cs" />
+    <Compile Include="Brute\BinaryBruteForcer_Test.cs" />
     <Compile Include="Brute\Perf_Test.cs" />
     <Compile Include="Brute\Force.cs" />
     <Compile Include="Annotations.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Lang\Var.cs" />
     <Compile Include="Problem.cs" />
     <Compile Include="ProblemsReader.cs" />
+    <Compile Include="ProblemsReader_Test.cs" />
     <Compile Include="RandomExtensions.cs" />
     <Compile Include="Shuffle.cs" />
     <Compile Include="Web\EvalRequest.cs" />

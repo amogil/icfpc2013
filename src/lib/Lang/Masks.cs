@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
 
 namespace lib.Lang
@@ -25,10 +21,10 @@ namespace lib.Lang
 			return bits & ~((ulong)1 << i);
 		}
 
-		public static TRes Eval<TRes>(this byte[] program, Func<byte, TRes[], TRes> process, Func<TRes> missing = null)
+		public static TRes Eval<TRes>(this byte[] program, Func<byte, TRes[], TRes> process, TRes missing)
 		{
 			int offset;
-			return Eval(program, process, missing ?? ThrowUnexpectedEnd<TRes>, 0, program.Length-1, out offset);
+			return Eval(program, process, missing, 0, program.Length-1, out offset);
 		}
 
 		public static T ThrowUnexpectedEnd<T>()
@@ -36,12 +32,12 @@ namespace lib.Lang
 			throw new Exception("unexpected end");
 		}
 
-		public static TRes Eval<TRes>(this byte[] program, Func<byte, TRes[], TRes> process, Func<TRes> missing, int start, int lastIndex, out int offset)
+		public static TRes Eval<TRes>(this byte[] program, Func<byte, TRes[], TRes> process, TRes missing, int start, int lastIndex, out int offset)
 		{
 			if (start > lastIndex)
 			{
 				offset = start;
-				return missing();
+				return missing;
 			}
 			byte code = program[start];
 			var st = start + 1;
@@ -58,19 +54,19 @@ namespace lib.Lang
 
 		public static int Size(this byte[] program)
 		{
-			return program.Eval<int>((b, items) => items.Sum() + Operations.all[b].size);
+			return program.Eval((b, items) => items.Sum() + Operations.all[b].size, 0);
 		}
 
 		public static int SizeOfIncomplete(this byte[] program)
 		{
-			return program.Eval((b, items) => items.Sum() + Operations.all[b].size, () => 1);
+			return program.Eval((b, items) => items.Sum() + Operations.all[b].size, 1);
 		}
 		
 		public static Mask GetMask(this byte[] program, int start = 0, int lastIndex = -1)
 		{
 			int offset;
 			if (lastIndex == -1) lastIndex = program.Length - 1;
-			return program.Eval(CalcMask, () => Mask.X, start, lastIndex, out offset);
+			return program.Eval(CalcMask, Mask.X, start, lastIndex, out offset);
 		}
 
 		private static Mask CalcMask(byte f, Mask[] args)
@@ -85,14 +81,17 @@ namespace lib.Lang
 				if (args[0].IsZero()) return args[1];
 				return args[1].Union(args[2]);
 			}
+			if (f == 6)
+			{
+				return args[3];
+			}
 			if (f == 7) return args[0].Not();
 			if (f == 8) return args[0].ShiftLeft(1);
 			if (f == 9) return args[0].ShiftRight(1);
 			if (f == 10) return args[0].ShiftRight(4);
 			if (f == 11) return args[0].ShiftRight(16);
 			if (f == 12) return args[0].And(args[1]);
-			if (f == 13) 
-				return args[0].Or(args[1]);
+			if (f == 13) return args[0].Or(args[1]);
 			if (f == 14) return args[0].Xor(args[1]);
 			if (f == 15) return args[0].Plus(args[1]);
 			return Mask.X;
