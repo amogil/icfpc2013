@@ -47,16 +47,13 @@ namespace lib.AlphaProtocol
 
                 log.Debug(string.Format("WrongAnswer received: {0}", wrongAnswer));
 
-                inputs = inputs.Concat(new[] {wrongAnswer.Arg}).ToArray();
-                outputs = outputs.Concat(new[] {wrongAnswer.CorrectValue}).ToArray();
-
-                solutions = Guesser.Guesser.Guess(solutions.Skip(1), inputs, outputs);
+                solutions = AddCase(solutions, wrongAnswer);
             }
         }
 
-        public static IEnumerable<byte[]> AddCase(IEnumerable<byte[]> trees, Tuple<ulong, ulong> anCase)
+        public static IEnumerable<byte[]> AddCase(IEnumerable<byte[]> trees, WrongAnswer answer)
         {
-            return trees.Where(tree => tree.Eval(anCase.Item1) == anCase.Item2);
+            return trees.Where(tree => tree.Eval(answer.Arg) == answer.CorrectValue);
         }
     }
 }
