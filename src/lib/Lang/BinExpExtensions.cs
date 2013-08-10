@@ -8,7 +8,7 @@ namespace lib.Lang
 	{
 		public static string Printable(this byte[] program)
 		{
-			char[] map = new[] {'0', '1', 'x', 'i', 'a', 'Y', 'F', '~', '<', '>', 'r', 'R', '&', '|', '^', '+'};
+			char[] map = new[] { '0', '1', 'x', 'i', 'a', 'Y', 'F', '~', '<', '>', 'r', 'R', '&', '|', '^', '+' };
 			return new string(program.Select(b => map[b]).ToArray());
 		}
 
@@ -20,84 +20,67 @@ namespace lib.Lang
 
 		private static ulong Eval(this byte[] program, int start, ulong x, ulong item, ulong acc, out int offset)
 		{
+			ulong a, b;
 			byte code = program[start];
-			if (code == 0)
+			switch (code)
 			{
-				offset = start + 1;
-				return 0;
+				case 0:
+					offset = start + 1;
+					return 0;
+				case 1:
+					offset = start + 1;
+					return 1;
+				case 2:
+					offset = start + 1;
+					return x;
+				case 3:
+					offset = start + 1;
+					return item;
+				case 4:
+					offset = start + 1;
+					return acc;
+				case 5:
+					var cond = program.Eval(start + 1, x, item, acc, out offset);
+					var eZero = program.Eval(offset, x, item, acc, out offset);
+					var eElse = program.Eval(offset, x, item, acc, out offset);
+					return cond == 0 ? eZero : eElse;
+				case 6:
+					var collection = program.Eval(start + 1, x, item, acc, out offset);
+					var accValue = program.Eval(offset, x, item, acc, out offset);
+					var bytes = BitConverter.GetBytes(collection);
+					var nextIndex = offset;
+					foreach (var bt in bytes)
+						accValue = program.Eval(nextIndex, x, bt, accValue, out offset);
+					return accValue;
+				case 7:
+					return ~program.Eval(start + 1, x, item, acc, out offset);
+				case 8:
+					return program.Eval(start + 1, x, item, acc, out offset) << 1;
+				case 9:
+					return program.Eval(start + 1, x, item, acc, out offset) >> 1;
+				case 10:
+					return program.Eval(start + 1, x, item, acc, out offset) >> 4;
+				case 11:
+					return program.Eval(start + 1, x, item, acc, out offset) >> 16;
+				case 12:
+					a = program.Eval(start + 1, x, item, acc, out offset);
+					b = program.Eval(offset, x, item, acc, out offset);
+					return a & b;
+				case 13:
+					a = program.Eval(start + 1, x, item, acc, out offset);
+					b = program.Eval(offset, x, item, acc, out offset);
+					return a | b;
+				case 14:
+					a = program.Eval(start + 1, x, item, acc, out offset);
+					b = program.Eval(offset, x, item, acc, out offset);
+					return a ^ b;
+				case 15:
+					a = program.Eval(start + 1, x, item, acc, out offset);
+					b = program.Eval(offset, x, item, acc, out offset);
+					return unchecked(a + b);
+				default:
+					throw new FormatException(code.ToString());
 			}
-			if (code == 1)
-			{
-				offset = start + 1;
-				return 1;
-			}
-			if (code == 2)
-			{
-				offset = start + 1;
-				return x;
-			}
-			if (code == 3)
-			{
-				offset = start + 1;
-				return item;
-			}
-			if (code == 4)
-			{
-				offset = start + 1;
-				return acc;
-			}
-			if (code == 5)
-			{
-				var cond = program.Eval(start + 1, x, item, acc, out offset);
-				var eZero = program.Eval(offset, x, item, acc, out offset);
-				var eElse = program.Eval(offset, x, item, acc, out offset);
-				return cond == 0 ? eZero : eElse;
-			}
-			if (code == 6)
-			{
-				var collection = program.Eval(start + 1, x, item, acc, out offset);
-				var accValue = program.Eval(offset, x, item, acc, out offset);
-				var bytes = BitConverter.GetBytes(collection);
-				var nextIndex = offset;
-				foreach (var b in bytes)
-					accValue = program.Eval(nextIndex, x, b, accValue, out offset);
-				return accValue;
-			}
-			if (code == 7)
-				return ~program.Eval(start + 1, x, item, acc, out offset);
-			if (code == 8)
-				return program.Eval(start + 1, x, item, acc, out offset) << 1;
-			if (code == 9)
-				return program.Eval(start + 1, x, item, acc, out offset) >> 1;
-			if (code == 10)
-				return program.Eval(start + 1, x, item, acc, out offset) >> 4;
-			if (code == 11)
-				return program.Eval(start + 1, x, item, acc, out offset) >> 16;
-			if (code == 12)
-			{
-				var a = program.Eval(start + 1, x, item, acc, out offset);
-				var b = program.Eval(offset, x, item, acc, out offset);
-				return a & b;
-			}
-			if (code == 13)
-			{
-				var a = program.Eval(start + 1, x, item, acc, out offset);
-				var b = program.Eval(offset, x, item, acc, out offset);
-				return a | b;
-			}
-			if (code == 14)
-			{
-				var a = program.Eval(start + 1, x, item, acc, out offset);
-				var b = program.Eval(offset, x, item, acc, out offset);
-				return a ^ b;
-			}
-			if (code == 15)
-			{
-				var a = program.Eval(start + 1, x, item, acc, out offset);
-				var b = program.Eval(offset, x, item, acc, out offset);
-				return unchecked(a + b);
-			}
-			throw new FormatException(code.ToString());
 		}
 
 		public static Tuple<string, int> ToSExpr(this byte[] program, int start = 0, bool insideFoldFunc = false)
