@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using NUnit.Framework;
+using lib.Brute;
 using lib.Lang;
 using lib.Web;
 
@@ -27,6 +28,31 @@ namespace lib.AlphaProtocol
 				sw.Stop();
 				Console.Out.WriteLine("==== SolvedIn: {0} ms, Answer: {1}", sw.ElapsedMilliseconds, answer);
 			}
+		}
+
+		[Test]
+		public void Test()
+		{
+			Console.WriteLine(new BinaryBruteForcer("if0,not,or,shr16,shr4,xor".Split(',')).Enumerate(14 - 1).Count());
+			Console.WriteLine(new BinaryBruteForcer("if0,not,or,shl1,shr16,xor".Split(',')).Enumerate(14 - 1).Count());
+		}
+
+		[Test]
+		public void GetBonuses()
+		{
+			var problem = gsc.Train(TrainProblemType.Bonus, 42);
+			Console.WriteLine(problem);
+
+			var solver = new Solver();
+			var sw = Stopwatch.StartNew();
+			var answer = solver.Solve(problem.id, problem.size, problem.OperatorsExceptBonus, vs =>
+				{
+					var answersMask = new Mask(vs);
+					Console.WriteLine(answersMask);
+					return new BinaryBruteForcer(answersMask, problem.OperatorsExceptBonus).EnumerateBonus(problem.size - 1).Print(t => t.Printable());
+				});
+			sw.Stop();
+			Console.Out.WriteLine("==== SolvedIn: {0} ms, Answer: {1}", sw.ElapsedMilliseconds, answer);
 		}
 
 		[Test]

@@ -6,6 +6,15 @@ namespace lib.Lang
 {
 	public static class Extensions
 	{
+		public static IEnumerable<T> Print<T>(this IEnumerable<T> items, Func<T, string> toString)
+		{
+			foreach (var item in items)
+			{
+				Console.WriteLine(toString(item));
+				yield return item;
+			}
+		}
+
 		public static IEnumerable<string> AlternateWith(this IEnumerable<string> items, string alternator)
 		{
 			return items.SelectMany((s, i) => i == 0 ? new[]{s} : new[]{alternator, s});

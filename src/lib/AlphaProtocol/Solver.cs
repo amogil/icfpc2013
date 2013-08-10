@@ -25,14 +25,18 @@ namespace lib.AlphaProtocol
 
 		public string Solve(string problemId, int size, string[] ops)
 		{
+			return Solve(problemId, size, ops, values => new BinaryBruteForcer(new Mask(values), ops).Enumerate(size - 1));
+		}
+
+		public string Solve(string problemId, int size, string[] ops, Func<List<ulong>, IEnumerable<byte[]>> getGuesses)
+		{
 			log.DebugFormat("Solving problem {0}: size={1}, ops={2}", problemId, size, string.Join(", ", ops));
 
 			var wallTime = Stopwatch.StartNew();
 			var correctValues = WithTimer(() => gsc.Eval(problemId, args), "gsc.Eval()");
 
-			var bruteForcer = new BinaryBruteForcer(new Mask(correctValues), ops);
 			var nextGuessSw = Stopwatch.StartNew();
-			foreach (var guess in bruteForcer.Enumerate(size - 1))
+			foreach (var guess in getGuesses(correctValues))
 			{
 				if (!IsGood(guess, correctValues))
 					continue;

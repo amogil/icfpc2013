@@ -42,6 +42,15 @@ namespace lib.Brute
 			inFoldOperations = new byte[] {3, 4}.Concat(noFoldOperations).ToArray();
 		}
 
+		public IEnumerable<byte[]> EnumerateBonus(int size)
+		{
+			var prefix = new byte[30];
+			prefix[0] = 5;
+			prefix[1] = 12;
+			prefix[2] = 1;
+			return Enumerate(size, 3, outsideFoldOperations, prefix, 3, 0, 0, (1 << 1) | (1 << 5) | (1 << 12));
+		}
+
 		public IEnumerable<byte[]> Enumerate(int size)
 		{
 			if (tFold)
