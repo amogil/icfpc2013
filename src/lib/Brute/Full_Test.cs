@@ -48,37 +48,39 @@ namespace lib.Brute
 
             //            System.IO.File.WriteAllText("allTrees.txt", string.Join("\n", solutions));
 
-            foreach (var problem in GetAllSamples().Where(p => p.Size == size))
-            {
+			foreach (var problem in GetAllSamples().Where(p => p.Size == size))
+			{
                 Assert.True(solutions.Contains(problem.Solution.GetUnified().ToSExpr()));
-            }
-        }
-        [Test]
-        [TestCase(3)]
-        [TestCase(4)]
-        [TestCase(5)]
-        [TestCase(6)]
-        [TestCase(7)]
-        [TestCase(8)]
-        [TestCase(9)]
-        /*
-                [TestCase(10)]
-                [TestCase(11)]
-                [TestCase(12)]
-                [TestCase(13)]
-        */
-        public void TestIncludeBin(int size)
-        {
-            var bruter = new BinaryBruteForcer(AllOps);
-            var solutions = new HashSet<string>(bruter.Enumerate(size - 1).Select(expr => expr.ToSExpr().Item1));
-
-            //            System.IO.File.WriteAllText("allTrees.txt", string.Join("\n", solutions));
-            Console.WriteLine("testing");
-            foreach (var problem in GetAllSamples().Where(p => p.Size == size))
-            {
-                Assert.True(solutions.Contains(problem.Solution.GetUnified().ToSExpr()));
-            }
-        }
+			}
+		}
+		[Test]
+		[TestCase(3)]
+		[TestCase(4)]
+		[TestCase(5)]
+		[TestCase(6)]
+		[TestCase(7)]
+		[TestCase(8)]
+		[TestCase(9)]
+		[TestCase(10)]
+		[TestCase(11)]
+		[TestCase(12)]
+		[TestCase(13)]
+		public void TestIncludeBin(int size)
+		{
+            Console.WriteLine("size = {0}", size);
+			foreach (var problem in GetAllSamples().Where(p => p.Size == size))
+			{
+                Console.WriteLine("problem #{0}", problem.Id);
+                var bruter = new BinaryBruteForcer(problem.AllOperators);
+			    var solutions = new HashSet<string>(bruter.Enumerate(size - 1).Select(expr => expr.Printable()));   
+                if (!solutions.Contains(Parser.ParseFunction(problem.SolutionString).Printable()))
+                {
+                    Console.WriteLine("op: {0}, ", string.Join(", ", problem.AllOperators));
+                    Console.WriteLine(string.Join("\t", solutions));
+                }
+                CollectionAssert.Contains(solutions, Parser.ParseFunction(problem.SolutionString).Printable());
+			}
+		}
 
         private IEnumerable<Problem> GetAllSamples()
         {

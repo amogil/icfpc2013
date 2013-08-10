@@ -56,6 +56,7 @@
     <Compile Include="AlphaProtocol\TrainProblemType.cs" />
     <Compile Include="AlphaProtocol\WrongAnswer.cs" />
     <Compile Include="Brute\BinaryBruteForcer.cs" />
+    <Compile Include="Brute\BinaryBruteForcerOld.cs" />
     <Compile Include="Brute\Perf_Test.cs" />
     <Compile Include="Brute\Force.cs" />
     <Compile Include="Annotations.cs" />

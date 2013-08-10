@@ -40,6 +40,7 @@ namespace lib
         public int Size { get; private set; }
         public string[] AllOperators { get; private set; }
         public lib.Lang.Expr Solution { get; private set; }
+        public string SolutionString { get; private set; }
 
         public string[] FoldOperators
         {
@@ -97,6 +98,7 @@ namespace lib
                         problem.AllOperators = kv[1].Trim().Split(',').Select( x => x.Trim()).ToArray();
                         break;
                     case "Challenge":
+                        problem.SolutionString = kv[1].Trim();
                         problem.Solution = Expr.ParseFunction(kv[1].Trim());
                         break;
                 }
@@ -113,7 +115,8 @@ namespace lib
                     Id = "rKHWXidcNEEC6BmTkAeFSeGd",
                     Size = 6,
                     AllOperators = new string[] {"shl1","shr1","shr16","shr4"},
-                    Solution = Expr.ParseFunction("(lambda (x_4637) (shr16 (shr1 (shl1 (shr4 x_4637)))))")
+                    Solution = Expr.ParseFunction("(lambda (x_4637) (shr16 (shr1 (shl1 (shr4 x_4637)))))"),
+                    SolutionString = "(lambda (x_4637) (shr16 (shr1 (shl1 (shr4 x_4637)))))"
                 }.ToString(), ParseTraining("Id: rKHWXidcNEEC6BmTkAeFSeGd, Challenge: (lambda (x_4637) (shr16 (shr1 (shl1 (shr4 x_4637))))), Size: 6, Operators: shl1,shr1,shr16,shr4").ToString());
         }
     }
