@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace lib.Lang
@@ -19,7 +20,7 @@ namespace lib.Lang
 			_1 = new Mask(one: 1, zero: ~(ulong)1);
 		}
 
-		public Mask(ulong[] values)
+		public Mask(ICollection<ulong> values)
 		{
 			one = values.Aggregate((ulong) 0, (acc, i) => acc | i);
 			zero = values.Aggregate((ulong) 0, (acc, i) => acc | ~i);

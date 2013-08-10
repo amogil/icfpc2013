@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using NUnit.Framework;
+using lib.Lang;
 using lib.Web;
 
 namespace lib.AlphaProtocol
@@ -15,11 +18,12 @@ namespace lib.AlphaProtocol
 		{
 			while (true)
 			{
-				var problem = gsc.Train(TrainProblemType.Any, 12);
+				var problem = gsc.Train(TrainProblemType.Simple, 12);
 				Console.Out.WriteLine("==== TrainProblem: {0}", problem);
 
+				var solver = new Solver();
 				var sw = Stopwatch.StartNew();
-				var answer = AlphaProtocol.PostSolution(problem.id, problem.size, problem.OperatorsExceptBonus, true);
+				var answer = solver.Solve(problem.id, problem.size, problem.OperatorsExceptBonus);
 				sw.Stop();
 				Console.Out.WriteLine("==== SolvedIn: {0} ms, Answer: {1}", sw.ElapsedMilliseconds, answer);
 			}
@@ -30,17 +34,39 @@ namespace lib.AlphaProtocol
 		{
 			var problem = new TrainResponse
 			{
-				id = "c1ZbBSHdECw62rTApgFfp9B0",
-				challenge = "(lambda (x_11179) (fold x_11179 0 (lambda (x_11179 x_11180) (or (or (shr4 x_11180) 1) x_11179))))",
-				size = 11,
-				operators = "or,shr4,tfold".Split(','),
+				id = "lHObnL0KiFVC3c8vPkDDzAUc",
+				challenge = "(lambda (x_12074) (shr4 (shr4 (if0 (or (shr16 x_12074) 1) (shl1 (shr1 x_12074)) x_12074))))",
+				size = 12,
+				operators = "if0,or,shl1,shr1,shr16,shr4".Split(','),
 			};
 			Console.Out.WriteLine("==== TrainProblem: {0}", problem);
 
+			var solver = new Solver();
 			var sw = Stopwatch.StartNew();
-			var answer = AlphaProtocol.PostSolution(problem.id, problem.size, problem.OperatorsExceptBonus, true);
+			var answer = solver.Solve(problem.id, problem.size, problem.OperatorsExceptBonus);
 			sw.Stop();
 			Console.Out.WriteLine("==== SolvedIn: {0} ms, Answer: {1}", sw.ElapsedMilliseconds, answer);
-	}
+		}
+
+		[Test]
+		public void MaskSelection()
+		{
+			while (true)
+			{
+				var problem = gsc.Train(TrainProblemType.Any, 12);
+				Console.Out.WriteLine("==== TrainProblem: {0}", problem);
+
+				var rnd = new Random();
+				var allValues = new List<ulong>();
+				for (int i = 0; i < 5; i++)
+				{
+					var args = Enumerable.Range(1, 64).Select(e => rnd.NextUInt64()).ToArray();
+					var values = gsc.EvalProgram(problem.challenge, args);
+					allValues.AddRange(values);
+					var m = new Mask(values);
+					Console.Out.WriteLine("CurrentMask: {0}, AccumulatedMask: {1}", m, new Mask(allValues.ToArray()));
+				}
+			}
+		}
 	}
 }

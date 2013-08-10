@@ -22,11 +22,11 @@ namespace lib.AlphaProtocol
             IEnumerable<byte[]> trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
             ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
 
-            ulong[] outputs = gsc.Eval(problemId, inputs);
+            List<ulong> outputs = gsc.Eval(problemId, inputs);
 
             log.Debug("Eval result for samples received");
 
-            IEnumerable<byte[]> solutions = Guesser.Guesser.Guess(trees, inputs, outputs);
+            IEnumerable<byte[]> solutions = Guesser.Guesser.Guess(trees, inputs, outputs.ToArray());
 
             while (true)
             {

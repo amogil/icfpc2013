@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using JetBrains.Annotations;
 using lib.Web;
@@ -14,17 +15,17 @@ namespace lib.AlphaProtocol
 			webApi = new WebApi();
 		}
 
-		public ulong[] Eval(string problemId, ulong[] inputs)
+		public List<ulong> Eval(string problemId, IEnumerable<ulong> inputs)
 		{
 			return Eval(new EvalRequest { id = problemId }, inputs);
 		}
 
-		public ulong[] EvalProgram(string program, ulong[] inputs)
+		public List<ulong> EvalProgram(string program, IEnumerable<ulong> inputs)
 		{
 			return Eval(new EvalRequest { program = program }, inputs);
 		}
 
-		private ulong[] Eval(EvalRequest request, ulong[] inputs)
+		private List<ulong> Eval(EvalRequest request, IEnumerable<ulong> inputs)
 		{
 			request.arguments = inputs.Select(ui => ui.ToString("X")).ToArray();
 
@@ -32,17 +33,17 @@ namespace lib.AlphaProtocol
 			if (!response.status.Equals("ok", StringComparison.OrdinalIgnoreCase))
 				throw new ApplicationException(string.Format("Error EvalResponse ({0}): {1}", response.status, response.message));
 
-			var values = response.outputs.Select(str => Convert.ToUInt64(str, 16)).ToArray();
+			var values = response.outputs.Select(str => Convert.ToUInt64(str, 16)).ToList();
 			return values;
 		}
 
 		[CanBeNull]
-		public WrongAnswer Guess(string problemId, string formuala)
+		public WrongAnswer Guess(string problemId, string program)
 		{
 			var request = new GuessRequest
 			{
 				id = problemId,
-				program = formuala
+				program = program
 			};
 
 			var response = webApi.Guess(request);
