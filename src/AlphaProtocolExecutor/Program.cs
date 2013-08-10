@@ -25,7 +25,7 @@ namespace AlphaProtocolExecutor
 					Operations = d.Operations,
 				})
 				.ToList();
-			var problemsToSolve = problems.Where(p => !p.Tried && !p.Bonus && p.Size == 6).ToArray();
+			var problemsToSolve = problems.Where(p => !p.Tried && !p.Bonus && p.Size == 7).ToArray();
 			foreach (var problem in problemsToSolve)
 			{
 				AlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
