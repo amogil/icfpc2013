@@ -5,10 +5,10 @@ using lib.AlphaProtocol;
 
 namespace AlphaProtocolExecutor
 {
-	internal class Program
-	{
-		private static void Main(string[] args)
-		{
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
 			var problems = File
 				.ReadAllLines(@"../../../../problems.txt")
 				.Select(l => l.Trim())
@@ -25,13 +25,16 @@ namespace AlphaProtocolExecutor
 					Operations = d.Operations,
 				})
 				.ToList();
-			var problemsToSolve = problems.Where(p => !p.Tried && !p.Bonus && p.Size == 7).ToArray();
+			var problemsToSolve = problems.Where(p => !p.Tried && !p.Bonus && p.Size == 11).ToArray();
 			foreach (var problem in problemsToSolve)
 			{
-				AlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
+				AlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations, true);
 			}
+
+            // Ручной режим
+//            AlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations, true);
             Console.WriteLine("Press any key...");
             Console.ReadKey();
-		}
-	}
+        }
+    }
 }

@@ -46,11 +46,13 @@ namespace lib.AlphaProtocol
             throw new ApplicationException("Error GuessResponse");
         }
 
-        public static void PostSolution(string problemId, int size, string[] operations)
+        public static void PostSolution(string problemId, int size, string[] operations, bool renameTFoldToFold = false)
         {
             log.DebugFormat("Trying to solve problem {0}...", problemId);
             var random = new Random();
-            byte[][] trees = new BinaryBruteForcer(operations).Enumerate(size - 1).ToArray();
+            if (renameTFoldToFold)
+                operations = operations.Select(o => o == "tfold" ? "fold" : o).ToArray();
+            var trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
             ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
 
             log.Debug("Trees and samples generated");
