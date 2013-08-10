@@ -35,46 +35,50 @@ namespace lib.Brute
         [TestCase(7)]
         [TestCase(8)]
         [TestCase(9)]
-        [TestCase(10)]
-        [TestCase(11)]
-        [TestCase(12)]
-        [TestCase(13)]
+        /*
+                [TestCase(10)]
+                [TestCase(11)]
+                [TestCase(12)]
+                [TestCase(13)]
+        */
         public void TestInclude(int size)
         {
             var bruter = new Force();
-			var solutions = new HashSet<string>(bruter.Solve(size - 1, AllOps).Select(expr => expr.ToSExpr()));
+            var solutions = new HashSet<string>(bruter.Solve(size - 1, AllOps).Select(expr => expr.ToSExpr()));
 
-			//            System.IO.File.WriteAllText("allTrees.txt", string.Join("\n", solutions));
+            //            System.IO.File.WriteAllText("allTrees.txt", string.Join("\n", solutions));
 
-			foreach (var problem in GetAllSamples().Where(p => p.Size == size))
+            foreach (var problem in GetAllSamples().Where(p => p.Size == size))
             {
                 Assert.True(solutions.Contains(problem.Solution.GetUnified().ToSExpr()));
+            }
         }
-		}
-		[Test]
-		[TestCase(3)]
-		[TestCase(4)]
-		[TestCase(5)]
-		[TestCase(6)]
-		[TestCase(7)]
-		[TestCase(8)]
-		[TestCase(9)]
-		[TestCase(10)]
-		[TestCase(11)]
-		[TestCase(12)]
-		[TestCase(13)]
-		public void TestIncludeBin(int size)
-		{
-			var bruter = new BinaryBruteForcer(AllOps);
-			var solutions = new HashSet<string>(bruter.Enumerate(size - 1).Select(expr => expr.ToSExpr().Item1));
+        [Test]
+        [TestCase(3)]
+        [TestCase(4)]
+        [TestCase(5)]
+        [TestCase(6)]
+        [TestCase(7)]
+        [TestCase(8)]
+        [TestCase(9)]
+        /*
+                [TestCase(10)]
+                [TestCase(11)]
+                [TestCase(12)]
+                [TestCase(13)]
+        */
+        public void TestIncludeBin(int size)
+        {
+            var bruter = new BinaryBruteForcer(AllOps);
+            var solutions = new HashSet<string>(bruter.Enumerate(size - 1).Select(expr => expr.ToSExpr().Item1));
 
-			//            System.IO.File.WriteAllText("allTrees.txt", string.Join("\n", solutions));
-			Console.WriteLine("testing");
-			foreach (var problem in GetAllSamples().Where(p => p.Size == size))
-			{
+            //            System.IO.File.WriteAllText("allTrees.txt", string.Join("\n", solutions));
+            Console.WriteLine("testing");
+            foreach (var problem in GetAllSamples().Where(p => p.Size == size))
+            {
                 Assert.True(solutions.Contains(problem.Solution.GetUnified().ToSExpr()));
-			}
-		}
+            }
+        }
 
         private IEnumerable<ProblemsMiner.Problem> GetAllSamples()
         {
