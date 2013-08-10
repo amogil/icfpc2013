@@ -5,6 +5,5 @@ namespace lib.Web
 		public string status;
 		public string[] values;
 		public string message;
-		public bool lightning;
 	}
 }
