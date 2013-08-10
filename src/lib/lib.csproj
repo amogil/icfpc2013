@@ -53,9 +53,9 @@
     <Compile Include="AlphaProtocol\AlphaProtocol.cs" />
     <Compile Include="Brute\BinaryBruteForcer.cs" />
     <Compile Include="Brute\Perf_Test.cs" />
-    <Compile Include="Lang\BinExpExtensions.cs" />
     <Compile Include="Brute\Force.cs" />
     <Compile Include="Annotations.cs" />
+    <Compile Include="Lang\BinExpExtensions.cs" />
     <Compile Include="Lang\Operations.cs" />
     <Compile Include="Lang\Parser.cs" />
     <Compile Include="Lang\Parser_Test.cs" />

@@ -131,6 +131,10 @@ namespace lib.Lang
 			yield return new TestCase("(lambda (x) (xor 0 (and x (or x (plus x (not (shl1 (shr1 (shr4 (shr16 x))))))))))", 12345678, 12345678);
 			yield return new TestCase("(lambda (x) (not (shl1 (shr1 (shr4 (shr16 x))))))", 1 << 20, unchecked((ulong)(-1)));
 
+			yield return new TestCase("(lambda (x) (fold x 0 (lambda (x acc) 0)))", 0, 0);
+			yield return new TestCase("(lambda (x) (fold x 0 (lambda (x acc) 0)))", 1, 0);
+			yield return new TestCase("(lambda (x) (fold x 1 (lambda (x acc) 1)))", 0, 1);
+			yield return new TestCase("(lambda (x) (fold x 1 (lambda (x acc) 1)))", 1, 1);
 			yield return new TestCase("(lambda (x) (fold x 0 (lambda (x acc) (plus x acc)))", 0, 0);
 			yield return new TestCase("(lambda (x) (fold x 0 (lambda (x acc) (plus x acc)))", 1, 1);
 			yield return new TestCase("(lambda (x) (fold x (plus 1 1) (lambda (x acc) (plus x acc)))", 65535, 512);
@@ -139,6 +143,7 @@ namespace lib.Lang
 			yield return new TestCase("(lambda (x) (if0 0 1 0))", 0, 1);
 			yield return new TestCase("(lambda (x) (if0 x 0 1))", 0, 0);
 			yield return new TestCase("(lambda (x) (if0 x 0 1))", 1, 1);
+
             // (fold x_27005 0 (lambda (x_27005 x_27006) (shr1 (if0 x_27005 (if0 (plus (shl1 (shr1 0)) x_27005) x_27005 x_27006) x_27005))))
             yield return new TestCase("(lambda (x) (plus (fold (plus x 1) 0 (lambda (x acc) (plus x acc))) x))", 1, 3);
             yield return new TestCase("(lambda (x) (plus x (fold (plus x 1) 0 (lambda (x acc) (plus x acc)))))", 1, 3);

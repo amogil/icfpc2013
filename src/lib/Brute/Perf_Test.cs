@@ -32,27 +32,30 @@ namespace lib.Brute
 			var unaryOps = Unary.Operators.Select(t => t.Key).ToArray();
 			var binaryOps = Binary.Operators.Select(t => t.Key).ToArray();
 			var allOps = unaryOps.Concat(binaryOps).ToArray();
+			var ops = allOps;
+			const int problemSize = 8;
 			
 			var args = new List<TArg>();
 			const int argsCount = 2;
 			for (var i = 0; i < argsCount; i++)
 				args.Add(createArg(rnd.NextUInt64()));
 
-			Console.Out.WriteLine("WS: {0} mb", Environment.WorkingSet / mb);
-			long treeCount = 0;
+			Console.Out.WriteLine("size: {0}, ops: [{1}], #args: {2}, WS: {3} mb", problemSize, string.Join(" ", ops), argsCount, Environment.WorkingSet / mb);
+
+			long treesCount = 0;
 			var sw = Stopwatch.StartNew();
 			for (var iter = 0; iter < argsCount; iter++)
 			{
 				var arg = args[iter];
-				foreach (var tree in getTrees(8, allOps))
+				foreach (var tree in getTrees(problemSize, ops))
 				{
 					eval(tree, arg);
 					if (iter == 0)
-						++treeCount;
+						++treesCount;
 				}
 			}
 			sw.Stop();
-			Console.Out.WriteLine("#args: {0}, #trees: {1}, eval took: {2} ms, WS: {3} mb", argsCount, treeCount, sw.ElapsedMilliseconds, Environment.WorkingSet / mb);
+			Console.Out.WriteLine("#trees: {0}, eval took: {1} ms, WS: {2} mb", treesCount, sw.ElapsedMilliseconds, Environment.WorkingSet / mb);
 		}
 	}
 }
