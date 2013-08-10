@@ -27,16 +27,12 @@ namespace lib.AlphaProtocol
 		{
 			log.DebugFormat("Solving problem {0}: size={1}, ops={2}", problemId, size, string.Join(", ", ops));
 
-			ops = ops.Select(o => o == "tfold" ? "fold" : o).ToArray();
-			log.DebugFormat("!!! Replaced tfold -> fold");
-
 			var wallTime = Stopwatch.StartNew();
 			var correctValues = WithTimer(() => gsc.Eval(problemId, args), "gsc.Eval()");
 
 			var bruteForcer = new BinaryBruteForcer(new Mask(correctValues), ops);
-			var guesses = bruteForcer.Enumerate(size - 1).AsParallel().WithDegreeOfParallelism(Environment.ProcessorCount * 2);
 			var nextGuessSw = Stopwatch.StartNew();
-			foreach (var guess in guesses)
+			foreach (var guess in bruteForcer.Enumerate(size - 1))
 			{
 				if (!IsGood(guess, correctValues))
 					continue;
