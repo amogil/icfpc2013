@@ -11,28 +11,23 @@ namespace lib.AlphaProtocol
     {
         private static readonly ILog log = LogManager.GetLogger(typeof (AlphaProtocol));
 
-        public static string PostSolution(string problemId, int size, string[] operations, bool renameTFoldToFold = false)
+        public static string PostSolution(string problemId, int size, string[] operations,
+                                          bool renameTFoldToFold = false)
         {
-			var gsc = new GameServerClient();
+            var gsc = new GameServerClient();
 
             log.DebugFormat("Trying to solve problem {0}...", problemId);
             var random = new Random();
             if (renameTFoldToFold)
                 operations = operations.Select(o => o == "tfold" ? "fold" : o).ToArray();
-            var trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
+            IEnumerable<byte[]> trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
             ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
 
-<<<<<<< HEAD
-            ulong[] outputs = Eval(problemId, inputs);
-=======
-            log.Debug("Trees and samples generated");
-
-			ulong[] outputs = gsc.Eval(problemId, inputs);
->>>>>>> 4aba8983053fe9bcde738124a2545ae18651c4d7
+            ulong[] outputs = gsc.Eval(problemId, inputs);
 
             log.Debug("Eval result for samples received");
 
-            var solutions = Guesser.Guesser.Guess(trees, inputs, outputs);
+            IEnumerable<byte[]> solutions = Guesser.Guesser.Guess(trees, inputs, outputs);
 
             while (true)
             {
@@ -40,23 +35,23 @@ namespace lib.AlphaProtocol
                 byte[] solution = solutions.First();
                 log.Debug("First solution finded, asking the guess...");
 
-				var formula = String.Format("(lambda (x) {0})", solution.ToSExpr().Item1);
-				var wrongAnswer = gsc.Guess(problemId, formula);
+                string formula = String.Format("(lambda (x) {0})", solution.ToSExpr().Item1);
+                WrongAnswer wrongAnswer = gsc.Guess(problemId, formula);
 
                 log.Debug("Guess answer received");
 
-				if (wrongAnswer == null)
+                if (wrongAnswer == null)
                 {
                     log.DebugFormat("Problem solved!!!. Problem Id: {0}", problemId);
-					return formula;
+                    return formula;
                 }
 
-				log.Debug(string.Format("WrongAnswer received: {0}", wrongAnswer));
+                log.Debug(string.Format("WrongAnswer received: {0}", wrongAnswer));
 
-				inputs = inputs.Concat(new[] { wrongAnswer.Arg }).ToArray();
-				outputs = outputs.Concat(new[] { wrongAnswer.CorrectValue }).ToArray();
+                inputs = inputs.Concat(new[] {wrongAnswer.Arg}).ToArray();
+                outputs = outputs.Concat(new[] {wrongAnswer.CorrectValue}).ToArray();
 
-                solutions = Guesser.Guesser.Guess(solutions, inputs, outputs);
+                solutions = Guesser.Guesser.Guess(solutions.Skip(1), inputs, outputs);
             }
         }
 

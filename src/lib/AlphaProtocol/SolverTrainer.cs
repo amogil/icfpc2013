@@ -14,7 +14,7 @@ namespace lib.AlphaProtocol
 		{
 			while (true)
 			{
-				var problem = gsc.Train(TrainType.Simple, 11);
+				var problem = gsc.Train(TrainType.Simple, 12);
 				Console.Out.WriteLine("==== TrainProblem: {0}", problem);
 
 				var sw = Stopwatch.StartNew();
