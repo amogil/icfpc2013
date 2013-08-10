@@ -5,6 +5,35 @@ using lib.Lang;
 
 namespace ProblemsMiner
 {
+
+	[TestFixture]
+	public class Problem_Test
+	{
+		[Test]
+		public void TestSolved()
+		{
+			Problem problem = Problem.Parse("e6sjjxOOhNSUVlSA68vySQAc	4	true	plus										");
+			Assert.AreEqual("e6sjjxOOhNSUVlSA68vySQAc", problem.Id);
+			Assert.AreEqual(4, problem.Size);
+			CollectionAssert.AreEqual(new[] { "plus" }, problem.AllOperators);
+		}
+		[Test]
+		public void TestNotSolved()
+		{
+			Problem problem = Problem.Parse("e6sjjxOOhNSUVlSA68vySQAc	4	false	plus										");
+			Assert.AreEqual("e6sjjxOOhNSUVlSA68vySQAc", problem.Id);
+			Assert.AreEqual(4, problem.Size);
+			CollectionAssert.AreEqual(new[] { "plus" }, problem.AllOperators);
+		}
+		[Test]
+		public void TestNotTouched()
+		{
+			Problem problem = Problem.Parse("e6sjjxOOhNSUVlSA68vySQAc	4		plus										");
+			Assert.AreEqual("e6sjjxOOhNSUVlSA68vySQAc", problem.Id);
+			Assert.AreEqual(4, problem.Size);
+			CollectionAssert.AreEqual(new[] { "plus" }, problem.AllOperators);
+		}
+	}
     public class Problem
     {
         public string Id { get; private set; }
@@ -23,14 +52,14 @@ namespace ProblemsMiner
 
         public static Problem Parse(string text)
         {
-            string[] elems = text.Split('\t').Where(e => e.Length > 0).ToArray();
+            string[] elems = text.Split('\t').ToArray();
             if (elems.Length == 0)
                 return null;
             return new Problem
                 {
                     Id = elems.First(),
                     Size = int.Parse(elems.ElementAt(1)),
-                    AllOperators = elems.Skip(2).ToArray()
+                    AllOperators = elems.Skip(3).Where(s => s.Length > 0).ToArray()
                 };
         }
 

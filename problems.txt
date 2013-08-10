@@ -1,1421 +1,1422 @@
-7APPtB5gi8AF6ZWCoaW7yYFE	3	shr4										
-a38RIJOCe0ywBtcwFVJQAniY	3	shr16										
-am2WL6uDxxrbB3H4KMuaEA2g	3	not										
-AvFotXRDTN3g7OByVeLu8mVT	3	shr1										
-becBqu88u1Wc3UJTyu8W6Bxy	3	shr1										
-CVyQnLDQoTIQHhfVTgPkyoNt	3	shr4										
-fSh2TKA3tAi8i1NnUlyaxK9L	3	shr16										
-hTWGOxiJxtwb5oxzAbVpnO5A	3	not										
-JAnTUkrWPNTDoC9DiDAWaQR6	3	shr16										
-kyAEx1okQ3jXJHd8tTd78pg3	3	shr4										
-l5LFoa3jxB5KO3912xSHUMYn	3	not										
-nAvsC5sIcytNQYbHFfXxiMO1	3	not										
-PmqXL6W9MI98hNRBfAohg2x8	3	shr4										
-RqzFAP3C2fYRftkcVHH1KBTX	3	not										
-SP8ODmLf6Tcc1RR4Z1trJgjv	3	shr16										
-UNq9zRB7pCcFYPvmRb9sXj8L	3	shl1										
-xpXKKB87cT6B22YuBeDdrIvS	3	shr1										
-Y0CVh3mOUrOCjasrGhhLvpec	3	shr1										
-YMcCEmSyNz1q3yYALFv0wYJb	3	shr4										
-YSjRgDS70mwFzLNbSncQ3fAT	3	shr16										
-7mHdUXAl2IvVY6wg5rBU7UaZ	4	plus										
-9AZfN7jccK0OWLvghAttcyBU	4	plus										
-AB4pf6xiSLVkDtSnEjRDVJ4c	4	not	shl1									
-ayBP2sXeBV7Y8LCHYL2kDBdj	4	shr16	shr4									
-BriS5SvNMwDV5BOSe4ybajHF	4	plus										
-e6sjjxOOhNSUVlSA68vySQAc	4	plus										
-FOVFAaBIUJCGtPzxp3WV0GqD	4	or										
-G3BL6ASC0CB4uC6BwWUYcHn1	4	shl1	shr4									
-HLCnYONzBtjFR8eMumTGeZtD	4	plus										
-IBCmn3ptlfxsea29MkhnNThl	4	not	shr4									
-lceXW7V1Apc1vIXnKDLOkLEm	4	not	shr4									
-mhqslxdCnqBWxhzBftAxKSOx	4	or										
-NLyHiKUTETzjj9NoYRxXfIaF	4	shl1	shr4									
-qDOKXxQmD40hbP4ydisOS0iA	4	plus										
-rsKwatBDNoRXk9ny9e1ASL3L	4	not	shl1									
-ryqmt94EwMe7JgI0lwzosZRk	4	plus										
-sqhWBMddOsLvLuP8j4TWg2Sr	4	not	shl1									
-u7lAhoFlcr7EhcVTzbMtJkmt	4	xor										
-Vf28BBhGwHZlEqe8Aoftjiqj	4	shl1	shr1									
-znmjLZfiCsa4Q78Aw8YWITBW	4	and										
-0iBSfrbRJDTKyg9QH6xFuF9O	5	shr1	xor									
-1uuKygHPbyfdSaV1LMd3dHst	5	shl1	shr4									
-8000zn2szOQZzqPLhfgN3hcB	5	shr1	xor									
-a0K5PRa8FAYzlBW4ftA5cmO8	5	and	not									
-ANJNonzcOdVAP7UGtXWWdCVB	5	and	shr1									
-ApBMjlJlVxpHsBZSnxJnCNhk	5	not	shl1									
-BcBzHuKlV1rhoOLaK0S9Xae7	5	or	shr1									
-gv5Hdp32gf8fuTFs4hqfOEzW	5	and	not									
-iOkfPemweMQzY5G2cmI2UB8O	5	plus	shr1									
-ke91dsNocsl9qyiyPVOq95WJ	5	shr1	xor									
-kJtKN12SbdvGBJrJg8HkCZkm	5	not	shl1									
-LziOjMAAncDUN0qbZgGB6eAM	5	not	plus									
-mZa08wktf3imtnSXFdCB33nM	5	and	shl1									
-NzyxxEmIcF7nBJATpPjKn2Dh	5	not	shr1	shr16								
-oBWlSced5OX54fn7kYf85Pjh	5	shl1	xor									
-pZJNEElNbKdoaOw30sHwx8kw	5	and	not									
-SlWyJTpW9VJWHjWGCmeWhmpc	5	shr16	xor									
-tMKJajjPjA3A0DECpBtlqxBW	5	and	shr1									
-u8Z7Aha0hA588ZbMSJlaeocS	5	not	plus									
-uFGNQoM2NzR2QHNJHZ94XoO8	5	not	plus									
-0AL3oBAjtWtr1dN390wn6AvP	6	and	not	shr16								
-0DVhhB4yWXi09FfgylBv7Z3a	6	xor										
-3sczY10KJtYDKb8qe80sRZ3J	6	shl1	shr1	xor								
-BCmbkB9BfL4auoORmz7Gpy8k	6	if0	shr1									
-BF8UY25zJsRRNG85YWJag508	6	shr1	shr16	shr4								
-BOzBLMZnkKSBtkOQkkw1NwCw	6	or	xor									
-DqjBlHGilXEqrZTqJalW2QLW	6	plus	shr1	shr16								
-eFUd5TnubO7be453xT8Mm16B	6	shr1	shr16	xor								
-enl7KhBifRLpBfL4P9mQtNRV	6	if0	shr1									
-ggwWrdvl39AAYf2PteWnFnYz	6	or	shr16	shr4								
-gJARJFquOrztWBLGJsx46l9Y	6	or	shr1	shr16								
-IlkgSbC01uYWiNbs5FfVkwtj	6	or	shl1	shr4								
-JJ1jyGaPK6Z7wHHgebEY3Izc	6	and	xor									
-lviCIQ5DSB5GBjXHdJ5jpdIo	6	plus	shr1									
-OjvkYBiIs1WkRENJcFU1v8Xm	6	not	plus	shr1								
-PRojNseWqAAsvtoFQaRlIxeW	6	or	shr1	shr4								
-QfSu03tywETVGtAvABr3UZeC	6	plus	shr1	shr16								
-V3FkUhBhtlhtA14reurxulfW	6	plus	xor									
-VMTl8scLSM254zQLwJIDwQ6S	6	not	shr4	xor								
-YccCewcQebIb3ZeNsOOLy1VQ	6	shl1	xor									
-2jdFE4FwBjyuAxIna8rnHAAw	7	and	shl1	xor								
-AHxzWk9Pa1jJt37aG6BrID4l	7	and	plus	shr4								
-aQARuyYNvSAsZ3I0Kcg7cD02	7	plus	shl1	xor								
-aWkjmd8GLJAtfC5HtIUt5LMa	7	or	shr16	xor								
-BFerQEWOCiHKWHpS7m4K76fC	7	and	shr4	xor								
-BxiQiAuYv5r8UMp0oBgqJ3jc	7	and	shr4	xor								
-DgiBQnQOxwKAO4lMIatKnBg5	7	and	shr16	xor								
-dImy1gs0dVfvdm2GikBzAqB8	7	and	shr1	shr16	shr4							
-Ebhu1RcuX1EmCIL1JlLhx709	7	or	shl1	xor								
-eWUkBzlYBTcJYPbZXCo9c8KL	7	not	shr1	shr16	xor							
-frA5Ve6CtO3cnFQ7ZsAKk4xf	7	not	or	xor								
-fVxI4KBBY6XTamB75HvwIaIF	7	plus	shr16	xor								
-gVZJ6BTfVijlILJA5E32QgA9	7	not	or	shr16								
-HueDjA88EIlPAHgaxbIIy9Ue	7	or	shr16	xor								
-IK5UtQ33sF3eZDDkTyPUd9uD	7	if0	plus									
-JEBKPhxlcYb6dxqLA9NcsZSj	7	plus	shr4									
-lzD8br6W5z5BZLw9fqRJkSpo	7	not	shr1	shr16	xor							
-NTyfPoaB5DskiAo36rQBQlVQ	7	and	not	shl1	shr4							
-PbTwKptIrQGB5txJVneFIaXb	7	or	shr16	xor								
-SHEBeId0nHCUV7vq9mEgDOXB	7	plus	shr4									
-00ekCyVs92qtgSArgbO38JUy	8	and	tfold									
-351xL7gCc1JgeaYkJ3VFFrjc	8	shr1	tfold									
-35wFfGIL4PSlXjGheo7ZGdjB	8	or	tfold									
-3EyKL57xZSIjoY4A8NYLmete	8	or	tfold									
-6k40o787CXvfjxA8Yh0x77xa	8	or	plus	shr1	shr16							
-73tCTDXxnet65m9KSFIBAlk1	8	or	tfold									
-aGYz0mXsNUioHQB4SCAePUeb	8	plus	tfold									
-ahWbfxjrs6FOXZZvIbZpxm2B	8	not	plus	shl1	xor							
-aKzrlL3WX1jpsjaDhmx7gpL1	8	not	or	shl1	shr1							
-B0BZi2I8ktIPnZe04WAEc8rO	8	and	tfold									
-BALUoxEIYJxJ9DlSS7N2tDzd	8	plus	shl1	shr16	xor							
-bh9pia5otVTgW9fzTLaCE0Mw	8	or	tfold									
-bRXC89Yb4idYFG5clJByEQZ4	8	shl1	shr4	tfold								
-CDkuoMll64zetq7AnFbVTkLT	8	not	or	shr16	xor							
-CKAnAanAl2BHDq4gOBF27VJB	8	plus	tfold									
-enxdtGsXBGkJT9PBgRDLpALp	8	and	shl1	shr4	xor							
-GdaPK9aCAhD7zyYEyF6zEl13	8	and	not	plus	shr4							
-Hbnf8TfJkIQ5jmerMsi9DlZw	8	and	not	shr4								
-HNQ6YguciuTe4ExABIhWlzzm	8	or	shr16	shr4	xor							
-iiHBZTm22VX3TuqNSXYF7va5	8	not	or	shr16	xor							
-iJZaMQwq8aDGc8KBoREqZLQ4	8	tfold	xor									
-IPlJRPAPYMRghogaicFG2WQp	8	not	shr4	tfold								
-KeeZW7uywjwitbtXHbxp60De	8	and	not	plus	shr16							
-l0eEUoqieQN1sSoylzmFjcvx	8	not	or	shr1								
-M1BCZBhF1UABf4dB4sGVoIWi	8	not	plus	shr1	shr16	shr4						
-nekI8cHWnGlBB34AFj04Ayoh	8	shl1	tfold									
-NjDIlvMZ1AW73QBKg4IgzJ5R	8	and	tfold									
-nWpqAC4w30ANZIyHWg6AWIYR	8	tfold	xor									
-oSm8WTV70IogHnwmvppDCzYc	8	if0	not	xor								
-oWKCrYhOrPtAWwMXtiMZ7DsC	8	plus	tfold									
-pd2XDCa3ZgkNqJlzm12wGgmC	8	plus	shl1	shr16								
-RoPJXx5lQb0v97BRnPBdAiBS	8	plus	tfold									
-SQNA8p9hjWd2vYhEYTp50rvD	8	and	shr16	shr4								
-tsWRdq9q3jG5YgEY8esbFcVb	8	plus	shl1	shr16	shr4							
-U0tI0TMYtJ0mEC3akY2FEQJW	8	or	plus									
-Uie4DwXdiCHXJc9rHKHucKJG	8	plus	tfold									
-uRnr3XnBa0cvfNIZfpsbPulC	8	if0	shl1	xor								
-w2sAHPWZAL1uIVfOyjvw8MyE	8	not	shr4	tfold								
-wNHrLUTkYAl11vR2w31ueG1h	8	or	tfold									
-zeV4Lb8EG3LndjAbco7m4CUE	8	and	if0	shr16								
-0zsKJFD6XFpbX8XTZY66rUfH	9	or	shr4	tfold								
-1OnJyXR5XtrYzKKssZG4CqEZ	9	and	if0									
-68SaByE885qoSG9mHjHqCCAS	9	and	if0	plus								
-8C8WVq4hT5izXZHoUVil3OsH	9	or	shl1	tfold								
-baHzv4udFPBYsjGzwLRkvb3E	9	and	if0	shl1	shr4							
-BcJ2gstSEbQ3pnnzjCnkhnaA	9	not	or	tfold								
-BO8C7115lYBT6m8Atzze9Gic	9	shl1	tfold	xor								
-BZDafOGMfYZBnmKhIaR6aBjQ	9	or	shr1	tfold								
-BzJWhbbaWG7DdPe0cRJbfHRi	9	and	if0	not	shr4							
-d7AFqP8nCRHm3aOVX0AEkqap	9	plus	shr16	tfold								
-DCZtsyuTBmRhm5w8KLurB9Ee	9	and	if0	shl1								
-DfsROmNE34MtRjmLJfD2BvKM	9	shr1	tfold	xor								
-DmdF4St6QRksXNNwnZBfg5hL	9	if0	not	or								
-FeI25TlLB549X6tijBqsfuT5	9	or	shl1	tfold								
-GdbhLToogSXo11Js3fUzPA08	9	and	if0	or								
-Gkf57bwOXpOMxybML3GQPrpR	9	and	if0	shl1								
-IEftbylrc9wrvgJ9ZxGlWIBl	9	if0	not	or	shr16							
-iKdZtvxrUBouUiUlXZibh2Gr	9	and	if0	shl1	shr4							
-IlPUho5q2dM1hPQxftnKo5ia	9	if0	tfold									
-JuR5FhAYS1ycFgvBFZN9FUQP	9	and	if0	not	shr16							
-jY9U9FASjXthAAPPdw2DEqXc	9	not	shl1	tfold								
-KGYqL8qTyysP44VA2jbr15V1	9	and	shr1	tfold								
-lTKwBCXMFAURDqDugltdTxEA	9	if0	shr1	shr16	shr4							
-ms9s4RAOzs6JwbUhjBaEYjki	9	not	tfold	xor								
-neFR56l5LZ2FZmRITZoWCGyh	9	if0	not	shr1	shr16	shr4						
-O0qcpSuqJ7y5VPekJUcJFnlX	9	if0	not	plus	shr1							
-O0qKdWZviAFudpJsZkNAT9wB	9	if0	not	shr1	shr16	shr4						
-Opp7HzPF8difPjz5xsAQnA5w	9	plus	shl1	tfold								
-P1YkcxASbG5NO5LJzoMnBYvG	9	plus	shl1	tfold								
-PrOcS14DC8MuGLovNHdSHr8M	9	and	if0	shl1	shr4							
-QjpwZruLoPFMN5uJ70ha8lcU	9	or	shl1	tfold								
-RfsnqRTMGejP6BdKYwnMgwWP	9	or	shl1	tfold								
-SQIEGxGuikqJhAuRgNEuPI1m	9	and	if0									
-to4pGgE1ByxJ87cAqpMVL3lh	9	and	if0	shl1	shr16							
-V2kKchloiUa82iNiRD7y8mYj	9	shr1	tfold	xor								
-XHCeainpmwJKRjr0GhgWExQt	9	not	shl1	shr4	tfold							
-XuLIAU7PiOPkAyHdgqBbfqTl	9	not	shr4	tfold								
-XvTfLyhwRuxIVrFS8EezTWAf	9	and	if0	plus								
-Xw1XxxRgchrBWAAPs4ccaXyw	9	and	if0	plus								
-zi7Xwu4Q24YHMvBHqze0s1QT	9	plus	shr16	tfold								
-0u7r8G8tAcmObvxhD5NMuXAk	10	not	plus	tfold								
-14VyMxLkRULNFBqmwKKLhZc5	10	or	shr1	shr4	tfold							
-6Qu1ZuxaQbDIZaYLzNINdldh	10	plus	shl1	shr16	tfold							
-7XpkvsJyurmnlkoGMVtwBTw8	10	and	if0	not	shl1	shr1						
-9WwLi9tOyKYMT84dPwEEW6K2	10	and	if0	or	shr4							
-aD2uu53iNOfK3NLOZTYt2hH3	10	not	plus	shr4	tfold							
-ArHzdG5uCXueK7PP2EI7UrDY	10	and	if0	not	shl1	shr4						
-B5WuHKGnLGLZsGAkObAYPk2Y	10	and	if0	not	xor							
-b8gs0uX00iBsWl4LmBGKA07F	10	if0	or	shr16	xor							
-cKXWmrjF86GAlHcIucxntcZN	10	shl1	shr1	tfold	xor							
-dbH8mp3ttAADlP5AdncnTQkS	10	if0	shr4	tfold								
-DrnWtTfhahL1TFtyK25ToBs4	10	and	tfold									
-e5vw3dSzEljkgTQpPkLolJDT	10	and	if0	not	xor							
-eiqi10YvXpZ8xIOxt8A1XcFH	10	and	if0	not	shl1							
-ElIHZnt2vxDRoIZAYC4fS8sk	10	and	if0	plus	shr16							
-FRIMzLZ8A6KrGdYyCwRU9lSW	10	and	if0	not	shr16							
-FRiuerITybDkpIRsR8XQQAow	10	and	if0	shr1								
-FUb7tYVBGoOVLIBpTBBrjwhF	10	and	if0	plus	shr1							
-GWE60w0lohheUuOrrkAyPHvI	10	and	if0	or	shr4							
-gzvVF20REi6hxApzwRevAbLR	10	and	if0	shl1								
-h6Wstd8PXBAqXAQwJErETbAx	10	shr1	shr16	tfold	xor							
-HhdcXOUgO5PUkpm1nPHSxFBc	10	and	if0	shr4	xor							
-Ib4yaqKYPdVF34vBB2rONVQI	10	and	if0	not	xor							
-J3n8Za55ReApri1EBXaYcA71	10	shl1	shr4	tfold	xor							
-JNAir17BSdM3mxlI4RU568YH	10	not	plus	shr1	tfold							
-KGXWgRmgJt05huLNEgSWeloM	10	and	if0	shr1								
-KJQc3UaKGZ81TLYMTayVAzke	10	and	if0	or	shr4							
-KLHPC0iXj0sS9dAdv22ditbf	10	plus	shl1	shr4	tfold							
-KQNg39TIGwemLdhVLb2AaXWq	10	plus	shl1	shr4	tfold							
-ndXOoYCYWo6Km91jULJCArvm	10	not	or	tfold								
-NRieEaYLlUAAlzqBXJbMeX5N	10	plus	shl1	shr4	tfold							
-NTCbLo8XRc1tAG0gLrL3cpIy	10	not	or	shr4	tfold							
-OSVTbbCNBtloffFByvjZPT4h	10	or	plus	tfold								
-qxCZxVNMXvChOBykz04PriYF	10	and	if0	or	shl1							
-QzCP14emE0Zo7JuRIqHxp3oD	10	and	not	shr1	tfold							
-uN543poGfU52PC9y788LdQZY	10	and	shl1	shr4	tfold							
-WnopwIhEXVk2N3UGUQkzH8Tz	10	and	if0	shr1	shr4							
-YukL37CjjJAR0uc4cnsE3Pld	10	shr1	shr16	tfold	xor							
-zEqW0Tc96XE13B89yjSBikSD	10	and	if0	not								
-zlcSK8AIRJ4KUsDKteAwbMJv	10	plus	shr4	tfold								
-30CpY2tfn6JH6eX4Z4V4vSBf	11	and	if0	shr16	shr4	xor						
-3EnhxYXQvMOtWOciJf1ZAoaY	11	fold	or	plus	shr1							
-3MIF4s5spYs5F3CXtiDIqRwC	11	not	or	tfold	xor							
-7BnhHH1VNoP9OweuJZB9oqFB	11	if0	or	plus	shr16	shr4						
-8kKjBYZqJsf4WfnpB41BEg08	11	if0	not	plus	shl1							
-8zUhLcTtcXNWjfIDMUeAUSXe	11	if0	shl1	shr16	shr4	xor						
-a9NvFALfmYtXBn3dq4Di4b4f	11	plus	shr4	tfold	xor							
-As4ZoA5wNKLQE1JmCwjWPlOr	11	plus	shr1	tfold	xor							
-aVmxKKpTTZL3TMMWLUyROUnD	11	and	fold	or	shr16							
-AxYyqCfGR3XV62jL3kqrvWub	11	or	plus	shl1	tfold							
-bmBFkYxPQh5SMXkvKNDk9J7C	11	if0	not	or	shl1	shr1	shr16					
-bQXUIzLQVHpXV1y8B2kpa7xq	11	not	or	tfold								
-deDYIBKwyAUKSrvfFsAmq3qb	11	and	if0	not	or							
-dh03HW6xoBDJjxZKo1cjt3P6	11	if0	shr1	xor								
-FFoh0g4CxuuvR7Uf2Xgtc7Bz	11	and	if0	not	or	shl1						
-H9AXSW1AKUhvn0XMHKU7X1B6	11	fold	if0	not	shr16							
-hV5GnPPYiyWDFOlE8iJiZxWe	11	fold	not	shl1	xor							
-i90wcXzUW0WS4U0wvOfEAmL7	11	fold	or	shl1	shr16							
-IWqgG1OLRAHphXRn111QTUX6	11	fold	not	xor								
-IWwev8MTY3Xi4BZnVXttzoV9	11	plus	shl1	shr16	tfold							
-JEhOGXfxTOuYKw8qpDjWLc7C	11	fold	not	plus	shr4							
-jjhTFvldYwpeHtIyAQImReGO	11	and	fold	not	shr16							
-jp1Fn1LbY5mc9BzqXIVupDcw	11	and	fold	or	shr16							
-kAGMHjD1liRWlKeUCbfDpMJN	11	and	if0	or	plus							
-kczEVU1eNJ2xoKGAnKTzd45j	11	if0	shr1	shr16	tfold							
-KYk8oiJEbj4MlVGlRTOi3tV6	11	or	shr4	tfold								
-M8TAMbpBDKTtBNhO7PTdA3vT	11	fold	or	shl1								
-MFgY0UB4gNEzA3pWm13Oeiv4	11	not	or	tfold	xor							
-MHRVd1J9Aup3YDYMVbMfo0ix	11	plus	shr4	tfold	xor							
-n0addiw5SvpjxAUyuWv86k2v	11	and	if0	not	shr4	xor						
-n4AAjAtbbocK2ui3Q8SFIjyX	11	if0	or	plus	shl1	shr4						
-NO7h126aREmF2B4QMt06Q47a	11	fold	not	plus	shr16							
-PoRA09jK52QWV1w8QEIBpwtY	11	or	plus	shl1	tfold							
-pqGaYMIxvgzBKOOkK1uM0uXP	11	and	not	tfold								
-PsyeSbXDsWnuofRAGlFlYvM8	11	plus	shr4	tfold	xor							
-PzrXc0hvnzoDpo3BM6NMGhBR	11	fold	or	shr16								
-Q3jpOgAIAyBZVzeZ4CfD7eLL	11	fold	not	shr1	shr16	xor						
-QPEzqlvpkVyEmRZPADmjWaDf	11	fold	or	plus	shr4							
-RVr6BMXBjNyZprWznFTTqLUn	11	plus	shl1	tfold								
-rZlZXDzXJ4Bw7QPEabcfpPBt	11	if0	or	plus	shr1	shr4						
-S1gxZe841hMUnljoiqM3LCPl	11	not	or	shl1	shr1	tfold						
-tANmw3wSX7g1m2IRrRBasJJN	11	or	shl1	shr1	shr16	tfold						
-TBtXZdbFCJwTLSs79rUNp4RI	11	not	shr16	shr4	tfold	xor						
-Tj679T1Sy2jMWVUto7R7ihpO	11	and	if0	or								
-twTfUmKj9ODPRT5IDaToplVg	11	if0	or	plus	shr1							
-uBzyXfjZvWP1tWaZ9o2AZfe6	11	if0	plus	shl1	shr1							
-UmMJ5GpDixhlXFHD31LVQnfQ	11	if0	not	shl1	shr16	shr4	xor					
-v7XNYyiVupDCmGfaFUehEe3k	11	if0	not	or	shl1	xor						
-vAmS4BYBavCIpfE0Lo2gucN0	11	and	fold	not								
-vbSj5f9W22zN7vu9NuB1pWPx	11	if0	plus	shr16	shr4							
-vkoAoE5VvLsMKlrCItJgbDA4	11	if0	shr1	shr16	tfold							
-VpCpGQOtfgMKetEGBA0Le0hj	11	if0	plus	shr1	shr4	xor						
-WCUfWVg7QPvcDwzBLw3oA6Qr	11	fold	plus	shr1								
-wolf1xqwp6yldQbg16ctRf3F	11	and	fold	plus	shr4							
-xAsg91OOZAJb7TTCAO1ikyLY	11	if0	plus	shl1	shr1	shr16						
-xsYZzfQYJBZ0h88lWBqAuYud	11	fold	not	or	xor							
-yaiYAB9zqdAoaARahyOhrdm4	11	fold	not	plus	shl1							
-yMGCpcoe0ByVMUXsAtSaKmmf	11	if0	or	tfold								
-Yrn5Y021QCvIpq11RtjNxZDp	11	not	or	shl1	tfold							
-YZ7gpAfAhnDk79qioJjJRYqe	11	fold	if0	not	shr1							
-12vBXtKHfJS2ACK1AaU59UJ9	12	fold	not	plus	shr1	shr16						
-1JNlI3TwTt0BcqX5zCv956B4	12	if0	shr1	shr4	xor							
-3C7P71s7NkEHVFYLNMsNsdS6	12	fold	shr1	shr4	xor							
-3XwYj7rXp3iPT7kdmJbVoJEM	12	and	or	shr1	shr16	tfold						
-4xPYlRhj3i1eeT4oRdqOjEZo	12	fold	or	shr1	xor							
-5rflfKASNNpxIxn6Jv1iHOkR	12	or	plus	shl1	shr1	tfold						
-7jEzevrLe07nS6WTkdmf7KME	12	fold	plus	shl1	shr1	shr4						
-92P9VwZlwZqnJNcFy7QAUXAp	12	if0	not	plus	shr16	shr4						
-9pHljy307wyqrDWhApufbyGu	12	fold	if0	shl1	shr4							
-a5AA285Cpqfz5HdiBDHbFcBx	12	and	shl1	tfold	xor							
-AusCGesWlcwDVSAhqpgONxwm	12	fold	plus	shl1	shr1	shr4						
-BDaoKjox0Agmd3pOKidHloTD	12	not	shr1	shr16	shr4	tfold	xor					
-BlniRUtfAFdOxozZmmdVf37G	12	fold	if0									
-bPqBXzSufgUAEVF1wS7EFxBv	12	and	if0	not	shl1							
-BSz4XWzHdwqXKmLnrre0pssV	12	not	plus	shr1	tfold							
-bu9QtFor287GA9YWXpUZ9hzx	12	if0	plus	shr16								
-DjRzvZBwoAPZRmVzAJF0HfWA	12	or	shl1	shr1	tfold	xor						
-DrNvwsatGyXZ4Hx97udL1hAk	12	if0	not	xor								
-eSIpIIisOWiLRiezSzued4TA	12	plus	tfold	xor								
-F1DsOtSN4R01RXWN5gh8rTdN	12	and	shr4	tfold	xor							
-gFRumRuRRjcYnWwPWkCjGmk5	12	fold	plus	shr16	shr4							
-GpgmPdEtxS3gEEy5e8GHwlAb	12	fold	if0									
-hHuBnHA8qiJ8q6IAA0ONhqNQ	12	if0	plus	shr4	tfold							
-HSGySEsmB882qsIvPpUeIObf	12	and	if0	plus	shr1							
-J1PmuXCQmewTBEpArdLLx2tf	12	and	if0	not	plus							
-jspDy496McyTsniBHAqS1XNY	12	if0	not	or	shl1	shr1						
-JvNCMnLVjXtM4seOhqdLA9RY	12	not	or	shl1	shr1	shr4	tfold					
-jWEFaNrLAqr1NmQxoc3ZeSS8	12	and	if0	shr4	tfold							
-KkkK4RWOByL3eW9NVVyyfZ0A	12	if0	not	plus	shl1	shr1	shr16	shr4				
-kQZSoZYBAHfAApfEpJBukQhy	12	if0	plus	shr1	shr4	xor						
-LCaqAcGEdI175lzArHghanSq	12	and	or	tfold								
-lCHuxK57KhykYFDNiwyqof2S	12	fold	plus	shl1	shr1	xor						
-LFWPHJti54XwktU5iSJg8CsN	12	or	plus	tfold								
-Ljf8go8aXAZgJ15HKx7nvg5K	12	fold	or	shl1	shr1							
-ljP7fTxLsAS8toY3PgrUKhRD	12	and	if0	plus	shr16	xor						
-ln7WoVd48vAt8ZEsGnKEdkC2	12	fold	or	shl1	shr4	xor						
-lWDBF5GtiRWoerpALfXHunqM	12	if0	plus	shr1	shr4	xor						
-LzJBkMEz9iECTJbPbmsgaHbK	12	and	if0	or	shl1	xor						
-MGpdTpNDNotqW5kpO64Wm7jB	12	fold	or	plus	shr1	shr4						
-Naq9zK7woa3nPWmFU9CQq451	12	or	plus	shr16	shr4	tfold						
-O4JuqbM56vidS0rCbJSddW38	12	not	plus	shr1	shr4	tfold						
-OtzOplPMoa4z0LQTa25yJ4Iz	12	if0	not	plus	shl1	shr1	xor					
-Ov3U75SAdgeFS0FekYqyT5an	12	fold	or	shr4	xor							
-pikCCbfGf4Kz8Iw6zcG1glO0	12	fold	or	shl1	xor							
-QamF0T0SLMKIE32saOeZ6eR1	12	not	shr1	tfold	xor							
-qdWmciKpAEoiP2Tw8XAiAobJ	12	fold	not	or	shr1	xor						
-QrHo9qLKjizlK0zRMmfdRWnz	12	if0	not	plus	shl1							
-rPpNTeH4U0DVE9xuRAdJPoho	12	and	not	plus	shr4	tfold						
-rsZLOmreSx7ZIagjfsjJAUXL	12	or	plus	shr1	tfold							
-ryprDsadc7r2bDnKgk0bWIaN	12	if0	not	or	shr16	shr4						
-sGr1VDdlDuJriB0LPHpaMAMx	12	if0	or	plus	shr1	shr16	shr4					
-vDRA8hd5axm8b7wmYGFz9PZg	12	if0	not	plus	shr16	shr4						
-W6eNnA0Ve5bt2iSZNKDKDwI5	12	and	fold	not	shr4							
-W7amEz4dn05lyhBEbDVQWY5I	12	and	or	shr1	tfold							
-WEnHYkjxpmsPC23ymTjJ7wmB	12	and	fold	not	shr4	xor						
-wPMDg3VoTjgKAorwSvwxUmTr	12	if0	not	shl1	shr4	xor						
-wz7LlwMBiux18rYGAKpJ41AO	12	if0	or	shl1	tfold							
-xtmUDQ0kIUQVVvtoCTkwGL7w	12	and	if0	or	plus	shr4						
-ZFcal8stWx6ZBTnjQAvoAIUu	12	fold	not	or	shr16							
-zONE01KpKaOQUhUlGmioT3NZ	12	fold	if0	plus	shr4							
-0uWURMqEm8dypL0zixvzyABU	13	fold	or	shl1	shr16	xor						
-1yZ25uWAwV548Xn6o3qRkO9d	13	and	fold	or	shl1	shr4						
-2WTIApKb0wN1oN4rSYG298KA	13	if0	shr16	shr4	tfold	xor						
-2z2wV4ujtPVFcrDU4jyEQJRw	13	if0	plus	shr16	shr4	tfold						
-3hi7wdn2hdwYg2D5jHrOBvxC	13	if0	not	shl1	tfold	xor						
-3HrVZSsRqBVcaBFdI0YpZBQK	13	and	if0	not	shr1	shr16	xor					
-3mBV4v5IAqQyV3hgvoBApRcg	13	if0	not	or	plus	shr16	xor					
-3X8wYswbKxZPz33C2kBIR9zH	13	and	if0	not	shr1							
-47msKQ6DkXE2334OBICqbAdT	13	if0	not	plus	shl1	shr16	xor					
-58bBsByngm2LGiKOla6PkC67	13	and	fold	or	shl1	xor						
-A3zqpG2OaVfMvy3LwIRKYUPE	13	and	if0	plus	shr4							
-AB7gQ0vukXaGILGx0oDKqYzK	13	fold	not	or	shr1							
-Agzogu1AruHtxa85NeEmXbDv	13	fold	or	plus	shl1	xor						
-AiBNn4wja8IgUL7vKYVRo93V	13	fold	not	or	plus	shr4						
-aYIxKIpPkATiA6iBACNMiiSe	13	if0	or	shl1	shr4	xor						
-B4hDe0BTW4ehwYIXSlQdDcPz	13	fold	if0	or	shl1	shr1						
-bBHZmpFNGGiKCJT14B9NLCsL	13	and	if0	not	shr4	tfold						
-BmudDeNrSpHXtUb2gIHxPAvP	13	if0	not	plus	shl1	shr1	shr16					
-boJ0Ai6dSG2tAJEZzcmXnRTx	13	if0	or	plus	tfold							
-BshbOzVrZb3OWjqAgC0mq22Z	13	if0	not	or	shr1							
-btWU3YrRAVXtld7nsCpejv5D	13	and	if0	not	shr1	tfold						
-CjyGEFmAKJ3YKsdLG7dnGW2q	13	and	if0	or	tfold							
-fp3LzbBoZJbgNKk3yPKQVMOp	13	if0	not	or	shr16	xor						
-ggxAOSvkjLBehSc9K8ZjSEVB	13	and	if0	tfold	xor							
-gkJmqS6itLAAqXEA6QXjkuTe	13	fold	not	or	plus	shr1						
-GMy1QBTqqlXBv7Nrpch1KkJv	13	if0	or	shl1	shr16	shr4	xor					
-GP4fRdPzUml4cPeR1qSjG0ef	13	if0	not	plus	shl1	xor						
-iSzzcw8wEmpg8SVJL6DKhhCG	13	if0	plus	shl1	shr16	tfold						
-KGRHpVMGvC5Zk56h5T0voH44	13	and	fold	or	shl1	xor						
-laTwpMgSxF6rbRlZsVZhcsU1	13	and	if0	or	tfold							
-loPer0AwivTompkQxC2zVoKA	13	fold	plus	shl1	shr16	shr4	xor					
-mFIWxiqkwb3vBrNWOVJYGxnR	13	if0	not	plus	shl1	xor						
-mzjtktDcQufa5n6Om0WHFaNU	13	and	if0	not	or	plus	shr16					
-NAd0BunsQ4COP2CBEZqwPvhq	13	and	if0	not	shr4	tfold						
-OBd4OFPPR983c23x3HrQCKYA	13	and	if0	not	shl1	shr4						
-OuHVpwA4lPgylqNqYTNzyrLr	13	if0	or	shl1	shr16	xor						
-P2BhlIINOJi51eBCNT0y1q7P	13	and	if0	shl1	shr1	shr16						
-p4saI5JJ0BzpHUAbeLOGAZgt	13	fold	or	plus	shl1							
-P9pMJByGx656CmYI9PUBEw1O	13	and	fold	not	shl1							
-pADv9QjYaBAUDmckpL62R9zr	13	and	fold	or	shr1							
-PDBARlGQ1fkq8o8DH82qU6ds	13	if0	plus	shr1	shr4	tfold						
-RL8Pq65fCYdjDgmIX22n4foD	13	if0	not	or	shr16	tfold						
-rnaUevemPiBiQPx4QNNJ0FBk	13	if0	or	plus	shr1	shr4						
-SP0zxnw7hos3KtefdUKH2LxJ	13	if0	not	shl1	shr1	tfold						
-SqWfqV2lhWXSJflDo3H1Re3g	13	fold	or	shr1	xor							
-suQHSKDl6ppGkGiCzivNokvv	13	and	if0	tfold	xor							
-SyxzWbWteJxENLYV33CMliSy	13	fold	plus	shl1	shr1	shr4						
-TFKpison8L2E0KW4O02b5jOB	13	if0	plus	shl1	shr1	tfold						
-ULT7lrBR2yvwGIvsBuZfKOFv	13	if0	plus	shl1	shr4	tfold						
-UZgnRVdxLbzfujHLKVyu59zq	13	and	fold	plus	shr1							
-VbgAHCAnXWB1xMMCZ1inuWts	13	and	fold	if0	shr1	shr4						
-wJUQRmNPXPGx31yU9JuDcLzr	13	and	if0	not	shl1	tfold						
-WQeHJEGF8axyAVyAIKsNYpXd	13	fold	not	shl1	shr1	xor						
-xlwZTO3TrLlV8LYbidI6iouG	13	if0	or	plus	tfold							
-Y1CbAQ4ERe67w7HgwOiovUwi	13	fold	if0	shr1	shr16	xor						
-yb3Hsozegk04HbWnCHG58ffA	13	and	if0	not	shr4	xor						
-yckjZMKC9WslXjorH45tBhCD	13	if0	or	plus	shl1	shr16						
-youDPgIC1qj3T2OZSpYvDmaU	13	and	fold	or	shr4	xor						
-YZOp27JuZyiXsSnStZmSjNaq	13	if0	plus	shr1	shr4	tfold						
-ZUwhUtxyZnzXuHVrUYMLiCmB	13	if0	not	or	shr16							
-0MLLi633afyyR08xJcwSnV2B	14	fold	not	or	shr16							
-0qiskVdKD1CUl7a1JOgDgtOo	14	and	if0	plus	shr16	tfold						
-0rDFjEiGtdYGifXNzi7IwCPU	14	and	if0	or	plus	shl1	xor					
-12ry7KMqlPw2rJuhSn2aY2nf	14	if0	or	shr4	tfold							
-169VpQBthRATHlCwB32ICUFh	14	if0	not	or	plus							
-2bq1A9yHGNQ77O1xaZP2LHs9	14	fold	if0	shl1	shr1	shr4	xor					
-3l6zkvlmSiUmX7hXnKcChVuY	14	fold	if0	shl1	xor							
-4GqdUUQkA0D6NoJplnpNHkcW	14	fold	plus	shl1	shr1	xor						
-7V8NngqIQkPAI8QQuZsAevJK	14	and	if0	plus	shl1	tfold						
-8TKCinC8Ve40gLp1AlEAxMWL	14	and	fold	or	shl1							
-AbXwUL9rFlj57E323BOFlT6P	14	and	if0	not	plus	shr1						
-AfpBGxcvFxp37jhB0M8OWsn7	14	and	if0	not	tfold							
-aVmGoMfuBzcKeaWD2owl1q2U	14	if0	plus	shl1	shr1	shr16	shr4	xor				
-B8PB3BwebkUg7RH5uJHNMugP	14	if0	not	plus	shl1	xor						
-beuQ6wPLl2NeRgNcXC8QTml1	14	and	if0	not	shr1	xor						
-cCK4pPCxD4rSAHCATvBdzX3j	14	fold	if0	or	plus	shr1						
-cnAxWEaL0afiWbRGuueYODcB	14	if0	not	or	shl1	shr4	tfold					
-dMjHRFe8lql0dCfbyjeE4K0p	14	and	fold	or	shl1							
-dpn8ni91EzbJXH2Ms4m2ugfS	14	if0	not	plus	shr1	shr4	tfold					
-EsHAqkeXue0sJCDDfgTFgcnu	14	fold	not	or	shl1	shr1	xor					
-f6XKzsOLm87gVi0bBf2ZatPe	14	if0	or	plus	shr1	shr16	shr4	xor				
-FHUAcAjRPMRtuJEUQSldi50w	14	if0	not	or	shr1	shr16	tfold					
-hupG2G8UAe0aQAHHnjyWj1SW	14	fold	or	plus	shl1	xor						
-Hy0OQdcWL65J0NSKqsObBcPx	14	and	if0	shr4	tfold							
-I9FKpfhjJOUYeuEcS0vP9jAM	14	if0	or	plus	shr4	tfold						
-iaFrYMYrbBBiFUdDBwaiDIsk	14	and	if0	plus	shl1	tfold						
-iAuLp43A0Xbo6MvqAXpymj58	14	and	if0	shr16	xor							
-iG5Nkl2hBblrm1sEMl717JsF	14	if0	or	plus	shr4	tfold						
-IGBravLZrwh7dXhSJA2Qkbcc	14	and	if0	not	plus	tfold						
-iH9BwXBoWZZdHxvMpwd1XLlq	14	if0	not	shl1	shr16	shr4	xor					
-J7B9EMRlk7az1kK1YXd2FqWt	14	if0	plus	shl1	shr1	shr4	tfold					
-JE5UOLkICwqjr4KAYBZAsPPE	14	if0	shl1	shr16	shr4	tfold	xor					
-jLepzQVBNVWgtL8Rihe1UVA4	14	and	if0	or	plus	shr1	shr16	shr4				
-JwRYho1lO8YvZpWUtpzAptfj	14	fold	if0	shr1	shr16	shr4	xor					
-KvmmFOM2IqJS7GPX80LuRRX3	14	if0	not	or	shr16	shr4	xor					
-ld2dAb8aSjh5ROBQwLbIFpVP	14	and	if0	shr16	tfold	xor						
-lYDALxAOtBkpdSY6TCDif0Gp	14	and	if0	not	or	tfold						
-MJiuqoqPBImMVWVwLxpAMep8	14	if0	not	or	shl1	shr16	xor					
-mXaIyQkj8xyA6VPbb1AHZjWQ	14	and	fold	if0	shr4	xor						
-n3FzVf7MqAFIyMBAZy2MfhuR	14	fold	not	or	plus	shr4	xor					
-ND00VDrAa35mmBNyBNR6h0Dg	14	if0	or	shl1	shr16	xor						
-NIDK6DYsj4BgZ5QQgvGdiwKp	14	fold	not	shl1	shr16	xor						
-qD52Cb9NexEc1PDSzBBLg2uV	14	and	if0	or	plus	shl1	shr16	shr4				
-QR9Zevq9zciSrhs9hWiwBFOw	14	and	if0	shr1	tfold	xor						
-QVPPerjcFnt69WBcup1GXhAO	14	fold	if0	shr4	xor							
-RnRSonm4e1arQUEh8HoHD7U7	14	if0	or	shr4	tfold	xor						
-Rp9EMPriTAsMBmC28lPbuaoy	14	if0	shl1	shr16	shr4	tfold	xor					
-rVBNdoBuSXwUa37CeiJJdNs2	14	fold	if0	or								
-sDByDHueA8rblB9BYUZBxJZT	14	and	if0	plus	shl1	shr1	shr4					
-spcrDoEBmeHgxgTAth0IZBVX	14	fold	not	plus	shr1	xor						
-tC7B8cVUr4tzNwCjT3qBBYls	14	if0	plus	shl1	shr16	shr4	xor					
-TcS5pGGlXvna1pyX21SOIZ0r	14	and	fold	not	plus	shl1	xor					
-U36HgFqAtvFkikbN3Qm7oHPK	14	and	if0	not	shr16							
-UMV3VWSGBcnAnCScbscuDQ7J	14	and	if0	plus	shl1							
-vn9Rb3vi0USr1IN425EB9Bm9	14	fold	or	plus	shl1	xor						
-WA0rkqmw4L1TqF1ebApPlWQQ	14	if0	not	or	shl1	shr16	xor					
-wcBQ3fAKy5PgW3kK8fHtJ8sp	14	fold	or	plus	shl1	shr1	xor					
-XrKoyPZzXmyPUrPiIO4SULv8	14	fold	shl1	shr1	shr4	xor						
-ZaQLHzkE9EOTBE6sNBJtHF2D	14	if0	not	plus	shl1	shr16	xor					
-ZSuX6mszgl0NcXnaeMTnZHbj	14	and	if0	shl1	shr1	tfold						
-06YMPN1BucgJqIxBZBjhJgh7	15	fold	plus	shl1	shr4							
-25qkBrK4TesdTl0rpd55wBer	15	if0	plus	shl1	shr4	tfold	xor					
-5GujF3BVMrBEAJ4JNZaB1b1M	15	and	fold	plus	shl1	xor						
-5JLIfJGAvShFhOypWANMfbAz	15	if0	not	or	shl1	shr1	shr16	xor				
-7Tt70iDp51YZKme9a7xY4zcR	15	if0	shr16	shr4	tfold	xor						
-8q7jeQqjKoa9g0v6IOXixzJ3	15	if0	or	plus	tfold	xor						
-93QFlAOdOF5FdaOOMgXXVlQJ	15	and	if0	shl1	shr16	tfold						
-AmTc2gRkN51u6asxT0zBGs2P	15	and	if0	not	shr4	tfold	xor					
-ASAraRqS0xedYwjKh21qQVCt	15	if0	not	or	shl1	shr1	shr16	xor				
-AyV6rVimfXjQW8WBUIdPA7Jl	15	if0	not	or	shr16	shr4						
-CzIogXeRtHbaxqOLAJ1JG8oG	15	and	if0	shl1	shr16	tfold						
-dDTH2EMAEQEfVtCvWXW8q44z	15	and	fold	if0	not	shr16	xor					
-Depq09FmuRHY5ukhyg4Atbtw	15	and	fold	or	plus	shl1	shr4					
-di7Whaei3BSnpJL32L3opm7H	15	and	fold	not	or	shl1						
-DpNGkEJPSAXCewuPdXj1EJeD	15	if0	or	plus	shr16	shr4	xor					
-e0NZqkAcrbSiR7Ac95ougOmj	15	if0	not	or	shr1	tfold						
-E6eumjcv8kCl9OErRfpX8Swl	15	and	if0	not	plus	shl1	shr16	xor				
-EdoDV1BSWKk47aJgKb25tN2M	15	and	if0	not	plus	shl1	xor					
-gUwLnT5kUgwriIoeGvvfcJy6	15	and	fold	if0	or							
-hyPxEHmRJ1L4Ebcs4zn5TONw	15	if0	or	plus	shl1	shr4	xor					
-i4sYIkeOudCBeBpei6qAJ5wA	15	and	if0	not	shl1	shr16	xor					
-I9bvfNKSligdkx12p5ANGfO3	15	if0	or	shl1	shr1	shr4						
-IIHfnDFoRVwZTKUOF5EonO18	15	and	fold	or	plus	shr1	shr4					
-ITLkJIoKARhF74xR4UV9Z0fx	15	fold	if0	plus	shl1	shr4						
-KD5iWmFwQsbyW8XJswzUcdiG	15	and	if0	not	shl1	shr1	shr16	tfold				
-kdP0NU6AMkfmyQh3j3lgvkcC	15	if0	or	shl1	shr16	tfold	xor					
-KxkQjtZpqFCxpAMXUCsKLAsx	15	and	if0	shl1	shr1	tfold	xor					
-N9y5Y5g9o7UTFTAYrvOYp493	15	fold	not	or	plus	shl1						
-NB0al4Vv8HXxu0otkQo8aHRL	15	if0	plus	tfold	xor							
-nlEkXOg4eLMpuDvRqK0Iwk2R	15	if0	not	shl1	shr1	tfold	xor					
-nlKzitJ0Jw9JCuHBpQHrsBHP	15	and	if0	not	shr16	tfold						
-PA8ENazZPErJKegnqG8frG9D	15	if0	plus	shl1	shr1	shr16	tfold					
-pBznM1ibLTZdgXWtDtiHBufj	15	and	if0	not	or	plus	shr16					
-q8nBvCUurkdge8RccVukG3h0	15	and	if0	not	plus	shr1						
-QEk2lF0dQARmGEZxecGKAy1h	15	if0	or	plus	shl1	shr1	tfold					
-qkMBxYf5D1AeRLbYUhYfMZkA	15	and	if0	not	plus	shr1	shr16	xor				
-r4y0pHNGNCBQfoSThnONjBUy	15	and	if0	not	shl1	shr1	shr4	xor				
-rCzAvaK4lThk7fziABmgLeV7	15	fold	if0	plus	shl1	xor						
-rSLBjzyk9qTkg9HrnRvMYHXD	15	and	if0	not	or	shl1	tfold					
-SKBDnukSvtXQLevHzRgdDxcl	15	fold	plus	shl1	xor							
-svp5eoBItpEm59AGM8zrLK53	15	and	fold	plus	shr1	xor						
-SZPvEYJQoBbIZ5GG2P7aMXxy	15	and	if0	plus	tfold	xor						
-TSRlpeZIkkrNvEo8uad3DIEQ	15	and	if0	shr16	shr4	xor						
-uAd8AAdn7mQfRqkGwWmdrAAg	15	and	if0	not	or	shr1	shr4					
-udBISoWYyIjYX0Ntvx5dojYH	15	fold	if0	not	or	shr4	xor					
-uKgEeGEgRN2eypoVonBR8QAR	15	if0	not	plus	shl1	shr16						
-umaNaTCOlqLMQA7TJpHUfvcS	15	and	if0	not	shr1	xor						
-VfeAaSNLFUqpuQIAtaOQadNM	15	fold	if0	shr1	shr16	xor						
-w3AdGOIMSxo0zNYb2jJTWBYm	15	and	fold	or	shl1	shr1	xor					
-Wa2TAACOxvEcEhapBgXU1vwk	15	and	if0	not	or	shl1	shr1	shr4				
-X75u0yIjDllwABBTqxbA6PEK	15	if0	not	or	plus	shl1	shr1	shr16				
-XbiqwJyzKejEI7JGnBoBGOuj	15	and	if0	or	shl1	shr1	tfold					
-xBjQStuGBzBfM6CbT4KSnuOX	15	fold	plus	shl1	shr16	xor						
-xWL7MoYaR2AUbf87yaV5622k	15	if0	shl1	shr16	tfold	xor						
-Y6N7fhsBAdxW8VEaHw54BCmy	15	fold	or	shr1	shr16	shr4	xor					
-y80ADkFOvNC6ugUh3anO4Ewj	15	and	fold	not	plus	xor						
-zDmrOUibsKJ5OdZZLIxAJ7P5	15	fold	not	or	plus	shr4						
-ZRqNg7vJ2cNhdm8rQCl5Ryjk	15	and	if0	or	plus	shr16	shr4					
-ZSgHxbB7cEoBhnTnyQE0B6qQ	15	and	fold	not	plus	shr16	shr4					
-ZYEJjaBjz81rIcESu9SGJexR	15	and	if0	not	shl1	tfold	xor					
-10KIm4ILBAzYABLu5wDTgIA2	16	and	if0	plus	shl1	xor						
-1FaApwbWBXyDbJTMmXoZ0Tqq	16	and	fold	if0	or	shl1	shr1					
-21qO61852D6BC717RJZgzovZ	16	and	fold	if0	not	plus	shr1	shr16				
-2Er5tCyueNfUg7ME0qVgJIpu	16	fold	if0	not	plus	shr1	shr16	xor				
-3BVxsj23pIFbOgjWAFQIGLHN	16	and	if0	or	shr4	tfold						
-5FwdGZO84BpGvxA2qT774cvz	16	and	if0	not	or	shr1	shr4	xor				
-6XRijSnP25bV0WFxOwcWKiGQ	16	and	if0	or	plus	shr4	xor					
-7zlDxPZEjUC9pcLOdfAluAtL	16	if0	not	or	plus	shr1	shr4	xor				
-9rAqtGkDDUR2tBgSid4dNhk9	16	and	if0	plus	shl1	xor						
-ajR0EMhBmFLaBV1BQWpWQTCN	16	and	fold	if0	not	or	shl1					
-Aq2gOM1k5tYkukttiTHYrqbt	16	and	fold	if0	plus	shr4						
-BAe5vmcaIQmZqvBsAgBXPpKF	16	and	fold	if0	plus	shl1	shr4					
-BKoDNDOgA6Tyt2w3W6mWi1tZ	16	fold	if0	or	plus	shl1						
-BYqGJVyZaKw4BZKj2Dv1IHxB	16	and	if0	not	shr4	xor						
-c5zCAZHa0Mt8q5zTJd84XLk3	16	and	if0	not	plus	shl1	shr4	tfold				
-CiKPYAAcTk5pZv1jRSUZbIjL	16	if0	plus	shr1	tfold	xor						
-CMC7DnrAPBGqptxxTHHWa3rQ	16	fold	if0	plus	shl1	shr1	xor					
-CTIjQKPjndQ5cMLmaHKRe2cB	16	if0	not	or	plus	shl1	shr1	shr16	shr4	xor		
-D4s3WB5lYAAX1fpMEA2tdFgj	16	if0	not	or	plus	shr4	tfold					
-d6yIb8kzrWK8sUJVPCDjvXWr	16	fold	if0	not	shl1	shr1	xor					
-dsFmJUqZwGM22bjJwjmV72Bn	16	and	fold	if0	not	plus	shr1					
-FcsAimcaRvPtjjmZ37DuTpix	16	if0	not	or	shr1	shr16	tfold	xor				
-fJaw9nQrkvsARbaHqTSJnfMZ	16	and	if0	not	or	shr16	shr4	xor				
-gepzKIYC0swtjEMdF6xnLPs5	16	and	fold	if0	plus	shr16						
-GgqYsRTFcROQoeJ5l26nAKUB	16	if0	not	or	tfold	xor						
-HolShlOMo5bBZ1Ct2EB0bIuB	16	if0	not	plus	shl1	xor						
-iqEikziDecm1CgWVlejV32JP	16	and	if0	shl1	shr1	xor						
-IQT6sVLGsbnVJPyYBUA3AS4t	16	if0	shr1	shr16	shr4	tfold	xor					
-J3D12HuLJP93sYFSiAvtjbFx	16	fold	if0	not	or	plus	shr1	shr16				
-J7uDqiDf9LqbRtDCBAHwfqmE	16	if0	not	or	plus	shr1	xor					
-JBnpWk59ZQT4pKEBWulfWTeA	16	and	if0	not	plus	shr1	xor					
-kMkztmsreUozjXBMFQNUSmF1	16	if0	plus	shl1	tfold	xor						
-kSDCkuaGme5kXcxHlvKfRx6U	16	and	if0	shr1	tfold	xor						
-KtIcrQtJmmOS4Uw6VE8SqfpE	16	if0	not	or	shl1	shr4	tfold					
-KVc0sI2c0RcvGroM3Ow94y87	16	and	if0	not	or	plus	shr4					
-kvFLvA3Gp8QierpTOJ3XRJW8	16	fold	if0	not	shr1	shr16	shr4					
-LaneA1hfUk9ta4gnvjRYZblh	16	fold	if0	not	shr4							
-MDZTZmXwMvdmWbKE0mJ1G3AJ	16	and	if0	or	shl1	shr1	shr16					
-muU3p1NjERNmQAxXBho1ovlD	16	and	if0	or	plus	shr16	shr4	xor				
-N6miaHNHhRSdiWP70QhTIjGx	16	if0	or	plus	shr16	tfold						
-nN3VwdTaaQZARtjIZLAxM0IS	16	and	if0	not	plus	shr1	xor					
-NWF7qq9vPCn7igZdtf3pEKxg	16	and	if0	not	plus	shr1	xor					
-oLBBP3gf4UKKOjQJKK2GH3QW	16	if0	or	shl1	shr1	shr16	tfold	xor				
-oNg8HK95OLtvXQ6mLGKUo0Yo	16	and	if0	shl1	tfold	xor						
-OOp0gVf9wPMSp6RB3hRu2BYt	16	and	if0	shl1	shr1	shr4	xor					
-pg95PSkPL7f8raP7TN8pyyog	16	if0	plus	shl1	shr1	shr16	tfold	xor				
-RhxkFzkmOlBV9xLyjaBXI5sA	16	fold	if0	not	shr1	shr4	xor					
-s65RY93DADniO0V7Q4mD9Bmw	16	and	fold	if0	not	shr16	xor					
-Sl81lBiLuXliv2v8A5G71F22	16	fold	if0	not	or	plus	xor					
-SUuxGyrCGIkzpBfhj2fEBQtW	16	and	if0	plus	shl1	shr1	shr4	tfold				
-tmOQbUACjcfLy69G59bJPuwR	16	if0	not	or	plus	shl1	tfold					
-U5RHaopBONxS4wLQRno605ez	16	and	fold	if0	not	shl1						
-uM25JDG53eAog8ASt57xJri9	16	if0	not	or	plus	shl1	shr1	tfold				
-WB4IABJwsjV4sJ5aXJC8vwd1	16	if0	or	plus	shr16	tfold	xor					
-Y32pWG0vYFPcdLmJQJQCiXqA	16	and	if0	or	shl1	shr1	shr16	xor				
-Y86oHEkJ4Lk9OmDllgi24Kpr	16	fold	if0	shl1	shr16	xor						
-ywAxoAIgkJSBYOAIJfqBpFGZ	16	fold	if0	plus	shl1	shr16	shr4	xor				
-zjAY6C9tlyyG76tpgLCUpAlw	16	and	if0	not	shl1	shr1	shr4	tfold				
-ZtAzS36A0cE1ei6TqiOCO18Z	16	and	if0	plus	shr4	tfold						
-ZYNSJHVlmuk4sY3b0aWLi2wM	16	if0	not	plus	shl1	shr1	shr16	shr4				
-0RUhV8SH3pf8XTlBAreyD6hb	17	if0	not	plus	tfold	xor						
-1RpFZ68DzntHDvCyonWABWUg	17	and	if0	not	or	plus	shl1	shr16				
-2zc5J5eJrFYGulBMERiYfCrB	17	and	fold	if0	or	shl1	shr4					
-4Fm5aYWUHjzSGdAi3SiqIRZV	17	and	if0	or	shl1	shr4	xor					
-6F25mA8L3snsHj6g9YAnquOP	17	fold	if0	or	shr1	shr4	xor					
-6j1E6a53lyo1hNptXhoAjWOQ	17	if0	or	plus	shl1	shr4	xor					
-7n8WRjNjjdjRpNE4VLkDVJ9y	17	and	fold	if0	not	shr1	xor					
-8Bn48AAGeAMqKG0aB4YIyX2b	17	if0	plus	shl1	shr4	tfold	xor					
-8JxVg0wmeWEK2WtJLMVOpITV	17	fold	if0	not	or	plus	shl1	xor				
-9A0szdJKvAyMI2jawNdtUdDv	17	if0	or	plus	shl1	shr1	shr4	xor				
-a9IGZFjcyxzsO9SJI9AR7ZIO	17	and	if0	not	or	plus	shr1	shr4				
-aEx7p17f7oCflBNe6qJbxmED	17	and	if0	plus	shr1	shr16	tfold					
-B5v5nlnMu5YaJpgBL7CBlVxt	17	and	if0	not	shr1	tfold						
-B7dNcL56rUX0bS3GVWGdgv1A	17	and	if0	not	shl1	tfold	xor					
-BCttJtfidh2Qq4wAUBmNXt8K	17	and	if0	plus	shl1	shr1	xor					
-d0GRARcXGe7aJYsqkLW4fOd3	17	fold	if0	not	or	plus	shr1	shr4				
-dlK1M6j9GLeo9paFpqOxdkAB	17	if0	or	shl1	tfold	xor						
-E5fNrgqc8BE7LIv3GeaNNQ23	17	and	if0	not	plus	shl1	shr1	shr4	xor			
-ECDMQ7dNtWCSuNz95FKfFLpY	17	and	fold	if0	not	shl1	xor					
-EY4Rk053MqASvLYwW7oROI0C	17	and	fold	if0	shr1	shr16	xor					
-FVvFPt1EDBAPiWRrLi3Q6TGJ	17	if0	not	or	plus	shl1	shr1	shr16				
-gLb17CWzUE3847CZYmC8WfhB	17	fold	if0	plus	shl1	xor						
-gtAsgvVkpEVEHdKJTz7z5IFk	17	and	if0	not	plus	shr1	shr16	shr4				
-hfRN2VffhPeDXu4ACqcZ5QAH	17	and	if0	not	plus	shr1	shr16	xor				
-hgcrkCQi5Bh4Kl0crj6z3BUv	17	if0	not	or	shl1	shr4	tfold	xor				
-Iau52Go2EQGVrxcWuGews6Cm	17	if0	not	or	plus	shl1	shr1	shr16				
-IKi8CgJYncbPoDu7S1gK9CT3	17	fold	if0	plus	shl1	shr16	shr4	xor				
-ivmMpNRD7qr01YEtvN2ZSAUH	17	fold	if0	or	shl1	shr1						
-JYz40kzJeOWjh0FJp0bNFHKm	17	if0	not	plus	shr1	shr4	tfold	xor				
-KmeA3LhiGOsv33UZyYApzVB8	17	if0	not	or	plus	shr1	shr16	shr4				
-KTkKhqsBBqy5zUZ4N8uz82Nw	17	and	if0	plus	shl1	tfold	xor					
-L9duB7yzF9DDHGGJNqyRYhdo	17	if0	not	or	plus	shl1	shr4					
-l9fOmSPAOS9w97aIApWRjm1e	17	and	if0	or	plus	shr16	shr4	xor				
-lfKoWT4KVk7BHACubs4CMiLM	17	fold	if0	not	or	shr4	xor					
-LqUJiqwGnrvvcoYmP70sawHu	17	fold	if0	or	shl1	shr1	xor					
-lRzB61O48OttLnz1aFO5M5qI	17	if0	plus	shr16	tfold	xor						
-LV0yT5SIyTFfFcoxilaBNTYl	17	and	if0	or	tfold	xor						
-M6QUTYYENsFdHWBlWbNKqEBL	17	and	if0	or	shl1	shr1	tfold	xor				
-Ni6aU05uJlbmMwl2P7uvPwtD	17	fold	if0	not	plus	shr1	shr16	shr4				
-NINq5tlV5oL815MMhUDdC0Yn	17	and	if0	or	plus	shl1	shr16	shr4	xor			
-PCKOdSBp1FBfQaOhHB5gBATf	17	fold	if0	or	shr1	shr16	xor					
-qDPyjM7kWixFaj8kucLcYdc4	17	if0	not	or	shl1	tfold	xor					
-r6wIFG0KpTPjCgmBZn1nopN9	17	fold	if0	or	shr16	shr4	xor					
-rnvwQwy8SdKhWH67aNlWI6S9	17	and	if0	not	shl1	shr16	shr4	tfold				
-sDAnHCu2AugBw1BgYAGL24pQ	17	fold	if0	or	plus	shl1	shr4					
-sFlX3fBsYF5Tj8NRCe56o10O	17	and	if0	not	shr16	tfold	xor					
-tnfHsrmZBIgGv7CeCi9si0Sv	17	and	if0	not	plus	shl1	shr16	shr4	xor			
-TUjjNy1bO1gVWmSCYBuN4UnB	17	and	if0	not	or	plus	shl1	shr16				
-Ty0aT9LRubjxnLxRIgeX5JeV	17	if0	not	or	plus	shr1	tfold	xor				
-u1AzzIgUfVpFAAd43B2B5Awj	17	if0	not	plus	shl1	shr16	shr4	xor				
-uAMBb1CuGy7teAYQ49eCfsOn	17	fold	if0	or	shr16	shr4	xor					
-uAR2KBCEyfGTFsCH0a6hky8D	17	if0	not	plus	shr1	shr4	tfold	xor				
-UVlTtnDdAyv5vSCW8bwItV0a	17	and	if0	not	shl1	shr16	shr4					
-VDYTUvuHPFHSa0qLW3i633AP	17	and	fold	if0	or	shr1	shr4					
-x8n9geH6lrtY4RyKwzDp6G8B	17	and	fold	if0	not	shr4	xor					
-XRpksb9RjMAsvC0rA2lYMrZV	17	and	if0	not	shl1	shr1	tfold					
-YduETVEl4SA2IKC4NnBsZRbJ	17	if0	plus	shr1	shr16	xor						
-YNctdUHJkJ11JTMjunGC0CKA	17	and	fold	if0	or	shr1	shr4	xor				
-Z7vsTXV5GGtSylmJPHJP0ypb	17	and	if0	not	or	plus	shr16	tfold				
-ZGvtGGANPQvQwKQSe2hu31AU	17	and	if0	not	plus	shr4	tfold					
-0CaYCTZAB7RDX9fac6gvB6lr	18	and	if0	or	plus	shr1	tfold					
-0ZBupNpTPwX6GFFDfUSmIxub	18	and	if0	not	or	plus	shr16	tfold				
-1bfzqlySMpVhyKFP909A6DcE	18	fold	if0	not	or	plus	shl1	shr16				
-2sFfcCJWA0SVAAgATMPrACVh	18	and	if0	not	plus	shr1	tfold	xor				
-3wnp1PPp92UEGmgcm6vep4yL	18	and	if0	not	or	plus	shl1	shr4				
-4SjmQgD1nvlLIEPirkAGOUyj	18	fold	if0	plus	shr1	shr16	shr4	xor				
-5zLhBAMcKZfdB2uLIwpQudq0	18	and	if0	or	shl1	shr16	shr4	xor				
-6EYXawAhYuzUmXxDM381Amv1	18	fold	if0	or	plus	shl1	shr1	xor				
-7FDtpxWoNsoXCTAdnAFaAGYI	18	and	fold	if0	not	plus	shl1					
-9lHO8xlXGuMzGBMix3wUERsn	18	fold	if0	or	plus	shr1						
-A0tLZxrwigJCbeqNpR0JP8Q3	18	and	fold	if0	plus	shr4	xor					
-AlVBUcAv7fQXPkmniCs0yEQ5	18	if0	not	or	plus	shr4	xor					
-ARKEyLMK81EtGOjoYZeER8km	18	and	fold	if0	not	plus	shr16	shr4				
-AstliS5BL7Prnv1csUcUqy2Z	18	and	if0	or	plus	shl1	shr16	shr4	xor			
-bBHizVAjsHBHTYw235t4sbz8	18	fold	if0	not	or	plus	shr4					
-bNBAsFmoIqijsCHhSd6QtUwV	18	if0	or	plus	shl1	shr4	xor					
-BtOxTHAPFFgFKOSNvStjumMn	18	fold	if0	not	or	plus	shl1	shr1	shr16			
-Bzb9r4spmelI685fcnvvadJm	18	and	if0	or	plus	shr1	tfold					
-D2PggIFdDV9gSqBC8U6zZMFf	18	and	if0	or	shr1	shr4	tfold	xor				
-d3JAcjmuLlDrmIAv813hNFFx	18	if0	not	or	plus	shr16	shr4					
-dGyH7X7pIFxdhZL38b5yzrBQ	18	and	fold	if0	plus	shl1	shr1	shr16				
-dHyJJsWIBtT3aAegpkDSnsTn	18	if0	shl1	shr1	shr16	shr4	xor					
-dI758hmvcHgpB91RzonWXK3U	18	and	fold	if0	not	shr4	xor					
-fBvYzmjBhCsJr6ztQAxEydpQ	18	if0	plus	shl1	shr4	tfold						
-fs9gUZ8qrFGvI0zyfzQ8z3B2	18	and	if0	not	or	shl1	shr1	shr4				
-fzkQYSzakLwTpsAy0u5SfQrB	18	and	if0	not	or	plus	shl1	shr4	xor			
-g14byoNqeDVgNC5Axh4Ko2dv	18	and	if0	not	plus	shl1	shr1	shr4	tfold			
-gjJSEXnjeNBkHkyaaAqBUGxu	18	if0	or	plus	shl1	shr1	tfold					
-IsgPbdrav2A17Ee4pmXBMF5K	18	if0	or	plus	shl1	shr1	shr16					
-ITAU8alr2g7RoRsBjtjJQVfg	18	if0	or	shr16	shr4	xor						
-KaCP6HkjsDw48d9bVL0hRbVD	18	and	fold	if0	not	plus	xor					
-KdLzyEnOZnfULOUMGIhycBJg	18	fold	if0	or	plus	shr4	xor					
-MjAyp5tZJSraBZFNGmy1uLPk	18	and	if0	or	shl1	shr1	shr16	shr4	xor			
-NaCBzlvNVPXJxJYNwaxREkJ0	18	and	if0	not	or	shl1	tfold					
-NYqXiHA7VATaLYP6RAx4p4hh	18	fold	if0	not	plus	shr4	xor					
-O859Te83eWrkJRUkvwPkHpKA	18	and	fold	if0	not	plus	shr16	shr4				
-ocqF6LABBSB02O7Vi2djWCLX	18	and	if0	or	plus	shl1	shr4					
-OcZ8odKBykwXNYatY4BLyvxf	18	and	if0	or	plus	shl1	shr16	shr4				
-PLhM3qwCBkukglniUdLFakkO	18	and	if0	not	plus	shl1	shr1					
-QAQ3k0Bimlo1PeSKOpj36488	18	and	if0	or	plus	shr1	tfold					
-qAtu8FGuuUNGJ1SonS1c9gyV	18	and	fold	if0	not	plus	shl1	shr1	shr16			
-QCeomPss5vx3p3KCQA08B0a8	18	if0	plus	shr4	tfold	xor						
-Rh5Fbw90tBsGJtlfxrVBKlNg	18	and	fold	if0	or	shr4						
-S9z71PVsML1VNmx55ZqTKmUw	18	and	if0	not	or	shl1	shr4	xor				
-sfEtaFWGarCTHoAV7LVBOkSa	18	fold	if0	shl1	shr1	shr16	xor					
-SlaYe7i9cXmfpC5ZNlwdTMjz	18	fold	if0	not	plus	shl1	xor					
-SuO9MzhBdtUThNuHnyybzPwi	18	if0	not	or	plus	shl1	shr4	tfold	xor			
-u2Bkudv1fYFkG7McsXVlA6dY	18	if0	not	plus	shl1	shr1	shr16	tfold	xor			
-uDIsyP33oqTkBBJnSMAyfjTp	18	and	if0	plus	shl1	shr1	tfold					
-USxA9r6ZAT5e6CGo5eAzrGJr	18	if0	not	or	plus	shl1	shr16	tfold	xor			
-UW3XUyoBSo4dBgCpdB0Ca0nv	18	and	if0	not	plus	shr1	shr4	xor				
-wRVABD5h70hOKfEvgA4XIZQq	18	and	if0	plus	shr4	tfold						
-WTkJPAR2ChBVvjnB2NbO9Ynj	18	fold	if0	not	or	plus	shr1					
-xkMOvyQlOpqAW4R2AxXJQtz8	18	if0	not	or	plus	shr1	shr16	shr4	xor			
-yFhGUU9xGhZ6HiQYuQYbv0vB	18	and	if0	or	plus	shl1	shr16	shr4	tfold			
-Z9CI9LzmVobFBUniQKLBTVvR	18	and	if0	not	plus	shl1	shr4	xor				
-ZciuwEg9WQ4euYDQARP1k8ux	18	and	if0	plus	shl1	shr16	tfold					
-ZmCBMAim4aJWPVXnMCvoMuEq	18	and	if0	or	shl1	shr1	shr4	xor				
-ZtIbdqm2u4iQ55PdrijPBuZk	18	and	if0	or	plus	shl1	tfold					
-zWtSG4nGK0aKD7k9KAJNhRWG	18	and	if0	shl1	shr4	tfold	xor					
-0VjB7Ji8Sobfg927KiChB7wf	19	fold	if0	not	or	plus	shl1	xor				
-1PNTkMOpvTvU2Bvz6DqEOiR8	19	and	if0	shl1	shr1	shr16	shr4	xor				
-2LO4Hg6arsh0j1p6PAFsQMxr	19	fold	if0	not	plus	shr1	xor					
-2lVnumWGBEqa5LfbyKzSigZg	19	fold	if0	or	shl1	shr1	shr4					
-3bgZaB4BFnuu7CDJKDqfopxa	19	fold	if0	not	or	shl1	xor					
-3J8nmMOw7fHv4tFBs5Of5i3s	19	if0	not	or	plus	shr1	tfold	xor				
-3lUSBeN0OQaB0yv7MAYaASe4	19	and	if0	or	plus	shl1	shr4	tfold	xor			
-4WXaoZeXtnYGVNfAtJk7e8Bk	19	fold	if0	not	or	plus	shl1	shr4				
-6hUlzil8205YRT8KwukQeHwp	19	if0	or	plus	shl1	shr1	shr16	shr4	xor			
-8Pg4aQ5NSHnIdBnQsNAi6TDa	19	if0	or	plus	shl1	shr1	tfold					
-9U6UaVAqgY7804KQ0ABuWFqZ	19	if0	not	or	plus	shl1	tfold					
-AQkIeFRHOOxsSUkSBN0ld5SR	19	and	if0	or	plus	xor						
-b8jgsYMpImKJZZ84KXzjwtGF	19	if0	not	or	shl1	shr1	shr4	xor				
-BfYT8BK7VmVA5KDdURBVHQMi	19	and	if0	not	or	shl1	shr16	tfold	xor			
-Br3JBTwYBmOF1C4MU1pZkxtb	19	and	if0	not	or	plus	shr1	shr4	tfold			
-Cj0ersnRyat00eAct4ZCiGNG	19	if0	or	plus	tfold	xor						
-CLrlo7RhWBMy62nx8EKjpSpj	19	if0	or	shl1	shr4	tfold	xor					
-CqxuosCElmbCwsWkdFejFsAe	19	and	if0	not	shr4	tfold	xor					
-CuN1AABXxsmUXuNwp9PkbLbz	19	and	if0	not	or	shr1	shr4					
-DBKU8hrYGpNABuRwTLTtdCAq	19	and	fold	if0	plus	shl1	shr1	shr4				
-eKK1GgQlIExarSRgRIqeE1bE	19	and	fold	if0	not	shl1	shr1	shr16	shr4			
-fjz1lxtaGrOeN3KiMWMyqxrF	19	and	if0	not	or	shl1	shr16	xor				
-g8bcAv6PTNy8oQUFelTAiPXw	19	if0	or	plus	shr1	shr16	shr4	xor				
-gLVZ5rKQZ2vvDuCDawAnrF85	19	fold	if0	or	shl1	shr1	xor					
-GUA8jSABSBJps9cvrvb2uQoE	19	fold	if0	or	plus	shr1						
-hWKBh5wGHT6MerezUFEvjQt4	19	and	if0	not	or	shl1	shr4	tfold	xor			
-J25C0MYR6EcMkrdZkBng8SLL	19	and	if0	not	plus	shr16	tfold					
-J6NHPsOeBn8CBBttPjPrsbjo	19	if0	not	plus	shr16	tfold	xor					
-jCq4h1OtI1vJ3aU1KLzw1owO	19	and	if0	not	or	plus	shr1	shr16	xor			
-kB9BaCCy4OyXE5spxaI7nkKM	19	and	fold	if0	plus	shl1	shr1	shr4				
-KkPe3DMf5N84OHtJCwgnQtfA	19	and	if0	not	or	plus	shl1	shr1	shr16	shr4		
-Klrb6kZYWKBAXzEq1xB6TLx4	19	and	fold	if0	not	or	plus	shl1	xor			
-km6Ird0dPqBK26BPNeHtyFq8	19	and	if0	not	plus	shl1	shr1	tfold				
-lxKz3ipBx6L6pABIDpxOtbY9	19	fold	if0	plus	shr1	shr16	shr4	xor				
-mC5ZJq1TJrf6XnmICGy9dyYM	19	and	if0	or	shl1	shr16	tfold	xor				
-nVJ9c9xAXydTe7eOV5UCmZyT	19	if0	not	or	plus	shl1	shr1	shr4	xor			
-nZdqIhDCLoZQSQZobfnxhSji	19	and	fold	if0	not	or	plus	shr16	shr4			
-o0YOA5t8glPIDsdzveNJth6m	19	and	if0	not	or	plus	shr4	tfold	xor			
-O82SxCajYqg5UT0cvfImCKTI	19	and	if0	or	plus	shl1	shr4	xor				
-OioHAla4Ily40yg2KYIkxOeE	19	and	if0	or	shl1	shr16	tfold	xor				
-OM5jXOcsTl0q1KixpdxZibZH	19	if0	not	or	plus	shl1	shr16	shr4	tfold	xor		
-pBb2qkIJNBA3n0N8P8Yo33j9	19	fold	if0	or	plus	shr1	xor					
-qjUXgjhSnUj61BKlDYAxtGP1	19	and	if0	or	plus	shl1	shr4	xor				
-qmoLrhqW7c3IR9vB65L25aVA	19	and	if0	or	plus	shl1	shr1	shr4				
-rZrnCQ4qlgEP0UujRB6CZq5A	19	and	if0	or	plus	shl1	shr1	shr4	xor			
-SgWpB0j227Pod2rucFITOyBt	19	and	fold	if0	plus	shl1	shr1	shr4	xor			
-StZbcQ26ZQqUcwQ5GACAEFO6	19	if0	not	or	shl1	shr16	xor					
-Sug8Zw1Mik86T8bHVHjARDB3	19	and	fold	if0	or	plus	shl1	shr4	xor			
-sZdiqd7uba4WN701i8ARtbpN	19	and	if0	not	plus	shr1	shr4	xor				
-va1qwwIykeDeF2OsIL9VH9KK	19	fold	if0	or	plus	shr1	shr16	shr4				
-vH7h0G7gsveP0GvzcNzXHMON	19	and	if0	not	or	shr4	tfold					
-WLrR03iB2MYQXXy8Qwn7t3BS	19	and	fold	if0	not	or	shr4	xor				
-WxsZr2xYDlAeh2U1tOk1daQb	19	and	if0	not	plus	shl1	shr1	xor				
-XLw1ZMJviLCzeFEIjBktpmpR	19	and	if0	or	plus	shr1	tfold					
-Y1Bik7qboTgqlZgPEGd3OCKI	19	and	fold	if0	or	plus	shl1	shr1	shr16			
-YbAVkhqsxK76JNgAfmSZUJmX	19	fold	if0	not	or	plus	shl1	shr16	shr4	xor		
-Yucd1g5h55WZGyU8oE5PQ8h1	19	if0	not	or	shl1	shr1	shr16					
-yxYMRdr9K4hdAQ2QomgB8xIL	19	and	if0	not	or	plus	shl1	shr1				
-zBlDdJxmLXl6jX8guZH2uQZY	19	and	if0	not	or	plus	shl1	shr1	shr4	tfold		
-zMkuqNrk73807Ou8x8LLIemL	19	if0	not	or	plus	shl1	shr1	shr4	xor			
-0BHuIInPya557d2XwxOHvGtp	20	if0	not	or	plus	shr4	tfold	xor				
-0ox8HTcCyLZEfW7RerToXYnu	20	and	if0	or	plus	shl1	xor					
-0Tz6sQBJjtBk2BhboIYjPTOU	20	fold	if0	not	or	shl1	shr1					
-1Mg2t4G3cLThbg5akKVTBnOs	20	and	if0	not	or	shl1	shr1	shr16	shr4	xor		
-4Z8mZowrBvl7rJRiwpTP80ir	20	if0	or	plus	shl1	shr16	shr4					
-5c6foncQEiIufLUS8y3Bdau2	20	and	fold	if0	not	plus	shr1	shr16	xor			
-5y4kcVhCgBWDcr2G3LTS00FV	20	if0	not	or	shl1	shr4	tfold	xor				
-6DjykBvx76eD7yJb6NbVIUFj	20	and	if0	not	or	shl1	shr1	shr4	xor			
-7YqJFgZ0FAxLSACHGIBsobcC	20	and	fold	if0	not	plus	shr1	shr4				
-8UMy3kGv6rEqVKP1QjAS0A5O	20	if0	not	or	plus	shr1	xor					
-8yrKD1ICyWXHOTqDI6UcmCLQ	20	and	fold	if0	not	shr1	xor					
-9fcnXw5aEvukTVJufXKU56As	20	fold	if0	plus	shr1	shr16	shr4	xor				
-a4EuLYl5tdkCBot5RWySsfCf	20	and	if0	not	or	shl1	shr16	tfold	xor			
-Ac1wYubQb5axYnaOgKBbfzY6	20	if0	not	or	plus	shl1	shr1	shr16	xor			
-al8AfDv92f0naEoloBC4cO9Y	20	and	if0	shl1	shr16	shr4	tfold	xor				
-ATaA2ywPtJgtsy7SNy2obra5	20	and	fold	if0	not	or	shr16	xor				
-AujBhT1VMg4u94ZTUAXp86ja	20	and	if0	or	plus	shl1	shr1	shr16	xor			
-BOokDh86hLSqzInSP1CV5zeO	20	and	fold	if0	not	plus	shl1	xor				
-CotfdPSnPxre2VpwtQXyNJ9Z	20	if0	not	or	plus	shl1	shr1	shr4	xor			
-D0871kpAI4Bj6nhFYpKi38Eb	20	if0	not	or	shl1	shr16	xor					
-DGXjjf9jpEbfQz7NKBHbxotD	20	and	if0	not	or	shr1	shr16	shr4	tfold	xor		
-eOzMWiVAngMTCgnypVC0bzAW	20	and	if0	not	plus	shr1	tfold	xor				
-eVADn17rLeCXOMgeVFsHwHB9	20	if0	not	or	plus	shl1	shr1	shr16	xor			
-FmRfAO0FxWhz61EfaUHqzgrr	20	if0	not	or	plus	shr16	shr4	xor				
-FOQmSNieqf6ntPvl96u4AVkM	20	if0	not	or	shr1	shr4	tfold	xor				
-FPfDE2ZvATK8xikIlnNAhRRH	20	and	if0	not	or	shl1	shr1	shr4				
-g1Ju3a1ClJ0VML9mziR4vhMq	20	and	if0	shr1	tfold	xor						
-GXhA0DSVuUkCuecOOkx1U6Qv	20	fold	if0	or	shl1	shr1	xor					
-gYuY8owV25OWAQSqKFrWJMd2	20	if0	or	plus	shl1	shr1	shr16	shr4	tfold			
-HxhegEfZ8DzVcdIlL7W0Es6S	20	and	fold	if0	or	plus	shr4	xor				
-iXi72By0jQwLuH0e58Rk7qyV	20	and	fold	if0	or	shl1	shr1	shr16	shr4	xor		
-JCVn4BcWlacBnpalM2SH8M2o	20	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-jDyQFTAywhoxkesDlxyrNCd5	20	fold	if0	not	or	shr16	shr4					
-KT6KykWzVPh2uyDnaUYU5kfi	20	and	if0	not	or	plus	shl1	shr1	tfold	xor		
-MQsvjgEOxVZZML4xJBhN0zbf	20	if0	not	or	plus	shl1	shr16	xor				
-mtb2oFLNYJeLoEnNC82kFpD7	20	and	fold	if0	not	shr1	shr16	xor				
-N5eg4oA5tlPBuInQcMs2ANfb	20	and	if0	or	plus	shr1	tfold					
-nnMQwERK78MxPHIkElFC24M7	20	fold	if0	not	or	shr1	shr16	shr4	xor			
-NO67HyDv01PQEdy9G22p5woz	20	and	fold	if0	not	plus	shr1	shr16				
-OYd9TWbQZleOAaTe6BmFFBJC	20	and	if0	or	plus	shr1	shr16	shr4	tfold			
-q3dSj2j1yJXd7R5eutiADrZv	20	and	if0	not	or	shl1	shr1	shr16				
-qNPIG3m8p2oh7WSKVMYWs36R	20	and	fold	if0	not	plus	shr1	shr4				
-seu4CZWE0u6HqCdMBXwGPEDB	20	if0	plus	shl1	shr1	shr16	shr4	tfold	xor			
-sRq8uGIq4wuBcbqG7onk8cdj	20	fold	if0	not	or	shr1	shr4	xor				
-sszhodh6eeXx0J6sXorj3Tu7	20	and	if0	not	or	shr1	shr16	xor				
-TIXxGISZzatVsiCqASlYHC1o	20	and	if0	not	or	shl1	shr16	tfold	xor			
-tpnsOwzPsWLgMhE2ZTdtlhQI	20	and	fold	if0	or	plus	shr1					
-tTiriTovXHqXZ0JBgjjz5APl	20	and	if0	not	or	plus	shr1	shr16	xor			
-uC6n0hFf0HB2QAr8BsSDnf2i	20	if0	or	plus	shl1	shr4	tfold					
-UgBDHuusu553YrEc06VWtAit	20	if0	not	or	plus	shr1	shr16	xor				
-UYzf9IuGLHyT9BHCEoaGCkRr	20	and	if0	plus	shl1	shr4	tfold	xor				
-v8EU16454aVtoYDApSknBtKa	20	and	fold	if0	or	plus	shr1					
-v95Ick4rpHVrPndr5QNlsAm0	20	and	if0	not	shr16	shr4	tfold	xor				
-va1qrt0bG00EBaiiJBTja5iB	20	and	if0	not	or	plus	shl1	shr1	shr4			
-vTQfsXauRAAf9J5Lm2xvo2qc	20	fold	if0	not	plus	shl1	shr16	shr4	xor			
-Vw8svobJZhOS9Cje8BKJyArA	20	and	fold	if0	not	or	shl1	shr1	shr16	xor		
-WVZ0kosda0f4QexDOOGsPjXx	20	and	if0	not	or	plus	shr1	tfold	xor			
-xDCjc5ql4sw30Mi8vt5XBA6B	20	and	if0	not	or	shl1	xor					
-XsNYpS1zHVdMxTppXxC6X7mG	20	and	if0	not	plus	shl1	shr4	tfold				
-ynElmK6SwJ2gBBXMzRaKk28W	20	if0	not	or	plus	tfold	xor					
-14H2jZ78WOsxkCLMakcBpkEb	21	and	if0	not	or	shr1	shr4	xor				
-2pmGO2B26BY4jJELLqxrmssz	21	if0	not	plus	shl1	shr1	shr16	shr4	tfold	xor		
-2Q5PsEkYJIaj4qpBcZY50XFC	21	and	if0	not	plus	shr1	tfold	xor				
-3Je2CBnSFXVOATkvxPTKVPQw	21	if0	not	or	plus	shl1	shr16	shr4	xor			
-3mdqWapwpFLt6P8nc5avIV17	21	and	fold	if0	not	plus	shl1	shr16	xor			
-3Ohomh98InmUiMw5uw25mE4t	21	and	if0	or	plus	tfold	xor					
-44bmEyBNqDUv2UjK4SbB1zrO	21	fold	if0	not	or	plus	shl1	xor				
-4LVUXh4B5CrB9iBPssUN1Jmq	21	and	fold	if0	not	or	plus	shl1	shr16			
-4uxd4xv7AhiwdNHky549fE02	21	and	fold	if0	plus	shl1	shr1	shr16	shr4			
-5K7ggHJms56XmtCVpBAxK9od	21	fold	if0	not	or	plus	shl1	shr1	xor			
-6dbcUjNAsqu2Fz0vozKB4B9X	21	and	fold	if0	or	shr1	shr16	xor				
-6yCtUPkj1YzRkA8HCO722Fxa	21	and	if0	not	plus	shl1	shr16	tfold				
-8a13kFhaDJ5dPfntJffrVit7	21	and	if0	not	plus	shl1	shr1	shr4	xor			
-8azR7Z3EecXnhY6AUmvAK0o8	21	and	if0	or	plus	shl1	shr4	xor				
-8KO6ShrUeQoIkHqVIEO5tmMQ	21	and	fold	if0	not	plus	shl1	shr4	xor			
-8OtZBqDNrdxxQ1MI90ORSAds	21	and	if0	not	or	plus	shl1	shr1	shr4	xor		
-9hrOyaHAL0OGKt6mhj8xA40j	21	and	if0	not	or	shr16	shr4	xor				
-9jub0YhkfY3ezSiAQKx9CdyG	21	if0	not	or	shl1	shr16	shr4	xor				
-9TyRLLRONt0DcrDvO76YKbZ4	21	if0	not	or	shr4	tfold	xor					
-aNsjwoeAycLizq4fVAKfUnSm	21	and	fold	if0	not	or	shl1	shr16	xor			
-aYCUkl5cncLHgsWxbs5gxeEA	21	and	if0	or	shl1	shr1	shr16	tfold	xor			
-B4hjESvwRDQBzi4dImPRPD6L	21	if0	not	or	plus	shl1	shr1	shr16	shr4	xor		
-BdWj93Eq6PyUlfUneI37P7Xl	21	and	if0	not	or	shr1	shr4	tfold				
-BuS3PKlkqBPvm6DbqTfVnDGa	21	and	if0	not	shr1	shr16	tfold	xor				
-Cim5TEFyQLRuJ5PwiCBnLbTE	21	fold	if0	not	or	shl1	shr1	xor				
-DKbo8K6BNAzpAzBml59sRWNg	21	if0	or	plus	shl1	shr1	tfold	xor				
-dyoJz9aD5oa06BhkVf9uh3EO	21	and	if0	not	or	plus	shr16	shr4	xor			
-eGdlUmk1DVeTwpEmlyygQBrn	21	and	fold	if0	or	plus	shr4					
-Fx7uUzwnVIzK4XTxtj3JLjuK	21	and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
-Gw7ZYOiw4j4TariOaR1ICfNr	21	and	fold	if0	not	plus	shl1	xor				
-hlEhROrVC0LRLwIfFktQcrRi	21	and	if0	not	or	plus	shl1	shr16	shr4			
-hOBM8kMYcpny5lroyMsMuD4U	21	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-IMTnkkGfqMBxKvYZHyIHXRAf	21	and	if0	plus	shr1	shr16	shr4	xor				
-infqaJ0pTJxZtIib0DTjO8OB	21	fold	if0	or	plus	shl1	shr1	shr4	xor			
-jaBBQlnBxgibENKSFZ8fVgIZ	21	if0	not	or	plus	shr1	shr16	shr4				
-JmNlRUAAO3WgjAhwIGP2ybuo	21	and	if0	or	plus	shl1	shr1	shr4	xor			
-kLBmmsUyqnXnGkavBEp3jUYQ	21	and	if0	not	plus	shl1	shr1	shr16				
-m50m56TFKBA3ZP6PYpR3MUub	21	if0	not	or	shr4	tfold	xor					
-mhLBLxKYteahxb1pBwWrJamb	21	and	if0	or	plus	shl1	shr1	tfold	xor			
-MJHVTmsY8777ZVwbBGq9hgY4	21	if0	not	or	plus	shl1	shr1	shr16	shr4			
-MnslgcN4XtokNQ5DJWFDKHV6	21	if0	not	or	shl1	shr16	shr4	xor				
-N2OjOEjvgZCPBVAmzLEAeJqi	21	fold	if0	not	shr1	xor						
-ntAxPLdqJqNsKEzi6ujw33bt	21	and	if0	plus	shr1	shr16	xor					
-OrN1DOVorhD6BcKG6eJSCRjD	21	and	if0	not	or	plus	tfold	xor				
-PhVSRDEGj4ogevzPI8DEJZVP	21	fold	if0	not	or	plus	shr4	xor				
-PKonJ1pfOAAsyIwyCamLyk3L	21	and	fold	if0	or	plus	shl1	shr16	xor			
-pWxeQfBo2M2VFCR41jd7dnUd	21	and	if0	not	plus	shr1	shr16	tfold	xor			
-QWqBGQA94YAAByeUtAwW2yp5	21	and	fold	if0	not	plus	shl1	shr1	shr4			
-r6oIhKluEGuJRj1fQYMFLyTE	21	if0	not	plus	shl1	shr1	tfold					
-RIauFLaOhmmRnQEb5yEqPUGd	21	fold	if0	plus	shl1	shr1	shr16	shr4	xor			
-S6nE4hzm5y72XQNyG6WUamGp	21	and	if0	or	plus	shl1	shr4	tfold	xor			
-ScFJbArKaGyapAlUJ48U5zYH	21	fold	if0	not	or	plus	shl1	shr16	xor			
-SkerhcOxEfKu2MzfTXPLdkKn	21	if0	not	or	shr1	shr4	tfold	xor				
-VdghhTmwfA4isjoXbGwIYN8v	21	and	if0	shr1	shr16	shr4	tfold	xor				
-xj6ThE4TgONZRaZwQE29EcGF	21	and	if0	not	or	shr1	shr16	shr4	tfold	xor		
-XLPvckQ97O8VLgCj3S0mthTx	21	and	fold	if0	not	plus	shr1	xor				
-xOJBbluNpSHf3lqlGkgIXaBB	21	fold	if0	or	plus	shr1	shr16	shr4	xor			
-XTuo6RKpZuBUT4taVwiQV1YO	21	and	if0	not	or	plus	tfold	xor				
-YOvDBEyJA5cjQKcRbrgl9cnB	21	if0	not	or	plus	shl1	tfold	xor				
-Z916oGj6YGurVlhCCERozJCJ	21	and	if0	or	plus	shl1	shr1	shr4	xor			
-0DAg7wK01jfvCRRIbj8FVnN6	22	and	if0	not	or	plus	shr4	tfold	xor			
-16ceGiZMvt9R8UYiVgKRUnkr	22	and	if0	not	plus	tfold	xor					
-1tiPW01gVdxrCFNgZNmwdwR3	22	if0	not	or	plus	shl1	shr4	tfold	xor			
-2pyTXU5HhxZfpxFmfntMmEUq	22	if0	or	plus	shl1	tfold						
-4HFFSQoBmvOTSkNHs1SkSxye	22	and	if0	or	plus	shr1	shr4	xor				
-A6d0wvfCcabmhNzC2Iy12hZy	22	and	if0	not	or	shr16	shr4	xor				
-aDSD2gl1I0ZKd1SerGfOTeJQ	22	and	fold	if0	or	plus	shr1	shr16	shr4			
-ADswf2FaqHBFOtaNHZUSAvN7	22	if0	or	plus	shl1	shr16	tfold	xor				
-aYIMHKAfOUBmCBlALqjzlQv5	22	and	if0	not	plus	shl1	shr16	shr4	xor			
-B8vUPv1jt48PRqlYvSpzJrrO	22	and	if0	or	plus	shr4	tfold	xor				
-BCCK045ZrXeEgxTdU958mMLh	22	and	if0	not	or	plus	shl1	shr1	xor			
-beOG1uULpEyKakF3TENazAZ5	22	if0	or	shr1	shr16	shr4	tfold					
-BfopBeWPte2myFS35CHEvvtH	22	fold	if0	or	plus	shl1	shr16	shr4	xor			
-BjQ3unNvxjpAA1uPKWJsBma0	22	if0	not	plus	shl1	shr1	shr16	tfold	xor			
-BvmeQfWkvXttSaoSpkMTlnhC	22	and	if0	not	plus	shr16	shr4	tfold				
-bZA4APH3JB1LfJ3z827sa7gM	22	and	if0	or	shr16	shr4	tfold	xor				
-C3A5Bm7y3BmIBeqmGxTDTgzz	22	and	if0	or	plus	shl1	tfold	xor				
-cAnTBldueqbQOEmVBEskZ2tO	22	and	if0	not	shr1	tfold	xor					
-CR0wFl92tOMmJWAuJMAy0d2Z	22	and	if0	not	or	plus	shr1	shr16	shr4			
-DBqqgVXPTgBBBuWGAMpAUUv0	22	and	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	
-fO2ZCSdwinmAPnQlJ45orngR	22	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-Fshpr1jnhddkPRpVp6KBufHW	22	and	if0	not	or	plus	shl1	shr1	shr16	shr4		
-g9jDkyaW74LdF0YwN3cXuNU1	22	and	fold	if0	shr1	shr16	shr4	xor				
-GVctHmnXG0Rh6BYX1hBGyYxa	22	and	if0	not	plus	shl1	shr16	shr4	xor			
-GvJoTYpP2YAGE7gUqWbzY2Ym	22	if0	not	plus	shl1	shr1	shr16	shr4	xor			
-HCtg6PGLomzYljntBDQ2mMNZ	22	fold	if0	not	or	plus	shl1	shr4	xor			
-hvHztxa7m6Vfk0zAX8mPjc4B	22	and	if0	not	or	plus	shl1	shr1	shr16	xor		
-i0C1yGAk4qjsQxfqdduFHEiD	22	fold	if0	or	plus	shl1	shr16	shr4	xor			
-ICKUzwHsPKW2RGAkV7cKG5Ah	22	fold	if0	not	plus	shr1	shr16	xor				
-IGBTg4xkLjBB0oLr6efJtVnm	22	and	fold	if0	or	shl1	shr16	shr4				
-IRgtEOFmxFIRkYSeo5mQTQIO	22	fold	if0	not	plus	shl1	shr16	shr4	xor			
-JAuefDhXRCuwvbj2eH70y2ko	22	and	if0	not	or	plus	shl1	shr4	tfold	xor		
-jr78VR3mZsiLoAoWsxFM2Bt4	22	and	if0	not	or	shr1	shr4	tfold	xor			
-Jyjb4QczPcVSUwL2XdR1RmA8	22	and	if0	or	plus	shl1	shr4					
-kmVrvVYUUo7FMADSa08ZNtT7	22	fold	if0	or	plus	shl1	shr1	shr4				
-LBEubeyj4BUYImZ7B1Xn4ckS	22	if0	not	or	plus	shr1	tfold					
-LWWSxRosxB0Ygm9IKE35zmej	22	and	if0	not	plus	shr1	shr16	shr4	xor			
-mpAtqRkwcRXPSv2oOmGGjghz	22	fold	if0	not	or	plus	shl1	shr1	shr16	shr4		
-no5dOkh0cUWhEkeKgE0RjfOC	22	and	if0	or	shl1	shr1	shr16	shr4	xor			
-ONTd5Qz362PrS5wRBEzk6jLA	22	and	if0	not	or	shl1	shr1					
-pzHnIEVk01uc2SKeZ5LZGMsQ	22	and	if0	not	or	shl1	shr1	shr16	xor			
-q9WhjgvAZm0kbFOGYR7i7UNz	22	fold	if0	or	plus	shr16	xor					
-qjMXA920OUk188PQunSo5GXi	22	fold	if0	not	or	plus	shl1	shr1	shr4	xor		
-rGRcFTXStIm54VbPLPqMzjuB	22	if0	not	or	plus	shl1	shr1	shr4	tfold	xor		
-smKyEXJaJtrsns6kG91EpmA5	22	and	if0	not	or	shl1	shr1	shr16	shr4	xor		
-So9f7ZnFGPdeJGcB4q15UKVT	22	and	if0	not	or	plus	shr1	shr16	xor			
-spq32PQ7dGEpWC2blsvQEku0	22	and	if0	not	or	plus	shl1	shr16	shr4	xor		
-t4rcsgMSs4SqtJp7dJulEgA6	22	and	fold	if0	not	plus	shr1	shr16	shr4	xor		
-V3LZbeQ9AFBUX9JvL6WBdTuX	22	and	if0	not	or	plus	shr1	tfold	xor			
-V51EIznGy1X4nocMMhoJiv6X	22	and	if0	not	or	plus	shl1	tfold				
-vAEtDEXScMhaZUfU6lEjwa21	22	and	if0	not	or	shl1	shr1	shr16	xor			
-vaxSFXmejX8aSSW4l2BzN1bJ	22	fold	if0	plus	shl1	shr1	xor					
-VNTTtkrxfdoOIf0nxXyGNoBh	22	and	if0	or	shl1	shr1	shr16	shr4	xor			
-WuC3HJQ9AdXu2IdzwvkbBqoB	22	and	fold	if0	plus	shl1	shr1	shr16	xor			
-X4MjSUM3Ez8ysSgZSWzylkr8	22	and	if0	not	or	plus	shl1	shr1	tfold			
-xMJRAIqS5nPByX7HxR4N3NOd	22	and	fold	if0	or	plus	shr1	shr16	shr4			
-xru1Bd2ambAB2TTKVUtYNJ9P	22	fold	if0	not	or	plus	shr16	xor				
-xu6zcr3jgeo99GhH0TAAtsJ3	22	fold	if0	not	or	plus	shl1	shr16	shr4			
-z0orjv9Bsqt4F45nv2BPRBaw	22	and	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	
-zzqHljzQCZw8aPvMYSLxeNxx	22	and	if0	not	or	plus	shl1	shr4	tfold	xor		
-0bOCBmMHyFjuwbiMtfHk5H8L	23	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-0erQlIBPkIcucXFaA7I7hDvS	23	and	fold	if0	not	plus	shl1	shr1	shr16	shr4	xor	
-0IST9hs5FblAi3WSshbiJPjl	23	and	fold	if0	or	plus	shl1	shr1	shr4			
-1YGFs5w0eWUci3M1nZzzdBC3	23	and	fold	if0	or	plus	shr16	xor				
-3Q2heAgpJ1JkkiOX7LwPL5x1	23	and	if0	not	plus	shl1	shr1	shr16	shr4	tfold	xor	
-3tflJ3iTBL1sJqmWDAoM5gIN	23	if0	not	or	plus	shl1	shr1	tfold	xor			
-8Y2fav7AnGEczNKP6tSHmFFB	23	and	if0	not	or	shl1	shr1	shr4				
-8YkrQsOH3YbFMsU0bcNUKzxO	23	if0	not	or	plus	shr16	shr4	tfold				
-98aXA3JMseYDP7RA2ZAeujFw	23	fold	if0	or	shr1	shr16	shr4	xor				
-A3DfrhevAnQLIBNYiKNLeB4o	23	and	if0	not	or	shl1	shr1	shr16	tfold	xor		
-aASBtzHc1DS3YI62hpe2nnHo	23	and	if0	or	plus	shl1	shr1	shr16	shr4			
-Ae3pB7o3eM6bKt166BlWjNiO	23	and	fold	if0	not	or	plus	shl1	shr16			
-Bg1cla3Eda6Loxfug4VTGVAZ	23	and	if0	not	or	plus	shr16	tfold				
-BtOjNFt2UvRBXb6bJWONn4ko	23	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-BWI6AvdALiOYkmnELspKl4AI	23	and	if0	not	plus	shr1	shr16	tfold	xor			
-bxRF2tDCEUu0wAnDu6DTQ2ek	23	and	if0	or	shr16	tfold	xor					
-dcX9QU4nhnULt5AcQ5TOGIQA	23	and	if0	or	plus	shl1	shr1	shr16	shr4	xor		
-DUykWGyEBYe18yjWc9ENr5Ad	23	and	if0	not	or	plus	shr16	shr4				
-eB2fxOXuuTUykpHDjsa0k8EL	23	if0	or	plus	shr4	tfold	xor					
-FaQiI9flWYYAHtlkWlzKWxyD	23	if0	not	or	plus	shl1	shr1	shr4	tfold	xor		
-fmibHzRw8e2K8npU9vMEOsmB	23	and	if0	not	plus	shl1	shr16	shr4	tfold	xor		
-fYLVz0xN9PSFtgQHilRiu6Sg	23	and	if0	not	plus	shr16	shr4	tfold				
-i1i9mAW7OhlzvWBWC34NMYWB	23	and	if0	not	plus	shl1	shr1	shr16	shr4	tfold		
-je2BTCAysgi8GiId2vQgSIbl	23	fold	if0	not	plus	shl1	shr1	shr16	shr4	xor		
-JebzAdOaElF3mef8Y1TyK88A	23	and	fold	if0	not	or	plus	shl1	shr1	shr16	xor	
-K9jvqKpvR3cgiuKOtQUN2D7b	23	and	if0	not	or	plus	shr1	shr16	xor			
-kDRVJU8b3h6bwdH0hKyO0gFj	23	and	if0	not	or	plus	shl1	tfold	xor			
-klfrcD9tLcuHMO6WGG6AxFDA	23	and	fold	if0	not	plus	shl1	shr1				
-kuFexjIgIoPauXFMEO0u6ApC	23	if0	not	or	plus	shr4	xor					
-LNR6wPdUAd8lJVmSVhJBrXM5	23	if0	not	or	plus	shl1	shr16	shr4	tfold	xor		
-LPxlfn5qNT9AbbTKQ89Du6l6	23	and	fold	if0	not	or	plus	shl1	xor			
-NuCa3apB57fAf0Xg02AVx7Jm	23	and	if0	not	or	plus	shr1	shr16	shr4			
-o5G5ZQCsh0leJP5kEeiVrbL4	23	if0	not	or	shl1	shr1	shr16	shr4	xor			
-ofazLC2tNLNahCQjgWB24uQY	23	and	if0	not	plus	shl1	shr16	shr4	xor			
-OIcSTbCBIXZxt6EFFlhkfWB2	23	and	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor
-oviQyMgPHlI3auMagGpB8y9G	23	if0	not	or	shl1	shr1	shr16	xor				
-OX3a4hb5A1hAtn3KxC0zpVhD	23	and	if0	not	plus	shr16	shr4					
-P3Um63HgAcALBLmdxMd9B03n	23	and	fold	if0	or	plus	shl1	shr1	xor			
-Q8ky7hWunZCjzshp96MOrc7F	23	and	if0	not	plus	shr1	shr16	shr4	xor			
-qyqBqhv4sNS728xnt4hD0zNv	23	and	fold	if0	or	plus	shr1	shr16	shr4			
-R8q1rhfnwNmE6f0rTMkHgF46	23	if0	not	or	plus	shl1	shr16	shr4	xor			
-RKsITk7jm4rArq64ZoauOmEW	23	and	fold	if0	not	or	plus	shl1	shr1	shr4	xor	
-rXSRwfONehAkFMAjObDpsA2v	23	and	fold	if0	plus	shl1	shr16	shr4	xor			
-S8agFInNUasA2pB0ZKa1WANk	23	and	if0	not	plus	shl1	shr1	shr16	tfold	xor		
-SvhsjwjzTFvT2MFvmfYAPtoj	23	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-tHtkDRPh2xF9BaziDoLbk52t	23	fold	if0	not	plus	shl1	shr1	shr16	shr4	xor		
-udcXoczqBVj9Ef0qUkCo2ixn	23	and	fold	if0	not	shl1	shr16	xor				
-uiUvACOmxxeB4qEqGUp4Bnz3	23	and	if0	not	or	plus	shr1	shr16	shr4	tfold	xor	
-vGP3Vb8Q0QBc6MBLVHvz2jMZ	23	and	if0	not	plus	shl1	shr1	shr4	xor			
-vIxANzBwrWOdyTjApyNS3RRr	23	and	fold	if0	not	or	shl1	shr1				
-WVgE0dMAj50QogbapukD9mR5	23	and	fold	if0	or	plus	shl1	shr16	shr4			
-XeTeAOXRpTUwqTCe2seVXERn	23	if0	plus	shr16	shr4	tfold	xor					
-YDJ0FrHq3mQiLA1gPTBV1vTh	23	and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
-YGprefAYix5erapE9fdpRqHI	23	and	if0	plus	shr1	tfold	xor					
-yOg2ScfAZUQ1boMoWZowB1Ob	23	and	fold	if0	or	plus	shl1	shr16	shr4	xor		
-yP8WBtyG64wpWn6z8Wj8dFBr	23	fold	if0	or	plus	shl1	shr4	xor				
-yQooc6P4AKV60xAzzXpWiO0E	23	and	if0	or	plus	shl1	shr1	shr16	shr4	xor		
-yXCIPa00OolhgWnU6PoYtw1t	23	if0	not	or	shl1	shr16	shr4	tfold	xor			
-zvod42yWbmCA35M9fmXjUyef	23	and	if0	not	or	plus	shr1	xor				
-ZWJqMa7cqOqxT6Mp9V3mkUIs	23	if0	not	or	plus	shl1	shr1	tfold				
-01ZMYTDs0cu5PcbNVusTMYaM	24	fold	if0	not	or	plus	shr1	shr16	xor			
-0CNt3yviqj2UwIYdtqKvQFTV	24	if0	not	or	shl1	shr16	shr4	tfold	xor			
-0h971ZjrLDShrdNgR3nZZaBC	24	and	fold	if0	not	or	plus	shl1	shr1	shr4		
-0sBV26ORSxjdI6LoBAXW7BkW	24	and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
-0xhpfJEbiTs2DRABU86rQIBp	24	and	if0	not	or	plus	shr1	shr16	shr4			
-2Nuxd03lL2OOHpRlLX04Bfn2	24	if0	not	or	plus	shl1	shr4	tfold	xor			
-3Q5aJLJO2Aam7ueHNfKRHInZ	24	and	if0	not	or	plus	shr1	shr4	tfold	xor		
-5AtY8O9jY5Vr5zhtTgPXPK6q	24	and	if0	not	plus	shl1	shr1	xor				
-5tB5sddAuC4UASENHTvGTjsG	24	if0	not	or	plus	shr1	shr4	xor				
-65s7LPMtsMhodokbcVgSA9TA	24	and	fold	if0	not	or	shl1	shr1	shr16	shr4		
-6E8vOaRBGkDtlic5zo2mqWVl	24	if0	not	or	plus	shl1	shr16	tfold	xor			
-6LgmsKkgpjEANFR1lolQicoK	24	and	if0	or	plus	shr4	xor					
-7rAh90rE41eUMpBAxHqmbQ1x	24	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold		
-B46hPRuxDeEIpoJRwyQesuN7	24	and	if0	not	or	plus	shr1	shr4	tfold	xor		
-bHEcsxPjSLB9WOQ9Hzaggg1O	24	and	if0	or	shl1	shr16	shr4	xor				
-BhEFBmVfKVdhrHcsI65VT6P6	24	and	if0	or	shl1	shr1	shr16	xor				
-bn4TG8heWed7A0fOxaifnm8a	24	and	fold	if0	not	shl1	shr1	shr16	shr4	xor		
-bU4L6D7UqLIhdy9agsQG7uDh	24	fold	if0	or	shl1	shr1	shr4	xor				
-BwwON3UDNcqbqSEuOWt9fdWK	24	and	if0	not	or	plus	shl1	shr1	shr16	tfold		
-C9d8AclxtPitv4oNX7gnn9rA	24	and	if0	not	or	plus	shl1	shr16	shr4			
-DEAxu7JvAOUsf2EqiBfYhql7	24	and	fold	if0	not	or	shl1	shr1	shr4	xor		
-E2zr97JlAhLW1hjYiJ7OC2P1	24	if0	not	or	plus	shr16	shr4	xor				
-E9OWh8MnRDGkW205HAqXkDbF	24	if0	not	or	plus	shl1	shr16	shr4	tfold	xor		
-EulAAn1PAJndi6Q4upXntUjB	24	and	if0	or	plus	shl1	shr16	tfold				
-fIoj3NAoydkG34zHSAzcHYZj	24	and	if0	or	plus	shl1	shr1	shr16	shr4	xor		
-fk1maZ9wvAFwBS5UgJNzs0rP	24	and	fold	if0	not	or	shl1	shr1	shr16	shr4		
-FKnD8X3HHYX65ANMUuRhdA1C	24	and	if0	or	plus	shl1	shr16	shr4	xor			
-g0tjQfeZC2e7Umy0Ok9PIoIt	24	and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
-gNwu720sgM2Nr9rRSLMBO3Eo	24	fold	if0	not	or	plus	shr16	shr4	xor			
-GPuHtZKpgRcAoPxTfr6nygJt	24	if0	or	plus	shl1	shr1	tfold	xor				
-gwquNDspAqaLkZKVhV0TBilc	24	fold	if0	or	plus	shl1	shr16	xor				
-hQgF3HKdZEIPBqcgrsqOP8A0	24	and	if0	or	shl1	tfold	xor					
-hYnvPqLgQ0DrlFfkYYqfA6kJ	24	fold	if0	or	plus	shl1	shr1	shr16	shr4	xor		
-JF7eqQaUydOqvtP3iM353y4Q	24	if0	plus	shl1	shr1	shr16	shr4	tfold	xor			
-jMffJRvLCRUBCmgtrPhziiQW	24	if0	not	or	plus	xor						
-kcHCT6MkhuTWOJN5JBdYwVuM	24	and	fold	if0	not	or	plus	shr1	shr16	xor		
-L5ACBOybBWTD3KRAp3eGm3AB	24	and	if0	not	or	plus	shr1	shr4	tfold			
-L6DzWxyXJqQcIv1I5rXHoHFF	24	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-LPiyr8j4k2E1dl7IyUBGyoiK	24	if0	or	plus	shr1	shr16	shr4	xor				
-LsQhdRCKjFB2i7tAgVqiFPUF	24	and	if0	not	or	plus	shr1	tfold	xor			
-lwfgTpn3YiXlmjJVghCGDtuA	24	if0	not	plus	shl1	shr1	shr4	tfold	xor			
-M7TyBcFMA1tsgmoHKYZXltAu	24	if0	not	or	plus	shl1	shr16	shr4	xor			
-mwG6g6nFxhLBROHgvQ7qDBwx	24	if0	not	or	plus	shr1	shr4	xor				
-n0oi7LBqK12dYMBA16D3AUm2	24	fold	if0	or	plus	shr1	shr16	shr4	xor			
-N21AhEThOyrQ9Msrb3jH4gxv	24	fold	if0	not	or	plus	shl1	shr16	xor			
-OEnQJKpGBtH56BxLhat4eb1S	24	and	if0	not	or	plus	shl1	shr1	shr16	shr4		
-Pl9YWqQzCfPomObvfkJYhYxU	24	if0	not	plus	shl1	shr1	shr16	shr4	tfold	xor		
-Pz2SoaoJh5DTw2jGzwkSZ5uG	24	and	fold	if0	not	plus	shl1	shr4	xor			
-qvhedvFP9grmDSO8TxkTsui4	24	fold	if0	not	or	plus	shr16	xor				
-RaABZiKaYsbAwI1lqdlhpYl6	24	fold	if0	not	plus	shl1	shr1	shr16	shr4			
-rnplI6UOgI9U72YhYklaBsrh	24	and	if0	not	or	plus	shl1	shr1	shr4	xor		
-RrBYvXUBKXVtTMrV4iQL5kCB	24	fold	if0	not	plus	shr1	shr16	shr4	xor			
-SnFbPLXo8CmATwRaHOSyU0iV	24	and	fold	if0	shl1	shr16	shr4	xor				
-Td1igUIQLnacB3VDRdKslrUG	24	and	if0	not	or	plus	shl1	shr1	shr16			
-VgKSw57mfS1091AlIUBFjNAT	24	and	if0	plus	shl1	shr1	shr4	tfold	xor			
-WPO6Zjta8TVqfJGoftb1WiOu	24	if0	not	or	shl1	shr1	shr16	tfold	xor			
-Wx5FLAGzG1adkj6PIRq87XRW	24	fold	if0	not	or	plus	shl1	shr1	shr16	xor		
-X53HvuLHFeroOGkEs9TKH7mI	24	and	if0	plus	shl1	shr1	shr4	xor				
-xmTfq8C3RKnQ1X3lrbBaDbB8	24	and	if0	not	plus	shl1	shr1	xor				
-YwBv9WnSlwWePxVeMHTWyaGv	24	and	fold	if0	not	or	shl1	shr1	shr4	xor		
-0IAzRBzSd94vfVB15851x2zo	25	and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
-2qlKmLBsygOpyoyzODyCTRAn	25	fold	if0	or	plus	shl1	shr1	shr4	xor			
-2r1gSUUX0qRjaszhtEc9sCSP	25	if0	not	or	plus	shl1	shr4	tfold	xor			
-4cWJPXUzUwr6DGlSZhmVKWWJ	25	and	if0	or	shr1	shr16	shr4	xor				
-4HJUPYxoStI1dKCACEVtpwKq	25	and	fold	if0	not	or	plus	shl1	shr1	xor		
-7KzmfVFWnQQTLBFlgtp0Oiub	25	and	if0	not	or	shr4	tfold	xor				
-7p1P3kgbbXBDrxMhKyro2IRB	25	if0	not	or	plus	shr1	shr16	shr4	tfold	xor		
-ACOqQBJJiDJb2KQBySykyFfY	25	and	fold	if0	not	plus	shl1	shr1	shr16	shr4	xor	
-aI0wmnW2hPDeduAPS8tHt2t9	25	and	if0	not	or	shl1	shr16	shr4	xor			
-B0TARlW7VybF6dhu8xJEAZD5	25	and	if0	plus	shl1	shr1	shr16	shr4	xor			
-BNYsJqIsa6SZzWGGzEn263xJ	25	and	if0	not	or	shl1	shr1	shr4	tfold	xor		
-bt91fDpFGZv53CZJVsUCFbpM	25	and	if0	not	or	plus	shl1	shr1	shr4	xor		
-C9QXgBAS1JoBnbRWt7nJiHVi	25	if0	not	or	plus	tfold						
-cnBKiIUkbAQyq5fvBgH81a56	25	and	if0	not	plus	shl1	shr16	xor				
-Ertf1Y6e5hSYLVnSrSBIRvuj	25	and	if0	not	or	plus	shl1	shr16				
-esutP16EPvxUTtCazqdRb24e	25	and	fold	if0	not	plus	shl1	shr1	shr16	xor		
-GpL9uEUiHq6TRJr4KjxfWyaM	25	and	if0	not	or	plus	shl1	shr1	shr4	xor		
-GtVn5x5lBucL3GmQyALcKc0g	25	and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
-H5YRSqsq2m1peKBpTZEcD9iz	25	if0	not	plus	shl1	shr4	xor					
-hwU2of69kLbpWRSFs7daIelw	25	and	if0	not	or	plus	shl1	shr1	shr16	xor		
-J7ZdOgfnok8XnEGWEVb3AKFF	25	if0	not	or	plus	shr16	shr4	xor				
-jSDDKN3DEISdRGlSWONy0cm6	25	and	if0	not	or	plus	shr16	tfold	xor			
-kHWFD41lI8v64vSYthCVq1M2	25	and	if0	not	plus	shl1	shr1	shr4	xor			
-KwrmzBjbE2kfBoYrqymZpfmw	25	and	if0	not	plus	shl1	shr1	shr16	xor			
-LfBDn5iAPNP9HeeEoB1dkSpc	25	and	if0	or	plus	shr1	shr16	tfold				
-lJpnOaOZtDOUnuzPK1Lja79S	25	and	if0	not	or	shl1	shr1	shr4	tfold	xor		
-mexBVZBZ05NEnYzpPHWNwmr0	25	and	fold	if0	not	or	shl1	shr16	shr4			
-n4AvykrsBsOGd7bBiSpM1g7N	25	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-nnB2jAXqG8M0wVssaiFYhXFH	25	if0	plus	shl1	shr16	shr4	xor					
-NS0LlnsInitfdtA7N0LjlAer	25	and	fold	if0	or	plus	shl1	shr16	shr4			
-Nvq1AmjKqsMuZQLxMXtT4sEm	25	and	fold	if0	not	or	shl1	shr1	shr4	xor		
-NW46v2gQKpATPp57OBZk7DeL	25	and	fold	if0	not	or	plus	shr1	shr4			
-OTiW9Aeh8NdkpI2PaFQ1yBBR	25	and	if0	not	or	shl1	shr4	tfold				
-pddd2bL30y18bsI4qE2VsJ3X	25	and	if0	or	shl1	shr16	shr4	tfold	xor			
-pHRKahqKfKQLkSamwLzdS7ab	25	if0	not	or	plus	shl1	shr1	shr16	shr4	xor		
-pkMkGpVE96P7M6O6cBMS5r5B	25	fold	if0	not	or	shl1	shr1	shr16	shr4	xor		
-pXu7dGRCfCAt1xjUlKcL1WBQ	25	and	if0	or	plus	shl1	shr1	shr16	shr4			
-qge48iyABQCpaYBGTSmntAWJ	25	fold	if0	or	plus	shl1	shr16	shr4	xor			
-R6mqfGiDfbz8prWFFoVQ7ixx	25	fold	if0	not	or	plus	shl1	shr1	xor			
-s8Q5IoQytHUVBv9FjF8DX255	25	fold	if0	or	plus	shl1	shr1	shr4	xor			
-SHhqLw0zyBXqtbT6NEoMAsPX	25	and	if0	or	plus	shl1	shr1	shr4	tfold			
-t6OJh7I05cPjS037InFqZqso	25	and	fold	if0	shr1	shr16	shr4	xor				
-Tj7KJiAgpY1NAqvWvxdL6ale	25	fold	if0	not	or	plus	shr1	shr16	xor			
-tjxmMYYrxXzYuk14XlLpCK0U	25	and	if0	or	plus	shl1	shr16	tfold				
-UIlpuBGBIAf38hCYHWEdkXuf	25	and	fold	if0	or	plus	shl1	shr1	shr16	shr4		
-ukHbZ59xzXNNZzJWIDaBzrky	25	and	if0	not	plus	shr1	xor					
-UXo0LfcnXHzBmYxBtbmjOQ7L	25	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-v3l3h79f0XOGBJiy69Wuzb5D	25	if0	not	or	plus	shl1	shr4	tfold	xor			
-VWV6ResvTz3DCrT6olCXl8Qy	25	and	fold	if0	shr1	shr4	xor					
-Wj9v4Uz2ssgR2tzno4GQGCSR	25	and	if0	not	or	shl1	shr1	shr4	tfold	xor		
-Wjxh5vyus9oYrAyBLjn0JBPb	25	and	fold	if0	not	or	plus	shl1	shr1	shr4		
-wWLVSpqSqyjchi6fFlgMNAOP	25	and	if0	not	or	plus	shr1	shr16	shr4	tfold	xor	
-YkwEhsHEBAXlEbzmrisRfH6p	25	and	if0	not	or	shl1	shr4	tfold	xor			
-YUd4AB4tXrXFNiDoXKyzxVGQ	25	and	fold	if0	not	or	plus	shr16	shr4			
-yV38NKDQgd9YBAcoZ2zYHyTp	25	if0	not	or	plus	shl1	shr1	shr16	xor			
-YZS6fwRs1W5GvEnBQrhrAHqt	25	and	if0	not	or	shl1	shr1	shr16	tfold	xor		
-z2Nt4mSaMdlZnydFjbCIbc3J	25	and	if0	not	or	plus	shr1	shr16	xor			
-Z3oyAPXiBp1PxZ9eIjyLEHXv	25	fold	if0	not	plus	shl1	shr16	shr4	xor			
-ZKrFcgzivKpyORAMrZf2s7Va	25	and	if0	not	or	plus	shl1	shr1	shr4	tfold		
-zRqhKPxGukpVSlebrTlFcVnk	25	and	if0	not	shr1	shr16	shr4	tfold	xor			
-3YW7REImP05ymzLRiAAr5m7e	26	and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
-5Wvme4w0E9RnXqWdYBOE6XB5	26	and	fold	if0	or	plus	shl1	shr4	xor			
-7Tnck0edgQawnTcqYWAHkk77	26	and	if0	not	plus	shl1	shr4	tfold	xor			
-8f7KYBRobWTTHaBUvCNDrCkT	26	and	if0	not	or	shl1	shr1	shr4	tfold			
-a14AbqnSuNRCHEeIoqzjZP7Y	26	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-a6QIXMkWk62hGeEFICNZ7b4c	26	and	if0	not	or	shl1	shr1	shr16	shr4	xor		
-aNa4ZqkrfOVywDwmGgQ9UcUh	26	if0	not	or	plus	shl1	shr16	xor				
-AWS6H8oSRbGiSJjAcex2mtZ6	26	fold	if0	or	plus	shl1	shr16	xor				
-aZeeH0UmGreJATOMtn2d4But	26	if0	or	plus	shl1	shr4	tfold					
-BbFCtBse5xDYSGlPmN8SwsIj	26	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	xor	
-bNew7VGgCkk4dMHuvqeuce0T	26	and	fold	if0	not	or	plus	shl1	shr4			
-cEnBPn2Ec3oA8Hr3PBArzk4n	26	and	if0	plus	shr1	shr16	shr4	xor				
-CkU3exX12ur2Zlpmy29HUh37	26	fold	if0	not	or	plus	shl1	shr1	shr16	xor		
-cm7T82xLFpr2oJ1CCxZe7sux	26	fold	if0	or	plus	shl1	shr1	shr16	shr4	xor		
-eijmdlAKI3u9mDBeim87DXxQ	26	and	fold	if0	or	plus	shl1	shr1	shr16	shr4		
-Ej8SFJgdKGiN5QsAxQAPEZLd	26	and	if0	not	or	plus	shr1	shr16	tfold	xor		
-f39AiA9C1wjLWY8rH0AdBFig	26	and	if0	not	plus	tfold						
-f6QoxGoxR9UUt2vC0OujVcps	26	if0	not	or	plus	shl1	shr1	shr4	xor			
-Fi59gLA4xuVikZPCxqv3yjQA	26	and	if0	not	or	plus	shr1	shr16	tfold	xor		
-FzNGnsEBAK3lr2UNhBOqljpo	26	if0	not	or	plus	shl1	shr16	shr4	tfold	xor		
-g0qGMVu1Oq1cAE4VkPJgynmJ	26	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-GjJP9K27HUHhRM0yURCHNABs	26	and	if0	not	or	shl1	shr1	shr4	tfold	xor		
-H9TZMaygRQ8OfB5qNxw3StrD	26	and	fold	if0	not	plus	shl1	shr1	shr16	xor		
-hFxRPBVAsIXJZTyLHU6L1A4E	26	if0	not	or	shr1	shr16	shr4	xor				
-JJiCEtqp34Ybz220yV7yodtz	26	and	if0	or	plus	shl1	shr1	shr16	xor			
-k94CSL0zrxgEUEEvpuWXlfAh	26	fold	if0	not	plus	shl1	shr1	shr16	xor			
-khg5EDncmebTWmthbCC5Sm8S	26	if0	not	or	plus	shl1	shr16	tfold	xor			
-lz59HGeL8GLETELVLPtuPUzc	26	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-mFL8r8uCfkuklhY6ttRavu0I	26	and	if0	not	or	plus	shl1	shr16	tfold	xor		
-mWYHXHqY3Zm7PbKCJzgai421	26	and	fold	if0	not	or	plus	shr1	shr4			
-nrkXElG1BrrtpGrfhJGdBs6N	26	and	fold	if0	not	or	plus	shr1	shr16			
-NrqJsfh3QCYkHvJm9fHHw5mb	26	and	fold	if0	or	plus	shl1	shr1	shr4	xor		
-oEYWSBxmTBLa621ffq15YAKm	26	fold	if0	not	or	plus	shl1	shr1	shr16	xor		
-OHtEgObOrf21woKo0BkP2BkG	26	and	if0	or	plus	shr1	shr16	shr4	xor			
-OiOF6ulsjW64kuqNKG6DiolD	26	and	if0	or	plus	shl1	shr1	shr4				
-OO2BCSxxxB0OliaoE6k6onea	26	and	if0	plus	shl1	shr1	shr16	shr4	xor			
-op0elweL0afI3G6H94bkbcrA	26	and	if0	not	or	shr1	shr16	xor				
-ozWMyPYpVou6szFHmhnNcmpH	26	and	if0	or	plus	shl1	shr1	shr16	tfold	xor		
-PeSIQV27JjCFSxrXs1Y9rDtH	26	and	fold	if0	not	or	plus	shl1	shr4			
-pV3ZTXgOO8K2s1sr8rTBTWqv	26	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-pzE5YA2ZbvraNCNigL8uEXmj	26	if0	or	shl1	shr1	shr4	xor					
-q7HX7zWoOQRyt9cVTh4ePpvy	26	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-QBAVODygvJfeYbeF71mbBeZ8	26	and	if0	not	or	plus	shl1	shr1	shr4	tfold	xor	
-QpiwnfxpABLBvMbjUU7pfxIA	26	and	fold	if0	not	or	plus	shl1	shr1			
-QzQmDtVBlLTUiDDfQbj1ITEV	26	and	fold	if0	not	or	plus	shr1	shr4	xor		
-RfE9Z0l3FAiTW8AssJoV5kUt	26	and	if0	or	plus	shr16	shr4	tfold	xor			
-SEYkSp9zCa5mWDFPMIIpdSxz	26	and	if0	not	or	plus	shr16	shr4	tfold	xor		
-UCREpxVshlecdXSTmG9thSl4	26	and	if0	not	plus	shl1	shr1	shr4	xor			
-UQt1ZmoAKTy4lL34SpAELs8U	26	and	if0	or	plus	shr1	xor					
-uRDF7NZQMRX7Blae0kXPLnxg	26	and	if0	or	plus	shl1	shr1	shr4	tfold	xor		
-VB8MDMEy7aqjABHPfhhLOhtd	26	and	if0	plus	shl1	shr16	tfold	xor				
-VuPshLsrR7A3ssAApXzGHSpa	26	and	if0	not	or	plus	shl1	shr16	xor			
-wGlJSWFenDpiwVY2TWbn79V7	26	and	if0	not	or	plus	shl1	shr16	shr4	xor		
-WohZdQeGRqx77npPXPtaogPW	26	and	fold	if0	not	or	plus	shl1	shr16			
-wUZ8b4F8NegALaZlkbA17EeQ	26	and	fold	if0	not	or	plus	shl1	shr4			
-xcR3EJ5phxx9qnMwpHWBDwBS	26	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-XnCbWTnDmIvnjPBAg4GitG3t	26	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	xor	
-XySoPqayOe5rNn3OxD6t8SDw	26	and	if0	not	or	plus	shl1	shr16	shr4	tfold	xor	
-y9zStFtPBxdsaGNZEuieRH5g	26	and	fold	if0	not	or	plus	shl1	xor			
-YBEehB5fAmBHOTcOzEAVBH8E	26	and	if0	not	or	plus	shr1	shr4	tfold	xor		
-0eHBMpeTd4ARWsqzwJ8hZBiD	27	and	fold	if0	not	or	plus	shr1	shr16	shr4		
-1DWezCQiyz318ttRjnwbAXTx	27	and	if0	not	or	shr1	shr16	shr4	xor			
-2z1LaBsqXzcuEvwyWT54IZiA	27	and	if0	not	or	plus	shl1	shr1	shr4	xor		
-3geA9LKT2zFMPofGPWIZTt7N	27	and	if0	not	or	plus	shr1	shr4	xor			
-3RlsCkD3btSZLFXOgfBl1GiA	27	fold	if0	not	plus	shl1	shr1	shr4	xor			
-4NWwg5zWdA2LLzupL89QQp7h	27	and	if0	or	shl1	shr1	shr16	shr4	xor			
-504ztFH7ZxAJaNiNjGLs8dpt	27	and	if0	not	or	plus	shr16	shr4	tfold	xor		
-74SADOvIkyhzM5E1GRxTSvgr	27	and	if0	or	shr1	shr16	shr4	tfold	xor			
-85s84ZpZwsi5Tiw8X3Ce49dB	27	and	fold	if0	not	or	plus	shl1	shr1	shr16		
-8dkxFK3ph49gFJ9gqv8lpdFK	27	and	fold	if0	not	or	plus	shl1	shr1	shr16		
-AdsB6ACUlB9bjMOUhgIuCqZr	27	and	if0	not	or	shl1	shr1	shr4	tfold			
-ArCkeA99oggEkzL4Af9Fv3oM	27	and	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor
-BOVsYI6BlVvIn0RIgdv0kcBZ	27	if0	not	or	plus	shl1	shr1	shr16	xor			
-BZ5KiL4W008tSTSD3dv94rBo	27	and	fold	if0	not	or	plus	shr1	shr16	shr4	xor	
-CukNqV4OgbTkaPjB9xwVohKo	27	and	if0	not	or	plus	shl1	shr4	tfold	xor		
-d9nuB5F3JIYO09BGaVGa6GKw	27	and	if0	not	or	plus	shl1	shr16	shr4	tfold	xor	
-De5oumbO2zwBngb9TCi5UMOP	27	if0	not	or	plus	shl1	shr1	shr16	shr4	xor		
-e4KjdDBdoOGbwKFvJB2CJRKS	27	and	if0	not	plus	shl1	shr4					
-EBvhHRNzMNKMCxCiAgf5170f	27	and	if0	not	plus	shr4	tfold	xor				
-eCztg8PblJulu0MqacQHfNXh	27	and	if0	not	or	shr16	shr4	xor				
-eRgYlNvc3RSu0PdDpPj4mGvs	27	and	if0	not	or	plus	shl1	shr1	shr4	xor		
-feN58Q3DLDaMLPZADETgpsMn	27	and	if0	not	plus	shl1	shr16	shr4	tfold	xor		
-Fkivp57PgaZ7isAEIuPLbxzM	27	if0	or	plus	shl1	shr1	shr4	tfold	xor			
-FRv5JZ2CLLAaLBhBGchceV7Q	27	and	if0	not	or	plus	shl1	shr1	shr16	shr4		
-ftc5QX1ddSUAK2diYstoMOxA	27	and	if0	not	plus	shl1	shr1	shr16	tfold			
-FtnKLW2foLG75d4O8BLr4bAp	27	fold	if0	not	plus	shl1	shr1	shr16	xor			
-g4R7vO2aluTTn2zJV6XXNikZ	27	and	fold	if0	not	plus	shr1	shr4	xor			
-H1mQGhDs1L00lHBbBYuZKN60	27	and	fold	if0	not	or	shr1	shr16	shr4	xor		
-HAIkRDsFEWxBgzSBtKzJN36F	27	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-hb7rOTFCoOVfRR0csuxBBLm9	27	if0	not	or	plus	shr1	shr16	shr4	xor			
-hEOFKxjFjeYQd78GXoBmTjR9	27	if0	not	plus	shl1	shr1	shr16	shr4	tfold	xor		
-hyMTV5HacMV8XBhw4RYeA62O	27	and	fold	if0	not	or	plus	shr1	shr16	shr4	xor	
-i4NrZBKLEuRfBAWT82xnkEzt	27	fold	if0	not	or	plus	shr1	xor				
-IDzAfIVAEJAZ4cAihdIvzCAn	27	and	fold	if0	not	or	plus	shr16	shr4	xor		
-IrU7fzAUEol4erJA6pOljPg3	27	and	fold	if0	or	shl1	shr1	shr16	shr4	xor		
-irv9uyQD7SYoTAr3r78yBYt3	27	and	if0	not	plus	shl1	shr1	shr16	shr4	tfold	xor	
-jumWnnGjPofhRVfR7rNjJQEi	27	and	if0	not	or	plus	shl1	shr1	shr16	shr4		
-lbDBUzh6f4jeTJKw7Dl9FBB5	27	and	fold	if0	not	or	shr1	shr4	xor			
-lYNTkkI3J8hJv93orGmCupEW	27	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	xor	
-m1rjOxwDtqKhyIkE8ppsXnD5	27	and	if0	not	or	plus	shr1	tfold	xor			
-NM1wn6B5OImlvaO57DEL6YEk	27	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-nUtuc6mK8Sa4NqjTWuIYixxA	27	fold	if0	not	or	shl1	shr1	shr16	xor			
-NyqmpoRVygy3DBMNINx2nGRC	27	fold	if0	not	or	plus	shl1	shr1	shr4			
-Oe4HWrI2jiWIscRnu5wDIYhF	27	and	if0	or	plus	shl1	shr1	shr4	tfold	xor		
-pxZ4THoULm2U7OIV63AzYROM	27	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-QkUeCmTk5AKZJIogGJiKBDUS	27	if0	not	or	plus	shl1	shr16	shr4	xor			
-qX3vVCUP2GAFYp7ylekNBxVL	27	and	if0	not	or	plus	shr1	shr16	xor			
-rcXEkaPA7iTRYjDiUyAQztIE	27	and	fold	if0	not	plus	shl1	shr16	shr4			
-sh2C8EFJmfSNoL5aGkVDzN5A	27	and	fold	if0	not	or	plus	shl1	shr1	shr4		
-SZvXwYmrhnFfXsM9x3URFAaZ	27	and	if0	or	shl1	shr1	shr16	shr4	tfold	xor		
-TAAKOaynnFNoFVGfbnMAPpke	27	if0	or	plus	shr1	shr16	shr4	xor				
-Ti9xcksgDTF6fYbQOm02x5oU	27	and	if0	plus	shl1	shr4	tfold	xor				
-TVAOUSCecfzntpMBRujgHj0t	27	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-TW5B75HFAZ6rnSKBNALgyFDQ	27	and	if0	not	or	plus	shl1	xor				
-v9ul1977ryqtUplT8BBUl5qo	27	and	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	xor
-wGHF26eRgv8fbDsXwFWyYlTp	27	and	if0	plus	shl1	shr1	tfold	xor				
-y60tEjNXy4NOQUoCGmVHbYyi	27	and	if0	or	shl1	shr1	shr16	shr4	tfold	xor		
-yvmh57Lkk7NnU5y7OqUXN5SN	27	and	fold	if0	not	or	plus	shr16	shr4	xor		
-ZfBXBq92mem4YEF8KQFstJXB	27	and	fold	if0	not	or	plus	shr1	shr16	shr4	xor	
-zNTlyNRUYAo0oahn9z16mg8A	27	and	if0	not	or	plus	shl1	shr1	shr4	tfold	xor	
-05A30c4glBbDnBJYEo96W8d5	28	if0	not	or	plus	shr1	shr16	shr4	xor			
-2SfejJuB0hUOXsYQHVYAuwsO	28	if0	or	plus	shl1	shr16	shr4	tfold	xor			
-4694xZmN9Wd4FWcKbdIsOnIB	28	if0	or	plus	shl1	shr1	shr16	shr4	tfold	xor		
-4auEfS6J7QPOuF3DhxgDYnPh	28	and	fold	if0	not	or	shl1	shr16	shr4	xor		
-59O8W2WL58ZWSrd3bxL5B7OZ	28	fold	if0	not	or	shl1	shr16	shr4	xor			
-5UquYGNjLYObDyPjC4CCPseR	28	and	if0	or	plus	shl1	shr16	shr4	tfold	xor		
-9HBfqfWBEuB5vfHaHB7T1GqB	28	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-9YXyV2kQ6pPk7tAwFmCMxbJJ	28	and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
-AU3B1pU87fAuY3hk94ISt26o	28	and	if0	or	plus	shl1	shr1	shr16	shr4	xor		
-AYPQ5LARubmMOAokOYF6T4Tx	28	and	fold	if0	not	or	plus	shr1	shr16	shr4	xor	
-bcrQRqlgg6PaDaMLt1XzBrg3	28	and	if0	not	or	plus	shl1	shr1	shr16	shr4		
-BJApVSLMyI9rwJXaaHFdj1we	28	and	fold	if0	or	plus	shl1	shr1	shr4			
-CfV1mzYuHQrMsF05oa7ZPAMa	28	and	if0	not	or	shl1	shr1	shr16	xor			
-cHaRBceSJtRMaE9Omxt4h0d9	28	and	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	
-chhvLl5JSfymZMoDzNIAnrbU	28	and	if0	not	or	plus	shl1	shr16	shr4	xor		
-cP9I65E4VFAgH74LrGdIObK4	28	if0	or	plus	shr1	shr16	shr4	tfold	xor			
-DGO2omh3OoFcdK5zPvh0ti4D	28	and	fold	if0	not	or	plus	shr16	shr4	xor		
-dxBy8PuolBaoApji3NYUW8YA	28	and	if0	not	or	plus	shr16	shr4	tfold	xor		
-EedkycYxAd5vxGmBGSh4fm4i	28	and	if0	not	or	plus	tfold	xor				
-G8lxz2vVpTKbxDB9Ixv0FNHp	28	and	if0	not	or	shr1	shr4	tfold	xor			
-Hpkvz2kEnOmt2PpEGEeA4BJ0	28	fold	if0	plus	shl1	shr1	shr4	xor				
-I3Blf7tnleGbnnyWnuKVvaQC	28	and	if0	not	or	plus	shl1	shr1	shr4	tfold	xor	
-j5Hq8bIyrfEDGLTv8hTR2vCs	28	and	if0	or	plus	shl1	shr4	tfold				
-jMdlXRNDrTf1dCkeNJBdqm4H	28	and	if0	or	plus	shr1	shr16	shr4	xor			
-kmyvZJpBOJGWfpyG1eGOS6iF	28	and	fold	if0	not	plus	shr1	shr16	xor			
-l78SZt0r4eZzH7toRtGM4QOC	28	and	fold	if0	not	or	shr1	shr16	shr4	xor		
-lKfMbySnrmkG69PbCNBgFPw2	28	and	if0	or	plus	shr1	shr4	xor				
-lvrk39O1t5VQGfkYXapB11HL	28	and	if0	not	or	plus	shl1	shr1	xor			
-Lxr4cnDri2BwWv44gASzk27t	28	fold	if0	or	plus	shl1	shr1	shr4	xor			
-Mfe9FAwy82Jiwjsk0f2hVAt8	28	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-MGFt1VA4B1RWTEiAuD0B6ELE	28	and	if0	or	plus	shl1	shr1	shr16	shr4	xor		
-MNSonABW6bIxKJjJrX2jAwas	28	and	if0	or	plus	shl1	shr4	tfold	xor			
-MSk4hFh0M8eMMMJuZqzhBUEo	28	and	if0	not	or	plus	shr1	shr16	xor			
-n765eHmiBlEVOkjGl8tqKFXU	28	and	if0	or	plus	shr1	shr4	tfold	xor			
-oeUf1sB6PEoq7bJissFHs2ge	28	and	fold	if0	not	or	plus	shr1	shr16	shr4	xor	
-P3ijDiww41VeI5qoUT5Q6AHg	28	if0	not	or	plus	shl1	shr1	shr4	tfold			
-PBNnmLmVLpskfHpKtu6wGZ3E	28	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-PhlMXjHwfsrMgEnUicZXAQVz	28	if0	not	or	plus	shl1	shr1	shr4	xor			
-PUJlr3bhw7jRAgGMroPH4vGW	28	and	if0	not	or	plus	shl1	shr1	xor			
-qKDk2C8BFPRyYiKK1F4SOJyM	28	and	if0	or	plus	shl1	shr4	tfold				
-QMrXp5mSt0uRsLriCaI7vbTQ	28	and	fold	if0	or	plus	shl1	shr16	shr4			
-r2c1dwI9Ig5XSkFgdHIb7ZgW	28	and	fold	if0	not	or	plus	shl1	shr1	shr4	xor	
-r5KHe6mOaMN2LqXRhiclbV26	28	and	if0	or	plus	shl1	shr1	shr16	shr4			
-Rah42WwAQXgAABjUqrBpSmhQ	28	and	if0	or	plus	shl1	shr16	shr4	xor			
-rN7idAuqAYCRUn5lGe0BveE6	28	and	if0	not	plus	shr1	shr16	shr4	tfold	xor		
-RZUBCefz0uc7FLQXdoR4KRoC	28	if0	or	plus	shl1	shr16	shr4	tfold	xor			
-Sa7hxT2LRiyKdCtk8IWk3i7O	28	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-Sc0eQsP5Hq8EsOoBz2VAxPXn	28	fold	if0	or	shl1	shr1	shr16	shr4	xor			
-T5hqFxcXYEqL08rfwwb4eCO2	28	and	fold	if0	not	or	shl1	shr1	shr16	shr4	xor	
-TGW8lx0CbU68x1XrDUmATygS	28	and	if0	or	plus	shl1	shr16	tfold	xor			
-TrjT9n7VwiBcXAZeoak8LaAB	28	and	fold	if0	not	plus	shr1	shr16	xor			
-TwGSozLMvyjPuNQVzC0iqr32	28	and	if0	not	or	plus	shr1	shr16	shr4	tfold	xor	
-u0dfNRb8hOoFpeuWAmRwtNzi	28	and	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	xor
-U6EbelQ8ExFk3vuwAMVSfQjr	28	and	fold	if0	or	plus	shl1	shr16	shr4	xor		
-VhptEymQJNsUDSo0oCUiQ6Mh	28	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-wbk6qHrySjYy1GBRzBBTllDB	28	and	fold	if0	or	shl1	shr1	shr16	shr4	xor		
-wbPBH6AutsrtIfNnQJRBSqk0	28	and	if0	or	plus	shl1	shr1	shr16	tfold	xor		
-xB39M2F59bVJjrHbbO3zsKOG	28	and	if0	or	plus	shl1	shr1	shr4	tfold	xor		
-zCh6tieQabGFbyaYM9yXS3BL	28	fold	if0	or	plus	shl1	shr1	shr4	xor			
-ZdytCYGezOBHau91AFziNPR3	28	and	fold	if0	not	plus	shl1	shr16	shr4	xor		
-0a7zPcEKjaIUKf7UWpfMa4bG	29	and	fold	if0	not	or	plus	shr16	shr4	xor		
-0j0bPHVHBcMuYPYblrwHN0Oy	29	and	if0	not	or	plus	tfold	xor				
-1KpCqBhFaI58pH4lA6GKikWw	29	and	fold	if0	not	or	plus	shl1	shr1	shr16	xor	
-1s4BwG83KqASwYGfw6rbo2Un	29	and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
-2VepvrIbhTcOAk03LkTyAlrb	29	and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
-341pwtDCWq8XrTIAoAkxDFl2	29	and	if0	not	or	plus	shl1	shr1	shr16	xor		
-4sUvB3KgeNIemdTXSRpBHA5c	29	if0	not	or	plus	shl1	shr1	shr4	xor			
-7NrXPU9EiXXrMcZLCUGqATtC	29	and	fold	if0	not	shl1	shr1	shr16	shr4	xor		
-8MDTC6UjR2FjAyWqVBVUgLQ8	29	and	fold	if0	not	plus	shl1	shr1	shr16	shr4	xor	
-8skaViAbUPUJlzZfI6t1us9B	29	and	fold	if0	not	or	plus	shl1	shr4	xor		
-A5eZ5QAlrfONHMf4IQriwxae	29	and	fold	if0	not	or	plus	shr16	shr4	xor		
-B81oYDEANBjdIAn8VF2nKG96	29	and	fold	if0	not	shl1	shr16	shr4	xor			
-cJjBquIkbIAwh9S2eLOs2oq6	29	fold	if0	not	or	plus	shl1	shr16	shr4			
-dM7kWBxVJNrdqlTiGJk2PbwF	29	and	if0	not	or	plus	shl1	shr1	shr4			
-DtUDkA5G79184XcKfIRi3QI0	29	and	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	
-ET2YRXtZLHFjCnd8B76z6mdW	29	and	fold	if0	not	or	plus	shl1	shr1	xor		
-ETqsoa2VoSpip0AA5UDrKzMN	29	and	if0	not	or	plus	shr1	shr4	tfold	xor		
-ez6hNHHtU61oDDJKtcO3M8WB	29	and	if0	not	or	plus	shr1	shr16	shr4	tfold	xor	
-eZZoENKT2EHBAKqOtHMkv5eA	29	and	if0	not	plus	shl1	shr1	shr16	shr4	tfold		
-f32AHwXd4lRgqiMPkmn4Yq0V	29	and	if0	not	or	plus	shl1	shr16	shr4	tfold	xor	
-FV0q0oFShNVFBxI4wnorTQGE	29	and	if0	not	or	plus	shr16	shr4	xor			
-hBbBZU5ABBc9YiW24z8DWo52	29	and	if0	not	or	shl1	shr1	shr16	shr4	xor		
-hFlsvTq0KaG8hPcmbF9Tj3u4	29	if0	or	plus	shl1	shr1	shr16	shr4	xor			
-HrJU4oF4ORWH3t09G8lKN76V	29	fold	if0	not	or	plus	shl1	shr1	shr16	xor		
-If37cuI7b0AFx1KxJ6eKdGKn	29	if0	not	plus	shl1	shr16	shr4	xor				
-ivGjGbGKNOGGuSUI4ksYbBdy	29	and	fold	if0	not	or	shr4	xor				
-ja7lhD82t1m7uW6H1zdfcqAL	29	if0	or	plus	shl1	shr1	shr4	tfold				
-Lq9eyXBkEJF8BENaZB332HZ9	29	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	xor	
-LQQ2PMB5zznK2J4LBSWGIw18	29	and	if0	not	plus	shl1	shr16	tfold	xor			
-LtlThGCNi36RURzVGfiAPxQV	29	fold	if0	not	or	plus	shl1	shr4	xor			
-mPXjuNGgR0TBF8APrQCiIihb	29	and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
-NcokndhqfRQJtiWLbfK0p8F4	29	if0	or	plus	shl1	shr1	shr4	xor				
-NPnDVek1XXF8SI0IE9g3SdBS	29	and	if0	or	plus	shl1	shr1	shr4	tfold	xor		
-nY4jUyqp8W07gzAE7wdpfKBU	29	and	if0	not	or	plus	shr16	shr4	tfold	xor		
-oHedEbYxOAE8AL6PtBXj2BEY	29	and	fold	if0	or	shl1	shr16	shr4				
-OiqZiQMAFBKsUbWtzGDxQNA3	29	and	if0	not	or	plus	shl1	shr16	shr4			
-ojEWmKhQ8DH4jV5GSygUR4Mv	29	and	if0	not	plus	shl1	shr1	shr16	shr4	tfold		
-Otu5xmHHsYesNTC5P7fTny51	29	and	if0	not	or	plus	shl1	shr1	tfold	xor		
-OVAkbPMLtmELGwWsnduAXbUO	29	and	fold	if0	not	or	plus	shl1	shr1	shr16	xor	
-p4aBTFEL9McNgIH6RUDKIw9z	29	fold	if0	not	or	plus	shr1	shr4	xor			
-qkoB2O4ieAph8iSOeEQNtISU	29	and	fold	if0	or	plus	shl1	shr1	shr16	shr4	xor	
-RoaNagLXFDAMwIYczUzfFO4G	29	and	if0	or	plus	shl1	shr1	shr16	shr4	tfold	xor	
-SAvgIVYI1VHn7WmYCBpih2vv	29	if0	not	or	plus	shl1	shr1	shr16	shr4	xor		
-SkBk2fMemlYgOTBQYhdi5sNS	29	and	fold	if0	not	or	plus	shl1	shr1	shr4	xor	
-sxnLzQ3kVbscBCS1Ew0LPmBG	29	and	if0	not	or	shl1	shr16	shr4	xor			
-T1SAFv9aOnqrtBlh6t7h9pdE	29	and	if0	not	or	plus	shl1	shr16	shr4	xor		
-UD3HQZTRmb8uIJlhRzorrAAL	29	and	if0	not	or	plus	shl1	shr4	tfold			
-v62mucw71V5hPKxO97NHGYWE	29	and	if0	not	or	plus	shl1	shr16	xor			
-VDeXk0VH1dsWRb4ZXr8LniCB	29	and	if0	not	or	plus	shl1	shr1	shr16	xor		
-VDvuYTNhJT0iv25OzOI6N8qd	29	and	if0	or	plus	shl1	shr1	shr16	tfold			
-VXsoPHenGvThwbadbVLr0PpE	29	and	if0	or	plus	shl1	shr16	shr4	xor			
-w7FKKVOGAPzIXnwlcxELIRPP	29	if0	plus	shl1	shr16	tfold	xor					
-WFPbzMhasA0t3pXFuEvh1njY	29	and	fold	if0	not	plus	shl1	shr16	shr4			
-wq13w3cILDJRmglWEvKycgtS	29	and	fold	if0	not	plus	shl1	shr16	shr4	xor		
-xap7pBD6Whsad8ybBiuuKQBD	29	fold	if0	not	plus	shl1	shr1	shr16	shr4	xor		
-XuVBUoBwFuAH3Akmmi95krYq	29	and	if0	not	or	plus	shr1	shr16	shr4	tfold	xor	
-YXIlaIIMKAsrzlCBSBZbuSiU	29	and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
-zPKB3aJAb3gVNxUob2iC67CX	29	and	if0	not	or	shl1	shr1	shr16	shr4	xor		
-zu3GKVUmNEEYClZGksZEIgrZ	29	if0	not	or	plus	shl1	shr1	shr16	xor			
-zyYxOyqfLlBUjB7jvitF7mjy	29	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-1iBch6ZFtL8wRoFpsCD33uLM	30	and	if0	or	plus	shl1	shr1	shr16	xor			
-4KmDLCMfrxu0SacDtrNAyJ6N	30	and	fold	if0	not	or	plus	shl1	shr1	shr16	xor	
-717boJDLc8Z9FUlDmXaHoR8I	30	and	if0	not	or	plus	shl1	shr1	shr4	xor		
-7BcqW1h9EPrjmXbHRxMAECox	30	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-7nWgr2YLfYhWSkG1zZsol3Cj	30	and	fold	if0	not	or	plus	shr1	shr16	shr4		
-8TBVHiT44OIa5134eSpHxx9t	30	and	fold	if0	or	shl1	shr1	shr16	shr4	xor		
-A3T1qxPgH91YCjjGUhmBCuaD	30	and	fold	if0	not	or	plus	shl1	shr16	shr4	xor	
-aMP1mQI2VKGBl1EBpJMRBLRs	30	and	if0	not	plus	shl1	shr1	shr16	tfold	xor		
-AVr6AbBALjjkWeth3zalvFHH	30	and	if0	not	or	shl1	shr1	shr16	shr4	xor		
-BFH0F4zle7PmC2yibsHro5IU	30	if0	not	plus	shl1	shr1	shr16	shr4	xor			
-BPoGoFVG7PTchFuh4pyAE1gs	30	if0	not	or	plus	shr1	shr16	shr4	xor			
-BxRL4LHmzKB2wSAQJPgv779o	30	and	fold	if0	not	or	shl1	shr1	xor			
-c4mMfXghGRY32COka0qtaV5I	30	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-cjoHxEqTWGopN5OARGVv2Dbr	30	and	if0	or	plus	shl1	shr1	shr4	tfold	xor		
-D2NoTEBpIoTpm57dxOIfBCiC	30	fold	if0	or	plus	shl1	shr1	shr16	shr4	xor		
-eEhOXI1bkVMhY5DyBKhzjVud	30	and	if0	not	or	plus	shl1	shr4	xor			
-FlTOPsOsBuutfJTutvgW3KtE	30	and	fold	if0	not	plus	shl1	shr16	shr4	xor		
-fwOb2FNXDwA5TXVD9NhvQgjI	30	and	fold	if0	not	or	plus	shr1	shr4	xor		
-fWSCxDbrCika53wdv1umMD8j	30	and	if0	or	plus	shl1	shr1	shr16	shr4			
-G92MMM05B9RqChNAcL6jjCFN	30	and	if0	or	plus	shr4	tfold					
-hhAJCxBTzA7GibfMqNPFgAhn	30	if0	not	or	plus	shl1	shr16	shr4	tfold	xor		
-jyHB6ZDswJYro4c5UToUU86Q	30	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-kcj7IS7uu3PnusOMKnxx4h9L	30	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-kKqsGw7XW3IcOqI42VNB2dvy	30	and	fold	if0	not	or	plus	shl1	shr16	shr4	xor	
-KLBJb6N3Ba4Oay277lbBEqBw	30	and	if0	not	plus	shl1	shr1	shr16	tfold	xor		
-KrFMFXc6LC3JnDifxUKQiZfV	30	and	fold	if0	not	or	plus	shl1	shr1	xor		
-KwosIGFz2MC4gAA1A0v3Sorq	30	and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
-LaF1RFjbVd4dCFYsBByjdup4	30	and	if0	not	or	plus	shl1	shr16	shr4	tfold		
-LLzMQWbCmrKFcDyQvSyb6lIs	30	and	if0	not	or	plus	shl1	shr16	shr4			
-m4BxFCZADjlzG02wQU8MKgWE	30	and	fold	if0	not	or	plus	shr1	shr16	shr4	xor	
-mLiUuFhnSpXXUl4vIbrSSnR3	30	and	if0	not	plus	shl1	shr1	shr16	shr4	tfold	xor	
-nCqOty64u9EVS6A1WhwQTHZQ	30	and	if0	not	plus	shr1	shr16	shr4	tfold	xor		
-nwoIiBMyEADYJIdLk66QF0OF	30	and	if0	or	plus	shl1	shr1	shr16	tfold			
-oAbVtdsE2NYjsj5jnOUrQS16	30	and	if0	not	or	plus	shr16	shr4	tfold	xor		
-ogyNZG9S5QQW6rNrAu2iWAWA	30	and	if0	not	or	plus	shr1	shr16	shr4	xor		
-Q8YocBDMOSeqpGkbBoLurf47	30	and	fold	if0	not	plus	shl1	shr4	xor			
-qjGXQxcKZaQElQtsxWU1mHVx	30	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-QOlsEUiQeDCAWKdpNuPD5BtW	30	and	fold	if0	not	or	shl1	shr1	shr16	shr4	xor	
-QSAgZ66fBTNA6MCoPFz1V2A0	30	fold	if0	not	or	plus	shl1	shr1	shr16	shr4		
-qUQ2W23q426eFaVlwBXCpnNe	30	if0	not	or	shl1	shr1	shr16	shr4	xor			
-rbX9vdKSwNV4F2phg8jLeS4A	30	and	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor
-RebEil4LOdg2qUc0CR8XbYBx	30	and	if0	not	or	plus	shl1	shr1	shr4	xor		
-rQ0k5A9a3jFTrlJbem3iPzxF	30	and	fold	if0	or	shl1	shr1	shr16	shr4			
-TfekIjB7YMtubGJBu3auAFjI	30	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-tk22oiJlooYl2fHiQryXAxkM	30	and	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	
-UgUZG0mUuRuJN7KWXB5sL6Dk	30	and	if0	not	or	plus	shl1	shr1	shr4	xor		
-UQ6I2w6tB9WKl0lRqVD1IR5i	30	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-uvBlVGoxmZCMZKuAUicaglDZ	30	and	if0	not	or	plus	shr1	shr16	tfold	xor		
-VmUGzkZGnW9DZ0KXBC8SAkp4	30	and	if0	plus	shl1	shr1	shr4	xor				
-wiaE0ncSxYCBDKq42eioyABj	30	and	if0	not	plus	shl1	shr16	shr4	tfold	xor		
-wxp9pAVpVPbLEPsq8vX7DJbz	30	and	if0	not	shr1	shr16	shr4	tfold	xor			
-XDCqJ4gdExmS6s6e5XgQdv1B	30	and	fold	if0	not	or	plus	shl1	shr1	shr16	xor	
-xOqIlUfuwAAafkqNnUtqtH6r	30	if0	not	or	shl1	shr1	shr4	tfold	xor			
-xumCUY8Z0Zmoenzzfrd8ofH7	30	and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
-yj2zgG06RB9gbmIJ0HAGUu8i	30	and	fold	if0	not	plus	shr1	shr16	shr4	xor		
-YlSyaBNBYcVNwpgeIQMXmESw	30	and	if0	or	plus	shl1	shr1	shr16	shr4	tfold	xor	
-yzm2BQvtY69E4XFsaRmdFwlw	30	and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
-ZAuq8b6h9wn7utDxajGN6oCC	30	and	if0	not	plus	shl1	shr1	shr16	xor			
-ZeQZajaTCQP1AXH7J0X56G5P	30	and	if0	not	or	plus	shl1	shr1	shr16	tfold	xor	
-zX7zUAUY4RTfO5oYhtdzYDLi	30	and	if0	not	plus	shr1	shr4	tfold	xor			
-												
+7APPtB5gi8AF6ZWCoaW7yYFE	3	true	shr4										
+AvFotXRDTN3g7OByVeLu8mVT	3	true	shr1										
+CVyQnLDQoTIQHhfVTgPkyoNt	3	true	shr4										
+JAnTUkrWPNTDoC9DiDAWaQR6	3	true	shr16										
+PmqXL6W9MI98hNRBfAohg2x8	3	true	shr4										
+RqzFAP3C2fYRftkcVHH1KBTX	3	true	not										
+SP8ODmLf6Tcc1RR4Z1trJgjv	3	true	shr16										
+UNq9zRB7pCcFYPvmRb9sXj8L	3	true	shl1										
+Y0CVh3mOUrOCjasrGhhLvpec	3	true	shr1										
+YMcCEmSyNz1q3yYALFv0wYJb	3	true	shr4										
+YSjRgDS70mwFzLNbSncQ3fAT	3	true	shr16										
+a38RIJOCe0ywBtcwFVJQAniY	3	true	shr16										
+am2WL6uDxxrbB3H4KMuaEA2g	3	true	not										
+becBqu88u1Wc3UJTyu8W6Bxy	3	true	shr1										
+fSh2TKA3tAi8i1NnUlyaxK9L	3	true	shr16										
+hTWGOxiJxtwb5oxzAbVpnO5A	3	true	not										
+kyAEx1okQ3jXJHd8tTd78pg3	3	true	shr4										
+l5LFoa3jxB5KO3912xSHUMYn	3	true	not										
+nAvsC5sIcytNQYbHFfXxiMO1	3	true	not										
+xpXKKB87cT6B22YuBeDdrIvS	3	true	shr1										
+7mHdUXAl2IvVY6wg5rBU7UaZ	4	true	plus										
+9AZfN7jccK0OWLvghAttcyBU	4	false	plus										
+AB4pf6xiSLVkDtSnEjRDVJ4c	4		not	shl1									
+BriS5SvNMwDV5BOSe4ybajHF	4	true	plus										
+FOVFAaBIUJCGtPzxp3WV0GqD	4		or										
+G3BL6ASC0CB4uC6BwWUYcHn1	4		shl1	shr4									
+HLCnYONzBtjFR8eMumTGeZtD	4	true	plus										
+IBCmn3ptlfxsea29MkhnNThl	4		not	shr4									
+NLyHiKUTETzjj9NoYRxXfIaF	4		shl1	shr4									
+OXzHwS7ygIdbBDAfjWeyPEhz	4		shl1										
+Vf28BBhGwHZlEqe8Aoftjiqj	4		shl1	shr1									
+ayBP2sXeBV7Y8LCHYL2kDBdj	4		shr16	shr4									
+e6sjjxOOhNSUVlSA68vySQAc	4	true	plus										
+lceXW7V1Apc1vIXnKDLOkLEm	4		not	shr4									
+mhqslxdCnqBWxhzBftAxKSOx	4		or										
+qDOKXxQmD40hbP4ydisOS0iA	4	true	plus										
+rsKwatBDNoRXk9ny9e1ASL3L	4		not	shl1									
+ryqmt94EwMe7JgI0lwzosZRk	4	true	plus										
+sqhWBMddOsLvLuP8j4TWg2Sr	4		not	shl1									
+u7lAhoFlcr7EhcVTzbMtJkmt	4		xor										
+znmjLZfiCsa4Q78Aw8YWITBW	4		and										
+0iBSfrbRJDTKyg9QH6xFuF9O	5		shr1	xor									
+1uuKygHPbyfdSaV1LMd3dHst	5		shl1	shr4									
+8000zn2szOQZzqPLhfgN3hcB	5		shr1	xor									
+ANJNonzcOdVAP7UGtXWWdCVB	5		and	shr1									
+ApBMjlJlVxpHsBZSnxJnCNhk	5		not	shl1									
+BcBzHuKlV1rhoOLaK0S9Xae7	5		or	shr1									
+LziOjMAAncDUN0qbZgGB6eAM	5		not	plus									
+NzyxxEmIcF7nBJATpPjKn2Dh	5		not	shr1	shr16								
+SlWyJTpW9VJWHjWGCmeWhmpc	5		shr16	xor									
+a0K5PRa8FAYzlBW4ftA5cmO8	5		and	not									
+gv5Hdp32gf8fuTFs4hqfOEzW	5		and	not									
+iOkfPemweMQzY5G2cmI2UB8O	5		plus	shr1									
+kJtKN12SbdvGBJrJg8HkCZkm	5		not	shl1									
+ke91dsNocsl9qyiyPVOq95WJ	5		shr1	xor									
+mZa08wktf3imtnSXFdCB33nM	5		and	shl1									
+oBWlSced5OX54fn7kYf85Pjh	5		shl1	xor									
+pZJNEElNbKdoaOw30sHwx8kw	5		and	not									
+tMKJajjPjA3A0DECpBtlqxBW	5		and	shr1									
+u8Z7Aha0hA588ZbMSJlaeocS	5		not	plus									
+uFGNQoM2NzR2QHNJHZ94XoO8	5		not	plus									
+0AL3oBAjtWtr1dN390wn6AvP	6		and	not	shr16								
+0DVhhB4yWXi09FfgylBv7Z3a	6		xor										
+3sczY10KJtYDKb8qe80sRZ3J	6		shl1	shr1	xor								
+BCmbkB9BfL4auoORmz7Gpy8k	6		if0	shr1									
+BF8UY25zJsRRNG85YWJag508	6		shr1	shr16	shr4								
+BOzBLMZnkKSBtkOQkkw1NwCw	6		or	xor									
+DqjBlHGilXEqrZTqJalW2QLW	6		plus	shr1	shr16								
+IlkgSbC01uYWiNbs5FfVkwtj	6		or	shl1	shr4								
+JJ1jyGaPK6Z7wHHgebEY3Izc	6		and	xor									
+OjvkYBiIs1WkRENJcFU1v8Xm	6		not	plus	shr1								
+PRojNseWqAAsvtoFQaRlIxeW	6		or	shr1	shr4								
+QfSu03tywETVGtAvABr3UZeC	6		plus	shr1	shr16								
+V3FkUhBhtlhtA14reurxulfW	6		plus	xor									
+VMTl8scLSM254zQLwJIDwQ6S	6		not	shr4	xor								
+YccCewcQebIb3ZeNsOOLy1VQ	6		shl1	xor									
+eFUd5TnubO7be453xT8Mm16B	6		shr1	shr16	xor								
+enl7KhBifRLpBfL4P9mQtNRV	6		if0	shr1									
+gJARJFquOrztWBLGJsx46l9Y	6		or	shr1	shr16								
+ggwWrdvl39AAYf2PteWnFnYz	6		or	shr16	shr4								
+lviCIQ5DSB5GBjXHdJ5jpdIo	6		plus	shr1									
+2jdFE4FwBjyuAxIna8rnHAAw	7		and	shl1	xor								
+AHxzWk9Pa1jJt37aG6BrID4l	7		and	plus	shr4								
+BFerQEWOCiHKWHpS7m4K76fC	7		and	shr4	xor								
+BxiQiAuYv5r8UMp0oBgqJ3jc	7		and	shr4	xor								
+DgiBQnQOxwKAO4lMIatKnBg5	7		and	shr16	xor								
+Ebhu1RcuX1EmCIL1JlLhx709	7		or	shl1	xor								
+HueDjA88EIlPAHgaxbIIy9Ue	7		or	shr16	xor								
+IK5UtQ33sF3eZDDkTyPUd9uD	7		if0	plus									
+JEBKPhxlcYb6dxqLA9NcsZSj	7		plus	shr4									
+NTyfPoaB5DskiAo36rQBQlVQ	7		and	not	shl1	shr4							
+PbTwKptIrQGB5txJVneFIaXb	7		or	shr16	xor								
+SHEBeId0nHCUV7vq9mEgDOXB	7		plus	shr4									
+aQARuyYNvSAsZ3I0Kcg7cD02	7		plus	shl1	xor								
+aWkjmd8GLJAtfC5HtIUt5LMa	7		or	shr16	xor								
+dImy1gs0dVfvdm2GikBzAqB8	7		and	shr1	shr16	shr4							
+eWUkBzlYBTcJYPbZXCo9c8KL	7		not	shr1	shr16	xor							
+fVxI4KBBY6XTamB75HvwIaIF	7		plus	shr16	xor								
+frA5Ve6CtO3cnFQ7ZsAKk4xf	7		not	or	xor								
+gVZJ6BTfVijlILJA5E32QgA9	7		not	or	shr16								
+lzD8br6W5z5BZLw9fqRJkSpo	7		not	shr1	shr16	xor							
+00ekCyVs92qtgSArgbO38JUy	8		and	tfold									
+351xL7gCc1JgeaYkJ3VFFrjc	8		shr1	tfold									
+35wFfGIL4PSlXjGheo7ZGdjB	8		or	tfold									
+3EyKL57xZSIjoY4A8NYLmete	8		or	tfold									
+6k40o787CXvfjxA8Yh0x77xa	8		or	plus	shr1	shr16							
+73tCTDXxnet65m9KSFIBAlk1	8		or	tfold									
+B0BZi2I8ktIPnZe04WAEc8rO	8		and	tfold									
+BALUoxEIYJxJ9DlSS7N2tDzd	8		plus	shl1	shr16	xor							
+CDkuoMll64zetq7AnFbVTkLT	8		not	or	shr16	xor							
+CKAnAanAl2BHDq4gOBF27VJB	8		plus	tfold									
+GdaPK9aCAhD7zyYEyF6zEl13	8		and	not	plus	shr4							
+HNQ6YguciuTe4ExABIhWlzzm	8		or	shr16	shr4	xor							
+Hbnf8TfJkIQ5jmerMsi9DlZw	8		and	not	shr4								
+IPlJRPAPYMRghogaicFG2WQp	8		not	shr4	tfold								
+KeeZW7uywjwitbtXHbxp60De	8		and	not	plus	shr16							
+M1BCZBhF1UABf4dB4sGVoIWi	8		not	plus	shr1	shr16	shr4						
+NjDIlvMZ1AW73QBKg4IgzJ5R	8		and	tfold									
+RoPJXx5lQb0v97BRnPBdAiBS	8		plus	tfold									
+SQNA8p9hjWd2vYhEYTp50rvD	8		and	shr16	shr4								
+U0tI0TMYtJ0mEC3akY2FEQJW	8		or	plus									
+Uie4DwXdiCHXJc9rHKHucKJG	8		plus	tfold									
+aGYz0mXsNUioHQB4SCAePUeb	8		plus	tfold									
+aKzrlL3WX1jpsjaDhmx7gpL1	8		not	or	shl1	shr1							
+ahWbfxjrs6FOXZZvIbZpxm2B	8		not	plus	shl1	xor							
+bRXC89Yb4idYFG5clJByEQZ4	8		shl1	shr4	tfold								
+bh9pia5otVTgW9fzTLaCE0Mw	8		or	tfold									
+enxdtGsXBGkJT9PBgRDLpALp	8		and	shl1	shr4	xor							
+iJZaMQwq8aDGc8KBoREqZLQ4	8		tfold	xor									
+iiHBZTm22VX3TuqNSXYF7va5	8		not	or	shr16	xor							
+l0eEUoqieQN1sSoylzmFjcvx	8		not	or	shr1								
+nWpqAC4w30ANZIyHWg6AWIYR	8		tfold	xor									
+nekI8cHWnGlBB34AFj04Ayoh	8		shl1	tfold									
+oSm8WTV70IogHnwmvppDCzYc	8		if0	not	xor								
+oWKCrYhOrPtAWwMXtiMZ7DsC	8		plus	tfold									
+pd2XDCa3ZgkNqJlzm12wGgmC	8		plus	shl1	shr16								
+tsWRdq9q3jG5YgEY8esbFcVb	8		plus	shl1	shr16	shr4							
+uRnr3XnBa0cvfNIZfpsbPulC	8		if0	shl1	xor								
+w2sAHPWZAL1uIVfOyjvw8MyE	8		not	shr4	tfold								
+wNHrLUTkYAl11vR2w31ueG1h	8		or	tfold									
+zeV4Lb8EG3LndjAbco7m4CUE	8		and	if0	shr16								
+0zsKJFD6XFpbX8XTZY66rUfH	9		or	shr4	tfold								
+1OnJyXR5XtrYzKKssZG4CqEZ	9		and	if0									
+68SaByE885qoSG9mHjHqCCAS	9		and	if0	plus								
+8C8WVq4hT5izXZHoUVil3OsH	9		or	shl1	tfold								
+BO8C7115lYBT6m8Atzze9Gic	9		shl1	tfold	xor								
+BZDafOGMfYZBnmKhIaR6aBjQ	9		or	shr1	tfold								
+BcJ2gstSEbQ3pnnzjCnkhnaA	9		not	or	tfold								
+BzJWhbbaWG7DdPe0cRJbfHRi	9		and	if0	not	shr4							
+DCZtsyuTBmRhm5w8KLurB9Ee	9		and	if0	shl1								
+DfsROmNE34MtRjmLJfD2BvKM	9		shr1	tfold	xor								
+DmdF4St6QRksXNNwnZBfg5hL	9		if0	not	or								
+FeI25TlLB549X6tijBqsfuT5	9		or	shl1	tfold								
+GdbhLToogSXo11Js3fUzPA08	9		and	if0	or								
+Gkf57bwOXpOMxybML3GQPrpR	9		and	if0	shl1								
+IEftbylrc9wrvgJ9ZxGlWIBl	9		if0	not	or	shr16							
+IlPUho5q2dM1hPQxftnKo5ia	9		if0	tfold									
+JuR5FhAYS1ycFgvBFZN9FUQP	9		and	if0	not	shr16							
+KGYqL8qTyysP44VA2jbr15V1	9		and	shr1	tfold								
+O0qKdWZviAFudpJsZkNAT9wB	9		if0	not	shr1	shr16	shr4						
+O0qcpSuqJ7y5VPekJUcJFnlX	9		if0	not	plus	shr1							
+Opp7HzPF8difPjz5xsAQnA5w	9		plus	shl1	tfold								
+P1YkcxASbG5NO5LJzoMnBYvG	9		plus	shl1	tfold								
+PrOcS14DC8MuGLovNHdSHr8M	9		and	if0	shl1	shr4							
+QjpwZruLoPFMN5uJ70ha8lcU	9		or	shl1	tfold								
+RfsnqRTMGejP6BdKYwnMgwWP	9		or	shl1	tfold								
+SQIEGxGuikqJhAuRgNEuPI1m	9		and	if0									
+V2kKchloiUa82iNiRD7y8mYj	9		shr1	tfold	xor								
+XHCeainpmwJKRjr0GhgWExQt	9		not	shl1	shr4	tfold							
+XuLIAU7PiOPkAyHdgqBbfqTl	9		not	shr4	tfold								
+XvTfLyhwRuxIVrFS8EezTWAf	9		and	if0	plus								
+Xw1XxxRgchrBWAAPs4ccaXyw	9		and	if0	plus								
+baHzv4udFPBYsjGzwLRkvb3E	9		and	if0	shl1	shr4							
+d7AFqP8nCRHm3aOVX0AEkqap	9		plus	shr16	tfold								
+iKdZtvxrUBouUiUlXZibh2Gr	9		and	if0	shl1	shr4							
+jY9U9FASjXthAAPPdw2DEqXc	9		not	shl1	tfold								
+lTKwBCXMFAURDqDugltdTxEA	9		if0	shr1	shr16	shr4							
+ms9s4RAOzs6JwbUhjBaEYjki	9		not	tfold	xor								
+neFR56l5LZ2FZmRITZoWCGyh	9		if0	not	shr1	shr16	shr4						
+to4pGgE1ByxJ87cAqpMVL3lh	9		and	if0	shl1	shr16							
+zi7Xwu4Q24YHMvBHqze0s1QT	9		plus	shr16	tfold								
+0u7r8G8tAcmObvxhD5NMuXAk	10		not	plus	tfold								
+14VyMxLkRULNFBqmwKKLhZc5	10		or	shr1	shr4	tfold							
+6Qu1ZuxaQbDIZaYLzNINdldh	10		plus	shl1	shr16	tfold							
+7XpkvsJyurmnlkoGMVtwBTw8	10		and	if0	not	shl1	shr1						
+9WwLi9tOyKYMT84dPwEEW6K2	10		and	if0	or	shr4							
+ArHzdG5uCXueK7PP2EI7UrDY	10		and	if0	not	shl1	shr4						
+B5WuHKGnLGLZsGAkObAYPk2Y	10		and	if0	not	xor							
+DrnWtTfhahL1TFtyK25ToBs4	10		and	tfold									
+ElIHZnt2vxDRoIZAYC4fS8sk	10		and	if0	plus	shr16							
+FRIMzLZ8A6KrGdYyCwRU9lSW	10		and	if0	not	shr16							
+FRiuerITybDkpIRsR8XQQAow	10		and	if0	shr1								
+FUb7tYVBGoOVLIBpTBBrjwhF	10		and	if0	plus	shr1							
+GWE60w0lohheUuOrrkAyPHvI	10		and	if0	or	shr4							
+HhdcXOUgO5PUkpm1nPHSxFBc	10		and	if0	shr4	xor							
+Ib4yaqKYPdVF34vBB2rONVQI	10		and	if0	not	xor							
+J3n8Za55ReApri1EBXaYcA71	10		shl1	shr4	tfold	xor							
+JNAir17BSdM3mxlI4RU568YH	10		not	plus	shr1	tfold							
+KGXWgRmgJt05huLNEgSWeloM	10		and	if0	shr1								
+KJQc3UaKGZ81TLYMTayVAzke	10		and	if0	or	shr4							
+KLHPC0iXj0sS9dAdv22ditbf	10		plus	shl1	shr4	tfold							
+KQNg39TIGwemLdhVLb2AaXWq	10		plus	shl1	shr4	tfold							
+NRieEaYLlUAAlzqBXJbMeX5N	10		plus	shl1	shr4	tfold							
+NTCbLo8XRc1tAG0gLrL3cpIy	10		not	or	shr4	tfold							
+OSVTbbCNBtloffFByvjZPT4h	10		or	plus	tfold								
+QzCP14emE0Zo7JuRIqHxp3oD	10		and	not	shr1	tfold							
+WnopwIhEXVk2N3UGUQkzH8Tz	10		and	if0	shr1	shr4							
+YukL37CjjJAR0uc4cnsE3Pld	10		shr1	shr16	tfold	xor							
+aD2uu53iNOfK3NLOZTYt2hH3	10		not	plus	shr4	tfold							
+b8gs0uX00iBsWl4LmBGKA07F	10		if0	or	shr16	xor							
+cKXWmrjF86GAlHcIucxntcZN	10		shl1	shr1	tfold	xor							
+dbH8mp3ttAADlP5AdncnTQkS	10		if0	shr4	tfold								
+e5vw3dSzEljkgTQpPkLolJDT	10		and	if0	not	xor							
+eiqi10YvXpZ8xIOxt8A1XcFH	10		and	if0	not	shl1							
+gzvVF20REi6hxApzwRevAbLR	10		and	if0	shl1								
+h6Wstd8PXBAqXAQwJErETbAx	10		shr1	shr16	tfold	xor							
+ndXOoYCYWo6Km91jULJCArvm	10		not	or	tfold								
+qxCZxVNMXvChOBykz04PriYF	10		and	if0	or	shl1							
+uN543poGfU52PC9y788LdQZY	10		and	shl1	shr4	tfold							
+zEqW0Tc96XE13B89yjSBikSD	10		and	if0	not								
+zlcSK8AIRJ4KUsDKteAwbMJv	10		plus	shr4	tfold								
+30CpY2tfn6JH6eX4Z4V4vSBf	11		and	if0	shr16	shr4	xor						
+3EnhxYXQvMOtWOciJf1ZAoaY	11		fold	or	plus	shr1							
+3MIF4s5spYs5F3CXtiDIqRwC	11		not	or	tfold	xor							
+7BnhHH1VNoP9OweuJZB9oqFB	11		if0	or	plus	shr16	shr4						
+8kKjBYZqJsf4WfnpB41BEg08	11		if0	not	plus	shl1							
+8zUhLcTtcXNWjfIDMUeAUSXe	11		if0	shl1	shr16	shr4	xor						
+As4ZoA5wNKLQE1JmCwjWPlOr	11		plus	shr1	tfold	xor							
+AxYyqCfGR3XV62jL3kqrvWub	11		or	plus	shl1	tfold							
+FFoh0g4CxuuvR7Uf2Xgtc7Bz	11		and	if0	not	or	shl1						
+H9AXSW1AKUhvn0XMHKU7X1B6	11		fold	if0	not	shr16							
+IWqgG1OLRAHphXRn111QTUX6	11		fold	not	xor								
+IWwev8MTY3Xi4BZnVXttzoV9	11		plus	shl1	shr16	tfold							
+JEhOGXfxTOuYKw8qpDjWLc7C	11		fold	not	plus	shr4							
+KYk8oiJEbj4MlVGlRTOi3tV6	11		or	shr4	tfold								
+M8TAMbpBDKTtBNhO7PTdA3vT	11		fold	or	shl1								
+MFgY0UB4gNEzA3pWm13Oeiv4	11		not	or	tfold	xor							
+MHRVd1J9Aup3YDYMVbMfo0ix	11		plus	shr4	tfold	xor							
+NO7h126aREmF2B4QMt06Q47a	11		fold	not	plus	shr16							
+PoRA09jK52QWV1w8QEIBpwtY	11		or	plus	shl1	tfold							
+PsyeSbXDsWnuofRAGlFlYvM8	11		plus	shr4	tfold	xor							
+PzrXc0hvnzoDpo3BM6NMGhBR	11		fold	or	shr16								
+Q3jpOgAIAyBZVzeZ4CfD7eLL	11		fold	not	shr1	shr16	xor						
+QPEzqlvpkVyEmRZPADmjWaDf	11		fold	or	plus	shr4							
+RVr6BMXBjNyZprWznFTTqLUn	11		plus	shl1	tfold								
+S1gxZe841hMUnljoiqM3LCPl	11		not	or	shl1	shr1	tfold						
+TBtXZdbFCJwTLSs79rUNp4RI	11		not	shr16	shr4	tfold	xor						
+Tj679T1Sy2jMWVUto7R7ihpO	11		and	if0	or								
+UmMJ5GpDixhlXFHD31LVQnfQ	11		if0	not	shl1	shr16	shr4	xor					
+VpCpGQOtfgMKetEGBA0Le0hj	11		if0	plus	shr1	shr4	xor						
+WCUfWVg7QPvcDwzBLw3oA6Qr	11		fold	plus	shr1								
+YZ7gpAfAhnDk79qioJjJRYqe	11		fold	if0	not	shr1							
+Yrn5Y021QCvIpq11RtjNxZDp	11		not	or	shl1	tfold							
+a9NvFALfmYtXBn3dq4Di4b4f	11		plus	shr4	tfold	xor							
+aVmxKKpTTZL3TMMWLUyROUnD	11		and	fold	or	shr16							
+bQXUIzLQVHpXV1y8B2kpa7xq	11		not	or	tfold								
+bmBFkYxPQh5SMXkvKNDk9J7C	11		if0	not	or	shl1	shr1	shr16					
+deDYIBKwyAUKSrvfFsAmq3qb	11		and	if0	not	or							
+dh03HW6xoBDJjxZKo1cjt3P6	11		if0	shr1	xor								
+hV5GnPPYiyWDFOlE8iJiZxWe	11		fold	not	shl1	xor							
+i90wcXzUW0WS4U0wvOfEAmL7	11		fold	or	shl1	shr16							
+jjhTFvldYwpeHtIyAQImReGO	11		and	fold	not	shr16							
+jp1Fn1LbY5mc9BzqXIVupDcw	11		and	fold	or	shr16							
+kAGMHjD1liRWlKeUCbfDpMJN	11		and	if0	or	plus							
+kczEVU1eNJ2xoKGAnKTzd45j	11		if0	shr1	shr16	tfold							
+n0addiw5SvpjxAUyuWv86k2v	11		and	if0	not	shr4	xor						
+n4AAjAtbbocK2ui3Q8SFIjyX	11		if0	or	plus	shl1	shr4						
+pqGaYMIxvgzBKOOkK1uM0uXP	11		and	not	tfold								
+rZlZXDzXJ4Bw7QPEabcfpPBt	11		if0	or	plus	shr1	shr4						
+tANmw3wSX7g1m2IRrRBasJJN	11		or	shl1	shr1	shr16	tfold						
+twTfUmKj9ODPRT5IDaToplVg	11		if0	or	plus	shr1							
+uBzyXfjZvWP1tWaZ9o2AZfe6	11		if0	plus	shl1	shr1							
+v7XNYyiVupDCmGfaFUehEe3k	11		if0	not	or	shl1	xor						
+vAmS4BYBavCIpfE0Lo2gucN0	11		and	fold	not								
+vbSj5f9W22zN7vu9NuB1pWPx	11		if0	plus	shr16	shr4							
+vkoAoE5VvLsMKlrCItJgbDA4	11		if0	shr1	shr16	tfold							
+wolf1xqwp6yldQbg16ctRf3F	11		and	fold	plus	shr4							
+xAsg91OOZAJb7TTCAO1ikyLY	11		if0	plus	shl1	shr1	shr16						
+xsYZzfQYJBZ0h88lWBqAuYud	11		fold	not	or	xor							
+yMGCpcoe0ByVMUXsAtSaKmmf	11		if0	or	tfold								
+yaiYAB9zqdAoaARahyOhrdm4	11		fold	not	plus	shl1							
+12vBXtKHfJS2ACK1AaU59UJ9	12		fold	not	plus	shr1	shr16						
+1JNlI3TwTt0BcqX5zCv956B4	12		if0	shr1	shr4	xor							
+3C7P71s7NkEHVFYLNMsNsdS6	12		fold	shr1	shr4	xor							
+3XwYj7rXp3iPT7kdmJbVoJEM	12		and	or	shr1	shr16	tfold						
+4xPYlRhj3i1eeT4oRdqOjEZo	12		fold	or	shr1	xor							
+5rflfKASNNpxIxn6Jv1iHOkR	12		or	plus	shl1	shr1	tfold						
+7jEzevrLe07nS6WTkdmf7KME	12		fold	plus	shl1	shr1	shr4						
+92P9VwZlwZqnJNcFy7QAUXAp	12		if0	not	plus	shr16	shr4						
+9pHljy307wyqrDWhApufbyGu	12		fold	if0	shl1	shr4							
+AusCGesWlcwDVSAhqpgONxwm	12		fold	plus	shl1	shr1	shr4						
+BDaoKjox0Agmd3pOKidHloTD	12		not	shr1	shr16	shr4	tfold	xor					
+BSz4XWzHdwqXKmLnrre0pssV	12		not	plus	shr1	tfold							
+BlniRUtfAFdOxozZmmdVf37G	12		fold	if0									
+DjRzvZBwoAPZRmVzAJF0HfWA	12		or	shl1	shr1	tfold	xor						
+DrNvwsatGyXZ4Hx97udL1hAk	12		if0	not	xor								
+F1DsOtSN4R01RXWN5gh8rTdN	12		and	shr4	tfold	xor							
+GpgmPdEtxS3gEEy5e8GHwlAb	12		fold	if0									
+HSGySEsmB882qsIvPpUeIObf	12		and	if0	plus	shr1							
+J1PmuXCQmewTBEpArdLLx2tf	12		and	if0	not	plus							
+JvNCMnLVjXtM4seOhqdLA9RY	12		not	or	shl1	shr1	shr4	tfold					
+KkkK4RWOByL3eW9NVVyyfZ0A	12		if0	not	plus	shl1	shr1	shr16	shr4				
+LCaqAcGEdI175lzArHghanSq	12		and	or	tfold								
+LFWPHJti54XwktU5iSJg8CsN	12		or	plus	tfold								
+Ljf8go8aXAZgJ15HKx7nvg5K	12		fold	or	shl1	shr1							
+LzJBkMEz9iECTJbPbmsgaHbK	12		and	if0	or	shl1	xor						
+MGpdTpNDNotqW5kpO64Wm7jB	12		fold	or	plus	shr1	shr4						
+Naq9zK7woa3nPWmFU9CQq451	12		or	plus	shr16	shr4	tfold						
+O4JuqbM56vidS0rCbJSddW38	12		not	plus	shr1	shr4	tfold						
+OtzOplPMoa4z0LQTa25yJ4Iz	12		if0	not	plus	shl1	shr1	xor					
+Ov3U75SAdgeFS0FekYqyT5an	12		fold	or	shr4	xor							
+QamF0T0SLMKIE32saOeZ6eR1	12		not	shr1	tfold	xor							
+QrHo9qLKjizlK0zRMmfdRWnz	12		if0	not	plus	shl1							
+W6eNnA0Ve5bt2iSZNKDKDwI5	12		and	fold	not	shr4							
+W7amEz4dn05lyhBEbDVQWY5I	12		and	or	shr1	tfold							
+WEnHYkjxpmsPC23ymTjJ7wmB	12		and	fold	not	shr4	xor						
+ZFcal8stWx6ZBTnjQAvoAIUu	12		fold	not	or	shr16							
+a5AA285Cpqfz5HdiBDHbFcBx	12		and	shl1	tfold	xor							
+bPqBXzSufgUAEVF1wS7EFxBv	12		and	if0	not	shl1							
+bu9QtFor287GA9YWXpUZ9hzx	12		if0	plus	shr16								
+eSIpIIisOWiLRiezSzued4TA	12		plus	tfold	xor								
+gFRumRuRRjcYnWwPWkCjGmk5	12		fold	plus	shr16	shr4							
+hHuBnHA8qiJ8q6IAA0ONhqNQ	12		if0	plus	shr4	tfold							
+jWEFaNrLAqr1NmQxoc3ZeSS8	12		and	if0	shr4	tfold							
+jspDy496McyTsniBHAqS1XNY	12		if0	not	or	shl1	shr1						
+kQZSoZYBAHfAApfEpJBukQhy	12		if0	plus	shr1	shr4	xor						
+lCHuxK57KhykYFDNiwyqof2S	12		fold	plus	shl1	shr1	xor						
+lWDBF5GtiRWoerpALfXHunqM	12		if0	plus	shr1	shr4	xor						
+ljP7fTxLsAS8toY3PgrUKhRD	12		and	if0	plus	shr16	xor						
+ln7WoVd48vAt8ZEsGnKEdkC2	12		fold	or	shl1	shr4	xor						
+pikCCbfGf4Kz8Iw6zcG1glO0	12		fold	or	shl1	xor							
+qdWmciKpAEoiP2Tw8XAiAobJ	12		fold	not	or	shr1	xor						
+rPpNTeH4U0DVE9xuRAdJPoho	12		and	not	plus	shr4	tfold						
+rsZLOmreSx7ZIagjfsjJAUXL	12		or	plus	shr1	tfold							
+ryprDsadc7r2bDnKgk0bWIaN	12		if0	not	or	shr16	shr4						
+sGr1VDdlDuJriB0LPHpaMAMx	12		if0	or	plus	shr1	shr16	shr4					
+vDRA8hd5axm8b7wmYGFz9PZg	12		if0	not	plus	shr16	shr4						
+wPMDg3VoTjgKAorwSvwxUmTr	12		if0	not	shl1	shr4	xor						
+wz7LlwMBiux18rYGAKpJ41AO	12		if0	or	shl1	tfold							
+xtmUDQ0kIUQVVvtoCTkwGL7w	12		and	if0	or	plus	shr4						
+zONE01KpKaOQUhUlGmioT3NZ	12		fold	if0	plus	shr4							
+0uWURMqEm8dypL0zixvzyABU	13		fold	or	shl1	shr16	xor						
+1yZ25uWAwV548Xn6o3qRkO9d	13		and	fold	or	shl1	shr4						
+2WTIApKb0wN1oN4rSYG298KA	13		if0	shr16	shr4	tfold	xor						
+2z2wV4ujtPVFcrDU4jyEQJRw	13		if0	plus	shr16	shr4	tfold						
+3HrVZSsRqBVcaBFdI0YpZBQK	13		and	if0	not	shr1	shr16	xor					
+3X8wYswbKxZPz33C2kBIR9zH	13		and	if0	not	shr1							
+3hi7wdn2hdwYg2D5jHrOBvxC	13		if0	not	shl1	tfold	xor						
+3mBV4v5IAqQyV3hgvoBApRcg	13		if0	not	or	plus	shr16	xor					
+47msKQ6DkXE2334OBICqbAdT	13		if0	not	plus	shl1	shr16	xor					
+58bBsByngm2LGiKOla6PkC67	13		and	fold	or	shl1	xor						
+A3zqpG2OaVfMvy3LwIRKYUPE	13		and	if0	plus	shr4							
+AB7gQ0vukXaGILGx0oDKqYzK	13		fold	not	or	shr1							
+Agzogu1AruHtxa85NeEmXbDv	13		fold	or	plus	shl1	xor						
+AiBNn4wja8IgUL7vKYVRo93V	13		fold	not	or	plus	shr4						
+B4hDe0BTW4ehwYIXSlQdDcPz	13		fold	if0	or	shl1	shr1						
+BmudDeNrSpHXtUb2gIHxPAvP	13		if0	not	plus	shl1	shr1	shr16					
+BshbOzVrZb3OWjqAgC0mq22Z	13		if0	not	or	shr1							
+CjyGEFmAKJ3YKsdLG7dnGW2q	13		and	if0	or	tfold							
+GMy1QBTqqlXBv7Nrpch1KkJv	13		if0	or	shl1	shr16	shr4	xor					
+GP4fRdPzUml4cPeR1qSjG0ef	13		if0	not	plus	shl1	xor						
+KGRHpVMGvC5Zk56h5T0voH44	13		and	fold	or	shl1	xor						
+NAd0BunsQ4COP2CBEZqwPvhq	13		and	if0	not	shr4	tfold						
+OBd4OFPPR983c23x3HrQCKYA	13		and	if0	not	shl1	shr4						
+OuHVpwA4lPgylqNqYTNzyrLr	13		if0	or	shl1	shr16	xor						
+P2BhlIINOJi51eBCNT0y1q7P	13		and	if0	shl1	shr1	shr16						
+P9pMJByGx656CmYI9PUBEw1O	13		and	fold	not	shl1							
+PDBARlGQ1fkq8o8DH82qU6ds	13		if0	plus	shr1	shr4	tfold						
+RL8Pq65fCYdjDgmIX22n4foD	13		if0	not	or	shr16	tfold						
+SP0zxnw7hos3KtefdUKH2LxJ	13		if0	not	shl1	shr1	tfold						
+SqWfqV2lhWXSJflDo3H1Re3g	13		fold	or	shr1	xor							
+SyxzWbWteJxENLYV33CMliSy	13		fold	plus	shl1	shr1	shr4						
+TFKpison8L2E0KW4O02b5jOB	13		if0	plus	shl1	shr1	tfold						
+ULT7lrBR2yvwGIvsBuZfKOFv	13		if0	plus	shl1	shr4	tfold						
+UZgnRVdxLbzfujHLKVyu59zq	13		and	fold	plus	shr1							
+VbgAHCAnXWB1xMMCZ1inuWts	13		and	fold	if0	shr1	shr4						
+WQeHJEGF8axyAVyAIKsNYpXd	13		fold	not	shl1	shr1	xor						
+Y1CbAQ4ERe67w7HgwOiovUwi	13		fold	if0	shr1	shr16	xor						
+YZOp27JuZyiXsSnStZmSjNaq	13		if0	plus	shr1	shr4	tfold						
+ZUwhUtxyZnzXuHVrUYMLiCmB	13		if0	not	or	shr16							
+aYIxKIpPkATiA6iBACNMiiSe	13		if0	or	shl1	shr4	xor						
+bBHZmpFNGGiKCJT14B9NLCsL	13		and	if0	not	shr4	tfold						
+boJ0Ai6dSG2tAJEZzcmXnRTx	13		if0	or	plus	tfold							
+btWU3YrRAVXtld7nsCpejv5D	13		and	if0	not	shr1	tfold						
+fp3LzbBoZJbgNKk3yPKQVMOp	13		if0	not	or	shr16	xor						
+ggxAOSvkjLBehSc9K8ZjSEVB	13		and	if0	tfold	xor							
+gkJmqS6itLAAqXEA6QXjkuTe	13		fold	not	or	plus	shr1						
+iSzzcw8wEmpg8SVJL6DKhhCG	13		if0	plus	shl1	shr16	tfold						
+laTwpMgSxF6rbRlZsVZhcsU1	13		and	if0	or	tfold							
+loPer0AwivTompkQxC2zVoKA	13		fold	plus	shl1	shr16	shr4	xor					
+mFIWxiqkwb3vBrNWOVJYGxnR	13		if0	not	plus	shl1	xor						
+mzjtktDcQufa5n6Om0WHFaNU	13		and	if0	not	or	plus	shr16					
+p4saI5JJ0BzpHUAbeLOGAZgt	13		fold	or	plus	shl1							
+pADv9QjYaBAUDmckpL62R9zr	13		and	fold	or	shr1							
+rnaUevemPiBiQPx4QNNJ0FBk	13		if0	or	plus	shr1	shr4						
+suQHSKDl6ppGkGiCzivNokvv	13		and	if0	tfold	xor							
+wJUQRmNPXPGx31yU9JuDcLzr	13		and	if0	not	shl1	tfold						
+xlwZTO3TrLlV8LYbidI6iouG	13		if0	or	plus	tfold							
+yb3Hsozegk04HbWnCHG58ffA	13		and	if0	not	shr4	xor						
+yckjZMKC9WslXjorH45tBhCD	13		if0	or	plus	shl1	shr16						
+youDPgIC1qj3T2OZSpYvDmaU	13		and	fold	or	shr4	xor						
+0MLLi633afyyR08xJcwSnV2B	14		fold	not	or	shr16							
+0qiskVdKD1CUl7a1JOgDgtOo	14		and	if0	plus	shr16	tfold						
+0rDFjEiGtdYGifXNzi7IwCPU	14		and	if0	or	plus	shl1	xor					
+12ry7KMqlPw2rJuhSn2aY2nf	14		if0	or	shr4	tfold							
+169VpQBthRATHlCwB32ICUFh	14		if0	not	or	plus							
+2bq1A9yHGNQ77O1xaZP2LHs9	14		fold	if0	shl1	shr1	shr4	xor					
+3l6zkvlmSiUmX7hXnKcChVuY	14		fold	if0	shl1	xor							
+4GqdUUQkA0D6NoJplnpNHkcW	14		fold	plus	shl1	shr1	xor						
+7V8NngqIQkPAI8QQuZsAevJK	14		and	if0	plus	shl1	tfold						
+8TKCinC8Ve40gLp1AlEAxMWL	14		and	fold	or	shl1							
+AbXwUL9rFlj57E323BOFlT6P	14		and	if0	not	plus	shr1						
+AfpBGxcvFxp37jhB0M8OWsn7	14		and	if0	not	tfold							
+B8PB3BwebkUg7RH5uJHNMugP	14		if0	not	plus	shl1	xor						
+EsHAqkeXue0sJCDDfgTFgcnu	14		fold	not	or	shl1	shr1	xor					
+FHUAcAjRPMRtuJEUQSldi50w	14		if0	not	or	shr1	shr16	tfold					
+Hy0OQdcWL65J0NSKqsObBcPx	14		and	if0	shr4	tfold							
+I9FKpfhjJOUYeuEcS0vP9jAM	14		if0	or	plus	shr4	tfold						
+IGBravLZrwh7dXhSJA2Qkbcc	14		and	if0	not	plus	tfold						
+J7B9EMRlk7az1kK1YXd2FqWt	14		if0	plus	shl1	shr1	shr4	tfold					
+JE5UOLkICwqjr4KAYBZAsPPE	14		if0	shl1	shr16	shr4	tfold	xor					
+JwRYho1lO8YvZpWUtpzAptfj	14		fold	if0	shr1	shr16	shr4	xor					
+KvmmFOM2IqJS7GPX80LuRRX3	14		if0	not	or	shr16	shr4	xor					
+MJiuqoqPBImMVWVwLxpAMep8	14		if0	not	or	shl1	shr16	xor					
+ND00VDrAa35mmBNyBNR6h0Dg	14		if0	or	shl1	shr16	xor						
+NIDK6DYsj4BgZ5QQgvGdiwKp	14		fold	not	shl1	shr16	xor						
+QR9Zevq9zciSrhs9hWiwBFOw	14		and	if0	shr1	tfold	xor						
+QVPPerjcFnt69WBcup1GXhAO	14		fold	if0	shr4	xor							
+RnRSonm4e1arQUEh8HoHD7U7	14		if0	or	shr4	tfold	xor						
+Rp9EMPriTAsMBmC28lPbuaoy	14		if0	shl1	shr16	shr4	tfold	xor					
+TcS5pGGlXvna1pyX21SOIZ0r	14		and	fold	not	plus	shl1	xor					
+U36HgFqAtvFkikbN3Qm7oHPK	14		and	if0	not	shr16							
+UMV3VWSGBcnAnCScbscuDQ7J	14		and	if0	plus	shl1							
+WA0rkqmw4L1TqF1ebApPlWQQ	14		if0	not	or	shl1	shr16	xor					
+XrKoyPZzXmyPUrPiIO4SULv8	14		fold	shl1	shr1	shr4	xor						
+ZSuX6mszgl0NcXnaeMTnZHbj	14		and	if0	shl1	shr1	tfold						
+ZaQLHzkE9EOTBE6sNBJtHF2D	14		if0	not	plus	shl1	shr16	xor					
+aVmGoMfuBzcKeaWD2owl1q2U	14		if0	plus	shl1	shr1	shr16	shr4	xor				
+beuQ6wPLl2NeRgNcXC8QTml1	14		and	if0	not	shr1	xor						
+cCK4pPCxD4rSAHCATvBdzX3j	14		fold	if0	or	plus	shr1						
+cnAxWEaL0afiWbRGuueYODcB	14		if0	not	or	shl1	shr4	tfold					
+dMjHRFe8lql0dCfbyjeE4K0p	14		and	fold	or	shl1							
+dpn8ni91EzbJXH2Ms4m2ugfS	14		if0	not	plus	shr1	shr4	tfold					
+f6XKzsOLm87gVi0bBf2ZatPe	14		if0	or	plus	shr1	shr16	shr4	xor				
+hupG2G8UAe0aQAHHnjyWj1SW	14		fold	or	plus	shl1	xor						
+iAuLp43A0Xbo6MvqAXpymj58	14		and	if0	shr16	xor							
+iG5Nkl2hBblrm1sEMl717JsF	14		if0	or	plus	shr4	tfold						
+iH9BwXBoWZZdHxvMpwd1XLlq	14		if0	not	shl1	shr16	shr4	xor					
+iaFrYMYrbBBiFUdDBwaiDIsk	14		and	if0	plus	shl1	tfold						
+jLepzQVBNVWgtL8Rihe1UVA4	14		and	if0	or	plus	shr1	shr16	shr4				
+lYDALxAOtBkpdSY6TCDif0Gp	14		and	if0	not	or	tfold						
+ld2dAb8aSjh5ROBQwLbIFpVP	14		and	if0	shr16	tfold	xor						
+mXaIyQkj8xyA6VPbb1AHZjWQ	14		and	fold	if0	shr4	xor						
+n3FzVf7MqAFIyMBAZy2MfhuR	14		fold	not	or	plus	shr4	xor					
+qD52Cb9NexEc1PDSzBBLg2uV	14		and	if0	or	plus	shl1	shr16	shr4				
+rVBNdoBuSXwUa37CeiJJdNs2	14		fold	if0	or								
+sDByDHueA8rblB9BYUZBxJZT	14		and	if0	plus	shl1	shr1	shr4					
+spcrDoEBmeHgxgTAth0IZBVX	14		fold	not	plus	shr1	xor						
+tC7B8cVUr4tzNwCjT3qBBYls	14		if0	plus	shl1	shr16	shr4	xor					
+vn9Rb3vi0USr1IN425EB9Bm9	14		fold	or	plus	shl1	xor						
+wcBQ3fAKy5PgW3kK8fHtJ8sp	14		fold	or	plus	shl1	shr1	xor					
+06YMPN1BucgJqIxBZBjhJgh7	15		fold	plus	shl1	shr4							
+25qkBrK4TesdTl0rpd55wBer	15		if0	plus	shl1	shr4	tfold	xor					
+5GujF3BVMrBEAJ4JNZaB1b1M	15		and	fold	plus	shl1	xor						
+5JLIfJGAvShFhOypWANMfbAz	15		if0	not	or	shl1	shr1	shr16	xor				
+7Tt70iDp51YZKme9a7xY4zcR	15		if0	shr16	shr4	tfold	xor						
+8q7jeQqjKoa9g0v6IOXixzJ3	15		if0	or	plus	tfold	xor						
+93QFlAOdOF5FdaOOMgXXVlQJ	15		and	if0	shl1	shr16	tfold						
+ASAraRqS0xedYwjKh21qQVCt	15		if0	not	or	shl1	shr1	shr16	xor				
+AmTc2gRkN51u6asxT0zBGs2P	15		and	if0	not	shr4	tfold	xor					
+AyV6rVimfXjQW8WBUIdPA7Jl	15		if0	not	or	shr16	shr4						
+CzIogXeRtHbaxqOLAJ1JG8oG	15		and	if0	shl1	shr16	tfold						
+Depq09FmuRHY5ukhyg4Atbtw	15		and	fold	or	plus	shl1	shr4					
+DpNGkEJPSAXCewuPdXj1EJeD	15		if0	or	plus	shr16	shr4	xor					
+E6eumjcv8kCl9OErRfpX8Swl	15		and	if0	not	plus	shl1	shr16	xor				
+EdoDV1BSWKk47aJgKb25tN2M	15		and	if0	not	plus	shl1	xor					
+I9bvfNKSligdkx12p5ANGfO3	15		if0	or	shl1	shr1	shr4						
+IIHfnDFoRVwZTKUOF5EonO18	15		and	fold	or	plus	shr1	shr4					
+ITLkJIoKARhF74xR4UV9Z0fx	15		fold	if0	plus	shl1	shr4						
+KD5iWmFwQsbyW8XJswzUcdiG	15		and	if0	not	shl1	shr1	shr16	tfold				
+KxkQjtZpqFCxpAMXUCsKLAsx	15		and	if0	shl1	shr1	tfold	xor					
+N9y5Y5g9o7UTFTAYrvOYp493	15		fold	not	or	plus	shl1						
+NB0al4Vv8HXxu0otkQo8aHRL	15		if0	plus	tfold	xor							
+PA8ENazZPErJKegnqG8frG9D	15		if0	plus	shl1	shr1	shr16	tfold					
+QEk2lF0dQARmGEZxecGKAy1h	15		if0	or	plus	shl1	shr1	tfold					
+SKBDnukSvtXQLevHzRgdDxcl	15		fold	plus	shl1	xor							
+SZPvEYJQoBbIZ5GG2P7aMXxy	15		and	if0	plus	tfold	xor						
+TSRlpeZIkkrNvEo8uad3DIEQ	15		and	if0	shr16	shr4	xor						
+VfeAaSNLFUqpuQIAtaOQadNM	15		fold	if0	shr1	shr16	xor						
+Wa2TAACOxvEcEhapBgXU1vwk	15		and	if0	not	or	shl1	shr1	shr4				
+X75u0yIjDllwABBTqxbA6PEK	15		if0	not	or	plus	shl1	shr1	shr16				
+XbiqwJyzKejEI7JGnBoBGOuj	15		and	if0	or	shl1	shr1	tfold					
+Y6N7fhsBAdxW8VEaHw54BCmy	15		fold	or	shr1	shr16	shr4	xor					
+ZRqNg7vJ2cNhdm8rQCl5Ryjk	15		and	if0	or	plus	shr16	shr4					
+ZSgHxbB7cEoBhnTnyQE0B6qQ	15		and	fold	not	plus	shr16	shr4					
+ZYEJjaBjz81rIcESu9SGJexR	15		and	if0	not	shl1	tfold	xor					
+dDTH2EMAEQEfVtCvWXW8q44z	15		and	fold	if0	not	shr16	xor					
+di7Whaei3BSnpJL32L3opm7H	15		and	fold	not	or	shl1						
+e0NZqkAcrbSiR7Ac95ougOmj	15		if0	not	or	shr1	tfold						
+gUwLnT5kUgwriIoeGvvfcJy6	15		and	fold	if0	or							
+hyPxEHmRJ1L4Ebcs4zn5TONw	15		if0	or	plus	shl1	shr4	xor					
+i4sYIkeOudCBeBpei6qAJ5wA	15		and	if0	not	shl1	shr16	xor					
+kdP0NU6AMkfmyQh3j3lgvkcC	15		if0	or	shl1	shr16	tfold	xor					
+nlEkXOg4eLMpuDvRqK0Iwk2R	15		if0	not	shl1	shr1	tfold	xor					
+nlKzitJ0Jw9JCuHBpQHrsBHP	15		and	if0	not	shr16	tfold						
+pBznM1ibLTZdgXWtDtiHBufj	15		and	if0	not	or	plus	shr16					
+q8nBvCUurkdge8RccVukG3h0	15		and	if0	not	plus	shr1						
+qkMBxYf5D1AeRLbYUhYfMZkA	15		and	if0	not	plus	shr1	shr16	xor				
+r4y0pHNGNCBQfoSThnONjBUy	15		and	if0	not	shl1	shr1	shr4	xor				
+rCzAvaK4lThk7fziABmgLeV7	15		fold	if0	plus	shl1	xor						
+rSLBjzyk9qTkg9HrnRvMYHXD	15		and	if0	not	or	shl1	tfold					
+svp5eoBItpEm59AGM8zrLK53	15		and	fold	plus	shr1	xor						
+uAd8AAdn7mQfRqkGwWmdrAAg	15		and	if0	not	or	shr1	shr4					
+uKgEeGEgRN2eypoVonBR8QAR	15		if0	not	plus	shl1	shr16						
+udBISoWYyIjYX0Ntvx5dojYH	15		fold	if0	not	or	shr4	xor					
+umaNaTCOlqLMQA7TJpHUfvcS	15		and	if0	not	shr1	xor						
+w3AdGOIMSxo0zNYb2jJTWBYm	15		and	fold	or	shl1	shr1	xor					
+xBjQStuGBzBfM6CbT4KSnuOX	15		fold	plus	shl1	shr16	xor						
+xWL7MoYaR2AUbf87yaV5622k	15		if0	shl1	shr16	tfold	xor						
+y80ADkFOvNC6ugUh3anO4Ewj	15		and	fold	not	plus	xor						
+zDmrOUibsKJ5OdZZLIxAJ7P5	15		fold	not	or	plus	shr4						
+10KIm4ILBAzYABLu5wDTgIA2	16		and	if0	plus	shl1	xor						
+1FaApwbWBXyDbJTMmXoZ0Tqq	16		and	fold	if0	or	shl1	shr1					
+21qO61852D6BC717RJZgzovZ	16		and	fold	if0	not	plus	shr1	shr16				
+2Er5tCyueNfUg7ME0qVgJIpu	16		fold	if0	not	plus	shr1	shr16	xor				
+3BVxsj23pIFbOgjWAFQIGLHN	16		and	if0	or	shr4	tfold						
+5FwdGZO84BpGvxA2qT774cvz	16		and	if0	not	or	shr1	shr4	xor				
+6XRijSnP25bV0WFxOwcWKiGQ	16		and	if0	or	plus	shr4	xor					
+7zlDxPZEjUC9pcLOdfAluAtL	16		if0	not	or	plus	shr1	shr4	xor				
+9rAqtGkDDUR2tBgSid4dNhk9	16		and	if0	plus	shl1	xor						
+Aq2gOM1k5tYkukttiTHYrqbt	16		and	fold	if0	plus	shr4						
+BAe5vmcaIQmZqvBsAgBXPpKF	16		and	fold	if0	plus	shl1	shr4					
+BKoDNDOgA6Tyt2w3W6mWi1tZ	16		fold	if0	or	plus	shl1						
+BYqGJVyZaKw4BZKj2Dv1IHxB	16		and	if0	not	shr4	xor						
+CMC7DnrAPBGqptxxTHHWa3rQ	16		fold	if0	plus	shl1	shr1	xor					
+CTIjQKPjndQ5cMLmaHKRe2cB	16		if0	not	or	plus	shl1	shr1	shr16	shr4	xor		
+CiKPYAAcTk5pZv1jRSUZbIjL	16		if0	plus	shr1	tfold	xor						
+D4s3WB5lYAAX1fpMEA2tdFgj	16		if0	not	or	plus	shr4	tfold					
+FcsAimcaRvPtjjmZ37DuTpix	16		if0	not	or	shr1	shr16	tfold	xor				
+GgqYsRTFcROQoeJ5l26nAKUB	16		if0	not	or	tfold	xor						
+HolShlOMo5bBZ1Ct2EB0bIuB	16		if0	not	plus	shl1	xor						
+IQT6sVLGsbnVJPyYBUA3AS4t	16		if0	shr1	shr16	shr4	tfold	xor					
+J3D12HuLJP93sYFSiAvtjbFx	16		fold	if0	not	or	plus	shr1	shr16				
+J7uDqiDf9LqbRtDCBAHwfqmE	16		if0	not	or	plus	shr1	xor					
+JBnpWk59ZQT4pKEBWulfWTeA	16		and	if0	not	plus	shr1	xor					
+KVc0sI2c0RcvGroM3Ow94y87	16		and	if0	not	or	plus	shr4					
+KtIcrQtJmmOS4Uw6VE8SqfpE	16		if0	not	or	shl1	shr4	tfold					
+LaneA1hfUk9ta4gnvjRYZblh	16		fold	if0	not	shr4							
+MDZTZmXwMvdmWbKE0mJ1G3AJ	16		and	if0	or	shl1	shr1	shr16					
+N6miaHNHhRSdiWP70QhTIjGx	16		if0	or	plus	shr16	tfold						
+NWF7qq9vPCn7igZdtf3pEKxg	16		and	if0	not	plus	shr1	xor					
+OOp0gVf9wPMSp6RB3hRu2BYt	16		and	if0	shl1	shr1	shr4	xor					
+RhxkFzkmOlBV9xLyjaBXI5sA	16		fold	if0	not	shr1	shr4	xor					
+SUuxGyrCGIkzpBfhj2fEBQtW	16		and	if0	plus	shl1	shr1	shr4	tfold				
+Sl81lBiLuXliv2v8A5G71F22	16		fold	if0	not	or	plus	xor					
+U5RHaopBONxS4wLQRno605ez	16		and	fold	if0	not	shl1						
+WB4IABJwsjV4sJ5aXJC8vwd1	16		if0	or	plus	shr16	tfold	xor					
+Y32pWG0vYFPcdLmJQJQCiXqA	16		and	if0	or	shl1	shr1	shr16	xor				
+Y86oHEkJ4Lk9OmDllgi24Kpr	16		fold	if0	shl1	shr16	xor						
+ZYNSJHVlmuk4sY3b0aWLi2wM	16		if0	not	plus	shl1	shr1	shr16	shr4				
+ZtAzS36A0cE1ei6TqiOCO18Z	16		and	if0	plus	shr4	tfold						
+ajR0EMhBmFLaBV1BQWpWQTCN	16		and	fold	if0	not	or	shl1					
+c5zCAZHa0Mt8q5zTJd84XLk3	16		and	if0	not	plus	shl1	shr4	tfold				
+d6yIb8kzrWK8sUJVPCDjvXWr	16		fold	if0	not	shl1	shr1	xor					
+dsFmJUqZwGM22bjJwjmV72Bn	16		and	fold	if0	not	plus	shr1					
+fJaw9nQrkvsARbaHqTSJnfMZ	16		and	if0	not	or	shr16	shr4	xor				
+gepzKIYC0swtjEMdF6xnLPs5	16		and	fold	if0	plus	shr16						
+iqEikziDecm1CgWVlejV32JP	16		and	if0	shl1	shr1	xor						
+kMkztmsreUozjXBMFQNUSmF1	16		if0	plus	shl1	tfold	xor						
+kSDCkuaGme5kXcxHlvKfRx6U	16		and	if0	shr1	tfold	xor						
+kvFLvA3Gp8QierpTOJ3XRJW8	16		fold	if0	not	shr1	shr16	shr4					
+muU3p1NjERNmQAxXBho1ovlD	16		and	if0	or	plus	shr16	shr4	xor				
+nN3VwdTaaQZARtjIZLAxM0IS	16		and	if0	not	plus	shr1	xor					
+oLBBP3gf4UKKOjQJKK2GH3QW	16		if0	or	shl1	shr1	shr16	tfold	xor				
+oNg8HK95OLtvXQ6mLGKUo0Yo	16		and	if0	shl1	tfold	xor						
+pg95PSkPL7f8raP7TN8pyyog	16		if0	plus	shl1	shr1	shr16	tfold	xor				
+s65RY93DADniO0V7Q4mD9Bmw	16		and	fold	if0	not	shr16	xor					
+tmOQbUACjcfLy69G59bJPuwR	16		if0	not	or	plus	shl1	tfold					
+uM25JDG53eAog8ASt57xJri9	16		if0	not	or	plus	shl1	shr1	tfold				
+ywAxoAIgkJSBYOAIJfqBpFGZ	16		fold	if0	plus	shl1	shr16	shr4	xor				
+zjAY6C9tlyyG76tpgLCUpAlw	16		and	if0	not	shl1	shr1	shr4	tfold				
+0RUhV8SH3pf8XTlBAreyD6hb	17		if0	not	plus	tfold	xor						
+1RpFZ68DzntHDvCyonWABWUg	17		and	if0	not	or	plus	shl1	shr16				
+2zc5J5eJrFYGulBMERiYfCrB	17		and	fold	if0	or	shl1	shr4					
+4Fm5aYWUHjzSGdAi3SiqIRZV	17		and	if0	or	shl1	shr4	xor					
+6F25mA8L3snsHj6g9YAnquOP	17		fold	if0	or	shr1	shr4	xor					
+6j1E6a53lyo1hNptXhoAjWOQ	17		if0	or	plus	shl1	shr4	xor					
+7n8WRjNjjdjRpNE4VLkDVJ9y	17		and	fold	if0	not	shr1	xor					
+8Bn48AAGeAMqKG0aB4YIyX2b	17		if0	plus	shl1	shr4	tfold	xor					
+8JxVg0wmeWEK2WtJLMVOpITV	17		fold	if0	not	or	plus	shl1	xor				
+9A0szdJKvAyMI2jawNdtUdDv	17		if0	or	plus	shl1	shr1	shr4	xor				
+B5v5nlnMu5YaJpgBL7CBlVxt	17		and	if0	not	shr1	tfold						
+B7dNcL56rUX0bS3GVWGdgv1A	17		and	if0	not	shl1	tfold	xor					
+BCttJtfidh2Qq4wAUBmNXt8K	17		and	if0	plus	shl1	shr1	xor					
+E5fNrgqc8BE7LIv3GeaNNQ23	17		and	if0	not	plus	shl1	shr1	shr4	xor			
+ECDMQ7dNtWCSuNz95FKfFLpY	17		and	fold	if0	not	shl1	xor					
+EY4Rk053MqASvLYwW7oROI0C	17		and	fold	if0	shr1	shr16	xor					
+FVvFPt1EDBAPiWRrLi3Q6TGJ	17		if0	not	or	plus	shl1	shr1	shr16				
+IKi8CgJYncbPoDu7S1gK9CT3	17		fold	if0	plus	shl1	shr16	shr4	xor				
+Iau52Go2EQGVrxcWuGews6Cm	17		if0	not	or	plus	shl1	shr1	shr16				
+JYz40kzJeOWjh0FJp0bNFHKm	17		if0	not	plus	shr1	shr4	tfold	xor				
+KTkKhqsBBqy5zUZ4N8uz82Nw	17		and	if0	plus	shl1	tfold	xor					
+KmeA3LhiGOsv33UZyYApzVB8	17		if0	not	or	plus	shr1	shr16	shr4				
+L9duB7yzF9DDHGGJNqyRYhdo	17		if0	not	or	plus	shl1	shr4					
+LV0yT5SIyTFfFcoxilaBNTYl	17		and	if0	or	tfold	xor						
+LqUJiqwGnrvvcoYmP70sawHu	17		fold	if0	or	shl1	shr1	xor					
+M6QUTYYENsFdHWBlWbNKqEBL	17		and	if0	or	shl1	shr1	tfold	xor				
+NINq5tlV5oL815MMhUDdC0Yn	17		and	if0	or	plus	shl1	shr16	shr4	xor			
+Ni6aU05uJlbmMwl2P7uvPwtD	17		fold	if0	not	plus	shr1	shr16	shr4				
+PCKOdSBp1FBfQaOhHB5gBATf	17		fold	if0	or	shr1	shr16	xor					
+TUjjNy1bO1gVWmSCYBuN4UnB	17		and	if0	not	or	plus	shl1	shr16				
+Ty0aT9LRubjxnLxRIgeX5JeV	17		if0	not	or	plus	shr1	tfold	xor				
+UVlTtnDdAyv5vSCW8bwItV0a	17		and	if0	not	shl1	shr16	shr4					
+VDYTUvuHPFHSa0qLW3i633AP	17		and	fold	if0	or	shr1	shr4					
+XRpksb9RjMAsvC0rA2lYMrZV	17		and	if0	not	shl1	shr1	tfold					
+YNctdUHJkJ11JTMjunGC0CKA	17		and	fold	if0	or	shr1	shr4	xor				
+YduETVEl4SA2IKC4NnBsZRbJ	17		if0	plus	shr1	shr16	xor						
+Z7vsTXV5GGtSylmJPHJP0ypb	17		and	if0	not	or	plus	shr16	tfold				
+ZGvtGGANPQvQwKQSe2hu31AU	17		and	if0	not	plus	shr4	tfold					
+a9IGZFjcyxzsO9SJI9AR7ZIO	17		and	if0	not	or	plus	shr1	shr4				
+aEx7p17f7oCflBNe6qJbxmED	17		and	if0	plus	shr1	shr16	tfold					
+d0GRARcXGe7aJYsqkLW4fOd3	17		fold	if0	not	or	plus	shr1	shr4				
+dlK1M6j9GLeo9paFpqOxdkAB	17		if0	or	shl1	tfold	xor						
+gLb17CWzUE3847CZYmC8WfhB	17		fold	if0	plus	shl1	xor						
+gtAsgvVkpEVEHdKJTz7z5IFk	17		and	if0	not	plus	shr1	shr16	shr4				
+hfRN2VffhPeDXu4ACqcZ5QAH	17		and	if0	not	plus	shr1	shr16	xor				
+hgcrkCQi5Bh4Kl0crj6z3BUv	17		if0	not	or	shl1	shr4	tfold	xor				
+ivmMpNRD7qr01YEtvN2ZSAUH	17		fold	if0	or	shl1	shr1						
+l9fOmSPAOS9w97aIApWRjm1e	17		and	if0	or	plus	shr16	shr4	xor				
+lRzB61O48OttLnz1aFO5M5qI	17		if0	plus	shr16	tfold	xor						
+lfKoWT4KVk7BHACubs4CMiLM	17		fold	if0	not	or	shr4	xor					
+qDPyjM7kWixFaj8kucLcYdc4	17		if0	not	or	shl1	tfold	xor					
+r6wIFG0KpTPjCgmBZn1nopN9	17		fold	if0	or	shr16	shr4	xor					
+rnvwQwy8SdKhWH67aNlWI6S9	17		and	if0	not	shl1	shr16	shr4	tfold				
+sDAnHCu2AugBw1BgYAGL24pQ	17		fold	if0	or	plus	shl1	shr4					
+sFlX3fBsYF5Tj8NRCe56o10O	17		and	if0	not	shr16	tfold	xor					
+tnfHsrmZBIgGv7CeCi9si0Sv	17		and	if0	not	plus	shl1	shr16	shr4	xor			
+u1AzzIgUfVpFAAd43B2B5Awj	17		if0	not	plus	shl1	shr16	shr4	xor				
+uAMBb1CuGy7teAYQ49eCfsOn	17		fold	if0	or	shr16	shr4	xor					
+uAR2KBCEyfGTFsCH0a6hky8D	17		if0	not	plus	shr1	shr4	tfold	xor				
+x8n9geH6lrtY4RyKwzDp6G8B	17		and	fold	if0	not	shr4	xor					
+0CaYCTZAB7RDX9fac6gvB6lr	18		and	if0	or	plus	shr1	tfold					
+0ZBupNpTPwX6GFFDfUSmIxub	18		and	if0	not	or	plus	shr16	tfold				
+1bfzqlySMpVhyKFP909A6DcE	18		fold	if0	not	or	plus	shl1	shr16				
+2sFfcCJWA0SVAAgATMPrACVh	18		and	if0	not	plus	shr1	tfold	xor				
+3wnp1PPp92UEGmgcm6vep4yL	18		and	if0	not	or	plus	shl1	shr4				
+4SjmQgD1nvlLIEPirkAGOUyj	18		fold	if0	plus	shr1	shr16	shr4	xor				
+5zLhBAMcKZfdB2uLIwpQudq0	18		and	if0	or	shl1	shr16	shr4	xor				
+6EYXawAhYuzUmXxDM381Amv1	18		fold	if0	or	plus	shl1	shr1	xor				
+7FDtpxWoNsoXCTAdnAFaAGYI	18		and	fold	if0	not	plus	shl1					
+9lHO8xlXGuMzGBMix3wUERsn	18		fold	if0	or	plus	shr1						
+A0tLZxrwigJCbeqNpR0JP8Q3	18		and	fold	if0	plus	shr4	xor					
+ARKEyLMK81EtGOjoYZeER8km	18		and	fold	if0	not	plus	shr16	shr4				
+AlVBUcAv7fQXPkmniCs0yEQ5	18		if0	not	or	plus	shr4	xor					
+AstliS5BL7Prnv1csUcUqy2Z	18		and	if0	or	plus	shl1	shr16	shr4	xor			
+BtOxTHAPFFgFKOSNvStjumMn	18		fold	if0	not	or	plus	shl1	shr1	shr16			
+Bzb9r4spmelI685fcnvvadJm	18		and	if0	or	plus	shr1	tfold					
+D2PggIFdDV9gSqBC8U6zZMFf	18		and	if0	or	shr1	shr4	tfold	xor				
+ITAU8alr2g7RoRsBjtjJQVfg	18		if0	or	shr16	shr4	xor						
+IsgPbdrav2A17Ee4pmXBMF5K	18		if0	or	plus	shl1	shr1	shr16					
+KaCP6HkjsDw48d9bVL0hRbVD	18		and	fold	if0	not	plus	xor					
+KdLzyEnOZnfULOUMGIhycBJg	18		fold	if0	or	plus	shr4	xor					
+MjAyp5tZJSraBZFNGmy1uLPk	18		and	if0	or	shl1	shr1	shr16	shr4	xor			
+NYqXiHA7VATaLYP6RAx4p4hh	18		fold	if0	not	plus	shr4	xor					
+NaCBzlvNVPXJxJYNwaxREkJ0	18		and	if0	not	or	shl1	tfold					
+O859Te83eWrkJRUkvwPkHpKA	18		and	fold	if0	not	plus	shr16	shr4				
+OcZ8odKBykwXNYatY4BLyvxf	18		and	if0	or	plus	shl1	shr16	shr4				
+PLhM3qwCBkukglniUdLFakkO	18		and	if0	not	plus	shl1	shr1					
+QAQ3k0Bimlo1PeSKOpj36488	18		and	if0	or	plus	shr1	tfold					
+QCeomPss5vx3p3KCQA08B0a8	18		if0	plus	shr4	tfold	xor						
+Rh5Fbw90tBsGJtlfxrVBKlNg	18		and	fold	if0	or	shr4						
+S9z71PVsML1VNmx55ZqTKmUw	18		and	if0	not	or	shl1	shr4	xor				
+SlaYe7i9cXmfpC5ZNlwdTMjz	18		fold	if0	not	plus	shl1	xor					
+SuO9MzhBdtUThNuHnyybzPwi	18		if0	not	or	plus	shl1	shr4	tfold	xor			
+USxA9r6ZAT5e6CGo5eAzrGJr	18		if0	not	or	plus	shl1	shr16	tfold	xor			
+UW3XUyoBSo4dBgCpdB0Ca0nv	18		and	if0	not	plus	shr1	shr4	xor				
+WTkJPAR2ChBVvjnB2NbO9Ynj	18		fold	if0	not	or	plus	shr1					
+Z9CI9LzmVobFBUniQKLBTVvR	18		and	if0	not	plus	shl1	shr4	xor				
+ZciuwEg9WQ4euYDQARP1k8ux	18		and	if0	plus	shl1	shr16	tfold					
+ZmCBMAim4aJWPVXnMCvoMuEq	18		and	if0	or	shl1	shr1	shr4	xor				
+ZtIbdqm2u4iQ55PdrijPBuZk	18		and	if0	or	plus	shl1	tfold					
+bBHizVAjsHBHTYw235t4sbz8	18		fold	if0	not	or	plus	shr4					
+bNBAsFmoIqijsCHhSd6QtUwV	18		if0	or	plus	shl1	shr4	xor					
+d3JAcjmuLlDrmIAv813hNFFx	18		if0	not	or	plus	shr16	shr4					
+dGyH7X7pIFxdhZL38b5yzrBQ	18		and	fold	if0	plus	shl1	shr1	shr16				
+dHyJJsWIBtT3aAegpkDSnsTn	18		if0	shl1	shr1	shr16	shr4	xor					
+dI758hmvcHgpB91RzonWXK3U	18		and	fold	if0	not	shr4	xor					
+fBvYzmjBhCsJr6ztQAxEydpQ	18		if0	plus	shl1	shr4	tfold						
+fs9gUZ8qrFGvI0zyfzQ8z3B2	18		and	if0	not	or	shl1	shr1	shr4				
+fzkQYSzakLwTpsAy0u5SfQrB	18		and	if0	not	or	plus	shl1	shr4	xor			
+g14byoNqeDVgNC5Axh4Ko2dv	18		and	if0	not	plus	shl1	shr1	shr4	tfold			
+gjJSEXnjeNBkHkyaaAqBUGxu	18		if0	or	plus	shl1	shr1	tfold					
+ocqF6LABBSB02O7Vi2djWCLX	18		and	if0	or	plus	shl1	shr4					
+qAtu8FGuuUNGJ1SonS1c9gyV	18		and	fold	if0	not	plus	shl1	shr1	shr16			
+sfEtaFWGarCTHoAV7LVBOkSa	18		fold	if0	shl1	shr1	shr16	xor					
+u2Bkudv1fYFkG7McsXVlA6dY	18		if0	not	plus	shl1	shr1	shr16	tfold	xor			
+uDIsyP33oqTkBBJnSMAyfjTp	18		and	if0	plus	shl1	shr1	tfold					
+wRVABD5h70hOKfEvgA4XIZQq	18		and	if0	plus	shr4	tfold						
+xkMOvyQlOpqAW4R2AxXJQtz8	18		if0	not	or	plus	shr1	shr16	shr4	xor			
+yFhGUU9xGhZ6HiQYuQYbv0vB	18		and	if0	or	plus	shl1	shr16	shr4	tfold			
+zWtSG4nGK0aKD7k9KAJNhRWG	18		and	if0	shl1	shr4	tfold	xor					
+0VjB7Ji8Sobfg927KiChB7wf	19		fold	if0	not	or	plus	shl1	xor				
+1PNTkMOpvTvU2Bvz6DqEOiR8	19		and	if0	shl1	shr1	shr16	shr4	xor				
+2LO4Hg6arsh0j1p6PAFsQMxr	19		fold	if0	not	plus	shr1	xor					
+2lVnumWGBEqa5LfbyKzSigZg	19		fold	if0	or	shl1	shr1	shr4					
+3J8nmMOw7fHv4tFBs5Of5i3s	19		if0	not	or	plus	shr1	tfold	xor				
+3bgZaB4BFnuu7CDJKDqfopxa	19		fold	if0	not	or	shl1	xor					
+3lUSBeN0OQaB0yv7MAYaASe4	19		and	if0	or	plus	shl1	shr4	tfold	xor			
+4WXaoZeXtnYGVNfAtJk7e8Bk	19		fold	if0	not	or	plus	shl1	shr4				
+6hUlzil8205YRT8KwukQeHwp	19		if0	or	plus	shl1	shr1	shr16	shr4	xor			
+8Pg4aQ5NSHnIdBnQsNAi6TDa	19		if0	or	plus	shl1	shr1	tfold					
+9U6UaVAqgY7804KQ0ABuWFqZ	19		if0	not	or	plus	shl1	tfold					
+AQkIeFRHOOxsSUkSBN0ld5SR	19		and	if0	or	plus	xor						
+BfYT8BK7VmVA5KDdURBVHQMi	19		and	if0	not	or	shl1	shr16	tfold	xor			
+Br3JBTwYBmOF1C4MU1pZkxtb	19		and	if0	not	or	plus	shr1	shr4	tfold			
+CLrlo7RhWBMy62nx8EKjpSpj	19		if0	or	shl1	shr4	tfold	xor					
+Cj0ersnRyat00eAct4ZCiGNG	19		if0	or	plus	tfold	xor						
+CqxuosCElmbCwsWkdFejFsAe	19		and	if0	not	shr4	tfold	xor					
+CuN1AABXxsmUXuNwp9PkbLbz	19		and	if0	not	or	shr1	shr4					
+DBKU8hrYGpNABuRwTLTtdCAq	19		and	fold	if0	plus	shl1	shr1	shr4				
+GUA8jSABSBJps9cvrvb2uQoE	19		fold	if0	or	plus	shr1						
+J25C0MYR6EcMkrdZkBng8SLL	19		and	if0	not	plus	shr16	tfold					
+J6NHPsOeBn8CBBttPjPrsbjo	19		if0	not	plus	shr16	tfold	xor					
+KkPe3DMf5N84OHtJCwgnQtfA	19		and	if0	not	or	plus	shl1	shr1	shr16	shr4		
+Klrb6kZYWKBAXzEq1xB6TLx4	19		and	fold	if0	not	or	plus	shl1	xor			
+O82SxCajYqg5UT0cvfImCKTI	19		and	if0	or	plus	shl1	shr4	xor				
+OM5jXOcsTl0q1KixpdxZibZH	19		if0	not	or	plus	shl1	shr16	shr4	tfold	xor		
+OioHAla4Ily40yg2KYIkxOeE	19		and	if0	or	shl1	shr16	tfold	xor				
+SgWpB0j227Pod2rucFITOyBt	19		and	fold	if0	plus	shl1	shr1	shr4	xor			
+StZbcQ26ZQqUcwQ5GACAEFO6	19		if0	not	or	shl1	shr16	xor					
+Sug8Zw1Mik86T8bHVHjARDB3	19		and	fold	if0	or	plus	shl1	shr4	xor			
+WLrR03iB2MYQXXy8Qwn7t3BS	19		and	fold	if0	not	or	shr4	xor				
+WxsZr2xYDlAeh2U1tOk1daQb	19		and	if0	not	plus	shl1	shr1	xor				
+XLw1ZMJviLCzeFEIjBktpmpR	19		and	if0	or	plus	shr1	tfold					
+Y1Bik7qboTgqlZgPEGd3OCKI	19		and	fold	if0	or	plus	shl1	shr1	shr16			
+YbAVkhqsxK76JNgAfmSZUJmX	19		fold	if0	not	or	plus	shl1	shr16	shr4	xor		
+Yucd1g5h55WZGyU8oE5PQ8h1	19		if0	not	or	shl1	shr1	shr16					
+b8jgsYMpImKJZZ84KXzjwtGF	19		if0	not	or	shl1	shr1	shr4	xor				
+eKK1GgQlIExarSRgRIqeE1bE	19		and	fold	if0	not	shl1	shr1	shr16	shr4			
+fjz1lxtaGrOeN3KiMWMyqxrF	19		and	if0	not	or	shl1	shr16	xor				
+g8bcAv6PTNy8oQUFelTAiPXw	19		if0	or	plus	shr1	shr16	shr4	xor				
+gLVZ5rKQZ2vvDuCDawAnrF85	19		fold	if0	or	shl1	shr1	xor					
+hWKBh5wGHT6MerezUFEvjQt4	19		and	if0	not	or	shl1	shr4	tfold	xor			
+jCq4h1OtI1vJ3aU1KLzw1owO	19		and	if0	not	or	plus	shr1	shr16	xor			
+kB9BaCCy4OyXE5spxaI7nkKM	19		and	fold	if0	plus	shl1	shr1	shr4				
+km6Ird0dPqBK26BPNeHtyFq8	19		and	if0	not	plus	shl1	shr1	tfold				
+lxKz3ipBx6L6pABIDpxOtbY9	19		fold	if0	plus	shr1	shr16	shr4	xor				
+mC5ZJq1TJrf6XnmICGy9dyYM	19		and	if0	or	shl1	shr16	tfold	xor				
+nVJ9c9xAXydTe7eOV5UCmZyT	19		if0	not	or	plus	shl1	shr1	shr4	xor			
+nZdqIhDCLoZQSQZobfnxhSji	19		and	fold	if0	not	or	plus	shr16	shr4			
+o0YOA5t8glPIDsdzveNJth6m	19		and	if0	not	or	plus	shr4	tfold	xor			
+pBb2qkIJNBA3n0N8P8Yo33j9	19		fold	if0	or	plus	shr1	xor					
+qjUXgjhSnUj61BKlDYAxtGP1	19		and	if0	or	plus	shl1	shr4	xor				
+qmoLrhqW7c3IR9vB65L25aVA	19		and	if0	or	plus	shl1	shr1	shr4				
+rZrnCQ4qlgEP0UujRB6CZq5A	19		and	if0	or	plus	shl1	shr1	shr4	xor			
+sZdiqd7uba4WN701i8ARtbpN	19		and	if0	not	plus	shr1	shr4	xor				
+vH7h0G7gsveP0GvzcNzXHMON	19		and	if0	not	or	shr4	tfold					
+va1qwwIykeDeF2OsIL9VH9KK	19		fold	if0	or	plus	shr1	shr16	shr4				
+yxYMRdr9K4hdAQ2QomgB8xIL	19		and	if0	not	or	plus	shl1	shr1				
+zBlDdJxmLXl6jX8guZH2uQZY	19		and	if0	not	or	plus	shl1	shr1	shr4	tfold		
+zMkuqNrk73807Ou8x8LLIemL	19		if0	not	or	plus	shl1	shr1	shr4	xor			
+0BHuIInPya557d2XwxOHvGtp	20		if0	not	or	plus	shr4	tfold	xor				
+0Tz6sQBJjtBk2BhboIYjPTOU	20		fold	if0	not	or	shl1	shr1					
+0ox8HTcCyLZEfW7RerToXYnu	20		and	if0	or	plus	shl1	xor					
+1Mg2t4G3cLThbg5akKVTBnOs	20		and	if0	not	or	shl1	shr1	shr16	shr4	xor		
+4Z8mZowrBvl7rJRiwpTP80ir	20		if0	or	plus	shl1	shr16	shr4					
+5c6foncQEiIufLUS8y3Bdau2	20		and	fold	if0	not	plus	shr1	shr16	xor			
+5y4kcVhCgBWDcr2G3LTS00FV	20		if0	not	or	shl1	shr4	tfold	xor				
+6DjykBvx76eD7yJb6NbVIUFj	20		and	if0	not	or	shl1	shr1	shr4	xor			
+7YqJFgZ0FAxLSACHGIBsobcC	20		and	fold	if0	not	plus	shr1	shr4				
+8UMy3kGv6rEqVKP1QjAS0A5O	20		if0	not	or	plus	shr1	xor					
+8yrKD1ICyWXHOTqDI6UcmCLQ	20		and	fold	if0	not	shr1	xor					
+9fcnXw5aEvukTVJufXKU56As	20		fold	if0	plus	shr1	shr16	shr4	xor				
+ATaA2ywPtJgtsy7SNy2obra5	20		and	fold	if0	not	or	shr16	xor				
+Ac1wYubQb5axYnaOgKBbfzY6	20		if0	not	or	plus	shl1	shr1	shr16	xor			
+AujBhT1VMg4u94ZTUAXp86ja	20		and	if0	or	plus	shl1	shr1	shr16	xor			
+BOokDh86hLSqzInSP1CV5zeO	20		and	fold	if0	not	plus	shl1	xor				
+CotfdPSnPxre2VpwtQXyNJ9Z	20		if0	not	or	plus	shl1	shr1	shr4	xor			
+D0871kpAI4Bj6nhFYpKi38Eb	20		if0	not	or	shl1	shr16	xor					
+DGXjjf9jpEbfQz7NKBHbxotD	20		and	if0	not	or	shr1	shr16	shr4	tfold	xor		
+FOQmSNieqf6ntPvl96u4AVkM	20		if0	not	or	shr1	shr4	tfold	xor				
+FPfDE2ZvATK8xikIlnNAhRRH	20		and	if0	not	or	shl1	shr1	shr4				
+FmRfAO0FxWhz61EfaUHqzgrr	20		if0	not	or	plus	shr16	shr4	xor				
+GXhA0DSVuUkCuecOOkx1U6Qv	20		fold	if0	or	shl1	shr1	xor					
+HxhegEfZ8DzVcdIlL7W0Es6S	20		and	fold	if0	or	plus	shr4	xor				
+JCVn4BcWlacBnpalM2SH8M2o	20		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+KT6KykWzVPh2uyDnaUYU5kfi	20		and	if0	not	or	plus	shl1	shr1	tfold	xor		
+MQsvjgEOxVZZML4xJBhN0zbf	20		if0	not	or	plus	shl1	shr16	xor				
+N5eg4oA5tlPBuInQcMs2ANfb	20		and	if0	or	plus	shr1	tfold					
+NO67HyDv01PQEdy9G22p5woz	20		and	fold	if0	not	plus	shr1	shr16				
+OYd9TWbQZleOAaTe6BmFFBJC	20		and	if0	or	plus	shr1	shr16	shr4	tfold			
+TIXxGISZzatVsiCqASlYHC1o	20		and	if0	not	or	shl1	shr16	tfold	xor			
+UYzf9IuGLHyT9BHCEoaGCkRr	20		and	if0	plus	shl1	shr4	tfold	xor				
+UgBDHuusu553YrEc06VWtAit	20		if0	not	or	plus	shr1	shr16	xor				
+Vw8svobJZhOS9Cje8BKJyArA	20		and	fold	if0	not	or	shl1	shr1	shr16	xor		
+WVZ0kosda0f4QexDOOGsPjXx	20		and	if0	not	or	plus	shr1	tfold	xor			
+XsNYpS1zHVdMxTppXxC6X7mG	20		and	if0	not	plus	shl1	shr4	tfold				
+a4EuLYl5tdkCBot5RWySsfCf	20		and	if0	not	or	shl1	shr16	tfold	xor			
+al8AfDv92f0naEoloBC4cO9Y	20		and	if0	shl1	shr16	shr4	tfold	xor				
+eOzMWiVAngMTCgnypVC0bzAW	20		and	if0	not	plus	shr1	tfold	xor				
+eVADn17rLeCXOMgeVFsHwHB9	20		if0	not	or	plus	shl1	shr1	shr16	xor			
+g1Ju3a1ClJ0VML9mziR4vhMq	20		and	if0	shr1	tfold	xor						
+gYuY8owV25OWAQSqKFrWJMd2	20		if0	or	plus	shl1	shr1	shr16	shr4	tfold			
+iXi72By0jQwLuH0e58Rk7qyV	20		and	fold	if0	or	shl1	shr1	shr16	shr4	xor		
+jDyQFTAywhoxkesDlxyrNCd5	20		fold	if0	not	or	shr16	shr4					
+mtb2oFLNYJeLoEnNC82kFpD7	20		and	fold	if0	not	shr1	shr16	xor				
+nnMQwERK78MxPHIkElFC24M7	20		fold	if0	not	or	shr1	shr16	shr4	xor			
+q3dSj2j1yJXd7R5eutiADrZv	20		and	if0	not	or	shl1	shr1	shr16				
+qNPIG3m8p2oh7WSKVMYWs36R	20		and	fold	if0	not	plus	shr1	shr4				
+sRq8uGIq4wuBcbqG7onk8cdj	20		fold	if0	not	or	shr1	shr4	xor				
+seu4CZWE0u6HqCdMBXwGPEDB	20		if0	plus	shl1	shr1	shr16	shr4	tfold	xor			
+sszhodh6eeXx0J6sXorj3Tu7	20		and	if0	not	or	shr1	shr16	xor				
+tTiriTovXHqXZ0JBgjjz5APl	20		and	if0	not	or	plus	shr1	shr16	xor			
+tpnsOwzPsWLgMhE2ZTdtlhQI	20		and	fold	if0	or	plus	shr1					
+uC6n0hFf0HB2QAr8BsSDnf2i	20		if0	or	plus	shl1	shr4	tfold					
+v8EU16454aVtoYDApSknBtKa	20		and	fold	if0	or	plus	shr1					
+v95Ick4rpHVrPndr5QNlsAm0	20		and	if0	not	shr16	shr4	tfold	xor				
+vTQfsXauRAAf9J5Lm2xvo2qc	20		fold	if0	not	plus	shl1	shr16	shr4	xor			
+va1qrt0bG00EBaiiJBTja5iB	20		and	if0	not	or	plus	shl1	shr1	shr4			
+xDCjc5ql4sw30Mi8vt5XBA6B	20		and	if0	not	or	shl1	xor					
+ynElmK6SwJ2gBBXMzRaKk28W	20		if0	not	or	plus	tfold	xor					
+14H2jZ78WOsxkCLMakcBpkEb	21		and	if0	not	or	shr1	shr4	xor				
+2Q5PsEkYJIaj4qpBcZY50XFC	21		and	if0	not	plus	shr1	tfold	xor				
+2pmGO2B26BY4jJELLqxrmssz	21		if0	not	plus	shl1	shr1	shr16	shr4	tfold	xor		
+3Je2CBnSFXVOATkvxPTKVPQw	21		if0	not	or	plus	shl1	shr16	shr4	xor			
+3Ohomh98InmUiMw5uw25mE4t	21		and	if0	or	plus	tfold	xor					
+3mdqWapwpFLt6P8nc5avIV17	21		and	fold	if0	not	plus	shl1	shr16	xor			
+44bmEyBNqDUv2UjK4SbB1zrO	21		fold	if0	not	or	plus	shl1	xor				
+4LVUXh4B5CrB9iBPssUN1Jmq	21		and	fold	if0	not	or	plus	shl1	shr16			
+4uxd4xv7AhiwdNHky549fE02	21		and	fold	if0	plus	shl1	shr1	shr16	shr4			
+5K7ggHJms56XmtCVpBAxK9od	21		fold	if0	not	or	plus	shl1	shr1	xor			
+6dbcUjNAsqu2Fz0vozKB4B9X	21		and	fold	if0	or	shr1	shr16	xor				
+6yCtUPkj1YzRkA8HCO722Fxa	21		and	if0	not	plus	shl1	shr16	tfold				
+8KO6ShrUeQoIkHqVIEO5tmMQ	21		and	fold	if0	not	plus	shl1	shr4	xor			
+8OtZBqDNrdxxQ1MI90ORSAds	21		and	if0	not	or	plus	shl1	shr1	shr4	xor		
+8a13kFhaDJ5dPfntJffrVit7	21		and	if0	not	plus	shl1	shr1	shr4	xor			
+8azR7Z3EecXnhY6AUmvAK0o8	21		and	if0	or	plus	shl1	shr4	xor				
+9TyRLLRONt0DcrDvO76YKbZ4	21		if0	not	or	shr4	tfold	xor					
+9hrOyaHAL0OGKt6mhj8xA40j	21		and	if0	not	or	shr16	shr4	xor				
+9jub0YhkfY3ezSiAQKx9CdyG	21		if0	not	or	shl1	shr16	shr4	xor				
+B4hjESvwRDQBzi4dImPRPD6L	21		if0	not	or	plus	shl1	shr1	shr16	shr4	xor		
+BdWj93Eq6PyUlfUneI37P7Xl	21		and	if0	not	or	shr1	shr4	tfold				
+BuS3PKlkqBPvm6DbqTfVnDGa	21		and	if0	not	shr1	shr16	tfold	xor				
+Cim5TEFyQLRuJ5PwiCBnLbTE	21		fold	if0	not	or	shl1	shr1	xor				
+DKbo8K6BNAzpAzBml59sRWNg	21		if0	or	plus	shl1	shr1	tfold	xor				
+Fx7uUzwnVIzK4XTxtj3JLjuK	21		and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
+Gw7ZYOiw4j4TariOaR1ICfNr	21		and	fold	if0	not	plus	shl1	xor				
+IMTnkkGfqMBxKvYZHyIHXRAf	21		and	if0	plus	shr1	shr16	shr4	xor				
+JmNlRUAAO3WgjAhwIGP2ybuo	21		and	if0	or	plus	shl1	shr1	shr4	xor			
+MJHVTmsY8777ZVwbBGq9hgY4	21		if0	not	or	plus	shl1	shr1	shr16	shr4			
+MnslgcN4XtokNQ5DJWFDKHV6	21		if0	not	or	shl1	shr16	shr4	xor				
+N2OjOEjvgZCPBVAmzLEAeJqi	21		fold	if0	not	shr1	xor						
+OrN1DOVorhD6BcKG6eJSCRjD	21		and	if0	not	or	plus	tfold	xor				
+PKonJ1pfOAAsyIwyCamLyk3L	21		and	fold	if0	or	plus	shl1	shr16	xor			
+PhVSRDEGj4ogevzPI8DEJZVP	21		fold	if0	not	or	plus	shr4	xor				
+QWqBGQA94YAAByeUtAwW2yp5	21		and	fold	if0	not	plus	shl1	shr1	shr4			
+RIauFLaOhmmRnQEb5yEqPUGd	21		fold	if0	plus	shl1	shr1	shr16	shr4	xor			
+S6nE4hzm5y72XQNyG6WUamGp	21		and	if0	or	plus	shl1	shr4	tfold	xor			
+ScFJbArKaGyapAlUJ48U5zYH	21		fold	if0	not	or	plus	shl1	shr16	xor			
+SkerhcOxEfKu2MzfTXPLdkKn	21		if0	not	or	shr1	shr4	tfold	xor				
+VdghhTmwfA4isjoXbGwIYN8v	21		and	if0	shr1	shr16	shr4	tfold	xor				
+XLPvckQ97O8VLgCj3S0mthTx	21		and	fold	if0	not	plus	shr1	xor				
+XTuo6RKpZuBUT4taVwiQV1YO	21		and	if0	not	or	plus	tfold	xor				
+YOvDBEyJA5cjQKcRbrgl9cnB	21		if0	not	or	plus	shl1	tfold	xor				
+Z916oGj6YGurVlhCCERozJCJ	21		and	if0	or	plus	shl1	shr1	shr4	xor			
+aNsjwoeAycLizq4fVAKfUnSm	21		and	fold	if0	not	or	shl1	shr16	xor			
+aYCUkl5cncLHgsWxbs5gxeEA	21		and	if0	or	shl1	shr1	shr16	tfold	xor			
+dyoJz9aD5oa06BhkVf9uh3EO	21		and	if0	not	or	plus	shr16	shr4	xor			
+eGdlUmk1DVeTwpEmlyygQBrn	21		and	fold	if0	or	plus	shr4					
+hOBM8kMYcpny5lroyMsMuD4U	21		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+hlEhROrVC0LRLwIfFktQcrRi	21		and	if0	not	or	plus	shl1	shr16	shr4			
+infqaJ0pTJxZtIib0DTjO8OB	21		fold	if0	or	plus	shl1	shr1	shr4	xor			
+jaBBQlnBxgibENKSFZ8fVgIZ	21		if0	not	or	plus	shr1	shr16	shr4				
+kLBmmsUyqnXnGkavBEp3jUYQ	21		and	if0	not	plus	shl1	shr1	shr16				
+m50m56TFKBA3ZP6PYpR3MUub	21		if0	not	or	shr4	tfold	xor					
+mhLBLxKYteahxb1pBwWrJamb	21		and	if0	or	plus	shl1	shr1	tfold	xor			
+ntAxPLdqJqNsKEzi6ujw33bt	21		and	if0	plus	shr1	shr16	xor					
+pWxeQfBo2M2VFCR41jd7dnUd	21		and	if0	not	plus	shr1	shr16	tfold	xor			
+r6oIhKluEGuJRj1fQYMFLyTE	21		if0	not	plus	shl1	shr1	tfold					
+xOJBbluNpSHf3lqlGkgIXaBB	21		fold	if0	or	plus	shr1	shr16	shr4	xor			
+xj6ThE4TgONZRaZwQE29EcGF	21		and	if0	not	or	shr1	shr16	shr4	tfold	xor		
+0DAg7wK01jfvCRRIbj8FVnN6	22		and	if0	not	or	plus	shr4	tfold	xor			
+16ceGiZMvt9R8UYiVgKRUnkr	22		and	if0	not	plus	tfold	xor					
+1tiPW01gVdxrCFNgZNmwdwR3	22		if0	not	or	plus	shl1	shr4	tfold	xor			
+2pyTXU5HhxZfpxFmfntMmEUq	22		if0	or	plus	shl1	tfold						
+4HFFSQoBmvOTSkNHs1SkSxye	22		and	if0	or	plus	shr1	shr4	xor				
+A6d0wvfCcabmhNzC2Iy12hZy	22		and	if0	not	or	shr16	shr4	xor				
+ADswf2FaqHBFOtaNHZUSAvN7	22		if0	or	plus	shl1	shr16	tfold	xor				
+B8vUPv1jt48PRqlYvSpzJrrO	22		and	if0	or	plus	shr4	tfold	xor				
+BCCK045ZrXeEgxTdU958mMLh	22		and	if0	not	or	plus	shl1	shr1	xor			
+BfopBeWPte2myFS35CHEvvtH	22		fold	if0	or	plus	shl1	shr16	shr4	xor			
+BjQ3unNvxjpAA1uPKWJsBma0	22		if0	not	plus	shl1	shr1	shr16	tfold	xor			
+BvmeQfWkvXttSaoSpkMTlnhC	22		and	if0	not	plus	shr16	shr4	tfold				
+C3A5Bm7y3BmIBeqmGxTDTgzz	22		and	if0	or	plus	shl1	tfold	xor				
+CR0wFl92tOMmJWAuJMAy0d2Z	22		and	if0	not	or	plus	shr1	shr16	shr4			
+DBqqgVXPTgBBBuWGAMpAUUv0	22		and	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	
+Fshpr1jnhddkPRpVp6KBufHW	22		and	if0	not	or	plus	shl1	shr1	shr16	shr4		
+GVctHmnXG0Rh6BYX1hBGyYxa	22		and	if0	not	plus	shl1	shr16	shr4	xor			
+GvJoTYpP2YAGE7gUqWbzY2Ym	22		if0	not	plus	shl1	shr1	shr16	shr4	xor			
+HCtg6PGLomzYljntBDQ2mMNZ	22		fold	if0	not	or	plus	shl1	shr4	xor			
+ICKUzwHsPKW2RGAkV7cKG5Ah	22		fold	if0	not	plus	shr1	shr16	xor				
+IGBTg4xkLjBB0oLr6efJtVnm	22		and	fold	if0	or	shl1	shr16	shr4				
+IRgtEOFmxFIRkYSeo5mQTQIO	22		fold	if0	not	plus	shl1	shr16	shr4	xor			
+JAuefDhXRCuwvbj2eH70y2ko	22		and	if0	not	or	plus	shl1	shr4	tfold	xor		
+Jyjb4QczPcVSUwL2XdR1RmA8	22		and	if0	or	plus	shl1	shr4					
+LBEubeyj4BUYImZ7B1Xn4ckS	22		if0	not	or	plus	shr1	tfold					
+LWWSxRosxB0Ygm9IKE35zmej	22		and	if0	not	plus	shr1	shr16	shr4	xor			
+ONTd5Qz362PrS5wRBEzk6jLA	22		and	if0	not	or	shl1	shr1					
+So9f7ZnFGPdeJGcB4q15UKVT	22		and	if0	not	or	plus	shr1	shr16	xor			
+V3LZbeQ9AFBUX9JvL6WBdTuX	22		and	if0	not	or	plus	shr1	tfold	xor			
+V51EIznGy1X4nocMMhoJiv6X	22		and	if0	not	or	plus	shl1	tfold				
+VNTTtkrxfdoOIf0nxXyGNoBh	22		and	if0	or	shl1	shr1	shr16	shr4	xor			
+WuC3HJQ9AdXu2IdzwvkbBqoB	22		and	fold	if0	plus	shl1	shr1	shr16	xor			
+X4MjSUM3Ez8ysSgZSWzylkr8	22		and	if0	not	or	plus	shl1	shr1	tfold			
+aDSD2gl1I0ZKd1SerGfOTeJQ	22		and	fold	if0	or	plus	shr1	shr16	shr4			
+aYIMHKAfOUBmCBlALqjzlQv5	22		and	if0	not	plus	shl1	shr16	shr4	xor			
+bZA4APH3JB1LfJ3z827sa7gM	22		and	if0	or	shr16	shr4	tfold	xor				
+beOG1uULpEyKakF3TENazAZ5	22		if0	or	shr1	shr16	shr4	tfold					
+cAnTBldueqbQOEmVBEskZ2tO	22		and	if0	not	shr1	tfold	xor					
+fO2ZCSdwinmAPnQlJ45orngR	22		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+g9jDkyaW74LdF0YwN3cXuNU1	22		and	fold	if0	shr1	shr16	shr4	xor				
+hvHztxa7m6Vfk0zAX8mPjc4B	22		and	if0	not	or	plus	shl1	shr1	shr16	xor		
+i0C1yGAk4qjsQxfqdduFHEiD	22		fold	if0	or	plus	shl1	shr16	shr4	xor			
+jr78VR3mZsiLoAoWsxFM2Bt4	22		and	if0	not	or	shr1	shr4	tfold	xor			
+kmVrvVYUUo7FMADSa08ZNtT7	22		fold	if0	or	plus	shl1	shr1	shr4				
+mpAtqRkwcRXPSv2oOmGGjghz	22		fold	if0	not	or	plus	shl1	shr1	shr16	shr4		
+no5dOkh0cUWhEkeKgE0RjfOC	22		and	if0	or	shl1	shr1	shr16	shr4	xor			
+pzHnIEVk01uc2SKeZ5LZGMsQ	22		and	if0	not	or	shl1	shr1	shr16	xor			
+q9WhjgvAZm0kbFOGYR7i7UNz	22		fold	if0	or	plus	shr16	xor					
+qjMXA920OUk188PQunSo5GXi	22		fold	if0	not	or	plus	shl1	shr1	shr4	xor		
+rGRcFTXStIm54VbPLPqMzjuB	22		if0	not	or	plus	shl1	shr1	shr4	tfold	xor		
+smKyEXJaJtrsns6kG91EpmA5	22		and	if0	not	or	shl1	shr1	shr16	shr4	xor		
+spq32PQ7dGEpWC2blsvQEku0	22		and	if0	not	or	plus	shl1	shr16	shr4	xor		
+t4rcsgMSs4SqtJp7dJulEgA6	22		and	fold	if0	not	plus	shr1	shr16	shr4	xor		
+vAEtDEXScMhaZUfU6lEjwa21	22		and	if0	not	or	shl1	shr1	shr16	xor			
+vaxSFXmejX8aSSW4l2BzN1bJ	22		fold	if0	plus	shl1	shr1	xor					
+xMJRAIqS5nPByX7HxR4N3NOd	22		and	fold	if0	or	plus	shr1	shr16	shr4			
+xru1Bd2ambAB2TTKVUtYNJ9P	22		fold	if0	not	or	plus	shr16	xor				
+xu6zcr3jgeo99GhH0TAAtsJ3	22		fold	if0	not	or	plus	shl1	shr16	shr4			
+z0orjv9Bsqt4F45nv2BPRBaw	22		and	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	
+zzqHljzQCZw8aPvMYSLxeNxx	22		and	if0	not	or	plus	shl1	shr4	tfold	xor		
+0IST9hs5FblAi3WSshbiJPjl	23		and	fold	if0	or	plus	shl1	shr1	shr4			
+0bOCBmMHyFjuwbiMtfHk5H8L	23		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+0erQlIBPkIcucXFaA7I7hDvS	23		and	fold	if0	not	plus	shl1	shr1	shr16	shr4	xor	
+1YGFs5w0eWUci3M1nZzzdBC3	23		and	fold	if0	or	plus	shr16	xor				
+3Q2heAgpJ1JkkiOX7LwPL5x1	23		and	if0	not	plus	shl1	shr1	shr16	shr4	tfold	xor	
+3tflJ3iTBL1sJqmWDAoM5gIN	23		if0	not	or	plus	shl1	shr1	tfold	xor			
+8Y2fav7AnGEczNKP6tSHmFFB	23		and	if0	not	or	shl1	shr1	shr4				
+8YkrQsOH3YbFMsU0bcNUKzxO	23		if0	not	or	plus	shr16	shr4	tfold				
+98aXA3JMseYDP7RA2ZAeujFw	23		fold	if0	or	shr1	shr16	shr4	xor				
+A3DfrhevAnQLIBNYiKNLeB4o	23		and	if0	not	or	shl1	shr1	shr16	tfold	xor		
+Ae3pB7o3eM6bKt166BlWjNiO	23		and	fold	if0	not	or	plus	shl1	shr16			
+BWI6AvdALiOYkmnELspKl4AI	23		and	if0	not	plus	shr1	shr16	tfold	xor			
+Bg1cla3Eda6Loxfug4VTGVAZ	23		and	if0	not	or	plus	shr16	tfold				
+BtOjNFt2UvRBXb6bJWONn4ko	23		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+DUykWGyEBYe18yjWc9ENr5Ad	23		and	if0	not	or	plus	shr16	shr4				
+FaQiI9flWYYAHtlkWlzKWxyD	23		if0	not	or	plus	shl1	shr1	shr4	tfold	xor		
+JebzAdOaElF3mef8Y1TyK88A	23		and	fold	if0	not	or	plus	shl1	shr1	shr16	xor	
+K9jvqKpvR3cgiuKOtQUN2D7b	23		and	if0	not	or	plus	shr1	shr16	xor			
+LNR6wPdUAd8lJVmSVhJBrXM5	23		if0	not	or	plus	shl1	shr16	shr4	tfold	xor		
+LPxlfn5qNT9AbbTKQ89Du6l6	23		and	fold	if0	not	or	plus	shl1	xor			
+NuCa3apB57fAf0Xg02AVx7Jm	23		and	if0	not	or	plus	shr1	shr16	shr4			
+OIcSTbCBIXZxt6EFFlhkfWB2	23		and	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor
+OX3a4hb5A1hAtn3KxC0zpVhD	23		and	if0	not	plus	shr16	shr4					
+P3Um63HgAcALBLmdxMd9B03n	23		and	fold	if0	or	plus	shl1	shr1	xor			
+Q8ky7hWunZCjzshp96MOrc7F	23		and	if0	not	plus	shr1	shr16	shr4	xor			
+R8q1rhfnwNmE6f0rTMkHgF46	23		if0	not	or	plus	shl1	shr16	shr4	xor			
+RKsITk7jm4rArq64ZoauOmEW	23		and	fold	if0	not	or	plus	shl1	shr1	shr4	xor	
+S8agFInNUasA2pB0ZKa1WANk	23		and	if0	not	plus	shl1	shr1	shr16	tfold	xor		
+SvhsjwjzTFvT2MFvmfYAPtoj	23		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+WVgE0dMAj50QogbapukD9mR5	23		and	fold	if0	or	plus	shl1	shr16	shr4			
+XeTeAOXRpTUwqTCe2seVXERn	23		if0	plus	shr16	shr4	tfold	xor					
+YDJ0FrHq3mQiLA1gPTBV1vTh	23		and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
+YGprefAYix5erapE9fdpRqHI	23		and	if0	plus	shr1	tfold	xor					
+ZWJqMa7cqOqxT6Mp9V3mkUIs	23		if0	not	or	plus	shl1	shr1	tfold				
+aASBtzHc1DS3YI62hpe2nnHo	23		and	if0	or	plus	shl1	shr1	shr16	shr4			
+bxRF2tDCEUu0wAnDu6DTQ2ek	23		and	if0	or	shr16	tfold	xor					
+dcX9QU4nhnULt5AcQ5TOGIQA	23		and	if0	or	plus	shl1	shr1	shr16	shr4	xor		
+eB2fxOXuuTUykpHDjsa0k8EL	23		if0	or	plus	shr4	tfold	xor					
+fYLVz0xN9PSFtgQHilRiu6Sg	23		and	if0	not	plus	shr16	shr4	tfold				
+fmibHzRw8e2K8npU9vMEOsmB	23		and	if0	not	plus	shl1	shr16	shr4	tfold	xor		
+i1i9mAW7OhlzvWBWC34NMYWB	23		and	if0	not	plus	shl1	shr1	shr16	shr4	tfold		
+je2BTCAysgi8GiId2vQgSIbl	23		fold	if0	not	plus	shl1	shr1	shr16	shr4	xor		
+kDRVJU8b3h6bwdH0hKyO0gFj	23		and	if0	not	or	plus	shl1	tfold	xor			
+klfrcD9tLcuHMO6WGG6AxFDA	23		and	fold	if0	not	plus	shl1	shr1				
+kuFexjIgIoPauXFMEO0u6ApC	23		if0	not	or	plus	shr4	xor					
+o5G5ZQCsh0leJP5kEeiVrbL4	23		if0	not	or	shl1	shr1	shr16	shr4	xor			
+ofazLC2tNLNahCQjgWB24uQY	23		and	if0	not	plus	shl1	shr16	shr4	xor			
+oviQyMgPHlI3auMagGpB8y9G	23		if0	not	or	shl1	shr1	shr16	xor				
+qyqBqhv4sNS728xnt4hD0zNv	23		and	fold	if0	or	plus	shr1	shr16	shr4			
+rXSRwfONehAkFMAjObDpsA2v	23		and	fold	if0	plus	shl1	shr16	shr4	xor			
+tHtkDRPh2xF9BaziDoLbk52t	23		fold	if0	not	plus	shl1	shr1	shr16	shr4	xor		
+udcXoczqBVj9Ef0qUkCo2ixn	23		and	fold	if0	not	shl1	shr16	xor				
+uiUvACOmxxeB4qEqGUp4Bnz3	23		and	if0	not	or	plus	shr1	shr16	shr4	tfold	xor	
+vGP3Vb8Q0QBc6MBLVHvz2jMZ	23		and	if0	not	plus	shl1	shr1	shr4	xor			
+vIxANzBwrWOdyTjApyNS3RRr	23		and	fold	if0	not	or	shl1	shr1				
+yOg2ScfAZUQ1boMoWZowB1Ob	23		and	fold	if0	or	plus	shl1	shr16	shr4	xor		
+yP8WBtyG64wpWn6z8Wj8dFBr	23		fold	if0	or	plus	shl1	shr4	xor				
+yQooc6P4AKV60xAzzXpWiO0E	23		and	if0	or	plus	shl1	shr1	shr16	shr4	xor		
+yXCIPa00OolhgWnU6PoYtw1t	23		if0	not	or	shl1	shr16	shr4	tfold	xor			
+zvod42yWbmCA35M9fmXjUyef	23		and	if0	not	or	plus	shr1	xor				
+01ZMYTDs0cu5PcbNVusTMYaM	24		fold	if0	not	or	plus	shr1	shr16	xor			
+0CNt3yviqj2UwIYdtqKvQFTV	24		if0	not	or	shl1	shr16	shr4	tfold	xor			
+0h971ZjrLDShrdNgR3nZZaBC	24		and	fold	if0	not	or	plus	shl1	shr1	shr4		
+0sBV26ORSxjdI6LoBAXW7BkW	24		and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
+0xhpfJEbiTs2DRABU86rQIBp	24		and	if0	not	or	plus	shr1	shr16	shr4			
+2Nuxd03lL2OOHpRlLX04Bfn2	24		if0	not	or	plus	shl1	shr4	tfold	xor			
+3Q5aJLJO2Aam7ueHNfKRHInZ	24		and	if0	not	or	plus	shr1	shr4	tfold	xor		
+5AtY8O9jY5Vr5zhtTgPXPK6q	24		and	if0	not	plus	shl1	shr1	xor				
+5tB5sddAuC4UASENHTvGTjsG	24		if0	not	or	plus	shr1	shr4	xor				
+65s7LPMtsMhodokbcVgSA9TA	24		and	fold	if0	not	or	shl1	shr1	shr16	shr4		
+6E8vOaRBGkDtlic5zo2mqWVl	24		if0	not	or	plus	shl1	shr16	tfold	xor			
+6LgmsKkgpjEANFR1lolQicoK	24		and	if0	or	plus	shr4	xor					
+7rAh90rE41eUMpBAxHqmbQ1x	24		if0	not	or	plus	shl1	shr1	shr16	shr4	tfold		
+B46hPRuxDeEIpoJRwyQesuN7	24		and	if0	not	or	plus	shr1	shr4	tfold	xor		
+BhEFBmVfKVdhrHcsI65VT6P6	24		and	if0	or	shl1	shr1	shr16	xor				
+BwwON3UDNcqbqSEuOWt9fdWK	24		and	if0	not	or	plus	shl1	shr1	shr16	tfold		
+C9d8AclxtPitv4oNX7gnn9rA	24		and	if0	not	or	plus	shl1	shr16	shr4			
+DEAxu7JvAOUsf2EqiBfYhql7	24		and	fold	if0	not	or	shl1	shr1	shr4	xor		
+E2zr97JlAhLW1hjYiJ7OC2P1	24		if0	not	or	plus	shr16	shr4	xor				
+E9OWh8MnRDGkW205HAqXkDbF	24		if0	not	or	plus	shl1	shr16	shr4	tfold	xor		
+EulAAn1PAJndi6Q4upXntUjB	24		and	if0	or	plus	shl1	shr16	tfold				
+FKnD8X3HHYX65ANMUuRhdA1C	24		and	if0	or	plus	shl1	shr16	shr4	xor			
+GPuHtZKpgRcAoPxTfr6nygJt	24		if0	or	plus	shl1	shr1	tfold	xor				
+JF7eqQaUydOqvtP3iM353y4Q	24		if0	plus	shl1	shr1	shr16	shr4	tfold	xor			
+L5ACBOybBWTD3KRAp3eGm3AB	24		and	if0	not	or	plus	shr1	shr4	tfold			
+L6DzWxyXJqQcIv1I5rXHoHFF	24		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+LPiyr8j4k2E1dl7IyUBGyoiK	24		if0	or	plus	shr1	shr16	shr4	xor				
+LsQhdRCKjFB2i7tAgVqiFPUF	24		and	if0	not	or	plus	shr1	tfold	xor			
+M7TyBcFMA1tsgmoHKYZXltAu	24		if0	not	or	plus	shl1	shr16	shr4	xor			
+N21AhEThOyrQ9Msrb3jH4gxv	24		fold	if0	not	or	plus	shl1	shr16	xor			
+OEnQJKpGBtH56BxLhat4eb1S	24		and	if0	not	or	plus	shl1	shr1	shr16	shr4		
+Pl9YWqQzCfPomObvfkJYhYxU	24		if0	not	plus	shl1	shr1	shr16	shr4	tfold	xor		
+Pz2SoaoJh5DTw2jGzwkSZ5uG	24		and	fold	if0	not	plus	shl1	shr4	xor			
+RaABZiKaYsbAwI1lqdlhpYl6	24		fold	if0	not	plus	shl1	shr1	shr16	shr4			
+RrBYvXUBKXVtTMrV4iQL5kCB	24		fold	if0	not	plus	shr1	shr16	shr4	xor			
+SnFbPLXo8CmATwRaHOSyU0iV	24		and	fold	if0	shl1	shr16	shr4	xor				
+Td1igUIQLnacB3VDRdKslrUG	24		and	if0	not	or	plus	shl1	shr1	shr16			
+VgKSw57mfS1091AlIUBFjNAT	24		and	if0	plus	shl1	shr1	shr4	tfold	xor			
+WPO6Zjta8TVqfJGoftb1WiOu	24		if0	not	or	shl1	shr1	shr16	tfold	xor			
+Wx5FLAGzG1adkj6PIRq87XRW	24		fold	if0	not	or	plus	shl1	shr1	shr16	xor		
+X53HvuLHFeroOGkEs9TKH7mI	24		and	if0	plus	shl1	shr1	shr4	xor				
+YwBv9WnSlwWePxVeMHTWyaGv	24		and	fold	if0	not	or	shl1	shr1	shr4	xor		
+bHEcsxPjSLB9WOQ9Hzaggg1O	24		and	if0	or	shl1	shr16	shr4	xor				
+bU4L6D7UqLIhdy9agsQG7uDh	24		fold	if0	or	shl1	shr1	shr4	xor				
+bn4TG8heWed7A0fOxaifnm8a	24		and	fold	if0	not	shl1	shr1	shr16	shr4	xor		
+fIoj3NAoydkG34zHSAzcHYZj	24		and	if0	or	plus	shl1	shr1	shr16	shr4	xor		
+fk1maZ9wvAFwBS5UgJNzs0rP	24		and	fold	if0	not	or	shl1	shr1	shr16	shr4		
+g0tjQfeZC2e7Umy0Ok9PIoIt	24		and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
+gNwu720sgM2Nr9rRSLMBO3Eo	24		fold	if0	not	or	plus	shr16	shr4	xor			
+gwquNDspAqaLkZKVhV0TBilc	24		fold	if0	or	plus	shl1	shr16	xor				
+hQgF3HKdZEIPBqcgrsqOP8A0	24		and	if0	or	shl1	tfold	xor					
+hYnvPqLgQ0DrlFfkYYqfA6kJ	24		fold	if0	or	plus	shl1	shr1	shr16	shr4	xor		
+jMffJRvLCRUBCmgtrPhziiQW	24		if0	not	or	plus	xor						
+kcHCT6MkhuTWOJN5JBdYwVuM	24		and	fold	if0	not	or	plus	shr1	shr16	xor		
+lwfgTpn3YiXlmjJVghCGDtuA	24		if0	not	plus	shl1	shr1	shr4	tfold	xor			
+mwG6g6nFxhLBROHgvQ7qDBwx	24		if0	not	or	plus	shr1	shr4	xor				
+n0oi7LBqK12dYMBA16D3AUm2	24		fold	if0	or	plus	shr1	shr16	shr4	xor			
+qvhedvFP9grmDSO8TxkTsui4	24		fold	if0	not	or	plus	shr16	xor				
+rnplI6UOgI9U72YhYklaBsrh	24		and	if0	not	or	plus	shl1	shr1	shr4	xor		
+xmTfq8C3RKnQ1X3lrbBaDbB8	24		and	if0	not	plus	shl1	shr1	xor				
+0IAzRBzSd94vfVB15851x2zo	25		and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
+2qlKmLBsygOpyoyzODyCTRAn	25		fold	if0	or	plus	shl1	shr1	shr4	xor			
+2r1gSUUX0qRjaszhtEc9sCSP	25		if0	not	or	plus	shl1	shr4	tfold	xor			
+4HJUPYxoStI1dKCACEVtpwKq	25		and	fold	if0	not	or	plus	shl1	shr1	xor		
+4cWJPXUzUwr6DGlSZhmVKWWJ	25		and	if0	or	shr1	shr16	shr4	xor				
+7KzmfVFWnQQTLBFlgtp0Oiub	25		and	if0	not	or	shr4	tfold	xor				
+7p1P3kgbbXBDrxMhKyro2IRB	25		if0	not	or	plus	shr1	shr16	shr4	tfold	xor		
+ACOqQBJJiDJb2KQBySykyFfY	25		and	fold	if0	not	plus	shl1	shr1	shr16	shr4	xor	
+B0TARlW7VybF6dhu8xJEAZD5	25		and	if0	plus	shl1	shr1	shr16	shr4	xor			
+BNYsJqIsa6SZzWGGzEn263xJ	25		and	if0	not	or	shl1	shr1	shr4	tfold	xor		
+C9QXgBAS1JoBnbRWt7nJiHVi	25		if0	not	or	plus	tfold						
+Ertf1Y6e5hSYLVnSrSBIRvuj	25		and	if0	not	or	plus	shl1	shr16				
+GpL9uEUiHq6TRJr4KjxfWyaM	25		and	if0	not	or	plus	shl1	shr1	shr4	xor		
+GtVn5x5lBucL3GmQyALcKc0g	25		and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
+H5YRSqsq2m1peKBpTZEcD9iz	25		if0	not	plus	shl1	shr4	xor					
+J7ZdOgfnok8XnEGWEVb3AKFF	25		if0	not	or	plus	shr16	shr4	xor				
+KwrmzBjbE2kfBoYrqymZpfmw	25		and	if0	not	plus	shl1	shr1	shr16	xor			
+LfBDn5iAPNP9HeeEoB1dkSpc	25		and	if0	or	plus	shr1	shr16	tfold				
+NS0LlnsInitfdtA7N0LjlAer	25		and	fold	if0	or	plus	shl1	shr16	shr4			
+NW46v2gQKpATPp57OBZk7DeL	25		and	fold	if0	not	or	plus	shr1	shr4			
+Nvq1AmjKqsMuZQLxMXtT4sEm	25		and	fold	if0	not	or	shl1	shr1	shr4	xor		
+OTiW9Aeh8NdkpI2PaFQ1yBBR	25		and	if0	not	or	shl1	shr4	tfold				
+R6mqfGiDfbz8prWFFoVQ7ixx	25		fold	if0	not	or	plus	shl1	shr1	xor			
+SHhqLw0zyBXqtbT6NEoMAsPX	25		and	if0	or	plus	shl1	shr1	shr4	tfold			
+Tj7KJiAgpY1NAqvWvxdL6ale	25		fold	if0	not	or	plus	shr1	shr16	xor			
+UIlpuBGBIAf38hCYHWEdkXuf	25		and	fold	if0	or	plus	shl1	shr1	shr16	shr4		
+UXo0LfcnXHzBmYxBtbmjOQ7L	25		fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+VWV6ResvTz3DCrT6olCXl8Qy	25		and	fold	if0	shr1	shr4	xor					
+Wj9v4Uz2ssgR2tzno4GQGCSR	25		and	if0	not	or	shl1	shr1	shr4	tfold	xor		
+Wjxh5vyus9oYrAyBLjn0JBPb	25		and	fold	if0	not	or	plus	shl1	shr1	shr4		
+YUd4AB4tXrXFNiDoXKyzxVGQ	25		and	fold	if0	not	or	plus	shr16	shr4			
+YZS6fwRs1W5GvEnBQrhrAHqt	25		and	if0	not	or	shl1	shr1	shr16	tfold	xor		
+YkwEhsHEBAXlEbzmrisRfH6p	25		and	if0	not	or	shl1	shr4	tfold	xor			
+Z3oyAPXiBp1PxZ9eIjyLEHXv	25		fold	if0	not	plus	shl1	shr16	shr4	xor			
+ZKrFcgzivKpyORAMrZf2s7Va	25		and	if0	not	or	plus	shl1	shr1	shr4	tfold		
+aI0wmnW2hPDeduAPS8tHt2t9	25		and	if0	not	or	shl1	shr16	shr4	xor			
+bt91fDpFGZv53CZJVsUCFbpM	25		and	if0	not	or	plus	shl1	shr1	shr4	xor		
+cnBKiIUkbAQyq5fvBgH81a56	25		and	if0	not	plus	shl1	shr16	xor				
+esutP16EPvxUTtCazqdRb24e	25		and	fold	if0	not	plus	shl1	shr1	shr16	xor		
+hwU2of69kLbpWRSFs7daIelw	25		and	if0	not	or	plus	shl1	shr1	shr16	xor		
+jSDDKN3DEISdRGlSWONy0cm6	25		and	if0	not	or	plus	shr16	tfold	xor			
+kHWFD41lI8v64vSYthCVq1M2	25		and	if0	not	plus	shl1	shr1	shr4	xor			
+lJpnOaOZtDOUnuzPK1Lja79S	25		and	if0	not	or	shl1	shr1	shr4	tfold	xor		
+mexBVZBZ05NEnYzpPHWNwmr0	25		and	fold	if0	not	or	shl1	shr16	shr4			
+n4AvykrsBsOGd7bBiSpM1g7N	25		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+nnB2jAXqG8M0wVssaiFYhXFH	25		if0	plus	shl1	shr16	shr4	xor					
+pHRKahqKfKQLkSamwLzdS7ab	25		if0	not	or	plus	shl1	shr1	shr16	shr4	xor		
+pXu7dGRCfCAt1xjUlKcL1WBQ	25		and	if0	or	plus	shl1	shr1	shr16	shr4			
+pddd2bL30y18bsI4qE2VsJ3X	25		and	if0	or	shl1	shr16	shr4	tfold	xor			
+pkMkGpVE96P7M6O6cBMS5r5B	25		fold	if0	not	or	shl1	shr1	shr16	shr4	xor		
+qge48iyABQCpaYBGTSmntAWJ	25		fold	if0	or	plus	shl1	shr16	shr4	xor			
+s8Q5IoQytHUVBv9FjF8DX255	25		fold	if0	or	plus	shl1	shr1	shr4	xor			
+t6OJh7I05cPjS037InFqZqso	25		and	fold	if0	shr1	shr16	shr4	xor				
+tjxmMYYrxXzYuk14XlLpCK0U	25		and	if0	or	plus	shl1	shr16	tfold				
+ukHbZ59xzXNNZzJWIDaBzrky	25		and	if0	not	plus	shr1	xor					
+v3l3h79f0XOGBJiy69Wuzb5D	25		if0	not	or	plus	shl1	shr4	tfold	xor			
+wWLVSpqSqyjchi6fFlgMNAOP	25		and	if0	not	or	plus	shr1	shr16	shr4	tfold	xor	
+yV38NKDQgd9YBAcoZ2zYHyTp	25		if0	not	or	plus	shl1	shr1	shr16	xor			
+z2Nt4mSaMdlZnydFjbCIbc3J	25		and	if0	not	or	plus	shr1	shr16	xor			
+zRqhKPxGukpVSlebrTlFcVnk	25		and	if0	not	shr1	shr16	shr4	tfold	xor			
+3YW7REImP05ymzLRiAAr5m7e	26		and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
+5Wvme4w0E9RnXqWdYBOE6XB5	26		and	fold	if0	or	plus	shl1	shr4	xor			
+7Tnck0edgQawnTcqYWAHkk77	26		and	if0	not	plus	shl1	shr4	tfold	xor			
+8f7KYBRobWTTHaBUvCNDrCkT	26		and	if0	not	or	shl1	shr1	shr4	tfold			
+AWS6H8oSRbGiSJjAcex2mtZ6	26		fold	if0	or	plus	shl1	shr16	xor				
+BbFCtBse5xDYSGlPmN8SwsIj	26		if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	xor	
+CkU3exX12ur2Zlpmy29HUh37	26		fold	if0	not	or	plus	shl1	shr1	shr16	xor		
+Ej8SFJgdKGiN5QsAxQAPEZLd	26		and	if0	not	or	plus	shr1	shr16	tfold	xor		
+Fi59gLA4xuVikZPCxqv3yjQA	26		and	if0	not	or	plus	shr1	shr16	tfold	xor		
+FzNGnsEBAK3lr2UNhBOqljpo	26		if0	not	or	plus	shl1	shr16	shr4	tfold	xor		
+GjJP9K27HUHhRM0yURCHNABs	26		and	if0	not	or	shl1	shr1	shr4	tfold	xor		
+H9TZMaygRQ8OfB5qNxw3StrD	26		and	fold	if0	not	plus	shl1	shr1	shr16	xor		
+JJiCEtqp34Ybz220yV7yodtz	26		and	if0	or	plus	shl1	shr1	shr16	xor			
+NrqJsfh3QCYkHvJm9fHHw5mb	26		and	fold	if0	or	plus	shl1	shr1	shr4	xor		
+OHtEgObOrf21woKo0BkP2BkG	26		and	if0	or	plus	shr1	shr16	shr4	xor			
+OO2BCSxxxB0OliaoE6k6onea	26		and	if0	plus	shl1	shr1	shr16	shr4	xor			
+OiOF6ulsjW64kuqNKG6DiolD	26		and	if0	or	plus	shl1	shr1	shr4				
+PeSIQV27JjCFSxrXs1Y9rDtH	26		and	fold	if0	not	or	plus	shl1	shr4			
+QBAVODygvJfeYbeF71mbBeZ8	26		and	if0	not	or	plus	shl1	shr1	shr4	tfold	xor	
+QpiwnfxpABLBvMbjUU7pfxIA	26		and	fold	if0	not	or	plus	shl1	shr1			
+QzQmDtVBlLTUiDDfQbj1ITEV	26		and	fold	if0	not	or	plus	shr1	shr4	xor		
+RfE9Z0l3FAiTW8AssJoV5kUt	26		and	if0	or	plus	shr16	shr4	tfold	xor			
+SEYkSp9zCa5mWDFPMIIpdSxz	26		and	if0	not	or	plus	shr16	shr4	tfold	xor		
+UCREpxVshlecdXSTmG9thSl4	26		and	if0	not	plus	shl1	shr1	shr4	xor			
+UQt1ZmoAKTy4lL34SpAELs8U	26		and	if0	or	plus	shr1	xor					
+VB8MDMEy7aqjABHPfhhLOhtd	26		and	if0	plus	shl1	shr16	tfold	xor				
+VuPshLsrR7A3ssAApXzGHSpa	26		and	if0	not	or	plus	shl1	shr16	xor			
+WohZdQeGRqx77npPXPtaogPW	26		and	fold	if0	not	or	plus	shl1	shr16			
+XnCbWTnDmIvnjPBAg4GitG3t	26		if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	xor	
+XySoPqayOe5rNn3OxD6t8SDw	26		and	if0	not	or	plus	shl1	shr16	shr4	tfold	xor	
+YBEehB5fAmBHOTcOzEAVBH8E	26		and	if0	not	or	plus	shr1	shr4	tfold	xor		
+a14AbqnSuNRCHEeIoqzjZP7Y	26		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+a6QIXMkWk62hGeEFICNZ7b4c	26		and	if0	not	or	shl1	shr1	shr16	shr4	xor		
+aNa4ZqkrfOVywDwmGgQ9UcUh	26		if0	not	or	plus	shl1	shr16	xor				
+aZeeH0UmGreJATOMtn2d4But	26		if0	or	plus	shl1	shr4	tfold					
+bNew7VGgCkk4dMHuvqeuce0T	26		and	fold	if0	not	or	plus	shl1	shr4			
+cEnBPn2Ec3oA8Hr3PBArzk4n	26		and	if0	plus	shr1	shr16	shr4	xor				
+cm7T82xLFpr2oJ1CCxZe7sux	26		fold	if0	or	plus	shl1	shr1	shr16	shr4	xor		
+eijmdlAKI3u9mDBeim87DXxQ	26		and	fold	if0	or	plus	shl1	shr1	shr16	shr4		
+f39AiA9C1wjLWY8rH0AdBFig	26		and	if0	not	plus	tfold						
+f6QoxGoxR9UUt2vC0OujVcps	26		if0	not	or	plus	shl1	shr1	shr4	xor			
+g0qGMVu1Oq1cAE4VkPJgynmJ	26		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+hFxRPBVAsIXJZTyLHU6L1A4E	26		if0	not	or	shr1	shr16	shr4	xor				
+k94CSL0zrxgEUEEvpuWXlfAh	26		fold	if0	not	plus	shl1	shr1	shr16	xor			
+khg5EDncmebTWmthbCC5Sm8S	26		if0	not	or	plus	shl1	shr16	tfold	xor			
+lz59HGeL8GLETELVLPtuPUzc	26		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+mFL8r8uCfkuklhY6ttRavu0I	26		and	if0	not	or	plus	shl1	shr16	tfold	xor		
+mWYHXHqY3Zm7PbKCJzgai421	26		and	fold	if0	not	or	plus	shr1	shr4			
+nrkXElG1BrrtpGrfhJGdBs6N	26		and	fold	if0	not	or	plus	shr1	shr16			
+oEYWSBxmTBLa621ffq15YAKm	26		fold	if0	not	or	plus	shl1	shr1	shr16	xor		
+op0elweL0afI3G6H94bkbcrA	26		and	if0	not	or	shr1	shr16	xor				
+ozWMyPYpVou6szFHmhnNcmpH	26		and	if0	or	plus	shl1	shr1	shr16	tfold	xor		
+pV3ZTXgOO8K2s1sr8rTBTWqv	26		fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+pzE5YA2ZbvraNCNigL8uEXmj	26		if0	or	shl1	shr1	shr4	xor					
+q7HX7zWoOQRyt9cVTh4ePpvy	26		fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+uRDF7NZQMRX7Blae0kXPLnxg	26		and	if0	or	plus	shl1	shr1	shr4	tfold	xor		
+wGlJSWFenDpiwVY2TWbn79V7	26		and	if0	not	or	plus	shl1	shr16	shr4	xor		
+wUZ8b4F8NegALaZlkbA17EeQ	26		and	fold	if0	not	or	plus	shl1	shr4			
+xcR3EJ5phxx9qnMwpHWBDwBS	26		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+y9zStFtPBxdsaGNZEuieRH5g	26		and	fold	if0	not	or	plus	shl1	xor			
+0eHBMpeTd4ARWsqzwJ8hZBiD	27		and	fold	if0	not	or	plus	shr1	shr16	shr4		
+1DWezCQiyz318ttRjnwbAXTx	27		and	if0	not	or	shr1	shr16	shr4	xor			
+2z1LaBsqXzcuEvwyWT54IZiA	27		and	if0	not	or	plus	shl1	shr1	shr4	xor		
+3RlsCkD3btSZLFXOgfBl1GiA	27		fold	if0	not	plus	shl1	shr1	shr4	xor			
+3geA9LKT2zFMPofGPWIZTt7N	27		and	if0	not	or	plus	shr1	shr4	xor			
+4NWwg5zWdA2LLzupL89QQp7h	27		and	if0	or	shl1	shr1	shr16	shr4	xor			
+504ztFH7ZxAJaNiNjGLs8dpt	27		and	if0	not	or	plus	shr16	shr4	tfold	xor		
+74SADOvIkyhzM5E1GRxTSvgr	27		and	if0	or	shr1	shr16	shr4	tfold	xor			
+85s84ZpZwsi5Tiw8X3Ce49dB	27		and	fold	if0	not	or	plus	shl1	shr1	shr16		
+8dkxFK3ph49gFJ9gqv8lpdFK	27		and	fold	if0	not	or	plus	shl1	shr1	shr16		
+AdsB6ACUlB9bjMOUhgIuCqZr	27		and	if0	not	or	shl1	shr1	shr4	tfold			
+ArCkeA99oggEkzL4Af9Fv3oM	27		and	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor
+BOVsYI6BlVvIn0RIgdv0kcBZ	27		if0	not	or	plus	shl1	shr1	shr16	xor			
+BZ5KiL4W008tSTSD3dv94rBo	27		and	fold	if0	not	or	plus	shr1	shr16	shr4	xor	
+CukNqV4OgbTkaPjB9xwVohKo	27		and	if0	not	or	plus	shl1	shr4	tfold	xor		
+De5oumbO2zwBngb9TCi5UMOP	27		if0	not	or	plus	shl1	shr1	shr16	shr4	xor		
+EBvhHRNzMNKMCxCiAgf5170f	27		and	if0	not	plus	shr4	tfold	xor				
+FRv5JZ2CLLAaLBhBGchceV7Q	27		and	if0	not	or	plus	shl1	shr1	shr16	shr4		
+Fkivp57PgaZ7isAEIuPLbxzM	27		if0	or	plus	shl1	shr1	shr4	tfold	xor			
+FtnKLW2foLG75d4O8BLr4bAp	27		fold	if0	not	plus	shl1	shr1	shr16	xor			
+H1mQGhDs1L00lHBbBYuZKN60	27		and	fold	if0	not	or	shr1	shr16	shr4	xor		
+HAIkRDsFEWxBgzSBtKzJN36F	27		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+IDzAfIVAEJAZ4cAihdIvzCAn	27		and	fold	if0	not	or	plus	shr16	shr4	xor		
+IrU7fzAUEol4erJA6pOljPg3	27		and	fold	if0	or	shl1	shr1	shr16	shr4	xor		
+NM1wn6B5OImlvaO57DEL6YEk	27		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+NyqmpoRVygy3DBMNINx2nGRC	27		fold	if0	not	or	plus	shl1	shr1	shr4			
+Oe4HWrI2jiWIscRnu5wDIYhF	27		and	if0	or	plus	shl1	shr1	shr4	tfold	xor		
+QkUeCmTk5AKZJIogGJiKBDUS	27		if0	not	or	plus	shl1	shr16	shr4	xor			
+SZvXwYmrhnFfXsM9x3URFAaZ	27		and	if0	or	shl1	shr1	shr16	shr4	tfold	xor		
+TAAKOaynnFNoFVGfbnMAPpke	27		if0	or	plus	shr1	shr16	shr4	xor				
+TVAOUSCecfzntpMBRujgHj0t	27		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+TW5B75HFAZ6rnSKBNALgyFDQ	27		and	if0	not	or	plus	shl1	xor				
+Ti9xcksgDTF6fYbQOm02x5oU	27		and	if0	plus	shl1	shr4	tfold	xor				
+ZfBXBq92mem4YEF8KQFstJXB	27		and	fold	if0	not	or	plus	shr1	shr16	shr4	xor	
+d9nuB5F3JIYO09BGaVGa6GKw	27		and	if0	not	or	plus	shl1	shr16	shr4	tfold	xor	
+e4KjdDBdoOGbwKFvJB2CJRKS	27		and	if0	not	plus	shl1	shr4					
+eCztg8PblJulu0MqacQHfNXh	27		and	if0	not	or	shr16	shr4	xor				
+eRgYlNvc3RSu0PdDpPj4mGvs	27		and	if0	not	or	plus	shl1	shr1	shr4	xor		
+feN58Q3DLDaMLPZADETgpsMn	27		and	if0	not	plus	shl1	shr16	shr4	tfold	xor		
+ftc5QX1ddSUAK2diYstoMOxA	27		and	if0	not	plus	shl1	shr1	shr16	tfold			
+g4R7vO2aluTTn2zJV6XXNikZ	27		and	fold	if0	not	plus	shr1	shr4	xor			
+hEOFKxjFjeYQd78GXoBmTjR9	27		if0	not	plus	shl1	shr1	shr16	shr4	tfold	xor		
+hb7rOTFCoOVfRR0csuxBBLm9	27		if0	not	or	plus	shr1	shr16	shr4	xor			
+hyMTV5HacMV8XBhw4RYeA62O	27		and	fold	if0	not	or	plus	shr1	shr16	shr4	xor	
+i4NrZBKLEuRfBAWT82xnkEzt	27		fold	if0	not	or	plus	shr1	xor				
+irv9uyQD7SYoTAr3r78yBYt3	27		and	if0	not	plus	shl1	shr1	shr16	shr4	tfold	xor	
+jumWnnGjPofhRVfR7rNjJQEi	27		and	if0	not	or	plus	shl1	shr1	shr16	shr4		
+lYNTkkI3J8hJv93orGmCupEW	27		if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	xor	
+lbDBUzh6f4jeTJKw7Dl9FBB5	27		and	fold	if0	not	or	shr1	shr4	xor			
+m1rjOxwDtqKhyIkE8ppsXnD5	27		and	if0	not	or	plus	shr1	tfold	xor			
+nUtuc6mK8Sa4NqjTWuIYixxA	27		fold	if0	not	or	shl1	shr1	shr16	xor			
+pxZ4THoULm2U7OIV63AzYROM	27		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+qX3vVCUP2GAFYp7ylekNBxVL	27		and	if0	not	or	plus	shr1	shr16	xor			
+rcXEkaPA7iTRYjDiUyAQztIE	27		and	fold	if0	not	plus	shl1	shr16	shr4			
+sh2C8EFJmfSNoL5aGkVDzN5A	27		and	fold	if0	not	or	plus	shl1	shr1	shr4		
+v9ul1977ryqtUplT8BBUl5qo	27		and	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	xor
+wGHF26eRgv8fbDsXwFWyYlTp	27		and	if0	plus	shl1	shr1	tfold	xor				
+y60tEjNXy4NOQUoCGmVHbYyi	27		and	if0	or	shl1	shr1	shr16	shr4	tfold	xor		
+yvmh57Lkk7NnU5y7OqUXN5SN	27		and	fold	if0	not	or	plus	shr16	shr4	xor		
+zNTlyNRUYAo0oahn9z16mg8A	27		and	if0	not	or	plus	shl1	shr1	shr4	tfold	xor	
+05A30c4glBbDnBJYEo96W8d5	28		if0	not	or	plus	shr1	shr16	shr4	xor			
+2SfejJuB0hUOXsYQHVYAuwsO	28		if0	or	plus	shl1	shr16	shr4	tfold	xor			
+4694xZmN9Wd4FWcKbdIsOnIB	28		if0	or	plus	shl1	shr1	shr16	shr4	tfold	xor		
+4auEfS6J7QPOuF3DhxgDYnPh	28		and	fold	if0	not	or	shl1	shr16	shr4	xor		
+59O8W2WL58ZWSrd3bxL5B7OZ	28		fold	if0	not	or	shl1	shr16	shr4	xor			
+5UquYGNjLYObDyPjC4CCPseR	28		and	if0	or	plus	shl1	shr16	shr4	tfold	xor		
+9HBfqfWBEuB5vfHaHB7T1GqB	28		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+9YXyV2kQ6pPk7tAwFmCMxbJJ	28		and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
+AU3B1pU87fAuY3hk94ISt26o	28		and	if0	or	plus	shl1	shr1	shr16	shr4	xor		
+AYPQ5LARubmMOAokOYF6T4Tx	28		and	fold	if0	not	or	plus	shr1	shr16	shr4	xor	
+BJApVSLMyI9rwJXaaHFdj1we	28		and	fold	if0	or	plus	shl1	shr1	shr4			
+CfV1mzYuHQrMsF05oa7ZPAMa	28		and	if0	not	or	shl1	shr1	shr16	xor			
+DGO2omh3OoFcdK5zPvh0ti4D	28		and	fold	if0	not	or	plus	shr16	shr4	xor		
+EedkycYxAd5vxGmBGSh4fm4i	28		and	if0	not	or	plus	tfold	xor				
+G8lxz2vVpTKbxDB9Ixv0FNHp	28		and	if0	not	or	shr1	shr4	tfold	xor			
+Hpkvz2kEnOmt2PpEGEeA4BJ0	28		fold	if0	plus	shl1	shr1	shr4	xor				
+I3Blf7tnleGbnnyWnuKVvaQC	28		and	if0	not	or	plus	shl1	shr1	shr4	tfold	xor	
+Lxr4cnDri2BwWv44gASzk27t	28		fold	if0	or	plus	shl1	shr1	shr4	xor			
+MGFt1VA4B1RWTEiAuD0B6ELE	28		and	if0	or	plus	shl1	shr1	shr16	shr4	xor		
+MNSonABW6bIxKJjJrX2jAwas	28		and	if0	or	plus	shl1	shr4	tfold	xor			
+MSk4hFh0M8eMMMJuZqzhBUEo	28		and	if0	not	or	plus	shr1	shr16	xor			
+Mfe9FAwy82Jiwjsk0f2hVAt8	28		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+P3ijDiww41VeI5qoUT5Q6AHg	28		if0	not	or	plus	shl1	shr1	shr4	tfold			
+PBNnmLmVLpskfHpKtu6wGZ3E	28		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+PUJlr3bhw7jRAgGMroPH4vGW	28		and	if0	not	or	plus	shl1	shr1	xor			
+PhlMXjHwfsrMgEnUicZXAQVz	28		if0	not	or	plus	shl1	shr1	shr4	xor			
+QMrXp5mSt0uRsLriCaI7vbTQ	28		and	fold	if0	or	plus	shl1	shr16	shr4			
+RZUBCefz0uc7FLQXdoR4KRoC	28		if0	or	plus	shl1	shr16	shr4	tfold	xor			
+Rah42WwAQXgAABjUqrBpSmhQ	28		and	if0	or	plus	shl1	shr16	shr4	xor			
+Sa7hxT2LRiyKdCtk8IWk3i7O	28		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+Sc0eQsP5Hq8EsOoBz2VAxPXn	28		fold	if0	or	shl1	shr1	shr16	shr4	xor			
+T5hqFxcXYEqL08rfwwb4eCO2	28		and	fold	if0	not	or	shl1	shr1	shr16	shr4	xor	
+TGW8lx0CbU68x1XrDUmATygS	28		and	if0	or	plus	shl1	shr16	tfold	xor			
+TrjT9n7VwiBcXAZeoak8LaAB	28		and	fold	if0	not	plus	shr1	shr16	xor			
+TwGSozLMvyjPuNQVzC0iqr32	28		and	if0	not	or	plus	shr1	shr16	shr4	tfold	xor	
+U6EbelQ8ExFk3vuwAMVSfQjr	28		and	fold	if0	or	plus	shl1	shr16	shr4	xor		
+VhptEymQJNsUDSo0oCUiQ6Mh	28		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+ZdytCYGezOBHau91AFziNPR3	28		and	fold	if0	not	plus	shl1	shr16	shr4	xor		
+bcrQRqlgg6PaDaMLt1XzBrg3	28		and	if0	not	or	plus	shl1	shr1	shr16	shr4		
+cHaRBceSJtRMaE9Omxt4h0d9	28		and	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	
+cP9I65E4VFAgH74LrGdIObK4	28		if0	or	plus	shr1	shr16	shr4	tfold	xor			
+chhvLl5JSfymZMoDzNIAnrbU	28		and	if0	not	or	plus	shl1	shr16	shr4	xor		
+dxBy8PuolBaoApji3NYUW8YA	28		and	if0	not	or	plus	shr16	shr4	tfold	xor		
+j5Hq8bIyrfEDGLTv8hTR2vCs	28		and	if0	or	plus	shl1	shr4	tfold				
+jMdlXRNDrTf1dCkeNJBdqm4H	28		and	if0	or	plus	shr1	shr16	shr4	xor			
+kmyvZJpBOJGWfpyG1eGOS6iF	28		and	fold	if0	not	plus	shr1	shr16	xor			
+l78SZt0r4eZzH7toRtGM4QOC	28		and	fold	if0	not	or	shr1	shr16	shr4	xor		
+lKfMbySnrmkG69PbCNBgFPw2	28		and	if0	or	plus	shr1	shr4	xor				
+lvrk39O1t5VQGfkYXapB11HL	28		and	if0	not	or	plus	shl1	shr1	xor			
+n765eHmiBlEVOkjGl8tqKFXU	28		and	if0	or	plus	shr1	shr4	tfold	xor			
+oeUf1sB6PEoq7bJissFHs2ge	28		and	fold	if0	not	or	plus	shr1	shr16	shr4	xor	
+qKDk2C8BFPRyYiKK1F4SOJyM	28		and	if0	or	plus	shl1	shr4	tfold				
+r2c1dwI9Ig5XSkFgdHIb7ZgW	28		and	fold	if0	not	or	plus	shl1	shr1	shr4	xor	
+r5KHe6mOaMN2LqXRhiclbV26	28		and	if0	or	plus	shl1	shr1	shr16	shr4			
+rN7idAuqAYCRUn5lGe0BveE6	28		and	if0	not	plus	shr1	shr16	shr4	tfold	xor		
+u0dfNRb8hOoFpeuWAmRwtNzi	28		and	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	xor
+wbPBH6AutsrtIfNnQJRBSqk0	28		and	if0	or	plus	shl1	shr1	shr16	tfold	xor		
+wbk6qHrySjYy1GBRzBBTllDB	28		and	fold	if0	or	shl1	shr1	shr16	shr4	xor		
+xB39M2F59bVJjrHbbO3zsKOG	28		and	if0	or	plus	shl1	shr1	shr4	tfold	xor		
+zCh6tieQabGFbyaYM9yXS3BL	28		fold	if0	or	plus	shl1	shr1	shr4	xor			
+0a7zPcEKjaIUKf7UWpfMa4bG	29		and	fold	if0	not	or	plus	shr16	shr4	xor		
+0j0bPHVHBcMuYPYblrwHN0Oy	29		and	if0	not	or	plus	tfold	xor				
+1KpCqBhFaI58pH4lA6GKikWw	29		and	fold	if0	not	or	plus	shl1	shr1	shr16	xor	
+1s4BwG83KqASwYGfw6rbo2Un	29		and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
+2VepvrIbhTcOAk03LkTyAlrb	29		and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
+341pwtDCWq8XrTIAoAkxDFl2	29		and	if0	not	or	plus	shl1	shr1	shr16	xor		
+4sUvB3KgeNIemdTXSRpBHA5c	29		if0	not	or	plus	shl1	shr1	shr4	xor			
+7NrXPU9EiXXrMcZLCUGqATtC	29		and	fold	if0	not	shl1	shr1	shr16	shr4	xor		
+8MDTC6UjR2FjAyWqVBVUgLQ8	29		and	fold	if0	not	plus	shl1	shr1	shr16	shr4	xor	
+8skaViAbUPUJlzZfI6t1us9B	29		and	fold	if0	not	or	plus	shl1	shr4	xor		
+A5eZ5QAlrfONHMf4IQriwxae	29		and	fold	if0	not	or	plus	shr16	shr4	xor		
+B81oYDEANBjdIAn8VF2nKG96	29		and	fold	if0	not	shl1	shr16	shr4	xor			
+DtUDkA5G79184XcKfIRi3QI0	29		and	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	
+ET2YRXtZLHFjCnd8B76z6mdW	29		and	fold	if0	not	or	plus	shl1	shr1	xor		
+ETqsoa2VoSpip0AA5UDrKzMN	29		and	if0	not	or	plus	shr1	shr4	tfold	xor		
+FV0q0oFShNVFBxI4wnorTQGE	29		and	if0	not	or	plus	shr16	shr4	xor			
+HrJU4oF4ORWH3t09G8lKN76V	29		fold	if0	not	or	plus	shl1	shr1	shr16	xor		
+If37cuI7b0AFx1KxJ6eKdGKn	29		if0	not	plus	shl1	shr16	shr4	xor				
+LQQ2PMB5zznK2J4LBSWGIw18	29		and	if0	not	plus	shl1	shr16	tfold	xor			
+Lq9eyXBkEJF8BENaZB332HZ9	29		if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	xor	
+LtlThGCNi36RURzVGfiAPxQV	29		fold	if0	not	or	plus	shl1	shr4	xor			
+NPnDVek1XXF8SI0IE9g3SdBS	29		and	if0	or	plus	shl1	shr1	shr4	tfold	xor		
+NcokndhqfRQJtiWLbfK0p8F4	29		if0	or	plus	shl1	shr1	shr4	xor				
+OVAkbPMLtmELGwWsnduAXbUO	29		and	fold	if0	not	or	plus	shl1	shr1	shr16	xor	
+OiqZiQMAFBKsUbWtzGDxQNA3	29		and	if0	not	or	plus	shl1	shr16	shr4			
+Otu5xmHHsYesNTC5P7fTny51	29		and	if0	not	or	plus	shl1	shr1	tfold	xor		
+RoaNagLXFDAMwIYczUzfFO4G	29		and	if0	or	plus	shl1	shr1	shr16	shr4	tfold	xor	
+SAvgIVYI1VHn7WmYCBpih2vv	29		if0	not	or	plus	shl1	shr1	shr16	shr4	xor		
+SkBk2fMemlYgOTBQYhdi5sNS	29		and	fold	if0	not	or	plus	shl1	shr1	shr4	xor	
+T1SAFv9aOnqrtBlh6t7h9pdE	29		and	if0	not	or	plus	shl1	shr16	shr4	xor		
+UD3HQZTRmb8uIJlhRzorrAAL	29		and	if0	not	or	plus	shl1	shr4	tfold			
+VDeXk0VH1dsWRb4ZXr8LniCB	29		and	if0	not	or	plus	shl1	shr1	shr16	xor		
+VDvuYTNhJT0iv25OzOI6N8qd	29		and	if0	or	plus	shl1	shr1	shr16	tfold			
+VXsoPHenGvThwbadbVLr0PpE	29		and	if0	or	plus	shl1	shr16	shr4	xor			
+WFPbzMhasA0t3pXFuEvh1njY	29		and	fold	if0	not	plus	shl1	shr16	shr4			
+XuVBUoBwFuAH3Akmmi95krYq	29		and	if0	not	or	plus	shr1	shr16	shr4	tfold	xor	
+YXIlaIIMKAsrzlCBSBZbuSiU	29		and	if0	not	plus	shl1	shr1	shr16	shr4	xor		
+cJjBquIkbIAwh9S2eLOs2oq6	29		fold	if0	not	or	plus	shl1	shr16	shr4			
+dM7kWBxVJNrdqlTiGJk2PbwF	29		and	if0	not	or	plus	shl1	shr1	shr4			
+eZZoENKT2EHBAKqOtHMkv5eA	29		and	if0	not	plus	shl1	shr1	shr16	shr4	tfold		
+ez6hNHHtU61oDDJKtcO3M8WB	29		and	if0	not	or	plus	shr1	shr16	shr4	tfold	xor	
+f32AHwXd4lRgqiMPkmn4Yq0V	29		and	if0	not	or	plus	shl1	shr16	shr4	tfold	xor	
+hBbBZU5ABBc9YiW24z8DWo52	29		and	if0	not	or	shl1	shr1	shr16	shr4	xor		
+hFlsvTq0KaG8hPcmbF9Tj3u4	29		if0	or	plus	shl1	shr1	shr16	shr4	xor			
+ivGjGbGKNOGGuSUI4ksYbBdy	29		and	fold	if0	not	or	shr4	xor				
+ja7lhD82t1m7uW6H1zdfcqAL	29		if0	or	plus	shl1	shr1	shr4	tfold				
+mPXjuNGgR0TBF8APrQCiIihb	29		and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
+nY4jUyqp8W07gzAE7wdpfKBU	29		and	if0	not	or	plus	shr16	shr4	tfold	xor		
+oHedEbYxOAE8AL6PtBXj2BEY	29		and	fold	if0	or	shl1	shr16	shr4				
+ojEWmKhQ8DH4jV5GSygUR4Mv	29		and	if0	not	plus	shl1	shr1	shr16	shr4	tfold		
+p4aBTFEL9McNgIH6RUDKIw9z	29		fold	if0	not	or	plus	shr1	shr4	xor			
+qkoB2O4ieAph8iSOeEQNtISU	29		and	fold	if0	or	plus	shl1	shr1	shr16	shr4	xor	
+sxnLzQ3kVbscBCS1Ew0LPmBG	29		and	if0	not	or	shl1	shr16	shr4	xor			
+v62mucw71V5hPKxO97NHGYWE	29		and	if0	not	or	plus	shl1	shr16	xor			
+w7FKKVOGAPzIXnwlcxELIRPP	29		if0	plus	shl1	shr16	tfold	xor					
+wq13w3cILDJRmglWEvKycgtS	29		and	fold	if0	not	plus	shl1	shr16	shr4	xor		
+xap7pBD6Whsad8ybBiuuKQBD	29		fold	if0	not	plus	shl1	shr1	shr16	shr4	xor		
+zPKB3aJAb3gVNxUob2iC67CX	29		and	if0	not	or	shl1	shr1	shr16	shr4	xor		
+zu3GKVUmNEEYClZGksZEIgrZ	29		if0	not	or	plus	shl1	shr1	shr16	xor			
+zyYxOyqfLlBUjB7jvitF7mjy	29		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+1iBch6ZFtL8wRoFpsCD33uLM	30		and	if0	or	plus	shl1	shr1	shr16	xor			
+4KmDLCMfrxu0SacDtrNAyJ6N	30		and	fold	if0	not	or	plus	shl1	shr1	shr16	xor	
+717boJDLc8Z9FUlDmXaHoR8I	30		and	if0	not	or	plus	shl1	shr1	shr4	xor		
+7BcqW1h9EPrjmXbHRxMAECox	30		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+7nWgr2YLfYhWSkG1zZsol3Cj	30		and	fold	if0	not	or	plus	shr1	shr16	shr4		
+8TBVHiT44OIa5134eSpHxx9t	30		and	fold	if0	or	shl1	shr1	shr16	shr4	xor		
+A3T1qxPgH91YCjjGUhmBCuaD	30		and	fold	if0	not	or	plus	shl1	shr16	shr4	xor	
+AVr6AbBALjjkWeth3zalvFHH	30		and	if0	not	or	shl1	shr1	shr16	shr4	xor		
+BFH0F4zle7PmC2yibsHro5IU	30		if0	not	plus	shl1	shr1	shr16	shr4	xor			
+BPoGoFVG7PTchFuh4pyAE1gs	30		if0	not	or	plus	shr1	shr16	shr4	xor			
+BxRL4LHmzKB2wSAQJPgv779o	30		and	fold	if0	not	or	shl1	shr1	xor			
+D2NoTEBpIoTpm57dxOIfBCiC	30		fold	if0	or	plus	shl1	shr1	shr16	shr4	xor		
+FlTOPsOsBuutfJTutvgW3KtE	30		and	fold	if0	not	plus	shl1	shr16	shr4	xor		
+G92MMM05B9RqChNAcL6jjCFN	30		and	if0	or	plus	shr4	tfold					
+KLBJb6N3Ba4Oay277lbBEqBw	30		and	if0	not	plus	shl1	shr1	shr16	tfold	xor		
+KrFMFXc6LC3JnDifxUKQiZfV	30		and	fold	if0	not	or	plus	shl1	shr1	xor		
+KwosIGFz2MC4gAA1A0v3Sorq	30		and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
+LLzMQWbCmrKFcDyQvSyb6lIs	30		and	if0	not	or	plus	shl1	shr16	shr4			
+LaF1RFjbVd4dCFYsBByjdup4	30		and	if0	not	or	plus	shl1	shr16	shr4	tfold		
+Q8YocBDMOSeqpGkbBoLurf47	30		and	fold	if0	not	plus	shl1	shr4	xor			
+QOlsEUiQeDCAWKdpNuPD5BtW	30		and	fold	if0	not	or	shl1	shr1	shr16	shr4	xor	
+QSAgZ66fBTNA6MCoPFz1V2A0	30		fold	if0	not	or	plus	shl1	shr1	shr16	shr4		
+RebEil4LOdg2qUc0CR8XbYBx	30		and	if0	not	or	plus	shl1	shr1	shr4	xor		
+TfekIjB7YMtubGJBu3auAFjI	30		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+UQ6I2w6tB9WKl0lRqVD1IR5i	30		fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+UgUZG0mUuRuJN7KWXB5sL6Dk	30		and	if0	not	or	plus	shl1	shr1	shr4	xor		
+VmUGzkZGnW9DZ0KXBC8SAkp4	30		and	if0	plus	shl1	shr1	shr4	xor				
+XDCqJ4gdExmS6s6e5XgQdv1B	30		and	fold	if0	not	or	plus	shl1	shr1	shr16	xor	
+YlSyaBNBYcVNwpgeIQMXmESw	30		and	if0	or	plus	shl1	shr1	shr16	shr4	tfold	xor	
+ZAuq8b6h9wn7utDxajGN6oCC	30		and	if0	not	plus	shl1	shr1	shr16	xor			
+ZeQZajaTCQP1AXH7J0X56G5P	30		and	if0	not	or	plus	shl1	shr1	shr16	tfold	xor	
+aMP1mQI2VKGBl1EBpJMRBLRs	30		and	if0	not	plus	shl1	shr1	shr16	tfold	xor		
+c4mMfXghGRY32COka0qtaV5I	30		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+cjoHxEqTWGopN5OARGVv2Dbr	30		and	if0	or	plus	shl1	shr1	shr4	tfold	xor		
+eEhOXI1bkVMhY5DyBKhzjVud	30		and	if0	not	or	plus	shl1	shr4	xor			
+fWSCxDbrCika53wdv1umMD8j	30		and	if0	or	plus	shl1	shr1	shr16	shr4			
+fwOb2FNXDwA5TXVD9NhvQgjI	30		and	fold	if0	not	or	plus	shr1	shr4	xor		
+hhAJCxBTzA7GibfMqNPFgAhn	30		if0	not	or	plus	shl1	shr16	shr4	tfold	xor		
+jyHB6ZDswJYro4c5UToUU86Q	30		fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+kKqsGw7XW3IcOqI42VNB2dvy	30		and	fold	if0	not	or	plus	shl1	shr16	shr4	xor	
+kcj7IS7uu3PnusOMKnxx4h9L	30		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+m4BxFCZADjlzG02wQU8MKgWE	30		and	fold	if0	not	or	plus	shr1	shr16	shr4	xor	
+mLiUuFhnSpXXUl4vIbrSSnR3	30		and	if0	not	plus	shl1	shr1	shr16	shr4	tfold	xor	
+nCqOty64u9EVS6A1WhwQTHZQ	30		and	if0	not	plus	shr1	shr16	shr4	tfold	xor		
+nwoIiBMyEADYJIdLk66QF0OF	30		and	if0	or	plus	shl1	shr1	shr16	tfold			
+oAbVtdsE2NYjsj5jnOUrQS16	30		and	if0	not	or	plus	shr16	shr4	tfold	xor		
+ogyNZG9S5QQW6rNrAu2iWAWA	30		and	if0	not	or	plus	shr1	shr16	shr4	xor		
+qUQ2W23q426eFaVlwBXCpnNe	30		if0	not	or	shl1	shr1	shr16	shr4	xor			
+qjGXQxcKZaQElQtsxWU1mHVx	30		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+rQ0k5A9a3jFTrlJbem3iPzxF	30		and	fold	if0	or	shl1	shr1	shr16	shr4			
+rbX9vdKSwNV4F2phg8jLeS4A	30		and	fold	if0	not	or	plus	shl1	shr1	shr16	shr4	xor
+tk22oiJlooYl2fHiQryXAxkM	30		and	if0	not	or	plus	shl1	shr1	shr16	shr4	tfold	
+uvBlVGoxmZCMZKuAUicaglDZ	30		and	if0	not	or	plus	shr1	shr16	tfold	xor		
+wiaE0ncSxYCBDKq42eioyABj	30		and	if0	not	plus	shl1	shr16	shr4	tfold	xor		
+wxp9pAVpVPbLEPsq8vX7DJbz	30		and	if0	not	shr1	shr16	shr4	tfold	xor			
+xOqIlUfuwAAafkqNnUtqtH6r	30		if0	not	or	shl1	shr1	shr4	tfold	xor			
+xumCUY8Z0Zmoenzzfrd8ofH7	30		and	if0	not	or	shl1	shr1	shr16	shr4	tfold	xor	
+yj2zgG06RB9gbmIJ0HAGUu8i	30		and	fold	if0	not	plus	shr1	shr16	shr4	xor		
+yzm2BQvtY69E4XFsaRmdFwlw	30		and	if0	not	or	plus	shl1	shr1	shr16	shr4	xor	
+zX7zUAUY4RTfO5oYhtdzYDLi	30		and	if0	not	plus	shr1	shr4	tfold	xor			
+													
