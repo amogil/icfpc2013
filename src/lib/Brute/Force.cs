@@ -143,32 +143,5 @@ namespace lib.Brute
 				Assert.Fail();
 			}
 		}
-
-		[Test]
-		[Explicit]
-		public void Perf()
-		{
-			var rnd = new Random();
-			var force = new Force();
-			var unaryOps = Unary.Operators.Select(t => t.Key);
-			var binaryOps = Binary.Operators.Select(t => t.Key);
-			var allOps = unaryOps.Concat(binaryOps).ToArray();
-
-			var sw = Stopwatch.StartNew();
-			var trees = force.Solve(8, allOps).ToList();
-			sw.Stop();
-			Console.Out.WriteLine("#trees: {0}, gen took: {1} ms", trees.Count, sw.ElapsedMilliseconds);
-
-			var args = new List<Vars>();
-			for (var i = 0; i < 4; i++)
-				args.Add(new Vars(rnd.NextUInt64()));
-			Console.WriteLine("eval");
-			sw.Restart();
-			foreach (var arg in args)
-				foreach (var tree in trees)
-					tree.Eval(arg);
-			sw.Stop();
-			Console.Out.WriteLine("#trees: {0}, eval took: {1} ms", trees.Count, sw.ElapsedMilliseconds);
-		}
 	}
 }
