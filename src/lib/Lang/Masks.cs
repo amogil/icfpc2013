@@ -83,7 +83,7 @@ namespace lib.Lang
 			}
 			if (f == 6)
 			{
-				return args[3];
+				return args[2];
 			}
 			if (f == 7) return args[0].Not();
 			if (f == 8) return args[0].ShiftLeft(1);
