@@ -11,67 +11,69 @@ namespace ProblemsMiner
     internal class ProblemsMiner
     {
         private static readonly ILog log = LogManager.GetLogger(typeof (Program));
-        private readonly string _problemsFilename;
-        private readonly string _resultsDir;
+        public ProblemsReader Source;
 	    private WebApi webApi;
 
-        public ProblemsMiner(string problemsFilename, string resultsDir)
+        public ProblemsMiner(ProblemsReader source)
         {
-            _problemsFilename = problemsFilename;
-            _resultsDir = resultsDir;
+            this.Source = source;
         }
 
         public void DownloadTrainProblemsSamples(int passes)
         {
             webApi = new WebApi();
-            Problem[] problems = ReadProblems(_problemsFilename);
+            Problem[] problems = Source.ReadProblems();
             for (int i = 0; i < passes; i++)
             {
-                DownloadTrainProblems(_resultsDir, problems);
+                DownloadTrainProblems(problems);
             }
         }
 
-        private void DownloadTrainProblems(string saveBasePath, IEnumerable<Problem> problems)
+        private void DownloadTrainProblems(IEnumerable<Problem> problems)
         {
             foreach (Problem problem in problems.Where(p => p.Size > 3).Shuffle())
             {
                 var trainRequest = new TrainRequest(problem.Size, problem.FoldOperators);
                 TrainProblem trainProblem = webApi.GetTrainProblem(trainRequest);
-                File.AppendAllText(TrainProblemFilename(saveBasePath, trainProblem, problem),
-                                   trainProblem + Environment.NewLine);
+                Source.SaveTrainProblem(trainProblem, problem);
             }
         }
 
-		public void DownloadTrainProblemsResults(bool onlyRelevant, Int64[] arguments)
+        public void DownloadTrainProblemsResults(bool onlyRelevant, UInt64[] arguments)
+        {
+            Problem[] problems = Source.ReadProblems();
+            DownloadTrainProblemsResults(problems, onlyRelevant, arguments);
+        }
+
+		public void DownloadTrainProblemsResults(Problem[] problems, bool onlyRelevant, UInt64[] arguments)
 		{
 			webApi = new WebApi();
-			Problem[] problems = ReadProblems(_problemsFilename);
 			for (int i = 0; i < problems.Length; ++i)
 			{
 				var problem = problems[i];
-				string relevant = Path.Combine(_resultsDir, String.Format("{0}.txt", problem.Id));
-				string unrelevant = Path.Combine(_resultsDir,String.Format("{0}.unrelevant.txt", problems[i].Id));
-				TrainProblem[] trainProblems = ReadTrainProblems(relevant);
-				TrainProblem[] unrelevantTrainProblems = ReadTrainProblems(unrelevant);
+
+                TrainProblem[] trainProblems = Source.ReadTrainProblems(problem, true);
+                TrainProblem[] unrelevantTrainProblems = new TrainProblem[0];
 				if (!onlyRelevant)
-					unrelevantTrainProblems = ReadTrainProblems(unrelevant);
+					unrelevantTrainProblems = Source.ReadTrainProblems(problem, false);
 
 				foreach (var trainProblem in trainProblems.Union(unrelevantTrainProblems))
 				{
-					string savepath = TrainProblemResultFilename(_resultsDir, trainProblem, problem);
-					for (int k = 0; k < arguments.Length/255; ++k)
-					{
-						var args = arguments.Skip(k*255).Take(255).ToArray();
-						var results = DownloadTrainProblemResult(trainProblem, args);
-						SaveTrainProblemResult(savepath, results);
-					}
+				    var currentResults = Source.ReadResultsForTrainProblem(trainProblem, problem);
+				    if (arguments.Any(arg => !currentResults.ContainsKey(arg)))
+				    {
+				        for (int k = 0; k < arguments.Length/255; ++k)
+				        {
+				            var args = arguments.Skip(k*255).Take(255).ToArray();
+				            var results = DownloadTrainProblemResult(trainProblem, args);
+				            Source.SaveResultsForTrainProblem(trainProblem, problem, results);
+				        }
+				    }
 				}
 			}
 		}
 
-		
-
-		private IDictionary<Int64, Int64> DownloadTrainProblemResult(TrainProblem trainProblem, Int64[] arguments)
+        private IDictionary<UInt64, UInt64> DownloadTrainProblemResult(TrainProblem trainProblem, UInt64[] arguments)
 		{
 			EvalRequest request = new EvalRequest()
 				{
@@ -79,66 +81,40 @@ namespace ProblemsMiner
 					arguments = arguments.Select(i => i.ToString("X")).ToArray()
 				};
 			var response = webApi.Eval(request);
-			Dictionary<Int64, Int64> results = new Dictionary<long, long>();
+            Dictionary<UInt64, UInt64> results = new Dictionary<ulong, ulong>();
 			if (response.outputs.Length != arguments.Length)
 				return null;
 			for (int i = 0; i < response.outputs.Length; ++i)
 			{
-				Int64 result = Convert.ToInt64(response.outputs[i], 16);
+                UInt64 result = Convert.ToUInt64(response.outputs[i], 16);
 				results[arguments[i]] = result;
 			}
 			return results;
 		}
 
-		private void SaveTrainProblemResult(string savePath, IDictionary<Int64, Int64> result)
-		{
-			
-			string res = "";
-			foreach (var xy in result)
-				res += "" + xy.Key + "\t" + xy.Value + "\n";
-
-			File.AppendAllText(savePath, res);
-		}
-
-	    public static string TrainProblemResultFilename(string basePath, TrainProblem trainProblem, Problem problem)
-		{
-			bool isRelevant = trainProblem.operators.OrderBy(t => t).SequenceEqual(problem.AllOperators.OrderBy(t => t));
-			string filename = String.Format(isRelevant ? "{0}_{1}.result" : "{0}_{1}.unrelevant.result", problem.Id, trainProblem.id);
-			return Path.Combine(basePath, filename);
-		}
-
-        private static string TrainProblemFilename(string basePath, TrainProblem trainProblem, Problem problem)
+        /// <summary>
+        /// Загружает результаты вычислений для данной НЕТЕСТОВОЙ проблемы
+        /// сохраняет их в Source
+        /// </summary>
+        public IDictionary<UInt64, UInt64> DownloadProblemResult(Problem problem, UInt64[] arguments)
         {
-            bool isRelevant = trainProblem.operators.OrderBy(t => t).SequenceEqual(problem.AllOperators.OrderBy(t => t));
-            string filename = String.Format(isRelevant ? "{0}.txt" : "{0}.unrelevant.txt", problem.Id);
-            return Path.Combine(basePath, filename);
-        }
-
-		
-
-        private static Problem[] ReadProblems(string path)
-        {
-            string[] problemsText = File.ReadAllLines(path);
-            Problem[] problems = problemsText.Select(Problem.Parse).Where(p => p != null).ToArray();
-            Log("Readed file '{0}'. {1} problems loaded.", path, problems.Count());
-            return problems;
-        }
-
-
-		private static TrainProblem[] ReadTrainProblems(string path)
-		{
-			try
+            EvalRequest request = new EvalRequest()
+            {
+                id = problem.Id,
+                arguments = arguments.Select(i => i.ToString("X")).ToArray()
+            };
+            var response = webApi.Eval(request);
+            Dictionary<UInt64, UInt64> results = new Dictionary<ulong, ulong>();
+			if (response.outputs.Length != arguments.Length)
+				return null;
+			for (int i = 0; i < response.outputs.Length; ++i)
 			{
-				string[] problemsText = File.ReadAllLines(path);
-				TrainProblem[] trainProblems = problemsText.Select(TrainProblem.Parse).Where(p => p != null).ToArray();
-				return trainProblems;
+                UInt64 result = Convert.ToUInt64(response.outputs[i], 16);
+				results[arguments[i]] = result;
 			}
-			catch (Exception)
-			{
-				return new TrainProblem[0];
-			}
-			
-		}
+            Source.SaveResultsForProblem(problem, results);
+			return results;
+        }
 
         private static void Log(string text, params object[] values)
         {
@@ -155,18 +131,25 @@ namespace ProblemsMiner
 		[Explicit]
 		public void DownloadTrainsProblemsTest()
 		{
-			HashSet<Int64> arguments = new HashSet<Int64>();
-			arguments.Add(Int64.MaxValue);
-			arguments.Add(Int64.MinValue);
-			for (int i=-1; i<=100; ++i)
-				arguments.Add(i);
+            HashSet<UInt64> arguments = new HashSet<UInt64>();
+            arguments.Add(UInt64.MaxValue);
+            arguments.Add(UInt64.MinValue);
+			for (long i=-1; i<=100; ++i)
+				arguments.Add((ulong)i);
 			Random rnd = new Random(Environment.TickCount);
 			while (arguments.Count < 255)
-				arguments.Add((((long)rnd.Next())<<32) + ((long)rnd.Next()));
+				arguments.Add((((ulong)rnd.Next())<<32) + ((ulong)rnd.Next()));
 
-
-			ProblemsMiner miner = new ProblemsMiner(@"..\..\..\..\problems.txt", @"..\..\..\..\problems-samples\");
-			miner.DownloadTrainProblemsResults(true, arguments.ToArray());
+            ProblemsReader source = new ProblemsReader()
+            {
+                ProblemsFilename = @"..\..\..\..\problems.txt",
+                ProblemsResultsPath = @"..\..\..\..\problemsResults\",
+                TrainProblemsPath = @"..\..\..\..\problems-samples\",
+                TrainProblemsResultsPath = @"..\..\..\..\problems-samples\"
+            };
+			ProblemsMiner miner = new ProblemsMiner(source);
+			//miner.DownloadTrainProblemsResults(true, arguments.ToArray());
+            miner.DownloadTrainProblemsResults(source.ReadProblems().Where(p => p.Size > 12).ToArray(), true, arguments.ToArray());
 
 		}
 	}

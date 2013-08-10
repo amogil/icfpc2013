@@ -48,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EvalTester.cs" />
     <Compile Include="ProblemsMiner.cs" />
+    <Compile Include="ProblemsReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
