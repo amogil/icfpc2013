@@ -21,8 +21,7 @@ namespace lib.Brute
 		[Test]
 		public void BinForce()
 		{
-			var force = new BinaryBruteForcer();
-			Run(force.Enumerate, arg => arg, (tree, arg) => tree.Eval(arg));
+			Run((size, ops) => new BinaryBruteForcer(ops).Enumerate(size), arg => arg, (tree, arg) => tree.Eval(arg));
 		}
 
 		private void Run<TTree, TArg>(Func<int, string[], IEnumerable<TTree>> getTrees, Func<ulong, TArg> createArg, Func<TTree, TArg, ulong> eval)
@@ -32,24 +31,30 @@ namespace lib.Brute
 			var unaryOps = Unary.Operators.Select(t => t.Key).ToArray();
 			var binaryOps = Binary.Operators.Select(t => t.Key).ToArray();
 			var allOps = unaryOps.Concat(binaryOps).ToArray();
-			Console.Out.WriteLine("WS: {0} mb", Environment.WorkingSet / mb);
-
-			var sw = Stopwatch.StartNew();
-			var trees = getTrees(9, allOps).ToList();
-			sw.Stop();
-			Console.Out.WriteLine("#trees: {0}, gen took: {1} ms, WS: {2} mb", trees.Count, sw.ElapsedMilliseconds, Environment.WorkingSet / mb);
-
+			var ops = allOps;
+			const int problemSize = 8;
+			
 			var args = new List<TArg>();
-			for (var i = 0; i < 4; i++)
+			const int argsCount = 2;
+			for (var i = 0; i < argsCount; i++)
 				args.Add(createArg(rnd.NextUInt64()));
 
-			Console.WriteLine("eval");
-			sw.Restart();
-			foreach (var arg in args)
-				foreach (var tree in trees)
+			Console.Out.WriteLine("size: {0}, ops: [{1}], #args: {2}, WS: {3} mb", problemSize, string.Join(" ", ops), argsCount, Environment.WorkingSet / mb);
+
+			long treesCount = 0;
+			var sw = Stopwatch.StartNew();
+			for (var iter = 0; iter < argsCount; iter++)
+			{
+				var arg = args[iter];
+				foreach (var tree in getTrees(problemSize, ops))
+				{
 					eval(tree, arg);
+					if (iter == 0)
+						++treesCount;
+				}
+			}
 			sw.Stop();
-			Console.Out.WriteLine("#trees: {0}, eval took: {1} ms, WS: {2} mb", trees.Count, sw.ElapsedMilliseconds, Environment.WorkingSet / mb);
+			Console.Out.WriteLine("#trees: {0}, eval took: {1} ms, WS: {2} mb", treesCount, sw.ElapsedMilliseconds, Environment.WorkingSet / mb);
 		}
 	}
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 
 namespace lib.Lang
@@ -7,70 +8,82 @@ namespace lib.Lang
 	{
 		public static string Printable(this byte[] program)
 		{
-			char[] map = new[] {'0', '1', 'x', 'i', 'a', 'Y', 'F', '~', '<', '>', 'r', 'R', '&', '|', '^', '+'};
+			char[] map = new[] { '0', '1', 'x', 'i', 'a', 'Y', 'F', '~', '<', '>', 'r', 'R', '&', '|', '^', '+' };
 			return new string(program.Select(b => map[b]).ToArray());
 		}
 
 		public static ulong Eval(this byte[] program, ulong x)
 		{
-			return Eval(program, 0, x, 0, 0).Item1;
+			int offset;
+			return Eval(program, 0, x, 0, 0, out offset);
 		}
 
-		private static Tuple<ulong, int> Eval(this byte[] program, int start, ulong x, ulong item, ulong acc)
+		private static ulong Eval(this byte[] program, int start, ulong x, ulong item, ulong acc, out int offset)
 		{
-			Func<ulong, Tuple<ulong, int>> constant = v => Tuple.Create(v, start + 1);
-			Func<Func<ulong, ulong>, Tuple<ulong, int>> unary = f =>
-			{
-				var t = program.Eval(start + 1, x, item, acc);
-				return Tuple.Create(f(t.Item1), t.Item2);
-			};
-			Func<Func<ulong, ulong, ulong>, Tuple<ulong, int>> binary = f =>
-			{
-				var a = program.Eval(start + 1, x, item, acc);
-				var b = program.Eval(a.Item2, x, item, acc);
-				return Tuple.Create(f(a.Item1, b.Item1), b.Item2);
-			};
+			ulong a, b;
 			byte code = program[start];
-			if (code == 0) return constant(0);
-			if (code == 1) return constant(1);
-			if (code == 2) return constant(x);
-			if (code == 3) return constant(item);
-			if (code == 4) return constant(acc);
-			if (code == 5)
+			switch (code)
 			{
-				var cond = program.Eval(start + 1, x, item, acc);
-				var eZero = program.Eval(cond.Item2, x, item, acc);
-				var eElse = program.Eval(eZero.Item2, x, item, acc);
-				return Tuple.Create(cond.Item1 == 0 ? eZero.Item1 : eElse.Item1, eElse.Item2);
+				case 0:
+					offset = start + 1;
+					return 0;
+				case 1:
+					offset = start + 1;
+					return 1;
+				case 2:
+					offset = start + 1;
+					return x;
+				case 3:
+					offset = start + 1;
+					return item;
+				case 4:
+					offset = start + 1;
+					return acc;
+				case 5:
+					var cond = program.Eval(start + 1, x, item, acc, out offset);
+					var eZero = program.Eval(offset, x, item, acc, out offset);
+					var eElse = program.Eval(offset, x, item, acc, out offset);
+					return cond == 0 ? eZero : eElse;
+				case 6:
+					var collection = program.Eval(start + 1, x, item, acc, out offset);
+					var accValue = program.Eval(offset, x, item, acc, out offset);
+					var bytes = BitConverter.GetBytes(collection);
+					var nextIndex = offset;
+					foreach (var bt in bytes)
+						accValue = program.Eval(nextIndex, x, bt, accValue, out offset);
+					return accValue;
+				case 7:
+					return ~program.Eval(start + 1, x, item, acc, out offset);
+				case 8:
+					return program.Eval(start + 1, x, item, acc, out offset) << 1;
+				case 9:
+					return program.Eval(start + 1, x, item, acc, out offset) >> 1;
+				case 10:
+					return program.Eval(start + 1, x, item, acc, out offset) >> 4;
+				case 11:
+					return program.Eval(start + 1, x, item, acc, out offset) >> 16;
+				case 12:
+					a = program.Eval(start + 1, x, item, acc, out offset);
+					b = program.Eval(offset, x, item, acc, out offset);
+					return a & b;
+				case 13:
+					a = program.Eval(start + 1, x, item, acc, out offset);
+					b = program.Eval(offset, x, item, acc, out offset);
+					return a | b;
+				case 14:
+					a = program.Eval(start + 1, x, item, acc, out offset);
+					b = program.Eval(offset, x, item, acc, out offset);
+					return a ^ b;
+				case 15:
+					a = program.Eval(start + 1, x, item, acc, out offset);
+					b = program.Eval(offset, x, item, acc, out offset);
+					return unchecked(a + b);
+				default:
+					throw new FormatException(code.ToString());
 			}
-			if (code == 6)
-			{
-				var collection = program.Eval(start + 1, x, item, acc);
-				var initAcc = program.Eval(collection.Item2, x, item, acc);
-				var bytes = BitConverter.GetBytes(collection.Item1);
-				var accValue = initAcc.Item1;
-				var nextIndex = initAcc.Item2;
-				foreach (var b in bytes)
-				{
-					var res = program.Eval(initAcc.Item2, x, b, accValue);
-					accValue = res.Item1;
-					nextIndex = res.Item2;
-				}
-				return Tuple.Create(accValue, nextIndex);
-			}
-			if (code == 7) return unary(a => ~a);
-			if (code == 8) return unary(a => a<<1);
-			if (code == 9) return unary(a => a>>1);
-			if (code == 10) return unary(a => a>>4);
-			if (code == 11) return unary(a => a>>16);
-			if (code == 12) return binary((a, b) => a & b);
-			if (code == 13) return binary((a, b) => a | b);
-			if (code == 14) return binary((a, b) => a ^ b);
-			if (code == 15) return binary((a, b) => unchecked(a + b));
-			throw new FormatException(code.ToString());
 		}
 
-		public static Tuple<string, int> ToSExpr(this byte[] program, int start = 0)
+		public static Tuple<string, int> ToSExpr(this byte[] program, int start = 0, bool insideFoldFunc = false)
 		{
 			Func<string, Tuple<string, int>> constant = name => Tuple.Create(name, start + 1);
 			Func<string, int, Tuple<string, int>> fun = (name, count) =>
@@ -79,7 +92,7 @@ namespace lib.Lang
 					int ind = start + 1;
 					for (int i = 0; i < count; i++)
 					{
-						Tuple<string, int> v = program.ToSExpr(ind);
+						Tuple<string, int> v = program.ToSExpr(ind, insideFoldFunc);
 						ind = v.Item2;
 						s += " " + v.Item1;
 					}
@@ -87,12 +100,13 @@ namespace lib.Lang
 					return Tuple.Create(s + ")", ind);
 				};
 			byte b = program[start];
+//			Debug.Assert(insideFoldFunc || (b != 3 && b != 4), program.Printable());
 			if (b <= 4) return constant(Operations.names[b]);
 			if (b == 6)
 			{
-				var e0 = program.ToSExpr(start + 1);
-				var e1 = program.ToSExpr(e0.Item2);
-				var e2 = program.ToSExpr(e1.Item2);
+				var e0 = program.ToSExpr(start + 1, insideFoldFunc);
+				var e1 = program.ToSExpr(e0.Item2, insideFoldFunc);
+				var e2 = program.ToSExpr(e1.Item2, true);
 				string s = string.Format("(fold {0} {1} (lambda (i a) {2}))", e0.Item1, e1.Item1, e2.Item1);
 				return Tuple.Create(s, e2.Item2);
 			}

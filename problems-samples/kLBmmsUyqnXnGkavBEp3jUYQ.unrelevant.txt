@@ -1,3 +1,4 @@
 Id: K9ufqLwG5Jp6aAIJySt1LXor, Challenge: (lambda (x_28797) (shr16 (not (and (xor (or (shr4 (shr16 (shr1 (if0 (and (shr1 (shr16 x_28797)) (shr1 1)) 0 0)))) x_28797) 1) x_28797)))), Size: 21, Operators: and,if0,not,or,shr1,shr16,shr4,xor
 Id: uj09UuiMu50rfcGdfp1Ka6jy, Challenge: (lambda (x_30687) (shr4 (shr1 (xor x_30687 (shr16 (shr16 (shr16 (shl1 (xor (plus (if0 (or (shr4 0) (not x_30687)) x_30687 0) 0) x_30687))))))))), Size: 21, Operators: if0,not,or,plus,shl1,shr1,shr16,shr4,xor
 Id: YhfqV19qG5iZcadRRxnTCplM, Challenge: (lambda (x_28488) (or x_28488 (not (shr4 (shl1 (plus (plus 1 (not (and (if0 (shl1 (and (shr4 x_28488) x_28488)) 1 1) x_28488))) x_28488)))))), Size: 21, Operators: and,if0,not,or,plus,shl1,shr4
+Id: zhxQUjEHZ1I3CBVKSAA1xCkv, Challenge: (lambda (x_30162) (shr4 (shr4 (shl1 (shr4 (shr4 (or (plus (xor (if0 (plus (shl1 (shl1 (shl1 x_30162))) x_30162) x_30162 0) 1) 0) x_30162))))))), Size: 21, Operators: if0,or,plus,shl1,shr4,xor

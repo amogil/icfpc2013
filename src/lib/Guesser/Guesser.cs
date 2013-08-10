@@ -9,16 +9,19 @@ namespace lib.Guesser
 {
     internal class Guesser
     {
-        public static IEnumerable<Expr> Guess(IEnumerable<Expr> formulas, ulong[] inputs, ulong[] outputs)
+        public static IEnumerable<byte[]> Guess(IEnumerable<byte[]> formulas, ulong[] inputs, ulong[] outputs)
         {
             if (inputs.Length != outputs.Length)
                 throw new ArgumentException();
-            return formulas.Where(e => IsSolve(e, inputs, outputs));
+            return
+                formulas.AsParallel()
+                        .WithDegreeOfParallelism(Environment.ProcessorCount*2)
+                        .Where(e => IsSolve(e, inputs, outputs));
         }
 
-        private static bool IsSolve(Expr e, IEnumerable<ulong> inputs, ulong[] outputs)
+        private static bool IsSolve(byte[] e, IEnumerable<ulong> inputs, ulong[] outputs)
         {
-            return !inputs.Where((t, i) => e.Eval(new Vars(t)) != outputs[i]).Any();
+            return !inputs.Where((t, i) => e.Eval(t) != outputs[i]).Any();
         }
     }
 
@@ -34,9 +37,12 @@ namespace lib.Guesser
             10, new[] {"and", "if0", "shr16", "xor"}, 52)]
         [TestCase("(lambda (x_6107) (fold x_6107 (and 1 0) (lambda (x_6108 x_6109) (if0 x_6109 x_6108 x_6109))))",
             11, new[] {"and", "fold", "if0"}, 9)]
-        [TestCase(
-            "(lambda (x_16756) (shl1 (fold (plus 0 x_16756) 1 (lambda (x_16757 x_16758) (not (and x_16757 x_16758)))))",
-            12, new[] {"and", "fold", "not", "plus", "shl1"}, 68)]
+//        [TestCase(
+//            "(lambda (x_16756) (shl1 (fold (plus 0 x_16756) 1 (lambda (x_16757 x_16758) (not (and x_16757 x_16758)))))",
+//            12, new[] {"and", "fold", "not", "plus", "shl1"}, 68)]
+//        [TestCase(
+//            "(lambda (x_19856) (fold (xor (shr16 1) x_19856) x_19856 (lambda (x_19857 x_19858) (not (or x_19858 x_19857)))))"
+//            , 12, new[] {"fold", "not", "or", "shr16", "xor"}, 68)]
 //        [TestCase(
 //            "(lambda (x_13969) (shr16 (shr1 (xor (if0 (and x_13969 (plus x_13969 x_13969)) 1 0) x_13969))))",
 //            13, new[] {"and", "if0", "plus", "shr1", "shr16", "xor"}, 9999)]
@@ -45,15 +51,10 @@ namespace lib.Guesser
             Expr formula = Expr.ParseFunction(function);
             var random = new Random();
 
-            Expr[] trees = new Force().Solve(size - 1, operations).ToArray();
-            Expr[] prevStepTrees;
-            do
-            {
-                prevStepTrees = trees;
-                ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
-                ulong[] outputs = inputs.Select(i => formula.Eval(new Vars(i))).ToArray();
-                trees = Guesser.Guess(prevStepTrees, inputs, outputs).ToArray();
-            } while (trees.Length != prevStepTrees.Length);
+            IEnumerable<byte[]> trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
+            ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
+            ulong[] outputs = inputs.Select(i => formula.Eval(new Vars(i))).ToArray();
+            trees = Guesser.Guess(trees, inputs, outputs);
             Assert.AreEqual(equalFormulas, trees.Count());
         }
     }

@@ -53,9 +53,9 @@
     <Compile Include="AlphaProtocol\AlphaProtocol.cs" />
     <Compile Include="Brute\BinaryBruteForcer.cs" />
     <Compile Include="Brute\Perf_Test.cs" />
-    <Compile Include="Lang\BinExpExtensions.cs" />
     <Compile Include="Brute\Force.cs" />
     <Compile Include="Annotations.cs" />
+    <Compile Include="Lang\BinExpExtensions.cs" />
     <Compile Include="Lang\Operations.cs" />
     <Compile Include="Lang\Parser.cs" />
     <Compile Include="Lang\Parser_Test.cs" />
@@ -76,6 +76,8 @@
     <Compile Include="Shuffle.cs" />
     <Compile Include="Web\EvalRequest.cs" />
     <Compile Include="Web\EvalResponse.cs" />
+    <Compile Include="Web\GuessRequest.cs" />
+    <Compile Include="Web\GuessResponse.cs" />
     <Compile Include="Web\Status.cs" />
     <Compile Include="Web\WebApi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
