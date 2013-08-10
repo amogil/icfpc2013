@@ -21,8 +21,7 @@ namespace lib.Brute
 		[Test]
 		public void BinForce()
 		{
-			var force = new BinaryBruteForcer();
-			Run(force.Enumerate, arg => arg, (tree, arg) => tree.Eval(arg));
+			Run((size, ops) => new BinaryBruteForcer(ops).Enumerate(size), arg => arg, (tree, arg) => tree.Eval(arg));
 		}
 
 		private void Run<TTree, TArg>(Func<int, string[], IEnumerable<TTree>> getTrees, Func<ulong, TArg> createArg, Func<TTree, TArg, ulong> eval)

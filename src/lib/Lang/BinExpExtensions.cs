@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 
 namespace lib.Lang
@@ -99,7 +100,7 @@ namespace lib.Lang
 			throw new FormatException(code.ToString());
 		}
 
-		public static Tuple<string, int> ToSExpr(this byte[] program, int start = 0)
+		public static Tuple<string, int> ToSExpr(this byte[] program, int start = 0, bool insideFoldFunc = false)
 		{
 			Func<string, Tuple<string, int>> constant = name => Tuple.Create(name, start + 1);
 			Func<string, int, Tuple<string, int>> fun = (name, count) =>
@@ -108,7 +109,7 @@ namespace lib.Lang
 					int ind = start + 1;
 					for (int i = 0; i < count; i++)
 					{
-						Tuple<string, int> v = program.ToSExpr(ind);
+						Tuple<string, int> v = program.ToSExpr(ind, insideFoldFunc);
 						ind = v.Item2;
 						s += " " + v.Item1;
 					}
@@ -116,12 +117,13 @@ namespace lib.Lang
 					return Tuple.Create(s + ")", ind);
 				};
 			byte b = program[start];
+//			Debug.Assert(insideFoldFunc || (b != 3 && b != 4), program.Printable());
 			if (b <= 4) return constant(Operations.names[b]);
 			if (b == 6)
 			{
-				var e0 = program.ToSExpr(start + 1);
-				var e1 = program.ToSExpr(e0.Item2);
-				var e2 = program.ToSExpr(e1.Item2);
+				var e0 = program.ToSExpr(start + 1, insideFoldFunc);
+				var e1 = program.ToSExpr(e0.Item2, insideFoldFunc);
+				var e2 = program.ToSExpr(e1.Item2, true);
 				string s = string.Format("(fold {0} {1} (lambda (i a) {2}))", e0.Item1, e1.Item1, e2.Item1);
 				return Tuple.Create(s, e2.Item2);
 			}
