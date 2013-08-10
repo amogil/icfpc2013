@@ -39,8 +39,8 @@ namespace lib.AlphaProtocol
                 return null;
             if (guessResponse.status == "mismatch")
             {
-                ulong input = Convert.ToUInt64(guessResponse.values.First(), 16);
-                ulong output = Convert.ToUInt64(guessResponse.values.ElementAt(1), 16);
+                ulong input = Convert.ToUInt64(guessResponse.values[0], 16);
+                ulong output = Convert.ToUInt64(guessResponse.values[1], 16);
                 return Tuple.Create(input, output);
             }
             throw new ApplicationException("Error GuessResponse");
@@ -88,7 +88,7 @@ namespace lib.AlphaProtocol
                 outputs = outputs.Concat(new[] {anCase.Item2}).ToArray();
 
                 solutions = Guesser.Guesser.Guess(solutions, inputs, outputs).ToArray();
-                log.DebugFormat("Solutions generated. Total {0}", solutions.Length);
+                                log.DebugFormat("Solutions generated. Total {0}", solutions.Length);
             }
         }
 

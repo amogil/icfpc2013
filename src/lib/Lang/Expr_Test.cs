@@ -159,7 +159,7 @@ namespace lib.Lang
                 yield return new TestCase("(lambda (x_8547) (fold x_8547 0 (lambda (x_8547 x_8548) (shr4 (and (shr1 x_8547) x_8547)))))", input, output);
 		    }
 		}
-
+        
 		public class TestCase
 		{
 			public TestCase(string program, ulong arg, ulong expectedValue)
