@@ -11,7 +11,7 @@ namespace lib.AlphaProtocol
     {
         private static readonly ILog log = LogManager.GetLogger(typeof (AlphaProtocol));
 
-        public static void PostSolution(string problemId, int size, string[] operations, bool renameTFoldToFold = false)
+        public static string PostSolution(string problemId, int size, string[] operations, bool renameTFoldToFold = false)
         {
 			var gsc = new GameServerClient();
 
@@ -46,7 +46,7 @@ namespace lib.AlphaProtocol
 				if (wrongAnswer == null)
                 {
                     log.DebugFormat("Problem solved!!!. Problem Id: {0}", problemId);
-                    return;
+					return formula;
                 }
 
 				log.Debug(string.Format("WrongAnswer received: {0}", wrongAnswer));

@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="AlphaProtocol\AlphaProtocol.cs" />
     <Compile Include="AlphaProtocol\GameServerClient.cs" />
+    <Compile Include="AlphaProtocol\SolverTrainer.cs" />
     <Compile Include="AlphaProtocol\TrainType.cs" />
     <Compile Include="AlphaProtocol\WrongAnswer.cs" />
     <Compile Include="Brute\BinaryBruteForcer.cs" />

@@ -62,7 +62,7 @@ namespace lib.AlphaProtocol
 			throw new ApplicationException(string.Format("Error GuessResponse ({0}): {1}", response.status, response.message));
 		}
 
-		[CanBeNull]
+		[NotNull]
 		public TrainResponse Train(TrainType trainType = TrainType.Simple, int? size = null)
 		{
 			var request = new TrainRequest(size);
