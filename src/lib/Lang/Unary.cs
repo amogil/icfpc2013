@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace lib.Lang
 {
@@ -14,6 +15,16 @@ namespace lib.Lang
 			{"shr16", arg => new UnaryShr16(arg)},
 		};
 
+		public static readonly Dictionary<string, byte> OperatorsBinForms = new Dictionary<string, byte>
+			{
+				{"not", 7},
+				{"shl1", 8},
+				{"shr1", 9},
+				{"shr4", 10},
+				{"shr16", 11}
+			};
+
+
 		public string Name;
 		public Expr Arg;
 
@@ -26,6 +37,11 @@ namespace lib.Lang
 		public override string ToSExpr()
 		{
 			return string.Format("({0} {1})", Name, Arg);
+		}
+
+		public override IEnumerable<byte> ToBinExp()
+		{
+			return new byte[]{OperatorsBinForms[Name]}.Concat(Arg.ToBinExp());
 		}
 	}
 

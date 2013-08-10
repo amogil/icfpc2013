@@ -9,6 +9,7 @@ namespace lib.Lang
 		public abstract UInt64 Eval(Vars vars);
 		public abstract string ToSExpr();
 		public abstract object Clone();
+	    public abstract IEnumerable<byte> ToBinExp();
 
 		public override string ToString()
 		{

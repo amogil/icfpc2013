@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace lib.Lang
 {
@@ -19,12 +21,20 @@ namespace lib.Lang
 			Func = func;
 		}
 
-	    public override object Clone()
-	    {
-	        return new Fold((Expr) Collection.Clone(), (Expr) Start.Clone(), ItemName, AccName, (Expr) Func.Clone());
-	    }
+		public override object Clone()
+		{
+			return new Fold((Expr) Collection.Clone(), (Expr) Start.Clone(), ItemName, AccName, (Expr) Func.Clone());
+		}
 
-	    public override UInt64 Eval(Vars vars)
+		public override IEnumerable<byte> ToBinExp()
+		{
+			return new byte[] {6}
+				.Concat(Collection.ToBinExp())
+				.Concat(Start.ToBinExp())
+				.Concat(Func.ToBinExp());
+		}
+
+		public override UInt64 Eval(Vars vars)
 		{
 			vars.foldAccumulator = Start.Eval(vars);
 			var bytes = BitConverter.GetBytes(Collection.Eval(vars));

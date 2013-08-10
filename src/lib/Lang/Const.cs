@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace lib.Lang
 {
@@ -19,6 +20,19 @@ namespace lib.Lang
 	    public override object Clone()
 	    {
 	        return new Const(value);
+	    }
+
+	    public override IEnumerable<byte> ToBinExp()
+	    {
+            if (value == 0 || value == 1)
+            { 
+	            yield return Convert.ToByte(value);
+            }
+            else
+            {
+                throw new FormatException("Unknown constant: " + value.ToString());                
+            }
+
 	    }
 
 	    public override string ToSExpr()

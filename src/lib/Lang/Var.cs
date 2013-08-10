@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace lib.Lang
 {
@@ -13,12 +14,30 @@ namespace lib.Lang
 			Func = func;
 		}
 
-	    public override object Clone()
-	    {
-	        return new Var(Name, Func);
-	    }
+		public override object Clone()
+		{
+			return new Var(Name, Func);
+		}
 
-	    public override UInt64 Eval(Vars vars)
+		public override IEnumerable<byte> ToBinExp()
+		{
+			switch (Name)
+			{
+				case "x":
+					yield return 2;
+					break;
+				case "i":
+					yield return 3;
+					break;
+				case "a":
+					yield return 4;
+					break;
+				default:
+					throw new FormatException("Can not convert non unified variable: " + Name);
+			}
+		}
+
+		public override UInt64 Eval(Vars vars)
 		{
 			return Func(vars);
 		}

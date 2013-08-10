@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace lib.Lang
 {
@@ -15,12 +17,20 @@ namespace lib.Lang
 			this.falseExpr = falseExpr;
 		}
 
-	    public override object Clone()
-	    {
-	        return new If0((Expr) cond.Clone(), (Expr) trueExpr.Clone(), (Expr) falseExpr.Clone());
-	    }
+		public override object Clone()
+		{
+			return new If0((Expr) cond.Clone(), (Expr) trueExpr.Clone(), (Expr) falseExpr.Clone());
+		}
 
-	    public override UInt64 Eval(Vars vars)
+		public override IEnumerable<byte> ToBinExp()
+		{
+			return new byte[] {5}
+				.Concat(cond.ToBinExp())
+				.Concat(trueExpr.ToBinExp())
+				.Concat(falseExpr.ToBinExp());
+		}
+
+		public override UInt64 Eval(Vars vars)
 		{
 			if (cond.Eval(vars) == 0)
 				return trueExpr.Eval(vars);

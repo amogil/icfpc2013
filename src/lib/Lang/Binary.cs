@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace lib.Lang
 {
@@ -12,6 +13,19 @@ namespace lib.Lang
 			{"xor", (left, right) => new BinaryXor(left, right)},
 			{"plus", (left, right) => new BinaryPlus(left, right)},
 		};
+
+		public static readonly Dictionary<string, byte> OperatorsBinForms = new Dictionary<string, byte>
+			{
+				{"and", 12},
+				{"or", 13},
+				{"xor", 14},
+				{"plus", 15}
+			};
+
+		public override IEnumerable<byte> ToBinExp()
+		{
+			return new byte[] {OperatorsBinForms[Name]}.Concat(A.ToBinExp()).Concat(B.ToBinExp());
+		}
 
 		public string Name;
 		public Expr A;
