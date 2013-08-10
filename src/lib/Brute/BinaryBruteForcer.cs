@@ -9,18 +9,17 @@ namespace lib.Brute
 {
 	public class BinaryBruteForcer
 	{
-		private byte[] outsideFoldOperations;
-		private byte[] noFoldOperations;
-		private byte[] inFoldOperations;
+		private readonly byte[] outsideFoldOperations;
+		private readonly byte[] noFoldOperations;
+		private readonly byte[] inFoldOperations;
 		private bool tFold;
 
 		public BinaryBruteForcer(params string[] ops)
 		{
 			tFold = ops.Contains("tfold");
-			outsideFoldOperations = new byte[] { 0, 1, 2 }.Concat(
-				ops.Join(Operations.names.Select((s, i) => Tuple.Create(s, i)), i => i, o => o.Item1, (inner, outer) => (byte)outer.Item2))
-			                                              .ToArray();
-			noFoldOperations = outsideFoldOperations.Where(o => o != 6).ToArray();
+			outsideFoldOperations = new byte[] { 0, 1, 2 }.Concat(ops.Select(o => (byte)Array.IndexOf(Operations.names, o))).ToArray();
+			var foldOperationNumber = Operations.names.Length - 1;
+			noFoldOperations = outsideFoldOperations.Where(o => o != foldOperationNumber).ToArray();
 			inFoldOperations = new byte[] { 3, 4 }.Concat(noFoldOperations).ToArray();
 		}
 
@@ -136,6 +135,43 @@ namespace lib.Brute
 //			{
 //				Console.WriteLine(item.Printable());
 //			}
+		}
+
+		[Test]
+		[TestCase("shr1", "shr4")]
+		[TestCase("not", "and", "or", "not")]
+		[TestCase("not", "x", "not", "x", "xor", "not")]
+		[TestCase("not", "shr1", "not", "shr1", "shr4", "not", "fold", "shr1", "not", "shr16", "if0", "not")]
+		[TestCase("0", "1", "0", "1", "0", "1", "0", "1", "0", "1", "0", "1", "0", "1", "0", "1", "0", "1")]
+		[TestCase("fold", "fold", "fold", "fold", "fold", "if0", "if0", "if0", "if0", "if0", "fold", "fold", "if0", "if0")]
+		public void TestSpeed(params string[] ops)
+		{
+			byte[] outsideFoldOperations = new byte[0];
+			byte[] operationsIndexes = new byte[0];
+			var stopwatch = Stopwatch.StartNew();
+			for (var j = 0; j < 100000; j++)
+			{
+				outsideFoldOperations = new byte[] { 0, 1, 2 }.Concat(
+						ops.Join(Operations.names.Select((s, i) => Tuple.Create(s, i)),
+								i => i,
+								o => o.Item1,
+								(inner, outer) => (byte)outer.Item2)
+					).ToArray();
+			}
+			stopwatch.Stop();
+			var oldTime = stopwatch.Elapsed;
+
+			stopwatch.Restart();
+			for (var j = 0; j < 100000; j++)
+			{
+				operationsIndexes = new byte[] {0, 1, 2}.Concat(
+						ops.Select(o => (byte) Array.IndexOf(Operations.names, o))
+					).ToArray();
+			}
+			stopwatch.Stop();
+			var newTime = stopwatch.Elapsed;
+			CollectionAssert.AreEqual(outsideFoldOperations, operationsIndexes);
+			Console.Out.WriteLine("Old: " + oldTime + " new: " + newTime);
 		}
 	}
 }
