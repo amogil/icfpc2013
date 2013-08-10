@@ -124,8 +124,7 @@ namespace lib.Brute
 	public class Force_Test
 	{
 		[TestCase(5, "shr4 if0", "(shr4 (if0 x x x))")]
-		[TestCase(5, "shr4 if0", "(shr4 (if0 x x x))")]
-		[TestCase(5, "shr4 if0", "(shr4 (if0 x x x))")]
+		[TestCase(5, "fold", "(fold 0 0 (lambda (i a) 0))")]
 		[TestCase(9, "or fold", "(fold x 0 (lambda (i a) (or (or i a) a)))")]
 		[TestCase(10, "fold not or shr1 shr4", "(fold (shr1 (not x)) 0 (lambda (i a) (or i (shr4 a))))")]
 		public void Test(int size, string ops, string expectedExpr)
