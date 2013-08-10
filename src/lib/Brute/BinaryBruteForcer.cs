@@ -73,12 +73,6 @@ namespace lib.Brute
         {
             if (!EnoughSizeForOps(operations, size, freePlaces, usedOps))
                 yield break;
-
-            if (size < 0 || freePlaces < 0)
-            {
-                Console.WriteLine("should not be!");
-                yield break;
-            }
             if (size == 0 && freePlaces == 0)
             {
                 var res = new byte[prefixSize];
@@ -89,15 +83,6 @@ namespace lib.Brute
             }
             else
             {
-                if (tFold)
-                {
-                    prefix[prefixSize] = 6;
-                    tFold = false;
-                    foreach (var expr in Enumerate(
-                        size - 2, 3, outsideFoldOperations, prefix, prefixSize + 1, insideFold, 3))
-                        yield return expr;
-                }
-
                 if (answersMask != null && prefixSize > 0 && (prefixSize + b)%a == 0 &&
                     !answersMask.IncludedIn(prefix.GetMask(0, prefixSize - 1)))
                 {

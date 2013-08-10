@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
-using System.Text.RegularExpressions;
 
 using lib.Lang;
-using ProblemsMiner;
 
 namespace lib.Brute
 {
@@ -77,8 +72,8 @@ namespace lib.Brute
                 {
                     Console.WriteLine("op: {0}, ", string.Join(", ", problem.AllOperators));
                     Console.WriteLine(string.Join("\t", solutions));
+                    Assert.Fail();
                 }
-                CollectionAssert.Contains(solutions, Parser.ParseFunction(problem.SolutionString).Printable());
 			}
 		}
 
