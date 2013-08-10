@@ -143,7 +143,7 @@ namespace ProblemsMiner
             ProblemsReader source = new ProblemsReader()
             {
                 ProblemsFilename = @"..\..\..\..\problems.txt",
-                ProblemsResultsPath = @"..\..\..\..\problemsResults\",
+                ProblemsResultsPath = @"..\..\..\..\problems-results\",
                 TrainProblemsPath = @"..\..\..\..\problems-samples\",
                 TrainProblemsResultsPath = @"..\..\..\..\problems-samples\"
             };

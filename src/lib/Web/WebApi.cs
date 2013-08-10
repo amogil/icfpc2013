@@ -46,6 +46,11 @@ namespace lib.Web
             return Call<EvalRequest, EvalResponse>("eval", request);
         }
 
+		public GuessResponse Guess(GuessRequest request)
+		{
+			return Call<GuessRequest, GuessResponse>("guess", request);
+		}
+
         public TOut Call<TIn, TOut>(string command, TIn request)
         {
             return json.Deserialize<TOut>(GetString(command, request));
