@@ -35,7 +35,7 @@ namespace lib.Brute
 			Console.Out.WriteLine("WS: {0} mb", Environment.WorkingSet / mb);
 
 			var sw = Stopwatch.StartNew();
-			var trees = getTrees(8, allOps).ToList();
+			var trees = getTrees(9, allOps).ToList();
 			sw.Stop();
 			Console.Out.WriteLine("#trees: {0}, gen took: {1} ms, WS: {2} mb", trees.Count, sw.ElapsedMilliseconds, Environment.WorkingSet / mb);
 
