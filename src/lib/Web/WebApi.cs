@@ -37,14 +37,14 @@ namespace lib.Web
             return answer;
         }
 
-		public List<MyProblemJson> GetMyProblems()
+		public List<MyProblemJson> MyProblems()
 		{
 			return json.Deserialize<List<MyProblemJson>>(GetString("myproblems"));
 		}
 
-        public TrainProblem GetTrainProblem(TrainRequest request)
+		public TrainResponse Train(TrainRequest request)
         {
-            return Call<TrainRequest, TrainProblem>("train", request);
+			return Call<TrainRequest, TrainResponse>("train", request);
         }
 
         public EvalResponse Eval(EvalRequest request)
@@ -57,18 +57,18 @@ namespace lib.Web
 			return Call<GuessRequest, GuessResponse>("guess", request);
 		}
 
-        public TOut Call<TIn, TOut>(string command, TIn request)
+		private TOut Call<TIn, TOut>(string command, TIn request)
         {
             return json.Deserialize<TOut>(GetString(command, request));
         }
 
         public Status GetStatus()
         {
-            byte[] downloadData = new WebClient().DownloadData(GetUrl("status"));
+			var downloadData = new WebClient().DownloadData(GetUrl("status"));
             return json.Deserialize<Status>(Encoding.ASCII.GetString(downloadData));
         }
 
-        private byte[] GetResponse(string address, byte[] bytes = null)
+		private static byte[] GetResponse(string address, byte[] bytes = null)
         {
             while (true)
             {

@@ -34,7 +34,7 @@ namespace ProblemsMiner
             foreach (Problem problem in problems.Where(p => p.Size > 3).Shuffle())
             {
                 var trainRequest = new TrainRequest(problem.Size, problem.FoldOperators);
-                TrainProblem trainProblem = webApi.GetTrainProblem(trainRequest);
+                TrainResponse trainProblem = webApi.Train(trainRequest);
                 Source.SaveTrainProblem(trainProblem, problem);
             }
         }
@@ -52,8 +52,8 @@ namespace ProblemsMiner
 			{
 				var problem = problems[i];
 
-                TrainProblem[] trainProblems = Source.ReadTrainProblems(problem, true);
-                TrainProblem[] unrelevantTrainProblems = new TrainProblem[0];
+                TrainResponse[] trainProblems = Source.ReadTrainProblems(problem, true);
+                TrainResponse[] unrelevantTrainProblems = new TrainResponse[0];
 				if (!onlyRelevant)
 					unrelevantTrainProblems = Source.ReadTrainProblems(problem, false);
 
@@ -73,7 +73,7 @@ namespace ProblemsMiner
 			}
 		}
 
-        private IDictionary<UInt64, UInt64> DownloadTrainProblemResult(TrainProblem trainProblem, UInt64[] arguments)
+        private IDictionary<UInt64, UInt64> DownloadTrainProblemResult(TrainResponse trainProblem, UInt64[] arguments)
 		{
 			EvalRequest request = new EvalRequest()
 				{

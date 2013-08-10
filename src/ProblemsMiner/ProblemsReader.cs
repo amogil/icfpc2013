@@ -18,14 +18,14 @@ namespace ProblemsMiner
         public string TrainProblemsPath;
         public string TrainProblemsResultsPath;
 
-        public string TrainProblemResultFilename(TrainProblem trainProblem, Problem problem)
+        public string TrainProblemResultFilename(TrainResponse trainProblem, Problem problem)
         {
             bool isRelevant = trainProblem.operators.OrderBy(t => t).SequenceEqual(problem.AllOperators.OrderBy(t => t));
             string filename = String.Format(isRelevant ? "{0}_{1}.result" : "{0}_{1}.unrelevant.result", problem.Id, trainProblem.id);
             return Path.Combine(TrainProblemsResultsPath, filename);
         }
 
-        public string TrainProblemFilename(TrainProblem trainProblem, Problem problem)
+        public string TrainProblemFilename(TrainResponse trainProblem, Problem problem)
         {
             bool isRelevant = trainProblem.operators.OrderBy(t => t).SequenceEqual(problem.AllOperators.OrderBy(t => t));
             string filename = String.Format(isRelevant ? "{0}.txt" : "{0}.unrelevant.txt", problem.Id);
@@ -47,7 +47,7 @@ namespace ProblemsMiner
             return problems;
         }
 
-        public TrainProblem[] ReadTrainProblems(Problem associatedProblem, bool isRelevant)
+        public TrainResponse[] ReadTrainProblems(Problem associatedProblem, bool isRelevant)
         {
             try
             {
@@ -55,13 +55,13 @@ namespace ProblemsMiner
                 string unrelevant = Path.Combine(TrainProblemsPath, String.Format("{0}.unrelevant.txt", associatedProblem.Id));
                 string path = isRelevant ? relevant : unrelevant;
                 string[] problemsText = File.ReadAllLines(path);
-                TrainProblem[] trainProblems = problemsText.Select(TrainProblem.Parse).Where(p => p != null).ToArray();
+                TrainResponse[] trainProblems = problemsText.Select(TrainResponse.Parse).Where(p => p != null).ToArray();
                 Log("Readed file '{0}'. {1} train problems loaded.", path, trainProblems.Count());
                 return trainProblems;
             }
             catch (Exception)
             {
-                return new TrainProblem[0];
+                return new TrainResponse[0];
             }
         }
 
@@ -71,7 +71,7 @@ namespace ProblemsMiner
             return ReadResults(path);
         }
 
-        public Dictionary<UInt64, UInt64> ReadResultsForTrainProblem(TrainProblem trainProblem, Problem problem)
+        public Dictionary<UInt64, UInt64> ReadResultsForTrainProblem(TrainResponse trainProblem, Problem problem)
         {
             string path = TrainProblemResultFilename(trainProblem, problem);
             return ReadResults(path);
@@ -83,13 +83,13 @@ namespace ProblemsMiner
             SaveResults(path, results, rewrite);
         }
 
-        public void SaveResultsForTrainProblem(TrainProblem trainProblem, Problem problem, IDictionary<UInt64, UInt64> results, bool rewrite =false)
+        public void SaveResultsForTrainProblem(TrainResponse trainProblem, Problem problem, IDictionary<UInt64, UInt64> results, bool rewrite =false)
         {
             string path = TrainProblemResultFilename(trainProblem, problem);
             SaveResults(path, results, rewrite);
         }
 
-        public void SaveTrainProblem(TrainProblem trainProblem, Problem problem)
+        public void SaveTrainProblem(TrainResponse trainProblem, Problem problem)
         {
             File.AppendAllText(TrainProblemFilename(trainProblem, problem),
                                    trainProblem + Environment.NewLine);

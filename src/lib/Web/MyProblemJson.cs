@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace lib.Web
@@ -12,9 +11,9 @@ namespace lib.Web
 		public bool? solved;
 		public double? timeLeft;
 
-		public IEnumerable<string> OperatorsExceptBonus
+		public string[] OperatorsExceptBonus
 		{
-			get { return operators.Where(t => !t.Equals("bonus", StringComparison.OrdinalIgnoreCase)); }
+			get { return operators.Where(t => !t.Equals("bonus", StringComparison.OrdinalIgnoreCase)).ToArray(); }
 		}
 
 		public bool IsBonus
