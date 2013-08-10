@@ -55,21 +55,17 @@ namespace lib.AlphaProtocol
             var trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
             ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
 
-            log.Debug("Trees and samples generated");
-
             ulong[] outputs = Eval(problemId, inputs);
 
             log.Debug("Eval result for samples received");
 
-            byte[][] solutions = Guesser.Guesser.Guess(trees, inputs, outputs).ToArray();
-
-            log.DebugFormat("Solutions generated. Total {0}", solutions.Length);
+            var solutions = Guesser.Guesser.Guess(trees, inputs, outputs);
 
             while (true)
             {
+                log.Debug("Start find solution");
                 byte[] solution = solutions.First();
-
-                log.Debug("Asking the first guess");
+                log.Debug("First solution finded, asking the guess...");
 
                 string formula = String.Format("(lambda (x) {0})", solution.ToSExpr().Item1);
                 Tuple<ulong, ulong> result = CheckGuess(problemId, formula);
@@ -89,8 +85,7 @@ namespace lib.AlphaProtocol
                 inputs = inputs.Concat(new[] {anCase.Item1}).ToArray();
                 outputs = outputs.Concat(new[] {anCase.Item2}).ToArray();
 
-                solutions = Guesser.Guesser.Guess(solutions, inputs, outputs).ToArray();
-                log.DebugFormat("Solutions generated. Total {0}", solutions.Length);
+                solutions = Guesser.Guesser.Guess(solutions, inputs, outputs);
             }
         }
 
