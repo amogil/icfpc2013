@@ -1,7 +1,8 @@
 ﻿namespace lib.AlphaProtocol
 {
-	public enum TrainType
+	public enum TrainProblemType
 	{
+		Any,
 		Simple,
 		Fold,
 		Tfold,

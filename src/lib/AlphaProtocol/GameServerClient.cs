@@ -63,24 +63,28 @@ namespace lib.AlphaProtocol
 		}
 
 		[NotNull]
-		public TrainResponse Train(TrainType trainType = TrainType.Simple, int? size = null)
+		public TrainResponse Train(TrainProblemType trainProblemType = TrainProblemType.Any, int? size = null)
 		{
 			var request = new TrainRequest(size);
-			switch (trainType)
+			switch (trainProblemType)
 			{
-				case TrainType.Simple:
+				case TrainProblemType.Any:
+					request.operators = null;
 					break;
-				case TrainType.Fold:
-					request.operators = new[] {"fold"};
+				case TrainProblemType.Simple:
+					request.operators = new string[0];
 					break;
-				case TrainType.Tfold:
+				case TrainProblemType.Fold:
+					request.operators = new[] { "fold" };
+					break;
+				case TrainProblemType.Tfold:
 					request.operators = new[] { "tfold" };
 					break;
-				case TrainType.Bonus:
+				case TrainProblemType.Bonus:
 					request.size = 42;
 					break;
 				default:
-					throw new ArgumentOutOfRangeException("trainType");
+					throw new ArgumentOutOfRangeException("trainProblemType");
 			}
 
 			var response = webApi.Train(request);

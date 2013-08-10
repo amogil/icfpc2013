@@ -11,8 +11,7 @@ namespace lib.AlphaProtocol
     {
         private static readonly ILog log = LogManager.GetLogger(typeof (AlphaProtocol));
 
-        public static string PostSolution(string problemId, int size, string[] operations,
-                                          bool renameTFoldToFold = false)
+        public static string PostSolution(string problemId, int size, string[] operations, bool renameTFoldToFold)
         {
             var gsc = new GameServerClient();
 
