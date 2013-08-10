@@ -1,1 +1,2 @@
 Id: aOYrrDgKjOYtAcoSMgjbBHaj, Challenge: (lambda (x_48335) (fold x_48335 0 (lambda (x_48335 x_48336) (xor (shr1 (not (if0 (shl1 (shr1 x_48336)) (if0 (and (shr16 x_48335) (xor x_48335 x_48335)) x_48335 1) x_48335))) x_48335)))), Size: 23, Operators: and,if0,not,shl1,shr1,shr16,tfold,xor
+Id: rUOcoiage8aGHhRKAJ0bxslz, Challenge: (lambda (x_48155) (fold x_48155 0 (lambda (x_48155 x_48156) (shl1 (and (xor x_48155 (not (shr4 (or (if0 (xor (shl1 (xor x_48155 x_48156)) x_48156) x_48155 1) 0)))) 1))))), Size: 23, Operators: and,if0,not,or,shl1,shr4,tfold,xor

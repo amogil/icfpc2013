@@ -10,3 +10,4 @@ Id: Ze0wKKGydfAgAYHXYSKS6rWM, Challenge: (lambda (x_3163) (plus (not 0) x_3163))
 Id: 04ObKLFwRdb0rSSBqwS31LeP, Challenge: (lambda (x_3462) (shr1 (or x_3462 x_3462))), Size: 5, Operators: or,shr1
 Id: gfrPXZxEFThRdYoYyw2mO0A2, Challenge: (lambda (x_4143) (not (not (shr4 x_4143)))), Size: 5, Operators: not,shr4
 Id: P45vt0ONVApt0FcUhIs1hBrk, Challenge: (lambda (x_2949) (not (shr16 (shr1 x_2949)))), Size: 5, Operators: not,shr1,shr16
+Id: ZN6ARvgWN9d71QUOK6ZNsxvP, Challenge: (lambda (x_4089) (shr1 (or x_4089 1))), Size: 5, Operators: or,shr1

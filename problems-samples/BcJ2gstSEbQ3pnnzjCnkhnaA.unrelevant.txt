@@ -3,3 +3,4 @@ Id: Eq1ZM3t9TeHOfaUHMpaAFi7Z, Challenge: (lambda (x_3437) (fold x_3437 0 (lambda
 Id: 43FmaVqQqhe8MfMfdJhx9gYJ, Challenge: (lambda (x_4989) (fold x_4989 0 (lambda (x_4989 x_4990) (xor x_4989 (shr4 x_4989))))), Size: 9, Operators: shr4,tfold,xor
 Id: W5VX9v7dU8fKh8dAXgvkVqut, Challenge: (lambda (x_5373) (fold x_5373 0 (lambda (x_5373 x_5374) (shr4 (xor 0 x_5373))))), Size: 9, Operators: shr4,tfold,xor
 Id: nZx4X0vGyJThYFUq22a7SbbM, Challenge: (lambda (x_4913) (fold x_4913 0 (lambda (x_4913 x_4914) (shl1 (shr4 (shr1 x_4913)))))), Size: 9, Operators: shl1,shr1,shr4,tfold
+Id: sA30BIloscdlN5VmG1WAzBeW, Challenge: (lambda (x_3685) (fold x_3685 0 (lambda (x_3685 x_3686) (shl1 (plus 1 x_3685))))), Size: 9, Operators: plus,shl1,tfold
