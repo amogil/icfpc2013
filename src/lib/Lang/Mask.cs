@@ -63,6 +63,39 @@ namespace lib.Lang
 			else return '?';
 		}
 
+        private void SetChar(int ind, char c)
+        {
+            switch (c)
+            {
+                case('0'):
+                    {
+                        one = one.UnsetBit(ind);
+                        zero = zero.SetBit(ind);
+                        break;
+                    }
+                case('1'):
+                    {
+                        one = one.SetBit(ind);
+                        zero = zero.UnsetBit(ind);
+                        break;
+                    }
+                case('x'):
+                    {
+                        one = one.SetBit(ind);
+                        zero = zero.SetBit(ind);
+                        break;
+                    }
+                default:
+                    {
+                        one.UnsetBit(ind);
+                        zero.UnsetBit(ind);
+                        break;
+                    }
+            }
+        }
+
+        
+
 		public Mask Not()
 		{
 			return new Mask(zero, one);
@@ -93,25 +126,29 @@ namespace lib.Lang
 			return new Mask((one & other.zero | zero & other.one), (one & other.one | zero & other.zero));
 		}
 
+
 		public Mask Plus(Mask other)
 		{
-			var a = ToString();
-			var b = other.ToString();
-			char p = '0';
-			var res = "";
-			for (int i = 63; i >=0; i--)
+		    char p = MaskChar(false, true);
+		    char ai, bi;
+		    ulong resZero = ulong.MaxValue;
+		    ulong resOne = 0;
+		    var res = new Mask(resOne, resZero);
+			for (int i = 0; i <=63 ; ++i)
 			{
-				var ai = a[i];
-				var bi = b[i];
+			    ai = MaskChar(this.one.Bit(i), this.zero.Bit(i));
+			    bi = MaskChar(other.one.Bit(i), other.zero.Bit(i));
+				
 				var set = new[] {ai, bi, p};
 				var onesCount = set.Count(c => c == '1');
 				var zerosCount = set.Count(c => c == '0');
 				if (onesCount == 2 && zerosCount == 1 || zerosCount == 3)
-					res = '0' + res;
+				    res.SetChar(i, '0');
 				else if (onesCount == 1 && zerosCount == 2 || onesCount == 3)
-					res = '1' + res;
+					res.SetChar(i, '1');
 				else
-					res = 'x' + res;
+					res.SetChar(i, 'x');
+
 				if (zerosCount == 2)
 					p = '0';
 				else if (onesCount >= 2)
@@ -119,9 +156,11 @@ namespace lib.Lang
 				else
 					p = 'x';
 			}
-			return new Mask(res);
+		    return res;
 
 		}
+
+        
 
 		public bool CantBeZero()
 		{
