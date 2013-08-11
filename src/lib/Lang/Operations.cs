@@ -39,6 +39,12 @@ namespace lib.Lang
 				O("and", 2), O("or", 2), O("xor", 2), O("plus", 2)
 			};
 
+		public const int If = 5;
+		public const int Fold = 6;
+		public const int X = 2;
+		public const int I = 3;
+		public const int A = 4;
+
 		public static readonly string[] names = all.Select(op => op.Name).ToArray();
 		public static readonly int[] sizes = all.Select(op => op.size).ToArray();
 		public static readonly int[] args = all.Select(op => op.argsCount).ToArray();

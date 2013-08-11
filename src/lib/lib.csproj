@@ -62,6 +62,8 @@
     <Compile Include="Brute\Perf_Test.cs" />
     <Compile Include="Brute\Force.cs" />
     <Compile Include="Annotations.cs" />
+    <Compile Include="Brute\SmartGenerator.cs" />
+    <Compile Include="Brute\Subtree.cs" />
     <Compile Include="Lang\BinExpExtensions.cs" />
     <Compile Include="Lang\Mask.cs" />
     <Compile Include="Lang\Masks.cs" />
