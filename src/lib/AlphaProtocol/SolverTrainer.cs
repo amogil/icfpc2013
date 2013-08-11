@@ -38,9 +38,9 @@ namespace lib.AlphaProtocol
 		[Test]
 		public void Perf_Smart()
 		{
-			while (true)
+//			while (true)
 			{
-				var problem = gsc.Train(TrainProblemType.Fold, 15);
+				var problem = gsc.Train(TrainProblemType.Fold, 16);
 				Console.Out.WriteLine("==== TrainProblem: {0}", problem);
 
 				var sw = Stopwatch.StartNew();

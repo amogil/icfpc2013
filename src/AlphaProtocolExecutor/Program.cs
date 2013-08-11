@@ -27,8 +27,8 @@ namespace AlphaProtocolExecutor
 
         private static void Main(string[] args)
         {
-            int size = ArgToInt(args[0], 17);
-            int skip = ArgToInt(args[1]);
+            int size = ArgToInt(args[0], 18);
+            int skip = ArgToInt(args[1], 0);
             int take = ArgToInt(args[2], int.MaxValue);
             Run(size, skip, take);
 //               RunManual();

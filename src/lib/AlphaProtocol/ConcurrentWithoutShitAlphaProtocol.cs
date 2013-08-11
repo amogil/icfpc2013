@@ -75,7 +75,7 @@ namespace lib.AlphaProtocol
 
             log.Debug("Eval result for samples received");
 
-            IEnumerable<byte[]> trees = new SmartGenerator(inputs, outputs, operations).Enumerate(size - 1);
+            IEnumerable<byte[]> trees = new SmartGenerator(inputs, outputs, operations).Enumerate(size - 1, size-1, false);
 
             int tasksCount = 4;
             IEnumerable<byte[][]> chunckedTrees = Chuncked(trees, 1 * 1024 *1024);
@@ -110,8 +110,8 @@ namespace lib.AlphaProtocol
                 while ((solution = GetSolution(tasksResults)) != null)
                 {
                     log.Debug("First solution finded, asking the guess...");
-
-                    string formula = String.Format("(lambda (x) {0})", solution.ToSExpr().Item1);
+                    var s = solution.SkipWhile(b => b == 16).ToArray();
+                    string formula = String.Format("(lambda (x) {0})", s.ToSExpr().Item1);
                     WrongAnswer wrongAnswer = gsc.Guess(problemId, formula);
 
                     log.Debug("Guess answer received");

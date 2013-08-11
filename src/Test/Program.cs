@@ -29,7 +29,7 @@ namespace Test
             foreach (MyProblem p in prob)
             {
                 Console.Write("{2} {0}: {1}  ", p.Id, string.Join(",", p.Operations).PadRight(40), p.Size);
-                int count = new SmartGenerator(p.Operations).Enumerate(p.Size - 1).Take(limit).Count();
+                int count = new SmartGenerator(p.Operations).Enumerate(p.Size - 1, p.Size - 1, false).Take(limit).Count();
                 if (count == limit)
                     Console.WriteLine(limit + "+");
                 else
