@@ -57,6 +57,7 @@ namespace lib.Lang
 			else
 			{
 				int op = Array.IndexOf(Operations.names, t);
+				if (op < 0) throw new Exception(t);
 				res = ParseFun((byte)op, Operations.args[op], parse);
 			}
 			foreach (var b in res) yield return b;

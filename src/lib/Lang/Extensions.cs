@@ -6,11 +6,21 @@ namespace lib.Lang
 {
 	public static class Extensions
 	{
-		public static IEnumerable<T> Print<T>(this IEnumerable<T> items, Func<T, string> toString)
+		public static IEnumerable<string> Print(this IEnumerable<string> items, int maxCount = 1000)
 		{
+			return items.Print(s => s);
+
+		}
+		public static IEnumerable<T> Print<T>(this IEnumerable<T> items, Func<T, string> toString, int maxCount = 1000)
+		{
+			int printedCount = 0;
 			foreach (var item in items)
 			{
-				Console.WriteLine(toString(item));
+				if (printedCount <= maxCount)
+				{
+					Console.WriteLine(toString(item));
+					printedCount++;
+				}
 				yield return item;
 			}
 		}
