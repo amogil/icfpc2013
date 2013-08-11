@@ -92,6 +92,24 @@ namespace lib.Lang
 			return new Mask((one & other.zero | zero & other.one), (one & other.one | zero & other.zero));
 		}
 
+		public Mask FastPlus(Mask other)
+		{
+			ulong xxx = 0;
+			var i = 0;
+			for (; i < 64 && !(one.Bit(i) && other.one.Bit(i)); i++)
+			{
+				xxx |= ((ulong) 1) << i;
+			}
+			for (var j = 63; j > i && !(one.Bit(j) && other.one.Bit(j)); j--)
+			{
+				xxx |= ((ulong)1) << j;
+			}
+			xxx = ulong.MaxValue ^ xxx;
+			ulong resZero = (zero & other.zero) | xxx;
+			ulong resOne = (one | other.one) | xxx;
+			return new Mask(resOne, resZero);
+		}
+
 		public Mask Plus(Mask other)
 		{
 			const ulong resZero = ulong.MaxValue;

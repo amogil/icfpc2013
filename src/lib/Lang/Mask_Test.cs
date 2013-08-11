@@ -112,6 +112,29 @@ namespace lib.Lang
 			Assert.AreEqual(new Mask(res).ToString(), new Mask(a).Plus(new Mask(b)).ToString());
 		}
 
+		[TestCase("x", "x", "x")]
+		[TestCase("x", "1", "x")]
+		[TestCase("x", "0", "x")]
+		[TestCase("1", "x", "x")]
+		[TestCase("1", "1", "x")]
+		[TestCase("1", "0", "1")]
+		[TestCase("0", "x", "x")]
+		[TestCase("0", "1", "1")]
+		[TestCase("0", "0", "0")]
+		[TestCase("01", "01", "xx")]
+		[TestCase("01", "0x", "xx")]
+		[TestCase("0x", "0x", "xx")]
+		[TestCase("00", "0x", "0x")]
+		[TestCase("0x", "01", "xx")]
+		[TestCase("010", "011", "xx1")]
+		[TestCase("001", "0x0", "0x1")]
+		[TestCase("10010XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX0X001", 
+				  "0x010XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX010x0",
+				  "1x0XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX0x1")]
+		public void FastPlus(string a, string b, string res)
+		{
+			Assert.AreEqual(new Mask(res).ToString(), new Mask(a).FastPlus(new Mask(b)).ToString());
+		}
 
 		[Test]
 		public void TestToString()
