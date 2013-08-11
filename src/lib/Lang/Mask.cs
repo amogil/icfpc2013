@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -22,8 +21,8 @@ namespace lib.Lang
 
 		public Mask(ICollection<ulong> values)
 		{
-			one = values.Aggregate((ulong) 0, (acc, i) => acc | i);
-			zero = values.Aggregate((ulong) 0, (acc, i) => acc | ~i);
+			one = values.Aggregate((ulong)0, (acc, i) => acc | i);
+			zero = values.Aggregate((ulong)0, (acc, i) => acc | ~i);
 		}
 
 		public Mask(string s)
@@ -33,7 +32,7 @@ namespace lib.Lang
 			zero = 0;
 			for (int i = 0; i < 64; i++)
 			{
-				var c = s[63-i];
+				var c = s[63 - i];
 				one = one | ((c != '0' ? (ulong)1 : 0) << i);
 				zero = zero | ((c != '1' ? (ulong)1 : 0) << i);
 			}
@@ -62,39 +61,6 @@ namespace lib.Lang
 			if (canBeZero) return '0';
 			else return '?';
 		}
-
-        private void SetChar(int ind, char c)
-        {
-            switch (c)
-            {
-                case('0'):
-                    {
-                        one = one.UnsetBit(ind);
-                        zero = zero.SetBit(ind);
-                        break;
-                    }
-                case('1'):
-                    {
-                        one = one.SetBit(ind);
-                        zero = zero.UnsetBit(ind);
-                        break;
-                    }
-                case('x'):
-                    {
-                        one = one.SetBit(ind);
-                        zero = zero.SetBit(ind);
-                        break;
-                    }
-                default:
-                    {
-                        one.UnsetBit(ind);
-                        zero.UnsetBit(ind);
-                        break;
-                    }
-            }
-        }
-
-        
 
 		public Mask Not()
 		{
@@ -126,41 +92,74 @@ namespace lib.Lang
 			return new Mask((one & other.zero | zero & other.one), (one & other.one | zero & other.zero));
 		}
 
-
 		public Mask Plus(Mask other)
 		{
-		    char p = MaskChar(false, true);
-		    char ai, bi;
-		    ulong resZero = ulong.MaxValue;
-		    ulong resOne = 0;
-		    var res = new Mask(resOne, resZero);
-			for (int i = 0; i <=63 ; ++i)
+			const ulong resZero = ulong.MaxValue;
+			const ulong resOne = 0;
+			var res = new Mask(resOne, resZero);
+			var pOnesCount = 0;
+			var pZerosCount = 1;
+			for (var i = 0; i < 64; ++i)
 			{
-			    ai = MaskChar(this.one.Bit(i), this.zero.Bit(i));
-			    bi = MaskChar(other.one.Bit(i), other.zero.Bit(i));
-				
-				var set = new[] {ai, bi, p};
-				var onesCount = set.Count(c => c == '1');
-				var zerosCount = set.Count(c => c == '0');
+				var canBeOneMy = one.Bit(i);
+				var canBeZeroMy = zero.Bit(i);
+				var canBeOneOther = other.one.Bit(i);
+				var canBeZeroOther = other.zero.Bit(i);
+
+				var onesCount = pOnesCount;
+				var zerosCount = pZerosCount;
+				CountZerosAndOnes(canBeOneMy, canBeZeroMy, ref onesCount, ref zerosCount);
+				CountZerosAndOnes(canBeOneOther, canBeZeroOther, ref onesCount, ref zerosCount);
+
 				if (onesCount == 2 && zerosCount == 1 || zerosCount == 3)
-				    res.SetChar(i, '0');
+				{
+					res.one = res.one.UnsetBit(i);
+					res.zero = res.zero.SetBit(i);
+				}
 				else if (onesCount == 1 && zerosCount == 2 || onesCount == 3)
-					res.SetChar(i, '1');
+				{
+					res.one = res.one.SetBit(i);
+					res.zero = res.zero.UnsetBit(i);
+				}
 				else
-					res.SetChar(i, 'x');
+				{
+					res.one = res.one.SetBit(i);
+					res.zero = res.zero.SetBit(i);
+				}
 
 				if (zerosCount == 2)
-					p = '0';
+				{
+					pOnesCount = 0;
+					pZerosCount = 1;
+				}
 				else if (onesCount >= 2)
-					p = '1';
+				{
+					pOnesCount = 1;
+					pZerosCount = 0;
+				}
 				else
-					p = 'x';
+				{
+					pOnesCount = 0;
+					pZerosCount = 0;
+				}
 			}
-		    return res;
+			return res;
 
 		}
 
-        
+		private static void CountZerosAndOnes(bool canBeOne, bool canBeZero, ref int onesCount, ref int zerosCount)
+		{
+			if (canBeOne)
+			{
+				if (!canBeZero)
+					onesCount++;
+			}
+			else
+			{
+				if (canBeZero)
+					zerosCount++;
+			}
+		}
 
 		public bool CantBeZero()
 		{

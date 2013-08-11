@@ -27,11 +27,6 @@ namespace lib.Lang
 			return Eval(program, process, missing, 0, program.Length-1, out offset);
 		}
 
-		public static T ThrowUnexpectedEnd<T>()
-		{
-			throw new Exception("unexpected end");
-		}
-
 		public static TRes Eval<TRes>(this byte[] program, Func<byte, TRes[], TRes> process, TRes missing, int start, int lastIndex, out int offset)
 		{
 			if (start > lastIndex)
