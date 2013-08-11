@@ -455,7 +455,7 @@ n3FzVf7MqAFIyMBAZy2MfhuR	14	True		fold,not,or,plus,shr4,xor
 qD52Cb9NexEc1PDSzBBLg2uV	14	True		and,if0,or,plus,shl1,shr16,shr4
 rVBNdoBuSXwUa37CeiJJdNs2	14	True		fold,if0,or
 sDByDHueA8rblB9BYUZBxJZT	14	True		and,if0,plus,shl1,shr1,shr4
-spcrDoEBmeHgxgTAth0IZBVX	14			fold,not,plus,shr1,xor
+spcrDoEBmeHgxgTAth0IZBVX	14	True		fold,not,plus,shr1,xor
 tC7B8cVUr4tzNwCjT3qBBYls	14	True		if0,plus,shl1,shr16,shr4,xor
 vn9Rb3vi0USr1IN425EB9Bm9	14	True		fold,or,plus,shl1,xor
 wcBQ3fAKy5PgW3kK8fHtJ8sp	14	True		fold,or,plus,shl1,shr1,xor

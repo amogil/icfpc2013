@@ -30,9 +30,9 @@ namespace AlphaProtocolExecutor
         private static void Main(string[] args)
         {
 //            Run();
-//            RunManual();
-//            Test();
-            EvalTreesSizes(int.Parse(args[0]), int.Parse(args[1]));
+            RunManual();
+            //Test();
+//            EvalTreesSizes(int.Parse(args[0]), int.Parse(args[1]));
         }
 
         private static void Run()
@@ -89,7 +89,7 @@ namespace AlphaProtocolExecutor
 
         private static void RunManual()
         {
-            AlphaProtocol.PostSolution("NB0al4Vv8HXxu0otkQo8aHRL", 15, "if0,plus,tfold,xor".Split(','));
+            AlphaProtocol.PostSolution("spcrDoEBmeHgxgTAth0IZBVX", 14, "fold,not,plus,shr1,xor".Split(','));
             Console.WriteLine("Press any key...");
             Console.ReadKey();
         }
@@ -115,16 +115,17 @@ namespace AlphaProtocolExecutor
 
         private static void Test()
         {
+            int threshold = 300*1000*1000;
             while (true)
             {
                 var gsc = new GameServerClient();
-                TrainResponse problem = gsc.Train(TrainProblemType.Any, 14);
+                TrainResponse problem = gsc.Train(TrainProblemType.Any, 15);
                 Console.Out.WriteLine("==== TrainProblem: {0}", problem);
 
                 Task<int> countTask = Task.Run(() =>
                     {
                         IEnumerable<byte[]> trees = new BinaryBruteForcer(problem.operators).Enumerate(problem.size - 1);
-                        return trees.Count();
+                        return trees.TakeWhile((t, i) => i < threshold).Count();
                     });
                 Stopwatch sw = Stopwatch.StartNew();
                 string answer = ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.id, problem.size,
