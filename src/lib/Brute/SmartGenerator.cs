@@ -38,7 +38,7 @@ namespace lib.Brute
 		{
 		}
 
-		public SmartGenerator(ulong[] inputs, ulong[] outputs, params string[] ops)
+		public SmartGenerator(List<ulong> inputs, List<ulong> outputs, params string[] ops)
 		{
 			if (outputs != null)
 			{

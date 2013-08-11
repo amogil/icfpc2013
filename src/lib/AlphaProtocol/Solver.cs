@@ -23,12 +23,12 @@ namespace lib.AlphaProtocol
 			args = new ulong[] { 0, 1, ulong.MaxValue, ulong.MinValue }.Concat(Enumerable.Range(1, 256).Select(e => rnd.NextUInt64())).Take(256).ToList();
 		}
 
-		public string Solve(string problemId, int size, string[] ops)
+		public string SolveBinaryBrute(string problemId, int size, string[] ops)
 		{
-			return Solve(problemId, size, ops, values => new BinaryBruteForcer(new Mask(values), ops).Enumerate(size - 1));
+			return Solve(problemId, size, ops, (inputs, values) => new BinaryBruteForcer(new Mask(values), ops).Enumerate(size - 1));
 		}
 
-		public string Solve(string problemId, int size, string[] ops, Func<List<ulong>, IEnumerable<byte[]>> getGuesses)
+		public string Solve(string problemId, int size, string[] ops, Func<List<ulong>, List<ulong>, IEnumerable<byte[]>> getGuesses)
 		{
 			log.DebugFormat("Solving problem {0}: size={1}, ops={2}", problemId, size, string.Join(", ", ops));
 
@@ -36,7 +36,7 @@ namespace lib.AlphaProtocol
 			var correctValues = WithTimer(() => gsc.Eval(problemId, args), "gsc.Eval()");
 
 			var nextGuessSw = Stopwatch.StartNew();
-			foreach (var guess in getGuesses(correctValues))
+			foreach (var guess in getGuesses(args, correctValues))
 			{
 				if (!IsGood(guess, correctValues))
 					continue;

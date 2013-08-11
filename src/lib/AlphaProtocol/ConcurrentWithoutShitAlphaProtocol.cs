@@ -32,13 +32,13 @@ namespace lib.AlphaProtocol
             yield return bufferTail;
         }
 
-        private static byte[][] FilterTrees(byte[][] treesToCheck, ulong[] inputs, ulong[] outputs)
+		private static byte[][] FilterTrees(byte[][] treesToCheck, List<ulong> inputs, List<ulong> outputs)
         {
             var result = new List<byte[]>();
             for (int i = 0; i < treesToCheck.Length; i++)
             {
                 bool finded = true;
-                for (int j = 0; j < inputs.Length; j++)
+                for (int j = 0; j < inputs.Count; j++)
                 {
                     if (treesToCheck[i].Eval(inputs[j]) != outputs[j])
                     {
@@ -69,8 +69,8 @@ namespace lib.AlphaProtocol
             log.DebugFormat("Trying to solve problem {0}...", problemId);
             var random = new Random();
 
-            var inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
-            var outputs = gsc.Eval(problemId, inputs).ToArray();
+			var inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToList();
+			var outputs = gsc.Eval(problemId, inputs).ToList();
 
             log.Debug("Eval result for samples received");
 
@@ -116,9 +116,9 @@ namespace lib.AlphaProtocol
                     }
 
                     log.Debug(string.Format("WrongAnswer received: {0}", wrongAnswer));
-                    inputs = inputs.Concat(new[] {wrongAnswer.Arg}).ToArray();
-                    outputs = outputs.Concat(new[] {wrongAnswer.CorrectValue}).ToArray();
-                    tasksResults = tasksResults.Select(r => FilterTrees(r, new[] { wrongAnswer.Arg }, new[] { wrongAnswer.CorrectValue })).ToList();
+					inputs = inputs.Concat(new[] { wrongAnswer.Arg }).ToList();
+                    outputs = outputs.Concat(new[] {wrongAnswer.CorrectValue}).ToList();
+					tasksResults = tasksResults.Select(r => FilterTrees(r, new List<ulong> { wrongAnswer.Arg }, new List<ulong> { wrongAnswer.CorrectValue })).ToList();
                 }
             }
         }

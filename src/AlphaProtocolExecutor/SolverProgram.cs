@@ -19,7 +19,7 @@ namespace AlphaProtocolExecutor
 
 				var solver = new Solver();
 				var sw = Stopwatch.StartNew();
-				var answer = solver.Solve(problem.id, problem.size, problem.OperatorsExceptBonus, vs => new SmartGenerator(problem.OperatorsExceptBonus).Enumerate(problem.size - 1));
+				var answer = solver.Solve(problem.id, problem.size, problem.OperatorsExceptBonus, (args, values) => new SmartGenerator(args, values, problem.OperatorsExceptBonus).Enumerate(problem.size - 1));
 				sw.Stop();
 				log.DebugFormat("==== SolvedIn: {0} ms, Answer: {1}", sw.ElapsedMilliseconds, answer);
 			}
