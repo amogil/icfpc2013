@@ -11,14 +11,12 @@ namespace lib.AlphaProtocol
     {
         private static readonly ILog log = LogManager.GetLogger(typeof (AlphaProtocol));
 
-        public static string PostSolution(string problemId, int size, string[] operations, bool renameTFoldToFold)
+        public static string PostSolution(string problemId, int size, string[] operations)
         {
             var gsc = new GameServerClient();
 
             log.DebugFormat("Trying to solve problem {0}...", problemId);
             var random = new Random();
-            if (renameTFoldToFold)
-                operations = operations.Select(o => o == "tfold" ? "fold" : o).ToArray();
             IEnumerable<byte[]> trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
             ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
 
