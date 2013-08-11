@@ -161,5 +161,15 @@ namespace lib.Brute
 				Console.WriteLine("count: {0}   time: {1}   ", count, sw.Elapsed);
 			}
 		}
+
+        [Test]
+        [Explicit]
+	    public void TestTrainProblems()
+	    {
+            var tp = TrainResponse.Parse("Id: ADkqoa0Vw7RmejijXH0Xo4KA, Challenge: (lambda (x_12530) (shr4 (plus (if0 (or (shr16 (shr16 0)) x_12530) 0 1) x_12530))), Size: 12, Operators: if0,or,plus,shr16,shr4, IsBonus: False");
+            string result = AlphaProtocol.AlphaProtocol.PostSolution(tp.id, tp.size, tp.operators, false);
+            int size = Expr.ParseFunction(result).GetUnified().ToBinExp().ToArray().Size();
+            Console.WriteLine("problemSize = {0}\tsolutionSize = {1}", tp.size, size);
+	    }
 	}
 }

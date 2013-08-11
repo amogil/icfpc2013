@@ -77,64 +77,63 @@ namespace lib.Brute
 			byte[] operations,
 			byte[] prefix, int prefixSize, int foldPosition = 0, int foldPlaces = 0, int usedOps = 0)
 		{
-			if (size == 0 && freePlaces == 0)
+            if(freePlaces < 0 || size < 0) yield break;
+
+			if (freePlaces == 0 && prefixSize > 0)
 			{
 				var res = new byte[prefixSize];
 				Array.Copy(prefix, res, prefixSize);
 				yield return res;
 			}
-			else
+			if (!EnoughSizeForOps(operations, size, freePlaces, usedOps)) yield break;
+			if (answersMask != null && prefixSize > 0 && (prefixSize + b) % a == 0 
+				&& !answersMask.IncludedIn(prefix.GetMask(0, prefixSize - 1))) yield break;
+			var newOperations = operations;
+			if (foldPosition == insideFold && freePlaces == foldPlaces)
 			{
-				if (!EnoughSizeForOps(operations, size, freePlaces, usedOps)) yield break;
-				if (answersMask != null && prefixSize > 0 && (prefixSize + b) % a == 0 
-					&& !answersMask.IncludedIn(prefix.GetMask(0, prefixSize - 1))) yield break;
-				var newOperations = operations;
+				foldPosition = insideFoldFunc;
+				newOperations = inFoldOperations;
+			}
+			else if (foldPosition == insideFoldFunc && freePlaces == foldPlaces - 1)
+			{
+				foldPosition = outsideFold;
+				newOperations = noFoldOperations;
+			}
+			foreach (var opIndex in newOperations)
+			{
+				Operation op = Operations.all[opIndex];
+				if (freePlaces - 1 + op.argsCount == 0 && op.size != size) continue;
+				if (freePlaces - 1 + op.argsCount > size - op.size) continue;
+
+				var recOperations = newOperations;
 				if (foldPosition == insideFold && freePlaces == foldPlaces)
 				{
 					foldPosition = insideFoldFunc;
-					newOperations = inFoldOperations;
+					recOperations = inFoldOperations;
 				}
 				else if (foldPosition == insideFoldFunc && freePlaces == foldPlaces - 1)
 				{
 					foldPosition = outsideFold;
-					newOperations = noFoldOperations;
+					recOperations = noFoldOperations;
 				}
-				foreach (var opIndex in newOperations)
+				if (opIndex == 6)
 				{
-					Operation op = Operations.all[opIndex];
-					if (freePlaces - 1 + op.argsCount == 0 && op.size != size) continue;
-					if (freePlaces - 1 + op.argsCount > size - op.size) continue;
-
-					var recOperations = newOperations;
-					if (foldPosition == insideFold && freePlaces == foldPlaces)
-					{
-						foldPosition = insideFoldFunc;
-						recOperations = inFoldOperations;
-					}
-					else if (foldPosition == insideFoldFunc && freePlaces == foldPlaces - 1)
-					{
-						foldPosition = outsideFold;
-						recOperations = noFoldOperations;
-					}
-					if (opIndex == 6)
-					{
-						foldPosition = insideFold;
-						foldPlaces = freePlaces;
-					}
-					prefix[prefixSize] = opIndex;
-					foreach (var expr in
-						Enumerate(
-							size - op.size,
-							freePlaces - 1 + op.argsCount,
-							opIndex == 6 ? noFoldOperations : recOperations,
-							prefix, prefixSize + 1,
-							foldPosition, foldPlaces, usedOps | (1 << opIndex)))
-						yield return expr;
-					if (opIndex == 6)
-					{
-						foldPosition = outsideFold;
-						foldPlaces = freePlaces;
-					}
+					foldPosition = insideFold;
+					foldPlaces = freePlaces;
+				}
+				prefix[prefixSize] = opIndex;
+				foreach (var expr in
+					Enumerate(
+						size - op.size,
+						freePlaces - 1 + op.argsCount,
+						opIndex == 6 ? noFoldOperations : recOperations,
+						prefix, prefixSize + 1,
+						foldPosition, foldPlaces, usedOps | (1 << opIndex)))
+					yield return expr;
+				if (opIndex == 6)
+				{
+					foldPosition = outsideFold;
+					foldPlaces = freePlaces;
 				}
 			}
 		}

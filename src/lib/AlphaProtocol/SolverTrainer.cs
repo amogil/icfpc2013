@@ -26,7 +26,10 @@ namespace lib.AlphaProtocol
 				var sw = Stopwatch.StartNew();
 				var answer = solver.Solve(problem.id, problem.size, problem.OperatorsExceptBonus);
 				sw.Stop();
-				Console.Out.WriteLine("==== SolvedIn: {0} ms, Answer: {1}", sw.ElapsedMilliseconds, answer);
+
+                int solutionSize = Expr.ParseFunction(answer).GetUnified().ToBinExp().ToArray().Size() + 1;
+                int problemSize = Expr.ParseFunction(problem.challenge).GetUnified().ToBinExp().ToArray().Size() + 1;
+				Console.Out.WriteLine("==== SolvedIn: {0} ms, Answer: {1}, ProblemSize: {2}, SolutionSize: {3}", sw.ElapsedMilliseconds, answer, problemSize, solutionSize);
 			}
 		}
 
