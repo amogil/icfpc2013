@@ -46,7 +46,7 @@ namespace lib.AlphaProtocol
 				var wrongAnswer = WithTimer(() => gsc.Guess(problemId, program), "gsc.Guess()");
 				if (wrongAnswer == null)
 				{
-					log.DebugFormat("SOLVED: {0}, WS: {1}", problemId, Environment.WorkingSet);
+					log.DebugFormat("SOLVED: {0}, TimeTaken: {1} ms, WS: {2}", problemId, wallTime.ElapsedMilliseconds, Environment.WorkingSet);
 					return program;
 				}
 				log.DebugFormat("WRONG_ANSWER: {0}, WS: {1}", wrongAnswer, Environment.WorkingSet);
@@ -82,7 +82,7 @@ namespace lib.AlphaProtocol
 			var sw = Stopwatch.StartNew();
 			var result = getResult();
 			sw.Stop();
-			log.DebugFormat("{0} took: {1} ms, WS: {1}", funcName, sw.ElapsedMilliseconds, Environment.WorkingSet);
+			log.DebugFormat("{0} took: {1} ms, WS: {2}", funcName, sw.ElapsedMilliseconds, Environment.WorkingSet);
 			return result;
 		}
 
