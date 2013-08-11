@@ -1418,7 +1418,11 @@ e4KjdDBdoOGbwKFvJB2CJRKS	27	True		and,if0,not,plus,shl1,shr4
 eCztg8PblJulu0MqacQHfNXh	27	True		and,if0,not,or,shr16,shr4,xor
 eRgYlNvc3RSu0PdDpPj4mGvs	27	True		and,if0,not,or,plus,shl1,shr1,shr4,xor
 feN58Q3DLDaMLPZADETgpsMn	27	True		and,if0,not,plus,shl1,shr16,shr4,tfold,xor
+<<<<<<< HEAD
 ftc5QX1ddSUAK2diYstoMOxA	27	True		and,if0,not,plus,shl1,shr1,shr16,tfold
+=======
+ftc5QX1ddSUAK2diYstoMOxA	27			and,if0,not,plus,shl1,shr1,shr16,tfold
+>>>>>>> sdsd
 g4R7vO2aluTTn2zJV6XXNikZ	27			and,fold,if0,not,plus,shr1,shr4,xor
 hEOFKxjFjeYQd78GXoBmTjR9	27	True		if0,not,plus,shl1,shr1,shr16,shr4,tfold,xor
 hb7rOTFCoOVfRR0csuxBBLm9	27	True		if0,not,or,plus,shr1,shr16,shr4,xor
@@ -1666,7 +1670,11 @@ e8XDjHNIPc1S9D10vwaFPvMj	39	False	Bonus	and,if0,not,or,shl1,shr1,shr16,xor
 f5LBA8jsAGU9PWTtJmHh31pg	39	True	Bonus	and,if0,or,plus,shl1,shr1,shr16,shr4,xor
 gz2lG4N1OrtBJUnLDbpiQvry	39	False	Bonus	and,if0,not,or,plus,shl1,shr1,shr16,xor
 l9vz9mBGjsnK1ceYKAgQLq6A	39	False	Bonus	and,if0,not,or,plus,shl1,shr1,shr16,shr4,xor
+<<<<<<< HEAD
 lE31I5BjyiUFNpOL0MR0yDVz	39	False	Bonus	and,if0,not,or,plus,shl1,shr1,shr16,shr4,xor
+=======
+lE31I5BjyiUFNpOL0MR0yDVz	39		Bonus	and,if0,not,or,plus,shl1,shr1,shr16,shr4,xor
+>>>>>>> sdsd
 oo2r4n4Cvcm3FIHO7poUodcD	39		Bonus	and,if0,not,plus,shl1,shr1,shr16
 q5KH5OYgzeALaNbAEwefTCmL	39		Bonus	and,if0,not,or,plus,shl1,shr1,shr16,shr4,xor
 rMc61tCo11wodjTVYjfRmeO1	39		Bonus	and,if0,plus,shr1,shr16,shr4
