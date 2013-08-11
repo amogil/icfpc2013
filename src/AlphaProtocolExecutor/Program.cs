@@ -13,15 +13,10 @@ namespace AlphaProtocolExecutor
     internal class Problem
     {
         public string Id { get; set; }
-
         public int Size { get; set; }
-
         public bool Solved { get; set; }
-
         public bool Bonus { get; set; }
-
         public string[] Operations { get; set; }
-
         public bool Tried { get; set; }
     }
 
@@ -37,17 +32,28 @@ namespace AlphaProtocolExecutor
 
         private static void Run()
         {
-            var whitelist = new[]
-                {
-                    "25qkBrK4TesdTl0rpd55wBer", "XbiqwJyzKejEI7JGnBoBGOuj", "KxkQjtZpqFCxpAMXUCsKLAsx",
-                    "QEk2lF0dQARmGEZxecGKAy1h", "ZYEJjaBjz81rIcESu9SGJexR", "rSLBjzyk9qTkg9HrnRvMYHXD",
-                    "gUwLnT5kUgwriIoeGvvfcJy6", "kdP0NU6AMkfmyQh3j3lgvkcC"
-                };
+//            var whitelist = new[]
+//                {
+//                    "7Tt70iDp51YZKme9a7xY4zcR"
+//                };
+
+            foreach (var problem in UnsolvedProblemsWithSize(15))
+            {
+                Console.WriteLine(problem.Id);
+            }
+            Console.WriteLine("Press any key...");
+            Console.ReadKey();
 
             foreach (Problem problem in UnsolvedProblemsWithSize(15))
             {
-                if (whitelist.Any(v => v == problem.Id))
-                    AlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
+//                if (whitelist.Any(v => v == problem.Id))
+//                {
+//                    AlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
+                    var solver = new Solver();
+                    solver.Solve(problem.Id, problem.Size, problem.Operations,
+                                 (args, values) =>
+                                 new SmartGenerator(args, values, problem.Operations).Enumerate(problem.Size - 1));
+//                }
             }
 
             Console.WriteLine("Press any key...");
@@ -56,7 +62,10 @@ namespace AlphaProtocolExecutor
 
         private static Problem[] UnsolvedProblemsWithSize(int size)
         {
-            return GetProblems().Where(p => !p.Tried && !p.Bonus && p.Size == size).ToArray();
+            return
+                GetProblems()
+                    .Where(p => !p.Tried && !p.Bonus && p.Size == size && !p.Operations.Contains("plus"))
+                    .ToArray();
         }
 
         private static IEnumerable<Problem> GetProblems()
@@ -91,7 +100,12 @@ namespace AlphaProtocolExecutor
 
         private static void RunManual()
         {
-            AlphaProtocol.PostSolution("spcrDoEBmeHgxgTAth0IZBVX", 14, "fold,not,plus,shr1,xor".Split(','));
+            //            AlphaProtocol.PostSolution("06YMPN1BucgJqIxBZBjhJgh7", 14, "fold,plus,shl1,shr4".Split(','));
+            var solver = new Solver();
+            string[] opers = "fold,plus,shl1,shr4".Split(',');
+            int size = 15;
+            string answer = solver.Solve("06YMPN1BucgJqIxBZBjhJgh7", size, opers,
+                                         (args, values) => new SmartGenerator(args, values, opers).Enumerate(size - 1));
             Console.WriteLine("Press any key...");
             Console.ReadKey();
         }
