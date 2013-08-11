@@ -19,7 +19,7 @@ namespace lib.AlphaProtocol
 		{
 			while (true)
 			{
-				var problem = gsc.Train(TrainProblemType.Simple, 12);
+				var problem = gsc.Train(TrainProblemType.Any, 14);
 				Console.Out.WriteLine("==== TrainProblem: {0}", problem);
 
 				var solver = new Solver();
@@ -40,19 +40,25 @@ namespace lib.AlphaProtocol
 		[Test]
 		public void GetBonuses()
 		{
-			var problem = gsc.Train(TrainProblemType.Bonus, 42);
-			Console.WriteLine(problem);
+			while (true)
+			{
+				var problem = gsc.Train(TrainProblemType.Bonus137);
+				Console.WriteLine(problem);
+				Console.WriteLine("SHORT" + problem.challenge);
 
-			var solver = new Solver();
-			var sw = Stopwatch.StartNew();
-			var answer = solver.Solve(problem.id, problem.size, problem.OperatorsExceptBonus, vs =>
-				{
-					var answersMask = new Mask(vs);
-					Console.WriteLine(answersMask);
-					return new BinaryBruteForcer(answersMask, problem.OperatorsExceptBonus).EnumerateBonus(problem.size - 1).Print(t => t.Printable());
-				});
-			sw.Stop();
-			Console.Out.WriteLine("==== SolvedIn: {0} ms, Answer: {1}", sw.ElapsedMilliseconds, answer);
+				/*var solver = new Solver();
+				var sw = Stopwatch.StartNew();
+				var answer = solver.Solve(problem.id, problem.size, problem.OperatorsExceptBonus, vs =>
+					{
+						var answersMask = new Mask(vs);
+						Console.WriteLine(answersMask);
+						return
+							new BinaryBruteForcer(answersMask, problem.OperatorsExceptBonus).EnumerateBonus(problem.size - 1)
+																							.Print(t => t.Printable());
+					});
+				sw.Stop();
+				Console.Out.WriteLine("==== SolvedIn: {0} ms, Answer: {1}", sw.ElapsedMilliseconds, answer);*/
+			}
 		}
 
 		[Test]

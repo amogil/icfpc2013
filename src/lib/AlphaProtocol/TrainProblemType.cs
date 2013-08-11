@@ -6,6 +6,7 @@
 		Simple,
 		Fold,
 		Tfold,
-		Bonus,
+		Bonus42,
+		Bonus137,
 	}
 }

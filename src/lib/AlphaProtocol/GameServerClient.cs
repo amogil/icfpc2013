@@ -81,8 +81,11 @@ namespace lib.AlphaProtocol
 				case TrainProblemType.Tfold:
 					request.operators = new[] { "tfold" };
 					break;
-				case TrainProblemType.Bonus:
+				case TrainProblemType.Bonus42:
 					request.size = 42;
+					break;
+				case TrainProblemType.Bonus137:
+					request.size = 137;
 					break;
 				default:
 					throw new ArgumentOutOfRangeException("trainProblemType");
