@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlphaProtocol\AlphaProtocol.cs" />
+    <Compile Include="AlphaProtocol\ConcurrentWithoutShitAlphaProtocol.cs" />
     <Compile Include="AlphaProtocol\Solver.cs" />
     <Compile Include="AlphaProtocol\GameServerClient.cs" />
     <Compile Include="AlphaProtocol\SolverTrainer.cs" />
