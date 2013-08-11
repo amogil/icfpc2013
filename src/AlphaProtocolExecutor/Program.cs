@@ -24,13 +24,15 @@ namespace AlphaProtocolExecutor
     {
         private static void Main(string[] args)
         {
-            Run(string.IsNullOrEmpty(args[0]) ? 0 : int.Parse(args[0]));
+            int skip = string.IsNullOrEmpty(args[0]) ? 0 : int.Parse(args[0]);
+            int take = string.IsNullOrEmpty(args[1]) ? 0 : int.Parse(args[1]);
+            Run(skip, take);
 //            RunManual();
 //            Test();
             EvalTreesSizes(int.Parse(args[0]), int.Parse(args[1]));
         }
 
-        private static void Run(int skip)
+        private static void Run(int skip, int take)
         {
             var whitelist = new[]
                 {
@@ -44,7 +46,7 @@ namespace AlphaProtocolExecutor
                     "xWL7MoYaR2AUbf87yaV5622k",
                 };
 
-            foreach (Problem problem in UnsolvedProblemsWithSize(16).Skip(skip))
+            foreach (Problem problem in UnsolvedProblemsWithSize(16).Skip(skip).Take(take))
             {
 //                if (whitelist == null || whitelist.Any(v => v == problem.Id))
                 {
