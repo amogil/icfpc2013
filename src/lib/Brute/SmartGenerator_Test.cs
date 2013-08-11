@@ -12,6 +12,16 @@ namespace lib.Brute
 	[TestFixture]
 	public class SmartGenerator_Test
 	{
+		[Test]
+		public void AllSizes()
+		{
+			new SmartGenerator("if0").Enumerate(4, 4, false).DumpAll();
+			var gen = new SmartGenerator("if0");
+			var c34 = gen.Enumerate(3, 4, false).Count();
+			var c3 = gen.Enumerate(3, 3, false).Count();
+			var c4 = gen.Enumerate(4, 4, false).Count();
+			Assert.AreEqual(c34, c3+c4);
+		}
 
 		[Test]
 		public void IfOptimization()
@@ -79,8 +89,8 @@ namespace lib.Brute
 
 //			CheckResult(ans, new SmartGenerator(operations).Enumerate(trainProblem.size - 1));
 //			CheckResult(ans, new BinaryBruteForcer(operations).Enumerate(trainProblem.size - 1));
-//			Solve(inputs, answers, new SmartGenerator(inputs, answers, operations).Enumerate(trainProblem.size - 1));
-			CheckResult(ans, new SmartGenerator(inputs, answers, operations).Enumerate(trainProblem.size - 1));
+			Solve(inputs, answers, new SmartGenerator(inputs, answers, operations).Enumerate(trainProblem.size - 1));
+//			CheckResult(ans, new SmartGenerator(inputs, answers, operations).Enumerate(trainProblem.size - 1));
 //			CheckResult(ans, new BinaryBruteForcer(new Mask(answers), operations).Enumerate(trainProblem.size - 1));
 		}
 

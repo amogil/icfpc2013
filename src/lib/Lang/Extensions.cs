@@ -11,6 +11,11 @@ namespace lib.Lang
 			return items.Print(s => s);
 
 		}
+		public static void DumpAll(this IEnumerable<byte[]> items, int maxCount = 1000)
+		{
+			items.Print(t => t.Printable()).ToList();
+
+		}
 		public static IEnumerable<T> Print<T>(this IEnumerable<T> items, Func<T, string> toString, int maxCount = 1000)
 		{
 			int printedCount = 0;
