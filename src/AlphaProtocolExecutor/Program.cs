@@ -29,17 +29,19 @@ namespace AlphaProtocolExecutor
     {
         private static void Main(string[] args)
         {
-//            Run();
+            Run();
 //            RunManual();
-            //Test();
-            EvalTreesSizes(int.Parse(args[0]), int.Parse(args[1]));
+//            Test();
+//            EvalTreesSizes(int.Parse(args[0]), int.Parse(args[1]));
         }
 
         private static void Run()
         {
             var whitelist = new[]
                 {
-                    "8q7jeQqjKoa9g0v6IOXixzJ3"
+                    "25qkBrK4TesdTl0rpd55wBer", "XbiqwJyzKejEI7JGnBoBGOuj", "KxkQjtZpqFCxpAMXUCsKLAsx",
+                    "QEk2lF0dQARmGEZxecGKAy1h", "ZYEJjaBjz81rIcESu9SGJexR", "rSLBjzyk9qTkg9HrnRvMYHXD",
+                    "gUwLnT5kUgwriIoeGvvfcJy6", "kdP0NU6AMkfmyQh3j3lgvkcC"
                 };
 
             foreach (Problem problem in UnsolvedProblemsWithSize(15))
@@ -96,7 +98,7 @@ namespace AlphaProtocolExecutor
 
         private static void EvalTreesSizes(int from, int count)
         {
-            int threshold = 300*1000*1000;
+            int threshold = 400*1000*1000;
             Problem[] problems = UnsolvedProblemsWithSize(15).Skip(from).Take(count).ToArray();
             Console.WriteLine("Starting for {0} tasks", problems.Length);
             Task<int>[] tasks = problems.Select(p => Task.Run(() => new BinaryBruteForcer(p.Operations).
@@ -115,7 +117,7 @@ namespace AlphaProtocolExecutor
 
         private static void Test()
         {
-            int threshold = 300*1000*1000;
+            int threshold = 400*1000*1000;
             while (true)
             {
                 var gsc = new GameServerClient();

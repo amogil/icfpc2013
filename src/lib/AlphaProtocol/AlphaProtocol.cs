@@ -18,7 +18,7 @@ namespace lib.AlphaProtocol
             log.DebugFormat("Trying to solve problem {0}...", problemId);
             var random = new Random();
             IEnumerable<byte[]> trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
-            ulong[] inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
+            ulong[] inputs = InputGenerator.Generate();
 
             List<ulong> outputs = gsc.Eval(problemId, inputs);
 
