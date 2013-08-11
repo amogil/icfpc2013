@@ -96,7 +96,7 @@ namespace lib.Lang
 			if (f == 12) return args[0].And(args[1]);
 			if (f == 13) return args[0].Or(args[1]);
 			if (f == 14) return args[0].Xor(args[1]);
-			//if (f == 15) return args[0].Plus(args[1]);
+			if (f == 15) return args[0].FastPlus(args[1]);
 			return Mask.X;
 		}
 	}
