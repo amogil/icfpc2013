@@ -176,5 +176,10 @@ namespace lib.Lang
 		{
 			return new Mask(one | other.one, zero | other.zero);
 		}
+
+		public bool IsConstant()
+		{
+			return ~(one ^ zero) == 0;
+		}
 	}
 }
