@@ -8,36 +8,52 @@ namespace lib.Brute
 {
 	public class SmartGenerator
 	{
-		private readonly ulong[] values;
 		private readonly Mask answersMask;
 		private readonly byte[] outsideFoldOperations;
 		private readonly byte[] noFoldOperations;
 		private readonly byte[] inFoldOperations;
-		private bool tFold;
+		private readonly bool tFold;
 
 		public SmartGenerator(params string[] ops)
-			:this(null, ops)
+			:this(null, null, ops)
 		{
 		}
 
-		public SmartGenerator(ulong[] values, params string[] ops)
+		public SmartGenerator(ulong[] inputs, ulong[] outputs, params string[] ops)
 		{
-			if (values != null) answersMask = new Mask(values);
-			this.values = values;
+			if (outputs != null)
+			{
+				answersMask = new Mask(outputs);
+				filterInput = inputs.Last();
+				filterOutput = outputs.Last();
+			}
 			tFold = ops.Contains("tfold");
 			outsideFoldOperations =
 				new byte[] {0, 1, 2}.Concat(
-					ops.Where(t => t != "tfold").Select(o => (byte) Array.IndexOf(Operations.names, o))).ToArray();
-			noFoldOperations = outsideFoldOperations.Where(o => o != 6).ToArray();
-			inFoldOperations = new byte[] {3, 4}.Concat(noFoldOperations).ToArray();
+					ops.Where(t => t != "tfold").Select(o => (byte) Array.IndexOf(Operations.names, o)))
+					.OrderBy(opIndex => Operations.all[opIndex].priority).ToArray();
+			noFoldOperations = outsideFoldOperations.Where(o => o != 6)
+				.OrderBy(opIndex => Operations.all[opIndex].priority).ToArray();
+			inFoldOperations = new byte[] {3, 4}.Concat(noFoldOperations)
+				.OrderBy(opIndex => Operations.all[opIndex].priority).ToArray();
 		}
-		
+
 		public IEnumerable<byte[]> Enumerate(int size)
+		{
+			return EnumerateItems(size).Select(i => i.subtree.ToArray());
+		}
+
+		public IEnumerable<EnumerationItem> EnumerateItems(int size)
 		{
 			byte[] buffer = new byte[30];
 			var unusedOpsToSpend = outsideFoldOperations.Sum(o => Operations.all[o].size + Operations.all[o].argsCount - 1);
-			foreach (Subtree subtree in EnumerateSubtrees(size, size, buffer, 0, outsideFoldOperations, unusedOpsToSpend, 0).Select(t => t.subtree))
-				yield return subtree.ToArray();
+			if (tFold)
+			{
+				buffer[0] = Operations.Fold;
+				return EnumerateFold(size, size, buffer, 0, unusedOpsToSpend, 0, 0);
+				//.Select(i => new EnumerationItem(new Subtree(i.subtree.Buffer, 0, i.subtree.Last), i.unusedSpent, i.usedOps));
+			}
+			else return EnumerateSubtrees(size, size, buffer, 0, outsideFoldOperations, unusedOpsToSpend, 0);
 		}
 
 		public class EnumerationItem
@@ -54,14 +70,28 @@ namespace lib.Brute
 			public int unusedSpent;
 		}
 
+		public ulong? filterInput;
+		public ulong? filterOutput;
+
 		public IEnumerable<EnumerationItem> EnumerateSubtrees(int minSize, int maxSize, byte[] prefix, int prefixSize, byte[] operations, int unusedOpsToSpend, int usedOps)
 		{
 			if (maxSize == 0) throw new Exception("should not be");
 			if (unusedOpsToSpend > maxSize) yield break; //не истратить столько
 			minSize = Math.Min(minSize, maxSize);
 
-			if (answersMask != null && prefixSize > 0 && (prefixSize + 1) % 3 == 0 
-				&& !answersMask.IncludedIn(prefix.GetMask(0, prefixSize - 1))) yield break;
+			if (answersMask != null && prefixSize > 0 && prefixSize> 0 && maxSize > 3)
+			{
+				var mask = prefix.GetMask(0, prefixSize - 1);
+				if(!answersMask.IncludedIn(mask))
+				{
+					yield break;
+				}
+				var maskWithInputValue = prefix.GetMask(filterInput.Value, 0, prefixSize - 1);
+				if (!new Mask(new[] {filterOutput.Value}).IncludedIn(maskWithInputValue))
+				{
+					yield break;
+				}
+			}
 
 			unusedOpsToSpend = Math.Max(0, unusedOpsToSpend);
 			foreach (var opIndex in operations)
@@ -75,7 +105,6 @@ namespace lib.Brute
 				var newUnusedToSpent = unusedOpsToSpend - unusedSpent;
 				if (op.argsCount == 0)
 				{
-					Debug.Assert(minSize == 1);
 					if (unusedSpent >= unusedOpsToSpend - (maxSize - 1))
 						yield return new EnumerationItem(new Subtree(prefix, prefixSize, prefixSize), unusedSpent, newUsedOps);
 				}
@@ -104,6 +133,9 @@ namespace lib.Brute
 
 			foreach (var arg0 in EnumerateSubtrees(minLeftTree, totalArgsSize - 1, prefix, prefixSize + 1, operations, unusedOpsToSpend, usedOps))
 			{
+				var withFirstArgMask = prefix.GetMask(arg0.subtree.First - 1, arg0.subtree.Last);
+				var singleSecond = withFirstArgMask.IsConstant();
+				
 				var leftMaxSize = maxSize - op.size - arg0.subtree.Size;
 				var leftMinSize = minSize - op.size - arg0.subtree.Size;
 				Debug.Assert(leftMaxSize >= 1);
@@ -111,6 +143,8 @@ namespace lib.Brute
 				foreach (var arg1 in EnumerateSubtrees(leftMinSize, leftMaxSize, prefix, prefixSize + arg0.subtree.Len + 1, operations, unusedOpsToSpend - arg0.unusedSpent, arg0.usedOps))
 				{
 					yield return new EnumerationItem(new Subtree(prefix, prefixSize, arg1.subtree.Last), unusedSpent + arg0.unusedSpent + arg1.unusedSpent, arg1.usedOps);
+					if (singleSecond) 
+						break;
 				}
 			}
 		}

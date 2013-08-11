@@ -27,11 +27,6 @@ namespace lib.Lang
 			return Eval(program, process, missing, 0, program.Length-1, out offset);
 		}
 
-		public static T ThrowUnexpectedEnd<T>()
-		{
-			throw new Exception("unexpected end");
-		}
-
 		public static TRes Eval<TRes>(this byte[] program, Func<byte, TRes[], TRes> process, TRes missing, int start, int lastIndex, out int offset)
 		{
 			if (start > lastIndex)
@@ -61,19 +56,27 @@ namespace lib.Lang
 		{
 			return program.Eval((b, items) => items.Sum() + Operations.all[b].size, 1);
 		}
-		
+
+		public static Mask GetMask(this byte[] program, ulong x, int start = 0, int lastIndex = -1)
+		{
+			int offset;
+			if (lastIndex == -1) lastIndex = program.Length - 1;
+			var xMask = new Mask(new[] { x });
+			return program.Eval((f, args) => CalcMask(f, args, xMask), Mask.X, start, lastIndex, out offset);
+		}
+
 		public static Mask GetMask(this byte[] program, int start = 0, int lastIndex = -1)
 		{
 			int offset;
 			if (lastIndex == -1) lastIndex = program.Length - 1;
-			return program.Eval(CalcMask, Mask.X, start, lastIndex, out offset);
+			return program.Eval((f, args) => CalcMask(f, args), Mask.X, start, lastIndex, out offset);
 		}
 
-		private static Mask CalcMask(byte f, Mask[] args)
+		private static Mask CalcMask(byte f, Mask[] args, Mask x = null)
 		{
 			if (f == 0) return Mask._0;
 			if (f == 1) return Mask._1;
-			if (f == 2) return Mask.X;
+			if (f == 2) return x ?? Mask.X;
 			//TODO: fold
 			if (f == 5)
 			{

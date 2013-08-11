@@ -52,6 +52,16 @@ namespace lib.AlphaProtocol
             return result.ToArray();
         }
 
+        private static List<byte[][]> Results(List<Task<byte[][]>> tasks)
+        {
+            return tasks.Select(t => t.Result).Where(t => t.Length > 0).ToList();
+        }
+
+        private static byte[] GetSolution(List<byte[][]> results)
+        {
+            return results.SelectMany(result => result).FirstOrDefault();
+        }
+
         public static string PostSolution(string problemId, int size, string[] operations)
         {
             var gsc = new GameServerClient();
@@ -62,14 +72,17 @@ namespace lib.AlphaProtocol
             IEnumerable<byte[]> trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
 
             int tasksCount = Environment.ProcessorCount;
-            IEnumerable<byte[][]> chunckedTrees = Chuncked(trees, 10000000);
+            IEnumerable<byte[][]> chunckedTrees = Chuncked(trees, 3*1024*1024);
             IEnumerable<byte[][][]> chunckedTreesPerWorker = Chuncked(chunckedTrees, tasksCount);
             var results = new byte[0][];
             var inputs = new ulong[0];
             var outputs = new ulong[0];
             bool likeAVirgin = true;
-            foreach (var treesPerWorkerChunk in chunckedTreesPerWorker)
+            var enumerator = chunckedTreesPerWorker.GetEnumerator();
+            enumerator.MoveNext();
+            while (true)
             {
+                var treesPerWorkerChunk = enumerator.Current;
                 var tasks = new List<Task<byte[][]>>(tasksCount);
                 log.Debug("Starting creating tasks");
                 if (likeAVirgin)
@@ -82,19 +95,18 @@ namespace lib.AlphaProtocol
                 foreach (var treesChunk in treesPerWorkerChunk)
                 {
                     byte[][] treeToCheck = treesChunk;
-                    Task<byte[][]> task = Task.Factory.StartNew(() => FilterTrees(treeToCheck, inputs, outputs),
-                                                                TaskCreationOptions.LongRunning);
+                    Task<byte[][]> task = Task.Factory.StartNew(() => FilterTrees(treeToCheck, inputs, outputs));
                     tasks.Add(task);
                 }
                 log.Debug("Finished creating tasks");
+                enumerator.MoveNext();
                 Task.WaitAll(tasks.ToArray<Task>());
-                IEnumerable<byte[][]> tasksResults = tasks.Select(t => t.Result).Where(t => t.Length > 0);
-                results = tasksResults.SelectMany(i => i).ToArray();
-                log.DebugFormat("All tasks finished, {0} results", results.Length);
-                while (results.Length > 0)
-                {
-                    byte[] solution = results.First();
 
+                var tasksResults = Results(tasks);
+                log.DebugFormat("All tasks completed, {0} results", results.Length);
+                byte[] solution;
+                while ((solution = GetSolution(tasksResults)) != null)
+                {
                     log.Debug("First solution finded, asking the guess...");
 
                     string formula = String.Format("(lambda (x) {0})", solution.ToSExpr().Item1);
@@ -111,11 +123,9 @@ namespace lib.AlphaProtocol
                     log.Debug(string.Format("WrongAnswer received: {0}", wrongAnswer));
                     inputs = inputs.Concat(new[] {wrongAnswer.Arg}).ToArray();
                     outputs = outputs.Concat(new[] {wrongAnswer.CorrectValue}).ToArray();
-
-                    results = FilterTrees(results, new[] {wrongAnswer.Arg}, new[] {wrongAnswer.CorrectValue});
+                    tasksResults = tasksResults.Select(r => FilterTrees(r, new[] { wrongAnswer.Arg }, new[] { wrongAnswer.CorrectValue })).ToList();
                 }
             }
-            return null;
         }
     }
 }
