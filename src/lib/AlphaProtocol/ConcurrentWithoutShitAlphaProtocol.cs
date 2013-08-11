@@ -74,7 +74,7 @@ namespace lib.AlphaProtocol
 
             log.Debug("Eval result for samples received");
 
-            IEnumerable<byte[]> trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
+            IEnumerable<byte[]> trees = new SmartGenerator(inputs, outputs, operations).Enumerate(size - 1);
 
             int tasksCount = Environment.ProcessorCount;
             IEnumerable<byte[][]> chunckedTrees = Chuncked(trees, 3*1024*1024);
