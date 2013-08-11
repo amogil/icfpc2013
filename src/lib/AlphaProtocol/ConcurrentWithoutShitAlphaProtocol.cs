@@ -72,7 +72,7 @@ namespace lib.AlphaProtocol
             IEnumerable<byte[]> trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
 
             int tasksCount = Environment.ProcessorCount;
-            IEnumerable<byte[][]> chunckedTrees = Chuncked(trees, 4*1024*1024);
+            IEnumerable<byte[][]> chunckedTrees = Chuncked(trees, 3*1024*1024);
             IEnumerable<byte[][][]> chunckedTreesPerWorker = Chuncked(chunckedTrees, tasksCount);
             var results = new byte[0][];
             var inputs = new ulong[0];
@@ -104,7 +104,7 @@ namespace lib.AlphaProtocol
 
                 var tasksResults = Results(tasks);
                 log.DebugFormat("All tasks completed, {0} results", results.Length);
-                byte[] solution = null;
+                byte[] solution;
                 while ((solution = GetSolution(tasksResults)) != null)
                 {
                     log.Debug("First solution finded, asking the guess...");
