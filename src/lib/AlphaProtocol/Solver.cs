@@ -101,7 +101,7 @@ namespace lib.AlphaProtocol
 			this.gsc = gsc;
 			this.argToValue = argToValue;
 			this.wallTime = wallTime;
-			const int workersCount = 6;
+			const int workersCount = 4;
 			const int readQueueSize = 100000;
 			const int resultQueueSize = 100000;
 			readWorker = new SolverTaskReadQueueMultiWorker(string.Format("{0}-read", workerName), readQueueSize, workersCount);

@@ -43,25 +43,15 @@ namespace AlphaProtocolExecutor
         {
             var whitelist = new[]
                 {
-                    "kdP0NU6AMkfmyQh3j3lgvkcC",
-                    "7Tt70iDp51YZKme9a7xY4zcR",
-                    "93QFlAOdOF5FdaOOMgXXVlQJ",
-                    "CzIogXeRtHbaxqOLAJ1JG8oG",
-                    "e0NZqkAcrbSiR7Ac95ougOmj",
-                    "nlKzitJ0Jw9JCuHBpQHrsBHP",
-                    "rCzAvaK4lThk7fziABmgLeV7",
-                    "xWL7MoYaR2AUbf87yaV5622k",
+                    "7n8WRjNjjdjRpNE4VLkDVJ9y",
                 };
 
             foreach (Problem problem in UnsolvedProblemsWithSize(size).Skip(skip).Take(take))
             {
-//                if (whitelist == null || whitelist.Any(v => v == problem.Id))
+                if (whitelist == null || whitelist.Any(v => v == problem.Id))
                 {
-                    ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
-//                    var solver = new Solver();
-//                    solver.Solve(problem.Id, problem.Size, problem.Operations,
-//                                 (args, values) =>
-//                                 new SmartGenerator(args, values, problem.Operations).Enumerate(problem.Size - 1));
+                    //ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
+	                new Solver().SolveSmart(problem.Id, problem.Size, problem.Operations);
                 }
             }
 
