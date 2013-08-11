@@ -32,9 +32,20 @@ namespace AlphaProtocolExecutor
 
         private static void Run()
         {
-            var whitelist = new string [0] ;
+            string[] whitelist = null;
+//                new string[0]
+//            {
+//                "ZYEJjaBjz81rIcESu9SGJexR",
+//                "gUwLnT5kUgwriIoeGvvfcJy6",
+//                "25qkBrK4TesdTl0rpd55wBer",
+//                "AmTc2gRkN51u6asxT0zBGs2P",
+//                "XbiqwJyzKejEI7JGnBoBGOuj",
+//                "QEk2lF0dQARmGEZxecGKAy1h",
+//                "KxkQjtZpqFCxpAMXUCsKLAsx",
+//                "rSLBjzyk9qTkg9HrnRvMYHXD"
+//            };
 
-            foreach (Problem problem in UnsolvedProblemsWithSize(16))
+            foreach (Problem problem in UnsolvedProblemsWithSize(16).Take(1))
             {
                 if (whitelist == null || whitelist.Any(v => v == problem.Id))
                 {
