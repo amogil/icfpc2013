@@ -480,7 +480,7 @@ ITLkJIoKARhF74xR4UV9Z0fx	15			fold,if0,plus,shl1,shr4
 KD5iWmFwQsbyW8XJswzUcdiG	15			and,if0,not,shl1,shr1,shr16,tfold
 KxkQjtZpqFCxpAMXUCsKLAsx	15			and,if0,shl1,shr1,tfold,xor
 N9y5Y5g9o7UTFTAYrvOYp493	15			fold,not,or,plus,shl1
-NB0al4Vv8HXxu0otkQo8aHRL	15			if0,plus,tfold,xor
+NB0al4Vv8HXxu0otkQo8aHRL	15	True		if0,plus,tfold,xor
 PA8ENazZPErJKegnqG8frG9D	15			if0,plus,shl1,shr1,shr16,tfold
 QEk2lF0dQARmGEZxecGKAy1h	15			if0,or,plus,shl1,shr1,tfold
 SKBDnukSvtXQLevHzRgdDxcl	15			fold,plus,shl1,xor

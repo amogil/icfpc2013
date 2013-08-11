@@ -104,7 +104,7 @@ namespace lib.AlphaProtocol
 
                 var tasksResults = Results(tasks);
                 log.DebugFormat("All tasks completed, {0} results", results.Length);
-                byte[] solution;
+                byte[] solution = null;
                 while ((solution = GetSolution(tasksResults)) != null)
                 {
                     log.Debug("First solution finded, asking the guess...");
