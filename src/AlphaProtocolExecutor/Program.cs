@@ -57,7 +57,7 @@ namespace AlphaProtocolExecutor
 //                {
                     try
                     {
-                        ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
+                        ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations.Where(o => o.ToLower() != "bonus").ToArray());
                     }
                     catch (Exception e)
                     {
