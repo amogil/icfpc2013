@@ -24,13 +24,13 @@ namespace AlphaProtocolExecutor
     {
         private static void Main(string[] args)
         {
-//            Run();
+            Run(string.IsNullOrEmpty(args[0]) ? 0 : int.Parse(args[0]));
 //            RunManual();
 //            Test();
             EvalTreesSizes(int.Parse(args[0]), int.Parse(args[1]));
         }
 
-        private static void Run()
+        private static void Run(int skip)
         {
             var whitelist = new[]
                 {
@@ -44,15 +44,15 @@ namespace AlphaProtocolExecutor
                     "xWL7MoYaR2AUbf87yaV5622k",
                 };
 
-            foreach (Problem problem in UnsolvedProblemsWithSize(16).Take(5))
+            foreach (Problem problem in UnsolvedProblemsWithSize(16).Skip(skip))
             {
 //                if (whitelist == null || whitelist.Any(v => v == problem.Id))
                 {
-                    ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
-//                    var solver = new Solver();
-//                    solver.Solve(problem.Id, problem.Size, problem.Operations,
-//                                 (args, values) =>
-//                                 new SmartGenerator(args, values, problem.Operations).Enumerate(problem.Size - 1));
+//                    ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
+                    var solver = new Solver();
+                    solver.Solve(problem.Id, problem.Size, problem.Operations,
+                                 (args, values) =>
+                                 new SmartGenerator(args, values, problem.Operations).Enumerate(problem.Size - 1));
                 }
             }
 
@@ -64,7 +64,7 @@ namespace AlphaProtocolExecutor
         {
             return
                 GetProblems()
-                    .Where(p => !p.Tried && !p.Bonus && p.Size == size)
+                    .Where(p => !p.Tried && !p.Bonus && p.Size == size && p.Operations.Contains("tfold"))
                     .ToArray();
         }
 
