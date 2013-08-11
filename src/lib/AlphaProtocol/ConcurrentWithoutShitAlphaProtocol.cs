@@ -65,9 +65,9 @@ namespace lib.AlphaProtocol
             IEnumerable<byte[][]> chunckedTrees = Chuncked(trees, 10000000);
             IEnumerable<byte[][][]> chunckedTreesPerWorker = Chuncked(chunckedTrees, tasksCount);
             var results = new byte[0][];
-            ulong[] inputs = new ulong[0];
-            ulong[] outputs = new ulong[0];
-            var likeAVirgin = true;
+            var inputs = new ulong[0];
+            var outputs = new ulong[0];
+            bool likeAVirgin = true;
             foreach (var treesPerWorkerChunk in chunckedTreesPerWorker)
             {
                 var tasks = new List<Task<byte[][]>>(tasksCount);
@@ -82,7 +82,8 @@ namespace lib.AlphaProtocol
                 foreach (var treesChunk in treesPerWorkerChunk)
                 {
                     byte[][] treeToCheck = treesChunk;
-                    Task<byte[][]> task = Task.Factory.StartNew(() => FilterTrees(treeToCheck, inputs, outputs),TaskCreationOptions.LongRunning);
+                    Task<byte[][]> task = Task.Factory.StartNew(() => FilterTrees(treeToCheck, inputs, outputs),
+                                                                TaskCreationOptions.LongRunning);
                     tasks.Add(task);
                 }
                 log.Debug("Finished creating tasks");
@@ -111,7 +112,7 @@ namespace lib.AlphaProtocol
                     inputs = inputs.Concat(new[] {wrongAnswer.Arg}).ToArray();
                     outputs = outputs.Concat(new[] {wrongAnswer.CorrectValue}).ToArray();
 
-                    results = FilterTrees(results, inputs, outputs);
+                    results = FilterTrees(results, new[] {wrongAnswer.Arg}, new[] {wrongAnswer.CorrectValue});
                 }
             }
             return null;
