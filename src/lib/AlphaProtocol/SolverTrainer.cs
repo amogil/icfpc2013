@@ -36,21 +36,6 @@ namespace lib.AlphaProtocol
 		}
 
 		[Test]
-		public void Perf_Smart()
-		{
-			while (true)
-			{
-				var problem = gsc.Train(TrainProblemType.Fold, 15);
-				Console.Out.WriteLine("==== TrainProblem: {0}", problem);
-
-				var sw = Stopwatch.StartNew();
-				var answer = ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.id, problem.size, problem.operators);
-				sw.Stop();
-				Console.Out.WriteLine("==== SolvedIn: {0} ms, Answer: {1}", sw.ElapsedMilliseconds, answer);
-			}
-		}
-
-		[Test]
 		public void Test()
 		{
 			Console.WriteLine(new BinaryBruteForcer("if0,not,or,shr16,shr4,xor".Split(',')).Enumerate(14 - 1).Count());
