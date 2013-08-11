@@ -27,11 +27,11 @@ namespace AlphaProtocolExecutor
 
         private static void Main(string[] args)
         {
-//            int size = ArgToInt(args[0], 17);
-//            int skip = ArgToInt(args[1]);
-//            int take = ArgToInt(args[2], int.MaxValue);
-//            Run(size, skip, take);
-               RunManual();
+            int size = ArgToInt(args[0], 17);
+            int skip = ArgToInt(args[1]);
+            int take = ArgToInt(args[2], int.MaxValue);
+            Run(size, skip, take);
+//               RunManual();
 //            Test();
 //            EvalTreesSizes(int.Parse(args[0]), int.Parse(args[1]));
         }
