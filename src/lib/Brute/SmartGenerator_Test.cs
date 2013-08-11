@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Web.Script.Serialization;
 using NUnit.Framework;
+using lib.AlphaProtocol;
 using lib.Lang;
 using lib.Web;
 
@@ -12,6 +13,13 @@ namespace lib.Brute
 	[TestFixture]
 	public class SmartGenerator_Test
 	{
+		[TestCase(20, "if0 or plus shr1 shr4", "(lambda (x_26928) (shr1 (if0 (plus x_26928 1) 1 (or (or (if0 (or (plus (shr4 x_26928) x_26928) x_26928) 0 0) x_26928) 1))))")]
+		[TestCase(30, "and if0 not or plus shr16 shr4 xor", "(lambda (x_48177) (xor (if0 (or (and (shr4 (shr4 x_48177)) x_48177) (shr16 (plus (or 1 x_48177) (and (and (xor (or (xor (not (shr16 0)) x_48177) x_48177) 1) 0) x_48177)))) x_48177 1) x_48177))")]
+		public void SolveBySmallSizes(int size, string ops, string prog)
+		{
+			TrySolve(prog, ops.Split(' '), size, size, false);
+		}
+		
 		[Test]
 		public void AllSizes()
 		{
@@ -74,24 +82,29 @@ namespace lib.Brute
 		{
 			var trainProblem = TrainResponse.Parse(line);
 			Console.WriteLine(trainProblem.id);
-			byte[] p = Parser.ParseFunction(trainProblem.challenge);
-			var ans = p.Printable();
-
+			var prog = trainProblem.challenge;
 			var operations = trainProblem.operators;
+			var maxSize = trainProblem.size-1;
+			var minSize = maxSize;
+
+			TrySolve(prog, operations, minSize, maxSize, false);
+//			CheckResult(ans, new SmartGenerator(inputs, answers, operations).Enumerate(trainProblem.size - 1));
+		}
+
+		private void TrySolve(string prog, string[] operations, int minSize, int maxSize, bool checkAllOpsInUse)
+		{
+			byte[] p = Parser.ParseFunction(prog);
 			var random = new Random();
-			var inputs = Enumerable.Range(0, 200).Select(i => random.NextUInt64())
-				//.Concat(new[] { Convert.ToUInt64("0x0008004000000020", 16) })
-				.ToList();
+			var inputs = InputGenerator.Generate().ToList();
+//			var inputs = Enumerable.Range(0, 1000).Select(i => random.NextUInt64()).Concat(new ulong[] { 0, 1, 2, 3, 4, 5, ulong.MaxValue, ulong.MaxValue-1, ulong.MaxValue-10})
+//				//.Concat(new[] { Convert.ToUInt64("0x0008004000000020", 16) })
+//			                       .ToArray();
 			var answers = inputs.Select(p.Eval).ToList();
 			var mask = new Mask(answers);
 			Console.WriteLine("          answers mask: {0}", mask);
 			Console.WriteLine("challenge program mask: {0}", p.GetMask());
-
-//			CheckResult(ans, new SmartGenerator(operations).Enumerate(trainProblem.size - 1));
-//			CheckResult(ans, new BinaryBruteForcer(operations).Enumerate(trainProblem.size - 1));
-			Solve(inputs, answers, new SmartGenerator(inputs, answers, operations).Enumerate(trainProblem.size - 1));
-//			CheckResult(ans, new SmartGenerator(inputs, answers, operations).Enumerate(trainProblem.size - 1));
-//			CheckResult(ans, new BinaryBruteForcer(new Mask(answers), operations).Enumerate(trainProblem.size - 1));
+			
+			Solve(inputs, answers, new SmartGenerator(inputs, answers, operations).Enumerate(minSize, maxSize, checkAllOpsInUse));
 		}
 
 		[Test]
