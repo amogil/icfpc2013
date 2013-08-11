@@ -32,28 +32,27 @@ namespace AlphaProtocolExecutor
 
         private static void Run()
         {
-            string[] whitelist = null;
-//                new string[0]
-//            {
-//                "ZYEJjaBjz81rIcESu9SGJexR",
-//                "gUwLnT5kUgwriIoeGvvfcJy6",
-//                "25qkBrK4TesdTl0rpd55wBer",
-//                "AmTc2gRkN51u6asxT0zBGs2P",
-//                "XbiqwJyzKejEI7JGnBoBGOuj",
-//                "QEk2lF0dQARmGEZxecGKAy1h",
-//                "KxkQjtZpqFCxpAMXUCsKLAsx",
-//                "rSLBjzyk9qTkg9HrnRvMYHXD"
-//            };
-
-            foreach (Problem problem in UnsolvedProblemsWithSize(16).Take(1))
-            {
-                if (whitelist == null || whitelist.Any(v => v == problem.Id))
+            var whitelist = new[]
                 {
-//                    AlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
-                    var solver = new Solver();
-                    solver.Solve(problem.Id, problem.Size, problem.Operations,
-                                 (args, values) =>
-                                 new SmartGenerator(args, values, problem.Operations).Enumerate(problem.Size - 1));
+                    "kdP0NU6AMkfmyQh3j3lgvkcC",
+                    "7Tt70iDp51YZKme9a7xY4zcR",
+                    "93QFlAOdOF5FdaOOMgXXVlQJ",
+                    "CzIogXeRtHbaxqOLAJ1JG8oG",
+                    "e0NZqkAcrbSiR7Ac95ougOmj",
+                    "nlKzitJ0Jw9JCuHBpQHrsBHP",
+                    "rCzAvaK4lThk7fziABmgLeV7",
+                    "xWL7MoYaR2AUbf87yaV5622k",
+                };
+
+            foreach (Problem problem in UnsolvedProblemsWithSize(16).Take(5))
+            {
+//                if (whitelist == null || whitelist.Any(v => v == problem.Id))
+                {
+                    ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
+//                    var solver = new Solver();
+//                    solver.Solve(problem.Id, problem.Size, problem.Operations,
+//                                 (args, values) =>
+//                                 new SmartGenerator(args, values, problem.Operations).Enumerate(problem.Size - 1));
                 }
             }
 
@@ -113,8 +112,8 @@ namespace AlphaProtocolExecutor
 
         private static void EvalTreesSizes(int from, int count)
         {
-            int threshold = 400*1000*1000;
-            Problem[] problems = UnsolvedProblemsWithSize(15).Skip(from).Take(count).ToArray();
+            int threshold = 800*1000*1000;
+            Problem[] problems = UnsolvedProblemsWithSize(16).Skip(from).Take(count).ToArray();
             Console.WriteLine("Starting for {0} tasks", problems.Length);
             Task<int>[] tasks = problems.Select(p => Task.Run(() => new BinaryBruteForcer(p.Operations).
                                                                         Enumerate(p.Size - 1).
