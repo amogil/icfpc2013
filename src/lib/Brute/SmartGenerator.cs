@@ -31,13 +31,23 @@ namespace lib.Brute
 			noFoldOperations = outsideFoldOperations.Where(o => o != 6).ToArray();
 			inFoldOperations = new byte[] {3, 4}.Concat(noFoldOperations).ToArray();
 		}
-		
+
 		public IEnumerable<byte[]> Enumerate(int size)
+		{
+			return EnumerateItems(size).Select(i => i.subtree.ToArray());
+		}
+
+		public IEnumerable<EnumerationItem> EnumerateItems(int size)
 		{
 			byte[] buffer = new byte[30];
 			var unusedOpsToSpend = outsideFoldOperations.Sum(o => Operations.all[o].size + Operations.all[o].argsCount - 1);
-			foreach (Subtree subtree in EnumerateSubtrees(size, size, buffer, 0, outsideFoldOperations, unusedOpsToSpend, 0).Select(t => t.subtree))
-				yield return subtree.ToArray();
+			if (tFold)
+			{
+				buffer[0] = Operations.Fold;
+				return EnumerateFold(size, size, buffer, 0, unusedOpsToSpend, 0, 0);
+				//.Select(i => new EnumerationItem(new Subtree(i.subtree.Buffer, 0, i.subtree.Last), i.unusedSpent, i.usedOps));
+			}
+			else return EnumerateSubtrees(size, size, buffer, 0, outsideFoldOperations, unusedOpsToSpend, 0);
 		}
 
 		public class EnumerationItem
@@ -104,6 +114,9 @@ namespace lib.Brute
 
 			foreach (var arg0 in EnumerateSubtrees(minLeftTree, totalArgsSize - 1, prefix, prefixSize + 1, operations, unusedOpsToSpend, usedOps))
 			{
+				var withFirstArgMask = prefix.GetMask(arg0.subtree.First - 1, arg0.subtree.Last);
+				var singleSecond = withFirstArgMask.IsConstant();
+				
 				var leftMaxSize = maxSize - op.size - arg0.subtree.Size;
 				var leftMinSize = minSize - op.size - arg0.subtree.Size;
 				Debug.Assert(leftMaxSize >= 1);
@@ -111,6 +124,8 @@ namespace lib.Brute
 				foreach (var arg1 in EnumerateSubtrees(leftMinSize, leftMaxSize, prefix, prefixSize + arg0.subtree.Len + 1, operations, unusedOpsToSpend - arg0.unusedSpent, arg0.usedOps))
 				{
 					yield return new EnumerationItem(new Subtree(prefix, prefixSize, arg1.subtree.Last), unusedSpent + arg0.unusedSpent + arg1.unusedSpent, arg1.usedOps);
+					if (singleSecond) 
+						break;
 				}
 			}
 		}

@@ -29,7 +29,7 @@ namespace Test
             foreach (MyProblem p in prob)
             {
                 Console.Write("{2} {0}: {1}  ", p.Id, string.Join(",", p.Operations).PadRight(40), p.Size);
-                int count = new BinaryBruteForcer(p.Operations).Enumerate(p.Size - 1).Take(limit).Count();
+                int count = new SmartGenerator(p.Operations).Enumerate(p.Size - 1).Take(limit).Count();
                 if (count == limit)
                     Console.WriteLine(limit + "+");
                 else
@@ -51,10 +51,11 @@ namespace Test
             foreach (var p in trainproblems)
             {
                 var t0 = DateTime.Now;
-                int count = new BinaryBruteForcer(p.operators).Enumerate(p.size - 1).Count();
+                int count = new SmartGenerator(p.operators).Enumerate(p.size - 1).Count();
                 var t1 = DateTime.Now;
                 var time = t1 - t0;
                 var str = String.Format("{0}\ttrees:{1}\ttime:{2}\tsize:{3}\t{4}\n", p.id, count, time, p.size, p.ToString());
+	            Console.WriteLine(str);
                 File.AppendAllText(filename, str);
             }
         }
