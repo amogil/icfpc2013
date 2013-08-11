@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using lib.AlphaProtocol;
 using lib.Brute;
 using lib.Web;
+using log4net;
 
 namespace AlphaProtocolExecutor
 {
@@ -22,6 +23,8 @@ namespace AlphaProtocolExecutor
 
     internal class Program
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(AlphaProtocol));
+
         private static void Main(string[] args)
         {
 //            int size = ArgToInt(args[0], 17);
@@ -43,26 +46,25 @@ namespace AlphaProtocolExecutor
         {
             var whitelist = new[]
                 {
-                    "kdP0NU6AMkfmyQh3j3lgvkcC",
-                    "7Tt70iDp51YZKme9a7xY4zcR",
-                    "93QFlAOdOF5FdaOOMgXXVlQJ",
-                    "CzIogXeRtHbaxqOLAJ1JG8oG",
-                    "e0NZqkAcrbSiR7Ac95ougOmj",
-                    "nlKzitJ0Jw9JCuHBpQHrsBHP",
-                    "rCzAvaK4lThk7fziABmgLeV7",
-                    "xWL7MoYaR2AUbf87yaV5622k",
+                    "LqUJiqwGnrvvcoYmP70sawHu",
+                    "Ni6aU05uJlbmMwl2P7uvPwtD",
+                    "PCKOdSBp1FBfQaOhHB5gBATf"
                 };
 
             foreach (Problem problem in UnsolvedProblemsWithSize(size).Skip(skip).Take(take))
             {
 //                if (whitelist == null || whitelist.Any(v => v == problem.Id))
-                {
-                    ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
-//                    var solver = new Solver();
-//                    solver.Solve(problem.Id, problem.Size, problem.Operations,
-//                                 (args, values) =>
-//                                 new SmartGenerator(args, values, problem.Operations).Enumerate(problem.Size - 1));
-                }
+//                {
+                    try
+                    {
+                        ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
+                    }
+                    catch (Exception e)
+                    {
+                        log.Debug(string.Format("FAILED: {0}", e));
+                    }
+                    
+//                }
             }
 
             Console.WriteLine("Press any key...");
@@ -109,12 +111,8 @@ namespace AlphaProtocolExecutor
 
         private static void RunManual()
         {
-            //            AlphaProtocol.PostSolution("06YMPN1BucgJqIxBZBjhJgh7", 14, "fold,plus,shl1,shr4".Split(','));
-            var solver = new Solver();
-            string[] opers = "and,fold,if0,not,plus,shl1".Split(',');
-            int size = 18;
-            string answer = solver.Solve("7FDtpxWoNsoXCTAdnAFaAGYI", size, opers,
-                                         (args, values) => new SmartGenerator(args, values, opers).Enumerate(size - 1, size - 1, false));
+            ConcurrentWithoutShitAlphaProtocol.PostSolution("ECDMQ7dNtWCSuNz95FKfFLpY", 17,
+                                                            "and,fold,if0,not,shl1,xor".Split(','));
             Console.WriteLine("Press any key...");
             Console.ReadKey();
 

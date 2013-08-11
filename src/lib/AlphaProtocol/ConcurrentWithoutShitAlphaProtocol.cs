@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using lib.Brute;
@@ -82,8 +83,13 @@ namespace lib.AlphaProtocol
             var results = new byte[0][];
             IEnumerator<byte[][][]> enumerator = chunckedTreesPerWorker.GetEnumerator();
             enumerator.MoveNext();
+
+            var sw = Stopwatch.StartNew();
             while (true)
             {
+                if (sw.Elapsed.TotalSeconds > 400)
+                    throw new InvalidOperationException(string.Format("TIME_LIMIT: {0} sec", sw.Elapsed.TotalSeconds));
+
                 byte[][][] treesPerWorkerChunk = enumerator.Current;
                 var tasks = new List<Task<byte[][]>>(tasksCount);
                 log.Debug("Starting creating tasks");
