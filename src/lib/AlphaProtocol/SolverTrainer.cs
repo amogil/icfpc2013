@@ -42,9 +42,8 @@ namespace lib.AlphaProtocol
 				var problem = gsc.Train(TrainProblemType.Fold, 15);
 				Console.Out.WriteLine("==== TrainProblem: {0}", problem);
 
-				var solver = new Solver();
 				var sw = Stopwatch.StartNew();
-				var answer = solver.Solve(problem.id, problem.size, problem.OperatorsExceptBonus, vs => new SmartGenerator(problem.OperatorsExceptBonus).Enumerate(problem.size - 1));
+			    var answer = ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.id, problem.size, problem.operators);
 				sw.Stop();
 				Console.Out.WriteLine("==== SolvedIn: {0} ms, Answer: {1}", sw.ElapsedMilliseconds, answer);
 			}

@@ -69,15 +69,17 @@ namespace lib.AlphaProtocol
             log.DebugFormat("Trying to solve problem {0}...", problemId);
             var random = new Random();
 
+            var inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
+            var outputs = gsc.Eval(problemId, inputs).ToArray();
+
+            log.Debug("Eval result for samples received");
+
             IEnumerable<byte[]> trees = new BinaryBruteForcer(operations).Enumerate(size - 1);
 
             int tasksCount = Environment.ProcessorCount;
             IEnumerable<byte[][]> chunckedTrees = Chuncked(trees, 3*1024*1024);
             IEnumerable<byte[][][]> chunckedTreesPerWorker = Chuncked(chunckedTrees, tasksCount);
             var results = new byte[0][];
-            var inputs = new ulong[0];
-            var outputs = new ulong[0];
-            bool likeAVirgin = true;
             var enumerator = chunckedTreesPerWorker.GetEnumerator();
             enumerator.MoveNext();
             while (true)
@@ -85,13 +87,6 @@ namespace lib.AlphaProtocol
                 var treesPerWorkerChunk = enumerator.Current;
                 var tasks = new List<Task<byte[][]>>(tasksCount);
                 log.Debug("Starting creating tasks");
-                if (likeAVirgin)
-                {
-                    inputs = Enumerable.Range(1, 256).Select(e => random.NextUInt64()).ToArray();
-                    outputs = gsc.Eval(problemId, inputs).ToArray();
-                    log.Debug("Eval result for samples received");
-                    likeAVirgin = false;
-                }
                 foreach (var treesChunk in treesPerWorkerChunk)
                 {
                     byte[][] treeToCheck = treesChunk;
