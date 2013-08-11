@@ -32,28 +32,18 @@ namespace AlphaProtocolExecutor
 
         private static void Run()
         {
-//            var whitelist = new[]
-//                {
-//                    "7Tt70iDp51YZKme9a7xY4zcR"
-//                };
+            var whitelist = new string [0] ;
 
-            foreach (var problem in UnsolvedProblemsWithSize(15))
+            foreach (Problem problem in UnsolvedProblemsWithSize(16))
             {
-                Console.WriteLine(problem.Id);
-            }
-            Console.WriteLine("Press any key...");
-            Console.ReadKey();
-
-            foreach (Problem problem in UnsolvedProblemsWithSize(15))
-            {
-//                if (whitelist.Any(v => v == problem.Id))
-//                {
+                if (whitelist == null || whitelist.Any(v => v == problem.Id))
+                {
 //                    AlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
                     var solver = new Solver();
                     solver.Solve(problem.Id, problem.Size, problem.Operations,
                                  (args, values) =>
                                  new SmartGenerator(args, values, problem.Operations).Enumerate(problem.Size - 1));
-//                }
+                }
             }
 
             Console.WriteLine("Press any key...");
