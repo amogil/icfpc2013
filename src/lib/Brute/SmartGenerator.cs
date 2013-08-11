@@ -43,12 +43,13 @@ namespace lib.Brute
 			if (outputs != null)
 			{
 				answersMask = new Mask(outputs);
+			    Console.WriteLine(answersMask);
 				filterInput = inputs.Last();
 				filterOutput = outputs.Last();
 			}
 			tFold = ops.Contains("tfold");
 			outsideFoldOperations =
-				new byte[] {0, 1, 2}.Concat(
+				new byte[] {0, 1, 2, 16}.Concat(
 					ops.Where(t => t != "tfold").Select(o => (byte) Array.IndexOf(Operations.names, o)))
 					.OrderBy(opIndex => Operations.all[opIndex].priority).ToArray();
 			noFoldOperations = outsideFoldOperations.Where(o => o != 6)
@@ -109,9 +110,11 @@ namespace lib.Brute
 			foreach (var opIndex in operations)
 			{
 				Operation op = Operations.all[opIndex];
+			    if (opIndex == 16 && prefixSize > 0 && prefix[prefixSize - 1] != 16) continue;
 				if (op.size + op.argsCount > maxSize) continue; //слишком жирная операция
 				if (op.argsCount == 0 && minSize > 1) continue; //константа слишком мелкая
-				prefix[prefixSize] = opIndex;
+                if (opIndex == 7 && prefixSize > 0 && prefix[prefixSize - 1] == 7) continue;
+                prefix[prefixSize] = opIndex;
 				var newUsedOps = usedOps | (1 << opIndex);
 				var unusedSpent = (newUsedOps == usedOps) ? 0 : (op.size - 1 + op.argsCount);
 				var newUnusedToSpent = unusedOpsToSpend - unusedSpent;
@@ -154,7 +157,10 @@ namespace lib.Brute
 				//TODO: symm optimization
 				foreach (var arg1 in EnumerateSubtrees(leftMinSize, leftMaxSize, prefix, prefixSize + arg0.subtree.Len + 1, operations, unusedOpsToSpend - arg0.unusedSpent, arg0.usedOps))
 				{
-					yield return new EnumerationItem(new Subtree(prefix, prefixSize, arg1.subtree.Last), unusedSpent + arg0.unusedSpent + arg1.unusedSpent, arg1.usedOps);
+				    var enumerationItem = new EnumerationItem(new Subtree(prefix, prefixSize, arg1.subtree.Last), unusedSpent + arg0.unusedSpent + arg1.unusedSpent, arg1.usedOps);
+                    Mask mask = enumerationItem.subtree.GetMask();
+                    if (!mask.IsZero() && !mask.IsOne())
+                        yield return enumerationItem;
 					if (singleSecond) 
 						break;
 				}
@@ -168,11 +174,18 @@ namespace lib.Brute
 				var condMask = cond.subtree.GetMask();
 				var singleZero = condMask.CantBeZero();
 				var singleElse = condMask.IsZero();
+			    if (singleElse || singleZero) continue;
 				var leftMaxSize = maxSize - 1 - cond.subtree.Size;
 				var leftMinSize = minSize - 1 - cond.subtree.Size;
 				Debug.Assert(leftMaxSize >= 2);
-				foreach (var enumerationItem in EnumerationIfBranches(leftMinSize, leftMaxSize, prefix, prefixSize, operations, cond, unusedOpsToSpend, unusedSpent, singleElse, singleZero)) 
-					yield return enumerationItem;
+				foreach (
+				    var enumerationItem in
+				        EnumerationIfBranches(leftMinSize, leftMaxSize, prefix, prefixSize, operations, cond, unusedOpsToSpend,
+				                              unusedSpent, singleElse, singleZero))
+				{
+				    if (!enumerationItem.subtree.GetMask().IsConstant())
+				        yield return enumerationItem;
+				}
 			}
 		}
 
@@ -210,7 +223,10 @@ namespace lib.Brute
 					var spent = e1.unusedSpent + e2.unusedSpent;
 					foreach (var e3 in EnumerateSubtrees(e3MinSize, e3MaxSize, prefix, prefixSize + 1 + e1.subtree.Len + e2.subtree.Len, inFoldOperations, unusedOpsToSpend - spent, e2.usedOps))
 					{
-						yield return new EnumerationItem(new Subtree(prefix, prefixSize, e3.subtree.Last), unusedSpent + spent + e3.unusedSpent, e3.usedOps);
+					    var enumerationItem = new EnumerationItem(new Subtree(prefix, prefixSize, e3.subtree.Last), unusedSpent + spent + e3.unusedSpent, e3.usedOps);
+					    Mask mask = enumerationItem.subtree.GetMask();
+					    if (!mask.IsZero() && !mask.IsOne())
+					        yield return enumerationItem;
 					}
 				}
 			}

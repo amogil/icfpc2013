@@ -8,7 +8,7 @@ namespace lib.Lang
 	{
 		public static string Printable(this byte[] program)
 		{
-			char[] map = new[] { '0', '1', 'x', 'i', 'a', 'Y', 'F', '~', '<', '>', 'r', 'R', '&', '|', '^', '+' };
+			char[] map = new[] { '0', '1', 'x', 'i', 'a', 'Y', 'F', '~', '<', '>', 'r', 'R', '&', '|', '^', '+', '=' };
 			return new string(program.Select(b => map[b]).ToArray());
 		}
 
@@ -78,6 +78,8 @@ namespace lib.Lang
 					a = program.Eval(start + 1, x, item, acc, out offset);
 					b = program.Eval(offset, x, item, acc, out offset);
 					return unchecked(a + b);
+                case 16:
+                    return program.Eval(start + 1, x, item, acc, out offset);
 				default:
 					throw new FormatException(code.ToString());
 			}

@@ -30,7 +30,7 @@ namespace lib.AlphaProtocol
 
 		public string SolveSmart(string problemId, int size, string[] ops)
 		{
-			return Solve(problemId, size, ops, (inputs, values) => new SmartGenerator(inputs, values, ops).Enumerate(size - 1, size - 1, true));
+			return Solve(problemId, size, ops, (inputs, values) => new SmartGenerator(inputs, values, ops).Enumerate(size - 1, size - 1, false).Print(t => t.Printable(), 10));
 		}
 
 		public string Solve(string problemId, int size, string[] ops, Func<List<ulong>, List<ulong>, IEnumerable<byte[]>> getGuesses)
@@ -41,8 +41,14 @@ namespace lib.AlphaProtocol
 			var correctValues = WithTimer(() => gsc.Eval(problemId, args), "gsc.Eval()");
 
 			var nextGuessSw = Stopwatch.StartNew();
+		    int c = 0;
 			foreach (var guess in getGuesses(args, correctValues))
 			{
+			    c++;
+                if (c > 10000000 && c < 10000000+1000)
+                {
+                    Console.WriteLine(guess.Printable());
+                }
 				if (!IsGood(guess, correctValues))
 					continue;
 				log.DebugFormat("findNextGuess() took: {0} ms, WS: {1}", nextGuessSw.ElapsedMilliseconds, Environment.WorkingSet);
@@ -93,7 +99,8 @@ namespace lib.AlphaProtocol
 
 		private static string FormatProgram(byte[] solution)
 		{
-			return string.Format("(lambda (x) {0})", solution.ToSExpr().Item1);
+		    var s = solution.SkipWhile(b => b == 16).ToArray();
+            return string.Format("(lambda (x) {0})", s.ToSExpr().Item1);
 		}
 	}
 }

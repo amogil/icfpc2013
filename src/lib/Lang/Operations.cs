@@ -38,7 +38,7 @@ namespace lib.Lang
 				//7
 				O("not", 11, 1), O("shl1", 12, 1), O("shr1", 13, 1), O("shr4", 14, 1), O("shr16", 15, 1),
 				//12
-				O("and", 21, 2), O("or", 22, 2), O("xor", 23, 2), O("plus", 24, 2)
+				O("and", 21, 2), O("or", 22, 2), O("xor", 23, 2), O("plus", 24, 2), O("=", 0, 1)
 			};
 
 		public const int If = 5;

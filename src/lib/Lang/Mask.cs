@@ -219,5 +219,10 @@ namespace lib.Lang
 		{
 			return ~(one ^ zero) == 0;
 		}
+
+	    public bool IsOne()
+	    {
+	        return one == 1 && ~zero == 1;
+	    }
 	}
 }

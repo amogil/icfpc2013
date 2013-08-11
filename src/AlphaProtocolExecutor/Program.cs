@@ -24,11 +24,11 @@ namespace AlphaProtocolExecutor
     {
         private static void Main(string[] args)
         {
-            int size = ArgToInt(args[0], 17);
-            int skip = ArgToInt(args[1]);
-            int take = ArgToInt(args[2], int.MaxValue);
-            Run(size, skip, take);
-//            RunManual();
+//            int size = ArgToInt(args[0], 17);
+//            int skip = ArgToInt(args[1]);
+//            int take = ArgToInt(args[2], int.MaxValue);
+//            Run(size, skip, take);
+               RunManual();
 //            Test();
 //            EvalTreesSizes(int.Parse(args[0]), int.Parse(args[1]));
         }
@@ -111,12 +111,14 @@ namespace AlphaProtocolExecutor
         {
             //            AlphaProtocol.PostSolution("06YMPN1BucgJqIxBZBjhJgh7", 14, "fold,plus,shl1,shr4".Split(','));
             var solver = new Solver();
-            string[] opers = "fold,plus,shl1,shr4".Split(',');
-            int size = 15;
-            string answer = solver.Solve("06YMPN1BucgJqIxBZBjhJgh7", size, opers,
-                                         (args, values) => new SmartGenerator(args, values, opers).Enumerate(size - 1));
+            string[] opers = "and,fold,if0,not,plus,shl1".Split(',');
+            int size = 18;
+            string answer = solver.Solve("7FDtpxWoNsoXCTAdnAFaAGYI", size, opers,
+                                         (args, values) => new SmartGenerator(args, values, opers).Enumerate(size - 1, size - 1, false));
             Console.WriteLine("Press any key...");
             Console.ReadKey();
+
+            
         }
 
         private static void EvalTreesSizes(int from, int count)

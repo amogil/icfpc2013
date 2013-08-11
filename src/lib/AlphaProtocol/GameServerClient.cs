@@ -43,7 +43,7 @@ namespace lib.AlphaProtocol
 			var request = new GuessRequest
 			{
 				id = problemId,
-				program = program
+				program = program.Replace("=", "")
 			};
 
 			var response = webApi.Guess(request);

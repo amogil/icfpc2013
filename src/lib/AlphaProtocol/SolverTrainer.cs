@@ -20,7 +20,8 @@ namespace lib.AlphaProtocol
 		{
 			while (true)
 			{
-				var problem = gsc.Train(TrainProblemType.Tfold, 16);
+				var problem = gsc.Train(TrainProblemType.Fold, 17);
+//                var problem = gsc.Eval("d0GRARcXGe7aJYsqkLW4fOd3")
 				Console.Out.WriteLine("==== TrainProblem: {0}", problem);
 
 				var solver = new Solver();
@@ -28,8 +29,8 @@ namespace lib.AlphaProtocol
 				var answer = solver.SolveSmart(problem.id, problem.size, problem.OperatorsExceptBonus);
 				sw.Stop();
 
-				int solutionSize = Expr.ParseFunction(answer).GetUnified().ToBinExp().ToArray().Size() + 1;
-				int problemSize = Expr.ParseFunction(problem.challenge).GetUnified().ToBinExp().ToArray().Size() + 1;
+				int solutionSize = Parser.ParseFunction(answer).Size() + 1;
+				int problemSize = Parser.ParseFunction(problem.challenge).Size() + 1;
 				Console.Out.WriteLine("==== SolvedIn: {0} ms, Answer: {1}, ProblemSize: {2}, SolutionSize: {3}", sw.ElapsedMilliseconds, answer, problemSize, solutionSize);
 			}
 		}
