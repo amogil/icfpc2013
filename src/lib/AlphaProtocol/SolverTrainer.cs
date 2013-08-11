@@ -19,7 +19,7 @@ namespace lib.AlphaProtocol
 		{
 			while (true)
 			{
-				var problem = gsc.Train(TrainProblemType.Simple, 12);
+				var problem = gsc.Train(TrainProblemType.Any, 14);
 				Console.Out.WriteLine("==== TrainProblem: {0}", problem);
 
 				var solver = new Solver();

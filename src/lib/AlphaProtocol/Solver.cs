@@ -40,26 +40,30 @@ namespace lib.AlphaProtocol
 			{
 				if (!IsGood(guess, correctValues))
 					continue;
-				log.DebugFormat("findNextGuess() took: {0} ms", nextGuessSw.ElapsedMilliseconds);
+				log.DebugFormat("findNextGuess() took: {0} ms, WS: {1}", nextGuessSw.ElapsedMilliseconds, Environment.WorkingSet);
 
 				var program = FormatProgram(guess);
 				var wrongAnswer = WithTimer(() => gsc.Guess(problemId, program), "gsc.Guess()");
 				if (wrongAnswer == null)
 				{
-					log.DebugFormat("SOLVED: {0}", problemId);
+					log.DebugFormat("SOLVED: {0}, WS: {1}", problemId, Environment.WorkingSet);
 					return program;
 				}
-				log.Debug(string.Format("WRONG_ANSWER: {0}", wrongAnswer));
+				log.DebugFormat("WRONG_ANSWER: {0}, WS: {1}", wrongAnswer, Environment.WorkingSet);
 				args.Add(wrongAnswer.Arg);
 				correctValues.Add(wrongAnswer.CorrectValue);
 
 				if (wallTime.Elapsed.TotalSeconds > 300)
-					log.Debug(string.Format("TIME_LIMIT: {0}", wallTime.ElapsedMilliseconds));
+				{
+					log.DebugFormat("TIME_LIMIT: {0}, WS: {1}", wallTime.ElapsedMilliseconds, Environment.WorkingSet);
+					if (wallTime.Elapsed.TotalSeconds > 500)
+						return null;
+				}
 
 				nextGuessSw.Reset();
 			}
 
-			log.Debug(string.Format("SOLUTION_NOT_FOUND: {0}", wallTime.ElapsedMilliseconds));
+			log.DebugFormat("SOLUTION_NOT_FOUND: {0}, WS: {1}", wallTime.ElapsedMilliseconds, Environment.WorkingSet);
 			return null;
 		}
 
@@ -78,7 +82,7 @@ namespace lib.AlphaProtocol
 			var sw = Stopwatch.StartNew();
 			var result = getResult();
 			sw.Stop();
-			log.DebugFormat("{0} took: {1} ms", funcName, sw.ElapsedMilliseconds);
+			log.DebugFormat("{0} took: {1} ms, WS: {1}", funcName, sw.ElapsedMilliseconds, Environment.WorkingSet);
 			return result;
 		}
 
