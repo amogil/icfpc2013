@@ -38,5 +38,10 @@ namespace lib.Brute
 				return c;
 			}
 		}
+
+		public Mask GetMask()
+		{
+			return Buffer.GetMask(First, Last);
+		}
 	}
 }

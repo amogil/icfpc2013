@@ -119,20 +119,33 @@ namespace lib.Brute
 		{
 			foreach (var cond in EnumerateSubtrees(1, maxSize - 3, prefix, prefixSize + 1, operations, unusedOpsToSpend, usedOps))
 			{
+				var condMask = cond.subtree.GetMask();
+				var singleZero = condMask.CantBeZero();
+				var singleElse = condMask.IsZero();
 				var leftMaxSize = maxSize - 1 - cond.subtree.Size;
 				var leftMinSize = minSize - 1 - cond.subtree.Size;
 				Debug.Assert(leftMaxSize >= 2);
-				foreach (var zeroExp in EnumerateSubtrees(1, leftMaxSize - 1, prefix, prefixSize + 1 + cond.subtree.Len, operations, unusedOpsToSpend - cond.unusedSpent, cond.usedOps))
+				foreach (var enumerationItem in EnumerationIfBranches(leftMinSize, leftMaxSize, prefix, prefixSize, operations, cond, unusedOpsToSpend, unusedSpent, singleElse, singleZero)) 
+					yield return enumerationItem;
+			}
+		}
+
+		private IEnumerable<EnumerationItem> EnumerationIfBranches(int minSize, int maxSize, byte[] prefix, int prefixSize, byte[] operations, EnumerationItem cond, int unusedOpsToSpend, int unusedSpent, bool singleElse, bool singleZero)
+		{
+			foreach (var zeroExp in EnumerateSubtrees(1, maxSize - 1, prefix, prefixSize + 1 + cond.subtree.Len, operations, unusedOpsToSpend - cond.unusedSpent, cond.usedOps))
+			{
+				var elseMaxSize = maxSize - zeroExp.subtree.Size;
+				var elseMinSize = minSize - zeroExp.subtree.Size;
+				Debug.Assert(elseMaxSize >= 1);
+				var spent = cond.unusedSpent + zeroExp.unusedSpent;
+				bool something = false;
+				foreach (var elseExp in EnumerateSubtrees(elseMinSize, elseMaxSize, prefix, prefixSize + 1 + cond.subtree.Len + zeroExp.subtree.Len, operations, unusedOpsToSpend - spent, zeroExp.usedOps))
 				{
-					var elseMaxSize = leftMaxSize - zeroExp.subtree.Size;
-					var elseMinSize = leftMinSize - zeroExp.subtree.Size;
-					Debug.Assert(elseMaxSize >= 1);
-					var spent = cond.unusedSpent + zeroExp.unusedSpent;
-					foreach (var elseExp in EnumerateSubtrees(elseMinSize, elseMaxSize, prefix, prefixSize + 1 + cond.subtree.Len + zeroExp.subtree.Len, operations, unusedOpsToSpend - spent, zeroExp.usedOps))
-					{
-						yield return new EnumerationItem(new Subtree(prefix, prefixSize, elseExp.subtree.Last), unusedSpent + spent + elseExp.unusedSpent , elseExp.usedOps);
-					}
+					yield return new EnumerationItem(new Subtree(prefix, prefixSize, elseExp.subtree.Last), unusedSpent + spent + elseExp.unusedSpent, elseExp.usedOps);
+					if (singleElse) yield break; // yield break;
+					something = true;
 				}
+				if (something && singleZero) yield break; // yield break;
 			}
 		}
 

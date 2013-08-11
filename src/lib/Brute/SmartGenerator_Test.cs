@@ -11,6 +11,17 @@ namespace lib.Brute
 	[TestFixture]
 	public class SmartGenerator_Test
 	{
+
+		[Test]
+		public void IfOptimization()
+		{
+			var items = new SmartGenerator("if0", "shl1", "shr1").Enumerate(6);
+			foreach (var t in items)
+			{
+				Console.WriteLine(t.Printable());
+			}
+		}
+
 		[Test]
 		public void Test()
 		{
@@ -19,7 +30,7 @@ namespace lib.Brute
 		}
 
 		[TestCase("Id: Q8CaRCOpwfImQx4ZhFTW3b82, Challenge: (lambda (x_3842) (or (shr4 x_3842) 1)), Size: 5, Operators: or,shr4", TestName = "5")]
-		[TestCase("Id: ErkXhpfABEVgAziRBgNyAAl7, Challenge: (lambda (x_11363) (shr1 (if0 (and (shr16 (shr4 x_11363)) (shr4 0)) x_11363 x_11363))), Size: 11, Operators: and,if0,shr1,shr16,shr4")]
+		[TestCase("Id: ErkXhpfABEVgAziRBgNyAAl7, Challenge: (lambda (x_11363) (shr1 (if0 (and (shr16 (shr4 x_11363)) (shr4 0)) 0 0))), Size: 11, Operators: and,if0,shr1,shr16,shr4")]
 		[TestCase("Id: h8tm9Awt9fVxIpGAyJ49eA4J, Challenge: (lambda (x_10772) (shl1 (if0 (or (not (shl1 0)) (shr4 x_10772)) 0 x_10772))), Size: 11, Operators: if0,not,or,shl1,shr4")]
 		[TestCase("Id: AYTI87tdqN0qYuvM50gpb5UU, Challenge: (lambda (x_11454) (shr16 (if0 (and (shr4 (shr16 (shr1 x_11454))) x_11454) 1 x_11454))), Size: 11, Operators: and,if0,shr1,shr16,shr4")]
 		[TestCase("Id: tP03Ueo4RbjUr7rTS5fP15Ym, Challenge: (lambda (x_10478) (shr4 (if0 (and (not (shr16 (shl1 1))) x_10478) 1 x_10478))), Size: 11, Operators: and,if0,not,shl1,shr16,shr4")]
@@ -27,7 +38,7 @@ namespace lib.Brute
 		[TestCase("Id: sSV8yJ0TfPaiUMWDBT5vHAKN, Challenge: (lambda (x_10869) (shl1 (if0 (and (or (shr16 x_10869) x_10869) x_10869) x_10869 x_10869))), Size: 11, Operators: and,if0,or,shl1,shr16")]
 		[TestCase("Id: BEBwd0AADByfBOYfXG8JH23E, Challenge: (lambda (x_13034) (and (if0 (xor (shr16 (not (not x_13034))) 1) 0 1) x_13034)), Size: 12, Operators: and,if0,not,shr16,xor",
 			TestName = "12 1")]
-		[TestCase("Id: lHObnL0KiFVC3c8vPkDDzAUc, Challenge: (lambda (x_12074) (shr4 (shr4 (if0 (or (shr16 x_12074) 1) (shl1 (shr1 x_12074)) x_12074)))), Size: 12, Operators: if0,or,shl1,shr1,shr16,shr4",
+		[TestCase("Id: lHObnL0KiFVC3c8vPkDDzAUc, Challenge: (lambda (x_12074) (shr4 (shr4 (if0 (or (shr16 x_12074) 1) 0 (shl1 (shr1 0)))))), Size: 12, Operators: if0,or,shl1,shr1,shr16,shr4",
 			TestName = "12 2")]
 		[TestCase("Id: lHObnL0KiFVC3c8vPkDDzAUc, Challenge: (lambda (x_12074) (shr4 (shr4 (if0 (or (shr16 x_12074) 1) (shl1 (shr1 x_12074)) x_12074)))), Size: 12, Operators: if0,or,shl1,shr1,shr16,shr4",
 			TestName = "12 2")]
