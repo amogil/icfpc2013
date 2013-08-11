@@ -93,8 +93,9 @@ namespace lib.AlphaProtocol
                     Task<byte[][]> task = Task.Factory.StartNew(() => FilterTrees(treeToCheck, inputs, outputs));
                     tasks.Add(task);
                 }
-                log.Debug("Finished created tasks");
+                log.Debug("Finished created tasks and starts new chunk");
                 enumerator.MoveNext();
+                log.Debug("Finished new chunk");
                 Task.WaitAll(tasks.ToArray<Task>());
 
                 List<byte[][]> tasksResults = Results(tasks);

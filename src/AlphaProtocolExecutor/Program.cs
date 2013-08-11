@@ -24,15 +24,21 @@ namespace AlphaProtocolExecutor
     {
         private static void Main(string[] args)
         {
-            int skip = string.IsNullOrEmpty(args[0]) ? 0 : int.Parse(args[0]);
-            int take = string.IsNullOrEmpty(args[1]) ? 0 : int.Parse(args[1]);
-            Run(skip, take);
+            int size = ArgToInt(args[0], 17);
+            int skip = ArgToInt(args[1]);
+            int take = ArgToInt(args[2], int.MaxValue);
+            Run(size, skip, take);
 //            RunManual();
 //            Test();
-            EvalTreesSizes(int.Parse(args[0]), int.Parse(args[1]));
+//            EvalTreesSizes(int.Parse(args[0]), int.Parse(args[1]));
         }
 
-        private static void Run(int skip, int take)
+        private static int ArgToInt(string arg, int defaultVal = 0)
+        {
+            return string.IsNullOrEmpty(arg) ? defaultVal : int.Parse(arg);
+        }
+
+        private static void Run(int size, int skip, int take)
         {
             var whitelist = new[]
                 {
@@ -46,15 +52,15 @@ namespace AlphaProtocolExecutor
                     "xWL7MoYaR2AUbf87yaV5622k",
                 };
 
-            foreach (Problem problem in UnsolvedProblemsWithSize(16).Skip(skip).Take(take))
+            foreach (Problem problem in UnsolvedProblemsWithSize(size).Skip(skip).Take(take))
             {
 //                if (whitelist == null || whitelist.Any(v => v == problem.Id))
                 {
-//                    ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
-                    var solver = new Solver();
-                    solver.Solve(problem.Id, problem.Size, problem.Operations,
-                                 (args, values) =>
-                                 new SmartGenerator(args, values, problem.Operations).Enumerate(problem.Size - 1));
+                    ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations);
+//                    var solver = new Solver();
+//                    solver.Solve(problem.Id, problem.Size, problem.Operations,
+//                                 (args, values) =>
+//                                 new SmartGenerator(args, values, problem.Operations).Enumerate(problem.Size - 1));
                 }
             }
 
