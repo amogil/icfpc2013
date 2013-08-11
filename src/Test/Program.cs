@@ -11,7 +11,7 @@ namespace Test
 	{
 		private static void Main(string[] args)
 		{
-			FindCountTreesForTrainProblems(12, 18);
+			FindCountTreesForTrainProblems(14, 18);
 		}
 
         private static void FindCountTreesForMyProblems()
