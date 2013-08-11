@@ -30,9 +30,9 @@ namespace AlphaProtocolExecutor
         private static void Main(string[] args)
         {
 //            Run();
-            RunManual();
+//            RunManual();
             //Test();
-//            EvalTreesSizes(int.Parse(args[0]), int.Parse(args[1]));
+            EvalTreesSizes(int.Parse(args[0]), int.Parse(args[1]));
         }
 
         private static void Run()
