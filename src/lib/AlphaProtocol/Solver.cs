@@ -143,7 +143,7 @@ namespace lib.AlphaProtocol
 		private static string FormatProgram(byte[] solution)
 		{
 			var s = solution.SkipWhile(b => b == 16).ToArray();
-			return string.Format("(lambda (x) {0})", solution.ToSExpr().Item1);
+			return string.Format("(lambda (x) {0})", s.ToSExpr().Item1);
 			}
 
 		private static T WithTimer<T>(Func<T> getResult, string funcName)
