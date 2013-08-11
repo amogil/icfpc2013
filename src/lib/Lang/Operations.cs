@@ -4,9 +4,10 @@ namespace lib.Lang
 {
 	public class Operation
 	{
-		public Operation(string name, int size, int argsCount)
+		public Operation(string name, int priority, int size, int argsCount)
 		{
 			Name = name;
+			this.priority = priority;
 			this.size = size;
 			this.argsCount = argsCount;
 		}
@@ -17,26 +18,27 @@ namespace lib.Lang
 		}
 
 		public string Name;
+		public readonly int priority;
 		public int size;
 		public int argsCount;
 	}
 
 	public static class Operations
 	{
-		private static Operation O(string name, int argsCount=0, int size = 1)
+		private static Operation O(string name, int priority, int argsCount=0, int size = 1)
 		{
-			return new Operation(name, size, argsCount);
+			return new Operation(name, priority, size, argsCount);
 		}
 
 		public static Operation[] all = new[]
 			{
-				O("0"), O("1"), O("x"), O("i"), O("a"), 
+				O("0", 1), O("1", 2), O("x", 3), O("i", 4), O("a", 5), 
 				//5
-				O("if0", 3), O("fold", 3, 2), 
+				O("if0", 31, 3), O("fold", 32, 3, 2), 
 				//7
-				O("not", 1), O("shl1", 1), O("shr1", 1), O("shr4", 1), O("shr16", 1),
+				O("not", 11, 1), O("shl1", 12, 1), O("shr1", 13, 1), O("shr4", 14, 1), O("shr16", 15, 1),
 				//12
-				O("and", 2), O("or", 2), O("xor", 2), O("plus", 2)
+				O("and", 21, 2), O("or", 22, 2), O("xor", 23, 2), O("plus", 24, 2)
 			};
 
 		public const int If = 5;

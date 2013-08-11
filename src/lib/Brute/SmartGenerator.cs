@@ -8,28 +8,34 @@ namespace lib.Brute
 {
 	public class SmartGenerator
 	{
-		private readonly ulong[] values;
 		private readonly Mask answersMask;
 		private readonly byte[] outsideFoldOperations;
 		private readonly byte[] noFoldOperations;
 		private readonly byte[] inFoldOperations;
-		private bool tFold;
+		private readonly bool tFold;
 
 		public SmartGenerator(params string[] ops)
-			:this(null, ops)
+			:this(null, null, ops)
 		{
 		}
 
-		public SmartGenerator(ulong[] values, params string[] ops)
+		public SmartGenerator(ulong[] inputs, ulong[] outputs, params string[] ops)
 		{
-			if (values != null) answersMask = new Mask(values);
-			this.values = values;
+			if (outputs != null)
+			{
+				answersMask = new Mask(outputs);
+				filterInput = inputs.Last();
+				filterOutput = outputs.Last();
+			}
 			tFold = ops.Contains("tfold");
 			outsideFoldOperations =
 				new byte[] {0, 1, 2}.Concat(
-					ops.Where(t => t != "tfold").Select(o => (byte) Array.IndexOf(Operations.names, o))).ToArray();
-			noFoldOperations = outsideFoldOperations.Where(o => o != 6).ToArray();
-			inFoldOperations = new byte[] {3, 4}.Concat(noFoldOperations).ToArray();
+					ops.Where(t => t != "tfold").Select(o => (byte) Array.IndexOf(Operations.names, o)))
+					.OrderBy(opIndex => Operations.all[opIndex].priority).ToArray();
+			noFoldOperations = outsideFoldOperations.Where(o => o != 6)
+				.OrderBy(opIndex => Operations.all[opIndex].priority).ToArray();
+			inFoldOperations = new byte[] {3, 4}.Concat(noFoldOperations)
+				.OrderBy(opIndex => Operations.all[opIndex].priority).ToArray();
 		}
 
 		public IEnumerable<byte[]> Enumerate(int size)
@@ -64,14 +70,28 @@ namespace lib.Brute
 			public int unusedSpent;
 		}
 
+		public ulong? filterInput;
+		public ulong? filterOutput;
+
 		public IEnumerable<EnumerationItem> EnumerateSubtrees(int minSize, int maxSize, byte[] prefix, int prefixSize, byte[] operations, int unusedOpsToSpend, int usedOps)
 		{
 			if (maxSize == 0) throw new Exception("should not be");
 			if (unusedOpsToSpend > maxSize) yield break; //не истратить столько
 			minSize = Math.Min(minSize, maxSize);
 
-			if (answersMask != null && prefixSize > 0 && (prefixSize + 1) % 3 == 0 
-				&& !answersMask.IncludedIn(prefix.GetMask(0, prefixSize - 1))) yield break;
+			if (answersMask != null && prefixSize > 0 && prefixSize> 0 && maxSize > 3)
+			{
+				var mask = prefix.GetMask(0, prefixSize - 1);
+				if(!answersMask.IncludedIn(mask))
+				{
+					yield break;
+				}
+				var maskWithInputValue = prefix.GetMask(filterInput.Value, 0, prefixSize - 1);
+				if (!new Mask(new[] {filterOutput.Value}).IncludedIn(maskWithInputValue))
+				{
+					yield break;
+				}
+			}
 
 			unusedOpsToSpend = Math.Max(0, unusedOpsToSpend);
 			foreach (var opIndex in operations)
@@ -85,7 +105,6 @@ namespace lib.Brute
 				var newUnusedToSpent = unusedOpsToSpend - unusedSpent;
 				if (op.argsCount == 0)
 				{
-					Debug.Assert(minSize == 1);
 					if (unusedSpent >= unusedOpsToSpend - (maxSize - 1))
 						yield return new EnumerationItem(new Subtree(prefix, prefixSize, prefixSize), unusedSpent, newUsedOps);
 				}
