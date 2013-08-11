@@ -23,7 +23,7 @@ namespace AlphaProtocolExecutor
 
     internal class Program
     {
-        private static readonly ILog log = LogManager.GetLogger(typeof(AlphaProtocol));
+        private static readonly ILog log = LogManager.GetLogger(typeof (AlphaProtocol));
 
         private static void Main(string[] args)
         {
@@ -55,15 +55,15 @@ namespace AlphaProtocolExecutor
             {
 //                if (whitelist == null || whitelist.Any(v => v == problem.Id))
 //                {
-                    try
-                    {
-                        ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations.Where(o => o.ToLower() != "bonus").ToArray());
-                    }
-                    catch (Exception e)
-                    {
-                        log.Debug(string.Format("FAILED: {0}", e));
-                    }
-                    
+                try
+                {
+                    ConcurrentWithoutShitAlphaProtocol.PostSolution(problem.Id, problem.Size, problem.Operations).ToArray();
+                }
+                catch (Exception e)
+                {
+                    log.Debug(string.Format("FAILED: {0}", e));
+                }
+
 //                }
             }
 
@@ -115,8 +115,6 @@ namespace AlphaProtocolExecutor
                                                             "and,fold,if0,not,shl1,xor".Split(','));
             Console.WriteLine("Press any key...");
             Console.ReadKey();
-
-            
         }
 
         private static void EvalTreesSizes(int from, int count)
