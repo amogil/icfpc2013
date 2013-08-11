@@ -28,6 +28,11 @@ namespace lib.AlphaProtocol
 			return Solve(problemId, size, ops, (inputs, values) => new BinaryBruteForcer(new Mask(values), ops).Enumerate(size - 1));
 		}
 
+		public string SolveSmart(string problemId, int size, string[] ops)
+		{
+			return Solve(problemId, size, ops, (inputs, values) => new SmartGenerator(inputs, values, ops).Enumerate(size - 1, size - 1, true));
+		}
+
 		public string Solve(string problemId, int size, string[] ops, Func<List<ulong>, List<ulong>, IEnumerable<byte[]>> getGuesses)
 		{
 			log.DebugFormat("Solving problem {0}: size={1}, ops={2}", problemId, size, string.Join(", ", ops));

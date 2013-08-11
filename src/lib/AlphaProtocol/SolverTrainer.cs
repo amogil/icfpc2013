@@ -20,12 +20,12 @@ namespace lib.AlphaProtocol
 		{
 			while (true)
 			{
-				var problem = gsc.Train(TrainProblemType.Fold, 16);
+				var problem = gsc.Train(TrainProblemType.Tfold, 16);
 				Console.Out.WriteLine("==== TrainProblem: {0}", problem);
 
 				var solver = new Solver();
 				var sw = Stopwatch.StartNew();
-				var answer = solver.SolveBinaryBrute(problem.id, problem.size, problem.OperatorsExceptBonus);
+				var answer = solver.SolveSmart(problem.id, problem.size, problem.OperatorsExceptBonus);
 				sw.Stop();
 
 				int solutionSize = Expr.ParseFunction(answer).GetUnified().ToBinExp().ToArray().Size() + 1;

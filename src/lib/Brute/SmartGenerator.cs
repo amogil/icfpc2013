@@ -76,8 +76,11 @@ namespace lib.Brute
 			if (tFold)
 			{
 				buffer[0] = Operations.Fold;
-				return EnumerateFold(minSize, maxSize, buffer, 0, unusedOpsToSpend, 0, 0);
-				//.Select(i => new EnumerationItem(new Subtree(i.subtree.Buffer, 0, i.subtree.Last), i.unusedSpent, i.usedOps));
+				buffer[1] = Operations.X;
+				buffer[2] = 0;
+
+				return EnumerateSubtrees(minSize-4, maxSize-4, buffer, 3, inFoldOperations, unusedOpsToSpend, 0)
+					.Select(i => new EnumerationItem(new Subtree(i.subtree.Buffer, 0, i.subtree.Last), i.unusedSpent, i.usedOps));
 			}
 			else return EnumerateSubtrees(minSize, maxSize, buffer, 0, outsideFoldOperations, unusedOpsToSpend, 0);
 		}
