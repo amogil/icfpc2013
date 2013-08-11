@@ -35,7 +35,8 @@ namespace AlphaProtocolExecutor
 
         private static int ArgToInt(string arg, int defaultVal = 0)
         {
-            return string.IsNullOrEmpty(arg) ? defaultVal : int.Parse(arg);
+            int r;
+            return int.TryParse(arg, out r) ? r : defaultVal;
         }
 
         private static void Run(int size, int skip, int take)

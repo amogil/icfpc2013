@@ -662,17 +662,17 @@ KaCP6HkjsDw48d9bVL0hRbVD	18			and,fold,if0,not,plus,xor
 KdLzyEnOZnfULOUMGIhycBJg	18			fold,if0,or,plus,shr4,xor
 MjAyp5tZJSraBZFNGmy1uLPk	18	True		and,if0,or,shl1,shr1,shr16,shr4,xor
 NYqXiHA7VATaLYP6RAx4p4hh	18			fold,if0,not,plus,shr4,xor
-NaCBzlvNVPXJxJYNwaxREkJ0	18			and,if0,not,or,shl1,tfold
+NaCBzlvNVPXJxJYNwaxREkJ0	18	True		and,if0,not,or,shl1,tfold
 O859Te83eWrkJRUkvwPkHpKA	18			and,fold,if0,not,plus,shr16,shr4
 OcZ8odKBykwXNYatY4BLyvxf	18	True		and,if0,or,plus,shl1,shr16,shr4
 PLhM3qwCBkukglniUdLFakkO	18	True		and,if0,not,plus,shl1,shr1
-QAQ3k0Bimlo1PeSKOpj36488	18			and,if0,or,plus,shr1,tfold
-QCeomPss5vx3p3KCQA08B0a8	18			if0,plus,shr4,tfold,xor
+QAQ3k0Bimlo1PeSKOpj36488	18	True		and,if0,or,plus,shr1,tfold
+QCeomPss5vx3p3KCQA08B0a8	18	False		if0,plus,shr4,tfold,xor
 Rh5Fbw90tBsGJtlfxrVBKlNg	18			and,fold,if0,or,shr4
 S9z71PVsML1VNmx55ZqTKmUw	18	True		and,if0,not,or,shl1,shr4,xor
 SlaYe7i9cXmfpC5ZNlwdTMjz	18			fold,if0,not,plus,shl1,xor
-SuO9MzhBdtUThNuHnyybzPwi	18			if0,not,or,plus,shl1,shr4,tfold,xor
-USxA9r6ZAT5e6CGo5eAzrGJr	18			if0,not,or,plus,shl1,shr16,tfold,xor
+SuO9MzhBdtUThNuHnyybzPwi	18	True		if0,not,or,plus,shl1,shr4,tfold,xor
+USxA9r6ZAT5e6CGo5eAzrGJr	18	False		if0,not,or,plus,shl1,shr16,tfold,xor
 UW3XUyoBSo4dBgCpdB0Ca0nv	18	True		and,if0,not,plus,shr1,shr4,xor
 WTkJPAR2ChBVvjnB2NbO9Ynj	18			fold,if0,not,or,plus,shr1
 Z9CI9LzmVobFBUniQKLBTVvR	18	True		and,if0,not,plus,shl1,shr4,xor
