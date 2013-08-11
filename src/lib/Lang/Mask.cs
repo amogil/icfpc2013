@@ -13,17 +13,25 @@ namespace lib.Lang
 		public static Mask _1;
 		public static Mask _0;
 
+        public static implicit operator Mask(ulong x)
+        {
+            return new Mask(new[]{x});
+        }
 		static Mask()
 		{
 			_0 = new Mask(one: 0, zero: ~(ulong)0);
 			_1 = new Mask(one: 1, zero: ~(ulong)1);
 		}
 
-		public Mask(ICollection<ulong> values)
-		{
-			one = values.Aggregate((ulong)0, (acc, i) => acc | i);
-			zero = values.Aggregate((ulong)0, (acc, i) => acc | ~i);
-		}
+        public Mask(ICollection<ulong> values)
+        {
+            one = values.Aggregate((ulong)0, (acc, i) => acc | i);
+            zero = values.Aggregate((ulong)0, (acc, i) => acc | ~i);
+        }
+        public Mask(ulong v)
+            : this(new[]{v})
+        {
+        }
 
 		public Mask(string s)
 		{
@@ -53,6 +61,19 @@ namespace lib.Lang
 		{
 			return new string(Enumerable.Range(0, 64).Select(i => MaskChar(one.Bit(i), zero.Bit(i))).Reverse().ToArray());
 		}
+
+        public override bool Equals(object obj)
+        {
+            if (!(obj is Mask))
+                return false;
+            var m = (Mask) obj;
+            return one == m.one && zero == m.zero;
+        }
+
+        public override int GetHashCode()
+        {
+            return one.GetHashCode() ^ zero.GetHashCode();
+        }
 
 		private char MaskChar(bool canBeOne, bool canBeZero)
 		{

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using NUnit.Framework;
 
 namespace lib.Lang
@@ -135,6 +136,17 @@ namespace lib.Lang
 		{
 			Assert.AreEqual(new Mask(res).ToString(), new Mask(a).FastPlus(new Mask(b)).ToString());
 		}
+        [TestCase("(lambda (x_1) (fold x_1 0 (lambda (x_2 x_3) (or x_2 x_3))))", "000000000000000000000000000000000000000000000000000000000000xx10", "000000000000000000000000000000000000000000000000000000000000xx10")]
+        [TestCase("(lambda (x_1) (fold x_1 0 (lambda (x_2 x_3) (or x_2 x_3))))", "0000xxxx0000xxxx0000xxxx0000xxxx0000xxxx0000xxxx0000xxxx0000xxxx", "000000000000000000000000000000000000000000000000000000000000xxxx")]
+        public void Fold(string lambda, string x, string res)
+        {
+            var programm = Expr.ParseFunction(lambda).GetUnified().ToBinExp().ToArray();
+            var xMask = new Mask(x);
+            var resMask = new Mask(res);
+            var mask = programm.GetMask(xMask);
+            Assert.AreEqual(resMask.ToString(), mask.ToString());
+        }
+
 
 		[Test]
 		public void TestToString()

@@ -28,8 +28,8 @@ namespace lib.Brute
 		private readonly byte[] inFoldOperations;
 		private readonly bool tFold;
 
-		public ulong? filterInput;
-		public ulong? filterOutput;
+		public ulong filterInput;
+		public ulong filterOutput;
 		private bool checkAllOperationsInUse;
 
 
@@ -85,23 +85,22 @@ namespace lib.Brute
 			else return EnumerateSubtrees(minSize, maxSize, buffer, 0, outsideFoldOperations, unusedOpsToSpend, 0);
 		}
 
-
+	    private int c;
 		public IEnumerable<EnumerationItem> EnumerateSubtrees(int minSize, int maxSize, byte[] prefix, int prefixSize, byte[] operations, int unusedOpsToSpend, int usedOps)
 		{
 			if (maxSize == 0) throw new Exception("should not be");
 			if (checkAllOperationsInUse && unusedOpsToSpend > maxSize) yield break; //не истратить столько
 			minSize = Math.Min(minSize, maxSize);
 
-			if (answersMask != null && prefixSize > 0 && prefixSize> 0 && maxSize > 3)
+			if (answersMask != null && prefixSize > 0 && maxSize > 3)
 			{
 				var mask = prefix.GetMask(0, prefixSize - 1);
-				if(!answersMask.IncludedIn(mask))
-				{
-					yield break;
-				}
-				var maskWithInputValue = prefix.GetMask(filterInput.Value, 0, prefixSize - 1);
-				if (!new Mask(new[] {filterOutput.Value}).IncludedIn(maskWithInputValue))
-				{
+                var maskWithInputValue = prefix.GetMask(filterInput, 0, prefixSize - 1);
+                if (!answersMask.IncludedIn(mask) || !new Mask(filterOutput).IncludedIn(maskWithInputValue))
+                {
+                    c++;
+                    if (c % 1000 == 0)
+                        Console.WriteLine(c);
 					yield break;
 				}
 			}
