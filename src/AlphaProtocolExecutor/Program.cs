@@ -9,6 +9,8 @@ namespace AlphaProtocolExecutor
     {
         private static void Main(string[] args)
         {
+			SolverProgram.Run();
+
 //            var problems = File
 //                .ReadAllLines(@"../../../../problems.txt")
 //                .Select(l => l.Trim())
