@@ -64,7 +64,7 @@ namespace AlphaProtocolExecutor
         {
             return
                 GetProblems()
-                    .Where(p => !p.Tried && !p.Bonus && p.Size == size && !p.Operations.Contains("plus"))
+                    .Where(p => !p.Tried && !p.Bonus && p.Size == size)
                     .ToArray();
         }
 

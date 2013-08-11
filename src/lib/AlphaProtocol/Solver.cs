@@ -56,8 +56,8 @@ namespace lib.AlphaProtocol
 				if (wallTime.Elapsed.TotalSeconds > 300)
 				{
 					log.DebugFormat("TIME_LIMIT: {0}, WS: {1}", wallTime.ElapsedMilliseconds, Environment.WorkingSet);
-					if (wallTime.Elapsed.TotalSeconds > 500)
-						return null;
+					/*if (wallTime.Elapsed.TotalSeconds > 500)
+						return null;*/
 				}
 
 				nextGuessSw.Reset();
