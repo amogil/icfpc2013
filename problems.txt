@@ -574,14 +574,14 @@ nN3VwdTaaQZARtjIZLAxM0IS	16	True		and,if0,not,plus,shr1,xor
 oLBBP3gf4UKKOjQJKK2GH3QW	16	True		if0,or,shl1,shr1,shr16,tfold,xor
 oNg8HK95OLtvXQ6mLGKUo0Yo	16	True		and,if0,shl1,tfold,xor
 pg95PSkPL7f8raP7TN8pyyog	16	True		if0,plus,shl1,shr1,shr16,tfold,xor
-s65RY93DADniO0V7Q4mD9Bmw	16			and,fold,if0,not,shr16,xor
+s65RY93DADniO0V7Q4mD9Bmw	16	True		and,fold,if0,not,shr16,xor
 tmOQbUACjcfLy69G59bJPuwR	16	True		if0,not,or,plus,shl1,tfold
 uM25JDG53eAog8ASt57xJri9	16	True		if0,not,or,plus,shl1,shr1,tfold
-ywAxoAIgkJSBYOAIJfqBpFGZ	16			fold,if0,plus,shl1,shr16,shr4,xor
+ywAxoAIgkJSBYOAIJfqBpFGZ	16	False		fold,if0,plus,shl1,shr16,shr4,xor
 zjAY6C9tlyyG76tpgLCUpAlw	16	True		and,if0,not,shl1,shr1,shr4,tfold
 0RUhV8SH3pf8XTlBAreyD6hb	17	True		if0,not,plus,tfold,xor
 1RpFZ68DzntHDvCyonWABWUg	17	True		and,if0,not,or,plus,shl1,shr16
-2zc5J5eJrFYGulBMERiYfCrB	17			and,fold,if0,or,shl1,shr4
+2zc5J5eJrFYGulBMERiYfCrB	17	False		and,fold,if0,or,shl1,shr4
 4Fm5aYWUHjzSGdAi3SiqIRZV	17	True		and,if0,or,shl1,shr4,xor
 6F25mA8L3snsHj6g9YAnquOP	17			fold,if0,or,shr1,shr4,xor
 6j1E6a53lyo1hNptXhoAjWOQ	17	True		if0,or,plus,shl1,shr4,xor
@@ -907,26 +907,26 @@ QWqBGQA94YAAByeUtAwW2yp5	21			and,fold,if0,not,plus,shl1,shr1,shr4
 QpvxesyJ57TJPUdKXEsX27Bf	21	True	Bonus	and,if0,or,shr1,shr16,shr4,xor
 RIauFLaOhmmRnQEb5yEqPUGd	21			fold,if0,plus,shl1,shr1,shr16,shr4,xor
 RvBaAyf9fp0PbKZNW5Ckd0pS	21	True	Bonus	and,if0,or,plus,shr4,xor
-S6nE4hzm5y72XQNyG6WUamGp	21			and,if0,or,plus,shl1,shr4,tfold,xor
+S6nE4hzm5y72XQNyG6WUamGp	21	True		and,if0,or,plus,shl1,shr4,tfold,xor
 SMy6ZtnU93EiG4o2bLSncU0t	21	True	Bonus	and,if0,or,plus,shl1,shr16,shr4
 ScFJbArKaGyapAlUJ48U5zYH	21			fold,if0,not,or,plus,shl1,shr16,xor
-SkerhcOxEfKu2MzfTXPLdkKn	21			if0,not,or,shr1,shr4,tfold,xor
+SkerhcOxEfKu2MzfTXPLdkKn	21	True		if0,not,or,shr1,shr4,tfold,xor
 T01BqP98CJ06CLWzGfhm9GBQ	21	True	Bonus	and,if0,or,plus,shl1,shr16
 T2xRbKxal8Qn8UqJv6BlRw7d	21	True	Bonus	and,if0,or,plus,shl1,shr1,shr16,shr4
 T7z28htJZ7pUB9eQwAV8gkfr	21	True	Bonus	and,if0,not,or,plus,shl1,shr16,xor
 Uml2yqZ2y7qprr4m4vmpsDHa	21	True	Bonus	and,if0,not,plus,shr1,shr16,xor
 V8EooOZ8hS8NQFPOD82jXJ1E	21	True	Bonus	and,if0,plus,shl1,shr1,shr16,xor
 VZFuA1I32sqlWpVSIXEn28Rr	21	True	Bonus	and,if0,not,or,plus,shr1,shr16,shr4,xor
-VdghhTmwfA4isjoXbGwIYN8v	21			and,if0,shr1,shr16,shr4,tfold,xor
+VdghhTmwfA4isjoXbGwIYN8v	21	True		and,if0,shr1,shr16,shr4,tfold,xor
 W8qARWXIZBfCTPFXY2H8gCT6	21	True	Bonus	and,if0,not,or,plus,shl1,shr1,shr16,xor
 WJ3jOiturt0lfBRBBZzjxl9B	21	True	Bonus	and,if0,or,plus,shr1,shr16,shr4,xor
 WiTWgqVCmArnRMhQy9GzbcJt	21	True	Bonus	and,if0,not,or,plus,shl1,shr1,shr16,xor
 XLPvckQ97O8VLgCj3S0mthTx	21			and,fold,if0,not,plus,shr1,xor
-XTuo6RKpZuBUT4taVwiQV1YO	21			and,if0,not,or,plus,tfold,xor
+XTuo6RKpZuBUT4taVwiQV1YO	21	True		and,if0,not,or,plus,tfold,xor
 XaA5i3eEQsOUaxG7oOiBegvN	21	True	Bonus	and,if0,not,plus,shr1,shr16,shr4
 Xe3VzJiQbOB2VKY9azglErmO	21	True	Bonus	and,if0,shl1,shr1,shr16,xor
 XxAwhCRAlr31A6sAThthkQ3u	21	True	Bonus	and,if0,not,plus,shl1,shr4
-YOvDBEyJA5cjQKcRbrgl9cnB	21			if0,not,or,plus,shl1,tfold,xor
+YOvDBEyJA5cjQKcRbrgl9cnB	21	True		if0,not,or,plus,shl1,tfold,xor
 Z916oGj6YGurVlhCCERozJCJ	21	True		and,if0,or,plus,shl1,shr1,shr4,xor
 aNsjwoeAycLizq4fVAKfUnSm	21			and,fold,if0,not,or,shl1,shr16,xor
 aYCUkl5cncLHgsWxbs5gxeEA	21	True		and,if0,or,shl1,shr1,shr16,tfold,xor
@@ -957,7 +957,7 @@ ntAxPLdqJqNsKEzi6ujw33bt	21	True		and,if0,plus,shr1,shr16,xor
 pWxeQfBo2M2VFCR41jd7dnUd	21	False		and,if0,not,plus,shr1,shr16,tfold,xor
 peKoN7fJZMcrXg0Rxe1dIdYG	21	True	Bonus	and,if0,not,or,plus,shr1,shr16,shr4
 pl26GVSHAMjkTksPAVBSXBQQ	21	True	Bonus	and,if0,not,plus,shl1,shr1,shr4
-r6oIhKluEGuJRj1fQYMFLyTE	21			if0,not,plus,shl1,shr1,tfold
+r6oIhKluEGuJRj1fQYMFLyTE	21	True		if0,not,plus,shl1,shr1,tfold
 rObALfHeyrpn2ZrectGBQClA	21	True	Bonus	and,if0,not,plus,shl1,shr1,shr4,xor
 sY6xPm7WkuGk6dBFSSQ6v3IM	21	True	Bonus	and,if0,not,or,shl1,shr1,xor
 t8Dkrfmg24fcOO2nAqE4dmA3	21	True	Bonus	and,if0,not,or,plus,shl1,shr1,shr16,xor
@@ -966,22 +966,22 @@ v28SUO02xgwKddf8oKF1Ix4x	21	True	Bonus	and,if0,or,plus,shl1,shr1,shr16,shr4
 vExlee8TS1AK1n1qVicPLaqX	21	True	Bonus	and,if0,not,or,shr1,shr16,xor
 x738DklHCFELMnGZpyfoVDrp	21	True	Bonus	and,if0,or,plus,shl1,shr16,shr4,xor
 xOJBbluNpSHf3lqlGkgIXaBB	21			fold,if0,or,plus,shr1,shr16,shr4,xor
-xj6ThE4TgONZRaZwQE29EcGF	21			and,if0,not,or,shr1,shr16,shr4,tfold,xor
+xj6ThE4TgONZRaZwQE29EcGF	21	True		and,if0,not,or,shr1,shr16,shr4,tfold,xor
 y5vezAYxcRBJ85z530RQAVMR	21	True	Bonus	and,if0,not,or,plus,shl1,shr1,shr16
-0DAg7wK01jfvCRRIbj8FVnN6	22			and,if0,not,or,plus,shr4,tfold,xor
+0DAg7wK01jfvCRRIbj8FVnN6	22	True		and,if0,not,or,plus,shr4,tfold,xor
 0mNsA8QgIc2E7KyWkgdgscAB	22	True	Bonus	and,if0,not,or,plus,shl1,shr4,xor
-16ceGiZMvt9R8UYiVgKRUnkr	22			and,if0,not,plus,tfold,xor
-1tiPW01gVdxrCFNgZNmwdwR3	22			if0,not,or,plus,shl1,shr4,tfold,xor
-2pyTXU5HhxZfpxFmfntMmEUq	22			if0,or,plus,shl1,tfold
+16ceGiZMvt9R8UYiVgKRUnkr	22	True		and,if0,not,plus,tfold,xor
+1tiPW01gVdxrCFNgZNmwdwR3	22	True		if0,not,or,plus,shl1,shr4,tfold,xor
+2pyTXU5HhxZfpxFmfntMmEUq	22	True		if0,or,plus,shl1,tfold
 4HFFSQoBmvOTSkNHs1SkSxye	22	True		and,if0,or,plus,shr1,shr4,xor
 A6d0wvfCcabmhNzC2Iy12hZy	22	True		and,if0,not,or,shr16,shr4,xor
-ADswf2FaqHBFOtaNHZUSAvN7	22			if0,or,plus,shl1,shr16,tfold,xor
-B8vUPv1jt48PRqlYvSpzJrrO	22			and,if0,or,plus,shr4,tfold,xor
+ADswf2FaqHBFOtaNHZUSAvN7	22	True		if0,or,plus,shl1,shr16,tfold,xor
+B8vUPv1jt48PRqlYvSpzJrrO	22	True		and,if0,or,plus,shr4,tfold,xor
 BCCK045ZrXeEgxTdU958mMLh	22	True		and,if0,not,or,plus,shl1,shr1,xor
 BfopBeWPte2myFS35CHEvvtH	22			fold,if0,or,plus,shl1,shr16,shr4,xor
-BjQ3unNvxjpAA1uPKWJsBma0	22			if0,not,plus,shl1,shr1,shr16,tfold,xor
-BvmeQfWkvXttSaoSpkMTlnhC	22			and,if0,not,plus,shr16,shr4,tfold
-C3A5Bm7y3BmIBeqmGxTDTgzz	22			and,if0,or,plus,shl1,tfold,xor
+BjQ3unNvxjpAA1uPKWJsBma0	22	True		if0,not,plus,shl1,shr1,shr16,tfold,xor
+BvmeQfWkvXttSaoSpkMTlnhC	22	False		and,if0,not,plus,shr16,shr4,tfold
+C3A5Bm7y3BmIBeqmGxTDTgzz	22	False		and,if0,or,plus,shl1,tfold,xor
 CR0wFl92tOMmJWAuJMAy0d2Z	22	True		and,if0,not,or,plus,shr1,shr16,shr4
 DBqqgVXPTgBBBuWGAMpAUUv0	22			and,fold,if0,not,or,plus,shl1,shr1,shr16,shr4
 Fshpr1jnhddkPRpVp6KBufHW	22	True		and,if0,not,or,plus,shl1,shr1,shr16,shr4
@@ -1008,8 +1008,8 @@ WuC3HJQ9AdXu2IdzwvkbBqoB	22			and,fold,if0,plus,shl1,shr1,shr16,xor
 X4MjSUM3Ez8ysSgZSWzylkr8	22			and,if0,not,or,plus,shl1,shr1,tfold
 aDSD2gl1I0ZKd1SerGfOTeJQ	22			and,fold,if0,or,plus,shr1,shr16,shr4
 aYIMHKAfOUBmCBlALqjzlQv5	22	True		and,if0,not,plus,shl1,shr16,shr4,xor
-bZA4APH3JB1LfJ3z827sa7gM	22			and,if0,or,shr16,shr4,tfold,xor
-beOG1uULpEyKakF3TENazAZ5	22			if0,or,shr1,shr16,shr4,tfold
+bZA4APH3JB1LfJ3z827sa7gM	22	True		and,if0,or,shr16,shr4,tfold,xor
+beOG1uULpEyKakF3TENazAZ5	22	True		if0,or,shr1,shr16,shr4,tfold
 cAnTBldueqbQOEmVBEskZ2tO	22			and,if0,not,shr1,tfold,xor
 ezqq8NlmAdBqkfozKZwk5Gdy	22	True	Bonus	and,if0,not,or,shl1,shr1,shr16,shr4
 fO2ZCSdwinmAPnQlJ45orngR	22	True		and,if0,not,or,plus,shl1,shr1,shr16,shr4,xor
@@ -1622,8 +1622,8 @@ zX7zUAUY4RTfO5oYhtdzYDLi	30			and,if0,not,plus,shr1,shr4,tfold,xor
 BDVODOe9NWFwlg1BJ9GqAhNO	31	True	Bonus	and,if0,not,plus,shl1,shr1,shr16,shr4,xor
 wsnqA2iKWQs4EPVOozNWpV7Q	33	True	Bonus	and,if0,not,plus,shr1,xor
 3ZOBAuxWIMybXLe66qU2v3G1	34	False	Bonus	and,if0,not,or,plus,shr1,shr16,shr4,xor
-HjtlJFZisfuRByA5U0jbYaZX	35		Bonus	and,if0,not,or,plus,shl1,shr1,shr16,shr4
-oHMyC2lZDwRumjpHPRQfVidZ	35		Bonus	and,if0,not,plus,shl1,shr1,shr16,shr4,xor
+HjtlJFZisfuRByA5U0jbYaZX	35	False	Bonus	and,if0,not,or,plus,shl1,shr1,shr16,shr4
+oHMyC2lZDwRumjpHPRQfVidZ	35	True	Bonus	and,if0,not,plus,shl1,shr1,shr16,shr4,xor
 wN8BbOpNMBbync7esc398AGU	35		Bonus	and,if0,not,or,plus,shl1,shr1,shr16,shr4,xor
 7aGbPAqADStzV3XVWAK9lD1l	36		Bonus	and,if0,not,or,plus,shr1,shr16,shr4,xor
 AJCPMpn5fYJ6Xp2tKUHXfMP8	36		Bonus	and,if0,not,or,plus,shr1,shr16,shr4,xor

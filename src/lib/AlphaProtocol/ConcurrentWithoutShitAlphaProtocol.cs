@@ -76,8 +76,8 @@ namespace lib.AlphaProtocol
 
             IEnumerable<byte[]> trees = new SmartGenerator(inputs, outputs, operations).Enumerate(size - 1);
 
-            int tasksCount = Environment.ProcessorCount;
-            IEnumerable<byte[][]> chunckedTrees = Chuncked(trees, 3 * 1024 *1024);
+            int tasksCount = 4;
+            IEnumerable<byte[][]> chunckedTrees = Chuncked(trees, 2 * 1024 *1024);
             IEnumerable<byte[][][]> chunckedTreesPerWorker = Chuncked(chunckedTrees, tasksCount);
             var results = new byte[0][];
             IEnumerator<byte[][][]> enumerator = chunckedTreesPerWorker.GetEnumerator();
