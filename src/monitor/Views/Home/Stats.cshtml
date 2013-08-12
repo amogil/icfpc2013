@@ -1,0 +1,39 @@
+﻿@model List<Tuple<string, int>>
+
+@{
+    ViewBag.Title = "ICFPC 2013 unoficcial scoreboard";
+}
+
+<h1>ICFPC 2013 unofficial scoreboard</h1>
+
+@Html.Partial("ContestInfo")
+
+<h2>The scoreboard:</h2>
+<div class="row">
+    <div class="span3">
+        <table class="table table-bordered table-condensed">
+            <tr>
+                <th>#</th>
+                <th>score</th>
+                <th>EasyChairId</th>
+            </tr>
+            @{ int i = 1; }
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@(i++)</td>
+                    <td>@Html.ActionLink(item.Item2.ToString(), "Index", new{id=item.Item1})</td>
+                    <td>@(item.Item1.StartsWith("____") ? "" : item.Item1)</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+<h2>What else can you do here?</h2>
+<p>
+    If you are one of the participants, you are awesome!<br/>
+    Here you can visualize and analyse list of your solved problems. As a side effect you will help us to make this scoreboard.
+</p>
+
+@Html.Partial("SubmitionForm", false)

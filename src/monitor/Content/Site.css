@@ -1,0 +1,12 @@
+﻿.visualization{margin-bottom: 30px;}
+h1 {margin-top: 50px; margin-bottom: 30px;}
+h2 {margin-top: 30px;}
+h3 {margin-left: 20px; text-align:center;}
+.task-type-group {float: left; margin-left:10px;}
+table{ border-collapse:collapse; border-width:1px; border-color:black;}
+td {width:2px; font-size:0.8em;}
+.S { font-size:0.1em; background-color: green; }
+.F { font-size:0.1em; background-color: red; }
+.N { font-size:0.1em; background-color: yellow; }
+.A { font-size:0.1em; background-color: lightgrey; }
+.subtotal{text-align:center}

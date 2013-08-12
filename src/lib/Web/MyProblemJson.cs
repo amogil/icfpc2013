@@ -20,5 +20,16 @@ namespace lib.Web
 		{
 			get { return operators.Contains("bonus"); }
 		}
+
+		public string Type
+		{
+			get
+			{
+				if (operators.Contains("fold")) return " fold";
+				if (operators.Contains("tfold")) return "  tfold";
+				if (operators.Contains("bonus")) return "bonus";
+				return "   simple";
+			}
+		}
 	}
 }

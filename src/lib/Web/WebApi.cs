@@ -11,15 +11,21 @@ namespace lib.Web
     public class WebApi
     {
         private static readonly ILog log = LogManager.GetLogger(typeof (WebApi));
-        public static string AuthKey = "0071PimxQKpGJdtDE76gsjAoaOagBVX3tdGOfCQH" + "vpsH1H";
+        public string AuthKey = "0071PimxQKpGJdtDE76gsjAoaOagBVX3tdGOfCQH" + "vpsH1H";
         private readonly JavaScriptSerializer json = new JavaScriptSerializer();
 
-        public static string GetUrl(string command)
+        public string GetUrl(string command)
         {
             return string.Format("http://icfpc2013.cloudapp.net/{0}?auth={1}", command, AuthKey);
         }
 
-        public string GetString(string command, object arg)
+	    public WebApi(string key = null)
+	    {
+		    if (key != null)
+			    AuthKey = key + "vpsH1H";
+	    }
+
+	    public string GetString(string command, object arg)
         {
             string body = new JavaScriptSerializer().Serialize(arg);
 //            log.Debug("REQUEST " + command + " " + body);

@@ -1,0 +1,78 @@
+﻿@model Tuple<string, IList<lib.Web.MyProblemJson>>
+
+@{
+    ViewBag.Title = "ICFPC 2013 Monitor";
+}
+
+<h1>ICFPC 2013 problems statistics</h1>
+@Html.Partial("ContestInfo")
+
+@if (Model != null)
+{
+    <div class="clearfix visualization">
+        <h2>Team @Model.Item1</h2>
+        <p>Solved problems: @Model.Item2.Count(p => p.solved == true)</p>
+        <div>
+        </div>
+        @{
+            var ps = Model.Item2
+                          .GroupBy(t => t.Type).Select(g => new
+                              {
+                                  type = g.Key,
+                                  cells = g.GroupBy(t => t.size)
+                                           .Select(gg => new { type = g.Key, size = gg.Key, total = gg.Count(), solved = gg.Count(t => t.solved ?? false), failed = gg.Count(t => !(t.solved ?? true)) })
+                              });
+        }
+        @foreach (var group in ps.OrderBy(g => g.type))
+        {
+            <div class="task-type-group">
+                <h3>@group.type.Trim()</h3>
+                <table>
+                    @{
+                        var width = @group.cells.Max(c => c.total);
+                        var minSize = @group.cells.Min(c => c.size);
+                        var maxSize = @group.cells.Max(c => c.size);
+                    }
+                    @for (int i = 3; i < minSize; i++)
+                    {
+                        <tr>
+                            <td>@i</td>
+                            <td class="A" colspan="@width">&nbsp;</td>
+                        </tr>
+                    }
+                    @for (int size = minSize; size <= maxSize; size++)
+                    {
+                        var cell = group.cells.FirstOrDefault(c => c.size == size);
+                        <tr>
+                            <td>@size</td>
+                            @for (int i = 0; i < width; i++)
+                            {
+                                var c = cell != null 
+                                            ? (i < cell.solved ? "S" : (i < cell.solved + cell.failed ? "F" : (i < cell.total) ? "N" : "A"))
+                                            : "A";
+                                <td class="@c">&nbsp;</td>
+                            }
+                        </tr>
+
+                    }
+                </table>
+                <div class="subtotal">@group.cells.Sum(c => c.solved) solved</div>
+            </div>
+        }
+    </div>
+    <p>
+        All problems can be divided in 4 classes: simple, with fold operation, with tfold operation (a bit simpler than fold), and bonus problems. 
+            All problems grouped by problem class, expression size, and status — solved (green), failed (red) and not touched (yellow).
+            Here you can analyse the quality of your solver on different expressions.
+    </p>
+    @Html.ActionLink("Other teams scores", "Stats")
+}
+
+<h2>What can you do here?</h2>
+<p>
+    If you are one of the participants you are awesome!<br />
+    Here you can visualize and analyse list of your solved problems. 
+    As a side effect you will help us to make @Html.ActionLink("the unofficial scoreboard", "Stats", "Home").
+</p>
+
+@Html.Partial("SubmitionForm", Model==null)

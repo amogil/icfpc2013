@@ -1,0 +1,13 @@
+﻿@model bool
+
+@using (Html.BeginForm("Post", "Home", FormMethod.Post))
+{
+        <label>Your AuthKey or JSON of myproblems request:</label>
+        <textarea class="input-block-level" name="text" rows="2" @(Model?"autofocus":"")></textarea>
+        <button class="btn btn-large btn-primary" type="submit">Visualize your problems!</button>
+}
+        <p>AuthKey posted here would not be published or misused. I swear! :-)<br/>
+            If you do not trust me, myproblems JSON can be retrieved by yourself via this link: <code>http://icfpc2013.cloudapp.net/myproblems?auth=<b>[YourSecret]</b>vpsH1H</code>
+        </p>
+
+
