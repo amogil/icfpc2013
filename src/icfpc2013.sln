@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaProtocolExecutor", "AlphaProtocolExecutor\AlphaProtocolExecutor.csproj", "{9CE7FFAF-22FE-4113-B4A3-82F1161990E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "monitor", "monitor\monitor.csproj", "{5DA68461-76E5-42B9-9C05-6B172E162B49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{9CE7FFAF-22FE-4113-B4A3-82F1161990E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CE7FFAF-22FE-4113-B4A3-82F1161990E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CE7FFAF-22FE-4113-B4A3-82F1161990E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DA68461-76E5-42B9-9C05-6B172E162B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DA68461-76E5-42B9-9C05-6B172E162B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DA68461-76E5-42B9-9C05-6B172E162B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DA68461-76E5-42B9-9C05-6B172E162B49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
